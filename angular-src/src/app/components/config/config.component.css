@@ -1,0 +1,43 @@
+.col-sm-8 {
+  margin: 0px 0px 0px 0px;
+  padding: 0px 0px 0px 0px;
+}
+
+.room{
+  margin-top: 10px;
+}
+.panel {
+  height: auto;
+}
+
+.panel-heading {
+  background-color: #65995e;
+  height: 80px;
+}
+
+.panel-title {
+  vertical-align: middle;
+  font-size: 25px;
+  color: #ffffff;
+}
+
+
+
+h2.devices {
+  margin-top: 0px;
+}
+
+.roomImg {
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+
+.panel-heading {
+  cursor: pointer;
+}
+
+.block {
+     overflow: hidden;
+     -webkit-transition: height .5s;
+     transition: height .5s;
+}

@@ -1,0 +1,90 @@
+.col-sm-2 {
+  margin: 0px 0px;
+  padding: 0px 0px;
+}
+
+.panel {
+  background-color: #272c2f;
+  position: fixed;
+  height: 100vh;
+  width: inherit;
+  padding-top: 20px;
+}
+
+.panel-heading{
+  background-color: #272c2f;
+  cursor: pointer;
+  border: 0px;
+}
+
+.panel-title {
+  font-size: 20px;
+  margin-left: 10px;
+}
+
+.card {
+  padding-top: 0px;
+  padding-left: 10px;
+  overflow: hidden;
+  -webkit-transition: height .5s;
+  transition: height .5s;
+}
+
+.list-floor{
+  position: relative;
+}
+
+
+.list-group-item:hover{
+  border-radius: 0;
+  border-color: inherit;
+}
+
+.list-group-item {
+  margin-right: 0px;
+  background-color: inherit;
+  color: #ffffff;
+  border: 0px;
+  position: relative;
+  cursor: pointer;
+}
+
+.fa {
+  cursor: pointer;
+  color: auto;
+  background-color: inherit;
+  border: 0px;
+}
+
+.fa-minus-circle {
+  margin-right: 10px;
+  color: auto;
+}
+
+.fa-plus-circle {
+  color: white;
+}
+
+.addFloor {
+  margin-left: 23px;
+  margin-top: 10px;
+}
+input[name="floorname"]{
+  width: 150px;
+  margin-right: 5px;
+}
+
+.modal-title {
+  text-align: center;
+}
+
+.modal-body{
+  margin: 0 auto;
+  text-align: center;
+}
+
+.btnmodal {
+  min-width: 80px;
+  margin-left: 10px;
+  margin-right: 10px;
+}

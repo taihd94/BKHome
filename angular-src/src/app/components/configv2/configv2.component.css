@@ -1,0 +1,21 @@
+.col-sm-2{
+  min-width: 0px;
+}
+.sidebar {
+  background-color: #272c2f;
+  margin: 0px 0px 0px 0px;
+  height: 1000px;
+  width: 200px;
+  position: fixed;
+}
+
+.sidebar2 {
+  background-color: #5b5b5b;
+  margin-left: 200px;
+  height: 1000px;
+  width: 200px;
+  position: fixed;
+  overflow: hidden;
+  -webkit-transition: width .5s;
+  transition: width .5s;
+}

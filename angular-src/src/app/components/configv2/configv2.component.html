@@ -1,0 +1,19 @@
+<div class="row">
+  <div class="col-sm-2 sidebar">
+    <button type="button" class="btn btn-primary"
+        (click)="width = width ? 0 : 200">Toggle collapse
+    </button>
+    <ul>
+      <li>HOME</li>
+      <li>HOME</li>
+      <li>HOME</li>
+      <li>HOME</li>
+    </ul>
+  </div>
+  <div class="col-sm-2 sidebar2" [style.width]="width + 'px'" #el>
+    <p>ljslkjaslkjflaskjdf</p>
+  </div>
+  <div class="col-sm-8 content">
+
+  </div>
+</div>
