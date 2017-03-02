@@ -18,7 +18,6 @@ export class ConfigComponent implements OnInit {
     modules: [String]
   }];
   checkClick = true;
-  checkFloor = true;
   roomDeletedName: String;
   roomDeletedId: String;
   roomAddedName: String;
@@ -35,7 +34,6 @@ export class ConfigComponent implements OnInit {
   }
 
   getRooms(floorId) {
-    this.checkFloor = false;
     this.floorId = floorId;
     this.houseService.getRooms(floorId).subscribe(rooms => {
       if(rooms.length){

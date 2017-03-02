@@ -51,7 +51,7 @@
         </div>
       </div>
     </div>
-    <div class="addRoom" [hidden]="checkFloor">
+    <div class="addRoom" [hidden]="!floorId">
       <button type="button" class="fa fa-plus-circle fa-2x" (click)="checkClick=!checkClick"></button>
       <div class="input" [hidden]="checkClick" >
         <form (submit)="addRoomSubmit()">
