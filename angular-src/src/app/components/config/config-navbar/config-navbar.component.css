@@ -63,14 +63,19 @@
 
 .fa-plus-circle {
   color: white;
+  float: left;
+  margin-top: 8px;
+  margin-right: 5px;
 }
 
 .addFloor {
   margin-left: 23px;
   margin-top: 10px;
 }
+
 input[name="floorname"]{
-  width: 150px;
+  width: 135px;
+  height: 35px;
   margin-right: 5px;
 }
 
@@ -83,7 +88,7 @@ input[name="floorname"]{
   text-align: center;
 }
 
-.btnmodal {
+.btn-modal {
   min-width: 80px;
   margin-left: 10px;
   margin-right: 10px;

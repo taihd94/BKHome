@@ -12,16 +12,29 @@
 
 .panel-heading {
   background-color: #65995e;
-  height: 80px;
+  height: 60px;
+  vertical-align: middle;
+  padding: 0 0;
+}
+
+.title{
+  height: 100%;
+  width: 95%;
+  float: left;
+  cursor: pointer;
 }
 
 .panel-title {
-  vertical-align: middle;
-  font-size: 25px;
+  position: absolute;
+  font-size: 20px;
   color: #ffffff;
+  margin-top: 2%;
+  margin-left: 2%;
 }
 
-
+.panel-title:hover {
+  text-decoration: none;
+}
 
 h2.devices {
   margin-top: 0px;
@@ -32,12 +45,62 @@ h2.devices {
   margin-bottom: 10px;
 }
 
-.panel-heading {
-  cursor: pointer;
-}
-
 .block {
      overflow: hidden;
      -webkit-transition: height .5s;
      transition: height .5s;
+}
+
+.fa {
+  cursor: pointer;
+  color: auto;
+  background-color: inherit;
+  border: 0px;
+}
+
+.fa-times {
+  color: auto;
+  float: right;
+  margin-top: 10px;
+  margin-right: 10px;
+}
+
+.fa-plus-circle {
+  color: #65995e;
+  float: left;
+  margin-right: 10px;
+}
+
+input {
+  height: 30px;
+  margin-right: 10px;
+}
+
+
+.modal-title {
+  text-align: center;
+}
+
+.modal-body{
+  margin: 0 auto;
+  text-align: center;
+}
+
+.btn-modal {
+  min-width: 80px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.form-group {
+    float: left;
+    margin-right: 20px;
+}
+
+.addRoom {
+  margin-top: 8px;
+}
+
+.btn-add-room {
+    line-height: 0;
 }

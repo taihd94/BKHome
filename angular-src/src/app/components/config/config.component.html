@@ -1,37 +1,76 @@
+<div bsModal #smModal="bs-modal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-sm">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title">Are you sure you want to delete <b>{{roomDeletedName}}</b> ?</h4>
+      </div>
+      <div class="modal-body">
+        <button type="button" class="btn btn-success btn-modal" (click)="smModal.hide()" (click)="deleteRoom()">Yes</button>
+        <button type="button" class="btn btn-danger btn-modal" (click)="smModal.hide()">No</button>
+      </div>
+    </div>
+  </div>
+</div>
+
 <div class="row">
-  <app-config-navbar></app-config-navbar>
+  <app-config-navbar (selectedFloor)="getRooms($event)"></app-config-navbar>
   <div class="col-sm-8 room">
     <flash-messages></flash-messages>
-    <div class="panel panel-success">
-      <div class="panel-heading" (click)="height = height ? 0 : el.scrollHeight">
-        <br>
-        <h3 class="panel-title">Bedroom</h3>
-      </div>
-      <div
-        class="card card-block card-header block" [style.height]="height + 'px'" #el>
-        <div class="panel-body">
-          <div class="row">
-            <div class="col-sm-4">
-              <img src="https://s-media-cache-ak0.pinimg.com/originals/a5/80/0c/a5800cb89702af494bd3ff843312cf12.jpg"
-                   class="img-responsive roomImg"
-                   alt="Responsive image">
-              <p><i class="fa fa-thermometer-three-quarters" aria-hidden="true"></i> Temperature: 20 oC</p>
-              <p><i class="fa fa-tint" aria-hidden="true"></i> Humidity: 60 % </p>
-              <p><i class="fa fa-sun-o" aria-hidden="true"></i> Light: 150 Lux </p>
+    <div class="listOfRooms" *ngFor = "let room of rooms">
+      <div class="panel panel-success">
+        <div class="panel-heading">
+          <div class="title" (click)="height = height ? 0 : el.scrollHeight">
+            <a href="/config#{{room._id}}" class="panel-title">{{room.name}}</a>
           </div>
-            <div class="col-sm-8">
-              <h2 class="devices collapse in">Devices</h2>
-              <div class="list-group">
-                <a href="/config" class="list-group-item">Light 1</a>
-                <a href="/config" class="list-group-item">Light 2</a>
-                <a href="/config" class="list-group-item">Light 3</a>
-                <a href="/config" class="list-group-item">Light 4</a>
-                <a href="/config" class="list-group-item">Sensor 1</a>
-                <a href="/config" class="list-group-item">Sensor 2</a>
+          <button type="button" class="fa fa-times fa-2x" (click)="getDeletedRoom(room._id, room.name)" (click)="smModal.show()"></button>
+        </div>
+        <div class="card card-block card-header block" [style.height]="height + 'px'" #el>
+          <div class="panel-body">
+            <div class="row">
+              <div class="col-sm-4">
+                <img src="https://s-media-cache-ak0.pinimg.com/originals/a5/80/0c/a5800cb89702af494bd3ff843312cf12.jpg"
+                     class="img-responsive roomImg"
+                     alt="Responsive image">
+                <p><i class="fa fa-thermometer-three-quarters" aria-hidden="true"></i> Temperature: 20 oC</p>
+                <p><i class="fa fa-tint" aria-hidden="true"></i> Humidity: 60 % </p>
+                <p><i class="fa fa-sun-o" aria-hidden="true"></i> Light: 150 Lux </p>
+            </div>
+              <div class="col-sm-8">
+                <h2 class="devices collapse in">Devices</h2>
+                <div class="list-group">
+                  <a href="/config" class="list-group-item">Light 1</a>
+                  <a href="/config" class="list-group-item">Light 2</a>
+                  <a href="/config" class="list-group-item">Light 3</a>
+                  <a href="/config" class="list-group-item">Light 4</a>
+                  <a href="/config" class="list-group-item">Sensor 1</a>
+                  <a href="/config" class="list-group-item">Sensor 2</a>
+                </div>
               </div>
             </div>
           </div>
         </div>
+      </div>
+    </div>
+    <div class="addRoom" [hidden]="checkFloor">
+      <button type="button" class="fa fa-plus-circle fa-2x" (click)="checkClick=!checkClick"></button>
+      <div class="input" [hidden]="checkClick" >
+        <form (submit)="addRoomSubmit()">
+        <div class="form-group">
+              <input type="text"
+                      class="form-control"
+                      [(ngModel)]="roomAddedName" name="roomAddedName"
+                      placeholder="Room name"
+                      required>
+          </div>
+          <div class="form-group">
+              <input type="text"
+                      class="form-control"
+                      [(ngModel)]="roomUrlName" name="roomUrlName"
+                      placeholder="Image Url"
+                      required>
+          </div>
+          <input type="submit" class="btn btn-success btn-add-room" value="Add">
+        </form>
       </div>
     </div>
   </div>

@@ -5,8 +5,9 @@ import { HttpModule } from '@angular/http';
 import { RouterModule, Routes } from '@angular/router';
 import { AlertModule } from 'ng2-bootstrap';
 import { CollapseModule } from 'ng2-bootstrap';
-import { AccordionModule } from 'ng2-bootstrap/accordion';
+import { AccordionModule } from 'ng2-bootstrap';
 import { ModalModule } from 'ng2-bootstrap';
+import {NgPipesModule} from 'ngx-pipes';
 
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
@@ -57,7 +58,8 @@ const appRoutes: Routes = [
     AlertModule.forRoot(),
     CollapseModule.forRoot(),
     AccordionModule.forRoot(),
-    ModalModule.forRoot()
+    ModalModule.forRoot(),
+    NgPipesModule
   ],
   providers: [
     ValidateService,

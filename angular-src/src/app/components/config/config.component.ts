@@ -10,35 +10,87 @@ import { Router } from '@angular/router';
   styleUrls: ['./config.component.css']
 })
 export class ConfigComponent implements OnInit {
-  floorName: String;
-  roomName: String;
-  moduleName: String;
-  moduleKind: String;
-  lightControl: String;
-  sensor: String;
-
+  floorId: String;
+  rooms: [{
+    name: String,
+    floorId: String,
+    imgPath: String,
+    modules: [String]
+  }];
+  checkClick = true;
+  checkFloor = true;
+  roomDeletedName: String;
+  roomDeletedId: String;
+  roomAddedName: String;
+  roomUrlName: String;
 
   constructor(
                 private validateService: ValidateService,
                 private flashMessage: FlashMessagesService,
-                private authService: HouseService,
+                private houseService: HouseService,
                 private router: Router
              ) { }
 
   ngOnInit() {
   }
 
+  getRooms(floorId) {
+    this.checkFloor = false;
+    this.floorId = floorId;
+    this.houseService.getRooms(floorId).subscribe(rooms => {
+      if(rooms.length){
+        this.rooms = rooms;
+      } else {
+        this.rooms = null;
+        this.flashMessage.show('Not found any rooms. Please add new room', {cssClass: 'alert-danger', timeout: 3000});
+      }
+    })
+  }
 
-      // Register user
-    //this.authService.registerUser(user).subscribe(data => {
-      //if(data.success){
-        //this.flashMessage.show('You are now registered and can log in', {cssClass: 'alert-success', timeout: 3000});
-        //this.router.navigate(['/login']);
-    //  } else {
-      //  this.flashMessage.show('Something went wrong', {cssClass: 'alert-success', timeout: 3000});
-        //this.router.navigate(['/register']);
-      //}
-    //})
+  getDeletedRoom(id, name) {
+    this.roomDeletedName = name;
+    this.roomDeletedId = id;
+  }
 
+  deleteRoom(){
+    this.houseService.deleteRoom({"id":this.roomDeletedId}).subscribe(res => {
+      if(res.success){
+        this.flashMessage.show('Success!!!', {cssClass: 'alert-success', timeout: 3000});
+        this.houseService.getRooms(this.floorId).subscribe(rooms => {
+          if(rooms.length){
+            this.rooms = rooms;
+          } else {
+            this.rooms = null;
+            this.flashMessage.show('Not found any rooms. Please add new room', {cssClass: 'alert-danger', timeout: 3000});
+          }
+        })
+      }else {
+        this.flashMessage.show('Something went wrong', {cssClass: 'alert-danger', timeout: 3000});
+      }
+    });
+  }
 
+  addRoomSubmit(){
+    this.checkClick = true;
+    let newRoom = {
+      "name": this.roomAddedName,
+      "floorId": this.floorId,
+      "imgPath": this.roomUrlName
+    }
+    this.houseService.addRoom(newRoom).subscribe(res => {
+      if(res.success){
+        this.flashMessage.show('Success!!!', {cssClass: 'alert-success', timeout: 3000});
+        this.houseService.getRooms(this.floorId).subscribe(rooms => {
+          if(rooms.length){
+            this.rooms = rooms;
+          } else {
+            this.rooms = null;
+            this.flashMessage.show('Not found any rooms. Please add new room', {cssClass: 'alert-danger', timeout: 3000});
+          }
+        })
+      }else {
+        this.flashMessage.show('Something went wrong', {cssClass: 'alert-success', timeout: 3000});
+      }
+    })
+  }
 }

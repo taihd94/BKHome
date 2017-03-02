@@ -13,10 +13,9 @@ export class HouseService {
   getHouse(){
     let headers = new Headers();
     this.loadToken();
-    console.log(this.authToken);
     headers.append('Authorization', this.authToken);
     headers.append('Content-Type', 'application/json');
-    return this.http.get('http://localhost:3000/house/floors', {headers: headers})
+    return this.http.get('http://localhost:3000/house/floors/getfloors', {headers: headers})
       .map(res => res.json());
   }
 
@@ -27,8 +26,46 @@ export class HouseService {
 
   addFloor(floor){
     let headers = new Headers();
+    this.loadToken();
+    headers.append('Authorization', this.authToken);
     headers.append('Content-Type', 'application/json');
     return this.http.post('http://localhost:3000/house/floors/addfloor', floor, {headers: headers})
+      .map(res => res.json());
+  }
+
+  deleteFloor(floor){
+    let headers = new Headers();
+    this.loadToken();
+    headers.append('Authorization', this.authToken);
+    headers.append('Content-Type', 'application/json');
+    return this.http.post('http://localhost:3000/house/floors/deletefloor', floor, {headers: headers})
+      .map(res => res.json());
+  }
+
+  getRooms(floorId){
+    let headers = new Headers();
+    this.loadToken();
+    headers.append('Authorization', this.authToken);
+    headers.append('Content-Type', 'application/json');
+    return this.http.get('http://localhost:3000/house/' + floorId + '/getrooms', {headers: headers})
+      .map(res => res.json());
+  }
+
+  deleteRoom(id){
+    let headers = new Headers();
+    this.loadToken();
+    headers.append('Authorization', this.authToken);
+    headers.append('Content-Type', 'application/json');
+    return this.http.post('http://localhost:3000/house/rooms/deleteroom', id, {headers: headers})
+      .map(res => res.json());
+  }
+
+  addRoom(room){
+    let headers = new Headers();
+    this.loadToken();
+    headers.append('Authorization', this.authToken);
+    headers.append('Content-Type', 'application/json');
+    return this.http.post('http://localhost:3000/house/rooms/addroom', room, {headers: headers})
       .map(res => res.json());
   }
 

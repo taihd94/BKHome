@@ -18,3 +18,7 @@ module.exports.getListOfFloors = function(callback){
 module.exports.addfloor = function(newFloor, callback){
   newFloor.save(callback);
 }
+
+module.exports.deletefloor = function(query, callback){
+  Floor.remove(query, callback);
+}

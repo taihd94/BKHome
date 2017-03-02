@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, EventEmitter, OnInit, Input, Output } from '@angular/core';
 import {HouseService} from '../../../services/httpservice/house.service';
 import {UserService} from '../../../services/httpservice/user.service';
 import {Router} from '@angular/router';
@@ -10,27 +10,23 @@ import { FlashMessagesService } from 'angular2-flash-messages'
   styleUrls: ['./config-navbar.component.css']
 })
 export class ConfigNavbarComponent implements OnInit {
-  house: [{
-    floors
-  }];
-  floors: [{
-    name: String,
-    id: String,
-    rooms: String
-  }]
-  floorname: String;
+  @Output() selectedFloor = new EventEmitter<Object>();
+
+  floors: Object;
   checkClick = true;
-  deleteFloorName: String;
+  floorDeletedName: String;
+  navbartest = "blhablahb";
+
 
   constructor(
-    private HouseService: HouseService,
+    private houseService: HouseService,
     private authService: UserService,
     private router: Router,
     private flashMessage: FlashMessagesService
   ) { }
 
   ngOnInit() {
-    this.HouseService.getHouse().subscribe(profile => {
+    this.houseService.getHouse().subscribe(profile => {
       this.floors = profile.floors;
     },
     err => {
@@ -39,12 +35,11 @@ export class ConfigNavbarComponent implements OnInit {
     });
   }
 
-  addFloor(){
-    const floorname = this.floorname;
-    this.HouseService.addFloor({"name":floorname}).subscribe(res => {
+    addFloor(floorname){
+    this.houseService.addFloor({"name":floorname}).subscribe(res => {
       if(res.success){
         this.flashMessage.show('Success!!!', {cssClass: 'alert-success', timeout: 3000});
-        this.HouseService.getHouse().subscribe(profile => {
+        this.houseService.getHouse().subscribe(profile => {
           this.floors = profile.floors;
         },
         err => {
@@ -58,7 +53,25 @@ export class ConfigNavbarComponent implements OnInit {
     this.checkClick = !this.checkClick;
   }
 
-  deleteFloor(deleteFloorName){
-    console.log(this.deleteFloorName = deleteFloorName);
+  getFloor(name,floorId){
+    this.floorDeletedName = name;
+    this.selectedFloor.emit(floorId);
+  }
+
+  deleteFloor(){
+    this.houseService.deleteFloor({"name":this.floorDeletedName}).subscribe(res => {
+      if(res.success){
+        this.flashMessage.show('Success!!!', {cssClass: 'alert-success', timeout: 3000});
+        this.houseService.getHouse().subscribe(profile => {
+          this.floors = profile.floors;
+        },
+        err => {
+            console.log(err);
+            return false;
+        });
+      }else {
+        this.flashMessage.show('Something went wrong', {cssClass: 'alert-danger', timeout: 3000});
+      }
+    });
   }
 }

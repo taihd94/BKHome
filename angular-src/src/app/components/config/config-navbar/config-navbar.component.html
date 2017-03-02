@@ -2,11 +2,11 @@
   <div class="modal-dialog modal-sm">
     <div class="modal-content">
       <div class="modal-header">
-        <h4 class="modal-title">Are you sure you want to delete <b>{{deleteFloorName}}</b> ?</h4>
+        <h4 class="modal-title">Are you sure you want to delete <b>{{floorDeletedName}}</b> ?</h4>
       </div>
       <div class="modal-body">
-        <button type="button" class="btn btn-success btnmodal">Yes</button>
-        <button type="button" class="btn btn-danger btnmodal" (click)="smModal.hide()">No</button>
+        <button type="button" class="btn btn-success btn-modal" (click)="smModal.hide()" (click)="deleteFloor()">Yes</button>
+        <button type="button" class="btn btn-danger btn-modal" (click)="smModal.hide()">No</button>
       </div>
     </div>
   </div>
@@ -23,16 +23,19 @@
       <div class="panel-body">
         <div class="row floor">
             <div class="list-group">
-              <div class="list-floor" *ngFor="let floor of floors">
-              <a class="list-group-item" >
-                <button type="button" class="fa fa-minus-circle" (click)="smModal.show()" (click)="deleteFloor(floor.name)"></button> {{floor.name}}</a>
+              <div class="list-floor" *ngFor="let floor of floors | reverse">
+              <a class="list-group-item" (click)="getFloor(floor.name, floor._id)">
+                <button type="button" class="fa fa-minus-circle" (click)="smModal.show()"></button> {{floor.name}}</a>
               </div>
               <div class="list-floor addFloor">
                 <button type="button" class="fa fa-plus-circle fa-1x" (click)="checkClick=!checkClick"></button>
-                <input type="text"
-                      [(ngModel)]="floorname" name="floorname"
-                      [hidden]="checkClick"
-                      (keyup.enter)="addFloor()">
+                <div class="form-group" [hidden]="checkClick">
+                  <input  type="text"
+                          placeholder="Floor Name"
+                          [(ngModel)]="floorname" name="floorname"
+                          class="form-control"
+                          (keyup.enter)="addFloor(floorname)">
+                </div>
               </div>
             </div>
         </div>

@@ -50,4 +50,8 @@ module.exports = function(passport){
       }
     });
   }));
+
+  passport.use('authenticate', new JwtStrategy(opts, (jwt_payload, done) => {
+    return done(null, {});
+  }));
 }
