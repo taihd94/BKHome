@@ -28,13 +28,33 @@
           <div class="panel-body">
             <div class="row">
               <div class="col-sm-4">
-                <img src="https://s-media-cache-ak0.pinimg.com/originals/a5/80/0c/a5800cb89702af494bd3ff843312cf12.jpg"
-                     class="img-responsive roomImg"
-                     alt="Responsive image">
-                <p><i class="fa fa-thermometer-three-quarters" aria-hidden="true"></i> Temperature: 20 oC</p>
-                <p><i class="fa fa-tint" aria-hidden="true"></i> Humidity: 60 % </p>
-                <p><i class="fa fa-sun-o" aria-hidden="true"></i> Light: 150 Lux </p>
-            </div>
+                <div class="roomImage">
+                  <div class="imgAvailable" *ngIf = "room.imgPath">
+                    <img src="{{room.imgPath}}"
+                         class="img-responsive roomImg"
+                         alt="Responsive image">
+                  </div>
+                  <div class="imgNotAvailable" *ngIf = "!room.imgPath" [hidden] = "checkImgClick">
+                    <img src="http://i.imgur.com/FQk1REK.jpg"
+                         class="img-responsive roomImg"
+                         alt="Responsive image">
+                     <form (submit)="addImgSubmit(room._id)">
+                     <div class="form-group form-addImageUrl">
+                           <input type="text"
+                                   class="form-control"
+                                   [(ngModel)]="imgUrl" name="imgUrl"
+                                   placeholder="Add image url"
+                                   required>
+                       </div>
+                     </form>
+                  </div>
+                </div>
+                <div class="sensors">
+                  <p><i class="fa fa-thermometer-three-quarters" aria-hidden="true"></i> Temperature: 20 oC</p>
+                  <p><i class="fa fa-tint" aria-hidden="true"></i> Humidity: 60 % </p>
+                  <p><i class="fa fa-sun-o" aria-hidden="true"></i> Light: 150 Lux </p>
+                </div>
+              </div>
               <div class="col-sm-8">
                 <h2 class="devices collapse in">Devices</h2>
                 <div class="list-group">
@@ -60,13 +80,6 @@
                       class="form-control"
                       [(ngModel)]="roomAddedName" name="roomAddedName"
                       placeholder="Room name"
-                      required>
-          </div>
-          <div class="form-group">
-              <input type="text"
-                      class="form-control"
-                      [(ngModel)]="roomUrlName" name="roomUrlName"
-                      placeholder="Image Url"
                       required>
           </div>
           <input type="submit" class="btn btn-success btn-add-room" value="Add">

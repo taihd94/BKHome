@@ -40,10 +40,6 @@ h2.devices {
   margin-top: 0px;
 }
 
-.roomImg {
-  margin-top: 5px;
-  margin-bottom: 10px;
-}
 
 .block {
      overflow: hidden;
@@ -103,4 +99,12 @@ input {
 
 .btn-add-room {
     line-height: 0;
+}
+
+.sensors {
+  margin-top: 20px;
+}
+
+.form-addImageUrl {
+  width: 100%;
 }

@@ -24,3 +24,7 @@ module.exports.deleteRoom = function(id, callback){
 module.exports.addRoom = function(newRoom, callback){
   newRoom.save(callback);
 }
+
+module.exports.updateImgPath = function(id, imgPath, callback) {
+  Room.findByIdAndUpdate(id, {$set: {"imgPath": imgPath}}, {new: true}, callback);
+}

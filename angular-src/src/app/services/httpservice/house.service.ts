@@ -15,7 +15,7 @@ export class HouseService {
     this.loadToken();
     headers.append('Authorization', this.authToken);
     headers.append('Content-Type', 'application/json');
-    return this.http.get('http://localhost:3000/house/floors/getfloors', {headers: headers})
+    return this.http.get('/house/floors/getfloors', {headers: headers})
       .map(res => res.json());
   }
 
@@ -29,7 +29,7 @@ export class HouseService {
     this.loadToken();
     headers.append('Authorization', this.authToken);
     headers.append('Content-Type', 'application/json');
-    return this.http.post('http://localhost:3000/house/floors/addfloor', floor, {headers: headers})
+    return this.http.post('/house/floors/addfloor', floor, {headers: headers})
       .map(res => res.json());
   }
 
@@ -38,7 +38,7 @@ export class HouseService {
     this.loadToken();
     headers.append('Authorization', this.authToken);
     headers.append('Content-Type', 'application/json');
-    return this.http.post('http://localhost:3000/house/floors/deletefloor', floor, {headers: headers})
+    return this.http.post('/house/floors/deletefloor', floor, {headers: headers})
       .map(res => res.json());
   }
 
@@ -47,7 +47,7 @@ export class HouseService {
     this.loadToken();
     headers.append('Authorization', this.authToken);
     headers.append('Content-Type', 'application/json');
-    return this.http.get('http://localhost:3000/house/' + floorId + '/getrooms', {headers: headers})
+    return this.http.get('/house/floors/' + floorId + '/getrooms', {headers: headers})
       .map(res => res.json());
   }
 
@@ -56,7 +56,7 @@ export class HouseService {
     this.loadToken();
     headers.append('Authorization', this.authToken);
     headers.append('Content-Type', 'application/json');
-    return this.http.post('http://localhost:3000/house/rooms/deleteroom', id, {headers: headers})
+    return this.http.post('/house/rooms/deleteroom', id, {headers: headers})
       .map(res => res.json());
   }
 
@@ -65,7 +65,16 @@ export class HouseService {
     this.loadToken();
     headers.append('Authorization', this.authToken);
     headers.append('Content-Type', 'application/json');
-    return this.http.post('http://localhost:3000/house/rooms/addroom', room, {headers: headers})
+    return this.http.post('/house/rooms/addroom', room, {headers: headers})
+      .map(res => res.json());
+  }
+
+  updateImgPath(query){
+    let headers = new Headers();
+    this.loadToken();
+    headers.append('Authorization', this.authToken);
+    headers.append('Content-Type', 'application/json');
+    return this.http.post('/house/rooms/updateimg', query, {headers: headers})
       .map(res => res.json());
   }
 

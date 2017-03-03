@@ -58,7 +58,7 @@ router.post('/floors/deletefloor', passport.authenticate('authenticate', {sessio
 
   //------------Room API--------------//
   //get list of rooms in the floor which has _id = req.params.id
-router.get('/:floorid/getrooms', passport.authenticate('authenticate', {session:false}), (req, res, next) => {
+router.get('/floors/:floorid/getrooms', passport.authenticate('authenticate', {session:false}), (req, res, next) => {
   let floorId = req.params.floorid;
   Room.getListOfRooms(floorId, (err, rooms) => {
     if(err){
@@ -68,7 +68,6 @@ router.get('/:floorid/getrooms', passport.authenticate('authenticate', {session:
       console.log("Not room found");
     }else {
       res.json(rooms);
-      console.log("Sent list of rooms to client");
     }
   })
 });
@@ -97,12 +96,26 @@ router.get('/:floorid/getrooms', passport.authenticate('authenticate', {session:
         modules: []
     });
 
-    Room.addRoom(newRoom, (err, user) => {
+    Room.addRoom(newRoom, (err, room) => {
       if(err){
         throw err;
         res.json({success: false, msg:'Failed to add new room'});
       } else {
         res.json({success: true, msg:'Successfully added new room'});
+      }
+    });
+  });
+
+  //Add imgPath to room
+  router.post('/rooms/updateimg', passport.authenticate('authenticate', {session:false}), (req, res, next) => {
+    imgPath = req.body.imgPath;
+    roomId = req.body.roomId;
+    Room.updateImgPath(roomId, imgPath, (err, room) => {
+      if(err){
+        throw err;
+        res.json({success: false, msg:'Failed to update imgPath'});
+      } else {
+        res.json({success: true, msg:'Successfully updated imgPath'});
       }
     });
   });

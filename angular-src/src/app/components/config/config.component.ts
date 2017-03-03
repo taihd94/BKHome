@@ -22,6 +22,7 @@ export class ConfigComponent implements OnInit {
   roomDeletedId: String;
   roomAddedName: String;
   roomUrlName: String;
+  imgUrl: String;
 
   constructor(
                 private validateService: ValidateService,
@@ -54,14 +55,7 @@ export class ConfigComponent implements OnInit {
     this.houseService.deleteRoom({"id":this.roomDeletedId}).subscribe(res => {
       if(res.success){
         this.flashMessage.show('Success!!!', {cssClass: 'alert-success', timeout: 3000});
-        this.houseService.getRooms(this.floorId).subscribe(rooms => {
-          if(rooms.length){
-            this.rooms = rooms;
-          } else {
-            this.rooms = null;
-            this.flashMessage.show('Not found any rooms. Please add new room', {cssClass: 'alert-danger', timeout: 3000});
-          }
-        })
+        this.getRooms(this.floorId);
       }else {
         this.flashMessage.show('Something went wrong', {cssClass: 'alert-danger', timeout: 3000});
       }
@@ -78,14 +72,25 @@ export class ConfigComponent implements OnInit {
     this.houseService.addRoom(newRoom).subscribe(res => {
       if(res.success){
         this.flashMessage.show('Success!!!', {cssClass: 'alert-success', timeout: 3000});
-        this.houseService.getRooms(this.floorId).subscribe(rooms => {
-          if(rooms.length){
-            this.rooms = rooms;
-          } else {
-            this.rooms = null;
-            this.flashMessage.show('Not found any rooms. Please add new room', {cssClass: 'alert-danger', timeout: 3000});
-          }
-        })
+        this.getRooms(this.floorId);
+      }else {
+        this.flashMessage.show('Something went wrong', {cssClass: 'alert-success', timeout: 3000});
+      }
+    })
+  }
+
+  addImgSubmit(roomId) {
+    console.log(roomId);
+    console.log(this.imgUrl);
+    let query = {
+      "roomId": roomId,
+      "imgPath": this.imgUrl
+    }
+    this.houseService.updateImgPath(query).subscribe(res=>{
+      console.log(res);
+      if(res.success){
+        this.flashMessage.show('Success!!!', {cssClass: 'alert-success', timeout: 3000});
+        this.getRooms(this.floorId);
       }else {
         this.flashMessage.show('Something went wrong', {cssClass: 'alert-success', timeout: 3000});
       }
