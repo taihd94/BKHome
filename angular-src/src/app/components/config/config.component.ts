@@ -3,6 +3,7 @@ import { ValidateService} from '../../services/validate.service';
 import { HouseService} from '../../services/httpservice/house.service';
 import { FlashMessagesService } from 'angular2-flash-messages'
 import { Router } from '@angular/router';
+import { environment } from '../../../environments/environment';
 
 @Component({
   selector: 'app-register',
@@ -32,6 +33,7 @@ export class ConfigComponent implements OnInit {
              ) { }
 
   ngOnInit() {
+    console.log(environment.baseURL);
   }
 
   getRooms(floorId) {

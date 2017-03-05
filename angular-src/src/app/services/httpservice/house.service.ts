@@ -2,11 +2,12 @@ import { Injectable } from '@angular/core';
 import {Http, Headers} from '@angular/http';
 import 'rxjs/add/operator/map';
 import {tokenNotExpired} from 'angular2-jwt';
+import { environment } from '../../../environments/environment';
 
 @Injectable()
 export class HouseService {
   authToken: any;
-  user: any;
+  baseURL = environment.baseURL;
 
   constructor(private http:Http) { }
 
@@ -15,7 +16,7 @@ export class HouseService {
     this.loadToken();
     headers.append('Authorization', this.authToken);
     headers.append('Content-Type', 'application/json');
-    return this.http.get('/house/floors/getfloors', {headers: headers})
+    return this.http.get(this.baseURL + '/house/floors/getfloors', {headers: headers})
       .map(res => res.json());
   }
 
@@ -29,7 +30,7 @@ export class HouseService {
     this.loadToken();
     headers.append('Authorization', this.authToken);
     headers.append('Content-Type', 'application/json');
-    return this.http.post('/house/floors/addfloor', floor, {headers: headers})
+    return this.http.post(this.baseURL + '/house/floors/addfloor', floor, {headers: headers})
       .map(res => res.json());
   }
 
@@ -38,7 +39,7 @@ export class HouseService {
     this.loadToken();
     headers.append('Authorization', this.authToken);
     headers.append('Content-Type', 'application/json');
-    return this.http.post('/house/floors/deletefloor', floor, {headers: headers})
+    return this.http.post(this.baseURL + '/house/floors/deletefloor', floor, {headers: headers})
       .map(res => res.json());
   }
 
@@ -47,7 +48,7 @@ export class HouseService {
     this.loadToken();
     headers.append('Authorization', this.authToken);
     headers.append('Content-Type', 'application/json');
-    return this.http.get('/house/floors/' + floorId + '/getrooms', {headers: headers})
+    return this.http.get(this.baseURL + '/house/floors/' + floorId + '/getrooms', {headers: headers})
       .map(res => res.json());
   }
 
@@ -56,7 +57,7 @@ export class HouseService {
     this.loadToken();
     headers.append('Authorization', this.authToken);
     headers.append('Content-Type', 'application/json');
-    return this.http.post('/house/rooms/deleteroom', id, {headers: headers})
+    return this.http.post(this.baseURL + '/house/rooms/deleteroom', id, {headers: headers})
       .map(res => res.json());
   }
 
@@ -65,7 +66,7 @@ export class HouseService {
     this.loadToken();
     headers.append('Authorization', this.authToken);
     headers.append('Content-Type', 'application/json');
-    return this.http.post('/house/rooms/addroom', room, {headers: headers})
+    return this.http.post(this.baseURL + '/house/rooms/addroom', room, {headers: headers})
       .map(res => res.json());
   }
 
@@ -74,7 +75,7 @@ export class HouseService {
     this.loadToken();
     headers.append('Authorization', this.authToken);
     headers.append('Content-Type', 'application/json');
-    return this.http.post('/house/rooms/updateimg', query, {headers: headers})
+    return this.http.post(this.baseURL + '/house/rooms/updateimg', query, {headers: headers})
       .map(res => res.json());
   }
 

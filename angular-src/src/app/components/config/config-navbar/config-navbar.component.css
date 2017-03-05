@@ -8,7 +8,6 @@
   position: fixed;
   height: 100vh;
   width: inherit;
-  padding-top: 20px;
 }
 
 .panel-heading{
@@ -20,6 +19,11 @@
 .panel-title {
   font-size: 20px;
   margin-left: 10px;
+  padding-top: 20px;
+}
+
+.panel-body {
+  padding-top: 0px;
 }
 
 .card {
