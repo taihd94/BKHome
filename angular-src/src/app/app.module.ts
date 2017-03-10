@@ -20,7 +20,6 @@ import { DashboardComponent } from './components/dashboard/dashboard.component';
 import { ProfileComponent } from './components/profile/profile.component';
 import { ConfigComponent } from './components/config/config.component'
 import { ConfigNavbarComponent } from './components/config/config-navbar/config-navbar.component';
-import { Configv2Component } from './components/configv2/configv2.component';
 
 import {ValidateService} from './services/validate.service';
 import {UserService} from './services/httpservice/user.service';
@@ -41,7 +40,6 @@ const appRoutes: Routes = [
   {path:'dashboard', component: DashboardComponent, canActivate:[AuthGuard]},
   {path:'profile', component: ProfileComponent, canActivate:[AuthGuard]},
   {path:'config', component: ConfigComponent, canActivate:[AuthGuard]},
-  {path:'config2', component: Configv2Component, canActivate:[AuthGuard]},
   {path:'devices', component: DevicesComponent, canActivate:[AuthGuard]}
 ];
 
@@ -56,7 +54,6 @@ const appRoutes: Routes = [
     ProfileComponent,
     ConfigComponent,
     ConfigNavbarComponent,
-    Configv2Component,
     DevicesComponent,
     LightingcontrolComponent,
     SensorModuleComponent,
