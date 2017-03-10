@@ -25,6 +25,7 @@ var House = require('./home-model/house');
 var Floor = require('./home-model/floor');
 var Room = require('./home-model/room');
 var LightingControl = require('./home-model/lightingControl');
+var SensorModule = require('./home-model/sensorModule');
 
 var house_id = new mongoose.Types.ObjectId();
 var floor_id_1 = new mongoose.Types.ObjectId();
@@ -71,43 +72,143 @@ var floor = [
   new Floor({
       _id: floor_id_1,
       name: "Ground",
-      houseId: house_id,
       rooms: [
-          room_id_1,
-          room_id_2
+        {
+            _id: room_id_1,
+            name: 'Bedroom',
+            imgPath: "https://s-media-cache-ak0.pinimg.com/originals/a5/80/0c/a5800cb89702af494bd3ff843312cf12.jpg",
+            modules: [
+              {
+                kind: 'lightingControl', // 'lightingControl', 'sersorsModule', 'cameraModule',...
+                moduleId: switch_id_1
+              },
+              {
+                kind: 'lightingControl', // 'lightingControl', 'sersorsModule', 'cameraModule',...
+                moduleId: switch_id_1
+              }
+            ]
+        },
+        {
+            _id: room_id_2,
+            name: 'Living room',
+            imgPath: "http://ghk.h-cdn.co/assets/cm/15/11/54ff822674a54-living-rooms-modern-de.jpg",
+            modules: [
+              {
+                kind: 'lightingControl', // 'lightingControl', 'sersorsModule', 'cameraModule',...
+                moduleId: switch_id_1
+              },
+              {
+                kind: 'lightingControl', // 'lightingControl', 'sersorsModule', 'cameraModule',...
+                moduleId: switch_id_1
+              }
+            ]
+        }
       ]
   })
 ]
 
-var room = [
-  new Room({
-      name: 'Bedroom',
-      floorId: floor_id_1,
-      imgPath: "https://s-media-cache-ak0.pinimg.com/originals/a5/80/0c/a5800cb89702af494bd3ff843312cf12.jpg",
-      modules: [
+var lightingControl = [
+  new LightingControl({
+      deviceCode: 'lt01',         // Ex: 'ltctrl12c5'
+      deviceType: 'LinghtingControl',         // 'LinghtingControl'
+      numberOfPorts: 4,     // Ex: '1 port', '4 port', '8 port', ...
+      allowedToAccess: false,
+      lights: [
         {
-          kind: 'lightingControl', // 'lightingControl', 'sersorsModule', 'cameraModule',...
-          moduleId: switch_id_1
+            name: "null",         // Ex: 'Light 1', 'Light 2',...
+            kind: "null",         // Ex: 'Neon', 'Compact',...
+            life_circle: 0000,  // Ex: 6000 hours
+            power: 0000,        // Ex: 60 watt
+            events: []
         },
         {
-          kind: 'lightingControl', // 'lightingControl', 'sersorsModule', 'cameraModule',...
-          moduleId: switch_id_1
+            name: "null",         // Ex: 'Light 1', 'Light 2',...
+            kind: "null",         // Ex: 'Neon', 'Compact',...
+            life_circle: 0000,  // Ex: 6000 hours
+            power: 0000,        // Ex: 60 watt
+            events: []
+        },
+        {
+            name: "null",         // Ex: 'Light 1', 'Light 2',...
+            kind: "null",         // Ex: 'Neon', 'Compact',...
+            life_circle: 0000,  // Ex: 6000 hours
+            power: 0000,        // Ex: 60 watt
+            events: []
+        },
+        {
+            name: "null",         // Ex: 'Light 1', 'Light 2',...
+            kind: "null",         // Ex: 'Neon', 'Compact',...
+            life_circle: 0000,  // Ex: 6000 hours
+            power: 0000,        // Ex: 60 watt
+            events: []
         }
       ]
   }),
-  new Room({
-      name: 'Living room',
-      floorId: floor_id_1,
-      imgPath: "http://ghk.h-cdn.co/assets/cm/15/11/54ff822674a54-living-rooms-modern-de.jpg",
-      modules: [
+  new LightingControl({
+      deviceCode: 'lt02',         // Ex: 'ltctrl12c5'
+      deviceType: 'LinghtingControl',         // 'LinghtingControl'
+      numberOfPorts: 2,     // Ex: '1 port', '4 port', '8 port', ...
+      allowedToAccess: false,
+      lights: [
         {
-          kind: 'lightingControl', // 'lightingControl', 'sersorsModule', 'cameraModule',...
-          moduleId: switch_id_1
+            name: "null",         // Ex: 'Light 1', 'Light 2',...
+            kind: "null",         // Ex: 'Neon', 'Compact',...
+            life_circle: 0000,  // Ex: 6000 hours
+            power: 0000,        // Ex: 60 watt
+            events: []
         },
         {
-          kind: 'lightingControl', // 'lightingControl', 'sersorsModule', 'cameraModule',...
-          moduleId: switch_id_1
+            name: "null",         // Ex: 'Light 1', 'Light 2',...
+            kind: "null",         // Ex: 'Neon', 'Compact',...
+            life_circle: 0000,  // Ex: 6000 hours
+            power: 0000,        // Ex: 60 watt
+            events: []
         }
+      ]
+  }),
+  new LightingControl({
+      deviceCode: 'lt03',         // Ex: 'ltctrl12c5'
+      deviceType: 'LinghtingControl',         // 'LinghtingControl'
+      numberOfPorts: 1,     // Ex: '1 port', '4 port', '8 port', ...
+      allowedToAccess: false,
+      lights: [
+        {
+            name: "null",         // Ex: 'Light 1', 'Light 2',...
+            kind: "null",         // Ex: 'Neon', 'Compact',...
+            life_circle: 0000,  // Ex: 6000 hours
+            power: 0000,        // Ex: 60 watt
+            events: []
+        },
+        {
+            name: "null",         // Ex: 'Light 1', 'Light 2',...
+            kind: "null",         // Ex: 'Neon', 'Compact',...
+            life_circle: 0000,  // Ex: 6000 hours
+            power: 0000,        // Ex: 60 watt
+            events: []
+        }
+      ]
+  })
+]
+
+var sensorModule = [
+  new SensorModule({
+      deviceCode: 'ss01',                 // Ex: 'ss123'
+      deviceType: 'SensorModule',         // 'SensorModule'
+      numberOfSensors: 2,                 // Ex: '1 ss', '4 ss',
+      allowedToAccess: false,
+      battery: 60,      // Ex: '60%', '80%'
+      sensors: [
+        {},{}
+      ]
+  }),
+  new SensorModule({
+      deviceCode: 'ss02',                 // Ex: 'ss123'
+      deviceType: 'SensorModule',         // 'SensorModule'
+      numberOfSensors: 3,                 // Ex: '1 ss', '4 ss',
+      allowedToAccess: false,
+      battery: 80,      // Ex: '60%', '80%'
+      sensors: [
+        {},{},{}
       ]
   })
 ]
@@ -133,10 +234,20 @@ for(var i = 0; i< floor.length; i++) {
 }
 
 done = 0;
-for(var i = 0; i< room.length; i++) {
-    room[i].save(function (err, result) {
+for(var i = 0; i< lightingControl.length; i++) {
+    lightingControl[i].save(function (err, result) {
         done++;
-        if (done === room.length) {
+        if (done === lightingControl.length) {
+            mongoose.disconnect();
+        }
+    });
+}
+
+done = 0;
+for(var i = 0; i< sensorModule.length; i++) {
+    sensorModule[i].save(function (err, result) {
+        done++;
+        if (done === sensorModule.length) {
             mongoose.disconnect();
         }
     });

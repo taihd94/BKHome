@@ -3,11 +3,18 @@
   padding: 0px 0px;
 }
 
-.panel {
+.sidebar {
   background-color: #272c2f;
   position: fixed;
-  height: 100vh;
+  height: 100%;
   width: inherit;
+  min-width: 180px;
+}
+
+.panel {
+  background-color: inherit;
+  border: 0px;
+  margin-bottom: 0px;
 }
 
 .panel-heading{

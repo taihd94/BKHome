@@ -1,0 +1,18 @@
+<br><br><br>
+
+<!-- Plans -->
+<section id="modules">
+    <div class="container">
+        <div class="row">
+            <div class="listOfDevices" *ngFor="let device of listOfDevices">
+              <div class="device" *ngIf="device.deviceType=='LinghtingControl'">
+                <app-lightingcontrol [lightingControl]="device" [listOfFloors] = "listOfFloors"></app-lightingcontrol>
+              </div>
+              <div class="device" *ngIf="device.deviceType=='SensorModule'">
+                <app-sensor-module [sensorModule]="device" [listOfFloors] = "listOfFloors"></app-sensor-module>
+              </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- /Plans -->

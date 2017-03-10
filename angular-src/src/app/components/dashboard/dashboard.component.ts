@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
-import {HouseService} from '../../services/httpservice/house.service';
-import {Router} from '@angular/router';
+import { HouseService} from '../../services/httpservice/house.service';
+import { FlashMessagesService } from 'angular2-flash-messages'
+import { Router } from '@angular/router';
+import { environment } from '../../../environments/environment';
 
 @Component({
   selector: 'app-dashboard',
@@ -15,7 +17,7 @@ export class DashboardComponent implements OnInit {
   ) { }
 
   ngOnInit() {
-    this.authService.getHouse().subscribe(profile => {
+    this.authService.getListOfFloors().subscribe(profile => {
       this.home = profile.home;
       console.log(this.home);
     },

@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { ValidateService} from '../../services/validate.service';
 import { HouseService} from '../../services/httpservice/house.service';
 import { FlashMessagesService } from 'angular2-flash-messages'
 import { Router } from '@angular/router';
@@ -14,7 +13,6 @@ export class ConfigComponent implements OnInit {
   floorId: String;
   rooms: [{
     name: String,
-    floorId: String,
     imgPath: String,
     modules: [String]
   }];
@@ -26,7 +24,6 @@ export class ConfigComponent implements OnInit {
   imgUrl: String;
 
   constructor(
-                private validateService: ValidateService,
                 private flashMessage: FlashMessagesService,
                 private houseService: HouseService,
                 private router: Router
@@ -38,7 +35,7 @@ export class ConfigComponent implements OnInit {
 
   getRooms(floorId) {
     this.floorId = floorId;
-    this.houseService.getRooms(floorId).subscribe(rooms => {
+    this.houseService.getListOfRooms(floorId).subscribe(rooms => {
       if(rooms.length){
         this.rooms = rooms;
       } else {
@@ -54,7 +51,7 @@ export class ConfigComponent implements OnInit {
   }
 
   deleteRoom(){
-    this.houseService.deleteRoom({"id":this.roomDeletedId}).subscribe(res => {
+    this.houseService.deleteRoom(this.floorId, this.roomDeletedId).subscribe(res => {
       if(res.success){
         this.flashMessage.show('Success!!!', {cssClass: 'alert-success', timeout: 3000});
         this.getRooms(this.floorId);
@@ -68,10 +65,9 @@ export class ConfigComponent implements OnInit {
     this.checkClick = true;
     let newRoom = {
       "name": this.roomAddedName,
-      "floorId": this.floorId,
       "imgPath": this.roomUrlName
     }
-    this.houseService.addRoom(newRoom).subscribe(res => {
+    this.houseService.addNewRoom(this.floorId, newRoom).subscribe(res => {
       if(res.success){
         this.flashMessage.show('Success!!!', {cssClass: 'alert-success', timeout: 3000});
         this.getRooms(this.floorId);
@@ -88,7 +84,7 @@ export class ConfigComponent implements OnInit {
       "roomId": roomId,
       "imgPath": this.imgUrl
     }
-    this.houseService.updateImgPath(query).subscribe(res=>{
+    this.houseService.updateImgPath(this.floorId, roomId, query).subscribe(res=>{
       console.log(res);
       if(res.success){
         this.flashMessage.show('Success!!!', {cssClass: 'alert-success', timeout: 3000});

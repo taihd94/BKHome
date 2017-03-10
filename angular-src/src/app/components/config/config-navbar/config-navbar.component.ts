@@ -15,6 +15,7 @@ export class ConfigNavbarComponent implements OnInit {
   floors: Object;
   checkClick = true;
   floorDeletedName: String;
+  floorDeletedId: String;
   navbartest = "blhablahb";
 
 
@@ -25,9 +26,9 @@ export class ConfigNavbarComponent implements OnInit {
     private flashMessage: FlashMessagesService
   ) { }
 
-  ngOnInit() {
-    this.houseService.getHouse().subscribe(profile => {
-      this.floors = profile.floors;
+  getFloors(){
+    this.houseService.getListOfFloors().subscribe(res => {
+      this.floors = res;
     },
     err => {
         console.log(err);
@@ -35,17 +36,15 @@ export class ConfigNavbarComponent implements OnInit {
     });
   }
 
-    addFloor(floorname){
-    this.houseService.addFloor({"name":floorname}).subscribe(res => {
+  ngOnInit() {
+    this.getFloors();
+  }
+
+  addFloor(floorname){
+    this.houseService.addNewFloor({"name":floorname}).subscribe(res => {
       if(res.success){
         this.flashMessage.show('Success!!!', {cssClass: 'alert-success', timeout: 3000});
-        this.houseService.getHouse().subscribe(profile => {
-          this.floors = profile.floors;
-        },
-        err => {
-            console.log(err);
-            return false;
-        });
+        this.getFloors();
       }else {
         this.flashMessage.show('Something went wrong', {cssClass: 'alert-success', timeout: 3000});
       }
@@ -55,20 +54,15 @@ export class ConfigNavbarComponent implements OnInit {
 
   getFloor(name,floorId){
     this.floorDeletedName = name;
+    this.floorDeletedId = floorId;
     this.selectedFloor.emit(floorId);
   }
 
   deleteFloor(){
-    this.houseService.deleteFloor({"name":this.floorDeletedName}).subscribe(res => {
+    this.houseService.deleteFloor(this.floorDeletedId).subscribe(res => {
       if(res.success){
         this.flashMessage.show('Success!!!', {cssClass: 'alert-success', timeout: 3000});
-        this.houseService.getHouse().subscribe(profile => {
-          this.floors = profile.floors;
-        },
-        err => {
-            console.log(err);
-            return false;
-        });
+        this.getFloors();
       }else {
         this.flashMessage.show('Something went wrong', {cssClass: 'alert-danger', timeout: 3000});
       }

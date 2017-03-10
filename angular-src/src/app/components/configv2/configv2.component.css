@@ -1,21 +1,105 @@
-.col-sm-2{
-  min-width: 0px;
-}
-.sidebar {
-  background-color: #272c2f;
-  margin: 0px 0px 0px 0px;
-  height: 1000px;
-  width: 200px;
-  position: fixed;
+.col-sm-2 {
+  margin: 0px 0px;
+  padding: 0px 0px;
 }
 
-.sidebar2 {
-  background-color: #5b5b5b;
-  margin-left: 200px;
-  height: 1000px;
-  width: 200px;
+.sidebar {
+  background-color: #272c2f;
   position: fixed;
+  height: 100%;
+  width: inherit;
+  min-width: 180px;
+}
+
+.panel {
+  background-color: inherit;
+  border: 0px;
+}
+
+.panel-heading{
+  background-color: #272c2f;
+  cursor: pointer;
+  border: 0px;
+}
+
+.panel-title {
+  font-size: 20px;
+  margin-left: 10px;
+  padding-top: 20px;
+}
+
+.panel-body {
+  padding-top: 0px;
+}
+
+.card {
+  padding-top: 0px;
+  padding-left: 10px;
   overflow: hidden;
-  -webkit-transition: width .5s;
-  transition: width .5s;
+  -webkit-transition: height .5s;
+  transition: height .5s;
+}
+
+.list-floor{
+  position: relative;
+}
+
+
+.list-group-item:hover{
+  border-radius: 0;
+  border-color: inherit;
+}
+
+.list-group-item {
+  margin-right: 0px;
+  background-color: inherit;
+  color: #ffffff;
+  border: 0px;
+  position: relative;
+  cursor: pointer;
+}
+
+.fa {
+  cursor: pointer;
+  color: auto;
+  background-color: inherit;
+  border: 0px;
+}
+
+.fa-minus-circle {
+  margin-right: 10px;
+  color: auto;
+}
+
+.fa-plus-circle {
+  color: white;
+  float: left;
+  margin-top: 8px;
+  margin-right: 5px;
+}
+
+.addFloor {
+  margin-left: 23px;
+  margin-top: 10px;
+}
+
+input[name="floorname"]{
+  width: 135px;
+  height: 35px;
+  margin-right: 5px;
+}
+
+.modal-title {
+  text-align: center;
+}
+
+.modal-body{
+  margin: 0 auto;
+  text-align: center;
+}
+
+.btn-modal {
+  min-width: 80px;
+  margin-left: 10px;
+  margin-right: 10px;
 }

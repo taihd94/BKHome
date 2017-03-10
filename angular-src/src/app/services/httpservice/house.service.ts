@@ -11,71 +11,71 @@ export class HouseService {
 
   constructor(private http:Http) { }
 
-  getHouse(){
-    let headers = new Headers();
-    this.loadToken();
-    headers.append('Authorization', this.authToken);
-    headers.append('Content-Type', 'application/json');
-    return this.http.get(this.baseURL + '/house/floors/getfloors', {headers: headers})
-      .map(res => res.json());
-  }
-
   loadToken(){
     const token = localStorage.getItem('id_token');
     this.authToken = token;
   }
 
-  addFloor(floor){
+  getListOfFloors(){
     let headers = new Headers();
     this.loadToken();
     headers.append('Authorization', this.authToken);
     headers.append('Content-Type', 'application/json');
-    return this.http.post(this.baseURL + '/house/floors/addfloor', floor, {headers: headers})
+    return this.http.get(this.baseURL + '/house/floors', {headers: headers})
       .map(res => res.json());
   }
 
-  deleteFloor(floor){
+  addNewFloor(floor){
     let headers = new Headers();
     this.loadToken();
     headers.append('Authorization', this.authToken);
     headers.append('Content-Type', 'application/json');
-    return this.http.post(this.baseURL + '/house/floors/deletefloor', floor, {headers: headers})
+    return this.http.post(this.baseURL + '/house/floors', floor, {headers: headers})
       .map(res => res.json());
   }
 
-  getRooms(floorId){
+  deleteFloor(floorId){
     let headers = new Headers();
     this.loadToken();
     headers.append('Authorization', this.authToken);
     headers.append('Content-Type', 'application/json');
-    return this.http.get(this.baseURL + '/house/floors/' + floorId + '/getrooms', {headers: headers})
+    return this.http.delete(this.baseURL + '/house/floors/' + floorId, {headers: headers})
       .map(res => res.json());
   }
 
-  deleteRoom(id){
+  getListOfRooms(floorId){
     let headers = new Headers();
     this.loadToken();
     headers.append('Authorization', this.authToken);
     headers.append('Content-Type', 'application/json');
-    return this.http.post(this.baseURL + '/house/rooms/deleteroom', id, {headers: headers})
+    return this.http.get(this.baseURL + '/house/floors/' + floorId + '/rooms', {headers: headers})
       .map(res => res.json());
   }
 
-  addRoom(room){
+  deleteRoom(floorId, roomId){
     let headers = new Headers();
     this.loadToken();
     headers.append('Authorization', this.authToken);
     headers.append('Content-Type', 'application/json');
-    return this.http.post(this.baseURL + '/house/rooms/addroom', room, {headers: headers})
+    return this.http.delete(this.baseURL + '/house/floors/' + floorId + '/rooms/' + roomId, {headers: headers})
       .map(res => res.json());
   }
 
-  updateImgPath(query){
+  addNewRoom(floorId, newRoom){
     let headers = new Headers();
     this.loadToken();
     headers.append('Authorization', this.authToken);
     headers.append('Content-Type', 'application/json');
-    return this.http.post(this.baseURL + '/house/rooms/updateimg', query, {headers: headers})
+    return this.http.post(this.baseURL + '/house/floors/' + floorId + '/rooms/', newRoom, {headers: headers})
+      .map(res => res.json());
+  }
+
+  updateImgPath(floorId, roomId, imgPath){
+    let headers = new Headers();
+    this.loadToken();
+    headers.append('Authorization', this.authToken);
+    headers.append('Content-Type', 'application/json');
+    return this.http.put(this.baseURL + '/house/floors/' + floorId + '/rooms/' + roomId + '/imgPath', imgPath, {headers: headers})
       .map(res => res.json());
   }
 

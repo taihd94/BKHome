@@ -1,0 +1,56 @@
+<!-- item -->
+<div class="col-md-10 item">
+    <div class="panel panel-primary panel-pricing">
+        <div class="panel-heading">
+            <i class="fa fa-lightbulb-o" aria-hidden="true"></i>
+            <h3 class="moduleName">Sensor Module #{{sensorModule.moduleCode}}</h3>
+        </div>
+        <div class="panel-body">
+          <div class="panel-body-content">
+            <div class="panel-body-icon">
+              <i class="fa fa-home" aria-hidden="true"></i>
+            </div>
+            <div class="btn-group panel-body-btn">
+              <a class="btn btn-primary dropdown-toggle" data-toggle="dropdown" href="#"> {{selectedFloor}}</a>
+              <ul class="dropdown-menu">
+                <li *ngFor="let floor of listOfFloors" (click)="selectFloor(floor)"><a> {{floor.name}}</a></li>
+              </ul>
+            </div>
+            <div class="panel-body-icon">
+              <i class="fa fa-caret-right" aria-hidden="true"></i>
+            </div>
+            <div class="btn-group panel-body-btn">
+              <a class="btn btn-primary dropdown-toggle" data-toggle="dropdown" href="#"> {{selectedRoom}}</a>
+              <ul class="dropdown-menu">
+                  <li *ngFor="let room of listOfRooms" (click)="selectRoom(room)"><a> {{room.name}}</a></li>
+              </ul>
+            </div>
+            <!-- <p class="floor-room"> 1st Floor / Bedroom</p> -->
+          </div>
+          </div>
+
+          <div class="panel-footer">
+            <table class="table">
+              <thead class="thead-default">
+                <tr>
+                  <th>ID</th>
+                  <th>Device Name</th>
+                  <th>Kind</th>
+                  <th>Battery</th>
+                  <th>Value</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr *ngFor="let sensor of sensorModule.sensors; let i = index">
+                  <th scope="row">{{i+1}}</th>
+                  <td>Light sensor 1</td>
+                  <td>Light sensor</td>
+                  <td>60%</td>
+                  <td>155lux</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+    </div>
+</div>
+<!-- /item -->
