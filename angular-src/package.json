@@ -26,11 +26,13 @@
     "bootstrap": "^3.3.7",
     "core-js": "^2.4.1",
     "font-awesome": "^4.7.0",
+    "ic-datepicker": "0.0.5",
     "jquery": "^3.1.1",
     "ng-sidebar": "^3.3.1",
     "ng2-bootstrap": "^1.4.0",
     "ng2-scrollspy": "^0.3.8",
     "ngx-pipes": "^1.4.5",
+    "ngx-toastr": "^4.3.0",
     "rxjs": "^5.1.0",
     "typescript": "^2.0.10",
     "zone.js": "^0.7.6"

@@ -1,10 +1,10 @@
 var SerialPort = require('serialport');
 var port = new SerialPort('/dev/ttyUSB0', {
-  baudRate: 9600
+  baudRate: 115200
 });
 
 port.on('open', function() {
-  port.write('ATD01678163191\r', function(err) {
+  port.write('hello from PC', function(err) {
     if (err) {
       return console.log('Error on write: ', err.message);
     }

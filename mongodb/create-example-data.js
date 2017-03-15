@@ -110,35 +110,35 @@ var floor = [
 var lightingControl = [
   new LightingControl({
       deviceCode: 'lt01',         // Ex: 'ltctrl12c5'
-      deviceType: 'LinghtingControl',         // 'LinghtingControl'
+      deviceType: 'LightingControl',         // 'LightingControl'
       numberOfPorts: 4,     // Ex: '1 port', '4 port', '8 port', ...
       allowedToAccess: false,
       lights: [
         {
             name: "null",         // Ex: 'Light 1', 'Light 2',...
             kind: "null",         // Ex: 'Neon', 'Compact',...
-            life_circle: 0000,  // Ex: 6000 hours
+            life_time: 0000,  // Ex: 6000 hours
             power: 0000,        // Ex: 60 watt
             events: []
         },
         {
             name: "null",         // Ex: 'Light 1', 'Light 2',...
             kind: "null",         // Ex: 'Neon', 'Compact',...
-            life_circle: 0000,  // Ex: 6000 hours
+            life_time: 0000,  // Ex: 6000 hours
             power: 0000,        // Ex: 60 watt
             events: []
         },
         {
             name: "null",         // Ex: 'Light 1', 'Light 2',...
             kind: "null",         // Ex: 'Neon', 'Compact',...
-            life_circle: 0000,  // Ex: 6000 hours
+            life_time: 0000,  // Ex: 6000 hours
             power: 0000,        // Ex: 60 watt
             events: []
         },
         {
             name: "null",         // Ex: 'Light 1', 'Light 2',...
             kind: "null",         // Ex: 'Neon', 'Compact',...
-            life_circle: 0000,  // Ex: 6000 hours
+            life_time: 0000,  // Ex: 6000 hours
             power: 0000,        // Ex: 60 watt
             events: []
         }
@@ -146,21 +146,21 @@ var lightingControl = [
   }),
   new LightingControl({
       deviceCode: 'lt02',         // Ex: 'ltctrl12c5'
-      deviceType: 'LinghtingControl',         // 'LinghtingControl'
+      deviceType: 'LightingControl',         // 'LightingControl'
       numberOfPorts: 2,     // Ex: '1 port', '4 port', '8 port', ...
       allowedToAccess: false,
       lights: [
         {
             name: "null",         // Ex: 'Light 1', 'Light 2',...
             kind: "null",         // Ex: 'Neon', 'Compact',...
-            life_circle: 0000,  // Ex: 6000 hours
+            life_time: 0000,  // Ex: 6000 hours
             power: 0000,        // Ex: 60 watt
             events: []
         },
         {
             name: "null",         // Ex: 'Light 1', 'Light 2',...
             kind: "null",         // Ex: 'Neon', 'Compact',...
-            life_circle: 0000,  // Ex: 6000 hours
+            life_time: 0000,  // Ex: 6000 hours
             power: 0000,        // Ex: 60 watt
             events: []
         }
@@ -168,21 +168,21 @@ var lightingControl = [
   }),
   new LightingControl({
       deviceCode: 'lt03',         // Ex: 'ltctrl12c5'
-      deviceType: 'LinghtingControl',         // 'LinghtingControl'
+      deviceType: 'LightingControl',         // 'LightingControl'
       numberOfPorts: 1,     // Ex: '1 port', '4 port', '8 port', ...
       allowedToAccess: false,
       lights: [
         {
             name: "null",         // Ex: 'Light 1', 'Light 2',...
             kind: "null",         // Ex: 'Neon', 'Compact',...
-            life_circle: 0000,  // Ex: 6000 hours
+            life_time: 0000,  // Ex: 6000 hours
             power: 0000,        // Ex: 60 watt
             events: []
         },
         {
             name: "null",         // Ex: 'Light 1', 'Light 2',...
             kind: "null",         // Ex: 'Neon', 'Compact',...
-            life_circle: 0000,  // Ex: 6000 hours
+            life_time: 0000,  // Ex: 6000 hours
             power: 0000,        // Ex: 60 watt
             events: []
         }

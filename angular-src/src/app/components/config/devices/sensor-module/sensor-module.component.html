@@ -1,0 +1,77 @@
+<!-- item -->
+<div class="col-md-10 item">
+    <div class="panel panel-primary panel-pricing">
+        <div class="panel-heading">
+            <i class="fa fa-thermometer-empty" aria-hidden="true"></i>
+            <h3 class="deviceName">Sensor Module #{{sensorModule.deviceCode}}</h3>
+            <div class="switch">
+              <ui-switch [(ngModel)]="permission" (click)="changePermission()" color="inherit" size="medium-v2"></ui-switch>
+            </div>
+        </div>
+        <div class="panel-body">
+          <div class="panel-body-content">
+            <div class="panel-body-icon">
+              <i class="fa fa-home" aria-hidden="true"></i>
+            </div>
+            <div class="btn-group panel-body-btn">
+              <a class="btn btn-primary dropdown-toggle" data-toggle="dropdown" href="#"> {{selectedFloor}}</a>
+              <ul class="dropdown-menu">
+                <li *ngFor="let floor of listOfFloors" (click)="selectFloor(floor)"><a> {{floor.name}}</a></li>
+              </ul>
+            </div>
+            <div class="panel-body-icon">
+              <i class="fa fa-caret-right" aria-hidden="true"></i>
+            </div>
+            <div class="btn-group panel-body-btn">
+              <a class="btn btn-primary dropdown-toggle" data-toggle="dropdown" href="#"> {{selectedRoom}}</a>
+              <ul class="dropdown-menu">
+                  <li *ngFor="let room of listOfRooms" (click)="selectRoom(room)"><a> {{room.name}}</a></li>
+              </ul>
+            </div>
+            <div class="battery">
+              <i class="fa fa-battery-half" aria-hidden="true"></i>
+              <span> {{sensorModule.battery}}%</span>
+            </div>
+            <p class="connect">{{permission?'Connected':'Disconnected'}}</p>
+          </div>
+        </div>
+
+        <div class="panel-footer">
+          <table class="table">
+            <thead class="thead-default">
+              <tr>
+                <th>ID</th>
+                <th>Device Name</th>
+                <th>Kind</th>
+                <th>Value</th>
+              </tr>
+            </thead>
+            <tbody (keyup)="showSaveBtn()">
+              <tr *ngFor="let sensor of sensorModule.sensors; let i = index">
+                <th scope="row">{{i+1}}</th>
+                <td><input type="text" (blur)="edit(sensor._id, $event)" name="name" value="{{sensor.name}}"></td>
+                <td>
+                   <div class="btn-group">
+                     <input type="text" (blur)="edit(sensor._id, $event)" name="kind" value="{{sensor.kind}}"
+                              data-toggle="dropdown">
+                     <ul class="dropdown-menu kindOfLight">
+                        <li (click)="selectKindOfSensor(sensor._id, 'Light')"><a>Light</a></li>
+                        <li (click)="selectKindOfSensor(sensor._id, 'Temperature')"><a>Temperature</a></li>
+                        <li (click)="selectKindOfSensor(sensor._id, 'Humidity')"><a>Humidity</a></li>
+                        <li (click)="selectKindOfSensor(sensor._id, 'Gas')"><a>Gas</a></li>
+                     </ul>
+                   </div>
+                </td>
+                <td ><input type="text" (blur)="edit(sensor._id, $event)" name="value" value="null"  style="width: 50px"></td>
+              </tr>
+            </tbody>
+          </table>
+          <div  [hidden]="saveBtnHidden" class="save">
+            <button class="btn btn-primary btn-save" type="button" name="button" (click)="save()" >Save</button>
+          </div>
+          <div class="test">
+          </div>
+        </div>
+    </div>
+</div>
+<!-- /item -->

@@ -1,9 +1,8 @@
 import { Component, EventEmitter, OnInit, Input, Output } from '@angular/core';
-import { HouseService} from '../../../services/httpservice/house.service';
-import { DeviceService} from '../../../services/httpservice/device.service';
+import { HouseService} from '../../../../services/httpservice/house.service';
+import { DeviceService} from '../../../../services/httpservice/device.service';
 import { FlashMessagesService } from 'angular2-flash-messages'
 import { Router } from '@angular/router';
-import { environment } from '../../../../environments/environment';
 
 @Component({
   selector: 'app-lightingcontrol',
@@ -12,7 +11,6 @@ import { environment } from '../../../../environments/environment';
 })
 export class LightingcontrolComponent implements OnInit {
   @Input() lightingControl;
-  @Input() listOfFloors;
   constructor(
               private flashMessage: FlashMessagesService,
               private houseService: HouseService,
@@ -20,6 +18,13 @@ export class LightingcontrolComponent implements OnInit {
               private router: Router
               ) { }
 
+  listOfFloors: [{
+    name: String
+    rooms: [{
+      _id
+      name: String
+    }]
+  }];
   listOfRooms: [{
     _id: String,
     name: String
@@ -28,6 +33,7 @@ export class LightingcontrolComponent implements OnInit {
   selectedRoom: String;
   roomFoundFlag = false;
   saveBtnHidden = true;
+  permission: Boolean;
 
   ngOnInit() {
     this.houseService.getListOfFloors().subscribe(floors=>{
@@ -49,6 +55,7 @@ export class LightingcontrolComponent implements OnInit {
         this.selectedFloor = "Select floor";
         this.selectedRoom = "Select room";
       }
+      this.permission = this.lightingControl.allowedToAccess;
     })
   };
 
@@ -96,8 +103,8 @@ export class LightingcontrolComponent implements OnInit {
       case "power":
         this.lightingControl.lights[index].power = Number(value);
         break;
-      case "life_circle":
-        this.lightingControl.lights[index].life_circle = Number(value);
+      case "life_time":
+        this.lightingControl.lights[index].life_time = Number(value);
         break;
     }
   }
@@ -119,6 +126,15 @@ export class LightingcontrolComponent implements OnInit {
 
   showSaveBtn(){
     this.saveBtnHidden = false;
+  }
+
+  changePermission(){
+    let json = {
+      'permission': this.permission
+    }
+    this.deviceService.updatePermission(this.lightingControl._id, json).subscribe(res=>{
+      console.log(res);
+    })
   }
 
 }

@@ -39,6 +39,7 @@ router.get('/', (req, res, next)=>{
   })
 })
 
+
 router.put('/:id/room-id', (req, res, next) => {
   let deviceId = req.params.id;
   let roomId = req.body.roomId;
@@ -65,6 +66,14 @@ router.put('/:id/lights', (req, res, next) => {
   let deviceId = req.params.id;
   let lightingcontrol = req.body;
   LightingControl.updateLights(deviceId, lightingcontrol, result=>{
+    res.json(result);
+  })
+})
+
+router.put('/:id/sensors', (req, res, next) => {
+  let deviceId = req.params.id;
+  let sensorModule = req.body;
+  SensorModule.updateSensors(deviceId, sensorModule, result=>{
     res.json(result);
   })
 })

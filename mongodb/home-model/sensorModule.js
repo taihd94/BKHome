@@ -22,29 +22,25 @@ var SensorModuleSchema = new Schema({
 
 const SensorModule = module.exports = mongoose.model('SensorModule', SensorModuleSchema);
 
-module.exports.getListOfDevices = function(callback){
-  SensorModule.find((err, listOfModules)=>{
-    if(err) throw err;
-    callback(listOfModules);
-  });
-}
 
-module.exports.updateRoomId = function(moduleId, roomId, callback){
-  console.log(moduleId);
-  SensorModule.findById(moduleId, (err, sensorModule)=>{
-    if(err) throw err;
-    if(sensorModule){
-      sensorModule.roomId = roomId;
-      sensorModule.save((err)=>{
+module.exports.updateSensors = function(deviceId, sensorModule, callback){
+  SensorModule.findById(deviceId, (err, sensor)=>{
+    if(err){
+      throw err;
+      callback({success: false, msg: "something went wrong"});
+    }
+    if(sensor){
+      sensor.sensors = sensorModule.sensors;
+      sensor.save((err)=>{
         if(err){
           throw err;
-          callback({success: "false", msg: "something went wrong"});
+          callback({success: false, msg: "something went wrong"});
         } else {
-          callback({success: "true", msg: "roomId has been updated to module"});
+          callback({success: true, msg: "The sensors has been updated to device"});
         }
-      });
+      })
     } else {
-      callback({success: "false", msg: "module not found"});
+      callback({success: false, msg: "module not found"});
     }
   })
 }

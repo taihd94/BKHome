@@ -1,90 +1,10 @@
-<div bsModal #smModal="bs-modal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-sm">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h4 class="modal-title">Are you sure you want to delete <b>{{roomDeletedName}}</b> ?</h4>
-      </div>
-      <div class="modal-body">
-        <button type="button" class="btn btn-success btn-modal" (click)="smModal.hide()" (click)="deleteRoom()">Yes</button>
-        <button type="button" class="btn btn-danger btn-modal" (click)="smModal.hide()">No</button>
-      </div>
-    </div>
-  </div>
-</div>
-
 <div class="row">
-  <app-config-navbar (selectedFloor)="getRooms($event)"></app-config-navbar>
-  <div class="col-sm-8 room">
+  <app-config-navbar (selectedConfig)="selectedConfig($event)"></app-config-navbar>
+  <div class="col-sm-8 config" [ngSwitch]="switch_config_name">
     <flash-messages></flash-messages>
-    <div class="listOfRooms" *ngFor = "let room of rooms">
-      <div class="panel panel-success">
-        <div class="panel-heading">
-          <div class="title" (click)="height = height ? 0 : el.scrollHeight">
-            <a href="/config#{{room._id}}" class="panel-title">{{room.name}}</a>
-          </div>
-          <button type="button" class="fa fa-times fa-2x" (click)="getDeletedRoom(room._id, room.name)" (click)="smModal.show()"></button>
-        </div>
-        <div class="card card-block card-header block" [style.height]="height + 'px'" #el>
-          <div class="panel-body">
-            <div class="row">
-              <div class="col-sm-4">
-                <div class="roomImage">
-                  <div class="imgAvailable" *ngIf = "room.imgPath">
-                    <img src="{{room.imgPath}}"
-                         class="img-responsive roomImg"
-                         alt="Responsive image">
-                  </div>
-                  <div class="imgNotAvailable" *ngIf = "!room.imgPath" [hidden] = "checkImgClick">
-                    <img src="http://i.imgur.com/FQk1REK.jpg"
-                         class="img-responsive roomImg"
-                         alt="Responsive image">
-                     <form (submit)="addImgSubmit(room._id)">
-                     <div class="form-group form-addImageUrl">
-                           <input type="text"
-                                   class="form-control"
-                                   [(ngModel)]="imgUrl" name="imgUrl"
-                                   placeholder="Add image url"
-                                   required>
-                       </div>
-                     </form>
-                  </div>
-                </div>
-                <div class="sensors">
-                  <p><i class="fa fa-thermometer-three-quarters" aria-hidden="true"></i> Temperature: 20 oC</p>
-                  <p><i class="fa fa-tint" aria-hidden="true"></i> Humidity: 60 % </p>
-                  <p><i class="fa fa-sun-o" aria-hidden="true"></i> Light: 150 Lux </p>
-                </div>
-              </div>
-              <div class="col-sm-8">
-                <h2 class="devices collapse in">Devices</h2>
-                <div class="list-group">
-                  <a href="/config" class="list-group-item">Light 1</a>
-                  <a href="/config" class="list-group-item">Light 2</a>
-                  <a href="/config" class="list-group-item">Light 3</a>
-                  <a href="/config" class="list-group-item">Light 4</a>
-                  <a href="/config" class="list-group-item">Sensor 1</a>
-                  <a href="/config" class="list-group-item">Sensor 2</a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="addRoom" [hidden]="!floorId">
-      <button type="button" class="fa fa-plus-circle fa-2x" (click)="checkClick=!checkClick"></button>
-      <div class="input" [hidden]="checkClick" >
-        <form (submit)="addRoomSubmit()">
-        <div class="form-group">
-              <input type="text"
-                      class="form-control"
-                      [(ngModel)]="roomAddedName" name="roomAddedName"
-                      placeholder="Room name"
-                      required>
-          </div>
-          <input type="submit" class="btn btn-success btn-add-room" value="Add">
-        </form>
-      </div>
-    </div>
+    <app-config-home [floorId] = "selectedFloorId" *ngSwitchCase="'home'"></app-config-home>
+    <app-devices *ngSwitchCase="'devices'"></app-devices>
+    <app-scripts *ngSwitchCase="'scripts'"></app-scripts>
+    <app-rules *ngSwitchCase="'rules'"></app-rules>
   </div>
 </div>

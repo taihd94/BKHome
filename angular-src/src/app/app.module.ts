@@ -8,8 +8,10 @@ import { CollapseModule } from 'ng2-bootstrap';
 import { AccordionModule } from 'ng2-bootstrap';
 import { ModalModule } from 'ng2-bootstrap';
 import {NgPipesModule} from 'ngx-pipes';
-import { SidebarModule } from 'ng-sidebar';
 import {UiSwitchModule} from "angular2-ui-switch/src/index";
+import { ToastrModule } from 'ngx-toastr';
+import { CommonModule } from '@angular/common';
+import { IcDatepickerModule } from 'ic-datepicker';
 
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
@@ -27,10 +29,13 @@ import {HouseService} from './services/httpservice/house.service';
 import {DeviceService} from './services/httpservice/device.service';
 import {FlashMessagesModule} from 'angular2-flash-messages';
 import {AuthGuard} from './guards/auth.guard';
-import { DevicesComponent } from './components/devices/devices.component';
-import { LightingcontrolComponent } from './components/devices/lightingcontrol/lightingcontrol.component';
-import { SensorModuleComponent } from './components/devices/sensor-module/sensor-module.component';
-import { LightInfoComponent } from './components/devices/lightingcontrol/light-info/light-info.component';
+import { DevicesComponent } from './components/config/devices/devices.component';
+import { LightingcontrolComponent } from './components/config/devices/lightingcontrol/lightingcontrol.component';
+import { SensorModuleComponent } from './components/config/devices/sensor-module/sensor-module.component';
+import { RoomComponent } from './components/config/config-home/room/room.component';
+import { ConfigHomeComponent } from './components/config/config-home/config-home.component';
+import { ScriptsComponent } from './components/config/scripts/scripts.component';
+import { RulesComponent } from './components/config/rules/rules.component';
 
 
 const appRoutes: Routes = [
@@ -57,7 +62,10 @@ const appRoutes: Routes = [
     DevicesComponent,
     LightingcontrolComponent,
     SensorModuleComponent,
-    LightInfoComponent
+    RoomComponent,
+    ConfigHomeComponent,
+    ScriptsComponent,
+    RulesComponent
   ],
   imports: [
     UiSwitchModule,
@@ -71,7 +79,8 @@ const appRoutes: Routes = [
     AccordionModule.forRoot(),
     ModalModule.forRoot(),
     NgPipesModule,
-    SidebarModule
+    ToastrModule.forRoot(),
+    IcDatepickerModule
   ],
   providers: [
     ValidateService,

@@ -7,6 +7,7 @@ const config = require('../config/database');
 const House = require('../mongodb/home-model/house');
 const Floor = require('../mongodb/home-model/floor');
 const Room = require('../mongodb/home-model/room');
+const Devices = require('../mongodb/home-model/devices');
 
 
 //------------FLOOR API--------------//
@@ -76,6 +77,13 @@ router.put('/floors/:floorid/rooms/:id/imgPath', (req, res, next) => {
   Floor.updateImgPath(floorId, roomId, imgPath, (result) => {
     res.json(result);
   });
+});
+
+router.get('/floors/:floorid/rooms/:roomid/devices', (req, res, next) => {
+  let roomId = req.params.roomid;
+  Devices.getListOfDevicesInRoom(roomId, (result) => {
+    res.json(result);
+  })
 });
 
 module.exports = router;

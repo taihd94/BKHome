@@ -1,14 +1,5 @@
-.row{
-  background-color: #393a35;
-  min-height: 100vh;
-}
 
-.col-sm-8 {
-  margin: 0px 0px 0px 0px;
-  padding: 0px 0px 0px 0px;
-}
-
-.config{
+.room{
   margin: 25px 15px 0px 25px;
 }
 

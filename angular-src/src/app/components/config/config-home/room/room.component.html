@@ -1,0 +1,74 @@
+<div bsModal #smModal="bs-modal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-sm">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title">Are you sure you want to delete <b>{{roomDeletedName}}</b> ?</h4>
+      </div>
+      <div class="modal-body">
+        <button type="button" class="btn btn-success btn-modal" (click)="smModal.hide()" (click)="deleteRoom()">Yes</button>
+        <button type="button" class="btn btn-danger btn-modal" (click)="smModal.hide()">No</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="panel panel-success">
+  <div class="panel-heading">
+    <div class="title" (click)="height = height ? 0 : el.scrollHeight">
+      <a href="/config#{{room._id}}" class="panel-title">{{room.name}}</a>
+      <button type="button" class="fa fa-times fa-2x" (click)="getDeletedRoom(room._id, room.name)" (click)="smModal.show()"></button>
+    </div>
+  </div>
+  <div class="card card-block card-header block" [style.height]="height + 'px'" #el>
+    <div class="panel-body">
+      <div class="row">
+        <div class="col-sm-4">
+          <div class="roomImage">
+            <div class="imgAvailable" *ngIf = "room.imgPath">
+              <img src="{{room.imgPath}}"
+                   class="img-responsive roomImg"
+                   alt="Responsive image">
+            </div>
+            <div class="imgNotAvailable" *ngIf = "!room.imgPath" [hidden] = "checkImgClick">
+              <img src="http://i.imgur.com/FQk1REK.jpg"
+                   class="img-responsive roomImg"
+                   alt="Responsive image">
+               <form (submit)="addImgSubmit(room._id)">
+               <div class="form-group form-addImageUrl">
+                     <input type="text"
+                             class="form-control"
+                             [(ngModel)]="imgUrl" name="imgUrl"
+                             placeholder="Add image url"
+                             required>
+                 </div>
+               </form>
+            </div>
+          </div>
+          <div class="sensors">
+            <p><i class="fa fa-thermometer-three-quarters" aria-hidden="true"></i> Temperature: 20 oC</p>
+            <p><i class="fa fa-tint" aria-hidden="true"></i> Humidity: 60 % </p>
+            <p><i class="fa fa-sun-o" aria-hidden="true"></i> Light: 150 Lux </p>
+          </div>
+        </div>
+        <div class="col-sm-8 devices">
+          <h2 class="collapse in">Devices</h2>
+          <div class="list-group">
+            <div class="device" *ngFor="let device of devices">
+              <div class="lights"  *ngIf="device.deviceType=='LightingControl'">
+                <div class="light" *ngFor="let light of device.lights" (click)="checkClick=!checkClick">
+                  <a class="list-group-item">{{light.name}}</a>
+                  <ui-switch [ngModel]="checkClick" size="medium-v2"></ui-switch><br>
+                </div>
+              </div>
+              <!-- <div class="sensors"  *ngIf="device.deviceType=='SensorModule'">
+                <div class="sensor" *ngFor="let sensor of device.sensors">
+                  <a href="/config" class="list-group-item">{{sensor.name}}</a>
+                </div>
+              </div> -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

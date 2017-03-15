@@ -29,12 +29,30 @@ export class DeviceService {
       .map(res => res.json());
   }
 
+  updatePermission(deviceId, permission){
+    let headers = new Headers();
+    this.loadToken();
+    headers.append('Authorization', this.authToken);
+    headers.append('Content-Type', 'application/json');
+    return this.http.put(this.baseURL + '/devices/' + deviceId + '/permission', permission, {headers: headers})
+      .map(res => res.json());
+  }
+
   updateLights(deviceId, lightingcontrol){
     let headers = new Headers();
     this.loadToken();
     headers.append('Authorization', this.authToken);
     headers.append('Content-Type', 'application/json');
     return this.http.put(this.baseURL + '/devices/' + deviceId + '/lights', lightingcontrol, {headers: headers})
+      .map(res => res.json());
+  }
+
+  updateSensors(deviceId, lightingcontrol){
+    let headers = new Headers();
+    this.loadToken();
+    headers.append('Authorization', this.authToken);
+    headers.append('Content-Type', 'application/json');
+    return this.http.put(this.baseURL + '/devices/' + deviceId + '/sensors', lightingcontrol, {headers: headers})
       .map(res => res.json());
   }
 

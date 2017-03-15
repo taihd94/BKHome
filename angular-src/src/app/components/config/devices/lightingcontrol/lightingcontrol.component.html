@@ -5,7 +5,7 @@
             <i class="fa fa-lightbulb-o" aria-hidden="true"></i>
             <h3 class="deviceName">Lighting Control #{{lightingControl.deviceCode}}</h3>
             <div class="switch">
-              <ui-switch [(ngModel)]="connected" ></ui-switch>
+              <ui-switch [(ngModel)]="permission" (click)="changePermission()" color="inherit" size="medium-v2"></ui-switch>
             </div>
         </div>
         <div class="panel-body">
@@ -28,7 +28,7 @@
                   <li *ngFor="let room of listOfRooms" (click)="selectRoom(room)"><a> {{room.name}}</a></li>
               </ul>
             </div>
-            <span class="connect">{{connected?'Connected':'Disconnected'}}</span>
+            <span class="connect">{{permission?'Connected':'Disconnected'}}</span>
             <!-- <p class="floor-room"> 1st Floor / Bedroom</p> -->
           </div>
           </div>
@@ -41,7 +41,7 @@
                 <th>Device Name</th>
                 <th>Kind</th>
                 <th>Power(W)</th>
-                <th>Life cycle(H)</th>
+                <th>Life time(H)</th>
                 <th>Status</th>
               </tr>
             </thead>
@@ -62,8 +62,8 @@
                    </div>
                 </td>
                 <td><input type="text" (blur)="edit(light._id, $event)" name="power" value="{{light.power}}"></td>
-                <td><input type="text" (blur)="edit(light._id, $event)" name="life_circle" value="{{light.life_circle}}"></td>
-                <td ><input type="text" (blur)="edit(light._id, $event)" name="status" value="On"  style="width: 50px"></td>
+                <td><input type="text" (blur)="edit(light._id, $event)" name="life_time" value="{{light.life_time}}"></td>
+                <td ><input type="text" (blur)="edit(light._id, $event)" name="status" value="null"  style="width: 50px"></td>
               </tr>
             </tbody>
           </table>
