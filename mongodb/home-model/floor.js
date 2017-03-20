@@ -21,9 +21,9 @@ module.exports.getListOfFloors = function(callback){
   Floor.find((err, floors)=>{
     if(err) {
       throw err;
-      callback({success: "false", msg:"something went wrong"});
+      return callback({success: false, msg:"something went wrong"});
     } else {
-      callback(floors);
+      return callback(floors);
     }
   });
 }
@@ -32,9 +32,9 @@ module.exports.addfloor = function(newFloor, callback){
   newFloor.save((err)=>{
     if(err) {
       throw err;
-      callback({success: "false", msg:"something went wrong"});
+      return callback({success: false, msg:"something went wrong"});
     } else {
-      callback({success: true, msg:'Successfully added new floor'})
+      return callback({success: true, msg:'Successfully added new floor'})
     }
   });
 }
@@ -43,25 +43,29 @@ module.exports.deletefloor = function(id, callback){
   Floor.findByIdAndRemove(id, (err, floor)=>{
     if(err){
       throw err;
-      callback({success: false, msg:"something went wrong"});
+      return callback({success: false, msg:"something went wrong"});
     }
     if(floor) {
-      callback({success: true, msg:'Floor has been deleted'})
+      return callback({success: true, msg:'Floor has been deleted'})
     } else {
-      callback({success: false, msg:'Floor not found'})
+      return callback({success: false, msg:'Floor not found'})
     }
   });
 }
 
 module.exports.getListOfRooms = function(floorId, callback){
-  Floor.findById(floorId, (err, floor)=>{
-    if(err) throw err;
-    if(floor){
-      callback(floor.rooms);
-    } else{
-      callback({success: "false", msg:"floor not found"});
-    }
-  })
+  if (floorId.match(/^[0-9a-fA-F]{24}$/)) {
+    Floor.findById(floorId, (err, floor)=>{
+      if(err) throw err;
+      if(floor){
+        return callback(floor.rooms);
+      } else{
+        return callback({success: false, msg:"Floor not found"});
+      }
+    })
+  }else {
+    return callback({success: false, msg:"FloorId is invalid"});
+  }
 }
 
 module.exports.deleteRoom = function(roomId, callback){
@@ -71,10 +75,10 @@ module.exports.deleteRoom = function(roomId, callback){
       floor.rooms.id(roomId).remove();
       floor.save((err)=>{
         if(err) throw err;
-        callback({success: "true", msg:"room has been deleted"})
+        return callback({success: "true", msg:"room has been deleted"})
       });
     } else {
-      callback({success: "false", msg:"room not found"})
+      return callback({success: false, msg:"room not found"})
     }
   })
 }
@@ -86,10 +90,10 @@ module.exports.addNewRoom = function(floorId, newRoom, callback){
       floor.rooms.push(newRoom);
       floor.save((err)=>{
         if(err) throw err;
-        callback({success: "true", msg:"room has been added"})
+        return callback({success: "true", msg:"room has been added"})
       });
     } else{
-      callback({success: "false", msg:"floor not found"})
+      return callback({success: false, msg:"floor not found"})
     }
   })
 }
@@ -101,10 +105,10 @@ module.exports.updateImgPath = function(floorId, roomId, imgPath, callback) {
       floor.rooms.id(roomId).imgPath = imgPath;
       floor.save((err)=>{
         if(err) throw err;
-        callback({success: "true", msg:"imgPath has been updated"});
+        return callback({success: "true", msg:"imgPath has been updated"});
       });
     } else {
-      callback({success: "false", msg:"floor or room not found"});
+      return callback({success: false, msg:"floor or room not found"});
     }
   })
 }

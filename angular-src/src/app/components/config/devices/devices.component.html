@@ -1,16 +1,13 @@
-<!-- Plans -->
-<section id="modules">
-    <div class="container">
-        <div class="row">
-            <div class="listOfDevices" *ngFor="let device of listOfDevices">
-              <div class="device" *ngIf="device.deviceType=='LightingControl'">
-                <app-lightingcontrol [lightingControl]="device"></app-lightingcontrol>
-              </div>
-              <div class="device" *ngIf="device.deviceType=='SensorModule'">
-                <app-sensor-module [sensorModule]="device"></app-sensor-module>
-              </div>
+<div class="col-sm-9">
+  <flash-messages></flash-messages>
+  <section>
+          <div class="listOfDevices" *ngFor="let device of listOfDevices">
+            <div class="device" *ngIf="device.deviceType=='LightingControl'">
+              <app-lightingcontrol [lightingControl]="device"></app-lightingcontrol>
             </div>
-        </div>
-    </div>
-</section>
-<!-- /Plans -->
+            <div class="device" *ngIf="device.deviceType=='SensorModule'">
+              <app-sensor-module [sensorModule]="device"></app-sensor-module>
+            </div>
+          </div>
+  </section>
+</div>

@@ -11,6 +11,7 @@ var LightingControlSchema = new Schema({
       {
           name: String,         // Ex: 'Light 1', 'Light 2',...
           kind: String,         // Ex: 'Neon', 'Compact',...
+          typeOfControl: String,         // Ex: 'ON/OFF', 'DIM'
           life_time: Number,  // Ex: 6000 hours
           power: Number,        // Ex: 60 watt
           events: [{

@@ -117,6 +117,7 @@ var lightingControl = [
         {
             name: "null",         // Ex: 'Light 1', 'Light 2',...
             kind: "null",         // Ex: 'Neon', 'Compact',...
+            typeOfControl: "null",         // Ex: 'ON/OFF', 'DIM'
             life_time: 0000,  // Ex: 6000 hours
             power: 0000,        // Ex: 60 watt
             events: []
@@ -124,6 +125,7 @@ var lightingControl = [
         {
             name: "null",         // Ex: 'Light 1', 'Light 2',...
             kind: "null",         // Ex: 'Neon', 'Compact',...
+            typeOfControl: "null",         // Ex: 'ON/OFF', 'DIM'
             life_time: 0000,  // Ex: 6000 hours
             power: 0000,        // Ex: 60 watt
             events: []
@@ -131,6 +133,7 @@ var lightingControl = [
         {
             name: "null",         // Ex: 'Light 1', 'Light 2',...
             kind: "null",         // Ex: 'Neon', 'Compact',...
+            typeOfControl: "null",         // Ex: 'ON/OFF', 'DIM'
             life_time: 0000,  // Ex: 6000 hours
             power: 0000,        // Ex: 60 watt
             events: []
@@ -138,6 +141,7 @@ var lightingControl = [
         {
             name: "null",         // Ex: 'Light 1', 'Light 2',...
             kind: "null",         // Ex: 'Neon', 'Compact',...
+            typeOfControl: "null",         // Ex: 'ON/OFF', 'DIM'
             life_time: 0000,  // Ex: 6000 hours
             power: 0000,        // Ex: 60 watt
             events: []
@@ -153,6 +157,7 @@ var lightingControl = [
         {
             name: "null",         // Ex: 'Light 1', 'Light 2',...
             kind: "null",         // Ex: 'Neon', 'Compact',...
+            typeOfControl: "null",         // Ex: 'ON/OFF', 'DIM'
             life_time: 0000,  // Ex: 6000 hours
             power: 0000,        // Ex: 60 watt
             events: []
@@ -160,6 +165,7 @@ var lightingControl = [
         {
             name: "null",         // Ex: 'Light 1', 'Light 2',...
             kind: "null",         // Ex: 'Neon', 'Compact',...
+            typeOfControl: "null",         // Ex: 'ON/OFF', 'DIM'
             life_time: 0000,  // Ex: 6000 hours
             power: 0000,        // Ex: 60 watt
             events: []
@@ -175,6 +181,7 @@ var lightingControl = [
         {
             name: "null",         // Ex: 'Light 1', 'Light 2',...
             kind: "null",         // Ex: 'Neon', 'Compact',...
+            typeOfControl: "null",         // Ex: 'ON/OFF', 'DIM'
             life_time: 0000,  // Ex: 6000 hours
             power: 0000,        // Ex: 60 watt
             events: []
@@ -182,6 +189,7 @@ var lightingControl = [
         {
             name: "null",         // Ex: 'Light 1', 'Light 2',...
             kind: "null",         // Ex: 'Neon', 'Compact',...
+            typeOfControl: "null",         // Ex: 'ON/OFF', 'DIM'
             life_time: 0000,  // Ex: 6000 hours
             power: 0000,        // Ex: 60 watt
             events: []

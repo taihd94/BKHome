@@ -1,7 +1,35 @@
-/*.item{
-  margin-left: 7%;
-  margin-right: 7%;
-}*/
+.col-md-8{
+  padding: 26px 0px 10px 42px;
+}
+
+/*add script*/
+.addscript {
+  margin: 8px 8px 8px 16px;
+}
+
+
+.fa {
+  cursor: pointer;
+  color: auto;
+  background-color: inherit;
+  border: 0px;
+}
+
+
+.fa-plus-circle {
+  color: #93c54b;
+  float: left;
+  margin-right: 10px;
+  padding-bottom: 35px;
+}
+
+input {
+  height: 30px;
+  margin-right: 10px;
+}
+/*add script*/
+
+/*script*/
 
 .script{
   margin-top: 50px;
@@ -15,11 +43,58 @@
 .row, .script-body{
   background-color: #f8f5f0;
   margin: 0;
+  display: flex;
+}
+
+.scirpt-body>.col-md-4{
+  padding: 40px 35px 0px 35px;
+  background-color: #272c2f;
+}
+
+.ic-datepicker-container > input[readonly] {
+    background: inherit;
 }
 
 .time-date-picker{
-  margin: 20px -20px 0 20px;
-  padding: 0;
+  color: white;
+}
+
+.date-picker>p{
+  margin-bottom: 0;
+}
+
+.time-date-picker>*>p{
+  font-size: 20px;
+}
+
+.time-date-picker>*>input{
+  background-color: inherit;
+  border: 0px;
+  border-radius: 0px;
+  border-bottom: 1px solid rgba(158, 158, 158, 0.55);
+}
+
+.time-picker, .repeat{
+  margin: 20px 0;
+}
+
+.time-picker>p, .repeat>p{
+  margin-bottom: -5px;
+}
+
+.time-picker>button{
+  background-color: inherit;
+  border-bottom: 1px solid rgba(158, 158, 158, 0.55);
+  border-radius: 0;
+  width: 88%;
+}
+
+.time-picker>button:focus{
+  outline: none;
+}
+
+input:focus{
+  outline: none;
 }
 
 .deivce-picker{
@@ -30,6 +105,8 @@
 .panel {
   margin-bottom: 40px;
   min-width: 600px;
+  border: 0px;
+  border-radius: 0;
 }
 
 .panel-pricing {
@@ -42,6 +119,8 @@
 }
 .panel-pricing .panel-heading {
   height: 60px;
+  border: 0;
+  border-radius: 0;
 }
 .panel-pricing .panel-heading .fa {
   margin-top: 10px;
@@ -67,7 +146,7 @@ h3 {
   border-top-left-radius: 0px;
 }
 .panel-pricing .panel-body {
-  background-color: #f0f0f0;
+  background-color: inherit;
   font-size: 20px;
   color: #777777;
   padding: 2px;
@@ -185,25 +264,7 @@ table {
   box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
 }
 
-.fa {
-  cursor: pointer;
-  color: auto;
-  background-color: inherit;
-  border: 0px;
-}
-
-
-.fa-plus-circle {
-  color: #65995e;
-  float: left;
-  margin-right: 10px;
-  padding-bottom: 35px;
-}
-
-input {
-  height: 30px;
-  margin-right: 10px;
-}
+/*script*/
 
 
 .modal-title {
@@ -226,9 +287,6 @@ input {
     margin-right: 20px;
 }
 
-.addscript {
-  margin-top: 8px;
-}
 
 .btn-add-script {
     line-height: 0;

@@ -1,7 +1,7 @@
-import { Component, OnInit, Input, OnChanges, SimpleChange } from '@angular/core';
+import { Component,  OnInit } from '@angular/core';
 import { HouseService} from '../../../services/httpservice/house.service';
 import { FlashMessagesService } from 'angular2-flash-messages'
-import { Router } from '@angular/router';
+import { Router, ActivatedRoute } from '@angular/router';
 import { ToastrService} from 'ngx-toastr';
 
 @Component({
@@ -10,8 +10,8 @@ import { ToastrService} from 'ngx-toastr';
   styleUrls: ['./config-home.component.css']
 })
 
-export class ConfigHomeComponent implements OnChanges {
-  @Input() floorId;
+export class ConfigHomeComponent implements OnInit {
+  floorId: String;
   rooms: [{
     name: String,
     imgPath: String,
@@ -28,23 +28,32 @@ export class ConfigHomeComponent implements OnChanges {
                 private flashMessage: FlashMessagesService,
                 private houseService: HouseService,
                 private router: Router,
+                private route: ActivatedRoute,
                 private toastrService: ToastrService
              ) { }
 
-  ngOnChanges() {
-    if(this.floorId){
-      this.getRooms(this.floorId);
-    }
+  ngOnInit() {
+    this.route.params.subscribe(params => {
+      if(params['id']){
+       this.floorId = params['id'];
+       this.getRooms(this.floorId);
+      }
+    });
   }
 
   getRooms(floorId) {
     this.floorId = floorId;
-    this.houseService.getListOfRooms(floorId).subscribe(rooms => {
-      if(rooms.length){
-        this.rooms = rooms;
+    this.houseService.getListOfRooms(floorId).subscribe(res => {
+      if(res.success===false){
+        this.flashMessage.show(res.msg, {cssClass: 'alert-danger', timeout: 3000});
+        this.floorId = null;
       } else {
-        this.rooms = null;
-        this.flashMessage.show('Not found any rooms. Please add new room', {cssClass: 'alert-danger', timeout: 3000});
+        if(res.length){
+          this.rooms = res;
+        } else {
+          this.rooms = null;
+          this.flashMessage.show('No room found. Please add new room!!!', {cssClass: 'alert-danger', timeout: 3000});
+        }
       }
     })
   }

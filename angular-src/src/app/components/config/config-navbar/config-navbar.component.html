@@ -17,8 +17,8 @@
   <div class="sidebar">
     <div class="panel panel-success home">
       <!-- <div class="panel-heading" (click)="height = height ? 0 : el.scrollHeight"> -->
-      <div class="panel-heading" (click)="selectConfig('home')">
-        <h3 class="panel-title">Home</h3>
+      <div class="panel-heading" (click)="selectConfig('home')" [routerLink] = "['home']">
+        <h3 class="panel-title" >Home</h3>
       </div>
       <div
         class="card card-block card-header block" [style.height]="height + 'px'" #el [hidden]="listOfFloorHidden">
@@ -26,7 +26,10 @@
           <div class="row floor">
               <div class="list-group">
                 <div class="list-floor" *ngFor="let floor of floors | reverse">
-                <a class="list-group-item" (click)="getFloor(floor.name, floor._id)"  [ngStyle]="checkSelectedFloor(floor._id)? active:''">
+                <a class="list-group-item"
+                    (click)="getFloor(floor.name, floor._id)"
+                    [ngStyle]="checkSelectedFloor(floor._id)? active:''"
+                    [routerLink] = "['home/' + floor._id]">
                   <button type="button" class="fa fa-minus-circle" (click)="smModal.show()"></button> {{floor.name}}</a>
                 </div>
                 <div class="list-floor addFloor">
@@ -44,13 +47,13 @@
         </div>
       </div>
 
-      <div class="panel-heading" (click)="selectConfig('devices')">
+      <div class="panel-heading" (click)="selectConfig('devices')" [routerLink] = "['/config/devices']">
         <h3 class="panel-title">Devices</h3>
       </div>
-      <div class="panel-heading" (click)="selectConfig('scripts')">
+      <div class="panel-heading" (click)="selectConfig('scripts')" [routerLink] = "['/config/scripts']">
         <h3 class="panel-title">Scripts</h3>
       </div>
-      <div class="panel-heading" (click)="selectConfig('rules')">
+      <div class="panel-heading" (click)="selectConfig('rules')" [routerLink] = "['/config/rules']">
         <h3 class="panel-title">Rules</h3>
       </div>
     </div>

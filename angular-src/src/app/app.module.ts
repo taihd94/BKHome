@@ -7,11 +7,12 @@ import { AlertModule } from 'ng2-bootstrap';
 import { CollapseModule } from 'ng2-bootstrap';
 import { AccordionModule } from 'ng2-bootstrap';
 import { ModalModule } from 'ng2-bootstrap';
-import {NgPipesModule} from 'ngx-pipes';
-import {UiSwitchModule} from "angular2-ui-switch/src/index";
+import { NgPipesModule} from 'ngx-pipes';
+import { UiSwitchModule} from "angular2-ui-switch/src/index";
 import { ToastrModule } from 'ngx-toastr';
 import { CommonModule } from '@angular/common';
 import { IcDatepickerModule } from 'ic-datepicker';
+import { TimepickerModule } from 'ng2-bootstrap';
 
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
@@ -44,7 +45,15 @@ const appRoutes: Routes = [
   {path:'login', component: LoginComponent},
   {path:'dashboard', component: DashboardComponent, canActivate:[AuthGuard]},
   {path:'profile', component: ProfileComponent, canActivate:[AuthGuard]},
-  {path:'config', component: ConfigComponent, canActivate:[AuthGuard]},
+  {path:'config', component: ConfigComponent, canActivate:[AuthGuard],
+    children: [
+      {path: 'home', component: ConfigHomeComponent, canActivate:[AuthGuard]},
+      {path: 'home/:id', component: ConfigHomeComponent, canActivate:[AuthGuard]},
+      {path: 'devices', component: DevicesComponent, canActivate:[AuthGuard]},
+      {path: 'scripts', component: ScriptsComponent, canActivate:[AuthGuard]},
+      {path: 'rules', component: RulesComponent, canActivate:[AuthGuard]}
+    ]
+  },
   {path:'devices', component: DevicesComponent, canActivate:[AuthGuard]}
 ];
 
@@ -80,7 +89,8 @@ const appRoutes: Routes = [
     ModalModule.forRoot(),
     NgPipesModule,
     ToastrModule.forRoot(),
-    IcDatepickerModule
+    IcDatepickerModule,
+    TimepickerModule.forRoot()
   ],
   providers: [
     ValidateService,

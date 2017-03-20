@@ -22,8 +22,9 @@
   <div class="card card-block card-header block" [style.height]="height + 'px'" #el>
     <div class="panel-body">
       <div class="row">
-        <div class="col-sm-4">
+        <div class="col-sm-4 panel-left">
           <div class="roomImage">
+
             <div class="imgAvailable" *ngIf = "room.imgPath">
               <img src="{{room.imgPath}}"
                    class="img-responsive roomImg"

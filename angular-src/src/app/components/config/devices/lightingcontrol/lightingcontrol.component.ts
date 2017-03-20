@@ -115,6 +115,12 @@ export class LightingcontrolComponent implements OnInit {
     this.saveBtnHidden = false;
   }
 
+  selectTypeOfLight(lightId, value){
+    let index = this.lookup(lightId);
+    this.lightingControl.lights[index].typeOfControl = value;
+    this.saveBtnHidden = false;
+  }
+
   save(){
     this.deviceService.updateLights(this.lightingControl._id, this.lightingControl).subscribe(res=>{
       if(!res.success){

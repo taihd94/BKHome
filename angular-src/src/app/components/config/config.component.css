@@ -1,66 +1,7 @@
 .row{
   background-color: #393a35;
+  height: 100%;
+  width:auto;
   min-height: 100vh;
-}
-
-.col-sm-8 {
-  margin: 0px 0px 0px 0px;
-  padding: 0px 0px 0px 0px;
-}
-
-.config{
-  margin: 25px 15px 0px 25px;
-}
-
-.listOfRooms{
-  box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
-}
-
-.fa {
-  cursor: pointer;
-  color: auto;
-  background-color: inherit;
-  border: 0px;
-}
-
-
-.fa-plus-circle {
-  color: #65995e;
-  float: left;
-  margin-right: 10px;
-  padding-bottom: 35px;
-}
-
-input {
-  height: 30px;
-  margin-right: 10px;
-}
-
-
-.modal-title {
-  text-align: center;
-}
-
-.modal-body{
-  margin: 0 auto;
-  text-align: center;
-}
-
-.btn-modal {
-  min-width: 80px;
-  margin-left: 10px;
-  margin-right: 10px;
-}
-
-.form-group {
-    float: left;
-    margin-right: 20px;
-}
-
-.addRoom {
-  margin-top: 8px;
-}
-
-.btn-add-room {
-    line-height: 0;
+  margin: 0px;
 }

@@ -16,7 +16,8 @@
     "mongoose": "*",
     "mosca": "^2.2.0",
     "passport": "*",
-    "passport-jwt": "*"
+    "passport-jwt": "*",
+    "serialport": "^4.0.7"
   },
   "author": "",
   "license": "ISC"

@@ -1,4 +1,4 @@
-const express = require('express');
+ const express = require('express');
 const router = express.Router();
 const passport = require('passport');
 const jwt = require('jsonwebtoken');
@@ -24,13 +24,7 @@ router.post('/scan', (req,res,next)=>{
     lights: []
   });
 
-  for(let i=0; i < device.numberOfPorts; i++){
-    device.lights.push({});
-  }
 
-  LightingControl.scanDevices(device, (result)=>{
-    res.json(result);
-  });
 });
 
 router.get('/', (req, res, next)=>{

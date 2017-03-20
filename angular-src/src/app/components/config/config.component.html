@@ -1,10 +1,4 @@
 <div class="row">
   <app-config-navbar (selectedConfig)="selectedConfig($event)"></app-config-navbar>
-  <div class="col-sm-8 config" [ngSwitch]="switch_config_name">
-    <flash-messages></flash-messages>
-    <app-config-home [floorId] = "selectedFloorId" *ngSwitchCase="'home'"></app-config-home>
-    <app-devices *ngSwitchCase="'devices'"></app-devices>
-    <app-scripts *ngSwitchCase="'scripts'"></app-scripts>
-    <app-rules *ngSwitchCase="'rules'"></app-rules>
-  </div>
+  <router-outlet></router-outlet>
 </div>

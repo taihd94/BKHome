@@ -10,7 +10,7 @@ import { FlashMessagesService } from 'angular2-flash-messages'
   styleUrls: ['./config-navbar.component.css']
 })
 export class ConfigNavbarComponent implements OnInit {
-  @Output() selectedFloor = new EventEmitter<Object>();
+  @Output() selectedFloor = new EventEmitter<String>();
   @Output() selectedConfig = new EventEmitter<String>();
 
   selectedConfigLocal: String;
@@ -90,7 +90,7 @@ export class ConfigNavbarComponent implements OnInit {
 
   getFloor(name,floorId){
     localStorage.setItem('currentFloor', floorId);
-    this.selectedConfig.emit('home');
+    this.selectedFloor.emit(floorId);
     this.floorSelectedId = floorId;
     this.floorDeletedName = name;
   }
