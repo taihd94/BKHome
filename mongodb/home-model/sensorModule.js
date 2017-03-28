@@ -5,17 +5,14 @@ var SensorModuleSchema = new Schema({
     deviceCode: String,         // Ex: 'ss123'
     deviceType: String,         // 'SensorModule'
     numberOfSensors: Number,    // Ex: '1 ss', '4 ss', ...
-    allowedToAccess: Boolean,
+    allowToConnect: Boolean,
     battery: Number,      // Ex: '60%', '80%'
     roomId: Schema.Types.ObjectId,
     sensors: [
       {
           name: String,         // Ex: 'Light sensor 1', 'Light sensor 2', 'Temperature sensor 2',...
           kind: String,         // Ex: 'Light sensor', 'Temperature sensor',...
-          events: [{
-              value: Number,
-              create_at: Date
-          }]
+          value: Number
       }
     ]
 }, {collection: "devices", versionKey: false});

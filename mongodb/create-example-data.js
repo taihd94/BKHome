@@ -112,87 +112,43 @@ var lightingControl = [
       deviceCode: 'lt01',         // Ex: 'ltctrl12c5'
       deviceType: 'LightingControl',         // 'LightingControl'
       numberOfPorts: 4,     // Ex: '1 port', '4 port', '8 port', ...
-      allowedToAccess: false,
+      allowToConnect: false,
       lights: [
         {
-            name: "null",         // Ex: 'Light 1', 'Light 2',...
-            kind: "null",         // Ex: 'Neon', 'Compact',...
-            typeOfControl: "null",         // Ex: 'ON/OFF', 'DIM'
-            life_time: 0000,  // Ex: 6000 hours
-            power: 0000,        // Ex: 60 watt
-            events: []
+            portId: 1,
+            name: 'null',                  // Ex: 'Light 1', 'Light 2',...
+            typeOfLight: 'null',                  // Ex: 'Neon', 'Compact',...
+            dimmable: true,         // Ex: 'ON/OFF', 'DIM'
+            life_time: 000,             // Ex: 6000 hours
+            power: 000,                 // Ex: 60 watt
+            value: 0
         },
         {
-            name: "null",         // Ex: 'Light 1', 'Light 2',...
-            kind: "null",         // Ex: 'Neon', 'Compact',...
-            typeOfControl: "null",         // Ex: 'ON/OFF', 'DIM'
-            life_time: 0000,  // Ex: 6000 hours
-            power: 0000,        // Ex: 60 watt
-            events: []
+            portId: 2,
+            name: 'null',                  // Ex: 'Light 1', 'Light 2',...
+            typeOfLight: 'null',                  // Ex: 'Neon', 'Compact',...
+            dimmable: false,         // Ex: 'ON/OFF', 'DIM'
+            life_time: 000,             // Ex: 6000 hours
+            power: 000,                 // Ex: 60 watt
+            value: 0
         },
         {
-            name: "null",         // Ex: 'Light 1', 'Light 2',...
-            kind: "null",         // Ex: 'Neon', 'Compact',...
-            typeOfControl: "null",         // Ex: 'ON/OFF', 'DIM'
-            life_time: 0000,  // Ex: 6000 hours
-            power: 0000,        // Ex: 60 watt
-            events: []
+            portId: 3,
+            name: 'null',                  // Ex: 'Light 1', 'Light 2',...
+            typeOfLight: 'null',                  // Ex: 'Neon', 'Compact',...
+            dimmable: false,         // Ex: 'ON/OFF', 'DIM'
+            life_time: 000,             // Ex: 6000 hours
+            power: 000,                 // Ex: 60 watt
+            value: 0
         },
         {
-            name: "null",         // Ex: 'Light 1', 'Light 2',...
-            kind: "null",         // Ex: 'Neon', 'Compact',...
-            typeOfControl: "null",         // Ex: 'ON/OFF', 'DIM'
-            life_time: 0000,  // Ex: 6000 hours
-            power: 0000,        // Ex: 60 watt
-            events: []
-        }
-      ]
-  }),
-  new LightingControl({
-      deviceCode: 'lt02',         // Ex: 'ltctrl12c5'
-      deviceType: 'LightingControl',         // 'LightingControl'
-      numberOfPorts: 2,     // Ex: '1 port', '4 port', '8 port', ...
-      allowedToAccess: false,
-      lights: [
-        {
-            name: "null",         // Ex: 'Light 1', 'Light 2',...
-            kind: "null",         // Ex: 'Neon', 'Compact',...
-            typeOfControl: "null",         // Ex: 'ON/OFF', 'DIM'
-            life_time: 0000,  // Ex: 6000 hours
-            power: 0000,        // Ex: 60 watt
-            events: []
-        },
-        {
-            name: "null",         // Ex: 'Light 1', 'Light 2',...
-            kind: "null",         // Ex: 'Neon', 'Compact',...
-            typeOfControl: "null",         // Ex: 'ON/OFF', 'DIM'
-            life_time: 0000,  // Ex: 6000 hours
-            power: 0000,        // Ex: 60 watt
-            events: []
-        }
-      ]
-  }),
-  new LightingControl({
-      deviceCode: 'lt03',         // Ex: 'ltctrl12c5'
-      deviceType: 'LightingControl',         // 'LightingControl'
-      numberOfPorts: 1,     // Ex: '1 port', '4 port', '8 port', ...
-      allowedToAccess: false,
-      lights: [
-        {
-            name: "null",         // Ex: 'Light 1', 'Light 2',...
-            kind: "null",         // Ex: 'Neon', 'Compact',...
-            typeOfControl: "null",         // Ex: 'ON/OFF', 'DIM'
-            life_time: 0000,  // Ex: 6000 hours
-            power: 0000,        // Ex: 60 watt
-            events: []
-        },
-        {
-            name: "null",         // Ex: 'Light 1', 'Light 2',...
-            kind: "null",         // Ex: 'Neon', 'Compact',...
-            typeOfControl: "null",         // Ex: 'ON/OFF', 'DIM'
-            life_time: 0000,  // Ex: 6000 hours
-            power: 0000,        // Ex: 60 watt
-            events: []
+            portId: 4,
+            name: 'null',                  // Ex: 'Light 1', 'Light 2',...
+            typeOfLight: 'null',                  // Ex: 'Neon', 'Compact',...
+            dimmable: false,         // Ex: 'ON/OFF', 'DIM'
+            life_time: 000,             // Ex: 6000 hours
+            power: 000,                 // Ex: 60 watt
+            value: 0
         }
       ]
   })
@@ -224,6 +180,7 @@ var sensorModule = [
 done = 0;
 for(var i = 0; i< house.length; i++) {
     house[i].save(function (err, result) {
+        if(err) throw err;
         done++;
         if (done === house.length) {
             mongoose.disconnect();
@@ -244,6 +201,7 @@ for(var i = 0; i< floor.length; i++) {
 done = 0;
 for(var i = 0; i< lightingControl.length; i++) {
     lightingControl[i].save(function (err, result) {
+        if(err) throw err;
         done++;
         if (done === lightingControl.length) {
             mongoose.disconnect();

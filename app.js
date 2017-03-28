@@ -5,6 +5,8 @@ const cors = require('cors');
 const passport = require('passport');
 const mongoose = require('mongoose');
 const config = require('./config/database');
+const mqtt = require('./mqtt/mqtt');
+//require('./mqtt/broker');
 
 // Connect To Database
 mongoose.connect(config.database);
@@ -60,3 +62,5 @@ app.get('/*', (req, res) => {
 app.listen(port, () => {
   console.log('Server started on port '+port);
 });
+
+require('./socket-io/SocketIO');

@@ -172,3 +172,9 @@ table {
   margin-top: 10px;
   margin-right: 15px;
 }
+
+span.dimmable {
+  margin-left: 10px;
+  color: #414141;
+  padding-right: 64px;
+}

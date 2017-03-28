@@ -3,28 +3,40 @@ var Schema = mongoose.Schema;
 
 var DevicesSchema = new Schema({
     deviceCode: String,         // Ex: 'ltctrl12c5'
-    divceType: String,         // Ex: 'LightingControl', 'SensorModule'
-    allowedToAccess: Boolean,
+    deviceType: String,         // Ex: 'LightingControl', 'SensorModule'
+    allowToConnect: Boolean,
     roomId: Schema.Types.ObjectId
 }, {versionKey: false});
 
 const Devices = module.exports = mongoose.model('devices', DevicesSchema);
 
-module.exports.scanDevices = function(newDevice, callback) {
+
+module.exports.getDevice = function(deviceId, callback){
+  Devices.findById(deviceId, (err, device)=>{
+    if(err) throw err;
+    if(device){
+      callback({success: true, device: device});
+    } else {
+      callback({success: false, msg: "device not found"});
+    }
+  })
+}
+
+module.exports.authenticateDevices = function(newDevice, callback) {
   Devices.findOne({deviceCode: newDevice.deviceCode},(err, device)=>{
     if(err) throw err;
     if(!device){
       newDevice.save((err, doc) => {
         if(err) throw err;
         else {
-          callback({success:true, allowedToAccess: false, msg: "detected device"});
+          callback({success:true, allowToConnect: false, msg: "new device detected"});
         }
       });
     } else {
-      if(device.allowedToAccess){
-        callback({success:true, allowedToAccess: true, msg: "device is allowed to access"});
+      if(device.allowToConnect){
+        callback({success:true, allowToConnect: true, msg: "device is allowed to connect"});
       } else {
-        callback({success:true, allowedToAccess:false, msg: "device is not allowed to access"});
+        callback({success:true, allowToConnect:false, msg: "device is not allowed to connect"});
       }
     }
   })
@@ -70,7 +82,7 @@ module.exports.updatePermission = function(deviceId, permission, callback){
       callback({success: false, msg: "something went wrong"});
     }
     if(device){
-      device.allowedToAccess = permission;
+      device.allowToConnect = permission;
       device.save(err=>{
         if(err){
           throw err;

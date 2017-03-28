@@ -1,16 +1,18 @@
-import { Component, EventEmitter, OnInit, Input, Output } from '@angular/core';
+import { Component, EventEmitter, OnInit, OnDestroy, Input, Output } from '@angular/core';
 import { HouseService} from '../../../../services/httpservice/house.service';
 import { FlashMessagesService } from 'angular2-flash-messages'
 import { Router } from '@angular/router';
+import {MessageEvent} from '../../../../services/broadcast/message-event.service';
+
 
 
 @Component({
   selector: 'app-room',
   templateUrl: './room.component.html',
-  styleUrls: ['./room.component.css']
+  styleUrls: ['./room.component.css'],
 })
 
-export class RoomComponent implements OnInit {
+export class RoomComponent implements OnInit, OnDestroy {
   @Input() floorId;
   @Input() room;
   @Output() roomChange = new EventEmitter();
@@ -24,22 +26,27 @@ export class RoomComponent implements OnInit {
   device: {
     deviceType: String
   }
+  Slidervalue = [50, 80];
+  lightValue = [];
+
+  connection;
+  message;
 
   constructor(
                 private flashMessage: FlashMessagesService,
                 private houseService: HouseService,
-                private router: Router
-             ) { }
+                private router: Router,
+                private messageEvent: MessageEvent,
+             ) {}
+
 
   ngOnInit() {
     this.houseService.getListOfDevicesInRoom(this.floorId, this.room._id).subscribe(res=>{
         this.devices = res.devices;
-        if(this.devices){
-          this.devices.forEach(function (value: {deviceType: String}) {
-            // console.log(value.deviceType);
-          });
-        }
     });
+  }
+
+  ngOnDestroy() {
   }
 
 
@@ -78,5 +85,6 @@ export class RoomComponent implements OnInit {
       }
     })
   }
+
 
 }

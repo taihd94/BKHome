@@ -8,23 +8,14 @@ const LightingControl = require('../mongodb/home-model/lightingControl');
 const SensorModule = require('../mongodb/home-model/sensorModule');
 const Devices = require('../mongodb/home-model/devices');
 
-router.get('/test', (req, res, next) => {
-  Devices.getListOfDevices((result)=>{
+
+router.post('/authenticate', (req,res,next)=>{
+  console.log(req.body);
+  let device = new LightingControl(req.body);
+
+  LightingControl.authenticateDevices(device, result => {
     res.json(result);
   })
-});
-
-router.post('/scan', (req,res,next)=>{
-  console.log(req.body);
-  let device = new LightingControl({
-    deviceCode: req.body.deviceCode,
-    deviceType: req.body.deviceType,
-    numberOfPorts: req.body.numberOfPorts,
-    allowedToAccess: false,
-    lights: []
-  });
-
-
 });
 
 router.get('/', (req, res, next)=>{

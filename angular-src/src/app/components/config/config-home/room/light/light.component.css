@@ -1,0 +1,25 @@
+.list-group-item{
+  background-color: rgba(0, 0, 0, 0);
+  border: 0px;
+  float: left;
+  padding-left: 0px;
+  font-size: 17px;
+}
+
+.list-group-item:hover{
+  background-color: rgba(0, 0, 0, 0);
+  border: 0px;
+}
+
+ui-switch{
+  float: right;
+  margin-right: 50px;
+}
+
+md-slider{
+  position: relative;
+  bottom: 8px;
+  left: 10%;
+  width: 40%;
+  float: left;
+}

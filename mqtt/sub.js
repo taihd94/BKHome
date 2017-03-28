@@ -1,11 +1,14 @@
 var mqtt = require('mqtt')
 
-client = mqtt.createClient(1883, 'localhost');
+client = mqtt.connect('mqtt://localhost:1883');
 
-client.subscribe('presence');
+client.on('connect',  () => {
+  client.subscribe('devices/58d9d7bdcd7ada2f6f6a28ef');
+  client.subscribe('lwt')
+})
 
-client.on('message', function(topic, message) {
-    console.log("message: " + message);
+client.on('message', (topic, message) => {
+    console.log("[" + topic + "]" + message);
 });
 
 console.log('Client started...');

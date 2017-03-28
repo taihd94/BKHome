@@ -55,7 +55,7 @@ export class LightingcontrolComponent implements OnInit {
         this.selectedFloor = "Select floor";
         this.selectedRoom = "Select room";
       }
-      this.permission = this.lightingControl.allowedToAccess;
+      this.permission = this.lightingControl.allowToConnect;
     })
   };
 
@@ -111,15 +111,10 @@ export class LightingcontrolComponent implements OnInit {
 
   selectKindOfLight(lightId, value){
     let index = this.lookup(lightId);
-    this.lightingControl.lights[index].kind = value;
+    this.lightingControl.lights[index].typeOfLight = value;
     this.saveBtnHidden = false;
   }
 
-  selectTypeOfLight(lightId, value){
-    let index = this.lookup(lightId);
-    this.lightingControl.lights[index].typeOfControl = value;
-    this.saveBtnHidden = false;
-  }
 
   save(){
     this.deviceService.updateLights(this.lightingControl._id, this.lightingControl).subscribe(res=>{

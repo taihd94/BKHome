@@ -1,10 +1,16 @@
 var mqtt = require('mqtt');
+const readline = require('readline');
+const rl = readline.createInterface({
+  input: process.stdin,
+  output: process.stdout
+});
 
 client = mqtt.createClient(1883, 'localhost');
 
 client.subscribe('presence');
 
-console.log('Client publishing.. ');
-client.publish('presence', 'Client 1 is alive.. Test Ping! ' + Date());
+rl.on('line', (line) => {
+  client.publish('connected', '1' + line);
+});
 
-client.end();
+//client.end();

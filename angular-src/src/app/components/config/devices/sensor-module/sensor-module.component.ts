@@ -55,7 +55,7 @@ export class SensorModuleComponent implements OnInit {
           this.selectedFloor = "Select floor";
           this.selectedRoom = "Select room";
         }
-        this.permission = this.sensorModule.allowedToAccess;
+        this.permission = this.sensorModule.allowToConnect;
       })
     };
 

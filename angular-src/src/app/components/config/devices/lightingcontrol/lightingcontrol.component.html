@@ -38,8 +38,8 @@
               <tr>
                 <th>ID</th>
                 <th>Device Name</th>
-                <th>Kind</th>
                 <th>Type</th>
+                <th >Dimmable</th>
                 <th>Power(W)</th>
                 <th>Life time(H)</th>
                 <th>Status</th>
@@ -51,7 +51,7 @@
                 <td><input type="text" (blur)="edit(light._id, $event)" name="name" value="{{light.name}}"></td>
                 <td>
                    <div class="btn-group">
-                     <input type="text" (blur)="edit(light._id, $event)" name="kind" value="{{light.kind}}"
+                     <input type="text" (blur)="edit(light._id, $event)" name="type" value="{{light.typeOfLight}}"
                               data-toggle="dropdown">
                      <ul class="dropdown-menu kindOfLight">
                         <li (click)="selectKindOfLight(light._id, 'Bulb')"><a>Bulb</a></li>
@@ -61,16 +61,8 @@
                      </ul>
                    </div>
                 </td>
-                <td>
-                   <div class="btn-group">
-                     <input type="text" (blur)="edit(light._id, $event)" name="type" value="{{light.typeOfControl}}"
-                              data-toggle="dropdown">
-                     <ul class="dropdown-menu kindOfLight">
-                        <li (click)="selectTypeOfLight(light._id, 'ON/OFF')"><a>ON/OFF</a></li>
-                        <li (click)="selectTypeOfLight(light._id, 'DIM')"><a>DIM</a></li>
-                     </ul>
-                   </div>
-                </td>
+                <td><span class="dimmable">{{light.dimmable}}</span></td>
+                <!-- <td>  <input type="text" (blur)="edit(light._id, $event)" name="type" value="{{light.dimmable}}"></td> -->
                 <td><input type="text" (blur)="edit(light._id, $event)" name="power" value="{{light.power}}"></td>
                 <td><input type="text" (blur)="edit(light._id, $event)" name="life_time" value="{{light.life_time}}"></td>
                 <td ><input type="text" (blur)="edit(light._id, $event)" name="status" value="null"  style="width: 50px"></td>

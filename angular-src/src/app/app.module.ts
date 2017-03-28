@@ -13,6 +13,8 @@ import { ToastrModule } from 'ngx-toastr';
 import { CommonModule } from '@angular/common';
 import { IcDatepickerModule } from 'ic-datepicker';
 import { TimepickerModule } from 'ng2-bootstrap';
+import { MaterialModule } from '@angular/material';
+import 'hammerjs';
 
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
@@ -28,8 +30,14 @@ import {ValidateService} from './services/validate.service';
 import {UserService} from './services/httpservice/user.service';
 import {HouseService} from './services/httpservice/house.service';
 import {DeviceService} from './services/httpservice/device.service';
+import {SocketioService} from './services/socketio.service';
 import {FlashMessagesModule} from 'angular2-flash-messages';
 import {AuthGuard} from './guards/auth.guard';
+import {Broadcaster} from './services/broadcast/broadcaster.service';
+import {MessageEvent} from './services/broadcast/message-event.service';
+import {RoomEvent} from './services/broadcast/room-event.service';
+
+
 import { DevicesComponent } from './components/config/devices/devices.component';
 import { LightingcontrolComponent } from './components/config/devices/lightingcontrol/lightingcontrol.component';
 import { SensorModuleComponent } from './components/config/devices/sensor-module/sensor-module.component';
@@ -37,6 +45,7 @@ import { RoomComponent } from './components/config/config-home/room/room.compone
 import { ConfigHomeComponent } from './components/config/config-home/config-home.component';
 import { ScriptsComponent } from './components/config/scripts/scripts.component';
 import { RulesComponent } from './components/config/rules/rules.component';
+import { LightComponent } from './components/config/config-home/room/light/light.component';
 
 
 const appRoutes: Routes = [
@@ -74,7 +83,8 @@ const appRoutes: Routes = [
     RoomComponent,
     ConfigHomeComponent,
     ScriptsComponent,
-    RulesComponent
+    RulesComponent,
+    LightComponent
   ],
   imports: [
     UiSwitchModule,
@@ -90,14 +100,19 @@ const appRoutes: Routes = [
     NgPipesModule,
     ToastrModule.forRoot(),
     IcDatepickerModule,
-    TimepickerModule.forRoot()
+    TimepickerModule.forRoot(),
+    MaterialModule
   ],
   providers: [
     ValidateService,
     UserService,
     HouseService,
     DeviceService,
-    AuthGuard
+    AuthGuard,
+    SocketioService,
+    MessageEvent,
+    RoomEvent,
+    Broadcaster
   ],
   bootstrap: [AppComponent]
 })
