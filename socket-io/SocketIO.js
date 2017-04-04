@@ -1,5 +1,5 @@
 const express = require('express');
-const mqtt = require('../mqtt/mqtt');
+const ltctrMqttClient = require('../mqtt/lightingControl');
 
 const app = express();
 const http = require('http').Server(app);
@@ -19,7 +19,7 @@ io.on('connection', (socket) => {
     socket.broadcast.emit(message.lightId, {type:'new-message', text: message});
     console.log(message);
     LightingControl.findAndUpdateLight(message.lightId, message.value, result => {
-      mqtt.publish(result, message.value);
+      ltctrMqttClient.send(result, message.value);
     });
   });
 });

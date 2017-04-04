@@ -89,24 +89,10 @@ export class SensorModuleComponent implements OnInit {
       console.log("sensorId not found");
     }
 
-    edit(sensorId, event: any) {
-      let field = event.target.name;
+    editName(sensorId, event: any) {
       let value = event.target.value;
       let index = this.lookup(sensorId);
-      switch(field){
-        case "name":
-          this.sensorModule.sensors[index].name = value;
-          break;
-        case "kind":
-          this.sensorModule.sensors[index].kind = value;
-          break;
-        case "power":
-          this.sensorModule.sensors[index].power = Number(value);
-          break;
-        case "life_circle":
-          this.sensorModule.sensors[index].life_circle = Number(value);
-          break;
-      }
+      this.sensorModule.sensors[index].name = value;
     }
 
     selectKindOfSensor(sensorId, value){
@@ -116,7 +102,7 @@ export class SensorModuleComponent implements OnInit {
     }
 
     save(){
-      this.deviceService.updateSensors(this.sensorModule._id, this.sensorModule).subscribe(res=>{
+      this.deviceService.updateSensorName(this.sensorModule._id, this.sensorModule.sensors).subscribe(res=>{
         if(!res.success){
           console.log("something went wrong");
         }

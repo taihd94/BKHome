@@ -41,27 +41,20 @@
               <tr>
                 <th>ID</th>
                 <th>Device Name</th>
-                <th>Kind</th>
+                <th>Type</th>
                 <th>Value</th>
               </tr>
             </thead>
             <tbody (keyup)="showSaveBtn()">
               <tr *ngFor="let sensor of sensorModule.sensors; let i = index">
                 <th scope="row">{{i+1}}</th>
-                <td><input type="text" (blur)="edit(sensor._id, $event)" name="name" value="{{sensor.name}}"></td>
+                <td><input type="text" (blur)="editName(sensor._id, $event)" name="name" value="{{sensor.name}}"></td>
                 <td>
                    <div class="btn-group">
-                     <input type="text" (blur)="edit(sensor._id, $event)" name="kind" value="{{sensor.kind}}"
-                              data-toggle="dropdown">
-                     <ul class="dropdown-menu kindOfLight">
-                        <li (click)="selectKindOfSensor(sensor._id, 'Light')"><a>Light</a></li>
-                        <li (click)="selectKindOfSensor(sensor._id, 'Temperature')"><a>Temperature</a></li>
-                        <li (click)="selectKindOfSensor(sensor._id, 'Humidity')"><a>Humidity</a></li>
-                        <li (click)="selectKindOfSensor(sensor._id, 'Gas')"><a>Gas</a></li>
-                     </ul>
+                     <input type="text" name="kind" value="{{sensor._type}}" disabled>
                    </div>
                 </td>
-                <td ><input type="text" (blur)="edit(sensor._id, $event)" name="value" value="null"  style="width: 50px"></td>
+                <td ><input type="text" name="value" value="{{sensor.value}}"  style="width: 50px"></td>
               </tr>
             </tbody>
           </table>

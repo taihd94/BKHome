@@ -11,21 +11,13 @@ import { FlashMessagesService } from 'angular2-flash-messages'
 })
 export class ConfigNavbarComponent implements OnInit {
   @Output() selectedFloor = new EventEmitter<String>();
-  @Output() selectedConfig = new EventEmitter<String>();
 
-  selectedConfigLocal: String;
+  currentConfig: String;
   listOfFloorHidden = true;
   floors: Object;
   addFloorFlag = true;
   floorSelectedId: String;
   floorDeletedName: String;
-  navbartest = "blhablahb";
-  test = false;
-  active = {
-    'background-color': '#f5f5f5',
-    'color': 'black'
-  }
-
 
   constructor(
     private houseService: HouseService,
@@ -35,37 +27,26 @@ export class ConfigNavbarComponent implements OnInit {
   ) { }
 
   ngOnInit() {
-    this.getFloors();
-    this.selectedConfigLocal = localStorage.getItem('currentConfig');
-    this.selectConfig(this.selectedConfigLocal);
-  }
-
-  selectConfig(config){
-    localStorage.setItem('currentConfig', config);
-    switch(config){
-      case 'home':
-        this.listOfFloorHidden = false;
-        this.floorSelectedId = localStorage.getItem('currentFloor');
-        this.selectedConfig.emit('home');
-        break;
-      case 'devices':
-        this.listOfFloorHidden = true;
-        this.selectedConfig.emit('devices');
-        break;
-      case 'scripts':
-        this.listOfFloorHidden = true;
-        this.selectedConfig.emit('scripts');
-        break;
-      case 'rules':
-        this.listOfFloorHidden = true;
-        this.selectedConfig.emit('rules');
-        break;
+    this.currentConfig = localStorage.getItem('currentConfig');
+    this.selectConfig(this.currentConfig);
+    if (!this.floorSelectedId){
+      this.floorSelectedId = "";
     }
   }
 
 
+  selectConfig(config){
+    localStorage.setItem('currentConfig', config);
+    if(config == "home"){
+      this.getListOfFloors();
+      this.listOfFloorHidden = false;
+      this.floorSelectedId = localStorage.getItem('currentFloor');
+    } else {
+      this.listOfFloorHidden = true;
+    }
+  }
 
-  getFloors(){
+  getListOfFloors(){
     this.houseService.getListOfFloors().subscribe(res => {
       this.floors = res;
     },
@@ -80,7 +61,7 @@ export class ConfigNavbarComponent implements OnInit {
     this.houseService.addNewFloor({"name":floorname}).subscribe(res => {
       if(res.success){
         this.flashMessage.show('Success!!!', {cssClass: 'alert-success', timeout: 3000});
-        this.getFloors();
+        this.getListOfFloors();
       }else {
         this.flashMessage.show('Something went wrong', {cssClass: 'alert-success', timeout: 3000});
       }
@@ -90,7 +71,6 @@ export class ConfigNavbarComponent implements OnInit {
 
   getFloor(name,floorId){
     localStorage.setItem('currentFloor', floorId);
-    this.selectedFloor.emit(floorId);
     this.floorSelectedId = floorId;
     this.floorDeletedName = name;
   }
@@ -99,7 +79,7 @@ export class ConfigNavbarComponent implements OnInit {
     this.houseService.deleteFloor(this.floorSelectedId).subscribe(res => {
       if(res.success){
         this.flashMessage.show('Success!!!', {cssClass: 'alert-success', timeout: 3000});
-        this.getFloors();
+        this.getListOfFloors();
       }else {
         this.flashMessage.show('Something went wrong', {cssClass: 'alert-danger', timeout: 3000});
       }

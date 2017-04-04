@@ -6,11 +6,11 @@ var FloorSchema = new Schema({
     rooms: [
       {
           name: String,
-          imgPath: String,
-          modules: [{
-              kind: String, // 'lightingControl', 'sersorsModule', 'cameraModule',...
-              moduleId: { type: Schema.Types.ObjectId, refPath: 'modules.kind'}
-          }]
+          imgPath: String
+          // modules: [{
+          //     kind: String, // 'lightingControl', 'sersorsModule', 'cameraModule',...
+          //     moduleId: { type: Schema.Types.ObjectId, refPath: 'modules.kind'}
+          // }]
       }
     ]
 }, {versionKey: false});

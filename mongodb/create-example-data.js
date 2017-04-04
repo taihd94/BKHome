@@ -76,32 +76,13 @@ var floor = [
         {
             _id: room_id_1,
             name: 'Bedroom',
-            imgPath: "https://s-media-cache-ak0.pinimg.com/originals/a5/80/0c/a5800cb89702af494bd3ff843312cf12.jpg",
-            modules: [
-              {
-                kind: 'lightingControl', // 'lightingControl', 'sersorsModule', 'cameraModule',...
-                moduleId: switch_id_1
-              },
-              {
-                kind: 'lightingControl', // 'lightingControl', 'sersorsModule', 'cameraModule',...
-                moduleId: switch_id_1
-              }
-            ]
+            imgPath: "https://s-media-cache-ak0.pinimg.com/originals/a5/80/0c/a5800cb89702af494bd3ff843312cf12.jpg"
+
         },
         {
             _id: room_id_2,
             name: 'Living room',
-            imgPath: "http://ghk.h-cdn.co/assets/cm/15/11/54ff822674a54-living-rooms-modern-de.jpg",
-            modules: [
-              {
-                kind: 'lightingControl', // 'lightingControl', 'sersorsModule', 'cameraModule',...
-                moduleId: switch_id_1
-              },
-              {
-                kind: 'lightingControl', // 'lightingControl', 'sersorsModule', 'cameraModule',...
-                moduleId: switch_id_1
-              }
-            ]
+            imgPath: "http://ghk.h-cdn.co/assets/cm/15/11/54ff822674a54-living-rooms-modern-de.jpg"
         }
       ]
   })

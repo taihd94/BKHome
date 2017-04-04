@@ -62,7 +62,7 @@ exports = module.exports = __webpack_require__(13)();
 
 
 // module
-exports.push([module.i, ".panel {\n  height: auto;\n  border: 0px;\n  border-radius: 0;\n  margin-bottom: 50px;\n}\n\n.panel-heading {\n  height: 60px;\n  vertical-align: middle;\n  padding: 0 0;\n  border: 0px;\n}\n\n.title{\n  height: 100%;\n  width: 100%;\n  cursor: pointer;\n  background-color: #4caf50;\n}\n\n.panel-title {\n  position: absolute;\n  font-size: 20px;\n  color: #ffffff;\n  margin: 2% 0 2% 2%;\n}\n\n.panel-title:hover {\n  text-decoration: none;\n}\n\n.card{\n  background-color: #f8f5f0;\n}\n\n.panel-body{\n  padding: 0px;\n}\n\n.row{\n  margin: 0px;\n}\n\n.panel-left{\n  padding: 40px 35px 35px 35px;\n  background-color: #272c2f;\n  color: #f8f5f0;\n}\n\n.imgAvailable, .imgNotAvailable{\n  border: 3px solid;\n}\n\n.sensors {\n  margin-top: 33px;\n}\n\n.sensors>p {\n  margin: 25px 0 10px;\n}\n\n.devices {\n  margin-top: 30px;\n  padding-left: 18px;\n}\n\n.devices>h2 {\n  margin-top: -4px;\n  margin-bottom: 0;\n}\n\n.list-group-item{\n  background-color: inherit;\n}\n\n\n.block {\n     overflow: hidden;\n     -webkit-transition: height .5s;\n     transition: height .5s;\n}\n\n.fa {\n  cursor: pointer;\n  color: auto;\n  background-color: inherit;\n  border: 0px;\n}\n\n.fa-times {\n  color: auto;\n  float: right;\n  margin-top: 10px;\n  margin-right: 10px;\n}\n\n.fa-plus-circle {\n  color: #65995e;\n  float: left;\n  margin-right: 10px;\n}\n\ninput {\n  background-color: inherit;\n  border: 0px;\n  margin-top: 5px;\n  border-bottom: 1px solid white;\n  border-radius: 0;\n  padding: 0;\n}\n\n\n.modal-title {\n  text-align: center;\n}\n\n.modal-body{\n  margin: 0 auto;\n  text-align: center;\n}\n\n.btn-modal {\n  min-width: 80px;\n  margin-left: 10px;\n  margin-right: 10px;\n}\n\n.form-group {\n    float: left;\n    margin-right: 20px;\n}\n\n.addRoom {\n  margin-top: 8px;\n}\n\n.btn-add-room {\n    line-height: 0;\n}\n\n.sensors {\n  margin-top: 20px;\n}\n\n.form-addImageUrl {\n  width: 100%;\n}\n\n.light{\n  width: 100%;\n  height: 50px;\n  padding: 12px 0 12px 20px;\n  border-bottom: 1px solid #dfd7ca;\n  cursor: pointer;\n}\n\napp-light{\n  line-height: 0px;\n}\n", ""]);
+exports.push([module.i, ".panel {\n  height: auto;\n  border: 0px;\n  border-radius: 0;\n  margin-bottom: 50px;\n}\n\n.panel-heading {\n  height: 60px;\n  vertical-align: middle;\n  padding: 0 0;\n  border: 0px;\n}\n\n.title{\n  height: 100%;\n  width: 100%;\n  cursor: pointer;\n  background-color: #4caf50;\n}\n\n.panel-title {\n  position: absolute;\n  font-size: 20px;\n  color: #ffffff;\n  margin: 2% 0 2% 2%;\n}\n\n.panel-title:hover {\n  text-decoration: none;\n}\n\n.card{\n  background-color: #f8f5f0;\n}\n\n.panel-body{\n  padding: 0px;\n}\n\n.row{\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  margin: 0px;\n}\n\n.panel-left{\n  padding: 40px 35px 35px 35px;\n  background-color: #272c2f;\n  color: #f8f5f0;\n  -webkit-box-align: stretch;\n      -ms-flex-align: stretch;\n          align-items: stretch;\n}\n\n.imgAvailable, .imgNotAvailable{\n  border: 3px solid;\n}\n\n.sensors {\n  margin-top: 33px;\n}\n\n.sensors>p {\n  margin: 25px 0 10px;\n}\n\n.devices {\n  margin-top: 30px;\n  padding-left: 18px;\n}\n\n.devices>h2 {\n  margin-top: -4px;\n  margin-bottom: 0;\n}\n\n.list-group-item{\n  background-color: inherit;\n}\n\n\n.block {\n     overflow: hidden;\n     -webkit-transition: height .5s;\n     transition: height .5s;\n}\n\n.fa {\n  cursor: pointer;\n  color: auto;\n  background-color: inherit;\n  border: 0px;\n}\n\n.fa-times {\n  color: auto;\n  float: right;\n  margin-top: 10px;\n  margin-right: 10px;\n}\n\n.fa-plus-circle {\n  color: #65995e;\n  float: left;\n  margin-right: 10px;\n}\n\ninput {\n  background-color: inherit;\n  border: 0px;\n  margin-top: 5px;\n  border-bottom: 1px solid white;\n  border-radius: 0;\n  padding: 0;\n}\n\n\n.modal-title {\n  text-align: center;\n}\n\n.modal-body{\n  margin: 0 auto;\n  text-align: center;\n}\n\n.btn-modal {\n  min-width: 80px;\n  margin-left: 10px;\n  margin-right: 10px;\n}\n\n.form-group {\n    float: left;\n    margin-right: 20px;\n}\n\n.addRoom {\n  margin-top: 8px;\n}\n\n.btn-add-room {\n    line-height: 0;\n}\n\n.sensors {\n  margin-top: 20px;\n}\n\n.form-addImageUrl {\n  width: 100%;\n}\n\n.light{\n  width: 100%;\n  height: 50px;\n  padding: 12px 0 12px 20px;\n  border-bottom: 1px solid #dfd7ca;\n  cursor: pointer;\n}\n\napp-light{\n  line-height: 0px;\n}\n", ""]);
 
 // exports
 
@@ -80,7 +80,7 @@ exports = module.exports = __webpack_require__(13)();
 
 
 // module
-exports.push([module.i, ".col-sm-2 {\n  margin: 0px 0px;\n  padding: 0px 0px;\n}\n\n.sidebar {\n  background-color: #272c2f;\n  position: fixed;\n  height: 100vh;\n  width: inherit;\n  min-width: 180px;\n  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.8);\n}\n\n.panel {\n  background-color: inherit;\n  border: 0px;\n  margin-bottom: 0px;\n  margin-top: 40px;\n}\n\n.panel-heading{\n  background-color: #272c2f;\n  cursor: pointer;\n  border: 0px;\n  padding: 20px 0 20px 0;\n}\n\n.panel-title {\n  font-size: 20px;\n  margin-left: 50px;\n  /*padding-top: 20px;*/\n  text-transform: none;\n  font-weight: 100;\n}\n\n.panel-body {\n  padding-top: 0px;\n}\n\n.card {\n  padding-top: 0px;\n  padding-left: 10px;\n  overflow: hidden;\n  -webkit-transition: height .5s;\n  transition: height .5s;\n  background-color: rgba(0, 0, 0, 0.23);\n}\n\n.list-floor{\n  position: relative;\n}\n\n\n.list-group-item:hover{\n  border-radius: 0;\n  border-color: inherit;\n}\n\n.list-group-item {\n  margin-right: 0px;\n  background-color: inherit;\n  color: #ffffff;\n  border: 0px;\n  position: relative;\n  cursor: pointer;\n  border-radius: 0;\n}\n\n.fa {\n  cursor: pointer;\n  color: auto;\n  background-color: inherit;\n  border: 0px;\n}\n\n.fa-minus-circle {\n  margin-right: 10px;\n  color: auto;\n}\n\n.fa-plus-circle {\n  color: white;\n  float: left;\n  margin-top: 8px;\n  margin-right: 5px;\n}\n\n.addFloor {\n  margin-left: 23px;\n  margin-top: 10px;\n}\n\ninput[name=\"floorname\"]{\n  width: 135px;\n  height: 35px;\n  margin-right: 5px;\n}\n\n.modal-title {\n  text-align: center;\n}\n\n.modal-body{\n  margin: 0 auto;\n  text-align: center;\n}\n\n.btn-modal {\n  min-width: 80px;\n  margin-left: 10px;\n  margin-right: 10px;\n}\n", ""]);
+exports.push([module.i, "\n.col-sm-2 {\n  margin: 0px 0px;\n  padding: 0px 0px;\n}\n\n.sidebar {\n  background-color: #272c2f;\n  position: fixed;\n  height: 100vh;\n  width: inherit;\n  min-width: 180px;\n  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.8);\n}\n\n.panel {\n  background-color: inherit;\n  border: 0px;\n  margin-bottom: 0px;\n  margin-top: 40px;\n}\n\n.panel-heading{\n  background-color: #272c2f;\n  cursor: pointer;\n  border: 0px;\n  border-radius: 0;\n  padding: 20px 0 20px 0;\n}\n\n.panel-title {\n  font-size: 20px;\n  margin-left: 50px;\n  /*padding-top: 20px;*/\n  text-transform: none;\n  font-weight: 100;\n}\n\n.panel-body {\n  padding-top: 0px;\n}\n\n.card {\n  padding-top: 0px;\n  overflow: hidden;\n  -webkit-transition: height .5s;\n  transition: height .5s;\n  background-color: rgba(0, 0, 0, 0.23);\n}\n\n.list-floor{\n  position: relative;\n}\n\n\n.list-group-item:hover{\n  border-radius: 0;\n  border-color: inherit;\n}\n\n.list-group-item {\n  margin-right: 0px;\n  background-color: inherit;\n  color: #ffffff;\n  border: 0px;\n  position: relative;\n  cursor: pointer;\n  border-radius: 0;\n}\n\n.fa {\n  cursor: pointer;\n  color: auto;\n  background-color: inherit;\n  border: 0px;\n}\n\n.fa-minus-circle {\n  margin-right: 10px;\n  color: auto;\n}\n\n.fa-plus-circle {\n  color: white;\n  float: left;\n  margin-top: 8px;\n  margin-right: 5px;\n}\n\n.addFloor {\n  margin-left: 23px;\n  margin-top: 10px;\n}\n\ninput[name=\"floorname\"]{\n  width: 135px;\n  height: 35px;\n  margin-right: 5px;\n}\n\n.modal-title {\n  text-align: center;\n}\n\n.modal-body{\n  margin: 0 auto;\n  text-align: center;\n}\n\n.btn-modal {\n  min-width: 80px;\n  margin-left: 10px;\n  margin-right: 10px;\n}\n\n.active{\n  background-color: rgb(57, 60, 62);\n}\n\n.floor-active{\n  background-color: #f5f5f5;\n  color: black;\n  padding-left: 43px;\n}\n", ""]);
 
 // exports
 
@@ -577,14 +577,14 @@ module.exports = "<div bsModal #smModal=\"bs-modal\" class=\"modal fade\" tabind
 /***/ 1080:
 /***/ (function(module, exports) {
 
-module.exports = "<div bsModal #smModal=\"bs-modal\" class=\"modal fade\" tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"mySmallModalLabel\" aria-hidden=\"true\">\n  <div class=\"modal-dialog modal-sm\">\n    <div class=\"modal-content\">\n      <div class=\"modal-header\">\n        <h4 class=\"modal-title\">Are you sure you want to delete <b>{{floorDeletedName}}</b> ?</h4>\n      </div>\n      <div class=\"modal-body\">\n        <button type=\"button\" class=\"btn btn-success btn-modal\" (click)=\"smModal.hide()\" (click)=\"deleteFloor()\">Yes</button>\n        <button type=\"button\" class=\"btn btn-danger btn-modal\" (click)=\"smModal.hide()\">No</button>\n      </div>\n    </div>\n  </div>\n</div>\n\n\n<div class=\"hidden-xs col-sm-2\">\n  <div class=\"sidebar\">\n    <div class=\"panel panel-success home\">\n      <!-- <div class=\"panel-heading\" (click)=\"height = height ? 0 : el.scrollHeight\"> -->\n      <div class=\"panel-heading\" (click)=\"selectConfig('home')\" [routerLink] = \"['home']\">\n        <h3 class=\"panel-title\" >Home</h3>\n      </div>\n      <div\n        class=\"card card-block card-header block\" [style.height]=\"height + 'px'\" #el [hidden]=\"listOfFloorHidden\">\n        <div class=\"panel-body\">\n          <div class=\"row floor\">\n              <div class=\"list-group\">\n                <div class=\"list-floor\" *ngFor=\"let floor of floors | reverse\">\n                <a class=\"list-group-item\"\n                    (click)=\"getFloor(floor.name, floor._id)\"\n                    [ngStyle]=\"checkSelectedFloor(floor._id)? active:''\"\n                    [routerLink] = \"['home/' + floor._id]\">\n                  <button type=\"button\" class=\"fa fa-minus-circle\" (click)=\"smModal.show()\"></button> {{floor.name}}</a>\n                </div>\n                <div class=\"list-floor addFloor\">\n                  <button type=\"button\" class=\"fa fa-plus-circle fa-1x\" (click)=\"addFloorFlag=!addFloorFlag\"></button>\n                  <div class=\"form-group\" [hidden]=\"addFloorFlag\">\n                    <input  type=\"text\"\n                            placeholder=\"Floor Name\"\n                            [(ngModel)]=\"floorname\" name=\"floorname\"\n                            class=\"form-control\"\n                            (keyup.enter)=\"addFloor(floorname)\">\n                  </div>\n                </div>\n              </div>\n          </div>\n        </div>\n      </div>\n\n      <div class=\"panel-heading\" (click)=\"selectConfig('devices')\" [routerLink] = \"['/config/devices']\">\n        <h3 class=\"panel-title\">Devices</h3>\n      </div>\n      <div class=\"panel-heading\" (click)=\"selectConfig('scripts')\" [routerLink] = \"['/config/scripts']\">\n        <h3 class=\"panel-title\">Scripts</h3>\n      </div>\n      <div class=\"panel-heading\" (click)=\"selectConfig('rules')\" [routerLink] = \"['/config/rules']\">\n        <h3 class=\"panel-title\">Rules</h3>\n      </div>\n    </div>\n\n\n  </div>\n</div>\n"
+module.exports = "<div bsModal #smModal=\"bs-modal\" class=\"modal fade\" tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"mySmallModalLabel\" aria-hidden=\"true\">\n  <div class=\"modal-dialog modal-sm\">\n    <div class=\"modal-content\">\n      <div class=\"modal-header\">\n        <h4 class=\"modal-title\">Are you sure you want to delete <b>{{floorDeletedName}}</b> ?</h4>\n      </div>\n      <div class=\"modal-body\">\n        <button type=\"button\" class=\"btn btn-success btn-modal\" (click)=\"smModal.hide()\" (click)=\"deleteFloor()\">Yes</button>\n        <button type=\"button\" class=\"btn btn-danger btn-modal\" (click)=\"smModal.hide()\">No</button>\n      </div>\n    </div>\n  </div>\n</div>\n\n\n<div class=\"hidden-xs col-sm-2\">\n  <div class=\"sidebar\">\n    <div class=\"panel panel-success home\">\n      <!-- <div class=\"panel-heading\" (click)=\"height = height ? 0 : el.scrollHeight\"> -->\n      <div class=\"panel-heading\" (click)=\"selectConfig('home')\" [routerLinkActive]=\"['active']\" [routerLink] = \"['home/' + floorSelectedId]\">\n        <h3 class=\"panel-title\" >Home</h3>\n      </div>\n      <div\n        class=\"card card-block card-header block\" [style.height]=\"height + 'px'\" #el [hidden]=\"listOfFloorHidden\">\n        <div class=\"panel-body\">\n          <div class=\"row floor\">\n              <div class=\"list-group\">\n                <div class=\"list-floor\" *ngFor=\"let floor of floors | reverse\">\n                <a class=\"list-group-item\"\n                    (click)=\"getFloor(floor.name, floor._id)\"\n                    [routerLink] = \"['home/' + floor._id]\"\n                    [routerLinkActive]=\"['floor-active']\">\n                  <button type=\"button\" class=\"fa fa-minus-circle\" (click)=\"smModal.show()\"></button> {{floor.name}}</a>\n                </div>\n                <div class=\"list-floor addFloor\">\n                  <button type=\"button\" class=\"fa fa-plus-circle fa-1x\" (click)=\"addFloorFlag=!addFloorFlag\"></button>\n                  <div class=\"form-group\" [hidden]=\"addFloorFlag\">\n                    <input  type=\"text\"\n                            placeholder=\"Floor Name\"\n                            [(ngModel)]=\"floorname\" name=\"floorname\"\n                            class=\"form-control\"\n                            (keyup.enter)=\"addFloor(floorname)\">\n                  </div>\n                </div>\n              </div>\n          </div>\n        </div>\n      </div>\n\n      <div class=\"panel-heading\" (click)=\"selectConfig('devices')\" [routerLinkActive]=\"['active']\" [routerLink] = \"['/config/devices']\">\n        <h3 class=\"panel-title\">Devices</h3>\n      </div>\n      <div class=\"panel-heading\" (click)=\"selectConfig('scripts')\" [routerLinkActive]=\"['active']\" [routerLink] = \"['/config/scripts']\">\n        <h3 class=\"panel-title\">Scripts</h3>\n      </div>\n      <div class=\"panel-heading\" (click)=\"selectConfig('rules')\" [routerLinkActive]=\"['active']\" [routerLink] = \"['/config/rules']\">\n        <h3 class=\"panel-title\">Rules</h3>\n      </div>\n    </div>\n\n\n  </div>\n</div>\n"
 
 /***/ }),
 
 /***/ 1081:
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"row\">\n  <app-config-navbar (selectedConfig)=\"selectedConfig($event)\"></app-config-navbar>\n  <router-outlet></router-outlet>\n</div>\n"
+module.exports = "<div class=\"row\">\n  <app-config-navbar></app-config-navbar>\n  <router-outlet></router-outlet>\n</div>\n"
 
 /***/ }),
 
@@ -598,14 +598,14 @@ module.exports = "<div class=\"col-sm-9\">\n  <flash-messages></flash-messages>\
 /***/ 1083:
 /***/ (function(module, exports) {
 
-module.exports = "<!-- item -->\n    <div class=\"panel panel-primary panel-pricing\">\n        <div class=\"panel-heading\">\n            <i class=\"fa fa-lightbulb-o\" aria-hidden=\"true\"></i>\n            <h3 class=\"deviceName\">Lighting Control #{{lightingControl.deviceCode}}</h3>\n            <div class=\"switch\">\n              <ui-switch [(ngModel)]=\"permission\" (click)=\"changePermission()\" color=\"inherit\" size=\"medium-v2\"></ui-switch>\n            </div>\n        </div>\n        <div class=\"panel-body\">\n          <div class=\"panel-body-content\">\n            <div class=\"panel-body-icon\">\n              <i class=\"fa fa-home\" aria-hidden=\"true\"></i>\n            </div>\n            <div class=\"btn-group panel-body-btn\">\n              <a class=\"btn btn-primary dropdown-toggle\" data-toggle=\"dropdown\" href=\"#\"> {{selectedFloor}}</a>\n              <ul class=\"dropdown-menu\">\n                <li *ngFor=\"let floor of listOfFloors\" (click)=\"selectFloor(floor)\"><a> {{floor.name}}</a></li>\n              </ul>\n            </div>\n            <div class=\"panel-body-icon\">\n              <i class=\"fa fa-caret-right\" aria-hidden=\"true\"></i>\n            </div>\n            <div class=\"btn-group panel-body-btn\">\n              <a class=\"btn btn-primary dropdown-toggle\" data-toggle=\"dropdown\" href=\"#\"> {{selectedRoom}}</a>\n              <ul class=\"dropdown-menu\">\n                  <li *ngFor=\"let room of listOfRooms\" (click)=\"selectRoom(room)\"><a> {{room.name}}</a></li>\n              </ul>\n            </div>\n            <span class=\"connect\">{{permission?'Connected':'Disconnected'}}</span>\n            <!-- <p class=\"floor-room\"> 1st Floor / Bedroom</p> -->\n          </div>\n          </div>\n\n        <div class=\"panel-footer\">\n          <table class=\"table\">\n            <thead class=\"thead-default\">\n              <tr>\n                <th>ID</th>\n                <th>Device Name</th>\n                <th>Type</th>\n                <th >Dimmable</th>\n                <th>Power(W)</th>\n                <th>Life time(H)</th>\n                <th>Status</th>\n              </tr>\n            </thead>\n            <tbody (keyup)=\"showSaveBtn()\">\n              <tr *ngFor=\"let light of lightingControl.lights; let i = index\">\n                <th scope=\"row\">{{i+1}}</th>\n                <td><input type=\"text\" (blur)=\"edit(light._id, $event)\" name=\"name\" value=\"{{light.name}}\"></td>\n                <td>\n                   <div class=\"btn-group\">\n                     <input type=\"text\" (blur)=\"edit(light._id, $event)\" name=\"type\" value=\"{{light.typeOfLight}}\"\n                              data-toggle=\"dropdown\">\n                     <ul class=\"dropdown-menu kindOfLight\">\n                        <li (click)=\"selectKindOfLight(light._id, 'Bulb')\"><a>Bulb</a></li>\n                        <li (click)=\"selectKindOfLight(light._id, 'Compact')\"><a>Compact</a></li>\n                        <li (click)=\"selectKindOfLight(light._id, 'Fluorescent')\"><a>Fluorescent lamp</a></li>\n                        <li (click)=\"selectKindOfLight(light._id, 'Neon')\"><a>Neon</a></li>\n                     </ul>\n                   </div>\n                </td>\n                <td><span class=\"dimmable\">{{light.dimmable}}</span></td>\n                <!-- <td>  <input type=\"text\" (blur)=\"edit(light._id, $event)\" name=\"type\" value=\"{{light.dimmable}}\"></td> -->\n                <td><input type=\"text\" (blur)=\"edit(light._id, $event)\" name=\"power\" value=\"{{light.power}}\"></td>\n                <td><input type=\"text\" (blur)=\"edit(light._id, $event)\" name=\"life_time\" value=\"{{light.life_time}}\"></td>\n                <td ><input type=\"text\" (blur)=\"edit(light._id, $event)\" name=\"status\" value=\"null\"  style=\"width: 50px\"></td>\n              </tr>\n            </tbody>\n          </table>\n          <div  [hidden]=\"saveBtnHidden\" class=\"save\">\n            <button class=\"btn btn-primary btn-save\" type=\"button\" name=\"button\" (click)=\"save()\" >Save</button>\n          </div>\n          <div class=\"test\">\n          </div>\n        </div>\n    </div>\n<!-- /item -->\n"
+module.exports = "<!-- item -->\n    <div class=\"panel panel-primary panel-pricing\">\n        <div class=\"panel-heading\">\n            <i class=\"fa fa-lightbulb-o\" aria-hidden=\"true\"></i>\n            <h3 class=\"deviceName\">Lighting Control #{{lightingControl.deviceCode}}</h3>\n            <div class=\"switch\">\n              <ui-switch [(ngModel)]=\"permission\" (click)=\"changePermission()\" color=\"inherit\" size=\"medium-v2\"></ui-switch>\n            </div>\n        </div>\n        <div class=\"panel-body\">\n          <div class=\"panel-body-content\">\n            <div class=\"panel-body-icon\">\n              <i class=\"fa fa-home\" aria-hidden=\"true\"></i>\n            </div>\n            <div class=\"btn-group panel-body-btn\">\n              <a class=\"btn btn-primary dropdown-toggle\" data-toggle=\"dropdown\" href=\"#\"> {{selectedFloor}}</a>\n              <ul class=\"dropdown-menu\">\n                <li *ngFor=\"let floor of listOfFloors\" (click)=\"selectFloor(floor);saveBtnHidden=false\"><a> {{floor.name}}</a></li>\n              </ul>\n            </div>\n            <div class=\"panel-body-icon\">\n              <i class=\"fa fa-caret-right\" aria-hidden=\"true\"></i>\n            </div>\n            <div class=\"btn-group panel-body-btn\">\n              <a class=\"btn btn-primary dropdown-toggle\" data-toggle=\"dropdown\" href=\"#\"> {{selectedRoom}}</a>\n              <ul class=\"dropdown-menu\">\n                  <li *ngFor=\"let room of listOfRooms\" (click)=\"selectRoom(room);saveBtnHidden=false\"><a> {{room.name}}</a></li>\n              </ul>\n            </div>\n            <span class=\"connect\">{{permission?'Connected':'Disconnected'}}</span>\n            <!-- <p class=\"floor-room\"> 1st Floor / Bedroom</p> -->\n          </div>\n          </div>\n\n        <div class=\"panel-footer\">\n          <table class=\"table\">\n            <thead class=\"thead-default\">\n              <tr>\n                <th>ID</th>\n                <th>Device Name</th>\n                <th>Type</th>\n                <th >Dimmable</th>\n                <th>Power(W)</th>\n                <th>Life time(H)</th>\n                <th>Status</th>\n              </tr>\n            </thead>\n            <tbody (keyup)=\"showSaveBtn()\">\n              <tr *ngFor=\"let light of lightingControl.lights; let i = index\">\n                <th scope=\"row\">{{i+1}}</th>\n                <td><input type=\"text\" (blur)=\"edit(light._id, $event)\" name=\"name\" value=\"{{light.name}}\"></td>\n                <td>\n                   <div class=\"btn-group\">\n                     <input type=\"text\" (blur)=\"edit(light._id, $event)\" name=\"type\" value=\"{{light.typeOfLight}}\"\n                              data-toggle=\"dropdown\">\n                     <ul class=\"dropdown-menu kindOfLight\">\n                        <li (click)=\"selectKindOfLight(light._id, 'Bulb')\"><a>Bulb</a></li>\n                        <li (click)=\"selectKindOfLight(light._id, 'Compact')\"><a>Compact</a></li>\n                        <li (click)=\"selectKindOfLight(light._id, 'Fluorescent')\"><a>Fluorescent lamp</a></li>\n                        <li (click)=\"selectKindOfLight(light._id, 'Neon')\"><a>Neon</a></li>\n                     </ul>\n                   </div>\n                </td>\n                <td><span class=\"dimmable\">{{light.dimmable}}</span></td>\n                <!-- <td>  <input type=\"text\" (blur)=\"edit(light._id, $event)\" name=\"type\" value=\"{{light.dimmable}}\"></td> -->\n                <td><input type=\"text\" (blur)=\"edit(light._id, $event)\" name=\"power\" value=\"{{light.power}}\"></td>\n                <td><input type=\"text\" (blur)=\"edit(light._id, $event)\" name=\"life_time\" value=\"{{light.life_time}}\"></td>\n                <td ><input type=\"text\" (blur)=\"edit(light._id, $event)\" name=\"status\" value=\"null\"  style=\"width: 50px\"></td>\n              </tr>\n            </tbody>\n          </table>\n          <div  [hidden]=\"saveBtnHidden\" class=\"save\">\n            <button class=\"btn btn-primary btn-save\" type=\"button\" name=\"button\" (click)=\"save()\" >Save</button>\n          </div>\n          <div class=\"test\">\n          </div>\n        </div>\n    </div>\n<!-- /item -->\n"
 
 /***/ }),
 
 /***/ 1084:
 /***/ (function(module, exports) {
 
-module.exports = "<!-- item -->\n    <div class=\"panel panel-primary panel-pricing\">\n        <div class=\"panel-heading\">\n            <i class=\"fa fa-thermometer-empty\" aria-hidden=\"true\"></i>\n            <h3 class=\"deviceName\">Sensor Module #{{sensorModule.deviceCode}}</h3>\n            <div class=\"switch\">\n              <ui-switch [(ngModel)]=\"permission\" (click)=\"changePermission()\" color=\"inherit\" size=\"medium-v2\"></ui-switch>\n            </div>\n        </div>\n        <div class=\"panel-body\">\n          <div class=\"panel-body-content\">\n            <div class=\"panel-body-icon\">\n              <i class=\"fa fa-home\" aria-hidden=\"true\"></i>\n            </div>\n            <div class=\"btn-group panel-body-btn\">\n              <a class=\"btn btn-primary dropdown-toggle\" data-toggle=\"dropdown\" href=\"#\"> {{selectedFloor}}</a>\n              <ul class=\"dropdown-menu\">\n                <li *ngFor=\"let floor of listOfFloors\" (click)=\"selectFloor(floor)\"><a> {{floor.name}}</a></li>\n              </ul>\n            </div>\n            <div class=\"panel-body-icon\">\n              <i class=\"fa fa-caret-right\" aria-hidden=\"true\"></i>\n            </div>\n            <div class=\"btn-group panel-body-btn\">\n              <a class=\"btn btn-primary dropdown-toggle\" data-toggle=\"dropdown\" href=\"#\"> {{selectedRoom}}</a>\n              <ul class=\"dropdown-menu\">\n                  <li *ngFor=\"let room of listOfRooms\" (click)=\"selectRoom(room)\"><a> {{room.name}}</a></li>\n              </ul>\n            </div>\n            <div class=\"battery\">\n              <i class=\"fa fa-battery-half\" aria-hidden=\"true\"></i>\n              <span> {{sensorModule.battery}}%</span>\n            </div>\n            <p class=\"connect\">{{permission?'Connected':'Disconnected'}}</p>\n          </div>\n        </div>\n\n        <div class=\"panel-footer\">\n          <table class=\"table\">\n            <thead class=\"thead-default\">\n              <tr>\n                <th>ID</th>\n                <th>Device Name</th>\n                <th>Kind</th>\n                <th>Value</th>\n              </tr>\n            </thead>\n            <tbody (keyup)=\"showSaveBtn()\">\n              <tr *ngFor=\"let sensor of sensorModule.sensors; let i = index\">\n                <th scope=\"row\">{{i+1}}</th>\n                <td><input type=\"text\" (blur)=\"edit(sensor._id, $event)\" name=\"name\" value=\"{{sensor.name}}\"></td>\n                <td>\n                   <div class=\"btn-group\">\n                     <input type=\"text\" (blur)=\"edit(sensor._id, $event)\" name=\"kind\" value=\"{{sensor.kind}}\"\n                              data-toggle=\"dropdown\">\n                     <ul class=\"dropdown-menu kindOfLight\">\n                        <li (click)=\"selectKindOfSensor(sensor._id, 'Light')\"><a>Light</a></li>\n                        <li (click)=\"selectKindOfSensor(sensor._id, 'Temperature')\"><a>Temperature</a></li>\n                        <li (click)=\"selectKindOfSensor(sensor._id, 'Humidity')\"><a>Humidity</a></li>\n                        <li (click)=\"selectKindOfSensor(sensor._id, 'Gas')\"><a>Gas</a></li>\n                     </ul>\n                   </div>\n                </td>\n                <td ><input type=\"text\" (blur)=\"edit(sensor._id, $event)\" name=\"value\" value=\"null\"  style=\"width: 50px\"></td>\n              </tr>\n            </tbody>\n          </table>\n          <div  [hidden]=\"saveBtnHidden\" class=\"save\">\n            <button class=\"btn btn-primary btn-save\" type=\"button\" name=\"button\" (click)=\"save()\" >Save</button>\n          </div>\n          <div class=\"test\">\n          </div>\n        </div>\n    </div>\n<!-- /item -->\n"
+module.exports = "<!-- item -->\n    <div class=\"panel panel-primary panel-pricing\">\n        <div class=\"panel-heading\">\n            <i class=\"fa fa-thermometer-empty\" aria-hidden=\"true\"></i>\n            <h3 class=\"deviceName\">Sensor Module #{{sensorModule.deviceCode}}</h3>\n            <div class=\"switch\">\n              <ui-switch [(ngModel)]=\"permission\" (click)=\"changePermission()\" color=\"inherit\" size=\"medium-v2\"></ui-switch>\n            </div>\n        </div>\n        <div class=\"panel-body\">\n          <div class=\"panel-body-content\">\n            <div class=\"panel-body-icon\">\n              <i class=\"fa fa-home\" aria-hidden=\"true\"></i>\n            </div>\n            <div class=\"btn-group panel-body-btn\">\n              <a class=\"btn btn-primary dropdown-toggle\" data-toggle=\"dropdown\" href=\"#\"> {{selectedFloor}}</a>\n              <ul class=\"dropdown-menu\">\n                <li *ngFor=\"let floor of listOfFloors\" (click)=\"selectFloor(floor)\"><a> {{floor.name}}</a></li>\n              </ul>\n            </div>\n            <div class=\"panel-body-icon\">\n              <i class=\"fa fa-caret-right\" aria-hidden=\"true\"></i>\n            </div>\n            <div class=\"btn-group panel-body-btn\">\n              <a class=\"btn btn-primary dropdown-toggle\" data-toggle=\"dropdown\" href=\"#\"> {{selectedRoom}}</a>\n              <ul class=\"dropdown-menu\">\n                  <li *ngFor=\"let room of listOfRooms\" (click)=\"selectRoom(room)\"><a> {{room.name}}</a></li>\n              </ul>\n            </div>\n            <div class=\"battery\">\n              <i class=\"fa fa-battery-half\" aria-hidden=\"true\"></i>\n              <span> {{sensorModule.battery}}%</span>\n            </div>\n            <p class=\"connect\">{{permission?'Connected':'Disconnected'}}</p>\n          </div>\n        </div>\n\n        <div class=\"panel-footer\">\n          <table class=\"table\">\n            <thead class=\"thead-default\">\n              <tr>\n                <th>ID</th>\n                <th>Device Name</th>\n                <th>Type</th>\n                <th>Value</th>\n              </tr>\n            </thead>\n            <tbody (keyup)=\"showSaveBtn()\">\n              <tr *ngFor=\"let sensor of sensorModule.sensors; let i = index\">\n                <th scope=\"row\">{{i+1}}</th>\n                <td><input type=\"text\" (blur)=\"editName(sensor._id, $event)\" name=\"name\" value=\"{{sensor.name}}\"></td>\n                <td>\n                   <div class=\"btn-group\">\n                     <input type=\"text\" name=\"kind\" value=\"{{sensor._type}}\" disabled>\n                   </div>\n                </td>\n                <td ><input type=\"text\" name=\"value\" value=\"{{sensor.value}}\"  style=\"width: 50px\"></td>\n              </tr>\n            </tbody>\n          </table>\n          <div  [hidden]=\"saveBtnHidden\" class=\"save\">\n            <button class=\"btn btn-primary btn-save\" type=\"button\" name=\"button\" (click)=\"save()\" >Save</button>\n          </div>\n          <div class=\"test\">\n          </div>\n        </div>\n    </div>\n<!-- /item -->\n"
 
 /***/ }),
 
@@ -811,12 +811,12 @@ var DeviceService = (function () {
         return this.http.put(this.baseURL + '/devices/' + deviceId + '/lights', lightingcontrol, { headers: headers })
             .map(function (res) { return res.json(); });
     };
-    DeviceService.prototype.updateSensors = function (deviceId, lightingcontrol) {
+    DeviceService.prototype.updateSensorName = function (deviceId, sensors) {
         var headers = new __WEBPACK_IMPORTED_MODULE_1__angular_http__["Headers"]();
         this.loadToken();
         headers.append('Authorization', this.authToken);
         headers.append('Content-Type', 'application/json');
-        return this.http.put(this.baseURL + '/devices/' + deviceId + '/sensors', lightingcontrol, { headers: headers })
+        return this.http.put(this.baseURL + '/devices/' + deviceId + '/sensors', sensors, { headers: headers })
             .map(function (res) { return res.json(); });
     };
     DeviceService.prototype.loadToken = function () {
@@ -1571,6 +1571,7 @@ var LightComponent = (function () {
             .subscribe(function (message) {
             _this.message = message;
             _this.lightValue = _this.message.text.value;
+            _this.preLightValue = _this.switchValue = _this.lightValue;
             console.log(_this.lightValue);
         });
     };
@@ -1760,44 +1761,28 @@ var ConfigNavbarComponent = (function () {
         this.router = router;
         this.flashMessage = flashMessage;
         this.selectedFloor = new __WEBPACK_IMPORTED_MODULE_0__angular_core__["EventEmitter"]();
-        this.selectedConfig = new __WEBPACK_IMPORTED_MODULE_0__angular_core__["EventEmitter"]();
         this.listOfFloorHidden = true;
         this.addFloorFlag = true;
-        this.navbartest = "blhablahb";
-        this.test = false;
-        this.active = {
-            'background-color': '#f5f5f5',
-            'color': 'black'
-        };
     }
     ConfigNavbarComponent.prototype.ngOnInit = function () {
-        this.getFloors();
-        this.selectedConfigLocal = localStorage.getItem('currentConfig');
-        this.selectConfig(this.selectedConfigLocal);
+        this.currentConfig = localStorage.getItem('currentConfig');
+        this.selectConfig(this.currentConfig);
+        if (!this.floorSelectedId) {
+            this.floorSelectedId = "";
+        }
     };
     ConfigNavbarComponent.prototype.selectConfig = function (config) {
         localStorage.setItem('currentConfig', config);
-        switch (config) {
-            case 'home':
-                this.listOfFloorHidden = false;
-                this.floorSelectedId = localStorage.getItem('currentFloor');
-                this.selectedConfig.emit('home');
-                break;
-            case 'devices':
-                this.listOfFloorHidden = true;
-                this.selectedConfig.emit('devices');
-                break;
-            case 'scripts':
-                this.listOfFloorHidden = true;
-                this.selectedConfig.emit('scripts');
-                break;
-            case 'rules':
-                this.listOfFloorHidden = true;
-                this.selectedConfig.emit('rules');
-                break;
+        if (config == "home") {
+            this.getListOfFloors();
+            this.listOfFloorHidden = false;
+            this.floorSelectedId = localStorage.getItem('currentFloor');
+        }
+        else {
+            this.listOfFloorHidden = true;
         }
     };
-    ConfigNavbarComponent.prototype.getFloors = function () {
+    ConfigNavbarComponent.prototype.getListOfFloors = function () {
         var _this = this;
         this.houseService.getListOfFloors().subscribe(function (res) {
             _this.floors = res;
@@ -1811,7 +1796,7 @@ var ConfigNavbarComponent = (function () {
         this.houseService.addNewFloor({ "name": floorname }).subscribe(function (res) {
             if (res.success) {
                 _this.flashMessage.show('Success!!!', { cssClass: 'alert-success', timeout: 3000 });
-                _this.getFloors();
+                _this.getListOfFloors();
             }
             else {
                 _this.flashMessage.show('Something went wrong', { cssClass: 'alert-success', timeout: 3000 });
@@ -1821,7 +1806,6 @@ var ConfigNavbarComponent = (function () {
     };
     ConfigNavbarComponent.prototype.getFloor = function (name, floorId) {
         localStorage.setItem('currentFloor', floorId);
-        this.selectedFloor.emit(floorId);
         this.floorSelectedId = floorId;
         this.floorDeletedName = name;
     };
@@ -1830,7 +1814,7 @@ var ConfigNavbarComponent = (function () {
         this.houseService.deleteFloor(this.floorSelectedId).subscribe(function (res) {
             if (res.success) {
                 _this.flashMessage.show('Success!!!', { cssClass: 'alert-success', timeout: 3000 });
-                _this.getFloors();
+                _this.getListOfFloors();
             }
             else {
                 _this.flashMessage.show('Something went wrong', { cssClass: 'alert-danger', timeout: 3000 });
@@ -1849,10 +1833,6 @@ var ConfigNavbarComponent = (function () {
         __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Output"])(), 
         __metadata('design:type', Object)
     ], ConfigNavbarComponent.prototype, "selectedFloor", void 0);
-    __decorate([
-        __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Output"])(), 
-        __metadata('design:type', Object)
-    ], ConfigNavbarComponent.prototype, "selectedConfig", void 0);
     ConfigNavbarComponent = __decorate([
         __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
             selector: 'app-config-navbar',
@@ -1896,29 +1876,8 @@ var ConfigComponent = (function () {
         this.flashMessage = flashMessage;
         this.houseService = houseService;
         this.router = router;
-        this.listOfRoomsHidden = true;
     }
     ConfigComponent.prototype.ngOnInit = function () {
-    };
-    ConfigComponent.prototype.selectedFloor = function (floorId) {
-        this.selectedFloorId = floorId;
-    };
-    ConfigComponent.prototype.selectedConfig = function (config) {
-        switch (config) {
-            case 'home':
-                this.switch_config_name = 'home';
-                this.selectedFloorId = localStorage.getItem('currentFloor');
-                break;
-            case 'devices':
-                this.switch_config_name = 'devices';
-                break;
-            case 'scripts':
-                this.switch_config_name = 'scripts';
-                break;
-            case 'rules':
-                this.switch_config_name = 'rules';
-                break;
-        }
     };
     ConfigComponent = __decorate([
         __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
@@ -2226,24 +2185,10 @@ var SensorModuleComponent = (function () {
         }
         console.log("sensorId not found");
     };
-    SensorModuleComponent.prototype.edit = function (sensorId, event) {
-        var field = event.target.name;
+    SensorModuleComponent.prototype.editName = function (sensorId, event) {
         var value = event.target.value;
         var index = this.lookup(sensorId);
-        switch (field) {
-            case "name":
-                this.sensorModule.sensors[index].name = value;
-                break;
-            case "kind":
-                this.sensorModule.sensors[index].kind = value;
-                break;
-            case "power":
-                this.sensorModule.sensors[index].power = Number(value);
-                break;
-            case "life_circle":
-                this.sensorModule.sensors[index].life_circle = Number(value);
-                break;
-        }
+        this.sensorModule.sensors[index].name = value;
     };
     SensorModuleComponent.prototype.selectKindOfSensor = function (sensorId, value) {
         var index = this.lookup(sensorId);
@@ -2251,7 +2196,7 @@ var SensorModuleComponent = (function () {
         this.saveBtnHidden = false;
     };
     SensorModuleComponent.prototype.save = function () {
-        this.deviceService.updateSensors(this.sensorModule._id, this.sensorModule).subscribe(function (res) {
+        this.deviceService.updateSensorName(this.sensorModule._id, this.sensorModule.sensors).subscribe(function (res) {
             if (!res.success) {
                 console.log("something went wrong");
             }

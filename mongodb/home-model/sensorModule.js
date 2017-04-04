@@ -11,7 +11,7 @@ var SensorModuleSchema = new Schema({
     sensors: [
       {
           name: String,         // Ex: 'Light sensor 1', 'Light sensor 2', 'Temperature sensor 2',...
-          kind: String,         // Ex: 'Light sensor', 'Temperature sensor',...
+          _type: String,         // Ex: 'Light sensor', 'Temperature sensor',...
           value: Number
       }
     ]
@@ -19,25 +19,52 @@ var SensorModuleSchema = new Schema({
 
 const SensorModule = module.exports = mongoose.model('SensorModule', SensorModuleSchema);
 
-
-module.exports.updateSensors = function(deviceId, sensorModule, callback){
-  SensorModule.findById(deviceId, (err, sensor)=>{
+module.exports.updateSensorName = function(deviceId, sensors, callback){
+  SensorModule.findById(deviceId, (err, device)=>{
     if(err){
       throw err;
       callback({success: false, msg: "something went wrong"});
     }
-    if(sensor){
-      sensor.sensors = sensorModule.sensors;
-      sensor.save((err)=>{
-        if(err){
+    if(device){
+      for(i=0; i< device.sensors.length; i++){
+        device.sensors[i].name = sensors[i].name;
+      }
+      device.save(err=>{
+        if(err)
           throw err;
-          callback({success: false, msg: "something went wrong"});
-        } else {
-          callback({success: true, msg: "The sensors has been updated to device"});
+        else {
+          callback({success: true, msg: "sensors have been updated"});
         }
       })
-    } else {
-      callback({success: false, msg: "module not found"});
     }
   })
 }
+
+module.exports.updateSensors = function(deviceId, sensorModule, callback){
+  SensorModule.findByIdAndUpdate(deviceId, sensorModule, (err, device)=>{
+    if(err){
+      throw err;
+      callback({success: false, msg: "something went wrong"});
+    }
+    else {
+      callback({success: true, msg: "device has been updated"});
+    }
+  })
+}
+
+
+module.exports.authenticateDevices = function(newDevice, callback) {
+  SensorModule.findOne({deviceCode: newDevice.deviceCode},(err, device)=>{
+    if(err) throw err;
+    if(!device){
+      newDevice.save((err, doc) => {
+        if(err) throw err;
+        else {
+          callback(doc._id);
+        }
+      });
+    } else {
+      callback(device._id);
+    }
+  })
+};

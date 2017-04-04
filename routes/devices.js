@@ -58,7 +58,7 @@ router.put('/:id/lights', (req, res, next) => {
 router.put('/:id/sensors', (req, res, next) => {
   let deviceId = req.params.id;
   let sensorModule = req.body;
-  SensorModule.updateSensors(deviceId, sensorModule, result=>{
+  SensorModule.updateSensorName(deviceId, sensorModule, result=>{
     res.json(result);
   })
 })

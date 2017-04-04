@@ -5,8 +5,7 @@ const cors = require('cors');
 const passport = require('passport');
 const mongoose = require('mongoose');
 const config = require('./config/database');
-const mqtt = require('./mqtt/mqtt');
-//require('./mqtt/broker');
+require('./mqtt/mqtt');
 
 // Connect To Database
 mongoose.connect(config.database);

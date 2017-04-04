@@ -47,12 +47,12 @@ export class DeviceService {
       .map(res => res.json());
   }
 
-  updateSensors(deviceId, lightingcontrol){
+  updateSensorName(deviceId, sensors){
     let headers = new Headers();
     this.loadToken();
     headers.append('Authorization', this.authToken);
     headers.append('Content-Type', 'application/json');
-    return this.http.put(this.baseURL + '/devices/' + deviceId + '/sensors', lightingcontrol, {headers: headers})
+    return this.http.put(this.baseURL + '/devices/' + deviceId + '/sensors', sensors, {headers: headers})
       .map(res => res.json());
   }
 

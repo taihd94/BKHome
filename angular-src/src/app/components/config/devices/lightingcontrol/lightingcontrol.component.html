@@ -15,7 +15,7 @@
             <div class="btn-group panel-body-btn">
               <a class="btn btn-primary dropdown-toggle" data-toggle="dropdown" href="#"> {{selectedFloor}}</a>
               <ul class="dropdown-menu">
-                <li *ngFor="let floor of listOfFloors" (click)="selectFloor(floor)"><a> {{floor.name}}</a></li>
+                <li *ngFor="let floor of listOfFloors" (click)="selectFloor(floor);saveBtnHidden=false"><a> {{floor.name}}</a></li>
               </ul>
             </div>
             <div class="panel-body-icon">
@@ -24,7 +24,7 @@
             <div class="btn-group panel-body-btn">
               <a class="btn btn-primary dropdown-toggle" data-toggle="dropdown" href="#"> {{selectedRoom}}</a>
               <ul class="dropdown-menu">
-                  <li *ngFor="let room of listOfRooms" (click)="selectRoom(room)"><a> {{room.name}}</a></li>
+                  <li *ngFor="let room of listOfRooms" (click)="selectRoom(room);saveBtnHidden=false"><a> {{room.name}}</a></li>
               </ul>
             </div>
             <span class="connect">{{permission?'Connected':'Disconnected'}}</span>

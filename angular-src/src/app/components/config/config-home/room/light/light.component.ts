@@ -24,6 +24,7 @@ export class LightComponent implements OnInit {
      .subscribe(message => {
        this.message = message;
        this.lightValue = this.message.text.value;
+       this.preLightValue = this.switchValue = this.lightValue;
        console.log(this.lightValue);
     });
   }
