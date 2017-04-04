@@ -1,0 +1,25 @@
+<div class="sensor" [ngSwitch]="sensor._type">
+  <div class="ss" *ngSwitchCase="'Temperature'">
+    <i class="fa fa-thermometer-three-quarters" aria-hidden="true"></i>
+    <span> {{sensor._type}}: </span>
+    <input type="text" [(ngModel)]="value" disabled>
+    <span>oC</span>
+  </div>
+  <div class="ss" *ngSwitchCase="'Humidity'">
+    <i class="fa fa-tint" aria-hidden="true"></i>
+    <span> {{sensor._type}}: </span>
+    <input type="text" [(ngModel)]="value" disabled>
+    <span>%</span>
+  </div>
+  <div class="ss" *ngSwitchCase="'Light'">
+    <i class="fa fa-sun-o" aria-hidden="true"></i>
+    <span> {{sensor._type}}: </span>
+    <input type="text" [(ngModel)]="value " disabled>
+    <span> Lux</span>
+  </div>
+  <!-- <div class="ss" *ngSwitchCase="'Gate'">
+    <i class="fa fa-building" aria-hidden="true"></i>
+    <span> {{sensor.name}}: </span>
+    <input type="text" [(ngModel)]="value" disabled>
+  </div> -->
+</div>

@@ -1,7 +1,9 @@
 const mqtt = require('mqtt');
 sensorClient = mqtt.connect('mqtt://localhost:1883');
-const SensorModule = require('../mongodb/home-model/sensorModule');
+const io = require('socket.io-client');
+var socket = io('http://localhost:4000');
 
+const SensorModule = require('../mongodb/home-model/sensorModule');
 
 sensorClient.on('connect',  () => {
   sensorClient.subscribe('devices/sensorModule/+');
@@ -9,10 +11,12 @@ sensorClient.on('connect',  () => {
 })
 
 sensorClient.on('message', (topic, message) => {
-    console.log("[" + topic + "]\n\r" + message);
+    console.log("[" + topic + "]\n\r");
     deviceId = topic.split("/")[2];
-    let json = JSON.parse(message);
-    SensorModule.updateSensors(deviceId, json, result=>{
-      console.log(result);
+    let sensorModule = JSON.parse(message);
+    SensorModule.updateSensorValue(deviceId, sensorModule, result=>{
+      for(let sensor of result.sensors){
+        socket.emit('sensor-event', sensor);
+      }
     })
 });

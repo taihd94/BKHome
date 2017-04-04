@@ -46,25 +46,20 @@
             </div>
           </div>
           <div class="sensors">
-            <p><i class="fa fa-thermometer-three-quarters" aria-hidden="true"></i> Temperature: 20 oC</p>
-            <p><i class="fa fa-tint" aria-hidden="true"></i> Humidity: 60 % </p>
-            <p><i class="fa fa-sun-o" aria-hidden="true"></i> Light: 150 Lux </p>
+            <div class="device" *ngFor="let ssmodule of sensorModules">
+              <div class="sensor" *ngFor="let sensor of ssmodule.sensors">
+                <app-sensor [sensor] = "sensor"></app-sensor>
+              </div>
+            </div>
           </div>
         </div>
         <div class="col-sm-8 devices">
           <h2 class="collapse in">Devices</h2>
           <div class="list-group">
-            <div class="device" *ngFor="let device of devices">
-              <div class="lights"  *ngIf="device.deviceType=='LightingControl'">
-                <div class="light" *ngFor="let light of device.lights">
-                  <app-light [light] = "light"></app-light>
-                </div>
+            <div class="device" *ngFor="let ltctr of lightingControls">
+              <div class="light" *ngFor="let light of ltctr.lights">
+                <app-light [light] = "light"></app-light>
               </div>
-              <!-- <div class="sensors"  *ngIf="device.deviceType=='SensorModule'">
-                <div class="sensor" *ngFor="let sensor of device.sensors">
-                  <a href="/config" class="list-group-item">{{sensor.name}}</a>
-                </div>
-              </div> -->
             </div>
           </div>
         </div>

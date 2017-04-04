@@ -2,8 +2,6 @@ import { Component, EventEmitter, OnInit, OnDestroy, Input, Output } from '@angu
 import { HouseService} from '../../../../services/httpservice/house.service';
 import { FlashMessagesService } from 'angular2-flash-messages'
 import { Router } from '@angular/router';
-import {MessageEvent} from '../../../../services/broadcast/message-event.service';
-
 
 
 @Component({
@@ -22,27 +20,32 @@ export class RoomComponent implements OnInit, OnDestroy {
   roomDeletedId: String;
   roomUrlName: String;
   imgUrl: String;
-  devices: [Object];
-  device: {
-    deviceType: String
-  }
-  Slidervalue = [50, 80];
-  lightValue = [];
-
-  connection;
-  message;
+  devices: any;
+  lightingControls = [];
+  sensorModules = [];
 
   constructor(
                 private flashMessage: FlashMessagesService,
                 private houseService: HouseService,
-                private router: Router,
-                private messageEvent: MessageEvent,
+                private router: Router
              ) {}
 
 
   ngOnInit() {
     this.houseService.getListOfDevicesInRoom(this.floorId, this.room._id).subscribe(res=>{
         this.devices = res.devices;
+        if(this.devices){
+          for(let device of this.devices){
+            switch(device.deviceType){
+              case "LightingControl":
+                this.lightingControls.push(device);
+                break;
+              case "SensorModule":
+                this.sensorModules.push(device);
+                break;
+            }
+          }
+        }
     });
   }
 

@@ -1,0 +1,15 @@
+.fa{
+  margin: 0 10px 0 10px;
+}
+
+.fa-sun-o{
+  margin-left: 7px;
+  margin-right: 8px;
+}
+
+input{
+  background-color: inherit;
+  border: 0px;
+  width: 27px;
+  direction: rtl;
+}

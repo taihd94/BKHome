@@ -190,15 +190,15 @@ for(var i = 0; i< lightingControl.length; i++) {
     });
 }
 
-done = 0;
-for(var i = 0; i< sensorModule.length; i++) {
-    sensorModule[i].save(function (err, result) {
-        done++;
-        if (done === sensorModule.length) {
-            mongoose.disconnect();
-        }
-    });
-}
+// done = 0;
+// for(var i = 0; i< sensorModule.length; i++) {
+//     sensorModule[i].save(function (err, result) {
+//         done++;
+//         if (done === sensorModule.length) {
+//             mongoose.disconnect();
+//         }
+//     });
+// }
 
 done = 0;
 for(var i = 0; i< user.length; i++) {

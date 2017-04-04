@@ -1,6 +1,6 @@
 webpackJsonp([1,5],{
 
-/***/ 1017:
+/***/ 1018:
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(13)();
@@ -18,7 +18,7 @@ module.exports = module.exports.toString();
 
 /***/ }),
 
-/***/ 1018:
+/***/ 1019:
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(13)();
@@ -36,7 +36,7 @@ module.exports = module.exports.toString();
 
 /***/ }),
 
-/***/ 1019:
+/***/ 1020:
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(13)();
@@ -54,7 +54,7 @@ module.exports = module.exports.toString();
 
 /***/ }),
 
-/***/ 1020:
+/***/ 1021:
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(13)();
@@ -72,24 +72,6 @@ module.exports = module.exports.toString();
 
 /***/ }),
 
-/***/ 1021:
-/***/ (function(module, exports, __webpack_require__) {
-
-exports = module.exports = __webpack_require__(13)();
-// imports
-
-
-// module
-exports.push([module.i, "\n.col-sm-2 {\n  margin: 0px 0px;\n  padding: 0px 0px;\n}\n\n.sidebar {\n  background-color: #272c2f;\n  position: fixed;\n  height: 100vh;\n  width: inherit;\n  min-width: 180px;\n  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.8);\n}\n\n.panel {\n  background-color: inherit;\n  border: 0px;\n  margin-bottom: 0px;\n  margin-top: 40px;\n}\n\n.panel-heading{\n  background-color: #272c2f;\n  cursor: pointer;\n  border: 0px;\n  border-radius: 0;\n  padding: 20px 0 20px 0;\n}\n\n.panel-title {\n  font-size: 20px;\n  margin-left: 50px;\n  /*padding-top: 20px;*/\n  text-transform: none;\n  font-weight: 100;\n}\n\n.panel-body {\n  padding-top: 0px;\n}\n\n.card {\n  padding-top: 0px;\n  overflow: hidden;\n  -webkit-transition: height .5s;\n  transition: height .5s;\n  background-color: rgba(0, 0, 0, 0.23);\n}\n\n.list-floor{\n  position: relative;\n}\n\n\n.list-group-item:hover{\n  border-radius: 0;\n  border-color: inherit;\n}\n\n.list-group-item {\n  margin-right: 0px;\n  background-color: inherit;\n  color: #ffffff;\n  border: 0px;\n  position: relative;\n  cursor: pointer;\n  border-radius: 0;\n}\n\n.fa {\n  cursor: pointer;\n  color: auto;\n  background-color: inherit;\n  border: 0px;\n}\n\n.fa-minus-circle {\n  margin-right: 10px;\n  color: auto;\n}\n\n.fa-plus-circle {\n  color: white;\n  float: left;\n  margin-top: 8px;\n  margin-right: 5px;\n}\n\n.addFloor {\n  margin-left: 23px;\n  margin-top: 10px;\n}\n\ninput[name=\"floorname\"]{\n  width: 135px;\n  height: 35px;\n  margin-right: 5px;\n}\n\n.modal-title {\n  text-align: center;\n}\n\n.modal-body{\n  margin: 0 auto;\n  text-align: center;\n}\n\n.btn-modal {\n  min-width: 80px;\n  margin-left: 10px;\n  margin-right: 10px;\n}\n\n.active{\n  background-color: rgb(57, 60, 62);\n}\n\n.floor-active{\n  background-color: #f5f5f5;\n  color: black;\n  padding-left: 43px;\n}\n", ""]);
-
-// exports
-
-
-/*** EXPORTS FROM exports-loader ***/
-module.exports = module.exports.toString();
-
-/***/ }),
-
 /***/ 1022:
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -98,7 +80,7 @@ exports = module.exports = __webpack_require__(13)();
 
 
 // module
-exports.push([module.i, ".row{\n  background-color: #393a35;\n  height: 100%;\n  width:auto;\n  min-height: 100vh;\n  margin: 0px;\n}\n", ""]);
+exports.push([module.i, ".fa{\n  margin: 0 10px 0 10px;\n}\n\n.fa-sun-o{\n  margin-left: 7px;\n  margin-right: 8px;\n}\n\ninput{\n  background-color: inherit;\n  border: 0px;\n  width: 27px;\n  direction: rtl;\n}\n", ""]);
 
 // exports
 
@@ -116,7 +98,7 @@ exports = module.exports = __webpack_require__(13)();
 
 
 // module
-exports.push([module.i, "\n.listOfDevices{\n  margin: 70px 50px 20px 50px;\n}\n", ""]);
+exports.push([module.i, "\n.col-sm-2 {\n  margin: 0px 0px;\n  padding: 0px 0px;\n}\n\n.sidebar {\n  background-color: #272c2f;\n  position: fixed;\n  height: 100vh;\n  width: inherit;\n  min-width: 180px;\n  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.8);\n}\n\n.panel {\n  background-color: inherit;\n  border: 0px;\n  margin-bottom: 0px;\n  margin-top: 40px;\n}\n\n.panel-heading{\n  background-color: #272c2f;\n  cursor: pointer;\n  border: 0px;\n  border-radius: 0;\n  padding: 20px 0 20px 0;\n}\n\n.panel-title {\n  font-size: 20px;\n  margin-left: 50px;\n  /*padding-top: 20px;*/\n  text-transform: none;\n  font-weight: 100;\n}\n\n.panel-body {\n  padding-top: 0px;\n}\n\n.card {\n  padding-top: 0px;\n  overflow: hidden;\n  -webkit-transition: height .5s;\n  transition: height .5s;\n  background-color: rgba(0, 0, 0, 0.23);\n}\n\n.list-floor{\n  position: relative;\n}\n\n\n.list-group-item:hover{\n  border-radius: 0;\n  border-color: inherit;\n}\n\n.list-group-item {\n  margin-right: 0px;\n  background-color: inherit;\n  color: #ffffff;\n  border: 0px;\n  position: relative;\n  cursor: pointer;\n  border-radius: 0;\n}\n\n.fa {\n  cursor: pointer;\n  color: auto;\n  background-color: inherit;\n  border: 0px;\n}\n\n.fa-minus-circle {\n  margin-right: 10px;\n  color: auto;\n}\n\n.fa-plus-circle {\n  color: white;\n  float: left;\n  margin-top: 8px;\n  margin-right: 5px;\n}\n\n.addFloor {\n  margin-left: 23px;\n  margin-top: 10px;\n}\n\ninput[name=\"floorname\"]{\n  width: 135px;\n  height: 35px;\n  margin-right: 5px;\n}\n\n.modal-title {\n  text-align: center;\n}\n\n.modal-body{\n  margin: 0 auto;\n  text-align: center;\n}\n\n.btn-modal {\n  min-width: 80px;\n  margin-left: 10px;\n  margin-right: 10px;\n}\n\n.active{\n  background-color: rgb(57, 60, 62);\n}\n\n.floor-active{\n  background-color: #f5f5f5;\n  color: black;\n  padding-left: 43px;\n}\n", ""]);
 
 // exports
 
@@ -134,7 +116,7 @@ exports = module.exports = __webpack_require__(13)();
 
 
 // module
-exports.push([module.i, "\n.deviceName{\n  margin: 10px 0px 0px 15px;\n}\n\n.panel {\n  border: 0px;\n  border-radius: 0;\n  margin-bottom: 40px;\n  min-width: 600px;\n  box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);\n\n}\n\n.panel-heading{\n  border: 0px;\n  border-radius: 0;\n}\n\n.panel-pricing {\n  -moz-transition: all .3s ease;\n  -o-transition: all .3s ease;\n  -webkit-transition: all .3s ease;\n}\n.panel-pricing:hover {\n  box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.2);\n}\n.panel-pricing .panel-heading {\n  height: 60px;\n}\n.panel-pricing .panel-heading .fa {\n  margin-top: 10px;\n  font-size: 28px;\n  float:left;\n}\n\nh3 {\n  float:left;\n}\n\n.panel-pricing .list-group-item {\n  color: #777777;\n  border-bottom: 1px solid rgba(250, 250, 250, 0.5);\n}\n.panel-pricing .list-group-item:last-child {\n  border-bottom-right-radius: 0px;\n  border-bottom-left-radius: 0px;\n}\n.panel-pricing .list-group-item:first-child {\n  border-top-right-radius: 0px;\n  border-top-left-radius: 0px;\n}\n.panel-pricing .panel-body {\n  background-color: #325d88;\n  font-size: 20px;\n  color: white;\n  padding: 2px;\n  margin: -10px 0 0 0;\n  text-align: left;\n}\n\n.panel-body-content {\n  margin-left: 15px;\n}\n\n.panel-body-btn{\n  float: left;\n}\n\n.panel-body-icon{\n  float: left;\n  margin-top: 7px;\n  margin-left: -4px;\n}\n\n.floor-room{\n  margin: 0px;\n}\n\ntd{\n  text-align: left;;\n  text-transform: none;\n}\n\n.dropdown-toggle{\n  background-color: inherit;\n  color: black;\n  font-size: 18px;\n  font-style: normal;\n  font-weight: lighter;\n  text-transform: none;\n  padding: 10px;\n  float: left;\n  color: #616161;\n}\n\n.btn-primary{\n  color: white;\n}\n\n.btn-primary:active, .btn-primary.active, .open>.dropdown-toggle.btn-primary {\n    color: white;\n    background-color: inherit;;\n    border-color: inherit;\n    border: 0px;\n}\n\na {\n  cursor: pointer;\n  color: #383838;\n}\n\ninput{\n  background-color: inherit;\n  border-color: inherit;\n  border: 0px;\n  width: 100px;\n  margin: 0;\n  padding: 5px 0px 5px 10px;\n  color: #414141;\n}\n\n.form-group{\n  margin: 0;\n}\n\n.panel-footer{\n  font-size: 13px;\n  font-weight: 100;\n  text-transform: none;\n}\n\n.table>thead>tr>th, .table>tbody>tr>th, .table>tfoot>tr>th, .table>thead>tr>td, .table>tbody>tr>td, .table>tfoot>tr>td{\n  color: #6a6a6a;\n  vertical-align: middle;\n}\n\n.table>thead>tr>th, .table>tbody>tr>th{\n  padding-left: 17px;\n}\n\ntable {\n  margin-bottom: 0px;\n}\n\n.kindOfLight>li>a {\n    font-size: 12px;\n    line-height: 22px;\n    font-weight: 500;\n    text-transform: none;\n    color: #575757;\n}\n\n.save{\n  border-top: 1px solid #dfd7ca;\n}\n\n.btn-save{\n  height: 30px;\n  line-height: 10px;\n  margin-top: 15px;\n}\n\n.switch{\n  float: right;\n  margin-top: 9px;\n}\n\n.connect{\n  float: right;\n  font-size: 15px;\n  margin-top: 10px;\n  margin-right: 15px;\n}\n\nspan.dimmable {\n  margin-left: 10px;\n  color: #414141;\n  padding-right: 64px;\n}\n", ""]);
+exports.push([module.i, ".row{\n  background-color: #393a35;\n  height: 100%;\n  width:auto;\n  min-height: 100vh;\n  margin: 0px;\n}\n", ""]);
 
 // exports
 
@@ -152,7 +134,7 @@ exports = module.exports = __webpack_require__(13)();
 
 
 // module
-exports.push([module.i, "/*.item{\n  margin-left: 7%;\n  margin-right: 7%;\n}*/\n\n.deviceName{\n  margin-top: 10px;\n  margin-left: 15px;\n} \n\n.panel {\n  margin-bottom: 40px;\n  min-width: 600px;\n}\n\n.panel-pricing {\n  -moz-transition: all .3s ease;\n  -o-transition: all .3s ease;\n  -webkit-transition: all .3s ease;\n}\n.panel-pricing:hover {\n  box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.2);\n}\n.panel-pricing .panel-heading {\n  height: 60px;\n}\n.panel-pricing .panel-heading .fa {\n  margin-top: 10px;\n  font-size: 28px;\n  float:left;\n}\n\nh3 {\n  float:left;\n}\n\n.panel-pricing .list-group-item {\n  color: #777777;\n  border-bottom: 1px solid rgba(250, 250, 250, 0.5);\n}\n.panel-pricing .list-group-item:last-child {\n  border-bottom-right-radius: 0px;\n  border-bottom-left-radius: 0px;\n}\n.panel-pricing .list-group-item:first-child {\n  border-top-right-radius: 0px;\n  border-top-left-radius: 0px;\n}\n.panel-pricing .panel-body {\n  background-color: #f0f0f0;\n  font-size: 20px;\n  color: #777777;\n  padding: 2px;\n  margin: 0px;\n  text-align: left;\n}\n\n.panel-body-content {\n  margin-left: 15px;\n}\n\n.panel-body-btn{\n  float: left;\n}\n\n.panel-body-icon{\n  float: left;\n  margin-top: 7px;\n}\n\n.floor-room{\n  margin: 0px;\n}\n\ntd{\n  text-align: left;;\n  text-transform: none;\n}\n\n.dropdown-toggle{\n  background-color: inherit;\n  color: black;\n  font-size: 18px;\n  font-style: normal;\n  font-weight: lighter;\n  text-transform: none;\n  padding: 10px;\n  float: left;\n  color: #616161;\n}\n\n.btn-primary:active, .btn-primary.active, .open>.dropdown-toggle.btn-primary {\n    color: #000000;\n    background-color: inherit;;\n    border-color: inherit;\n    border: 0px;\n}\n\na {\n  cursor: pointer;\n  color: #383838;\n}\n\ninput{\n  background-color: inherit;\n  border-color: inherit;\n  border: 0px;\n  width: 100px;\n  margin: 0;\n  padding: 5px 0px 5px 10px;\n  color: #414141;\n}\n\n.form-group{\n  margin: 0;\n}\n\n.panel-footer{\n  font-size: 13px;\n  font-weight: 100;\n  text-transform: none;\n}\n\n.table>thead>tr>th, .table>tbody>tr>th, .table>tfoot>tr>th, .table>thead>tr>td, .table>tbody>tr>td, .table>tfoot>tr>td{\n  color: #6a6a6a;\n  vertical-align: middle;\n}\n\n.table>thead>tr>th, .table>tbody>tr>th{\n  padding-left: 17px;\n}\n\ntable {\n  margin-bottom: 0px;\n}\n\n.kindOfLight>li>a {\n    font-size: 12px;\n    line-height: 22px;\n    font-weight: 500;\n    text-transform: none;\n    color: #575757;\n}\n\n.save{\n  border-top: 1px solid #dfd7ca;\n}\n\n.btn-save{\n  height: 30px;\n  line-height: 10px;\n  margin-top: 15px;\n}\n\n.switch{\n  float: right;\n  margin-top: 5px;\n}\n\n.connect{\n  float: right;\n  font-size: 15px;\n  margin-top: 10px;\n  margin-right: 15px;\n}\n\n.battery {\n  float: left;\n  margin-top: 6px\n}\n\n.baterry>span{\n  font-size: 15px;\n  margin-left: 10px;\n}\n", ""]);
+exports.push([module.i, "\n.listOfDevices{\n  margin: 70px 50px 20px 50px;\n}\n", ""]);
 
 // exports
 
@@ -170,7 +152,7 @@ exports = module.exports = __webpack_require__(13)();
 
 
 // module
-exports.push([module.i, "/*.item{\n  margin-left: 7%;\n  margin-right: 7%;\n}*/\n\n.script{\n  margin-top: 50px;\n}\n\n.scriptName{\n  margin-top: 10px;\n  margin-left: 15px;\n}\n\n.panel {\n  margin-bottom: 40px;\n  min-width: 600px;\n}\n\n.panel-pricing {\n  -moz-transition: all .3s ease;\n  -o-transition: all .3s ease;\n  -webkit-transition: all .3s ease;\n}\n.panel-pricing:hover {\n  box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.2);\n}\n.panel-pricing .panel-heading {\n  height: 60px;\n}\n.panel-pricing .panel-heading .fa {\n  margin-top: 10px;\n  font-size: 28px;\n  float:left;\n}\n\nh3 {\n  float:left;\n}\n\n.panel-pricing .list-group-item {\n  color: #777777;\n  border-bottom: 1px solid rgba(250, 250, 250, 0.5);\n  background-color: inherit;\n}\n.panel-pricing .list-group-item:last-child {\n  border-bottom-right-radius: 0px;\n  border-bottom-left-radius: 0px;\n}\n.panel-pricing .list-group-item:first-child {\n  border-top-right-radius: 0px;\n  border-top-left-radius: 0px;\n}\n.panel-pricing .panel-body {\n  background-color: #f0f0f0;\n  font-size: 20px;\n  color: #777777;\n  padding: 2px;\n  margin: 0px;\n  text-align: left;\n}\n\n.x-icon{\n  float: right;\n}\n\n.panel-body-content {\n  margin-left: 15px;\n}\n\n.panel-body-btn{\n  float: left;\n}\n\n.panel-body-icon{\n  float: left;\n  margin-top: 7px;\n}\n\n.floor-script{\n  margin: 0px;\n}\n\ntd{\n  text-align: left;;\n  text-transform: none;\n}\n\n.dropdown-toggle{\n  background-color: inherit;\n  color: black;\n  font-size: 18px;\n  font-style: normal;\n  font-weight: lighter;\n  text-transform: none;\n  padding: 10px;\n  float: left;\n  color: #616161;\n}\n\n.btn-primary:active, .btn-primary.active, .open>.dropdown-toggle.btn-primary {\n    color: #000000;\n    background-color: inherit;;\n    border-color: inherit;\n    border: 0px;\n}\n\na {\n  cursor: pointer;\n  color: #383838;\n}\n\n\n.form-group{\n  margin: 0;\n}\n\n.panel-footer{\n  font-size: 13px;\n  font-weight: 100;\n  text-transform: none;\n}\n\n.table>thead>tr>th, .table>tbody>tr>th, .table>tfoot>tr>th, .table>thead>tr>td, .table>tbody>tr>td, .table>tfoot>tr>td{\n  color: #6a6a6a;\n  vertical-align: middle;\n}\n\n.table>thead>tr>th, .table>tbody>tr>th{\n  padding-left: 17px;\n}\n\ntable {\n  margin-bottom: 0px;\n}\n\n.kindOfLight>li>a {\n    font-size: 12px;\n    line-height: 22px;\n    font-weight: 500;\n    text-transform: none;\n    color: #575757;\n}\n\n\n.btn-save{\n  height: 30px;\n  line-height: 10px;\n  margin-top: 15px;\n}\n\n.switch{\n  float: right;\n  margin-top: 9px;\n}\n\n.connect{\n  float: right;\n  font-size: 15px;\n  margin-top: 10px;\n  margin-right: 15px;\n}\n\n\n.script{\n  margin: 25px 15px 0px 25px;\n}\n\n.listOfscripts{\n  box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);\n}\n\n.fa {\n  cursor: pointer;\n  color: auto;\n  background-color: inherit;\n  border: 0px;\n}\n\n\n.fa-plus-circle {\n  color: #65995e;\n  float: left;\n  margin-right: 10px;\n  padding-bottom: 35px;\n}\n\ninput {\n  height: 30px;\n  margin-right: 10px;\n}\n\n\n.modal-title {\n  text-align: center;\n}\n\n.modal-body{\n  margin: 0 auto;\n  text-align: center;\n}\n\n.btn-modal {\n  min-width: 80px;\n  margin-left: 10px;\n  margin-right: 10px;\n}\n\n.form-group {\n    float: left;\n    margin-right: 20px;\n}\n\n.addscript {\n  margin-top: 8px;\n}\n\n.btn-add-script {\n    line-height: 0;\n}\n\n\n.light, .sensor{\n  width: 100%;\n  height: 30px;\n  padding: 12px 0 32px 20px;\n  border-bottom: 1px solid #dfd7ca;\n  cursor: pointer;\n}\n\n.light>a, .sensor>a {\n  border: 0;\n  font-size: 16px;\n  float: left;\n  padding: 0;\n}\n\nui-switch{\n  float: right;\n  margin-right: 50px;\n}\n", ""]);
+exports.push([module.i, "\n.deviceName{\n  margin: 10px 0px 0px 15px;\n}\n\n.panel {\n  border: 0px;\n  border-radius: 0;\n  margin-bottom: 40px;\n  min-width: 600px;\n  box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);\n\n}\n\n.panel-heading{\n  border: 0px;\n  border-radius: 0;\n}\n\n.panel-pricing {\n  -moz-transition: all .3s ease;\n  -o-transition: all .3s ease;\n  -webkit-transition: all .3s ease;\n}\n.panel-pricing:hover {\n  box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.2);\n}\n.panel-pricing .panel-heading {\n  height: 60px;\n}\n.panel-pricing .panel-heading .fa {\n  margin-top: 10px;\n  font-size: 28px;\n  float:left;\n}\n\nh3 {\n  float:left;\n}\n\n.panel-pricing .list-group-item {\n  color: #777777;\n  border-bottom: 1px solid rgba(250, 250, 250, 0.5);\n}\n.panel-pricing .list-group-item:last-child {\n  border-bottom-right-radius: 0px;\n  border-bottom-left-radius: 0px;\n}\n.panel-pricing .list-group-item:first-child {\n  border-top-right-radius: 0px;\n  border-top-left-radius: 0px;\n}\n.panel-pricing .panel-body {\n  background-color: #325d88;\n  font-size: 20px;\n  color: white;\n  padding: 2px;\n  margin: -10px 0 0 0;\n  text-align: left;\n}\n\n.panel-body-content {\n  margin-left: 15px;\n}\n\n.panel-body-btn{\n  float: left;\n}\n\n.panel-body-icon{\n  float: left;\n  margin-top: 7px;\n  margin-left: -4px;\n}\n\n.floor-room{\n  margin: 0px;\n}\n\ntd{\n  text-align: left;;\n  text-transform: none;\n}\n\n.dropdown-toggle{\n  background-color: inherit;\n  color: black;\n  font-size: 18px;\n  font-style: normal;\n  font-weight: lighter;\n  text-transform: none;\n  padding: 10px;\n  float: left;\n  color: #616161;\n}\n\n.btn-primary{\n  color: white;\n}\n\n.btn-primary:active, .btn-primary.active, .open>.dropdown-toggle.btn-primary {\n    color: white;\n    background-color: inherit;;\n    border-color: inherit;\n    border: 0px;\n}\n\na {\n  cursor: pointer;\n  color: #383838;\n}\n\ninput{\n  background-color: inherit;\n  border-color: inherit;\n  border: 0px;\n  width: 100px;\n  margin: 0;\n  padding: 5px 0px 5px 10px;\n  color: #414141;\n}\n\n.form-group{\n  margin: 0;\n}\n\n.panel-footer{\n  font-size: 13px;\n  font-weight: 100;\n  text-transform: none;\n}\n\n.table>thead>tr>th, .table>tbody>tr>th, .table>tfoot>tr>th, .table>thead>tr>td, .table>tbody>tr>td, .table>tfoot>tr>td{\n  color: #6a6a6a;\n  vertical-align: middle;\n}\n\n.table>thead>tr>th, .table>tbody>tr>th{\n  padding-left: 17px;\n}\n\ntable {\n  margin-bottom: 0px;\n}\n\n.kindOfLight>li>a {\n    font-size: 12px;\n    line-height: 22px;\n    font-weight: 500;\n    text-transform: none;\n    color: #575757;\n}\n\n.save{\n  border-top: 1px solid #dfd7ca;\n}\n\n.btn-save{\n  height: 30px;\n  line-height: 10px;\n  margin-top: 15px;\n}\n\n.switch{\n  float: right;\n  margin-top: 9px;\n}\n\n.connect{\n  float: right;\n  font-size: 15px;\n  margin-top: 10px;\n  margin-right: 15px;\n}\n\nspan.dimmable {\n  margin-left: 10px;\n  color: #414141;\n  padding-right: 64px;\n}\n", ""]);
 
 // exports
 
@@ -188,7 +170,7 @@ exports = module.exports = __webpack_require__(13)();
 
 
 // module
-exports.push([module.i, ".col-md-8{\n  padding: 26px 0px 10px 42px;\n}\n\n/*add script*/\n.addscript {\n  margin: 8px 8px 8px 16px;\n}\n\n\n.fa {\n  cursor: pointer;\n  color: auto;\n  background-color: inherit;\n  border: 0px;\n}\n\n\n.fa-plus-circle {\n  color: #93c54b;\n  float: left;\n  margin-right: 10px;\n  padding-bottom: 35px;\n}\n\ninput {\n  height: 30px;\n  margin-right: 10px;\n}\n/*add script*/\n\n/*script*/\n\n.script{\n  margin-top: 50px;\n}\n\n.scriptName{\n  margin-top: 10px;\n  margin-left: 15px;\n}\n\n.row, .script-body{\n  background-color: #f8f5f0;\n  margin: 0;\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n}\n\n.scirpt-body>.col-md-4{\n  padding: 40px 35px 0px 35px;\n  background-color: #272c2f;\n}\n\n.ic-datepicker-container > input[readonly] {\n    background: inherit;\n}\n\n.time-date-picker{\n  color: white;\n}\n\n.date-picker>p{\n  margin-bottom: 0;\n}\n\n.time-date-picker>*>p{\n  font-size: 20px;\n}\n\n.time-date-picker>*>input{\n  background-color: inherit;\n  border: 0px;\n  border-radius: 0px;\n  border-bottom: 1px solid rgba(158, 158, 158, 0.55);\n}\n\n.time-picker, .repeat{\n  margin: 20px 0;\n}\n\n.time-picker>p, .repeat>p{\n  margin-bottom: -5px;\n}\n\n.time-picker>button{\n  background-color: inherit;\n  border-bottom: 1px solid rgba(158, 158, 158, 0.55);\n  border-radius: 0;\n  width: 88%;\n}\n\n.time-picker>button:focus{\n  outline: none;\n}\n\ninput:focus{\n  outline: none;\n}\n\n.deivce-picker{\n margin: 0;\n padding: 0;\n}\n\n.panel {\n  margin-bottom: 40px;\n  min-width: 600px;\n  border: 0px;\n  border-radius: 0;\n}\n\n.panel-pricing {\n  -moz-transition: all .3s ease;\n  -o-transition: all .3s ease;\n  -webkit-transition: all .3s ease;\n}\n.panel-pricing:hover {\n  box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.2);\n}\n.panel-pricing .panel-heading {\n  height: 60px;\n  border: 0;\n  border-radius: 0;\n}\n.panel-pricing .panel-heading .fa {\n  margin-top: 10px;\n  font-size: 28px;\n  float:left;\n}\n\nh3 {\n  float:left;\n}\n\n.panel-pricing .list-group-item {\n  color: #777777;\n  border-bottom: 1px solid rgba(250, 250, 250, 0.5);\n  background-color: inherit;\n}\n.panel-pricing .list-group-item:last-child {\n  border-bottom-right-radius: 0px;\n  border-bottom-left-radius: 0px;\n}\n.panel-pricing .list-group-item:first-child {\n  border-top-right-radius: 0px;\n  border-top-left-radius: 0px;\n}\n.panel-pricing .panel-body {\n  background-color: inherit;\n  font-size: 20px;\n  color: #777777;\n  padding: 2px;\n  margin: 0px;\n  text-align: left;\n}\n\n.x-icon{\n  float: right;\n}\n\n.panel-body-content {\n  margin-left: 15px;\n}\n\n.panel-body-btn{\n  float: left;\n}\n\n.panel-body-icon{\n  float: left;\n  margin-top: 7px;\n}\n\n.floor-script{\n  margin: 0px;\n}\n\ntd{\n  text-align: left;;\n  text-transform: none;\n}\n\n.dropdown-toggle{\n  background-color: inherit;\n  color: black;\n  font-size: 18px;\n  font-style: normal;\n  font-weight: lighter;\n  text-transform: none;\n  padding: 10px;\n  float: left;\n  color: #616161;\n}\n\n.btn-primary:active, .btn-primary.active, .open>.dropdown-toggle.btn-primary {\n    color: #000000;\n    background-color: inherit;;\n    border-color: inherit;\n    border: 0px;\n}\n\na {\n  cursor: pointer;\n  color: #383838;\n}\n\n\n.form-group{\n  margin: 0;\n}\n\n.panel-footer{\n  font-size: 13px;\n  font-weight: 100;\n  text-transform: none;\n}\n\n.table>thead>tr>th, .table>tbody>tr>th, .table>tfoot>tr>th, .table>thead>tr>td, .table>tbody>tr>td, .table>tfoot>tr>td{\n  color: #6a6a6a;\n  vertical-align: middle;\n}\n\n.table>thead>tr>th, .table>tbody>tr>th{\n  padding-left: 17px;\n}\n\ntable {\n  margin-bottom: 0px;\n}\n\n.kindOfLight>li>a {\n    font-size: 12px;\n    line-height: 22px;\n    font-weight: 500;\n    text-transform: none;\n    color: #575757;\n}\n\n\n.btn-save{\n  height: 30px;\n  line-height: 10px;\n  margin-top: 15px;\n}\n\n.switch{\n  float: right;\n  margin-top: 9px;\n}\n\n.connect{\n  float: right;\n  font-size: 15px;\n  margin-top: 10px;\n  margin-right: 15px;\n}\n\n\n.script{\n  margin: 25px 15px 0px 25px;\n}\n\n.listOfscripts{\n  box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);\n}\n\n/*script*/\n\n\n.modal-title {\n  text-align: center;\n}\n\n.modal-body{\n  margin: 0 auto;\n  text-align: center;\n}\n\n.btn-modal {\n  min-width: 80px;\n  margin-left: 10px;\n  margin-right: 10px;\n}\n\n.form-group {\n    float: left;\n    margin-right: 20px;\n}\n\n\n.btn-add-script {\n    line-height: 0;\n}\n\n\n.light, .sensor{\n  width: 100%;\n  height: 30px;\n  padding: 12px 0 32px 20px;\n  border-bottom: 1px solid #dfd7ca;\n  cursor: pointer;\n}\n\n.light>a, .sensor>a {\n  border: 0;\n  font-size: 16px;\n  float: left;\n  padding: 0;\n}\n\nui-switch{\n  float: right;\n  margin-right: 50px;\n}\n", ""]);
+exports.push([module.i, "\n.deviceName{\n  margin: 10px 0px 0px 15px;\n}\n\n.panel {\n  border: 0px;\n  border-radius: 0;\n  margin-bottom: 40px;\n  min-width: 600px;\n  box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);\n\n}\n\n.panel-heading{\n  border: 0px;\n  border-radius: 0;\n}\n\n.panel-pricing {\n  -moz-transition: all .3s ease;\n  -o-transition: all .3s ease;\n  -webkit-transition: all .3s ease;\n}\n.panel-pricing:hover {\n  box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.2);\n}\n.panel-pricing .panel-heading {\n  height: 60px;\n}\n.panel-pricing .panel-heading .fa {\n  margin-top: 10px;\n  font-size: 28px;\n  float:left;\n}\n\nh3 {\n  float:left;\n}\n\n.panel-pricing .list-group-item {\n  color: #777777;\n  border-bottom: 1px solid rgba(250, 250, 250, 0.5);\n}\n.panel-pricing .list-group-item:last-child {\n  border-bottom-right-radius: 0px;\n  border-bottom-left-radius: 0px;\n}\n.panel-pricing .list-group-item:first-child {\n  border-top-right-radius: 0px;\n  border-top-left-radius: 0px;\n}\n.panel-pricing .panel-body {\n  background-color: #325d88;\n  font-size: 20px;\n  color: white;\n  padding: 2px;\n  margin: -10px 0 0 0;\n  text-align: left;\n}\n\n.panel-body-content {\n  margin-left: 15px;\n}\n\n.panel-body-btn{\n  float: left;\n}\n\n.panel-body-icon{\n  float: left;\n  margin-top: 7px;\n  margin-left: -4px;\n}\n\n.floor-room{\n  margin: 0px;\n}\n\ntd{\n  text-align: left;;\n  text-transform: none;\n}\n\n.dropdown-toggle{\n  background-color: inherit;\n  color: black;\n  font-size: 18px;\n  font-style: normal;\n  font-weight: lighter;\n  text-transform: none;\n  padding: 10px;\n  float: left;\n  color: #616161;\n}\n\n.btn-primary{\n  color: white;\n}\n\n.btn-primary:active, .btn-primary.active, .open>.dropdown-toggle.btn-primary {\n    color: white;\n    background-color: inherit;;\n    border-color: inherit;\n    border: 0px;\n}\n\na {\n  cursor: pointer;\n  color: #383838;\n}\n\ninput{\n  background-color: inherit;\n  border-color: inherit;\n  border: 0px;\n  width: 100px;\n  margin: 0;\n  padding: 5px 0px 5px 10px;\n  color: #414141;\n}\n\n.form-group{\n  margin: 0;\n}\n\n.panel-footer{\n  font-size: 13px;\n  font-weight: 100;\n  text-transform: none;\n}\n\n.table>thead>tr>th, .table>tbody>tr>th, .table>tfoot>tr>th, .table>thead>tr>td, .table>tbody>tr>td, .table>tfoot>tr>td{\n  color: #6a6a6a;\n  vertical-align: middle;\n}\n\n.table>thead>tr>th, .table>tbody>tr>th{\n  padding-left: 17px;\n}\n\ntable {\n  margin-bottom: 0px;\n}\n\n.kindOfLight>li>a {\n    font-size: 12px;\n    line-height: 22px;\n    font-weight: 500;\n    text-transform: none;\n    color: #575757;\n}\n\n.save{\n  border-top: 1px solid #dfd7ca;\n}\n\n.btn-save{\n  height: 30px;\n  line-height: 10px;\n  margin-top: 15px;\n}\n\n.switch{\n  float: right;\n  margin-top: 9px;\n}\n\n.connect{\n  float: right;\n  font-size: 15px;\n  margin-top: 10px;\n  margin-right: 15px;\n}\n\n\n.battery {\n  float: left;\n  margin-top: 6px\n}\n\n.baterry>span{\n  font-size: 15px;\n  margin-left: 10px;\n}\n", ""]);
 
 // exports
 
@@ -206,7 +188,7 @@ exports = module.exports = __webpack_require__(13)();
 
 
 // module
-exports.push([module.i, ".background-image {\n  position: fixed;\n  left: 0;\n  right: 0;\n  top: 0;\n  /*z-index: 1;*/\n  display: block;\n  background-image: url(\"http://cdn.home-designing.com/wp-content/uploads/2014/05/3-Headboard-feature-wall.jpeg\");\n  background-repeat: no-repeat;\n  background-size: auto;\n  height:100vh;\n  background-size: cover;\n\n}\n\n.container{\n  /*position: fixed;*/\n  left: 0;\n  right: 0;\n  z-index: 9999;\n}\n", ""]);
+exports.push([module.i, "/*.item{\n  margin-left: 7%;\n  margin-right: 7%;\n}*/\n\n.script{\n  margin-top: 50px;\n}\n\n.scriptName{\n  margin-top: 10px;\n  margin-left: 15px;\n}\n\n.panel {\n  margin-bottom: 40px;\n  min-width: 600px;\n}\n\n.panel-pricing {\n  -moz-transition: all .3s ease;\n  -o-transition: all .3s ease;\n  -webkit-transition: all .3s ease;\n}\n.panel-pricing:hover {\n  box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.2);\n}\n.panel-pricing .panel-heading {\n  height: 60px;\n}\n.panel-pricing .panel-heading .fa {\n  margin-top: 10px;\n  font-size: 28px;\n  float:left;\n}\n\nh3 {\n  float:left;\n}\n\n.panel-pricing .list-group-item {\n  color: #777777;\n  border-bottom: 1px solid rgba(250, 250, 250, 0.5);\n  background-color: inherit;\n}\n.panel-pricing .list-group-item:last-child {\n  border-bottom-right-radius: 0px;\n  border-bottom-left-radius: 0px;\n}\n.panel-pricing .list-group-item:first-child {\n  border-top-right-radius: 0px;\n  border-top-left-radius: 0px;\n}\n.panel-pricing .panel-body {\n  background-color: #f0f0f0;\n  font-size: 20px;\n  color: #777777;\n  padding: 2px;\n  margin: 0px;\n  text-align: left;\n}\n\n.x-icon{\n  float: right;\n}\n\n.panel-body-content {\n  margin-left: 15px;\n}\n\n.panel-body-btn{\n  float: left;\n}\n\n.panel-body-icon{\n  float: left;\n  margin-top: 7px;\n}\n\n.floor-script{\n  margin: 0px;\n}\n\ntd{\n  text-align: left;;\n  text-transform: none;\n}\n\n.dropdown-toggle{\n  background-color: inherit;\n  color: black;\n  font-size: 18px;\n  font-style: normal;\n  font-weight: lighter;\n  text-transform: none;\n  padding: 10px;\n  float: left;\n  color: #616161;\n}\n\n.btn-primary:active, .btn-primary.active, .open>.dropdown-toggle.btn-primary {\n    color: #000000;\n    background-color: inherit;;\n    border-color: inherit;\n    border: 0px;\n}\n\na {\n  cursor: pointer;\n  color: #383838;\n}\n\n\n.form-group{\n  margin: 0;\n}\n\n.panel-footer{\n  font-size: 13px;\n  font-weight: 100;\n  text-transform: none;\n}\n\n.table>thead>tr>th, .table>tbody>tr>th, .table>tfoot>tr>th, .table>thead>tr>td, .table>tbody>tr>td, .table>tfoot>tr>td{\n  color: #6a6a6a;\n  vertical-align: middle;\n}\n\n.table>thead>tr>th, .table>tbody>tr>th{\n  padding-left: 17px;\n}\n\ntable {\n  margin-bottom: 0px;\n}\n\n.kindOfLight>li>a {\n    font-size: 12px;\n    line-height: 22px;\n    font-weight: 500;\n    text-transform: none;\n    color: #575757;\n}\n\n\n.btn-save{\n  height: 30px;\n  line-height: 10px;\n  margin-top: 15px;\n}\n\n.switch{\n  float: right;\n  margin-top: 9px;\n}\n\n.connect{\n  float: right;\n  font-size: 15px;\n  margin-top: 10px;\n  margin-right: 15px;\n}\n\n\n.script{\n  margin: 25px 15px 0px 25px;\n}\n\n.listOfscripts{\n  box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);\n}\n\n.fa {\n  cursor: pointer;\n  color: auto;\n  background-color: inherit;\n  border: 0px;\n}\n\n\n.fa-plus-circle {\n  color: #65995e;\n  float: left;\n  margin-right: 10px;\n  padding-bottom: 35px;\n}\n\ninput {\n  height: 30px;\n  margin-right: 10px;\n}\n\n\n.modal-title {\n  text-align: center;\n}\n\n.modal-body{\n  margin: 0 auto;\n  text-align: center;\n}\n\n.btn-modal {\n  min-width: 80px;\n  margin-left: 10px;\n  margin-right: 10px;\n}\n\n.form-group {\n    float: left;\n    margin-right: 20px;\n}\n\n.addscript {\n  margin-top: 8px;\n}\n\n.btn-add-script {\n    line-height: 0;\n}\n\n\n.light, .sensor{\n  width: 100%;\n  height: 30px;\n  padding: 12px 0 32px 20px;\n  border-bottom: 1px solid #dfd7ca;\n  cursor: pointer;\n}\n\n.light>a, .sensor>a {\n  border: 0;\n  font-size: 16px;\n  float: left;\n  padding: 0;\n}\n\nui-switch{\n  float: right;\n  margin-right: 50px;\n}\n", ""]);
 
 // exports
 
@@ -224,7 +206,7 @@ exports = module.exports = __webpack_require__(13)();
 
 
 // module
-exports.push([module.i, "", ""]);
+exports.push([module.i, ".col-md-8{\n  padding: 26px 0px 10px 42px;\n}\n\n/*add script*/\n.addscript {\n  margin: 8px 8px 8px 16px;\n}\n\n\n.fa {\n  cursor: pointer;\n  color: auto;\n  background-color: inherit;\n  border: 0px;\n}\n\n\n.fa-plus-circle {\n  color: #93c54b;\n  float: left;\n  margin-right: 10px;\n  padding-bottom: 35px;\n}\n\ninput {\n  height: 30px;\n  margin-right: 10px;\n}\n/*add script*/\n\n/*script*/\n\n.script{\n  margin-top: 50px;\n}\n\n.scriptName{\n  margin-top: 10px;\n  margin-left: 15px;\n}\n\n.row, .script-body{\n  background-color: #f8f5f0;\n  margin: 0;\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n}\n\n.scirpt-body>.col-md-4{\n  padding: 40px 35px 0px 35px;\n  background-color: #272c2f;\n}\n\n.ic-datepicker-container > input[readonly] {\n    background: inherit;\n}\n\n.time-date-picker{\n  color: white;\n}\n\n.date-picker>p{\n  margin-bottom: 0;\n}\n\n.time-date-picker>*>p{\n  font-size: 20px;\n}\n\n.time-date-picker>*>input{\n  background-color: inherit;\n  border: 0px;\n  border-radius: 0px;\n  border-bottom: 1px solid rgba(158, 158, 158, 0.55);\n}\n\n.time-picker, .repeat{\n  margin: 20px 0;\n}\n\n.time-picker>p, .repeat>p{\n  margin-bottom: -5px;\n}\n\n.time-picker>button{\n  background-color: inherit;\n  border-bottom: 1px solid rgba(158, 158, 158, 0.55);\n  border-radius: 0;\n  width: 88%;\n}\n\n.time-picker>button:focus{\n  outline: none;\n}\n\ninput:focus{\n  outline: none;\n}\n\n.deivce-picker{\n margin: 0;\n padding: 0;\n}\n\n.panel {\n  margin-bottom: 40px;\n  min-width: 600px;\n  border: 0px;\n  border-radius: 0;\n}\n\n.panel-pricing {\n  -moz-transition: all .3s ease;\n  -o-transition: all .3s ease;\n  -webkit-transition: all .3s ease;\n}\n.panel-pricing:hover {\n  box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.2);\n}\n.panel-pricing .panel-heading {\n  height: 60px;\n  border: 0;\n  border-radius: 0;\n}\n.panel-pricing .panel-heading .fa {\n  margin-top: 10px;\n  font-size: 28px;\n  float:left;\n}\n\nh3 {\n  float:left;\n}\n\n.panel-pricing .list-group-item {\n  color: #777777;\n  border-bottom: 1px solid rgba(250, 250, 250, 0.5);\n  background-color: inherit;\n}\n.panel-pricing .list-group-item:last-child {\n  border-bottom-right-radius: 0px;\n  border-bottom-left-radius: 0px;\n}\n.panel-pricing .list-group-item:first-child {\n  border-top-right-radius: 0px;\n  border-top-left-radius: 0px;\n}\n.panel-pricing .panel-body {\n  background-color: inherit;\n  font-size: 20px;\n  color: #777777;\n  padding: 2px;\n  margin: 0px;\n  text-align: left;\n}\n\n.x-icon{\n  float: right;\n}\n\n.panel-body-content {\n  margin-left: 15px;\n}\n\n.panel-body-btn{\n  float: left;\n}\n\n.panel-body-icon{\n  float: left;\n  margin-top: 7px;\n}\n\n.floor-script{\n  margin: 0px;\n}\n\ntd{\n  text-align: left;;\n  text-transform: none;\n}\n\n.dropdown-toggle{\n  background-color: inherit;\n  color: black;\n  font-size: 18px;\n  font-style: normal;\n  font-weight: lighter;\n  text-transform: none;\n  padding: 10px;\n  float: left;\n  color: #616161;\n}\n\n.btn-primary:active, .btn-primary.active, .open>.dropdown-toggle.btn-primary {\n    color: #000000;\n    background-color: inherit;;\n    border-color: inherit;\n    border: 0px;\n}\n\na {\n  cursor: pointer;\n  color: #383838;\n}\n\n\n.form-group{\n  margin: 0;\n}\n\n.panel-footer{\n  font-size: 13px;\n  font-weight: 100;\n  text-transform: none;\n}\n\n.table>thead>tr>th, .table>tbody>tr>th, .table>tfoot>tr>th, .table>thead>tr>td, .table>tbody>tr>td, .table>tfoot>tr>td{\n  color: #6a6a6a;\n  vertical-align: middle;\n}\n\n.table>thead>tr>th, .table>tbody>tr>th{\n  padding-left: 17px;\n}\n\ntable {\n  margin-bottom: 0px;\n}\n\n.kindOfLight>li>a {\n    font-size: 12px;\n    line-height: 22px;\n    font-weight: 500;\n    text-transform: none;\n    color: #575757;\n}\n\n\n.btn-save{\n  height: 30px;\n  line-height: 10px;\n  margin-top: 15px;\n}\n\n.switch{\n  float: right;\n  margin-top: 9px;\n}\n\n.connect{\n  float: right;\n  font-size: 15px;\n  margin-top: 10px;\n  margin-right: 15px;\n}\n\n\n.script{\n  margin: 25px 15px 0px 25px;\n}\n\n.listOfscripts{\n  box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);\n}\n\n/*script*/\n\n\n.modal-title {\n  text-align: center;\n}\n\n.modal-body{\n  margin: 0 auto;\n  text-align: center;\n}\n\n.btn-modal {\n  min-width: 80px;\n  margin-left: 10px;\n  margin-right: 10px;\n}\n\n.form-group {\n    float: left;\n    margin-right: 20px;\n}\n\n\n.btn-add-script {\n    line-height: 0;\n}\n\n\n.light, .sensor{\n  width: 100%;\n  height: 30px;\n  padding: 12px 0 32px 20px;\n  border-bottom: 1px solid #dfd7ca;\n  cursor: pointer;\n}\n\n.light>a, .sensor>a {\n  border: 0;\n  font-size: 16px;\n  float: left;\n  padding: 0;\n}\n\nui-switch{\n  float: right;\n  margin-right: 50px;\n}\n", ""]);
 
 // exports
 
@@ -242,7 +224,7 @@ exports = module.exports = __webpack_require__(13)();
 
 
 // module
-exports.push([module.i, "", ""]);
+exports.push([module.i, ".background-image {\n  position: fixed;\n  left: 0;\n  right: 0;\n  top: 0;\n  /*z-index: 1;*/\n  display: block;\n  background-image: url(\"http://cdn.home-designing.com/wp-content/uploads/2014/05/3-Headboard-feature-wall.jpeg\");\n  background-repeat: no-repeat;\n  background-size: auto;\n  height:100vh;\n  background-size: cover;\n\n}\n\n.container{\n  /*position: fixed;*/\n  left: 0;\n  right: 0;\n  z-index: 9999;\n}\n", ""]);
 
 // exports
 
@@ -260,7 +242,7 @@ exports = module.exports = __webpack_require__(13)();
 
 
 // module
-exports.push([module.i, ".navbar-default {\n  margin: 0px 0px 0px 0px;\n  background-color: #393c3e;\n  border-color: #393c3e;\n}\n\n.navbar {\n    border-radius: 0px;\n    box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);\n}\n", ""]);
+exports.push([module.i, "", ""]);
 
 // exports
 
@@ -296,6 +278,24 @@ exports = module.exports = __webpack_require__(13)();
 
 
 // module
+exports.push([module.i, ".navbar-default {\n  margin: 0px 0px 0px 0px;\n  background-color: #393c3e;\n  border-color: #393c3e;\n}\n\n.navbar {\n    border-radius: 0px;\n    box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);\n}\n", ""]);
+
+// exports
+
+
+/*** EXPORTS FROM exports-loader ***/
+module.exports = module.exports.toString();
+
+/***/ }),
+
+/***/ 1034:
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(13)();
+// imports
+
+
+// module
 exports.push([module.i, "", ""]);
 
 // exports
@@ -306,7 +306,25 @@ module.exports = module.exports.toString();
 
 /***/ }),
 
-/***/ 1045:
+/***/ 1035:
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(13)();
+// imports
+
+
+// module
+exports.push([module.i, "", ""]);
+
+// exports
+
+
+/*** EXPORTS FROM exports-loader ***/
+module.exports = module.exports.toString();
+
+/***/ }),
+
+/***/ 1047:
 /***/ (function(module, exports, __webpack_require__) {
 
 var map = {
@@ -541,138 +559,145 @@ webpackContext.keys = function webpackContextKeys() {
 };
 webpackContext.resolve = webpackContextResolve;
 module.exports = webpackContext;
-webpackContext.id = 1045;
+webpackContext.id = 1047;
 
-
-/***/ }),
-
-/***/ 1076:
-/***/ (function(module, exports) {
-
-module.exports = "<app-navbar></app-navbar>\n<router-outlet></router-outlet>\n"
-
-/***/ }),
-
-/***/ 1077:
-/***/ (function(module, exports) {
-
-module.exports = "<div class=\"col-sm-8 rooms-config\">\n  <flash-messages></flash-messages>\n  <div class=\"listOfRooms\" *ngFor = \"let room of rooms\">\n    <app-room [room]=\"room\" [floorId]=\"floorId\" (roomChange)=\"getRooms(floorId)\"></app-room>\n  </div>\n  <div class=\"addRoom\" [hidden]=\"!floorId\">\n    <button type=\"button\" class=\"fa fa-plus-circle fa-2x\" (click)=\"checkClick=!checkClick\"></button>\n    <div class=\"input\" [hidden]=\"checkClick\" >\n      <form (submit)=\"addRoomSubmit()\">\n      <div class=\"form-group\">\n            <input type=\"text\"\n                    class=\"form-control\"\n                    [(ngModel)]=\"roomAddedName\" name=\"roomAddedName\"\n                    placeholder=\"Room name\"\n                    required>\n        </div>\n        <input type=\"submit\" class=\"btn btn-success btn-add-room\" value=\"Add\">\n      </form>\n    </div>\n  </div>\n</div>\n"
 
 /***/ }),
 
 /***/ 1078:
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"dimmable\"  *ngIf=\"light.dimmable==true\" >\n  <a class=\"list-group-item\">{{light.name}}</a>\n  <md-slider [thumb-label]=\"true\" [(ngModel)]=\"lightValue\" (input)=\"getValue($event.value)\"></md-slider>\n  <div [ngClass]=\"light.dimmable==true?'hidden-xs':''\" >\n    <ui-switch [(ngModel)]=\"switchValue\" size=\"medium-v2\" (click)=\"getSwitchValue(switchValue)\"></ui-switch>\n  </div>\n</div>\n<div class=\"not-dimmable\" *ngIf=\"light.dimmable==false\" >\n  <a class=\"list-group-item\">{{light.name}}</a>\n  <ui-switch [(ngModel)]=\"lightValue\" size=\"medium-v2\" (click)=\"getValue(lightValue)\"></ui-switch>\n</div>\n"
+module.exports = "<app-navbar></app-navbar>\n<router-outlet></router-outlet>\n"
 
 /***/ }),
 
 /***/ 1079:
 /***/ (function(module, exports) {
 
-module.exports = "<div bsModal #smModal=\"bs-modal\" class=\"modal fade\" tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"mySmallModalLabel\" aria-hidden=\"true\">\n  <div class=\"modal-dialog modal-sm\">\n    <div class=\"modal-content\">\n      <div class=\"modal-header\">\n        <h4 class=\"modal-title\">Are you sure you want to delete <b>{{roomDeletedName}}</b> ?</h4>\n      </div>\n      <div class=\"modal-body\">\n        <button type=\"button\" class=\"btn btn-success btn-modal\" (click)=\"smModal.hide()\" (click)=\"deleteRoom()\">Yes</button>\n        <button type=\"button\" class=\"btn btn-danger btn-modal\" (click)=\"smModal.hide()\">No</button>\n      </div>\n    </div>\n  </div>\n</div>\n\n<div class=\"panel panel-success\">\n  <div class=\"panel-heading\">\n    <div class=\"title\" (click)=\"height = height ? 0 : el.scrollHeight\">\n      <a href=\"/config#{{room._id}}\" class=\"panel-title\">{{room.name}}</a>\n      <button type=\"button\" class=\"fa fa-times fa-2x\" (click)=\"getDeletedRoom(room._id, room.name)\" (click)=\"smModal.show()\"></button>\n    </div>\n  </div>\n  <div class=\"card card-block card-header block\" [style.height]=\"height + 'px'\" #el>\n    <div class=\"panel-body\">\n      <div class=\"row\">\n        <div class=\"col-sm-4 panel-left\">\n          <div class=\"roomImage\">\n\n            <div class=\"imgAvailable\" *ngIf = \"room.imgPath\">\n              <img src=\"{{room.imgPath}}\"\n                   class=\"img-responsive roomImg\"\n                   alt=\"Responsive image\">\n            </div>\n            <div class=\"imgNotAvailable\" *ngIf = \"!room.imgPath\" [hidden] = \"checkImgClick\">\n              <img src=\"http://i.imgur.com/FQk1REK.jpg\"\n                   class=\"img-responsive roomImg\"\n                   alt=\"Responsive image\">\n               <form (submit)=\"addImgSubmit(room._id)\">\n               <div class=\"form-group form-addImageUrl\">\n                     <input type=\"text\"\n                             class=\"form-control\"\n                             [(ngModel)]=\"imgUrl\" name=\"imgUrl\"\n                             placeholder=\"Add image url\"\n                             required>\n                 </div>\n               </form>\n            </div>\n          </div>\n          <div class=\"sensors\">\n            <p><i class=\"fa fa-thermometer-three-quarters\" aria-hidden=\"true\"></i> Temperature: 20 oC</p>\n            <p><i class=\"fa fa-tint\" aria-hidden=\"true\"></i> Humidity: 60 % </p>\n            <p><i class=\"fa fa-sun-o\" aria-hidden=\"true\"></i> Light: 150 Lux </p>\n          </div>\n        </div>\n        <div class=\"col-sm-8 devices\">\n          <h2 class=\"collapse in\">Devices</h2>\n          <div class=\"list-group\">\n            <div class=\"device\" *ngFor=\"let device of devices\">\n              <div class=\"lights\"  *ngIf=\"device.deviceType=='LightingControl'\">\n                <div class=\"light\" *ngFor=\"let light of device.lights\">\n                  <app-light [light] = \"light\"></app-light>\n                </div>\n              </div>\n              <!-- <div class=\"sensors\"  *ngIf=\"device.deviceType=='SensorModule'\">\n                <div class=\"sensor\" *ngFor=\"let sensor of device.sensors\">\n                  <a href=\"/config\" class=\"list-group-item\">{{sensor.name}}</a>\n                </div>\n              </div> -->\n            </div>\n          </div>\n        </div>\n      </div>\n    </div>\n  </div>\n</div>\n"
+module.exports = "<div class=\"col-sm-8 rooms-config\">\n  <flash-messages></flash-messages>\n  <div class=\"listOfRooms\" *ngFor = \"let room of rooms\">\n    <app-room [room]=\"room\" [floorId]=\"floorId\" (roomChange)=\"getRooms(floorId)\"></app-room>\n  </div>\n  <div class=\"addRoom\" [hidden]=\"!floorId\">\n    <button type=\"button\" class=\"fa fa-plus-circle fa-2x\" (click)=\"checkClick=!checkClick\"></button>\n    <div class=\"input\" [hidden]=\"checkClick\" >\n      <form (submit)=\"addRoomSubmit()\">\n      <div class=\"form-group\">\n            <input type=\"text\"\n                    class=\"form-control\"\n                    [(ngModel)]=\"roomAddedName\" name=\"roomAddedName\"\n                    placeholder=\"Room name\"\n                    required>\n        </div>\n        <input type=\"submit\" class=\"btn btn-success btn-add-room\" value=\"Add\">\n      </form>\n    </div>\n  </div>\n</div>\n"
 
 /***/ }),
 
 /***/ 1080:
 /***/ (function(module, exports) {
 
-module.exports = "<div bsModal #smModal=\"bs-modal\" class=\"modal fade\" tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"mySmallModalLabel\" aria-hidden=\"true\">\n  <div class=\"modal-dialog modal-sm\">\n    <div class=\"modal-content\">\n      <div class=\"modal-header\">\n        <h4 class=\"modal-title\">Are you sure you want to delete <b>{{floorDeletedName}}</b> ?</h4>\n      </div>\n      <div class=\"modal-body\">\n        <button type=\"button\" class=\"btn btn-success btn-modal\" (click)=\"smModal.hide()\" (click)=\"deleteFloor()\">Yes</button>\n        <button type=\"button\" class=\"btn btn-danger btn-modal\" (click)=\"smModal.hide()\">No</button>\n      </div>\n    </div>\n  </div>\n</div>\n\n\n<div class=\"hidden-xs col-sm-2\">\n  <div class=\"sidebar\">\n    <div class=\"panel panel-success home\">\n      <!-- <div class=\"panel-heading\" (click)=\"height = height ? 0 : el.scrollHeight\"> -->\n      <div class=\"panel-heading\" (click)=\"selectConfig('home')\" [routerLinkActive]=\"['active']\" [routerLink] = \"['home/' + floorSelectedId]\">\n        <h3 class=\"panel-title\" >Home</h3>\n      </div>\n      <div\n        class=\"card card-block card-header block\" [style.height]=\"height + 'px'\" #el [hidden]=\"listOfFloorHidden\">\n        <div class=\"panel-body\">\n          <div class=\"row floor\">\n              <div class=\"list-group\">\n                <div class=\"list-floor\" *ngFor=\"let floor of floors | reverse\">\n                <a class=\"list-group-item\"\n                    (click)=\"getFloor(floor.name, floor._id)\"\n                    [routerLink] = \"['home/' + floor._id]\"\n                    [routerLinkActive]=\"['floor-active']\">\n                  <button type=\"button\" class=\"fa fa-minus-circle\" (click)=\"smModal.show()\"></button> {{floor.name}}</a>\n                </div>\n                <div class=\"list-floor addFloor\">\n                  <button type=\"button\" class=\"fa fa-plus-circle fa-1x\" (click)=\"addFloorFlag=!addFloorFlag\"></button>\n                  <div class=\"form-group\" [hidden]=\"addFloorFlag\">\n                    <input  type=\"text\"\n                            placeholder=\"Floor Name\"\n                            [(ngModel)]=\"floorname\" name=\"floorname\"\n                            class=\"form-control\"\n                            (keyup.enter)=\"addFloor(floorname)\">\n                  </div>\n                </div>\n              </div>\n          </div>\n        </div>\n      </div>\n\n      <div class=\"panel-heading\" (click)=\"selectConfig('devices')\" [routerLinkActive]=\"['active']\" [routerLink] = \"['/config/devices']\">\n        <h3 class=\"panel-title\">Devices</h3>\n      </div>\n      <div class=\"panel-heading\" (click)=\"selectConfig('scripts')\" [routerLinkActive]=\"['active']\" [routerLink] = \"['/config/scripts']\">\n        <h3 class=\"panel-title\">Scripts</h3>\n      </div>\n      <div class=\"panel-heading\" (click)=\"selectConfig('rules')\" [routerLinkActive]=\"['active']\" [routerLink] = \"['/config/rules']\">\n        <h3 class=\"panel-title\">Rules</h3>\n      </div>\n    </div>\n\n\n  </div>\n</div>\n"
+module.exports = "<div class=\"dimmable\"  *ngIf=\"light.dimmable==true\" >\n  <a class=\"list-group-item\">{{light.name}}</a>\n  <md-slider [thumb-label]=\"true\" [(ngModel)]=\"lightValue\" (input)=\"getValue($event.value)\"></md-slider>\n  <div [ngClass]=\"light.dimmable==true?'hidden-xs':''\" >\n    <ui-switch [(ngModel)]=\"switchValue\" size=\"medium-v2\" (click)=\"getSwitchValue(switchValue)\"></ui-switch>\n  </div>\n</div>\n<div class=\"not-dimmable\" *ngIf=\"light.dimmable==false\" >\n  <a class=\"list-group-item\">{{light.name}}</a>\n  <ui-switch [(ngModel)]=\"lightValue\" size=\"medium-v2\" (click)=\"getValue(lightValue)\"></ui-switch>\n</div>\n"
 
 /***/ }),
 
 /***/ 1081:
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"row\">\n  <app-config-navbar></app-config-navbar>\n  <router-outlet></router-outlet>\n</div>\n"
+module.exports = "<div bsModal #smModal=\"bs-modal\" class=\"modal fade\" tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"mySmallModalLabel\" aria-hidden=\"true\">\n  <div class=\"modal-dialog modal-sm\">\n    <div class=\"modal-content\">\n      <div class=\"modal-header\">\n        <h4 class=\"modal-title\">Are you sure you want to delete <b>{{roomDeletedName}}</b> ?</h4>\n      </div>\n      <div class=\"modal-body\">\n        <button type=\"button\" class=\"btn btn-success btn-modal\" (click)=\"smModal.hide()\" (click)=\"deleteRoom()\">Yes</button>\n        <button type=\"button\" class=\"btn btn-danger btn-modal\" (click)=\"smModal.hide()\">No</button>\n      </div>\n    </div>\n  </div>\n</div>\n\n<div class=\"panel panel-success\">\n  <div class=\"panel-heading\">\n    <div class=\"title\" (click)=\"height = height ? 0 : el.scrollHeight\">\n      <a href=\"/config#{{room._id}}\" class=\"panel-title\">{{room.name}}</a>\n      <button type=\"button\" class=\"fa fa-times fa-2x\" (click)=\"getDeletedRoom(room._id, room.name)\" (click)=\"smModal.show()\"></button>\n    </div>\n  </div>\n  <div class=\"card card-block card-header block\" [style.height]=\"height + 'px'\" #el>\n    <div class=\"panel-body\">\n      <div class=\"row\">\n        <div class=\"col-sm-4 panel-left\">\n          <div class=\"roomImage\">\n\n            <div class=\"imgAvailable\" *ngIf = \"room.imgPath\">\n              <img src=\"{{room.imgPath}}\"\n                   class=\"img-responsive roomImg\"\n                   alt=\"Responsive image\">\n            </div>\n            <div class=\"imgNotAvailable\" *ngIf = \"!room.imgPath\" [hidden] = \"checkImgClick\">\n              <img src=\"http://i.imgur.com/FQk1REK.jpg\"\n                   class=\"img-responsive roomImg\"\n                   alt=\"Responsive image\">\n               <form (submit)=\"addImgSubmit(room._id)\">\n               <div class=\"form-group form-addImageUrl\">\n                     <input type=\"text\"\n                             class=\"form-control\"\n                             [(ngModel)]=\"imgUrl\" name=\"imgUrl\"\n                             placeholder=\"Add image url\"\n                             required>\n                 </div>\n               </form>\n            </div>\n          </div>\n          <div class=\"sensors\">\n            <div class=\"device\" *ngFor=\"let ssmodule of sensorModules\">\n              <div class=\"sensor\" *ngFor=\"let sensor of ssmodule.sensors\">\n                <app-sensor [sensor] = \"sensor\"></app-sensor>\n              </div>\n            </div>\n          </div>\n        </div>\n        <div class=\"col-sm-8 devices\">\n          <h2 class=\"collapse in\">Devices</h2>\n          <div class=\"list-group\">\n            <div class=\"device\" *ngFor=\"let ltctr of lightingControls\">\n              <div class=\"light\" *ngFor=\"let light of ltctr.lights\">\n                <app-light [light] = \"light\"></app-light>\n              </div>\n            </div>\n          </div>\n        </div>\n      </div>\n    </div>\n  </div>\n</div>\n"
 
 /***/ }),
 
 /***/ 1082:
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"col-sm-9\">\n  <flash-messages></flash-messages>\n  <section>\n          <div class=\"listOfDevices\" *ngFor=\"let device of listOfDevices\">\n            <div class=\"device\" *ngIf=\"device.deviceType=='LightingControl'\">\n              <app-lightingcontrol [lightingControl]=\"device\"></app-lightingcontrol>\n            </div>\n            <div class=\"device\" *ngIf=\"device.deviceType=='SensorModule'\">\n              <app-sensor-module [sensorModule]=\"device\"></app-sensor-module>\n            </div>\n          </div>\n  </section>\n</div>\n"
+module.exports = "<div class=\"sensor\" [ngSwitch]=\"sensor._type\">\n  <div class=\"ss\" *ngSwitchCase=\"'Temperature'\">\n    <i class=\"fa fa-thermometer-three-quarters\" aria-hidden=\"true\"></i>\n    <span> {{sensor._type}}: </span>\n    <input type=\"text\" [(ngModel)]=\"value\" disabled>\n    <span>oC</span>\n  </div>\n  <div class=\"ss\" *ngSwitchCase=\"'Humidity'\">\n    <i class=\"fa fa-tint\" aria-hidden=\"true\"></i>\n    <span> {{sensor._type}}: </span>\n    <input type=\"text\" [(ngModel)]=\"value\" disabled>\n    <span>%</span>\n  </div>\n  <div class=\"ss\" *ngSwitchCase=\"'Light'\">\n    <i class=\"fa fa-sun-o\" aria-hidden=\"true\"></i>\n    <span> {{sensor._type}}: </span>\n    <input type=\"text\" [(ngModel)]=\"value \" disabled>\n    <span> Lux</span>\n  </div>\n  <!-- <div class=\"ss\" *ngSwitchCase=\"'Gate'\">\n    <i class=\"fa fa-building\" aria-hidden=\"true\"></i>\n    <span> {{sensor.name}}: </span>\n    <input type=\"text\" [(ngModel)]=\"value\" disabled>\n  </div> -->\n</div>\n"
 
 /***/ }),
 
 /***/ 1083:
 /***/ (function(module, exports) {
 
-module.exports = "<!-- item -->\n    <div class=\"panel panel-primary panel-pricing\">\n        <div class=\"panel-heading\">\n            <i class=\"fa fa-lightbulb-o\" aria-hidden=\"true\"></i>\n            <h3 class=\"deviceName\">Lighting Control #{{lightingControl.deviceCode}}</h3>\n            <div class=\"switch\">\n              <ui-switch [(ngModel)]=\"permission\" (click)=\"changePermission()\" color=\"inherit\" size=\"medium-v2\"></ui-switch>\n            </div>\n        </div>\n        <div class=\"panel-body\">\n          <div class=\"panel-body-content\">\n            <div class=\"panel-body-icon\">\n              <i class=\"fa fa-home\" aria-hidden=\"true\"></i>\n            </div>\n            <div class=\"btn-group panel-body-btn\">\n              <a class=\"btn btn-primary dropdown-toggle\" data-toggle=\"dropdown\" href=\"#\"> {{selectedFloor}}</a>\n              <ul class=\"dropdown-menu\">\n                <li *ngFor=\"let floor of listOfFloors\" (click)=\"selectFloor(floor);saveBtnHidden=false\"><a> {{floor.name}}</a></li>\n              </ul>\n            </div>\n            <div class=\"panel-body-icon\">\n              <i class=\"fa fa-caret-right\" aria-hidden=\"true\"></i>\n            </div>\n            <div class=\"btn-group panel-body-btn\">\n              <a class=\"btn btn-primary dropdown-toggle\" data-toggle=\"dropdown\" href=\"#\"> {{selectedRoom}}</a>\n              <ul class=\"dropdown-menu\">\n                  <li *ngFor=\"let room of listOfRooms\" (click)=\"selectRoom(room);saveBtnHidden=false\"><a> {{room.name}}</a></li>\n              </ul>\n            </div>\n            <span class=\"connect\">{{permission?'Connected':'Disconnected'}}</span>\n            <!-- <p class=\"floor-room\"> 1st Floor / Bedroom</p> -->\n          </div>\n          </div>\n\n        <div class=\"panel-footer\">\n          <table class=\"table\">\n            <thead class=\"thead-default\">\n              <tr>\n                <th>ID</th>\n                <th>Device Name</th>\n                <th>Type</th>\n                <th >Dimmable</th>\n                <th>Power(W)</th>\n                <th>Life time(H)</th>\n                <th>Status</th>\n              </tr>\n            </thead>\n            <tbody (keyup)=\"showSaveBtn()\">\n              <tr *ngFor=\"let light of lightingControl.lights; let i = index\">\n                <th scope=\"row\">{{i+1}}</th>\n                <td><input type=\"text\" (blur)=\"edit(light._id, $event)\" name=\"name\" value=\"{{light.name}}\"></td>\n                <td>\n                   <div class=\"btn-group\">\n                     <input type=\"text\" (blur)=\"edit(light._id, $event)\" name=\"type\" value=\"{{light.typeOfLight}}\"\n                              data-toggle=\"dropdown\">\n                     <ul class=\"dropdown-menu kindOfLight\">\n                        <li (click)=\"selectKindOfLight(light._id, 'Bulb')\"><a>Bulb</a></li>\n                        <li (click)=\"selectKindOfLight(light._id, 'Compact')\"><a>Compact</a></li>\n                        <li (click)=\"selectKindOfLight(light._id, 'Fluorescent')\"><a>Fluorescent lamp</a></li>\n                        <li (click)=\"selectKindOfLight(light._id, 'Neon')\"><a>Neon</a></li>\n                     </ul>\n                   </div>\n                </td>\n                <td><span class=\"dimmable\">{{light.dimmable}}</span></td>\n                <!-- <td>  <input type=\"text\" (blur)=\"edit(light._id, $event)\" name=\"type\" value=\"{{light.dimmable}}\"></td> -->\n                <td><input type=\"text\" (blur)=\"edit(light._id, $event)\" name=\"power\" value=\"{{light.power}}\"></td>\n                <td><input type=\"text\" (blur)=\"edit(light._id, $event)\" name=\"life_time\" value=\"{{light.life_time}}\"></td>\n                <td ><input type=\"text\" (blur)=\"edit(light._id, $event)\" name=\"status\" value=\"null\"  style=\"width: 50px\"></td>\n              </tr>\n            </tbody>\n          </table>\n          <div  [hidden]=\"saveBtnHidden\" class=\"save\">\n            <button class=\"btn btn-primary btn-save\" type=\"button\" name=\"button\" (click)=\"save()\" >Save</button>\n          </div>\n          <div class=\"test\">\n          </div>\n        </div>\n    </div>\n<!-- /item -->\n"
+module.exports = "<div bsModal #smModal=\"bs-modal\" class=\"modal fade\" tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"mySmallModalLabel\" aria-hidden=\"true\">\n  <div class=\"modal-dialog modal-sm\">\n    <div class=\"modal-content\">\n      <div class=\"modal-header\">\n        <h4 class=\"modal-title\">Are you sure you want to delete <b>{{floorDeletedName}}</b> ?</h4>\n      </div>\n      <div class=\"modal-body\">\n        <button type=\"button\" class=\"btn btn-success btn-modal\" (click)=\"smModal.hide()\" (click)=\"deleteFloor()\">Yes</button>\n        <button type=\"button\" class=\"btn btn-danger btn-modal\" (click)=\"smModal.hide()\">No</button>\n      </div>\n    </div>\n  </div>\n</div>\n\n\n<div class=\"hidden-xs col-sm-2\">\n  <div class=\"sidebar\">\n    <div class=\"panel panel-success home\">\n      <!-- <div class=\"panel-heading\" (click)=\"height = height ? 0 : el.scrollHeight\"> -->\n      <div class=\"panel-heading\" (click)=\"selectConfig('home')\" [routerLinkActive]=\"['active']\" [routerLink] = \"['home/' + floorSelectedId]\">\n        <h3 class=\"panel-title\" >Home</h3>\n      </div>\n      <div\n        class=\"card card-block card-header block\" [style.height]=\"height + 'px'\" #el [hidden]=\"listOfFloorHidden\">\n        <div class=\"panel-body\">\n          <div class=\"row floor\">\n              <div class=\"list-group\">\n                <div class=\"list-floor\" *ngFor=\"let floor of floors | reverse\">\n                <a class=\"list-group-item\"\n                    (click)=\"getFloor(floor.name, floor._id)\"\n                    [routerLink] = \"['home/' + floor._id]\"\n                    [routerLinkActive]=\"['floor-active']\">\n                  <button type=\"button\" class=\"fa fa-minus-circle\" (click)=\"smModal.show()\"></button> {{floor.name}}</a>\n                </div>\n                <div class=\"list-floor addFloor\">\n                  <button type=\"button\" class=\"fa fa-plus-circle fa-1x\" (click)=\"addFloorFlag=!addFloorFlag\"></button>\n                  <div class=\"form-group\" [hidden]=\"addFloorFlag\">\n                    <input  type=\"text\"\n                            placeholder=\"Floor Name\"\n                            [(ngModel)]=\"floorname\" name=\"floorname\"\n                            class=\"form-control\"\n                            (keyup.enter)=\"addFloor(floorname)\">\n                  </div>\n                </div>\n              </div>\n          </div>\n        </div>\n      </div>\n\n      <div class=\"panel-heading\" (click)=\"selectConfig('devices')\" [routerLinkActive]=\"['active']\" [routerLink] = \"['/config/devices']\">\n        <h3 class=\"panel-title\">Devices</h3>\n      </div>\n      <div class=\"panel-heading\" (click)=\"selectConfig('scripts')\" [routerLinkActive]=\"['active']\" [routerLink] = \"['/config/scripts']\">\n        <h3 class=\"panel-title\">Scripts</h3>\n      </div>\n      <div class=\"panel-heading\" (click)=\"selectConfig('rules')\" [routerLinkActive]=\"['active']\" [routerLink] = \"['/config/rules']\">\n        <h3 class=\"panel-title\">Rules</h3>\n      </div>\n    </div>\n\n\n  </div>\n</div>\n"
 
 /***/ }),
 
 /***/ 1084:
 /***/ (function(module, exports) {
 
-module.exports = "<!-- item -->\n    <div class=\"panel panel-primary panel-pricing\">\n        <div class=\"panel-heading\">\n            <i class=\"fa fa-thermometer-empty\" aria-hidden=\"true\"></i>\n            <h3 class=\"deviceName\">Sensor Module #{{sensorModule.deviceCode}}</h3>\n            <div class=\"switch\">\n              <ui-switch [(ngModel)]=\"permission\" (click)=\"changePermission()\" color=\"inherit\" size=\"medium-v2\"></ui-switch>\n            </div>\n        </div>\n        <div class=\"panel-body\">\n          <div class=\"panel-body-content\">\n            <div class=\"panel-body-icon\">\n              <i class=\"fa fa-home\" aria-hidden=\"true\"></i>\n            </div>\n            <div class=\"btn-group panel-body-btn\">\n              <a class=\"btn btn-primary dropdown-toggle\" data-toggle=\"dropdown\" href=\"#\"> {{selectedFloor}}</a>\n              <ul class=\"dropdown-menu\">\n                <li *ngFor=\"let floor of listOfFloors\" (click)=\"selectFloor(floor)\"><a> {{floor.name}}</a></li>\n              </ul>\n            </div>\n            <div class=\"panel-body-icon\">\n              <i class=\"fa fa-caret-right\" aria-hidden=\"true\"></i>\n            </div>\n            <div class=\"btn-group panel-body-btn\">\n              <a class=\"btn btn-primary dropdown-toggle\" data-toggle=\"dropdown\" href=\"#\"> {{selectedRoom}}</a>\n              <ul class=\"dropdown-menu\">\n                  <li *ngFor=\"let room of listOfRooms\" (click)=\"selectRoom(room)\"><a> {{room.name}}</a></li>\n              </ul>\n            </div>\n            <div class=\"battery\">\n              <i class=\"fa fa-battery-half\" aria-hidden=\"true\"></i>\n              <span> {{sensorModule.battery}}%</span>\n            </div>\n            <p class=\"connect\">{{permission?'Connected':'Disconnected'}}</p>\n          </div>\n        </div>\n\n        <div class=\"panel-footer\">\n          <table class=\"table\">\n            <thead class=\"thead-default\">\n              <tr>\n                <th>ID</th>\n                <th>Device Name</th>\n                <th>Type</th>\n                <th>Value</th>\n              </tr>\n            </thead>\n            <tbody (keyup)=\"showSaveBtn()\">\n              <tr *ngFor=\"let sensor of sensorModule.sensors; let i = index\">\n                <th scope=\"row\">{{i+1}}</th>\n                <td><input type=\"text\" (blur)=\"editName(sensor._id, $event)\" name=\"name\" value=\"{{sensor.name}}\"></td>\n                <td>\n                   <div class=\"btn-group\">\n                     <input type=\"text\" name=\"kind\" value=\"{{sensor._type}}\" disabled>\n                   </div>\n                </td>\n                <td ><input type=\"text\" name=\"value\" value=\"{{sensor.value}}\"  style=\"width: 50px\"></td>\n              </tr>\n            </tbody>\n          </table>\n          <div  [hidden]=\"saveBtnHidden\" class=\"save\">\n            <button class=\"btn btn-primary btn-save\" type=\"button\" name=\"button\" (click)=\"save()\" >Save</button>\n          </div>\n          <div class=\"test\">\n          </div>\n        </div>\n    </div>\n<!-- /item -->\n"
+module.exports = "<div class=\"row\">\n  <app-config-navbar></app-config-navbar>\n  <router-outlet></router-outlet>\n</div>\n"
 
 /***/ }),
 
 /***/ 1085:
 /***/ (function(module, exports) {
 
-module.exports = "<!-- addscript -->\n<div class=\"addscript\">\n  <button type=\"button\" class=\"fa fa-plus-circle fa-2x\" (click)=\"checkClick1=!checkClick1\"></button>\n  <div class=\"input\" [hidden]=\"checkClick1\" >\n    <form (submit)=\"addscriptSubmit()\">\n      <div class=\"form-group\">\n        <input type=\"text\"\n        class=\"form-control\"\n        [(ngModel)]=\"scriptAddedName\" name=\"scriptAddedName\"\n        placeholder=\"Script name\"\n        required>\n      </div>\n      <input type=\"submit\" class=\"btn btn-success btn-add-script\" value=\"Add\">\n    </form>\n  </div>\n</div>\n<!-- addscript -->\n\n<!-- script -->\n<div class=\"script\">\n  <div class=\"panel panel-primary panel-pricing\">\n    <div class=\"panel-heading\">\n      <i class=\"fa fa-lightbulb-o\" aria-hidden=\"true\"></i>\n      <h3 class=\"scriptName\">Rule 1</h3>\n      <div class=\"x-icon\">\n        <i class=\"fa fa-times\" aria-hidden=\"true\"></i>\n      </div>\n    </div>\n    <div class=\"row scirpt-body\">\n      <!-- Date-time -->\n      <div class=\"col-md-3\">\n        <h3>Time</h3><br>\n        <p>From 23:00pm To 05:00am</p>\n      </div>\n      <!-- Date-time -->\n\n      <!-- if statement -->\n      <div class=\"row\">\n        <!-- if condition -->\n        <div class=\"col-md-6 if-condition\">\n          <div class=\"panel-body\">\n            <div class=\"panel-body-content\">\n              <p>If condition</p>\n            </div>\n          </div>\n\n          <div class=\"panel-footer\">\n            <div class=\"list-group\">\n              <div class=\"device\">\n                <div class=\"lights\" >\n                  <div class=\"light\" (click)=\"light1=!light1\">\n                    <a class=\"list-group-item\">PIR sensor</a>\n                    <a class=\"list-group-item\" [ngStyle]=\"{'margin-left': '25%'}\">Equal to</a>\n                    <a class=\"list-group-item\" [ngStyle]=\"{'float':'right'}\">HIGH</a>\n                  </div>\n                </div>\n              </div>\n            </div>\n          </div>\n        </div>\n        <!-- if condition -->\n\n        <!-- then action -->\n        <div class=\"col-md-6 then-action\">\n          <div class=\"panel-body\">\n            <div class=\"panel-body-content\">\n              <p>Then action</p>\n            </div>\n          </div>\n\n          <div class=\"panel-footer\">\n            <div class=\"list-group\">\n              <div class=\"device\">\n                <div class=\"lights\" >\n                  <div class=\"light\" (click)=\"light1=!light1\">\n                    <a class=\"list-group-item\">Light 1</a>\n                    <ui-switch [ngModel]=\"light1\" size=\"medium-v2\"></ui-switch><br>\n                  </div>\n                  <div class=\"light\" (click)=\"light2=!light2\">\n                    <a class=\"list-group-item\">Light 2</a>\n                    <ui-switch [ngModel]=\"!light2\" size=\"medium-v2\"></ui-switch><br>\n                  </div>\n                  <div class=\"light\" (click)=\"light3=!light3\">\n                    <a class=\"list-group-item\">Light 3</a>\n                    <ui-switch [ngModel]=\"light3\" size=\"medium-v2\"></ui-switch><br>\n                  </div>\n                </div>\n              </div>\n            </div>\n          </div>\n        </div>\n        <!-- then action -->\n      </div>\n      <!-- if statement -->\n\n    </div>\n\n  </div>\n</div>\n<!-- script -->\n"
+module.exports = "<div class=\"col-sm-9\">\n  <flash-messages></flash-messages>\n  <section>\n          <div class=\"listOfDevices\" *ngFor=\"let device of listOfDevices\">\n            <div class=\"device\" *ngIf=\"device.deviceType=='LightingControl'\">\n              <app-lightingcontrol [lightingControl]=\"device\"></app-lightingcontrol>\n            </div>\n            <div class=\"device\" *ngIf=\"device.deviceType=='SensorModule'\">\n              <app-sensor-module [sensorModule]=\"device\"></app-sensor-module>\n            </div>\n          </div>\n  </section>\n</div>\n"
 
 /***/ }),
 
 /***/ 1086:
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"col-md-8\">\n    <!-- addscript -->\n    <div class=\"addscript\">\n      <button type=\"button\" class=\"fa fa-plus-circle fa-2x\" (click)=\"checkClick1=!checkClick1\"></button>\n      <div class=\"input\" [hidden]=\"checkClick1\" >\n        <form (submit)=\"addscriptSubmit()\">\n          <div class=\"form-group\">\n            <input type=\"text\"\n            class=\"form-control\"\n            [(ngModel)]=\"scriptAddedName\" name=\"scriptAddedName\"\n            placeholder=\"Script name\"\n            required>\n          </div>\n          <input type=\"submit\" class=\"btn btn-success btn-add-script\" value=\"Add\">\n        </form>\n      </div>\n    </div>\n    <!-- addscript -->\n\n    <!-- script -->\n    <div class=\"script\">\n      <div class=\"panel panel-primary panel-pricing\">\n        <div class=\"panel-heading\">\n          <i class=\"fa fa-lightbulb-o\" aria-hidden=\"true\"></i>\n          <h3 class=\"scriptName\">Sleep</h3>\n          <div class=\"x-icon\">\n            <i class=\"fa fa-times\" aria-hidden=\"true\"></i>\n          </div>\n        </div>\n        <div class=\"row scirpt-body\">\n          <div class=\"col-md-4\">\n            <div class=\"time-date-picker\">\n              <div class=\"date-picker\">\n                <p>Date</p>\n                <ic-datepicker (dateChange)=\"onDatepickerDateChange($event)\"></ic-datepicker>\n              </div>\n              <div class=\"time-picker\">\n                <p>Time</p>\n                <button class=\"btn\" type=\"button\" name=\"button\" (click)=\"timePickerHidden=!timePickerHidden\"></button>\n                <div class=\"timepicker\" [hidden]=\"timePickerHidden\">\n                  <timepicker [(ngModel)]=\"mytime\"></timepicker>\n                  <button class=\"btn btn-primary\" type=\"button\" name=\"button\" (click)=\"showTime(mytime);timePickerHidden=true\">Save</button>\n                </div>\n              </div>\n              <div class=\"repeat\">\n                <p>Repeat</p>\n                <input type=\"text\" name=\"\" value=\"\">\n              </div>\n            </div>\n          </div>\n          <div class=\"col-md-8 deivce-picker\">\n\n            <!-- select room -->\n            <div class=\"panel-body\">\n              <div class=\"panel-body-content\">\n                <div class=\"panel-body-icon\">\n                  <i class=\"fa fa-home\" aria-hidden=\"true\"></i>\n                </div>\n                <div class=\"btn-group panel-body-btn\">\n                  <a class=\"btn btn-primary dropdown-toggle\" data-toggle=\"dropdown\" href=\"#\"> 1st Floor</a>\n                  <ul class=\"dropdown-menu\">\n                    <li *ngFor=\"let floor of listOfFloors\" (click)=\"selectFloor(floor)\"><a> {{floor.name}}</a></li>\n                  </ul>\n                </div>\n                <div class=\"panel-body-icon\">\n                  <i class=\"fa fa-caret-right\" aria-hidden=\"true\"></i>\n                </div>\n                <div class=\"btn-group panel-body-btn\">\n                  <a class=\"btn btn-primary dropdown-toggle\" data-toggle=\"dropdown\" href=\"#\"> Bedroom</a>\n                  <ul class=\"dropdown-menu\">\n                    <li *ngFor=\"let room of listOfRooms\" (click)=\"selectRoom(room)\"><a> {{room.name}}</a></li>\n                  </ul>\n                </div>\n              </div>\n            </div>\n\n            <div class=\"panel-footer\">\n              <div class=\"list-group\">\n                <div class=\"device\">\n                  <div class=\"lights\" >\n                    <div class=\"light\" (click)=\"light1=!light1\">\n                      <a class=\"list-group-item\">Light 1</a>\n                      <ui-switch [ngModel]=\"light1\" size=\"medium-v2\"></ui-switch><br>\n                    </div>\n                    <div class=\"light\" (click)=\"light2=!light2\">\n                      <a class=\"list-group-item\">Light 2</a>\n                      <ui-switch [ngModel]=\"!light2\" size=\"medium-v2\"></ui-switch><br>\n                    </div>\n                    <div class=\"light\" (click)=\"light3=!light3\">\n                      <a class=\"list-group-item\">Light 3</a>\n                      <ui-switch [ngModel]=\"light3\" size=\"medium-v2\"></ui-switch><br>\n                    </div>\n                  </div>\n                </div>\n              </div>\n            </div>\n            <!-- select room -->\n\n            <!-- select room -->\n            <div class=\"panel-body\">\n              <div class=\"panel-body-content\">\n                <div class=\"panel-body-icon\">\n                  <i class=\"fa fa-home\" aria-hidden=\"true\"></i>\n                </div>\n                <div class=\"btn-group panel-body-btn\">\n                  <a class=\"btn btn-primary dropdown-toggle\" data-toggle=\"dropdown\" href=\"#\"> 1st Floor</a>\n                  <ul class=\"dropdown-menu\">\n                    <li *ngFor=\"let floor of listOfFloors\" (click)=\"selectFloor(floor)\"><a> {{floor.name}}</a></li>\n                  </ul>\n                </div>\n                <div class=\"panel-body-icon\">\n                  <i class=\"fa fa-caret-right\" aria-hidden=\"true\"></i>\n                </div>\n                <div class=\"btn-group panel-body-btn\">\n                  <a class=\"btn btn-primary dropdown-toggle\" data-toggle=\"dropdown\" href=\"#\"> Living room</a>\n                  <ul class=\"dropdown-menu\">\n                    <li *ngFor=\"let room of listOfRooms\" (click)=\"selectRoom(room)\"><a> {{room.name}}</a></li>\n                  </ul>\n                </div>\n              </div>\n            </div>\n\n            <div class=\"panel-footer\">\n              <div class=\"list-group\">\n                <div class=\"device\">\n                  <div class=\"lights\" >\n                    <div class=\"light\" (click)=\"light4=!light4\">\n                      <a class=\"list-group-item\">Light 1</a>\n                      <ui-switch [ngModel]=\"light4\" size=\"medium-v2\"></ui-switch><br>\n                    </div>\n                    <div class=\"light\" (click)=\"light5=!light5\">\n                      <a class=\"list-group-item\">Light 2</a>\n                      <ui-switch [ngModel]=\"!light5\" size=\"medium-v2\"></ui-switch><br>\n                    </div>\n                    <div class=\"light\" (click)=\"light6=!light6\">\n                      <a class=\"list-group-item\">Light 3</a>\n                      <ui-switch [ngModel]=\"light6\" size=\"medium-v2\"></ui-switch><br>\n                    </div>\n                  </div>\n                </div>\n              </div>\n              <div  [hidden]=\"saveBtnHidden\" class=\"save\">\n                <button class=\"btn btn-primary btn-save\" type=\"button\" name=\"button\" (click)=\"save()\" >Save</button>\n              </div>\n              <div class=\"test\">\n              </div>\n            </div>\n            <!-- select room -->\n          </div>\n\n        </div>\n\n      </div>\n    </div>\n    <!-- script -->\n</div>\n"
+module.exports = "<!-- item -->\n    <div class=\"panel panel-primary panel-pricing\">\n        <div class=\"panel-heading\">\n            <i class=\"fa fa-lightbulb-o\" aria-hidden=\"true\"></i>\n            <h3 class=\"deviceName\">Lighting Control #{{lightingControl.deviceCode}}</h3>\n            <div class=\"switch\">\n              <ui-switch [(ngModel)]=\"permission\" (click)=\"changePermission()\" color=\"inherit\" size=\"medium-v2\"></ui-switch>\n            </div>\n        </div>\n        <div class=\"panel-body\">\n          <div class=\"panel-body-content\">\n            <div class=\"panel-body-icon\">\n              <i class=\"fa fa-home\" aria-hidden=\"true\"></i>\n            </div>\n            <div class=\"btn-group panel-body-btn\">\n              <a class=\"btn btn-primary dropdown-toggle\" data-toggle=\"dropdown\" href=\"#\"> {{selectedFloor}}</a>\n              <ul class=\"dropdown-menu\">\n                <li *ngFor=\"let floor of listOfFloors\" (click)=\"selectFloor(floor);saveBtnHidden=false\"><a> {{floor.name}}</a></li>\n              </ul>\n            </div>\n            <div class=\"panel-body-icon\">\n              <i class=\"fa fa-caret-right\" aria-hidden=\"true\"></i>\n            </div>\n            <div class=\"btn-group panel-body-btn\">\n              <a class=\"btn btn-primary dropdown-toggle\" data-toggle=\"dropdown\" href=\"#\"> {{selectedRoom}}</a>\n              <ul class=\"dropdown-menu\">\n                  <li *ngFor=\"let room of listOfRooms\" (click)=\"selectRoom(room);saveBtnHidden=false\"><a> {{room.name}}</a></li>\n              </ul>\n            </div>\n            <span class=\"connect\">{{permission?'Connected':'Disconnected'}}</span>\n            <!-- <p class=\"floor-room\"> 1st Floor / Bedroom</p> -->\n          </div>\n          </div>\n\n        <div class=\"panel-footer\">\n          <table class=\"table\">\n            <thead class=\"thead-default\">\n              <tr>\n                <th>ID</th>\n                <th>Device Name</th>\n                <th>Type</th>\n                <th >Dimmable</th>\n                <th>Power(W)</th>\n                <th>Life time(H)</th>\n                <th>Status</th>\n              </tr>\n            </thead>\n            <tbody (keyup)=\"showSaveBtn()\">\n              <tr *ngFor=\"let light of lightingControl.lights; let i = index\">\n                <th scope=\"row\">{{i+1}}</th>\n                <td><input type=\"text\" (blur)=\"edit(light._id, $event)\" name=\"name\" value=\"{{light.name}}\"></td>\n                <td>\n                   <div class=\"btn-group\">\n                     <input type=\"text\" (blur)=\"edit(light._id, $event)\" name=\"type\" value=\"{{light.typeOfLight}}\"\n                              data-toggle=\"dropdown\">\n                     <ul class=\"dropdown-menu kindOfLight\">\n                        <li (click)=\"selectKindOfLight(light._id, 'Bulb')\"><a>Bulb</a></li>\n                        <li (click)=\"selectKindOfLight(light._id, 'Compact')\"><a>Compact</a></li>\n                        <li (click)=\"selectKindOfLight(light._id, 'Fluorescent')\"><a>Fluorescent lamp</a></li>\n                        <li (click)=\"selectKindOfLight(light._id, 'Neon')\"><a>Neon</a></li>\n                     </ul>\n                   </div>\n                </td>\n                <td><span class=\"dimmable\">{{light.dimmable}}</span></td>\n                <!-- <td>  <input type=\"text\" (blur)=\"edit(light._id, $event)\" name=\"type\" value=\"{{light.dimmable}}\"></td> -->\n                <td><input type=\"text\" (blur)=\"edit(light._id, $event)\" name=\"power\" value=\"{{light.power}}\"></td>\n                <td><input type=\"text\" (blur)=\"edit(light._id, $event)\" name=\"life_time\" value=\"{{light.life_time}}\"></td>\n                <td ><input type=\"text\" (blur)=\"edit(light._id, $event)\" name=\"status\" value=\"null\"  style=\"width: 50px\"></td>\n              </tr>\n            </tbody>\n          </table>\n          <div  [hidden]=\"saveBtnHidden\" class=\"save\">\n            <button class=\"btn btn-primary btn-save\" type=\"button\" name=\"button\" (click)=\"save()\" >Save</button>\n          </div>\n          <div class=\"test\">\n          </div>\n        </div>\n    </div>\n<!-- /item -->\n"
 
 /***/ }),
 
 /***/ 1087:
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"background-image\"></div>\n<div class=\"container\">\n  <br><br><br>\n  <div class=\"row\">\n      <div class=\"col-sm-4 col-md-4\">\n        <div class=\"panel panel-default\">\n          <!-- Default panel contents -->\n          <div class=\"panel-heading\">Panel heading</div>\n          <div class=\"panel-body\">\n            <div class=\"row\">\n              <div class=\"col-md-3\">\n                <ul class=\"list-group\">\n                  <li class=\"list-group-item\">Cras justo odio</li>\n                  <li class=\"list-group-item\">Dapibus ac facilisis in</li>\n                  <li class=\"list-group-item\">Morbi leo risus</li>\n                  <li class=\"list-group-item\">Porta ac consectetur ac</li>\n                  <li class=\"list-group-item\">Vestibulum at eros</li>\n                </ul>\n              </div>\n              <div class=\"col-md-3\">\n                <ul class=\"list-group\">\n                  <li class=\"list-group-item\">Cras justo odio</li>\n                  <li class=\"list-group-item\">Dapibus ac facilisis in</li>\n                  <li class=\"list-group-item\">Morbi leo risus</li>\n                  <li class=\"list-group-item\">Porta ac consectetur ac</li>\n                  <li class=\"list-group-item\">Vestibulum at eros</li>\n                </ul>\n              </div>\n            </div>\n            <!-- List group -->          </div>\n        </div>\n      </div>\n  </div>\n</div>\n"
+module.exports = "<!-- item -->\n    <div class=\"panel panel-primary panel-pricing\">\n        <div class=\"panel-heading\">\n            <i class=\"fa fa-thermometer-empty\" aria-hidden=\"true\"></i>\n            <h3 class=\"deviceName\">Sensor Module #{{sensorModule.deviceCode}}</h3>\n            <div class=\"switch\">\n              <ui-switch [(ngModel)]=\"permission\" (click)=\"changePermission()\" color=\"inherit\" size=\"medium-v2\"></ui-switch>\n            </div>\n        </div>\n        <div class=\"panel-body\">\n          <div class=\"panel-body-content\">\n            <div class=\"panel-body-icon\">\n              <i class=\"fa fa-home\" aria-hidden=\"true\"></i>\n            </div>\n            <div class=\"btn-group panel-body-btn\">\n              <a class=\"btn btn-primary dropdown-toggle\" data-toggle=\"dropdown\" href=\"#\"> {{selectedFloor}}</a>\n              <ul class=\"dropdown-menu\">\n                <li *ngFor=\"let floor of listOfFloors\" (click)=\"selectFloor(floor)\"><a> {{floor.name}}</a></li>\n              </ul>\n            </div>\n            <div class=\"panel-body-icon\">\n              <i class=\"fa fa-caret-right\" aria-hidden=\"true\"></i>\n            </div>\n            <div class=\"btn-group panel-body-btn\">\n              <a class=\"btn btn-primary dropdown-toggle\" data-toggle=\"dropdown\" href=\"#\"> {{selectedRoom}}</a>\n              <ul class=\"dropdown-menu\">\n                  <li *ngFor=\"let room of listOfRooms\" (click)=\"selectRoom(room)\"><a> {{room.name}}</a></li>\n              </ul>\n            </div>\n            <div class=\"battery\">\n              <i class=\"fa fa-battery-half\" aria-hidden=\"true\"></i>\n              <span> {{sensorModule.battery}}%</span>\n            </div>\n            <p class=\"connect\">{{permission?'Connected':'Disconnected'}}</p>\n          </div>\n        </div>\n\n        <div class=\"panel-footer\">\n          <table class=\"table\">\n            <thead class=\"thead-default\">\n              <tr>\n                <th>ID</th>\n                <th>Device Name</th>\n                <th>Type</th>\n                <th>Value</th>\n              </tr>\n            </thead>\n            <tbody (keyup)=\"showSaveBtn()\">\n              <tr *ngFor=\"let sensor of sensorModule.sensors; let i = index\">\n                <th scope=\"row\">{{i+1}}</th>\n                <td><input type=\"text\" (blur)=\"editName(sensor._id, $event)\" name=\"name\" value=\"{{sensor.name}}\"></td>\n                <td>\n                   <div class=\"btn-group\">\n                     <input type=\"text\" name=\"kind\" value=\"{{sensor._type}}\" disabled>\n                   </div>\n                </td>\n                <td ><input type=\"text\" name=\"value\" value=\"{{sensor.value}}\"  style=\"width: 50px\"></td>\n              </tr>\n            </tbody>\n          </table>\n          <div  [hidden]=\"saveBtnHidden\" class=\"save\">\n            <button class=\"btn btn-primary btn-save\" type=\"button\" name=\"button\" (click)=\"save()\" >Save</button>\n          </div>\n          <div class=\"test\">\n          </div>\n        </div>\n    </div>\n<!-- /item -->\n"
 
 /***/ }),
 
 /***/ 1088:
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"container\">\n  <div class=\"jumbotron text-center\">\n    <h1>BKHome Project</h1>\n    <p class=\"lead\">Welcome blahblah blahbla</p>\n    <div>\n      <a class=\"btn btn-primary\" [routerLink]=\"['/register']\">Register</a>\n      <a class=\"btn btn-default\" [routerLink]=\"['/login']\">Login</a>\n    </div>\n  </div>\n\n  <div class=\"row\">\n    <div class=\"col-md-4\">\n      <h3>Express backend</h3>\n      <p>A rock solid Nodejs/Express server using Mongoose</p>\n    </div>\n    <div class=\"col-md-4\">\n      <h3>Angular-CLI</h3>\n      <p>Angular-CLI blah blah blah balh</p>\n    </div>\n    <div class=\"col-md-4\">\n      <h3>JWT Token</h3>\n      <p>JSON Web Token blah blah blah balh</p>\n    </div>\n  </div>\n</div>\n"
+module.exports = "<!-- addscript -->\n<div class=\"addscript\">\n  <button type=\"button\" class=\"fa fa-plus-circle fa-2x\" (click)=\"checkClick1=!checkClick1\"></button>\n  <div class=\"input\" [hidden]=\"checkClick1\" >\n    <form (submit)=\"addscriptSubmit()\">\n      <div class=\"form-group\">\n        <input type=\"text\"\n        class=\"form-control\"\n        [(ngModel)]=\"scriptAddedName\" name=\"scriptAddedName\"\n        placeholder=\"Script name\"\n        required>\n      </div>\n      <input type=\"submit\" class=\"btn btn-success btn-add-script\" value=\"Add\">\n    </form>\n  </div>\n</div>\n<!-- addscript -->\n\n<!-- script -->\n<div class=\"script\">\n  <div class=\"panel panel-primary panel-pricing\">\n    <div class=\"panel-heading\">\n      <i class=\"fa fa-lightbulb-o\" aria-hidden=\"true\"></i>\n      <h3 class=\"scriptName\">Rule 1</h3>\n      <div class=\"x-icon\">\n        <i class=\"fa fa-times\" aria-hidden=\"true\"></i>\n      </div>\n    </div>\n    <div class=\"row scirpt-body\">\n      <!-- Date-time -->\n      <div class=\"col-md-3\">\n        <h3>Time</h3><br>\n        <p>From 23:00pm To 05:00am</p>\n      </div>\n      <!-- Date-time -->\n\n      <!-- if statement -->\n      <div class=\"row\">\n        <!-- if condition -->\n        <div class=\"col-md-6 if-condition\">\n          <div class=\"panel-body\">\n            <div class=\"panel-body-content\">\n              <p>If condition</p>\n            </div>\n          </div>\n\n          <div class=\"panel-footer\">\n            <div class=\"list-group\">\n              <div class=\"device\">\n                <div class=\"lights\" >\n                  <div class=\"light\" (click)=\"light1=!light1\">\n                    <a class=\"list-group-item\">PIR sensor</a>\n                    <a class=\"list-group-item\" [ngStyle]=\"{'margin-left': '25%'}\">Equal to</a>\n                    <a class=\"list-group-item\" [ngStyle]=\"{'float':'right'}\">HIGH</a>\n                  </div>\n                </div>\n              </div>\n            </div>\n          </div>\n        </div>\n        <!-- if condition -->\n\n        <!-- then action -->\n        <div class=\"col-md-6 then-action\">\n          <div class=\"panel-body\">\n            <div class=\"panel-body-content\">\n              <p>Then action</p>\n            </div>\n          </div>\n\n          <div class=\"panel-footer\">\n            <div class=\"list-group\">\n              <div class=\"device\">\n                <div class=\"lights\" >\n                  <div class=\"light\" (click)=\"light1=!light1\">\n                    <a class=\"list-group-item\">Light 1</a>\n                    <ui-switch [ngModel]=\"light1\" size=\"medium-v2\"></ui-switch><br>\n                  </div>\n                  <div class=\"light\" (click)=\"light2=!light2\">\n                    <a class=\"list-group-item\">Light 2</a>\n                    <ui-switch [ngModel]=\"!light2\" size=\"medium-v2\"></ui-switch><br>\n                  </div>\n                  <div class=\"light\" (click)=\"light3=!light3\">\n                    <a class=\"list-group-item\">Light 3</a>\n                    <ui-switch [ngModel]=\"light3\" size=\"medium-v2\"></ui-switch><br>\n                  </div>\n                </div>\n              </div>\n            </div>\n          </div>\n        </div>\n        <!-- then action -->\n      </div>\n      <!-- if statement -->\n\n    </div>\n\n  </div>\n</div>\n<!-- script -->\n"
 
 /***/ }),
 
 /***/ 1089:
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"container\">\n  <h2 class=\"page-header\">Login</h2>\n  <form (submit)=\"onLoginSubmit()\">\n    <div class=\"flashMessage\">\n      <flash-messages></flash-messages>\n    </div>\n    <div class=\"form-group\">\n        <label>Username</label>\n        <input type=\"text\" class=\"form-control\" [(ngModel)]=\"username\" name=\"username\">\n    </div>\n    <div class=\"form-group\">\n        <label>Password</label>\n        <input type=\"password\" class=\"form-control\" [(ngModel)]=\"password\" name=\"password\">\n    </div>\n    <input type=\"submit\" class=\"btn btn-primary\" value=\"login\">\n  </form>\n</div>\n"
+module.exports = "<div class=\"col-md-8\">\n    <!-- addscript -->\n    <div class=\"addscript\">\n      <button type=\"button\" class=\"fa fa-plus-circle fa-2x\" (click)=\"checkClick1=!checkClick1\"></button>\n      <div class=\"input\" [hidden]=\"checkClick1\" >\n        <form (submit)=\"addscriptSubmit()\">\n          <div class=\"form-group\">\n            <input type=\"text\"\n            class=\"form-control\"\n            [(ngModel)]=\"scriptAddedName\" name=\"scriptAddedName\"\n            placeholder=\"Script name\"\n            required>\n          </div>\n          <input type=\"submit\" class=\"btn btn-success btn-add-script\" value=\"Add\">\n        </form>\n      </div>\n    </div>\n    <!-- addscript -->\n\n    <!-- script -->\n    <div class=\"script\">\n      <div class=\"panel panel-primary panel-pricing\">\n        <div class=\"panel-heading\">\n          <i class=\"fa fa-lightbulb-o\" aria-hidden=\"true\"></i>\n          <h3 class=\"scriptName\">Sleep</h3>\n          <div class=\"x-icon\">\n            <i class=\"fa fa-times\" aria-hidden=\"true\"></i>\n          </div>\n        </div>\n        <div class=\"row scirpt-body\">\n          <div class=\"col-md-4\">\n            <div class=\"time-date-picker\">\n              <div class=\"date-picker\">\n                <p>Date</p>\n                <ic-datepicker (dateChange)=\"onDatepickerDateChange($event)\"></ic-datepicker>\n              </div>\n              <div class=\"time-picker\">\n                <p>Time</p>\n                <button class=\"btn\" type=\"button\" name=\"button\" (click)=\"timePickerHidden=!timePickerHidden\"></button>\n                <div class=\"timepicker\" [hidden]=\"timePickerHidden\">\n                  <timepicker [(ngModel)]=\"mytime\"></timepicker>\n                  <button class=\"btn btn-primary\" type=\"button\" name=\"button\" (click)=\"showTime(mytime);timePickerHidden=true\">Save</button>\n                </div>\n              </div>\n              <div class=\"repeat\">\n                <p>Repeat</p>\n                <input type=\"text\" name=\"\" value=\"\">\n              </div>\n            </div>\n          </div>\n          <div class=\"col-md-8 deivce-picker\">\n\n            <!-- select room -->\n            <div class=\"panel-body\">\n              <div class=\"panel-body-content\">\n                <div class=\"panel-body-icon\">\n                  <i class=\"fa fa-home\" aria-hidden=\"true\"></i>\n                </div>\n                <div class=\"btn-group panel-body-btn\">\n                  <a class=\"btn btn-primary dropdown-toggle\" data-toggle=\"dropdown\" href=\"#\"> 1st Floor</a>\n                  <ul class=\"dropdown-menu\">\n                    <li *ngFor=\"let floor of listOfFloors\" (click)=\"selectFloor(floor)\"><a> {{floor.name}}</a></li>\n                  </ul>\n                </div>\n                <div class=\"panel-body-icon\">\n                  <i class=\"fa fa-caret-right\" aria-hidden=\"true\"></i>\n                </div>\n                <div class=\"btn-group panel-body-btn\">\n                  <a class=\"btn btn-primary dropdown-toggle\" data-toggle=\"dropdown\" href=\"#\"> Bedroom</a>\n                  <ul class=\"dropdown-menu\">\n                    <li *ngFor=\"let room of listOfRooms\" (click)=\"selectRoom(room)\"><a> {{room.name}}</a></li>\n                  </ul>\n                </div>\n              </div>\n            </div>\n\n            <div class=\"panel-footer\">\n              <div class=\"list-group\">\n                <div class=\"device\">\n                  <div class=\"lights\" >\n                    <div class=\"light\" (click)=\"light1=!light1\">\n                      <a class=\"list-group-item\">Light 1</a>\n                      <ui-switch [ngModel]=\"light1\" size=\"medium-v2\"></ui-switch><br>\n                    </div>\n                    <div class=\"light\" (click)=\"light2=!light2\">\n                      <a class=\"list-group-item\">Light 2</a>\n                      <ui-switch [ngModel]=\"!light2\" size=\"medium-v2\"></ui-switch><br>\n                    </div>\n                    <div class=\"light\" (click)=\"light3=!light3\">\n                      <a class=\"list-group-item\">Light 3</a>\n                      <ui-switch [ngModel]=\"light3\" size=\"medium-v2\"></ui-switch><br>\n                    </div>\n                  </div>\n                </div>\n              </div>\n            </div>\n            <!-- select room -->\n\n            <!-- select room -->\n            <div class=\"panel-body\">\n              <div class=\"panel-body-content\">\n                <div class=\"panel-body-icon\">\n                  <i class=\"fa fa-home\" aria-hidden=\"true\"></i>\n                </div>\n                <div class=\"btn-group panel-body-btn\">\n                  <a class=\"btn btn-primary dropdown-toggle\" data-toggle=\"dropdown\" href=\"#\"> 1st Floor</a>\n                  <ul class=\"dropdown-menu\">\n                    <li *ngFor=\"let floor of listOfFloors\" (click)=\"selectFloor(floor)\"><a> {{floor.name}}</a></li>\n                  </ul>\n                </div>\n                <div class=\"panel-body-icon\">\n                  <i class=\"fa fa-caret-right\" aria-hidden=\"true\"></i>\n                </div>\n                <div class=\"btn-group panel-body-btn\">\n                  <a class=\"btn btn-primary dropdown-toggle\" data-toggle=\"dropdown\" href=\"#\"> Living room</a>\n                  <ul class=\"dropdown-menu\">\n                    <li *ngFor=\"let room of listOfRooms\" (click)=\"selectRoom(room)\"><a> {{room.name}}</a></li>\n                  </ul>\n                </div>\n              </div>\n            </div>\n\n            <div class=\"panel-footer\">\n              <div class=\"list-group\">\n                <div class=\"device\">\n                  <div class=\"lights\" >\n                    <div class=\"light\" (click)=\"light4=!light4\">\n                      <a class=\"list-group-item\">Light 1</a>\n                      <ui-switch [ngModel]=\"light4\" size=\"medium-v2\"></ui-switch><br>\n                    </div>\n                    <div class=\"light\" (click)=\"light5=!light5\">\n                      <a class=\"list-group-item\">Light 2</a>\n                      <ui-switch [ngModel]=\"!light5\" size=\"medium-v2\"></ui-switch><br>\n                    </div>\n                    <div class=\"light\" (click)=\"light6=!light6\">\n                      <a class=\"list-group-item\">Light 3</a>\n                      <ui-switch [ngModel]=\"light6\" size=\"medium-v2\"></ui-switch><br>\n                    </div>\n                  </div>\n                </div>\n              </div>\n              <div  [hidden]=\"saveBtnHidden\" class=\"save\">\n                <button class=\"btn btn-primary btn-save\" type=\"button\" name=\"button\" (click)=\"save()\" >Save</button>\n              </div>\n              <div class=\"test\">\n              </div>\n            </div>\n            <!-- select room -->\n          </div>\n\n        </div>\n\n      </div>\n    </div>\n    <!-- script -->\n</div>\n"
 
 /***/ }),
 
 /***/ 1090:
 /***/ (function(module, exports) {
 
-module.exports = "<nav class=\"navbar navbar-default navbar-fixed-top\">\n  <div class=\"container\">\n    <div class=\"navbar-header\">\n      <button type=\"button\" class=\"navbar-toggle collapsed\" data-toggle=\"collapse\" data-target=\"#navbar\" aria-expanded=\"false\" aria-controls=\"navbar\">\n        <span class=\"sr-only\">Toggle navigation</span>\n        <span class=\"icon-bar\"></span>\n        <span class=\"icon-bar\"></span>\n        <span class=\"icon-bar\"></span>\n      </button>\n      <a class=\"navbar-brand\" href=\"#\">BKHome</a>\n    </div>\n    <div id=\"navbar\" class=\"collapse navbar-collapse\">\n      <ul class=\"nav navbar-nav navbar-left\">\n        <li [routerLinkActive]=\"['active']\" [routerLinkActiveOptions]={exact:true}><a [routerLink] = \"['/']\">Home</a></li>\n      </ul>\n      <ul class=\"nav navbar-nav navbar-right\">\n        <li *ngIf=\"authService.loggedIn()\" [routerLinkActive]=\"['active']\" [routerLinkActiveOptions]={exact:true}><a [routerLink] = \"['/dashboard']\">Dashboard</a></li>\n        <li *ngIf=\"authService.loggedIn()\" [routerLinkActive]=\"['active']\" [routerLinkActiveOptions]={exact:true}><a [routerLink] = \"['/config']\">Config</a></li>\n        <li *ngIf=\"authService.loggedIn()\" [routerLinkActive]=\"['active']\" [routerLinkActiveOptions]={exact:true}><a [routerLink] = \"['/devices']\">Devices</a></li>\n        <li *ngIf=\"authService.loggedIn()\" [routerLinkActive]=\"['active']\" [routerLinkActiveOptions]={exact:true}><a [routerLink] = \"['/profile']\">Profile</a></li>\n        <li *ngIf=\"!authService.loggedIn()\" [routerLinkActive]=\"['active']\" [routerLinkActiveOptions]={exact:true}><a [routerLink] = \"['/login']\">Login</a></li>\n        <li *ngIf=\"!authService.loggedIn()\" [routerLinkActive]=\"['active']\" [routerLinkActiveOptions]={exact:true}><a [routerLink] = \"['/register']\">Register</a></li>\n        <li  *ngIf=\"authService.loggedIn()\"><a (click)=\"onLogoutClick()\" href=\"#\">Logout</a></li>\n      </ul>\n    </div><!--/.nav-collapse -->\n  </div>\n</nav>\n\n<nav class=\"navbar navbar-default\">\n</nav>\n"
+module.exports = "<div class=\"background-image\"></div>\n<div class=\"container\">\n  <br><br><br>\n  <div class=\"row\">\n      <div class=\"col-sm-4 col-md-4\">\n        <div class=\"panel panel-default\">\n          <!-- Default panel contents -->\n          <div class=\"panel-heading\">Panel heading</div>\n          <div class=\"panel-body\">\n            <div class=\"row\">\n              <div class=\"col-md-3\">\n                <ul class=\"list-group\">\n                  <li class=\"list-group-item\">Cras justo odio</li>\n                  <li class=\"list-group-item\">Dapibus ac facilisis in</li>\n                  <li class=\"list-group-item\">Morbi leo risus</li>\n                  <li class=\"list-group-item\">Porta ac consectetur ac</li>\n                  <li class=\"list-group-item\">Vestibulum at eros</li>\n                </ul>\n              </div>\n              <div class=\"col-md-3\">\n                <ul class=\"list-group\">\n                  <li class=\"list-group-item\">Cras justo odio</li>\n                  <li class=\"list-group-item\">Dapibus ac facilisis in</li>\n                  <li class=\"list-group-item\">Morbi leo risus</li>\n                  <li class=\"list-group-item\">Porta ac consectetur ac</li>\n                  <li class=\"list-group-item\">Vestibulum at eros</li>\n                </ul>\n              </div>\n            </div>\n            <!-- List group -->          </div>\n        </div>\n      </div>\n  </div>\n</div>\n"
 
 /***/ }),
 
 /***/ 1091:
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"container\">\n  <div *ngIf=\"user\">\n    <h2 class=\"page-header\">{{user.name}}</h2>\n    <ul class=\"list-group\">\n      <li class=\"list-group-item\">Username: {{user.username}}</li>\n      <li class=\"list-group-item\">Email: {{user.email}}</li>\n    </ul>\n  </div>\n</div>\n"
+module.exports = "<div class=\"container\">\n  <div class=\"jumbotron text-center\">\n    <h1>BKHome Project</h1>\n    <p class=\"lead\">Welcome blahblah blahbla</p>\n    <div>\n      <a class=\"btn btn-primary\" [routerLink]=\"['/register']\">Register</a>\n      <a class=\"btn btn-default\" [routerLink]=\"['/login']\">Login</a>\n    </div>\n  </div>\n\n  <div class=\"row\">\n    <div class=\"col-md-4\">\n      <h3>Express backend</h3>\n      <p>A rock solid Nodejs/Express server using Mongoose</p>\n    </div>\n    <div class=\"col-md-4\">\n      <h3>Angular-CLI</h3>\n      <p>Angular-CLI blah blah blah balh</p>\n    </div>\n    <div class=\"col-md-4\">\n      <h3>JWT Token</h3>\n      <p>JSON Web Token blah blah blah balh</p>\n    </div>\n  </div>\n</div>\n"
 
 /***/ }),
 
 /***/ 1092:
 /***/ (function(module, exports) {
 
+module.exports = "<div class=\"container\">\n  <h2 class=\"page-header\">Login</h2>\n  <form (submit)=\"onLoginSubmit()\">\n    <div class=\"flashMessage\">\n      <flash-messages></flash-messages>\n    </div>\n    <div class=\"form-group\">\n        <label>Username</label>\n        <input type=\"text\" class=\"form-control\" [(ngModel)]=\"username\" name=\"username\">\n    </div>\n    <div class=\"form-group\">\n        <label>Password</label>\n        <input type=\"password\" class=\"form-control\" [(ngModel)]=\"password\" name=\"password\">\n    </div>\n    <input type=\"submit\" class=\"btn btn-primary\" value=\"login\">\n  </form>\n</div>\n"
+
+/***/ }),
+
+/***/ 1093:
+/***/ (function(module, exports) {
+
+module.exports = "<nav class=\"navbar navbar-default navbar-fixed-top\">\n  <div class=\"container\">\n    <div class=\"navbar-header\">\n      <button type=\"button\" class=\"navbar-toggle collapsed\" data-toggle=\"collapse\" data-target=\"#navbar\" aria-expanded=\"false\" aria-controls=\"navbar\">\n        <span class=\"sr-only\">Toggle navigation</span>\n        <span class=\"icon-bar\"></span>\n        <span class=\"icon-bar\"></span>\n        <span class=\"icon-bar\"></span>\n      </button>\n      <a class=\"navbar-brand\" href=\"#\">BKHome</a>\n    </div>\n    <div id=\"navbar\" class=\"collapse navbar-collapse\">\n      <ul class=\"nav navbar-nav navbar-left\">\n        <li [routerLinkActive]=\"['active']\" [routerLinkActiveOptions]={exact:true}><a [routerLink] = \"['/']\">Home</a></li>\n      </ul>\n      <ul class=\"nav navbar-nav navbar-right\">\n        <li *ngIf=\"authService.loggedIn()\" [routerLinkActive]=\"['active']\" [routerLinkActiveOptions]={exact:true}><a [routerLink] = \"['/dashboard']\">Dashboard</a></li>\n        <li *ngIf=\"authService.loggedIn()\" [routerLinkActive]=\"['active']\" [routerLinkActiveOptions]={exact:true}><a [routerLink] = \"['/config']\">Config</a></li>\n        <li *ngIf=\"authService.loggedIn()\" [routerLinkActive]=\"['active']\" [routerLinkActiveOptions]={exact:true}><a [routerLink] = \"['/devices']\">Devices</a></li>\n        <li *ngIf=\"authService.loggedIn()\" [routerLinkActive]=\"['active']\" [routerLinkActiveOptions]={exact:true}><a [routerLink] = \"['/profile']\">Profile</a></li>\n        <li *ngIf=\"!authService.loggedIn()\" [routerLinkActive]=\"['active']\" [routerLinkActiveOptions]={exact:true}><a [routerLink] = \"['/login']\">Login</a></li>\n        <li *ngIf=\"!authService.loggedIn()\" [routerLinkActive]=\"['active']\" [routerLinkActiveOptions]={exact:true}><a [routerLink] = \"['/register']\">Register</a></li>\n        <li  *ngIf=\"authService.loggedIn()\"><a (click)=\"onLogoutClick()\" href=\"#\">Logout</a></li>\n      </ul>\n    </div><!--/.nav-collapse -->\n  </div>\n</nav>\n\n<nav class=\"navbar navbar-default\">\n</nav>\n"
+
+/***/ }),
+
+/***/ 1094:
+/***/ (function(module, exports) {
+
+module.exports = "<div class=\"container\">\n  <div *ngIf=\"user\">\n    <h2 class=\"page-header\">{{user.name}}</h2>\n    <ul class=\"list-group\">\n      <li class=\"list-group-item\">Username: {{user.username}}</li>\n      <li class=\"list-group-item\">Email: {{user.email}}</li>\n    </ul>\n  </div>\n</div>\n"
+
+/***/ }),
+
+/***/ 1095:
+/***/ (function(module, exports) {
+
 module.exports = "<div class=\"container\">\n  <h2 class=\"page-header\">Register</h2>\n  <form (submit)=\"onRegisterSubmit()\">\n    <div class=\"form-group\">\n      <label>Name</label>\n      <input type=\"text\" [(ngModel)]=\"name\" name=\"name\" class=\"form-control\">\n    </div>\n    <div class=\"form-group\">\n      <label>Username</label>\n      <input type=\"text\" [(ngModel)]=\"username\" name=\"username\" class=\"form-control\">\n    </div>\n    <div class=\"form-group\">\n      <label>Email</label>\n      <input type=\"text\" [(ngModel)]=\"email\" name=\"email\" class=\"form-control\">\n    </div>\n    <div class=\"form-group\">\n      <label>Password</label>\n      <input type=\"password\" [(ngModel)]=\"password\" name=\"password\" class=\"form-control\">\n    </div>\n    <input type=\"submit\" class=\"btn btn-primary\" value=\"Submit\">\n  </form>\n\n</div>\n"
 
 /***/ }),
 
-/***/ 1152:
+/***/ 1155:
 /***/ (function(module, exports) {
 
 /* (ignored) */
 
 /***/ }),
 
-/***/ 1153:
+/***/ 1156:
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__(752);
@@ -1002,7 +1027,7 @@ var RoomEvent = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_rxjs_Observable__ = __webpack_require__(2);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_rxjs_Observable___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_rxjs_Observable__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_socket_io_client__ = __webpack_require__(1139);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_socket_io_client__ = __webpack_require__(1142);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_socket_io_client___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_socket_io_client__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return SocketioService; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -1100,7 +1125,7 @@ var ValidateService = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_http__ = __webpack_require__(67);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_map__ = __webpack_require__(46);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_map___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_map__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_angular2_jwt__ = __webpack_require__(947);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_angular2_jwt__ = __webpack_require__(948);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_angular2_jwt___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_angular2_jwt__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__environments_environment__ = __webpack_require__(174);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return UserService; });
@@ -1257,8 +1282,8 @@ var AppComponent = (function () {
     AppComponent = __decorate([
         __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
             selector: 'app-root',
-            template: __webpack_require__(1076),
-            styles: [__webpack_require__(1017)]
+            template: __webpack_require__(1078),
+            styles: [__webpack_require__(1018)]
         }), 
         __metadata('design:paramtypes', [(typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__services_socketio_service__["a" /* SocketioService */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_1__services_socketio_service__["a" /* SocketioService */]) === 'function' && _a) || Object, (typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_3__services_broadcast_broadcaster_service__["a" /* Broadcaster */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_3__services_broadcast_broadcaster_service__["a" /* Broadcaster */]) === 'function' && _b) || Object, (typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_2__services_broadcast_message_event_service__["a" /* MessageEvent */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_2__services_broadcast_message_event_service__["a" /* MessageEvent */]) === 'function' && _c) || Object, (typeof (_d = typeof __WEBPACK_IMPORTED_MODULE_4__services_broadcast_room_event_service__["a" /* RoomEvent */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_4__services_broadcast_room_event_service__["a" /* RoomEvent */]) === 'function' && _d) || Object])
     ], AppComponent);
@@ -1279,23 +1304,23 @@ var AppComponent = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_http__ = __webpack_require__(67);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__angular_router__ = __webpack_require__(21);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_ng2_bootstrap__ = __webpack_require__(118);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_ngx_pipes__ = __webpack_require__(1068);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_ngx_pipes__ = __webpack_require__(1070);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_ngx_pipes___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_6_ngx_pipes__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7_angular2_ui_switch_src_index__ = __webpack_require__(914);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8_ngx_toastr__ = __webpack_require__(187);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9_ic_datepicker__ = __webpack_require__(1040);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9_ic_datepicker__ = __webpack_require__(1042);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__angular_material__ = __webpack_require__(868);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11_hammerjs__ = __webpack_require__(1038);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11_hammerjs__ = __webpack_require__(1040);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_11_hammerjs___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_11_hammerjs__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__app_component__ = __webpack_require__(923);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__components_navbar_navbar_component__ = __webpack_require__(938);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__components_login_login_component__ = __webpack_require__(937);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__components_register_register_component__ = __webpack_require__(940);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__components_home_home_component__ = __webpack_require__(936);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__components_dashboard_dashboard_component__ = __webpack_require__(935);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__components_profile_profile_component__ = __webpack_require__(939);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_19__components_config_config_component__ = __webpack_require__(929);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_20__components_config_config_navbar_config_navbar_component__ = __webpack_require__(928);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__components_navbar_navbar_component__ = __webpack_require__(939);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__components_login_login_component__ = __webpack_require__(938);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__components_register_register_component__ = __webpack_require__(941);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__components_home_home_component__ = __webpack_require__(937);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__components_dashboard_dashboard_component__ = __webpack_require__(936);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__components_profile_profile_component__ = __webpack_require__(940);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_19__components_config_config_component__ = __webpack_require__(930);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_20__components_config_config_navbar_config_navbar_component__ = __webpack_require__(929);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_21__services_validate_service__ = __webpack_require__(547);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_22__services_httpservice_user_service__ = __webpack_require__(72);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_23__services_httpservice_house_service__ = __webpack_require__(42);
@@ -1303,18 +1328,19 @@ var AppComponent = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_25__services_socketio_service__ = __webpack_require__(546);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_26_angular2_flash_messages__ = __webpack_require__(38);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_26_angular2_flash_messages___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_26_angular2_flash_messages__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_27__guards_auth_guard__ = __webpack_require__(941);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_27__guards_auth_guard__ = __webpack_require__(942);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_28__services_broadcast_broadcaster_service__ = __webpack_require__(171);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_29__services_broadcast_message_event_service__ = __webpack_require__(172);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_30__services_broadcast_room_event_service__ = __webpack_require__(545);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_31__components_config_devices_devices_component__ = __webpack_require__(930);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_32__components_config_devices_lightingcontrol_lightingcontrol_component__ = __webpack_require__(931);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_33__components_config_devices_sensor_module_sensor_module_component__ = __webpack_require__(932);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_31__components_config_devices_devices_component__ = __webpack_require__(931);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_32__components_config_devices_lightingcontrol_lightingcontrol_component__ = __webpack_require__(932);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_33__components_config_devices_sensor_module_sensor_module_component__ = __webpack_require__(933);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_34__components_config_config_home_room_room_component__ = __webpack_require__(927);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_35__components_config_config_home_config_home_component__ = __webpack_require__(925);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_36__components_config_scripts_scripts_component__ = __webpack_require__(934);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_37__components_config_rules_rules_component__ = __webpack_require__(933);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_36__components_config_scripts_scripts_component__ = __webpack_require__(935);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_37__components_config_rules_rules_component__ = __webpack_require__(934);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_38__components_config_config_home_room_light_light_component__ = __webpack_require__(926);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_39__components_config_config_home_room_sensor_sensor_component__ = __webpack_require__(928);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AppModule; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -1325,6 +1351,7 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
+
 
 
 
@@ -1407,7 +1434,8 @@ var AppModule = (function () {
                 __WEBPACK_IMPORTED_MODULE_35__components_config_config_home_config_home_component__["a" /* ConfigHomeComponent */],
                 __WEBPACK_IMPORTED_MODULE_36__components_config_scripts_scripts_component__["a" /* ScriptsComponent */],
                 __WEBPACK_IMPORTED_MODULE_37__components_config_rules_rules_component__["a" /* RulesComponent */],
-                __WEBPACK_IMPORTED_MODULE_38__components_config_config_home_room_light_light_component__["a" /* LightComponent */]
+                __WEBPACK_IMPORTED_MODULE_38__components_config_config_home_room_light_light_component__["a" /* LightComponent */],
+                __WEBPACK_IMPORTED_MODULE_39__components_config_config_home_room_sensor_sensor_component__["a" /* SensorComponent */]
             ],
             imports: [
                 __WEBPACK_IMPORTED_MODULE_7_angular2_ui_switch_src_index__["a" /* UiSwitchModule */],
@@ -1529,8 +1557,8 @@ var ConfigHomeComponent = (function () {
     ConfigHomeComponent = __decorate([
         __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
             selector: 'app-config-home',
-            template: __webpack_require__(1077),
-            styles: [__webpack_require__(1018)]
+            template: __webpack_require__(1079),
+            styles: [__webpack_require__(1019)]
         }), 
         __metadata('design:paramtypes', [(typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_2_angular2_flash_messages__["FlashMessagesService"] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_2_angular2_flash_messages__["FlashMessagesService"]) === 'function' && _a) || Object, (typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_1__services_httpservice_house_service__["a" /* HouseService */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_1__services_httpservice_house_service__["a" /* HouseService */]) === 'function' && _b) || Object, (typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_3__angular_router__["b" /* Router */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_3__angular_router__["b" /* Router */]) === 'function' && _c) || Object, (typeof (_d = typeof __WEBPACK_IMPORTED_MODULE_3__angular_router__["c" /* ActivatedRoute */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_3__angular_router__["c" /* ActivatedRoute */]) === 'function' && _d) || Object, (typeof (_e = typeof __WEBPACK_IMPORTED_MODULE_4_ngx_toastr__["b" /* ToastrService */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_4_ngx_toastr__["b" /* ToastrService */]) === 'function' && _e) || Object])
     ], ConfigHomeComponent);
@@ -1611,8 +1639,8 @@ var LightComponent = (function () {
     LightComponent = __decorate([
         __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
             selector: 'app-light',
-            template: __webpack_require__(1078),
-            styles: [__webpack_require__(1019)]
+            template: __webpack_require__(1080),
+            styles: [__webpack_require__(1020)]
         }), 
         __metadata('design:paramtypes', [(typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__services_broadcast_message_event_service__["a" /* MessageEvent */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_1__services_broadcast_message_event_service__["a" /* MessageEvent */]) === 'function' && _a) || Object])
     ], LightComponent);
@@ -1632,7 +1660,6 @@ var LightComponent = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_angular2_flash_messages__ = __webpack_require__(38);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_angular2_flash_messages___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_angular2_flash_messages__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_router__ = __webpack_require__(21);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__services_broadcast_message_event_service__ = __webpack_require__(172);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return RoomComponent; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -1647,22 +1674,33 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 
 
-
 var RoomComponent = (function () {
-    function RoomComponent(flashMessage, houseService, router, messageEvent) {
+    function RoomComponent(flashMessage, houseService, router) {
         this.flashMessage = flashMessage;
         this.houseService = houseService;
         this.router = router;
-        this.messageEvent = messageEvent;
         this.roomChange = new __WEBPACK_IMPORTED_MODULE_0__angular_core__["EventEmitter"]();
         this.checkClick = true;
-        this.Slidervalue = [50, 80];
-        this.lightValue = [];
+        this.lightingControls = [];
+        this.sensorModules = [];
     }
     RoomComponent.prototype.ngOnInit = function () {
         var _this = this;
         this.houseService.getListOfDevicesInRoom(this.floorId, this.room._id).subscribe(function (res) {
             _this.devices = res.devices;
+            if (_this.devices) {
+                for (var _i = 0, _a = _this.devices; _i < _a.length; _i++) {
+                    var device = _a[_i];
+                    switch (device.deviceType) {
+                        case "LightingControl":
+                            _this.lightingControls.push(device);
+                            break;
+                        case "SensorModule":
+                            _this.sensorModules.push(device);
+                            break;
+                    }
+                }
+            }
         });
     };
     RoomComponent.prototype.ngOnDestroy = function () {
@@ -1717,19 +1755,69 @@ var RoomComponent = (function () {
     RoomComponent = __decorate([
         __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
             selector: 'app-room',
-            template: __webpack_require__(1079),
-            styles: [__webpack_require__(1020)],
+            template: __webpack_require__(1081),
+            styles: [__webpack_require__(1021)],
         }), 
-        __metadata('design:paramtypes', [(typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_2_angular2_flash_messages__["FlashMessagesService"] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_2_angular2_flash_messages__["FlashMessagesService"]) === 'function' && _a) || Object, (typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_1__services_httpservice_house_service__["a" /* HouseService */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_1__services_httpservice_house_service__["a" /* HouseService */]) === 'function' && _b) || Object, (typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_3__angular_router__["b" /* Router */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_3__angular_router__["b" /* Router */]) === 'function' && _c) || Object, (typeof (_d = typeof __WEBPACK_IMPORTED_MODULE_4__services_broadcast_message_event_service__["a" /* MessageEvent */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_4__services_broadcast_message_event_service__["a" /* MessageEvent */]) === 'function' && _d) || Object])
+        __metadata('design:paramtypes', [(typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_2_angular2_flash_messages__["FlashMessagesService"] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_2_angular2_flash_messages__["FlashMessagesService"]) === 'function' && _a) || Object, (typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_1__services_httpservice_house_service__["a" /* HouseService */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_1__services_httpservice_house_service__["a" /* HouseService */]) === 'function' && _b) || Object, (typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_3__angular_router__["b" /* Router */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_3__angular_router__["b" /* Router */]) === 'function' && _c) || Object])
     ], RoomComponent);
     return RoomComponent;
-    var _a, _b, _c, _d;
+    var _a, _b, _c;
 }());
 //# sourceMappingURL=/home/taihd94/Projects/BKHome/angular-src/src/room.component.js.map
 
 /***/ }),
 
 /***/ 928:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__services_broadcast_message_event_service__ = __webpack_require__(172);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return SensorComponent; });
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+var SensorComponent = (function () {
+    function SensorComponent(messageEvent) {
+        this.messageEvent = messageEvent;
+    }
+    SensorComponent.prototype.ngOnInit = function () {
+        var _this = this;
+        this.value = this.sensor.value;
+        this.messageEvent.emit("socketOn", this.sensor._id);
+        this.messageEvent.on(this.sensor._id)
+            .subscribe(function (value) {
+            _this.value = value;
+        });
+    };
+    __decorate([
+        __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Input"])(), 
+        __metadata('design:type', Object)
+    ], SensorComponent.prototype, "sensor", void 0);
+    SensorComponent = __decorate([
+        __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
+            selector: 'app-sensor',
+            template: __webpack_require__(1082),
+            styles: [__webpack_require__(1022)]
+        }), 
+        __metadata('design:paramtypes', [(typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__services_broadcast_message_event_service__["a" /* MessageEvent */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_1__services_broadcast_message_event_service__["a" /* MessageEvent */]) === 'function' && _a) || Object])
+    ], SensorComponent);
+    return SensorComponent;
+    var _a;
+}());
+//# sourceMappingURL=/home/taihd94/Projects/BKHome/angular-src/src/sensor.component.js.map
+
+/***/ }),
+
+/***/ 929:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1836,8 +1924,8 @@ var ConfigNavbarComponent = (function () {
     ConfigNavbarComponent = __decorate([
         __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
             selector: 'app-config-navbar',
-            template: __webpack_require__(1080),
-            styles: [__webpack_require__(1021)]
+            template: __webpack_require__(1083),
+            styles: [__webpack_require__(1023)]
         }), 
         __metadata('design:paramtypes', [(typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__services_httpservice_house_service__["a" /* HouseService */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_1__services_httpservice_house_service__["a" /* HouseService */]) === 'function' && _a) || Object, (typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_2__services_httpservice_user_service__["a" /* UserService */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_2__services_httpservice_user_service__["a" /* UserService */]) === 'function' && _b) || Object, (typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_3__angular_router__["b" /* Router */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_3__angular_router__["b" /* Router */]) === 'function' && _c) || Object, (typeof (_d = typeof __WEBPACK_IMPORTED_MODULE_4_angular2_flash_messages__["FlashMessagesService"] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_4_angular2_flash_messages__["FlashMessagesService"]) === 'function' && _d) || Object])
     ], ConfigNavbarComponent);
@@ -1848,7 +1936,7 @@ var ConfigNavbarComponent = (function () {
 
 /***/ }),
 
-/***/ 929:
+/***/ 930:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1882,8 +1970,8 @@ var ConfigComponent = (function () {
     ConfigComponent = __decorate([
         __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
             selector: 'app-register',
-            template: __webpack_require__(1081),
-            styles: [__webpack_require__(1022)]
+            template: __webpack_require__(1084),
+            styles: [__webpack_require__(1024)]
         }), 
         __metadata('design:paramtypes', [(typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_2_angular2_flash_messages__["FlashMessagesService"] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_2_angular2_flash_messages__["FlashMessagesService"]) === 'function' && _a) || Object, (typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_1__services_httpservice_house_service__["a" /* HouseService */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_1__services_httpservice_house_service__["a" /* HouseService */]) === 'function' && _b) || Object, (typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_3__angular_router__["b" /* Router */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_3__angular_router__["b" /* Router */]) === 'function' && _c) || Object])
     ], ConfigComponent);
@@ -1894,7 +1982,7 @@ var ConfigComponent = (function () {
 
 /***/ }),
 
-/***/ 930:
+/***/ 931:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1937,8 +2025,8 @@ var DevicesComponent = (function () {
     DevicesComponent = __decorate([
         __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
             selector: 'app-devices',
-            template: __webpack_require__(1082),
-            styles: [__webpack_require__(1023)]
+            template: __webpack_require__(1085),
+            styles: [__webpack_require__(1025)]
         }), 
         __metadata('design:paramtypes', [(typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_3_angular2_flash_messages__["FlashMessagesService"] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_3_angular2_flash_messages__["FlashMessagesService"]) === 'function' && _a) || Object, (typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_1__services_httpservice_house_service__["a" /* HouseService */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_1__services_httpservice_house_service__["a" /* HouseService */]) === 'function' && _b) || Object, (typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_2__services_httpservice_device_service__["a" /* DeviceService */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_2__services_httpservice_device_service__["a" /* DeviceService */]) === 'function' && _c) || Object, (typeof (_d = typeof __WEBPACK_IMPORTED_MODULE_4__angular_router__["b" /* Router */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_4__angular_router__["b" /* Router */]) === 'function' && _d) || Object])
     ], DevicesComponent);
@@ -1949,7 +2037,7 @@ var DevicesComponent = (function () {
 
 /***/ }),
 
-/***/ 931:
+/***/ 932:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -2086,8 +2174,8 @@ var LightingcontrolComponent = (function () {
     LightingcontrolComponent = __decorate([
         __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
             selector: 'app-lightingcontrol',
-            template: __webpack_require__(1083),
-            styles: [__webpack_require__(1024)]
+            template: __webpack_require__(1086),
+            styles: [__webpack_require__(1026)]
         }), 
         __metadata('design:paramtypes', [(typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_3_angular2_flash_messages__["FlashMessagesService"] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_3_angular2_flash_messages__["FlashMessagesService"]) === 'function' && _a) || Object, (typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_1__services_httpservice_house_service__["a" /* HouseService */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_1__services_httpservice_house_service__["a" /* HouseService */]) === 'function' && _b) || Object, (typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_2__services_httpservice_device_service__["a" /* DeviceService */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_2__services_httpservice_device_service__["a" /* DeviceService */]) === 'function' && _c) || Object, (typeof (_d = typeof __WEBPACK_IMPORTED_MODULE_4__angular_router__["b" /* Router */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_4__angular_router__["b" /* Router */]) === 'function' && _d) || Object])
     ], LightingcontrolComponent);
@@ -2098,7 +2186,7 @@ var LightingcontrolComponent = (function () {
 
 /***/ }),
 
-/***/ 932:
+/***/ 933:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -2223,8 +2311,8 @@ var SensorModuleComponent = (function () {
     SensorModuleComponent = __decorate([
         __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
             selector: 'app-sensor-module',
-            template: __webpack_require__(1084),
-            styles: [__webpack_require__(1025)]
+            template: __webpack_require__(1087),
+            styles: [__webpack_require__(1027)]
         }), 
         __metadata('design:paramtypes', [(typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_3_angular2_flash_messages__["FlashMessagesService"] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_3_angular2_flash_messages__["FlashMessagesService"]) === 'function' && _a) || Object, (typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_1__services_httpservice_house_service__["a" /* HouseService */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_1__services_httpservice_house_service__["a" /* HouseService */]) === 'function' && _b) || Object, (typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_2__services_httpservice_device_service__["a" /* DeviceService */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_2__services_httpservice_device_service__["a" /* DeviceService */]) === 'function' && _c) || Object, (typeof (_d = typeof __WEBPACK_IMPORTED_MODULE_4__angular_router__["b" /* Router */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_4__angular_router__["b" /* Router */]) === 'function' && _d) || Object])
     ], SensorModuleComponent);
@@ -2235,7 +2323,7 @@ var SensorModuleComponent = (function () {
 
 /***/ }),
 
-/***/ 933:
+/***/ 934:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -2259,8 +2347,8 @@ var RulesComponent = (function () {
     RulesComponent = __decorate([
         __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
             selector: 'app-rules',
-            template: __webpack_require__(1085),
-            styles: [__webpack_require__(1026)]
+            template: __webpack_require__(1088),
+            styles: [__webpack_require__(1028)]
         }), 
         __metadata('design:paramtypes', [])
     ], RulesComponent);
@@ -2270,7 +2358,7 @@ var RulesComponent = (function () {
 
 /***/ }),
 
-/***/ 934:
+/***/ 935:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -2305,8 +2393,8 @@ var ScriptsComponent = (function () {
     ScriptsComponent = __decorate([
         __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
             selector: 'app-scripts',
-            template: __webpack_require__(1086),
-            styles: [__webpack_require__(1027)]
+            template: __webpack_require__(1089),
+            styles: [__webpack_require__(1029)]
         }), 
         __metadata('design:paramtypes', [])
     ], ScriptsComponent);
@@ -2316,7 +2404,7 @@ var ScriptsComponent = (function () {
 
 /***/ }),
 
-/***/ 935:
+/***/ 936:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -2354,8 +2442,8 @@ var DashboardComponent = (function () {
     DashboardComponent = __decorate([
         __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
             selector: 'app-dashboard',
-            template: __webpack_require__(1087),
-            styles: [__webpack_require__(1028)]
+            template: __webpack_require__(1090),
+            styles: [__webpack_require__(1030)]
         }), 
         __metadata('design:paramtypes', [(typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__services_httpservice_house_service__["a" /* HouseService */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_1__services_httpservice_house_service__["a" /* HouseService */]) === 'function' && _a) || Object, (typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_2__angular_router__["b" /* Router */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_2__angular_router__["b" /* Router */]) === 'function' && _b) || Object])
     ], DashboardComponent);
@@ -2366,7 +2454,7 @@ var DashboardComponent = (function () {
 
 /***/ }),
 
-/***/ 936:
+/***/ 937:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -2397,8 +2485,8 @@ var HomeComponent = (function () {
     HomeComponent = __decorate([
         __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
             selector: 'app-home',
-            template: __webpack_require__(1088),
-            styles: [__webpack_require__(1029)]
+            template: __webpack_require__(1091),
+            styles: [__webpack_require__(1031)]
         }), 
         __metadata('design:paramtypes', [])
     ], HomeComponent);
@@ -2408,7 +2496,7 @@ var HomeComponent = (function () {
 
 /***/ }),
 
-/***/ 937:
+/***/ 938:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -2466,8 +2554,8 @@ var LoginComponent = (function () {
     LoginComponent = __decorate([
         __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
             selector: 'app-login',
-            template: __webpack_require__(1089),
-            styles: [__webpack_require__(1030)]
+            template: __webpack_require__(1092),
+            styles: [__webpack_require__(1032)]
         }), 
         __metadata('design:paramtypes', [(typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__services_httpservice_user_service__["a" /* UserService */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_1__services_httpservice_user_service__["a" /* UserService */]) === 'function' && _a) || Object, (typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_2__angular_router__["b" /* Router */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_2__angular_router__["b" /* Router */]) === 'function' && _b) || Object, (typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_3_angular2_flash_messages__["FlashMessagesService"] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_3_angular2_flash_messages__["FlashMessagesService"]) === 'function' && _c) || Object, (typeof (_d = typeof __WEBPACK_IMPORTED_MODULE_4_ngx_toastr__["b" /* ToastrService */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_4_ngx_toastr__["b" /* ToastrService */]) === 'function' && _d) || Object])
     ], LoginComponent);
@@ -2478,7 +2566,7 @@ var LoginComponent = (function () {
 
 /***/ }),
 
-/***/ 938:
+/***/ 939:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -2517,8 +2605,8 @@ var NavbarComponent = (function () {
     NavbarComponent = __decorate([
         __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
             selector: 'app-navbar',
-            template: __webpack_require__(1090),
-            styles: [__webpack_require__(1031)]
+            template: __webpack_require__(1093),
+            styles: [__webpack_require__(1033)]
         }), 
         __metadata('design:paramtypes', [(typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__services_httpservice_user_service__["a" /* UserService */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_1__services_httpservice_user_service__["a" /* UserService */]) === 'function' && _a) || Object, (typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_2__angular_router__["b" /* Router */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_2__angular_router__["b" /* Router */]) === 'function' && _b) || Object, (typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_3_ngx_toastr__["b" /* ToastrService */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_3_ngx_toastr__["b" /* ToastrService */]) === 'function' && _c) || Object])
     ], NavbarComponent);
@@ -2529,7 +2617,7 @@ var NavbarComponent = (function () {
 
 /***/ }),
 
-/***/ 939:
+/***/ 940:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -2567,8 +2655,8 @@ var ProfileComponent = (function () {
     ProfileComponent = __decorate([
         __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
             selector: 'app-profile',
-            template: __webpack_require__(1091),
-            styles: [__webpack_require__(1032)]
+            template: __webpack_require__(1094),
+            styles: [__webpack_require__(1034)]
         }), 
         __metadata('design:paramtypes', [(typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__services_httpservice_user_service__["a" /* UserService */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_1__services_httpservice_user_service__["a" /* UserService */]) === 'function' && _a) || Object, (typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_2__angular_router__["b" /* Router */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_2__angular_router__["b" /* Router */]) === 'function' && _b) || Object])
     ], ProfileComponent);
@@ -2579,7 +2667,7 @@ var ProfileComponent = (function () {
 
 /***/ }),
 
-/***/ 940:
+/***/ 941:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -2646,8 +2734,8 @@ var RegisterComponent = (function () {
     RegisterComponent = __decorate([
         __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
             selector: 'app-register',
-            template: __webpack_require__(1092),
-            styles: [__webpack_require__(1033)]
+            template: __webpack_require__(1095),
+            styles: [__webpack_require__(1035)]
         }), 
         __metadata('design:paramtypes', [(typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__services_validate_service__["a" /* ValidateService */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_1__services_validate_service__["a" /* ValidateService */]) === 'function' && _a) || Object, (typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_3_angular2_flash_messages__["FlashMessagesService"] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_3_angular2_flash_messages__["FlashMessagesService"]) === 'function' && _b) || Object, (typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_2__services_httpservice_user_service__["a" /* UserService */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_2__services_httpservice_user_service__["a" /* UserService */]) === 'function' && _c) || Object, (typeof (_d = typeof __WEBPACK_IMPORTED_MODULE_4__angular_router__["b" /* Router */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_4__angular_router__["b" /* Router */]) === 'function' && _d) || Object])
     ], RegisterComponent);
@@ -2658,7 +2746,7 @@ var RegisterComponent = (function () {
 
 /***/ }),
 
-/***/ 941:
+/***/ 942:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -2703,5 +2791,5 @@ var AuthGuard = (function () {
 
 /***/ })
 
-},[1153]);
+},[1156]);
 //# sourceMappingURL=main.bundle.js.map

@@ -40,6 +40,28 @@ module.exports.updateSensorName = function(deviceId, sensors, callback){
   })
 }
 
+module.exports.updateSensorValue = function(deviceId, sensorModule, callback){
+  SensorModule.findById(deviceId, (err, device)=>{
+    if(err){
+      throw err;
+      callback({success: false, msg: "something went wrong"});
+    }
+    if(device){
+      device.battery = sensorModule.battery;
+      for(i=0; i< device.sensors.length; i++){
+        device.sensors[i].value = sensorModule.sensors[i].value;
+      }
+      device.save(err=>{
+        if(err)
+          throw err;
+        else {
+          callback(device);
+        }
+      })
+    }
+  })
+}
+
 module.exports.updateSensors = function(deviceId, sensorModule, callback){
   SensorModule.findByIdAndUpdate(deviceId, sensorModule, (err, device)=>{
     if(err){
