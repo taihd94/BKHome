@@ -63,4 +63,11 @@ router.put('/:id/sensors', (req, res, next) => {
   })
 })
 
+router.get('/lighting-control/:id/room-id', (req, res, next)=>{
+  let lightId = req.params.id;
+  LightingControl.getRoomId(lightId, result=>{
+    res.json(result);
+  })
+})
+
 module.exports = router;

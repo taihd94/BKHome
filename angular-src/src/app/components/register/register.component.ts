@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ValidateService} from '../../services/validate.service';
-import { UserService} from '../../services/httpservice/user.service';
+import { UserService} from '../../services/rest-api/user.service';
 import { FlashMessagesService } from 'angular2-flash-messages'
 import { Router } from '@angular/router';
 

@@ -7,6 +7,7 @@ const mongoose = require('mongoose');
 const config = require('./config/database');
 require('./mqtt/mqtt');
 
+
 // Connect To Database
 mongoose.connect(config.database);
 
@@ -25,6 +26,7 @@ const app = express();
 const users = require('./routes/users');
 const house = require('./routes/house');
 const devices = require('./routes/devices');
+const scenes = require('./routes/scenes');
 
 // Port Number
 const port = 3000;
@@ -47,6 +49,7 @@ require('./config/passport')(passport);
 app.use('/users', users);
 app.use('/house', house);
 app.use('/devices', devices);
+app.use('/scenes', scenes)
 
 // Index Route
 app.get('/', (req, res) => {

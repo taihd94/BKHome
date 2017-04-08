@@ -1,6 +1,6 @@
 import { Component, EventEmitter, OnInit, Input, Output } from '@angular/core';
-import {HouseService} from '../../../services/httpservice/house.service';
-import {UserService} from '../../../services/httpservice/user.service';
+import {HouseService} from '../../../services/rest-api/house.service';
+import {UserService} from '../../../services/rest-api/user.service';
 import {Router} from '@angular/router';
 import { FlashMessagesService } from 'angular2-flash-messages'
 

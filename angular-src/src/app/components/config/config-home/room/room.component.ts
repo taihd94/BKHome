@@ -1,5 +1,5 @@
 import { Component, EventEmitter, OnInit, OnDestroy, Input, Output } from '@angular/core';
-import { HouseService} from '../../../../services/httpservice/house.service';
+import { HouseService} from '../../../../services/rest-api/house.service';
 import { FlashMessagesService } from 'angular2-flash-messages'
 import { Router } from '@angular/router';
 

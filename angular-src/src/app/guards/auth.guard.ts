@@ -1,6 +1,6 @@
 import {Injectable} from '@angular/core';
 import {Router, CanActivate} from '@angular/router';
-import {UserService} from '../services/httpservice/user.service';
+import {UserService} from '../services/rest-api/user.service';
 
 @Injectable()
 export class AuthGuard implements CanActivate{

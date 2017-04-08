@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import {UserService} from '../../services/httpservice/user.service';
+import {UserService} from '../../services/rest-api/user.service';
 import {Router} from '@angular/router';
 import { ToastrService } from 'ngx-toastr';
 @Component({

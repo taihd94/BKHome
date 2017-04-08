@@ -26,6 +26,8 @@ var Floor = require('./home-model/floor');
 var Room = require('./home-model/room');
 var LightingControl = require('./home-model/lightingControl');
 var SensorModule = require('./home-model/sensorModule');
+var Scene = require('./home-model/scenes');
+
 
 var house_id = new mongoose.Types.ObjectId();
 var floor_id_1 = new mongoose.Types.ObjectId();
@@ -36,9 +38,10 @@ var room_id_2 = new mongoose.Types.ObjectId();
 var light_id_1 = new mongoose.Types.ObjectId();
 var light_id_2 = new mongoose.Types.ObjectId();
 var light_id_3 = new mongoose.Types.ObjectId();
-var switch_id_1 = new mongoose.Types.ObjectId();
-var sensor_id_1 = new mongoose.Types.ObjectId();
-var sensor_id_2 = new mongoose.Types.ObjectId();
+var light_id_4 = new mongoose.Types.ObjectId();
+var light_id_5 = new mongoose.Types.ObjectId();
+var light_id_6 = new mongoose.Types.ObjectId();
+
 
 
 var user = [
@@ -56,17 +59,16 @@ var user = [
   })
 ]
 
-var house = [
-    new House({
-        _id: house_id,
-        name: "BK House",
-        floors: [
-          floor_id_1,
-          floor_id_2,
-          floor_id_3
-        ]
-    })
-];
+done = 0;
+for(var i = 0; i< user.length; i++) {
+    user[i].save(function (err, result) {
+        done++;
+        if (done === user.length) {
+            mongoose.disconnect();
+        }
+    });
+}
+
 
 var floor = [
   new Floor({
@@ -88,6 +90,16 @@ var floor = [
   })
 ]
 
+done = 0;
+for(var i = 0; i< floor.length; i++) {
+    floor[i].save(function (err, result) {
+        done++;
+        if (done === floor.length) {
+            mongoose.disconnect();
+        }
+    });
+}
+
 var lightingControl = [
   new LightingControl({
       deviceCode: 'lt01',         // Ex: 'ltctrl12c5'
@@ -96,6 +108,7 @@ var lightingControl = [
       allowToConnect: false,
       lights: [
         {
+            _id: light_id_1,
             portId: 1,
             name: 'null',                  // Ex: 'Light 1', 'Light 2',...
             typeOfLight: 'null',                  // Ex: 'Neon', 'Compact',...
@@ -105,6 +118,7 @@ var lightingControl = [
             value: 0
         },
         {
+            _id: light_id_2,
             portId: 2,
             name: 'null',                  // Ex: 'Light 1', 'Light 2',...
             typeOfLight: 'null',                  // Ex: 'Neon', 'Compact',...
@@ -114,6 +128,7 @@ var lightingControl = [
             value: 0
         },
         {
+            _id: light_id_3,
             portId: 3,
             name: 'null',                  // Ex: 'Light 1', 'Light 2',...
             typeOfLight: 'null',                  // Ex: 'Neon', 'Compact',...
@@ -123,7 +138,36 @@ var lightingControl = [
             value: 0
         },
         {
+            _id: light_id_4,
             portId: 4,
+            name: 'null',                  // Ex: 'Light 1', 'Light 2',...
+            typeOfLight: 'null',                  // Ex: 'Neon', 'Compact',...
+            dimmable: false,         // Ex: 'ON/OFF', 'DIM'
+            life_time: 000,             // Ex: 6000 hours
+            power: 000,                 // Ex: 60 watt
+            value: 0
+        }
+      ]
+  }),
+  new LightingControl({
+      deviceCode: 'lt02',         // Ex: 'ltctrl12c5'
+      deviceType: 'LightingControl',         // 'LightingControl'
+      numberOfPorts: 2,     // Ex: '1 port', '4 port', '8 port', ...
+      allowToConnect: false,
+      lights: [
+        {
+            _id: light_id_5,
+            portId: 1,
+            name: 'null',                  // Ex: 'Light 1', 'Light 2',...
+            typeOfLight: 'null',                  // Ex: 'Neon', 'Compact',...
+            dimmable: true,         // Ex: 'ON/OFF', 'DIM'
+            life_time: 000,             // Ex: 6000 hours
+            power: 000,                 // Ex: 60 watt
+            value: 0
+        },
+        {
+            _id: light_id_6,
+            portId: 2,
             name: 'null',                  // Ex: 'Light 1', 'Light 2',...
             typeOfLight: 'null',                  // Ex: 'Neon', 'Compact',...
             dimmable: false,         // Ex: 'ON/OFF', 'DIM'
@@ -134,6 +178,17 @@ var lightingControl = [
       ]
   })
 ]
+
+done = 0;
+for(var i = 0; i< lightingControl.length; i++) {
+    lightingControl[i].save(function (err, result) {
+        if(err) throw err;
+        done++;
+        if (done === lightingControl.length) {
+            mongoose.disconnect();
+        }
+    });
+}
 
 var sensorModule = [
   new SensorModule({
@@ -158,37 +213,52 @@ var sensorModule = [
   })
 ]
 
+var scene = [
+  new Scene({
+      name: "Sleep",
+      time: new Date(),
+      repeat: [true, true, false, true, false, true, true],
+      devices: [
+        {
+          _id: light_id_1,
+          value: 69
+        },
+        {
+          _id: light_id_2,
+          value: 0
+        },
+        {
+          _id: light_id_3,
+          value: 1
+        },
+        {
+          _id: light_id_4,
+          value: 1
+        },
+        {
+          _id: light_id_5,
+          value: 16
+        },
+        {
+          _id: light_id_6,
+          value: 1
+        }
+      ]
+  })
+]
+
 done = 0;
-for(var i = 0; i< house.length; i++) {
-    house[i].save(function (err, result) {
-        if(err) throw err;
+for(var i = 0; i< scene.length; i++) {
+    scene[i].save(function (err, result) {
         done++;
-        if (done === house.length) {
+        if (done === scene.length) {
             mongoose.disconnect();
         }
     });
 }
 
-done = 0;
-for(var i = 0; i< floor.length; i++) {
-    floor[i].save(function (err, result) {
-        done++;
-        if (done === floor.length) {
-            mongoose.disconnect();
-        }
-    });
-}
 
-done = 0;
-for(var i = 0; i< lightingControl.length; i++) {
-    lightingControl[i].save(function (err, result) {
-        if(err) throw err;
-        done++;
-        if (done === lightingControl.length) {
-            mongoose.disconnect();
-        }
-    });
-}
+
 
 // done = 0;
 // for(var i = 0; i< sensorModule.length; i++) {
@@ -199,13 +269,3 @@ for(var i = 0; i< lightingControl.length; i++) {
 //         }
 //     });
 // }
-
-done = 0;
-for(var i = 0; i< user.length; i++) {
-    user[i].save(function (err, result) {
-        done++;
-        if (done === user.length) {
-            mongoose.disconnect();
-        }
-    });
-}

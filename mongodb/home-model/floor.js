@@ -7,10 +7,6 @@ var FloorSchema = new Schema({
       {
           name: String,
           imgPath: String
-          // modules: [{
-          //     kind: String, // 'lightingControl', 'sersorsModule', 'cameraModule',...
-          //     moduleId: { type: Schema.Types.ObjectId, refPath: 'modules.kind'}
-          // }]
       }
     ]
 }, {versionKey: false});
@@ -109,6 +105,20 @@ module.exports.updateImgPath = function(floorId, roomId, imgPath, callback) {
       });
     } else {
       return callback({success: false, msg:"floor or room not found"});
+    }
+  })
+}
+
+module.exports.getFloorAndRoomByRoomId = function(roomId, callback){
+  Floor.findOne({'rooms._id': roomId}, (err,floor)=>{
+    if(err) throw err;
+    if(floor){
+      let room = floor.rooms.filter(room=>{
+        return room._id.toString() == roomId.toString();
+      }).pop();
+      callback({floorName: floor.name, roomName: room.name});
+    } else {
+      callback({success: false, msg: 'room not found'});
     }
   })
 }

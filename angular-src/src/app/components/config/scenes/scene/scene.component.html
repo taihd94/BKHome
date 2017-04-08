@@ -1,0 +1,153 @@
+<!-- scene -->
+<div class="scene">
+  <div class="panel panel-primary panel-pricing">
+    <div class="panel-heading">
+      <i class="fa fa-lightbulb-o" aria-hidden="true"></i>
+      <h3 class="sceneName">{{scene.name}}</h3>
+      <div class="x-icon">
+        <i class="fa fa-times" aria-hidden="true"></i>
+      </div>
+    </div>
+    <div class="row scirpt-body">
+      <div class="col-md-4">
+        <div class="time-date-picker">
+          <div class="date-picker">
+            <p>Date</p>
+            <ng2-datepicker [options]="options" [(ngModel)]="date" (click)="showDate(date);savePickerHidden=false"></ng2-datepicker>
+          </div>
+          <div class="time-picker">
+            <p>Time</p>
+            <div class="time" [hidden]="!timePickerHidden">
+              <button class="btn btn-time" type="button" name="button" (click)="timePickerHidden=false;savePickerHidden=false;">{{timePicker}}</button>
+            </div>
+            <div class="timepicker" [hidden]="timePickerHidden">
+              <timepicker [(ngModel)]="time"></timepicker>
+              <!-- <button class="btn btn-primary btn-timepicker" type="button" name="button" (click)="showTime(time);timePickerHidden=true">Save</button> -->
+            </div>
+          </div>
+          <div class="repeat">
+            <p>Repeat</p>
+            <input type="text" name="" value="" (click)="dayPickerHidden=false;savePickerHidden=false" [hidden]="!dayPickerHidden" [(ngModel)]="repeatDaysStr">
+            <div class="day-picker" [hidden]="dayPickerHidden">
+              <div class="checkbox" *ngFor="let day of daysOfWeekFull;let i = index">
+                <label>
+                  <input type="checkbox" [(ngModel)]="repeatDays[i]" (blur)="savePickerHidden=false">
+                  {{day}}
+                </label>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="picker-save" [hidden]="savePickerHidden">
+          <button class="btn btn-primary btn-save"
+                  (click)="dayPickerHidden=true;timePickerHidden=true;savePickerHidden=true;saveDatePicker()">Save</button>
+        </div>
+      </div>
+      <div class="col-md-8 deivce-picker">
+
+        <!-- Devices -->
+        <div class="listOfDevices" *ngFor="let device of devices">
+          <!-- select room -->
+          <div class="panel-body">
+            <div class="panel-body-content">
+              <div class="panel-body-icon">
+                <i class="fa fa-home" aria-hidden="true"></i>
+              </div>
+              <div class="btn-group panel-body-btn">
+                <a class="btn dropdown-toggle"> {{device.floorName}}</a>
+              </div>
+              <div class="panel-body-icon">
+                <i class="fa fa-caret-right" aria-hidden="true"></i>
+              </div>
+              <div class="btn-group panel-body-btn">
+                <a class="btn dropdown-toggle"> {{device.roomName}}</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="panel-footer">
+            <div class="list-group">
+              <div class="device">
+                <div class="lights" >
+                  <div class="light" (click)="light1=!light1">
+                    <a class="list-group-item"><i class="fa fa-minus-square" aria-hidden="true"></i> Light 1</a>
+                    <ui-switch [ngModel]="light1" size="medium-v2"></ui-switch><br>
+                  </div>
+                  <div class="light" (click)="light2=!light2">
+                    <a class="list-group-item"><i class="fa fa-minus-square" aria-hidden="true"></i> Light 2</a>
+                    <ui-switch [ngModel]="!light2" size="medium-v2"></ui-switch><br>
+                  </div>
+                  <div class="light" (click)="light3=!light3">
+                    <a class="list-group-item"><i class="fa fa-minus-square" aria-hidden="true"></i> Light 3</a>
+                    <ui-switch [ngModel]="light3" size="medium-v2"></ui-switch><br>
+                  </div>
+                  <div class="light" (click)="light1=!light1">
+                    <a class="list-group-item"><i class="fa fa-plus-square" aria-hidden="true"></i> Add device</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- select room -->
+        </div>
+
+
+        <!-- select room -->
+        <div class="panel-body">
+          <div class="panel-body-content">
+            <div class="panel-body-icon">
+              <i class="fa fa-home" aria-hidden="true"></i>
+            </div>
+            <div class="btn-group panel-body-btn">
+              <a class="btn dropdown-toggle" data-toggle="dropdown" href="#"> 1st Floor</a>
+              <ul class="dropdown-menu">
+                <li *ngFor="let floor of listOfFloors" (click)="selectFloor(floor)"><a> {{floor.name}}</a></li>
+              </ul>
+            </div>
+            <div class="panel-body-icon">
+              <i class="fa fa-caret-right" aria-hidden="true"></i>
+            </div>
+            <div class="btn-group panel-body-btn">
+              <a class="btn dropdown-toggle" data-toggle="dropdown" href="#"> Bedroom</a>
+              <ul class="dropdown-menu">
+                <li *ngFor="let room of listOfRooms" (click)="selectRoom(room)"><a> {{room.name}}</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="panel-footer">
+          <div class="list-group">
+            <div class="device">
+              <div class="lights" >
+                <div class="light" (click)="light1=!light1">
+                  <a class="list-group-item"><i class="fa fa-plus-square" aria-hidden="true"></i> Add device</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- select room -->
+
+        <!-- select room -->
+        <div class="panel-body">
+          <div class="panel-body-content">
+            <div class="panel-body-icon">
+              <i class="fa fa-plus-circle" aria-hidden="true"></i>
+            </div>
+            <div class="btn-group panel-body-btn">
+              <a class="btn dropdown-toggle"> Add room</a>
+            </div>
+          </div>
+        </div>
+        <!-- select room -->
+
+
+        <div class="btn-edit">
+          <button class="btn" type="button" name="button">Edit <i class="fa fa-pencil-square" aria-hidden="true"></i></button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- scene -->

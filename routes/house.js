@@ -88,4 +88,12 @@ router.get('/floors/:floorid/rooms/:roomid/devices', (req, res, next) => {
 
 module.exports = router;
 
+//find Floor and Room by RoomId
+router.get('/floors/rooms/:id',(req, res, next) => {
+  let roomId = req.params.id;
+  Floor.getFloorAndRoomByRoomId(roomId, result=>{
+    res.json(result);
+  })
+})
+
 //, passport.authenticate('authenticate', {session:false})

@@ -15,6 +15,7 @@ import { IcDatepickerModule } from 'ic-datepicker';
 import { TimepickerModule } from 'ng2-bootstrap';
 import { MaterialModule } from '@angular/material';
 import 'hammerjs';
+import { DatePickerModule } from 'ng2-datepicker';
 
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
@@ -27,9 +28,10 @@ import { ConfigComponent } from './components/config/config.component'
 import { ConfigNavbarComponent } from './components/config/config-navbar/config-navbar.component';
 
 import {ValidateService} from './services/validate.service';
-import {UserService} from './services/httpservice/user.service';
-import {HouseService} from './services/httpservice/house.service';
-import {DeviceService} from './services/httpservice/device.service';
+import {UserService} from './services/rest-api/user.service';
+import {HouseService} from './services/rest-api/house.service';
+import {DeviceService} from './services/rest-api/device.service';
+import {SceneService} from './services/rest-api/scene.service';
 import {SocketioService} from './services/socketio.service';
 import {FlashMessagesModule} from 'angular2-flash-messages';
 import {AuthGuard} from './guards/auth.guard';
@@ -43,10 +45,12 @@ import { LightingcontrolComponent } from './components/config/devices/lightingco
 import { SensorModuleComponent } from './components/config/devices/sensor-module/sensor-module.component';
 import { RoomComponent } from './components/config/config-home/room/room.component';
 import { ConfigHomeComponent } from './components/config/config-home/config-home.component';
-import { ScriptsComponent } from './components/config/scripts/scripts.component';
+import { ScenesComponent } from './components/config/scenes/scenes.component';
 import { RulesComponent } from './components/config/rules/rules.component';
 import { LightComponent } from './components/config/config-home/room/light/light.component';
 import { SensorComponent } from './components/config/config-home/room/sensor/sensor.component';
+import { SceneComponent } from './components/config/scenes/scene/scene.component';
+import { SelectDeviceComponent } from './components/config/scenes/scene/select-device/select-device.component';
 
 
 const appRoutes: Routes = [
@@ -60,7 +64,7 @@ const appRoutes: Routes = [
       {path: 'home', component: ConfigHomeComponent, canActivate:[AuthGuard]},
       {path: 'home/:id', component: ConfigHomeComponent, canActivate:[AuthGuard]},
       {path: 'devices', component: DevicesComponent, canActivate:[AuthGuard]},
-      {path: 'scripts', component: ScriptsComponent, canActivate:[AuthGuard]},
+      {path: 'scenes', component: ScenesComponent, canActivate:[AuthGuard]},
       {path: 'rules', component: RulesComponent, canActivate:[AuthGuard]}
     ]
   },
@@ -83,10 +87,12 @@ const appRoutes: Routes = [
     SensorModuleComponent,
     RoomComponent,
     ConfigHomeComponent,
-    ScriptsComponent,
+    ScenesComponent,
     RulesComponent,
     LightComponent,
-    SensorComponent
+    SensorComponent,
+    SceneComponent,
+    SelectDeviceComponent
   ],
   imports: [
     UiSwitchModule,
@@ -103,13 +109,15 @@ const appRoutes: Routes = [
     ToastrModule.forRoot(),
     IcDatepickerModule,
     TimepickerModule.forRoot(),
-    MaterialModule
+    MaterialModule,
+    DatePickerModule
   ],
   providers: [
     ValidateService,
     UserService,
     HouseService,
     DeviceService,
+    SceneService,
     AuthGuard,
     SocketioService,
     MessageEvent,

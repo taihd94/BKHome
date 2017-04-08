@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { HouseService} from '../../services/httpservice/house.service';
+import { HouseService} from '../../services/rest-api/house.service';
 import { FlashMessagesService } from 'angular2-flash-messages'
 import { Router } from '@angular/router';
 import { environment } from '../../../environments/environment';

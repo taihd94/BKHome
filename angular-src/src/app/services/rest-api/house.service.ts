@@ -88,4 +88,13 @@ export class HouseService {
       .map(res => res.json());
   }
 
+  getFloorAndRoomByRoomId(roomId){
+    let headers = new Headers();
+    this.loadToken();
+    headers.append('Authorization', this.authToken);
+    headers.append('Content-Type', 'application/json');
+    return this.http.get(this.baseURL + '/house/floors/rooms/' + roomId, {headers: headers})
+      .map(res => res.json());
+  }
+
 }

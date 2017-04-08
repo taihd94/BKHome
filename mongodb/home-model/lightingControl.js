@@ -1,7 +1,8 @@
-var mongoose = require('mongoose');
-var Schema = mongoose.Schema;
+const mongoose = require('mongoose');
+const Floor = require('./floor');
+const Schema = mongoose.Schema;
 
-var LightingControlSchema = new Schema({
+const LightingControlSchema = new Schema({
     deviceCode: String,         // Ex: 'ltctrl12c5'
     deviceType: String,         // 'LightingControl'
     numberOfPorts: Number,     // Ex: '1 port', '4 port', '8 port', ...
@@ -68,6 +69,18 @@ module.exports.updateLights = function(deviceId, lightingControl, callback){
       })
     } else {
       callback({success: false, msg: "module not found"});
+    }
+  })
+}
+
+module.exports.getRoomId = function(deviceId, callback){
+  LightingControl.findOne({"lights._id": deviceId}, (err, device)=>{
+    if(err) throw err;
+    if(device){
+      Floor.getFloorAndRoomByRoomId(device.roomId, result=>{
+        callback({success: true, roomId: device.roomId, floorName: result.floorName, roomName: result.roomName});
+      })
+      // callback({success: true, roomId: device.roomId})
     }
   })
 }

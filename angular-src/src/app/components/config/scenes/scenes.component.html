@@ -1,0 +1,25 @@
+<div class="col-md-8">
+    <!-- addscene -->
+    <div class="addscene">
+      <button type="button" class="fa fa-plus-circle fa-2x addSceneIcon" (click)="checkClick1=!checkClick1"></button>
+      <div class="input" [hidden]="checkClick1" >
+        <form (submit)="addsceneSubmit()">
+          <div class="form-group">
+            <input type="text"
+            class="form-control"
+            [(ngModel)]="sceneAddedName" name="sceneAddedName"
+            placeholder="scene name"
+            required>
+          </div>
+          <input type="submit" class="btn btn-success btn-add-scene" value="Add">
+        </form>
+      </div>
+    </div>
+    <!-- addscene -->
+
+    <!-- scene -->
+    <div class="scene" *ngFor="let scene of scenes">
+      <app-scene [scene]="scene"></app-scene>
+    </div>
+    <!-- scene -->
+</div>

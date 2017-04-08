@@ -1,6 +1,6 @@
 import { Component, EventEmitter, OnInit, Input, Output } from '@angular/core';
-import { HouseService} from '../../../../services/httpservice/house.service';
-import { DeviceService} from '../../../../services/httpservice/device.service';
+import { HouseService} from '../../../../services/rest-api/house.service';
+import { DeviceService} from '../../../../services/rest-api/device.service';
 import { FlashMessagesService } from 'angular2-flash-messages'
 import { Router } from '@angular/router';
 
@@ -36,27 +36,25 @@ export class LightingcontrolComponent implements OnInit {
   permission: Boolean;
 
   ngOnInit() {
+    let roomId = this.lightingControl.roomId;
     this.houseService.getListOfFloors().subscribe(floors=>{
       this.listOfFloors = floors;
-      if(this.lightingControl.roomId){
-        for(let i = 0; i < this.listOfFloors.length; i++){
-          for(let j = 0; j < this.listOfFloors[i].rooms.length; j++){
-            if(this.listOfFloors[i].rooms[j]._id == this.lightingControl.roomId){
-              this.selectedRoom = this.listOfFloors[i].rooms[j].name;
-              this.selectedFloor = this.listOfFloors[i].name;
-              this.listOfRooms = this.listOfFloors[i].rooms;
-              this.roomFoundFlag = true;
-              break;
-            }
-          }
-        }
-      }
-      if(!this.roomFoundFlag) {
+      if(!!roomId){
+        this.houseService.getFloorAndRoomByRoomId(roomId).subscribe(res=>{
+          this.selectedFloor = res.floorName;
+          this.selectedRoom = res.roomName;
+          let floor = this.listOfFloors.filter(floor=>{
+            return floor.name == this.selectedFloor;
+          }).pop()
+          this.listOfRooms = floor.rooms;
+        })
+      } else {
         this.selectedFloor = "Select floor";
         this.selectedRoom = "Select room";
       }
-      this.permission = this.lightingControl.allowToConnect;
     })
+
+    this.permission = this.lightingControl.allowToConnect;
   };
 
   selectFloor(floor){

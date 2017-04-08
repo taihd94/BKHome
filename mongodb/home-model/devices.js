@@ -1,7 +1,7 @@
-var mongoose = require('mongoose');
-var Schema = mongoose.Schema;
+const mongoose = require('mongoose');
+const Schema = mongoose.Schema;
 
-var DevicesSchema = new Schema({
+const DevicesSchema = new Schema({
     deviceCode: String,         // Ex: 'ltctrl12c5'
     deviceType: String,         // Ex: 'LightingControl', 'SensorModule'
     allowToConnect: Boolean,
