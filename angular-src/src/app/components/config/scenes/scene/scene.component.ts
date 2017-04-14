@@ -1,8 +1,10 @@
-import { Component, OnInit, Input, OnChanges } from '@angular/core';
+import { Component, OnInit, Input, Output, EventEmitter, OnChanges } from '@angular/core';
 import * as moment from 'moment';
 import { DatePickerOptions, DateModel } from 'ng2-datepicker';
-import { DeviceService} from '../../../../services/rest-api/device.service';
+import { SceneService} from '../../../../services/rest-api/scene.service';
 import { HouseService} from '../../../../services/rest-api/house.service';
+import {MessageEvent} from '../../../../services/broadcast/message-event.service';
+import {ToastrService} from 'ngx-toastr';
 
 @Component({
   selector: 'app-scene',
@@ -11,19 +13,23 @@ import { HouseService} from '../../../../services/rest-api/house.service';
 })
 export class SceneComponent implements OnInit, OnChanges {
   @Input() scene;
-  date: DateModel;
-  options: DatePickerOptions;
+  @Output() removeScene = new EventEmitter();
 
   constructor(
-    private deviceService: DeviceService,
-    private houseService: HouseService
+    private sceneService: SceneService,
+    private houseService: HouseService,
+    private messageEvent: MessageEvent,
+    private toastrService: ToastrService
   ) {
     this.options = new DatePickerOptions();
   }
 
+  sceneId:String;
+  date: DateModel;
+  options: DatePickerOptions;
   timePickerHidden = true;
-  dayPickerHidden = true;
-  savePickerHidden = true;
+  repeatDayHidden = true;
+  TimeButtonsHidden = true;
   timePicker: String;
   time: Date;
   repeatPicker: String;
@@ -31,54 +37,106 @@ export class SceneComponent implements OnInit, OnChanges {
   repeatDaysStr: String;
   daysOfWeek = ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"];
   daysOfWeekFull = ["Monday", "Tueday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"];
-  devices = [];
+  rooms = [];
+
+  //--add Room--//
+  selectRoomHidden = true;
+  listOfFloors = [];
+  listOfRooms = [];
+  selectedFloor: String;
+  selectedRoom: String;
+  //--add Room--//
+
+  btnSaveHidden = true;
+  editHidden = true;
+
+  sceneDeletedName: String;
 
 
   ngOnInit() {
-    let roomArr = [];
-    for(let device of this.scene.devices){
-      this.deviceService.getRoomByLightId(device._id).subscribe(res=>{
-        let roomId = res.roomId;
-        let index = roomArr.indexOf(roomId);
-        if(index===-1){
-          roomArr.push(roomId);
-          let floorName = res.floorName;
-          let roomName = res.roomName;
-          this.devices.push({floorName: floorName, roomName: roomName, device: [device]})
-        } else{
-          this.devices[index].device.push(device);
-        }
-      })
+    this.sceneId = this.scene._id;
+    this.sceneService.getDevicesDetail(this.sceneId).subscribe(res=>{
+      this.rooms = res.rooms;
+    })
+    if(!!this.scene.time){
+      this.timePicker = this.scene.time;
+      this.time = moment(this.timePicker, "HH:mm A").toDate();
     }
-    
-    this.time = new Date(this.scene.time);
-    this.timePicker = this.time.toLocaleString('en-US', { hour: 'numeric', minute: 'numeric',hour12: true });
+
     this.date = new DateModel();
-    this.date.formatted = moment(this.time).format('L');
-    this.date.momentObj = moment(this.time);
-    this.repeatDays = this.scene.repeat;
-    this.repeatDaysStr = this.convertRepeatToString(this.repeatDays);
+    if(!!this.scene.date){
+      this.mapDate(this.scene.date);
+    }
+
+    if(!!this.scene.repeat){
+      this.repeatDays = this.scene.repeat;
+      this.repeatDaysStr = this.convertRepeatToString(this.repeatDays);
+    }
+
+    if(!this.scene.devices.length){
+      this.editHidden = false;
+    }
+
+    this.houseService.getListOfFloors().subscribe(floors=>{
+      this.listOfFloors = floors;
+    })
+
+    this.selectedFloor = "select floor";
+    this.selectedRoom = "select room";
+
+    this.messageEvent.on(this.sceneId + '/changeLightValue').subscribe((light:any)=>{
+      this.btnSaveHidden = false;
+      for(let device of this.scene.devices){
+        if(device._id==light._id){
+          device.value = light.value;
+          break;
+        }
+      }
+    })
+
+    this.messageEvent.on(this.sceneId + '/addLight').subscribe(light=>{
+      this.scene.devices.push(light);
+    })
+
+    this.messageEvent.on(this.sceneId + '/removeLight').subscribe((light:any)=>{
+      let devices = this.scene.devices;
+      for(let i=0; i<devices.length; i++){
+        if(devices[i]._id==light._id){
+          this.scene.devices.splice(i,1);
+          break;
+        }
+      }
+    })
   }
 
   ngOnChanges(){
     // console.log(this.date);
   }
 
-  showTime(time){
-    this.timePicker = time.toLocaleString('en-US', { hour: 'numeric', minute: 'numeric',hour12: true });
-  }
-
-  showDate(date){
-    if(!!date){
-      console.log(date);
+  mapDate(date){
+    let now = new Date();
+    let tomorrow = new Date();
+    tomorrow.setDate(now.getDate()+1);
+    let nowMoment = moment(now).format('DD/MM/YYYY');
+    let tomorrowMoment = moment(tomorrow).format('DD/MM/YYYY');
+    if(date===nowMoment){
+      this.date.formatted = 'Today';
+    } else if(date===tomorrowMoment){
+      this.date.formatted = 'Tomorrow';
+    } else {
+      this.date.formatted = date;
     }
+    this.date.momentObj = moment(date, "DD MM YYYY");
   }
 
   convertRepeatToString(repeatDays){
     let string;
     if(repeatDays[0]&&repeatDays[1]&&repeatDays[2]&&repeatDays[3]&&repeatDays[4]&&repeatDays[5]&&repeatDays[6]){
       string = "Daily";
-    } else {
+    } else if((!repeatDays[0])&&(!repeatDays[1])&&(!repeatDays[2])&&(!repeatDays[3])&&(!repeatDays[4])&&(!repeatDays[5])&&(!repeatDays[6])){
+      string = "None";
+    }
+    else{
       string = "";
       for(let i=0; i<repeatDays.length;i++){
         if(repeatDays[i]){
@@ -90,9 +148,111 @@ export class SceneComponent implements OnInit, OnChanges {
     return string;
   }
 
-  saveDatePicker(){
-    this.repeatDaysStr = this.convertRepeatToString(this.repeatDays);
-    this.timePicker = this.time.toLocaleString('en-US', { hour: 'numeric', minute: 'numeric',hour12: true });
+  clickTimeOkBtn(){
+    this.timePickerHidden=true;
+    this.TimeButtonsHidden=true;
+    this.btnSaveHidden=false;
+    if(!this.time){
+      this.time = new Date();
+    }
+    this.timePicker = moment(this.time).format('LT');
   }
 
+  clickClearOkBtn(){
+    this.timePickerHidden=true;
+    this.TimeButtonsHidden=true;
+    this.btnSaveHidden=false;
+    this.timePicker = '';
+    this.time = null;
+  }
+
+  clickRepeatOkBtn(){
+    this.repeatDayHidden = true;
+    this.btnSaveHidden=false;
+    this.repeatDaysStr = this.convertRepeatToString(this.repeatDays);
+  }
+
+
+  selectFloor(floor){
+    this.listOfRooms = floor.rooms;
+    this.selectedFloor = floor.name;
+  }
+
+  selectRoom(selectedRoom){
+    let check = this.rooms.filter(room=>{
+      return room.roomId == selectedRoom._id;
+    }).pop();
+    if(!check){
+      let room = {
+        floorName: this.selectedFloor,
+        roomName: selectedRoom.name,
+        roomId: selectedRoom._id,
+        devices: []
+      }
+      this.rooms.push(room);
+    };
+    this.selectedFloor = "select floor";
+  }
+
+  removeRoom(room){
+    let index = this.rooms.indexOf(room);
+    this.rooms.splice(index,1);
+  }
+
+  clickSaveBtn(){
+    if(!this.scene.devices.length){
+      this.editHidden = false;
+    }
+
+    let isDatePicked = !!this.date.formatted;
+    let isTimePicked = !!this.time;
+    let isRepeatDateNone = (this.repeatDaysStr=='None');
+
+    if((!isTimePicked)&&(isDatePicked||(!isRepeatDateNone))){
+      this.toastrService.error('Please pick Time.', 'Error!!!');
+      return;
+    }
+
+    if((isTimePicked)&&((!isDatePicked)&&(isRepeatDateNone))){
+      let date = new Date();
+      if(date.getTime() > this.time.getTime()){
+        date.setDate(date.getDate()+1);
+      }
+      this.mapDate(moment(date).format('DD/MM/YYYY'));
+    }
+
+    if((isTimePicked)&&(isDatePicked)){
+
+    }
+
+    this.scene.time = (this.time)? moment(this.time).format('LT'): null;
+    this.scene.date = (this.date.momentObj)? this.date.momentObj.format('DD/MM/YYYY'): null;
+    this.scene.repeat = this.repeatDays;
+
+    this.sceneService.updateScene(this.scene).subscribe(res=>{
+      if(!res.success){
+        console.log(res.msg);
+      }
+    })
+
+    this.editHidden = true;
+    this.btnSaveHidden = true;
+  }
+
+  deleteScene(){
+    this.sceneService.deleteScene(this.sceneId).subscribe(res=>{
+      if(res.success){
+        this.removeScene.emit();
+      } else {
+        console.log(res.msg);
+      }
+    })
+  }
+
+  datePickerEvent(event){
+    if(event.type=='dateChanged'){
+      let date = event.data.formatted;
+      this.mapDate(date);
+    }
+  }
 }

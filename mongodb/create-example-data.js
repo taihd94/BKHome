@@ -106,11 +106,12 @@ var lightingControl = [
       deviceType: 'LightingControl',         // 'LightingControl'
       numberOfPorts: 4,     // Ex: '1 port', '4 port', '8 port', ...
       allowToConnect: false,
+      roomId: room_id_1,
       lights: [
         {
             _id: light_id_1,
             portId: 1,
-            name: 'null',                  // Ex: 'Light 1', 'Light 2',...
+            name: 'Light 1',                  // Ex: 'Light 1', 'Light 2',...
             typeOfLight: 'null',                  // Ex: 'Neon', 'Compact',...
             dimmable: true,         // Ex: 'ON/OFF', 'DIM'
             life_time: 000,             // Ex: 6000 hours
@@ -120,7 +121,7 @@ var lightingControl = [
         {
             _id: light_id_2,
             portId: 2,
-            name: 'null',                  // Ex: 'Light 1', 'Light 2',...
+            name: 'Light 2',                  // Ex: 'Light 1', 'Light 2',...
             typeOfLight: 'null',                  // Ex: 'Neon', 'Compact',...
             dimmable: false,         // Ex: 'ON/OFF', 'DIM'
             life_time: 000,             // Ex: 6000 hours
@@ -130,7 +131,7 @@ var lightingControl = [
         {
             _id: light_id_3,
             portId: 3,
-            name: 'null',                  // Ex: 'Light 1', 'Light 2',...
+            name: 'Light 3',                  // Ex: 'Light 1', 'Light 2',...
             typeOfLight: 'null',                  // Ex: 'Neon', 'Compact',...
             dimmable: false,         // Ex: 'ON/OFF', 'DIM'
             life_time: 000,             // Ex: 6000 hours
@@ -140,7 +141,7 @@ var lightingControl = [
         {
             _id: light_id_4,
             portId: 4,
-            name: 'null',                  // Ex: 'Light 1', 'Light 2',...
+            name: 'Light 4',                  // Ex: 'Light 1', 'Light 2',...
             typeOfLight: 'null',                  // Ex: 'Neon', 'Compact',...
             dimmable: false,         // Ex: 'ON/OFF', 'DIM'
             life_time: 000,             // Ex: 6000 hours
@@ -154,11 +155,12 @@ var lightingControl = [
       deviceType: 'LightingControl',         // 'LightingControl'
       numberOfPorts: 2,     // Ex: '1 port', '4 port', '8 port', ...
       allowToConnect: false,
+      roomId: room_id_2,
       lights: [
         {
             _id: light_id_5,
             portId: 1,
-            name: 'null',                  // Ex: 'Light 1', 'Light 2',...
+            name: 'Light 1',                  // Ex: 'Light 1', 'Light 2',...
             typeOfLight: 'null',                  // Ex: 'Neon', 'Compact',...
             dimmable: true,         // Ex: 'ON/OFF', 'DIM'
             life_time: 000,             // Ex: 6000 hours
@@ -168,7 +170,7 @@ var lightingControl = [
         {
             _id: light_id_6,
             portId: 2,
-            name: 'null',                  // Ex: 'Light 1', 'Light 2',...
+            name: 'Light 2',                  // Ex: 'Light 1', 'Light 2',...
             typeOfLight: 'null',                  // Ex: 'Neon', 'Compact',...
             dimmable: false,         // Ex: 'ON/OFF', 'DIM'
             life_time: 000,             // Ex: 6000 hours
@@ -216,7 +218,8 @@ var sensorModule = [
 var scene = [
   new Scene({
       name: "Sleep",
-      time: new Date(),
+      date: '11/07/2017',
+      time: '06:00 AM',
       repeat: [true, true, false, true, false, true, true],
       devices: [
         {
@@ -226,18 +229,6 @@ var scene = [
         {
           _id: light_id_2,
           value: 0
-        },
-        {
-          _id: light_id_3,
-          value: 1
-        },
-        {
-          _id: light_id_4,
-          value: 1
-        },
-        {
-          _id: light_id_5,
-          value: 16
         },
         {
           _id: light_id_6,

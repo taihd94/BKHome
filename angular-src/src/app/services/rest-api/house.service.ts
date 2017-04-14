@@ -79,12 +79,12 @@ export class HouseService {
       .map(res => res.json());
   }
 
-  getListOfDevicesInRoom(floorId, roomId){
+  getListOfDevicesInRoom(roomId){
     let headers = new Headers();
     this.loadToken();
     headers.append('Authorization', this.authToken);
     headers.append('Content-Type', 'application/json');
-    return this.http.get(this.baseURL + '/house/floors/' + floorId + '/rooms/' + roomId + '/devices', {headers: headers})
+    return this.http.get(this.baseURL + '/house/floors/rooms/' + roomId + '/devices', {headers: headers})
       .map(res => res.json());
   }
 

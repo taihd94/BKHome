@@ -23,17 +23,16 @@ export class LightComponent implements OnInit {
     this.messageEvent.on(this.light._id)
      .subscribe(message => {
        this.message = message;
-       this.lightValue = this.message.text.value;
+       this.lightValue = this.message.value;
        this.preLightValue = this.switchValue = this.lightValue;
-       console.log(this.lightValue);
+       console.log(message);
     });
   }
 
 
   sendMessage(value){
     let message = {
-        lightId: this.light._id,
-        portId: this.light.portId,
+        _id: this.light._id,
         value: value
     }
     this.messageEvent.emit("socketEmit", message);
@@ -60,4 +59,5 @@ export class LightComponent implements OnInit {
     }
     this.sendMessage(this.lightValue);
   }
+
 }

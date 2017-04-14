@@ -1,5 +1,3 @@
-
-
 .fa {
   cursor: pointer;
   color: auto;
@@ -95,6 +93,7 @@ timepicker{
   border-bottom: 1px solid rgba(158, 158, 158, 0.55);
   border-radius: 0;
   width: 91%;
+  min-height: 43px;
   font-size: 20px;
   text-align: left;
   padding: 11px 0px 6px 0px;
@@ -191,14 +190,6 @@ h3 {
   margin-top: 7px;
 }
 
-.floor-scene{
-  margin: 0px;
-}
-
-td{
-  text-align: left;;
-  text-transform: none;
-}
 
 .dropdown-toggle{
   background-color: inherit;
@@ -211,13 +202,6 @@ td{
   float: left;
   color: #616161;
 }
-
-/*.btn-primary:active, .btn-primary.active, .open>.dropdown-toggle.btn-primary {
-    color: #000000;
-    background-color: inherit;;
-    border-color: inherit;
-    border: 0px;
-}*/
 
 a {
   cursor: pointer;
@@ -235,45 +219,21 @@ a {
   text-transform: none;
 }
 
-.table>thead>tr>th, .table>tbody>tr>th, .table>tfoot>tr>th, .table>thead>tr>td, .table>tbody>tr>td, .table>tfoot>tr>td{
-  color: #6a6a6a;
-  vertical-align: middle;
-}
 
-.table>thead>tr>th, .table>tbody>tr>th{
-  padding-left: 17px;
-}
-
-table {
-  margin-bottom: 0px;
-}
-
-.kindOfLight>li>a {
-    font-size: 12px;
-    line-height: 22px;
-    font-weight: 500;
-    text-transform: none;
-    color: #575757;
-}
-
-
-.btn-save{
-  height: 30px;
+.time-btn-ok, .time-btn-clear, .repeat-btn-ok{
+  height: 38px;
+  width: 65px;
   line-height: 10px;
-  margin-top: 3px;
+  margin: 3px 5px 12px 0px;
   margin-bottom: 12px;
 }
 
-.switch{
-  float: right;
-  margin-top: 9px;
+.time-btn-ok{
+  background-color: #4caf50;
 }
 
-.connect{
-  float: right;
-  font-size: 15px;
-  margin-top: 10px;
-  margin-right: 15px;
+.time-btn-clear{
+  background-color: #f44336;
 }
 
 
@@ -281,9 +241,6 @@ table {
   margin: 25px 15px 0px 25px;
 }
 
-.listOfscenes{
-  box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
-}
 
 /*scene*/
 
@@ -313,31 +270,18 @@ table {
     line-height: 0;
 }
 
-
-.light, .sensor{
-  width: 100%;
-  height: 30px;
-  padding: 12px 0 32px 20px;
-  border-bottom: 1px solid #dfd7ca;
-  cursor: pointer;
+.edit-save{
+  padding: 16px 11px 5px 0px;
+  height: 65px;
+  position: absolute;
+  right: 5px;
+  bottom: 5px;
 }
 
-.light>a, .sensor>a {
-  border: 0;
-  font-size: 16px;
-  float: left;
-  padding: 0;
-}
-
-ui-switch{
-  float: right;
-  margin-right: 50px;
-}
 
 .btn-edit{
   float: right;
-  margin-right: 14px;
-  margin-bottom: 14px;
+  margin-right: 5px;
 }
 
 .btn-edit>button{
@@ -348,4 +292,30 @@ ui-switch{
 .btn-edit>button:hover{
   padding: 7px 15px;
   background-color: #325d88;
+}
+
+ .btn-edit>button:focus{
+   background-color: #325d88;
+   border: 0px;
+   border-radius: 0;
+ }
+
+ .btn-edit-save{
+   float: right;
+ }
+
+ .btn-edit-save>button{
+   padding: 7px 15px;
+   background-color:  #4CAF50;
+   color: white;
+ }
+
+
+.add-room{
+  height: 52px;
+}
+
+.footer{
+  width: 100%;
+  height: 70px;
 }

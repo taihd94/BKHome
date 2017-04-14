@@ -26,12 +26,16 @@ const LightingControl = module.exports = mongoose.model('LightingControl', Light
 module.exports.findAndUpdateLight = function (lightId, value, callback) {
   LightingControl.findOne({'lights._id' : lightId}, (err, device)=>{
     if (err) throw err;
-    let light = device.lights.id(lightId);
-    light.value = value;
-    device.save((err,doc)=>{
-      if(err) throw err;
-    })
-    callback({deviceId: device._id, portId: light.portId, dimmable: light.dimmable});
+    if(!!device){
+      let light = device.lights.id(lightId);
+      light.value = value;
+      device.save((err,doc)=>{
+        if(err) throw err;
+      })
+      callback({deviceId: device._id, portId: light.portId, dimmable: light.dimmable});
+    } else {
+      callback({success: false, msg: "device not found"});
+    }
   })
 }
 
@@ -73,14 +77,65 @@ module.exports.updateLights = function(deviceId, lightingControl, callback){
   })
 }
 
-module.exports.getRoomId = function(deviceId, callback){
-  LightingControl.findOne({"lights._id": deviceId}, (err, device)=>{
-    if(err) throw err;
-    if(device){
-      Floor.getFloorAndRoomByRoomId(device.roomId, result=>{
-        callback({success: true, roomId: device.roomId, floorName: result.floorName, roomName: result.roomName});
-      })
-      // callback({success: true, roomId: device.roomId})
-    }
-  })
+module.exports.getLightsDetail = function(listOfLights, callback){
+  let rooms = [];
+  let roomIndexArr = [];
+  let index = 0;
+  let forLoopFinshCheck = 0;
+  for(let lightOfScene of listOfLights){
+    let lightId = lightOfScene._id;
+    LightingControl.findOne({"lights._id": lightId}, (err, device)=>{
+      if(err) throw err;
+      if(device){
+        let light = device.lights.id(lightId);
+        light.value = lightOfScene.value;
+        let roomId = device.roomId;
+        Floor.getFloorAndRoomByRoomId(device.roomId, result=>{
+          let floorName = result.floorName;
+          let roomName = result.roomName;
+          let roomFilter = roomIndexArr.filter(room=>{
+            return room.roomId.toString() === roomId.toString();
+          }).pop();
+          if(!!roomFilter){
+            let index = roomFilter.index;
+            rooms[index].devices.push(light);
+          } else {
+            roomIndexArr.push({roomId: roomId, index: index});
+            rooms.push({roomId: roomId, roomName: roomName, floorName:floorName, devices: [light]});
+            index++;
+          };
+          if(++forLoopFinshCheck===listOfLights.length){
+            for(let room of rooms){
+              room.devices.sort((a, b)=>{
+                return a.portId - b.portId;
+              })
+            }
+            callback(rooms);
+          }
+        })
+
+      }
+    })
+
+  }
 }
+
+// module.exports.getLightsDetail = function(lightId, callback){
+//   LightingControl.findOne({"lights._id": lightId}, (err, device)=>{
+//     if(err) throw err;
+//     if(device){
+//       Floor.getFloorAndRoomByRoomId(device.roomId, result=>{
+//         let light = device.lights.id(lightId);
+//         callback({success: true,
+//                   roomId: device.roomId,
+//                   floorName: result.floorName,
+//                   roomName: result.roomName,
+//                   name: light.name,
+//                   dimmable: light.dimmable,
+//                   typeOfLight: light.typeOfLight
+//         });
+//       })
+//       // callback({success: true, roomId: device.roomId})
+//     }
+//   })
+// }

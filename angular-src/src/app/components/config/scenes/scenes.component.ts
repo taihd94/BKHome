@@ -12,10 +12,26 @@ export class ScenesComponent implements OnInit {
   ) { }
 
   scenes: any;
+  newSceneName: String;
 
   ngOnInit() {
+    this.getListOfScenes();
+  }
+
+  getListOfScenes(){
     this.sceneService.getListOfScenes().subscribe(scenes=>{
       this.scenes = scenes;
+    })
+  }
+
+  addsceneSubmit(){
+    let newScene = {
+      name: this.newSceneName
+    }
+    this.sceneService.addNewScene(newScene).subscribe(res=>{
+      if(res.success){
+        this.getListOfScenes();
+      }
     })
   }
 

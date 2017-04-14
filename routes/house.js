@@ -79,14 +79,14 @@ router.put('/floors/:floorid/rooms/:id/imgPath', (req, res, next) => {
   });
 });
 
-router.get('/floors/:floorid/rooms/:roomid/devices', (req, res, next) => {
+// get list of devices in the room
+router.get('/floors/rooms/:roomid/devices', (req, res, next) => {
   let roomId = req.params.roomid;
   Devices.getListOfDevicesInRoom(roomId, (result) => {
     res.json(result);
   })
 });
 
-module.exports = router;
 
 //find Floor and Room by RoomId
 router.get('/floors/rooms/:id',(req, res, next) => {
@@ -95,5 +95,8 @@ router.get('/floors/rooms/:id',(req, res, next) => {
     res.json(result);
   })
 })
+
+module.exports = router;
+
 
 //, passport.authenticate('authenticate', {session:false})

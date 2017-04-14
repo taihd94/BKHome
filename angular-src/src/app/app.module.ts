@@ -50,7 +50,8 @@ import { RulesComponent } from './components/config/rules/rules.component';
 import { LightComponent } from './components/config/config-home/room/light/light.component';
 import { SensorComponent } from './components/config/config-home/room/sensor/sensor.component';
 import { SceneComponent } from './components/config/scenes/scene/scene.component';
-import { SelectDeviceComponent } from './components/config/scenes/scene/select-device/select-device.component';
+import { LightOfSceneComponent } from './components/config/scenes/scene/room/light/light.component';
+import { RoomSceneComponent } from './components/config/scenes/scene/room/room.component';
 
 
 const appRoutes: Routes = [
@@ -92,7 +93,8 @@ const appRoutes: Routes = [
     LightComponent,
     SensorComponent,
     SceneComponent,
-    SelectDeviceComponent
+    LightOfSceneComponent,
+    RoomSceneComponent
   ],
   imports: [
     UiSwitchModule,

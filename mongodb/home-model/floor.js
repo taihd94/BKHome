@@ -113,9 +113,7 @@ module.exports.getFloorAndRoomByRoomId = function(roomId, callback){
   Floor.findOne({'rooms._id': roomId}, (err,floor)=>{
     if(err) throw err;
     if(floor){
-      let room = floor.rooms.filter(room=>{
-        return room._id.toString() == roomId.toString();
-      }).pop();
+      let room = floor.rooms.id(roomId);
       callback({floorName: floor.name, roomName: room.name});
     } else {
       callback({success: false, msg: 'room not found'});

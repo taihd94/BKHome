@@ -3,7 +3,7 @@ var mqtt = require('mqtt')
 client = mqtt.connect('mqtt://localhost:1883');
 
 client.on('connect',  () => {
-  client.subscribe('devices/58d9d7bdcd7ada2f6f6a28ef');
+  client.subscribe('devices/58ec508d190bc738a728e85f');
   client.subscribe('lwt')
 })
 

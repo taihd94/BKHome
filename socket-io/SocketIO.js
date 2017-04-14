@@ -25,16 +25,14 @@ io.on('connection', (socket) => {
     socket.broadcast.emit(message._id, message.value);
   })
 
-  socket.on('device-event', (message) => {
-    socket.broadcast.emit(message.lightId, {type:'new-message', text: message});
-    console.log(message);
-    LightingControl.findAndUpdateLight(message.lightId, message.value, result => {
-      ltctrMqttClient.send(result, message.value);
+  socket.on('device-event', (light) => {
+    console.log(light);
+    socket.broadcast.emit(light._id, light);
+    LightingControl.findAndUpdateLight(light._id, light.value, result => {
+      ltctrMqttClient.send(result, light.value);
     });
   });
 });
-
-
 
 
 // Port Number

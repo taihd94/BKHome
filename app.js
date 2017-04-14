@@ -5,10 +5,14 @@ const cors = require('cors');
 const passport = require('passport');
 const mongoose = require('mongoose');
 const config = require('./config/database');
-require('./mqtt/mqtt');
+const agenda = require('./cron-job/agenda');
+const cronJobsOfScenes = require('./cron-job/scenes');
+const mqtt = require('./mqtt/mqtt');
+const socketIO = require('./socket-io/SocketIO');
 
 
 // Connect To Database
+mongoose.Promise = global.Promise;
 mongoose.connect(config.database);
 
 // On Connection
@@ -62,7 +66,11 @@ app.get('/*', (req, res) => {
 
 // Start Server
 app.listen(port, () => {
-  console.log('Server started on port '+port);
+  console.log('Server started on port ' + port);
 });
 
-require('./socket-io/SocketIO');
+agenda.on('ready', function() {
+  console.log('agenda is ready!')
+  agenda.start();
+  cronJobsOfScenes.restartCronJobs();
+});
