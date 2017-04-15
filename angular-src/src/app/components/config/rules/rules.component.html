@@ -1,100 +1,26 @@
-<!-- addscript -->
-<div class="addscript">
-  <button type="button" class="fa fa-plus-circle fa-2x" (click)="checkClick1=!checkClick1"></button>
-  <div class="input" [hidden]="checkClick1" >
-    <form (submit)="addscriptSubmit()">
-      <div class="form-group">
-        <input type="text"
-        class="form-control"
-        [(ngModel)]="scriptAddedName" name="scriptAddedName"
-        placeholder="Script name"
-        required>
-      </div>
-      <input type="submit" class="btn btn-success btn-add-script" value="Add">
-    </form>
-  </div>
-</div>
-<!-- addscript -->
+<div class="col-md-8">
+    <!-- scene -->
+    <div class="scene" *ngFor="let scene of scenes">
+      <app-scene [scene]="scene" (removeScene)="getListOfScenes()"></app-scene>
+    </div>
+    <!-- scene -->
 
-<!-- script -->
-<div class="script">
-  <div class="panel panel-primary panel-pricing">
-    <div class="panel-heading">
-      <i class="fa fa-lightbulb-o" aria-hidden="true"></i>
-      <h3 class="scriptName">Rule 1</h3>
-      <div class="x-icon">
-        <i class="fa fa-times" aria-hidden="true"></i>
+    <!-- addrule -->
+    <div class="addrule">
+      <button type="button" class="fa fa-plus-circle fa-2x addruleIcon" (click)="checkClick=!checkClick"></button>
+      <div class="input" [hidden]="checkClick" >
+        <form (submit)="addruleSubmit()">
+          <div class="form-group">
+            <input type="text"
+            class="form-control"
+            [(ngModel)]="newSceneName" name="newSceneName"
+            placeholder="scene name"
+            required>
+          </div>
+          <input type="submit" class="btn btn-success btn-add-scene" value="Add">
+        </form>
       </div>
     </div>
-    <div class="row scirpt-body">
-      <!-- Date-time -->
-      <div class="col-md-3">
-        <h3>Time</h3><br>
-        <p>From 23:00pm To 05:00am</p>
-      </div>
-      <!-- Date-time -->
+    <!-- addrule -->
 
-      <!-- if statement -->
-      <div class="row">
-        <!-- if condition -->
-        <div class="col-md-6 if-condition">
-          <div class="panel-body">
-            <div class="panel-body-content">
-              <p>If condition</p>
-            </div>
-          </div>
-
-          <div class="panel-footer">
-            <div class="list-group">
-              <div class="device">
-                <div class="lights" >
-                  <div class="light" (click)="light1=!light1">
-                    <a class="list-group-item">PIR sensor</a>
-                    <a class="list-group-item" [ngStyle]="{'margin-left': '25%'}">Equal to</a>
-                    <a class="list-group-item" [ngStyle]="{'float':'right'}">HIGH</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- if condition -->
-
-        <!-- then action -->
-        <div class="col-md-6 then-action">
-          <div class="panel-body">
-            <div class="panel-body-content">
-              <p>Then action</p>
-            </div>
-          </div>
-
-          <div class="panel-footer">
-            <div class="list-group">
-              <div class="device">
-                <div class="lights" >
-                  <div class="light" (click)="light1=!light1">
-                    <a class="list-group-item">Light 1</a>
-                    <ui-switch [ngModel]="light1" size="medium-v2"></ui-switch><br>
-                  </div>
-                  <div class="light" (click)="light2=!light2">
-                    <a class="list-group-item">Light 2</a>
-                    <ui-switch [ngModel]="!light2" size="medium-v2"></ui-switch><br>
-                  </div>
-                  <div class="light" (click)="light3=!light3">
-                    <a class="list-group-item">Light 3</a>
-                    <ui-switch [ngModel]="light3" size="medium-v2"></ui-switch><br>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- then action -->
-      </div>
-      <!-- if statement -->
-
-    </div>
-
-  </div>
 </div>
-<!-- script -->

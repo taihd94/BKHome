@@ -52,6 +52,7 @@ import { SensorComponent } from './components/config/config-home/room/sensor/sen
 import { SceneComponent } from './components/config/scenes/scene/scene.component';
 import { LightOfSceneComponent } from './components/config/scenes/scene/room/light/light.component';
 import { RoomSceneComponent } from './components/config/scenes/scene/room/room.component';
+import { RuleComponent } from './components/config/rules/rule/rule.component';
 
 
 const appRoutes: Routes = [
@@ -94,7 +95,8 @@ const appRoutes: Routes = [
     SensorComponent,
     SceneComponent,
     LightOfSceneComponent,
-    RoomSceneComponent
+    RoomSceneComponent,
+    RuleComponent
   ],
   imports: [
     UiSwitchModule,
