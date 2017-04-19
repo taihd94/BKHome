@@ -1,0 +1,21 @@
+._1st-operand{
+  margin-top: 12px;
+}
+
+hr {
+  height: 1px;
+  background: #dfd7ca;
+  margin: 6px 0px 16px 0px;
+}
+
+.operator{
+  margin: -5px 17px 0px 29px;
+  font-size: 17px;
+  font-weight: 800;
+  color: #626262;
+  float: left;
+}
+
+.operator>p{
+  margin: 0px;
+}

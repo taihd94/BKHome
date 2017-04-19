@@ -1,0 +1,16 @@
+<div class="checkIfDataAvailabel" *ngIf="isDataAvailable">
+  <div class="_1st-operand">
+    <app-relational-operation
+            [operationId]='_1stOperand_id'>
+    </app-relational-operation>
+  </div>
+  <div class="operator">
+    <p>{{operator}}</p>
+  </div>
+  <hr/>
+  <div class="_2nd-operand">
+    <app-relational-operation
+            [operationId]='_2ndOperand_id'>
+    </app-relational-operation>
+  </div>
+</div>

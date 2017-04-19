@@ -1,3 +1,113 @@
-<p>
-  rule works!
-</p>
+<div bsModal #smModal="bs-modal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-sm">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title">Are you sure you want to delete <b>{{rule.name}}</b> ?</h4>
+      </div>
+      <div class="modal-body">
+        <button type="button" class="btn btn-success btn-modal" (click)="smModal.hide()" (click)="deleterule()">Yes</button>
+        <button type="button" class="btn btn-danger btn-modal" (click)="smModal.hide()">No</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- rule -->
+<div class="rule">
+  <div class="panel panel-primary panel-pricing">
+    <div class="panel-heading">
+      <i class="fa fa-lightbulb-o" aria-hidden="true"></i>
+      <h3 class="ruleName" (click)="runrule()">{{rule.name}}</h3>
+      <div class="x-icon" >
+        <i class="fa fa-times" aria-hidden="true" (click)="smModal.show()"></i>
+      </div>
+    </div>
+    <div class="row scirpt-body">
+      <div class="col-md-4">
+        <div class="time-date-picker">
+          <!-- <div class="date-picker">
+            <p>Date</p>
+            <ng2-datepicker [options]="options" [(ngModel)]="date" (click)="btnSaveHidden=false" (outputEvents)="datePickerEvent($event)" ></ng2-datepicker>
+          </div> -->
+          <div class="time-picker">
+            <p>Time</p>
+            <div class="from-time">
+              <h4>From</h4>
+              <div class="time" [hidden]="!fromTimePickerHidden">
+                <button class="btn btn-time"
+                        type="button"
+                        name="button"
+                        (click)="fromTimePickerHidden=false;fromTimeButtonsHidden=false;">
+                        {{fromTimePicker}}</button>
+              </div>
+              <div class="timepicker" [hidden]="fromTimePickerHidden">
+                <timepicker [(ngModel)]="time"></timepicker>
+              </div>
+              <div class="picker-save" [hidden]="fromTimeButtonsHidden">
+                <button class="btn btn-primary time-btn-ok"
+                        (click)="clickFromTimeOkBtn()">OK</button>
+                <button class="btn btn-primary time-btn-clear"
+                        (click)="clickFromTimeClearOkBtn()">Clear</button>
+              </div>
+            </div>
+            <div class="to-time">
+              <h4>To </h4>
+              <div class="time" [hidden]="!toTimePickerHidden">
+                <button class="btn btn-time btn-to-time" type="button" name="button" (click)="toTimePickerHidden=false;toTimeButtonsHidden=false;">{{toTimePicker}}</button>
+              </div>
+              <div class="timepicker" [hidden]="toTimePickerHidden">
+                <timepicker [(ngModel)]="time"></timepicker>
+              </div>
+              <div class="picker-save" [hidden]="toTimeButtonsHidden">
+                <button class="btn btn-primary time-btn-ok"
+                        (click)="clickToTimeOkBtn()">OK</button>
+                <button class="btn btn-primary time-btn-clear"
+                        (click)="clickClearOkBtn()">Clear</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="repeat">
+            <p>Repeat</p>
+            <input type="text" name="" value="" (click)="repeatDayHidden=false" [hidden]="!repeatDayHidden" [(ngModel)]="repeatDaysStr">
+            <div class="day-picker" [hidden]="repeatDayHidden">
+              <div class="checkbox" *ngFor="let day of daysOfWeekFull;let i = index">
+                <label>
+                  <input type="checkbox" [(ngModel)]="repeatDays[i]">
+                  {{day}}
+                </label>
+              </div>
+              <div class="picker-save">
+                <button class="btn btn-primary repeat-btn-ok"
+                        (click)="clickRepeatOkBtn()">OK</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- <div class="picker-save" [hidden]="TimeButtonsHidden">
+          <button class="btn btn-primary btn-ok"
+                  (click)="clickOkBtn()">OK</button>
+        </div> -->
+      </div>
+      <div class="col-md-8 deivce-picker">
+
+        <app-ifconditions [ifCondtions]="ifCondtions"></app-ifconditions>
+        <app-thenactions [thenActions]="thenActions"></app-thenactions>
+
+        <div class="footer">
+          <div class="edit-save">
+            <div class="btn-edit-save"  [hidden]="btnSaveHidden" (click)="clickSaveBtn()">
+              <button class="btn" type="button" name="button">Save</button>
+            </div>
+            <div class="btn-edit">
+              <button class="btn" type="button" name="button" (click)="editHidden=false;btnSaveHidden=false">Edit <i class="fa fa-pencil-square" aria-hidden="true"></i></button>
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+  </div>
+</div>
+<!-- rule -->

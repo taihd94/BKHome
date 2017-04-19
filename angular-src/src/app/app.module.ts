@@ -32,12 +32,13 @@ import {UserService} from './services/rest-api/user.service';
 import {HouseService} from './services/rest-api/house.service';
 import {DeviceService} from './services/rest-api/device.service';
 import {SceneService} from './services/rest-api/scene.service';
+import {RuleService} from './services/rest-api/rule.service';
 import {SocketioService} from './services/socketio.service';
 import {FlashMessagesModule} from 'angular2-flash-messages';
 import {AuthGuard} from './guards/auth.guard';
-import {Broadcaster} from './services/broadcast/broadcaster.service';
-import {MessageEvent} from './services/broadcast/message-event.service';
-import {RoomEvent} from './services/broadcast/room-event.service';
+import {BroadcasterService} from './services/broadcast/broadcaster.service';
+import {MessageEventService} from './services/broadcast/message-event.service';
+
 
 
 import { DevicesComponent } from './components/config/devices/devices.component';
@@ -45,14 +46,19 @@ import { LightingcontrolComponent } from './components/config/devices/lightingco
 import { SensorModuleComponent } from './components/config/devices/sensor-module/sensor-module.component';
 import { RoomComponent } from './components/config/config-home/room/room.component';
 import { ConfigHomeComponent } from './components/config/config-home/config-home.component';
-import { ScenesComponent } from './components/config/scenes/scenes.component';
 import { RulesComponent } from './components/config/rules/rules.component';
 import { LightComponent } from './components/config/config-home/room/light/light.component';
 import { SensorComponent } from './components/config/config-home/room/sensor/sensor.component';
-import { SceneComponent } from './components/config/scenes/scene/scene.component';
-import { LightOfSceneComponent } from './components/config/scenes/scene/room/light/light.component';
-import { RoomSceneComponent } from './components/config/scenes/scene/room/room.component';
 import { RuleComponent } from './components/config/rules/rule/rule.component';
+import { ScenesComponent } from './components/config/scenes/scenes.component';
+import { SceneComponent } from './components/config/scenes/scene/scene.component';
+import { RoomSceneComponent } from './components/config/scenes/scene/room-scene/room-scene.component';
+import { LightSceneComponent } from './components/config/scenes/scene/room-scene/light-scene/light-scene.component';
+import { IfconditionsComponent } from './components/config/rules/rule/ifconditions/ifconditions.component';
+import { RelationalOperationComponent } from './components/config/rules/rule/ifconditions/relational-operation/relational-operation.component';
+import { LogicalOperationComponent } from './components/config/rules/rule/ifconditions/logical-operation/logical-operation.component';
+import { LogicalOperation2ndLayerComponent } from './components/config/rules/rule/ifconditions/logical-operation/logical-operation-2nd-layer/logical-operation-2nd-layer.component';
+import { ThenactionsComponent } from './components/config/rules/rule/thenactions/thenactions.component';
 
 
 const appRoutes: Routes = [
@@ -89,14 +95,19 @@ const appRoutes: Routes = [
     SensorModuleComponent,
     RoomComponent,
     ConfigHomeComponent,
-    ScenesComponent,
     RulesComponent,
     LightComponent,
     SensorComponent,
+    RuleComponent,
+    ScenesComponent,
     SceneComponent,
-    LightOfSceneComponent,
     RoomSceneComponent,
-    RuleComponent
+    LightSceneComponent,
+    IfconditionsComponent,
+    RelationalOperationComponent,
+    LogicalOperationComponent,
+    LogicalOperation2ndLayerComponent,
+    ThenactionsComponent
   ],
   imports: [
     UiSwitchModule,
@@ -124,9 +135,9 @@ const appRoutes: Routes = [
     SceneService,
     AuthGuard,
     SocketioService,
-    MessageEvent,
-    RoomEvent,
-    Broadcaster
+    BroadcasterService,
+    MessageEventService,
+    RuleService
   ],
   bootstrap: [AppComponent]
 })

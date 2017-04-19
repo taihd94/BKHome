@@ -3,7 +3,7 @@ import * as moment from 'moment';
 import { DatePickerOptions, DateModel } from 'ng2-datepicker';
 import { SceneService} from '../../../../services/rest-api/scene.service';
 import { HouseService} from '../../../../services/rest-api/house.service';
-import {MessageEvent} from '../../../../services/broadcast/message-event.service';
+import {MessageEventService} from '../../../../services/broadcast/message-event.service';
 import {ToastrService} from 'ngx-toastr';
 
 @Component({
@@ -18,7 +18,7 @@ export class SceneComponent implements OnInit, OnChanges {
   constructor(
     private sceneService: SceneService,
     private houseService: HouseService,
-    private messageEvent: MessageEvent,
+    private messageEvent: MessageEventService,
     private toastrService: ToastrService
   ) {
     this.options = new DatePickerOptions();
@@ -253,6 +253,12 @@ export class SceneComponent implements OnInit, OnChanges {
     if(event.type=='dateChanged'){
       let date = event.data.formatted;
       this.mapDate(date);
+    }
+  }
+
+  runScene(){
+    for(let device of this.scene.devices){
+      this.messageEvent.emit("device-event", device);
     }
   }
 }

@@ -1,5 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
-import {MessageEvent} from '../../../../../services/broadcast/message-event.service';
+import {MessageEventService} from '../../../../../services/broadcast/message-event.service';
 
 @Component({
   selector: 'app-light',
@@ -14,7 +14,7 @@ export class LightComponent implements OnInit {
   switchValue: Number;
 
   constructor(
-    private messageEvent: MessageEvent,
+    private messageEvent: MessageEventService,
   ) { }
 
   ngOnInit() {
@@ -35,7 +35,7 @@ export class LightComponent implements OnInit {
         _id: this.light._id,
         value: value
     }
-    this.messageEvent.emit("socketEmit", message);
+    this.messageEvent.emit("device-event", message);
   }
 
   getValue(value){

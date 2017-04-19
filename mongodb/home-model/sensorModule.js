@@ -90,3 +90,15 @@ module.exports.authenticateDevices = function(newDevice, callback) {
     }
   })
 };
+
+module.exports.getSensorDetails = function(sensorId, callback){
+  SensorModule.findOne({"sensors._id": sensorId}, (err,device)=>{
+    if(err) throw err;
+    if(!!device){
+      let sensor = device.sensors.id(sensorId);
+      callback({success: true, sensor: sensor});
+    } else {
+      callback({success: false, msg: 'Sensor not found'});
+    }
+  })
+}

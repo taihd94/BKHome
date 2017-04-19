@@ -1,5 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
-import {MessageEvent} from '../../../../../services/broadcast/message-event.service';
+import {MessageEventService} from '../../../../../services/broadcast/message-event.service';
 
 @Component({
   selector: 'app-sensor',
@@ -11,7 +11,7 @@ export class SensorComponent implements OnInit {
   message: any;
   value: any;
   constructor(
-    private messageEvent: MessageEvent,
+    private messageEvent: MessageEventService,
   ) { }
 
   ngOnInit() {

@@ -31,6 +31,7 @@ const users = require('./routes/users');
 const house = require('./routes/house');
 const devices = require('./routes/devices');
 const scenes = require('./routes/scenes');
+const rules = require('./routes/rules');
 
 // Port Number
 const port = 3000;
@@ -54,6 +55,7 @@ app.use('/users', users);
 app.use('/house', house);
 app.use('/devices', devices);
 app.use('/scenes', scenes)
+app.use('/rules', rules);
 
 // Index Route
 app.get('/', (req, res) => {

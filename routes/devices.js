@@ -63,13 +63,34 @@ router.put('/:id/sensors', (req, res, next) => {
   })
 })
 
-router.get('/lighting-control/:id', (req, res, next)=>{
+router.get('/lighting-controls/lights/:id', (req, res, next)=>{
   let lightId = req.params.id;
-  LightingControl.getLightDetail(lightId, result=>{
+  LightingControl.getLightDetails(lightId, result=>{
     res.json(result);
   })
 })
 
+router.get('/sensor-modules/sensors/:id', (req, res, next)=>{
+  let sensorId = req.params.id;
+  SensorModule.getSensorDetails(sensorId, result=>{
+    res.json(result);
+  })
+})
+
+router.get('/items/:id', (req, res, next)=>{
+  let itemId = req.params.id;
+  LightingControl.getLightDetails(itemId, result=>{
+    if(result.success){
+      result._type = 'light';
+      res.json(result);
+    } else {
+      SensorModule.getSensorDetails(itemId, result=>{
+        result._type = 'sensor';
+        res.json(result);
+      })
+    }
+  })
+})
 
 
 module.exports = router;

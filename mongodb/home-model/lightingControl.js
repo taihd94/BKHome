@@ -77,7 +77,19 @@ module.exports.updateLights = function(deviceId, lightingControl, callback){
   })
 }
 
-module.exports.getLightsDetail = function(listOfLights, callback){
+module.exports.getLightDetails = function(lightId, callback){
+  LightingControl.findOne({"lights._id": lightId}, (err,device)=>{
+    if(err) throw err;
+    if(!!device){
+      let light = device.lights.id(lightId);
+      callback({success: true, light: light});
+    } else {
+      callback({success: false, msg: 'Light not found'});
+    }
+  })
+}
+
+module.exports.getLightsDetails = function(listOfLights, callback){
   let rooms = [];
   let roomIndexArr = [];
   let index = 0;

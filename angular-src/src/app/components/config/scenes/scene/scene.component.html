@@ -17,7 +17,7 @@
   <div class="panel panel-primary panel-pricing">
     <div class="panel-heading">
       <i class="fa fa-lightbulb-o" aria-hidden="true"></i>
-      <h3 class="sceneName">{{scene.name}}</h3>
+      <h3 class="sceneName" (click)="runScene()">{{scene.name}}</h3>
       <div class="x-icon" >
         <i class="fa fa-times" aria-hidden="true" (click)="smModal.show()"></i>
       </div>
@@ -70,10 +70,10 @@
 
         <!-- Devices -->
         <div class="listOfDevices" *ngFor="let room of rooms">
-          <app-scene-room  [sceneId] = "scene._id"
+          <app-room-scene  [sceneId] = "scene._id"
                           [room]="room"
                           [editHidden]="editHidden"
-                          (remove)="removeRoom($event)"></app-scene-room>
+                          (remove)="removeRoom($event)"></app-room-scene>
         </div>
 
 

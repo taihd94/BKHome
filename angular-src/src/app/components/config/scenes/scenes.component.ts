@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { SceneService} from '../../../services/rest-api/scene.service';
 
 @Component({
-  selector: 'app-scripts',
+  selector: 'app-scenes',
   templateUrl: './scenes.component.html',
   styleUrls: ['./scenes.component.css']
 })

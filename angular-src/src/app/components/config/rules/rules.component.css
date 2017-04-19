@@ -2,8 +2,8 @@
   padding: 26px 0px 10px 42px;
 }
 
-/*add scene*/
-.addscene {
+/*add rule*/
+.addRule {
   margin: 8px 8px 8px 16px;
 }
 
@@ -16,7 +16,7 @@
 }
 
 
-.addSceneIcon {
+.addRuleIcon {
   color: #93c54b;
   float: left;
   margin-right: 10px;
@@ -27,35 +27,12 @@ input {
   height: 30px;
   margin-right: 10px;
 }
-/*add scene*/
+/*add rule*/
 
-/*scene*/
+/*rule*/
 
-.scene{
+.rule{
   margin-top: 50px;
-}
-
-.sceneName{
-  margin-top: 10px;
-  margin-left: 15px;
-}
-
-
-
-
-.modal-title {
-  text-align: center;
-}
-
-.modal-body{
-  margin: 0 auto;
-  text-align: center;
-}
-
-.btn-modal {
-  min-width: 80px;
-  margin-left: 10px;
-  margin-right: 10px;
 }
 
 .form-group {
@@ -64,13 +41,6 @@ input {
 }
 
 
-.btn-add-scene {
+.btn-add-rule {
     line-height: 0;
-}
-
-
-
-ui-switch{
-  float: right;
-  margin-right: 50px;
 }

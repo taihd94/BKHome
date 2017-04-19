@@ -1,11 +1,11 @@
 import { Injectable } from '@angular/core';
 import {Observable} from 'rxjs/Observable';
-import {Broadcaster} from './broadcaster.service';
-
+import {BroadcasterService} from './broadcaster.service';
 
 @Injectable()
-export class MessageEvent {
-  constructor(private broadcaster: Broadcaster) {}
+export class MessageEventService {
+
+  constructor(private broadcaster: BroadcasterService) {}
 
   emit(event, data): void {
     this.broadcaster.broadcast(event, data);
@@ -14,4 +14,5 @@ export class MessageEvent {
   on(event): Observable<string> {
     return this.broadcaster.on<string>(event);
   }
+
 }

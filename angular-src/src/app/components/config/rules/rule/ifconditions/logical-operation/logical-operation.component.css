@@ -1,0 +1,13 @@
+hr {
+  height: 1px;
+  background: #dfd7ca;
+  margin: 2px 0px;
+  margin-left: 14px;
+}
+
+.operator{
+  margin: 15px 29px;
+  font-size: 17px;
+  font-weight: 800;
+  color: #626262;
+}

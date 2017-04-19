@@ -20,7 +20,7 @@ router.get('/:id/devices', (req, res, next)=>{
   let sceneId = req.params.id;
   Scenes.findSceneById(sceneId, result=>{
     if(result.success){
-      LightingControl.getLightsDetail(result.scene.devices, result=>{
+      LightingControl.getLightsDetails(result.scene.devices, result=>{
         res.json({success: true, rooms: result});
       });
     }

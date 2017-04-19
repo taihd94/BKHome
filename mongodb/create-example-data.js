@@ -27,7 +27,9 @@ var Room = require('./home-model/room');
 var LightingControl = require('./home-model/lightingControl');
 var SensorModule = require('./home-model/sensorModule');
 var Scene = require('./home-model/scenes');
-
+var Rule = require('./home-model/rules');
+var RelationalOperation = require('./home-model/rules').RelationalOperations;
+var LogicalOperation = require('./home-model/rules').LogicalOperations;
 
 var house_id = new mongoose.Types.ObjectId();
 var floor_id_1 = new mongoose.Types.ObjectId();
@@ -41,8 +43,18 @@ var light_id_3 = new mongoose.Types.ObjectId();
 var light_id_4 = new mongoose.Types.ObjectId();
 var light_id_5 = new mongoose.Types.ObjectId();
 var light_id_6 = new mongoose.Types.ObjectId();
-
-
+var sensor_id_1 = new mongoose.Types.ObjectId();
+var sensor_id_2 = new mongoose.Types.ObjectId();
+var sensor_id_3 = new mongoose.Types.ObjectId();
+var sensor_id_4 = new mongoose.Types.ObjectId();
+var sensor_id_5 = new mongoose.Types.ObjectId();
+var sensor_id_6 = new mongoose.Types.ObjectId();
+var condition_id_1 = new mongoose.Types.ObjectId();
+var condition_id_2 = new mongoose.Types.ObjectId();
+var condition_id_3 = new mongoose.Types.ObjectId();
+var logicalOperation_id_1 = new mongoose.Types.ObjectId();
+var logicalOperation_id_2 = new mongoose.Types.ObjectId();
+var logicalOperation_id_3 = new mongoose.Types.ObjectId();
 
 var user = [
   new User({
@@ -106,7 +118,7 @@ var lightingControl = [
       deviceType: 'LightingControl',         // 'LightingControl'
       numberOfPorts: 4,     // Ex: '1 port', '4 port', '8 port', ...
       allowToConnect: false,
-      roomId: room_id_1,
+      // roomId: room_id_1,
       lights: [
         {
             _id: light_id_1,
@@ -155,7 +167,7 @@ var lightingControl = [
       deviceType: 'LightingControl',         // 'LightingControl'
       numberOfPorts: 2,     // Ex: '1 port', '4 port', '8 port', ...
       allowToConnect: false,
-      roomId: room_id_2,
+      // roomId: room_id_2,
       lights: [
         {
             _id: light_id_5,
@@ -196,11 +208,28 @@ var sensorModule = [
   new SensorModule({
       deviceCode: 'ss01',                 // Ex: 'ss123'
       deviceType: 'SensorModule',         // 'SensorModule'
-      numberOfSensors: 2,                 // Ex: '1 ss', '4 ss',
+      numberOfSensors: 3,                 // Ex: '1 ss', '4 ss',
       allowedToAccess: false,
       battery: 60,      // Ex: '60%', '80%'
       sensors: [
-        {},{}
+        {
+          _id: sensor_id_1,
+          name: 'Temp',
+          _type: 'Temperature',
+          value: 25
+        },
+        {
+          _id: sensor_id_2,
+          name: 'Humi',
+          _type: 'Humidity',
+          value: 60
+        },
+        {
+          _id: sensor_id_3,
+          name: 'Light',
+          _type: 'Light',
+          value: 255
+        }
       ]
   }),
   new SensorModule({
@@ -210,10 +239,38 @@ var sensorModule = [
       allowedToAccess: false,
       battery: 80,      // Ex: '60%', '80%'
       sensors: [
-        {},{},{}
+        {
+          _id: sensor_id_4,
+          name: 'Temp',
+          _type: 'Temperature',
+          value: 21
+        },
+        {
+          _id: sensor_id_5,
+          name: 'Humi',
+          _type: 'Humidity',
+          value: 70
+        },
+        {
+          _id: sensor_id_6,
+          name: 'light',
+          _type: 'Light',
+          value: 332
+        }
       ]
   })
 ]
+
+done = 0;
+for(var i = 0; i< sensorModule.length; i++) {
+    sensorModule[i].save(function (err, result) {
+        if(err) throw err;
+        done++;
+        if (done === sensorModule.length) {
+            mongoose.disconnect();
+        }
+    });
+}
 
 var scene = [
   new Scene({
@@ -248,15 +305,148 @@ for(var i = 0; i< scene.length; i++) {
     });
 }
 
+var RelationalOperations = [
+  new RelationalOperation({
+    _id: condition_id_1,
+    deviceId: sensor_id_1,
+    operator: '>=',
+    value: 50,
+    result: true
+  }),
+  new RelationalOperation({
+    _id: condition_id_2,
+    deviceId: light_id_2,
+    operator: '!=',
+    value: 1,
+    result: true
+  }),new RelationalOperation({
+    _id: condition_id_3,
+    deviceId: light_id_1,
+    operator: '<',
+    value: 1,
+    result: true
+  })
+]
 
+var logicalOperations = [
+  new LogicalOperation({
+    _id: logicalOperation_id_1,
+    _1stOperand: {
+      _type: 'RelationalOperation',
+      operation: condition_id_2
+    },
+    _2ndOperand: {
+      _type: 'RelationalOperation',
+      operation: condition_id_3
+    },
+    operator: 'AND',
+    result: false
+  }),
+  new LogicalOperation({
+    _id: logicalOperation_id_2,
+    _1stOperand: {
+      _type: 'RelationalOperation',
+      operation: condition_id_1
+    },
+    _2ndOperand: {
+      _type: 'LogicalOperation',
+      operation: logicalOperation_id_1
+    },
+    operator: 'OR',
+    result: false
+  }),
+  new LogicalOperation({
+    _id: logicalOperation_id_3,
+    _1stOperand: {
+      _type: 'LogicalOperation',
+      operation: logicalOperation_id_1
+    },
+    _2ndOperand: {
+      _type: 'LogicalOperation',
+      operation: logicalOperation_id_1
+    },
+    operator: 'OR',
+    result: false
+  })
+]
 
+var rules = [
+  new Rule({
+    name: 'Test',
+    time: {
+      from: '11:00 PM',
+      to: '5:00 AM'
+    },
+    repeat: [true, true, true, true, true, true, true],
+    ifConditions: {
+      _type: 'RelationalOperation',
+      operation: condition_id_1
+    },
+    thenActions: [{
+      deviceId: light_id_5,
+      value: 1
+    }]
+  }),
+  new Rule({
+    name: 'Security',
+    time: {
+      from: '11:00 PM',
+      to: '5:00 AM'
+    },
+    repeat: [true, true, true, true, true, true, true],
+    ifConditions: {
+      _type: 'LogicalOperation',
+      operation: logicalOperation_id_2
+    },
+    thenActions: [{
+      deviceId: light_id_5,
+      value: 1
+    }]
+  }),
+  new Rule({
+    name: 'Security2',
+    time: {
+      from: '11:00 PM',
+      to: '5:00 AM'
+    },
+    repeat: [true, true, true, true, true, true, true],
+    ifConditions: {
+      _type: 'LogicalOperation',
+      operation: logicalOperation_id_3
+    },
+    thenActions: [{
+      deviceId: light_id_5,
+      value: 1
+    }]
+  })
+]
 
-// done = 0;
-// for(var i = 0; i< sensorModule.length; i++) {
-//     sensorModule[i].save(function (err, result) {
-//         done++;
-//         if (done === sensorModule.length) {
-//             mongoose.disconnect();
-//         }
-//     });
-// }
+done = 0;
+for(var i = 0; i< RelationalOperations.length; i++) {
+    RelationalOperations[i].save(function (err, result) {
+        done++;
+        if (done === RelationalOperations.length) {
+            mongoose.disconnect();
+        }
+    });
+}
+
+done = 0;
+for(var i = 0; i< logicalOperations.length; i++) {
+    logicalOperations[i].save(function (err, result) {
+        done++;
+        if (done === logicalOperations.length) {
+            mongoose.disconnect();
+        }
+    });
+}
+
+done = 0;
+for(var i = 0; i< rules.length; i++) {
+    rules[i].save(function (err, result) {
+        done++;
+        if (done === rules.length) {
+            mongoose.disconnect();
+        }
+    });
+}

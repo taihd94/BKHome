@@ -56,12 +56,21 @@ export class DeviceService {
       .map(res => res.json());
   }
 
-  getLightDetail(lightId){
+  getLightDetails(lightId){
     let headers = new Headers();
     this.loadToken();
     headers.append('Authorization', this.authToken);
     headers.append('Content-Type', 'application/json');
-    return this.http.get(this.baseURL + '/devices/lighting-control/' + lightId, {headers: headers})
+    return this.http.get(this.baseURL + '/devices/lighting-controls/lights/' + lightId, {headers: headers})
+      .map(res => res.json());
+  }
+
+  getItemDetails(itemId){
+    let headers = new Headers();
+    this.loadToken();
+    headers.append('Authorization', this.authToken);
+    headers.append('Content-Type', 'application/json');
+    return this.http.get(this.baseURL + '/devices/items/' + itemId, {headers: headers})
       .map(res => res.json());
   }
 

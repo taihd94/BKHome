@@ -1,0 +1,27 @@
+<div class="test" *ngIf="isDataAvailable">
+  <div class="_1st-operand">
+    <app-relational-operation
+            *ngIf="_1stOperandType=='RelationalOperation'"
+            [operationId]="_1stOperand_id">
+    </app-relational-operation>
+    <app-logical-operation-2nd-layer
+            *ngIf="_1stOperandType=='LogicalOperation'"
+            [operationId]="_1stOperand_id">
+    </app-logical-operation-2nd-layer>
+  </div>
+  <hr/>
+  <div class="operator">
+    <p>{{operator}}</p>
+  </div>
+  <hr/>
+  <div class="_2nd-operand">
+    <app-relational-operation
+            *ngIf="_2ndOperandType=='RelationalOperation'"
+            [operationId]="_2ndOperand_id">
+    </app-relational-operation>
+    <app-logical-operation-2nd-layer
+            *ngIf="_2ndOperandType=='LogicalOperation'"
+            [operationId]="_2ndOperand_id">
+    </app-logical-operation-2nd-layer>
+  </div>
+</div>

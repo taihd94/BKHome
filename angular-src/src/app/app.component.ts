@@ -2,9 +2,8 @@ import { Component, OnInit } from '@angular/core';
 import { SocketioService } from './services/socketio.service';
 import { Subject } from 'rxjs/Subject';
 import { Observable } from 'rxjs/Observable';
-import {MessageEvent} from './services/broadcast/message-event.service';
-import {Broadcaster} from './services/broadcast/broadcaster.service';
-import {RoomEvent} from './services/broadcast/room-event.service';
+import {MessageEventService} from './services/broadcast/message-event.service';
+import {BroadcasterService} from './services/broadcast/broadcaster.service';
 
 @Component({
   selector: 'app-root',
@@ -14,9 +13,8 @@ import {RoomEvent} from './services/broadcast/room-event.service';
 export class AppComponent {
   constructor(
                 private socketioService:SocketioService,
-                private broadcaster: Broadcaster,
-                private messageEvent: MessageEvent,
-                private roomEvent: RoomEvent
+                private broadcaster: BroadcasterService,
+                private messageEvent: MessageEventService,
              ) {
              }
 
@@ -30,7 +28,7 @@ export class AppComponent {
         });
       });
 
-     this.messageEvent.on('socketEmit')
+     this.messageEvent.on('device-event')
       .subscribe(message=>{
         this.socketioService.sendMessage("device-event", message);
       })
