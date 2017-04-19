@@ -9,6 +9,7 @@ import { RuleService } from '../../../../../../services/rest-api/rule.service';
 })
 export class RelationalOperationComponent implements OnInit {
   @Input() operationId;
+  @Input() editHidden;
   constructor(
     private deviceService: DeviceService,
     private ruleService: RuleService

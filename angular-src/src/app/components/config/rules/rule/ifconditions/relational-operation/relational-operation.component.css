@@ -12,3 +12,34 @@
 .device-name, .operator, .value{
   text-align: center;
 }
+
+.scrollable-menu {
+    height: auto;
+    max-height: 200px;
+    min-width: 242px;
+    overflow-x: hidden;
+    cursor: pointer;
+}
+
+.operator-string{
+  position: absolute;
+  left: 25%;
+}
+
+.room-floor{
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.device{
+  margin-left: 20px;
+  text-transform: none;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.input-value>input{
+  width: 100%;
+  background-color: #dddddd;
+  text-align: center;
+}

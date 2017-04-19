@@ -1,11 +1,56 @@
 <div class="row">
   <div class="col-md-3 device-name">
-    <p>{{deviceName}}</p>
+    <p [hidden]="!editHidden">{{deviceName}}</p>
+    <div class="dropdown" [hidden]="editHidden">
+      <button class="btn dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+        {{deviceName}}
+        <span class="caret" ></span>
+      </button>
+      <ul class="dropdown-menu scrollable-menu" role="menu" aria-labelledby="dropdownMenu1" [hidden]="editHidden">
+        <li><a class="room-floor">
+          <span><i aria-hidden="true" class="fa fa-home"></i> Ground </span>
+          <span><i aria-hidden="true" class="fa fa-caret-right"></i> Living room </span></a>
+        </li>
+        <li><a class="device">Light 1</a></li>
+        <li><a class="device">Light 2</a></li>
+        <li><a class="device">Light 3</a></li>
+        <li><a class="device">Light 4</a></li>
+        <li><a class="device">Sensor 1</a></li>
+        <li><a class="device">Sensor 2</a></li>
+        <li><a class="room-floor">
+          <span><i aria-hidden="true" class="fa fa-home"></i> 1st Floor </span>
+          <span><i aria-hidden="true" class="fa fa-caret-right"></i> Bedroom </span></a>
+        </li>
+        <li><a class="device">Light 1</a></li>
+        <li><a class="device">Light 2</a></li>
+        <li><a class="device">Light 3</a></li>
+        <li><a class="device">Light 4</a></li>
+        <li><a class="device">Sensor 1</a></li>
+        <li><a class="device">Sensor 2</a></li>
+      </ul>
+    </div>
   </div>
   <div class="col-md-6 operator">
-    <p>{{operator}}</p>
+    <p [hidden]="!editHidden">{{operator}}</p>
+    <div class="dropdown" [hidden]="editHidden">
+      <button class="btn dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+        {{operator}}
+        <span class="caret" ></span>
+      </button>
+      <ul class="dropdown-menu scrollable-menu" role="menu" aria-labelledby="dropdownMenu1" [hidden]="editHidden">
+        <li><a><span class="operator-symbol">==</span> <span class="operator-string">Equal to</span></a></li>
+        <li><a><span class="operator-symbol">!=</span> <span class="operator-string">Not Equal to</span></a></li>
+        <li><a><span class="operator-symbol"><</span> <span class="operator-string">Less than</span></a></li>
+        <li><a><span class="operator-symbol">></span> <span class="operator-string">Greater than</span></a></li>
+        <li><a><span class="operator-symbol"><=</span> <span class="operator-string">Less than or Equal to</span></a></li>
+        <li><a><span class="operator-symbol">>=</span> <span class="operator-string">Greater than or Equal to</span></a></li>
+      </ul>
+    </div>
   </div>
   <div class="col-md-2 value">
-    <p>{{value}}</p>
+    <p [hidden]="!editHidden">{{value}}</p>
+    <div class="input-value" [hidden]="editHidden">
+      <input class="form-control" type="text" name="status" value="{{value}}" >
+    </div>
   </div>
 </div>

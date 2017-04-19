@@ -308,20 +308,20 @@ for(var i = 0; i< scene.length; i++) {
 var RelationalOperations = [
   new RelationalOperation({
     _id: condition_id_1,
-    deviceId: sensor_id_1,
+    deviceId: sensor_id_3,
     operator: '>=',
     value: 50,
     result: true
   }),
   new RelationalOperation({
     _id: condition_id_2,
-    deviceId: light_id_2,
+    deviceId: sensor_id_2,
     operator: '!=',
     value: 1,
     result: true
   }),new RelationalOperation({
     _id: condition_id_3,
-    deviceId: light_id_1,
+    deviceId: sensor_id_1,
     operator: '<',
     value: 1,
     result: true

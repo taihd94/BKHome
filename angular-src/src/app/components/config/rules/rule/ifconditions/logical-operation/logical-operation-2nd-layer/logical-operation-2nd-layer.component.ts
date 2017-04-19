@@ -8,6 +8,7 @@ import { RuleService } from '../../../../../../../services/rest-api/rule.service
 })
 export class LogicalOperation2ndLayerComponent implements OnInit {
   @Input() operationId;
+  @Input() editHidden;
   constructor(
     private ruleService: RuleService
   ) { }

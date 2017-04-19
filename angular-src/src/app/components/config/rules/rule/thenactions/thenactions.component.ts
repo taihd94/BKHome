@@ -7,6 +7,7 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class ThenactionsComponent implements OnInit {
   @Input() thenActions;
+  @Input() editHidden;
   constructor() { }
 
   ngOnInit() {

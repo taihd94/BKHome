@@ -8,6 +8,7 @@ import { RuleService } from '../../../../../services/rest-api/rule.service';
 })
 export class IfconditionsComponent implements OnInit {
   @Input() ifCondtions;
+  @Input() editHidden;
   constructor(
     private ruleService: RuleService
   ) { }

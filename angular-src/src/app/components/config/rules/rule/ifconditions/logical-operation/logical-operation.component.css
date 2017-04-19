@@ -11,3 +11,11 @@ hr {
   font-weight: 800;
   color: #626262;
 }
+
+.dropdown-toggle{
+  background-color: inherit;
+  color: #626262;
+  font-size: 17px;
+  font-weight: 800;
+  padding: 0px;
+}

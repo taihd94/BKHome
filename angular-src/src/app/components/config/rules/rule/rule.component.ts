@@ -193,40 +193,40 @@ export class RuleComponent implements OnInit, OnChanges {
   }
 
   clickSaveBtn(){
-    if(!this.rule.devices.length){
-      this.editHidden = false;
-    }
+    // if(!this.rule.devices.length){
+    //   this.editHidden = false;
+    // }
 
-    let isDatePicked = !!this.date.formatted;
-    let isTimePicked = !!this.time;
-    let isRepeatDateNone = (this.repeatDaysStr=='None');
-
-    if((!isTimePicked)&&(isDatePicked||(!isRepeatDateNone))){
-      this.toastrService.error('Please pick Time.', 'Error!!!');
-      return;
-    }
-
-    if((isTimePicked)&&((!isDatePicked)&&(isRepeatDateNone))){
-      let date = new Date();
-      if(date.getTime() > this.time.getTime()){
-        date.setDate(date.getDate()+1);
-      }
-      this.mapDate(moment(date).format('DD/MM/YYYY'));
-    }
-
-    if((isTimePicked)&&(isDatePicked)){
-
-    }
-
-    this.rule.time = (this.time)? moment(this.time).format('LT'): null;
-    this.rule.date = (this.date.momentObj)? this.date.momentObj.format('DD/MM/YYYY'): null;
-    this.rule.repeat = this.repeatDays;
-
-    // this.ruleService.updaterule(this.rule).subscribe(res=>{
-    //   if(!res.success){
-    //     console.log(res.msg);
+    // let isDatePicked = !!this.date.formatted;
+    // let isTimePicked = !!this.time;
+    // let isRepeatDateNone = (this.repeatDaysStr=='None');
+    //
+    // if((!isTimePicked)&&(isDatePicked||(!isRepeatDateNone))){
+    //   this.toastrService.error('Please pick Time.', 'Error!!!');
+    //   return;
+    // }
+    //
+    // if((isTimePicked)&&((!isDatePicked)&&(isRepeatDateNone))){
+    //   let date = new Date();
+    //   if(date.getTime() > this.time.getTime()){
+    //     date.setDate(date.getDate()+1);
     //   }
-    // })
+    //   this.mapDate(moment(date).format('DD/MM/YYYY'));
+    // }
+    //
+    // if((isTimePicked)&&(isDatePicked)){
+    //
+    // }
+    //
+    // this.rule.time = (this.time)? moment(this.time).format('LT'): null;
+    // this.rule.date = (this.date.momentObj)? this.date.momentObj.format('DD/MM/YYYY'): null;
+    // this.rule.repeat = this.repeatDays;
+    //
+    // // this.ruleService.updaterule(this.rule).subscribe(res=>{
+    // //   if(!res.success){
+    // //     console.log(res.msg);
+    // //   }
+    // // })
 
     this.editHidden = true;
     this.btnSaveHidden = true;

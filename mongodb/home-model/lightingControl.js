@@ -90,10 +90,12 @@ module.exports.getLightDetails = function(lightId, callback){
 }
 
 module.exports.getLightsDetails = function(listOfLights, callback){
+  console.log(listOfLights);
   let rooms = [];
   let roomIndexArr = [];
   let index = 0;
   let forLoopFinshCheck = 0;
+  let breakCheck = false;
   for(let lightOfScene of listOfLights){
     let lightId = lightOfScene._id;
     LightingControl.findOne({"lights._id": lightId}, (err, device)=>{
@@ -102,30 +104,31 @@ module.exports.getLightsDetails = function(listOfLights, callback){
         let light = device.lights.id(lightId);
         light.value = lightOfScene.value;
         let roomId = device.roomId;
-        Floor.getFloorAndRoomByRoomId(device.roomId, result=>{
-          let floorName = result.floorName;
-          let roomName = result.roomName;
-          let roomFilter = roomIndexArr.filter(room=>{
-            return room.roomId.toString() === roomId.toString();
-          }).pop();
-          if(!!roomFilter){
-            let index = roomFilter.index;
-            rooms[index].devices.push(light);
-          } else {
-            roomIndexArr.push({roomId: roomId, index: index});
-            rooms.push({roomId: roomId, roomName: roomName, floorName:floorName, devices: [light]});
-            index++;
-          };
-          if(++forLoopFinshCheck===listOfLights.length){
-            for(let room of rooms){
-              room.devices.sort((a, b)=>{
-                return a.portId - b.portId;
-              })
+        if(!!roomId){
+          Floor.getFloorAndRoomByRoomId(device.roomId, result=>{
+            let floorName = result.floorName;
+            let roomName = result.roomName;
+            let roomFilter = roomIndexArr.filter(room=>{
+              return room.roomId == roomId.toString();
+            }).pop();
+            if(!!roomFilter){
+              let index = roomFilter.index;
+              rooms[index].devices.push(light);
+            } else {
+              roomIndexArr.push({roomId: roomId, index: index});
+              rooms.push({roomId: roomId, roomName: roomName, floorName:floorName, devices: [light]});
+              index++;
+            };
+            if(++forLoopFinshCheck===listOfLights.length){
+              for(let room of rooms){
+                room.devices.sort((a, b)=>{
+                  return a.portId - b.portId;
+                })
+              }
+              callback(rooms);
             }
-            callback(rooms);
-          }
-        })
-
+          })
+        } 
       }
     })
 

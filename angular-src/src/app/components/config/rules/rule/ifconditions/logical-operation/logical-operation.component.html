@@ -2,26 +2,40 @@
   <div class="_1st-operand">
     <app-relational-operation
             *ngIf="_1stOperandType=='RelationalOperation'"
-            [operationId]="_1stOperand_id">
+            [operationId]="_1stOperand_id"
+            [editHidden]="editHidden">
     </app-relational-operation>
     <app-logical-operation-2nd-layer
             *ngIf="_1stOperandType=='LogicalOperation'"
-            [operationId]="_1stOperand_id">
+            [operationId]="_1stOperand_id"
+            [editHidden]="editHidden">
     </app-logical-operation-2nd-layer>
   </div>
   <hr/>
   <div class="operator">
-    <p>{{operator}}</p>
+    <p [hidden]="!editHidden">{{operator}}</p>
+    <div class="dropdown" [hidden]="editHidden">
+      <button class="btn dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+        {{operator}}
+        <span class="caret" ></span>
+      </button>
+      <ul class="dropdown-menu" aria-labelledby="dropdownMenu1" [hidden]="editHidden">
+        <li><a>OR</a></li>
+        <li><a>AND</a></li>
+      </ul>
+    </div>
   </div>
   <hr/>
   <div class="_2nd-operand">
     <app-relational-operation
             *ngIf="_2ndOperandType=='RelationalOperation'"
-            [operationId]="_2ndOperand_id">
+            [operationId]="_2ndOperand_id"
+            [editHidden]="editHidden">
     </app-relational-operation>
     <app-logical-operation-2nd-layer
             *ngIf="_2ndOperandType=='LogicalOperation'"
-            [operationId]="_2ndOperand_id">
+            [operationId]="_2ndOperand_id"
+            [editHidden]="editHidden">
     </app-logical-operation-2nd-layer>
   </div>
 </div>
