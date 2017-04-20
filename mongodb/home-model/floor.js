@@ -6,12 +6,16 @@ var FloorSchema = new Schema({
     rooms: [
       {
           name: String,
-          imgPath: String
+          imgPath: String,
+          devices: [{type: Schema.Types.ObjectId, ref: 'devices'}]
       }
     ]
 }, {versionKey: false});
 
 const Floor = module.exports = mongoose.model('Floor', FloorSchema);
+const Devices = require('./devices');
+const LightingControl = require('./lightingControl');
+const SensorModule = require('./sensorModule');
 
 module.exports.getListOfFloors = function(callback){
   Floor.find((err, floors)=>{
@@ -19,7 +23,7 @@ module.exports.getListOfFloors = function(callback){
       throw err;
       return callback({success: false, msg:"something went wrong"});
     } else {
-      return callback(floors);
+      return callback({success:true, floors: floors});
     }
   });
 }
@@ -119,4 +123,55 @@ module.exports.getFloorAndRoomByRoomId = function(roomId, callback){
       callback({success: false, msg: 'room not found'});
     }
   })
+}
+
+module.exports.updateDeviceToRoom = function (deviceId, roomId, callback) {
+  Floor.findOne({'rooms.devices': deviceId}, (err, floor)=>{
+    if(err) throw err;
+    if(!!floor){
+      let rooms = floor.rooms;
+      let forLoopFinshCheck = 0;
+      for(let room of rooms){
+        let devices = room.devices
+        let deviceFilter = devices.filter(device=>{
+          return device.toString() === deviceId.toString();
+        }).pop();
+        if(!!deviceFilter){
+          if(room._id != roomId){
+            let index = devices.indexOf(deviceId);
+            floor.rooms.id(room._id).devices.splice(index, 1);
+            floor.rooms.id(roomId).devices.push(deviceId);
+            floor.save(err=>{
+              if(err) throw err;
+              callback('Successfully saved deviceId to new room');
+            })
+          }
+        }
+      }
+    } else {
+      Floor.findOne({'rooms._id': roomId}, (err,floor)=>{
+        if(err) throw err;
+        if(!!floor){
+          floor.rooms.id(roomId).devices.push(deviceId);
+          floor.save(err=>{
+            if(err) throw err;
+            callback('Successfully saved deviceId to room');
+          })
+        }
+      })
+    }
+  })
+}
+
+module.exports.getListOfItemsInHouse = function (callback) {
+  Floor
+    .find()
+    .populate({
+      path: 'rooms.devices',
+      select: 'sensors.name sensors._id lights.name lights._id'
+    })
+    .exec((err, floors)=>{
+      if(err) callback(err);
+      else callback(floors);
+    })
 }

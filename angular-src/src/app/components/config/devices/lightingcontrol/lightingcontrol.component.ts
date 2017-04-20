@@ -37,8 +37,12 @@ export class LightingcontrolComponent implements OnInit {
 
   ngOnInit() {
     let roomId = this.lightingControl.roomId;
-    this.houseService.getListOfFloors().subscribe(floors=>{
-      this.listOfFloors = floors;
+    this.houseService.getListOfFloors().subscribe(res=>{
+      if(!res.success){
+        console.log(res.msg)
+      } else{
+        this.listOfFloors = res.floors;
+      }
       if(!!roomId){
         this.houseService.getFloorAndRoomByRoomId(roomId).subscribe(res=>{
           this.selectedFloor = res.floorName;

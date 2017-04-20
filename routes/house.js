@@ -4,9 +4,7 @@ const passport = require('passport');
 const jwt = require('jsonwebtoken');
 const config = require('../config/database');
 
-const House = require('../mongodb/home-model/house');
 const Floor = require('../mongodb/home-model/floor');
-const Room = require('../mongodb/home-model/room');
 const Devices = require('../mongodb/home-model/devices');
 
 
@@ -79,6 +77,14 @@ router.put('/floors/:floorid/rooms/:id/imgPath', (req, res, next) => {
   });
 });
 
+// get list of devices in the house
+router.get('/devices', (req, res, next) => {
+  console.log('asdf');
+  Floor.getListOfItemsInHouse(result => {
+    res.json(result);
+  })
+});
+
 // get list of devices in the room
 router.get('/floors/rooms/:roomid/devices', (req, res, next) => {
   let roomId = req.params.roomid;
@@ -95,6 +101,7 @@ router.get('/floors/rooms/:id',(req, res, next) => {
     res.json(result);
   })
 })
+
 
 module.exports = router;
 

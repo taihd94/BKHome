@@ -7,6 +7,8 @@ const config = require('../config/database');
 const LightingControl = require('../mongodb/home-model/lightingControl');
 const SensorModule = require('../mongodb/home-model/sensorModule');
 const Devices = require('../mongodb/home-model/devices');
+const Floors = require('../mongodb/home-model/floor');
+
 
 
 router.post('/authenticate', (req,res,next)=>{
@@ -24,7 +26,6 @@ router.get('/', (req, res, next)=>{
   })
 })
 
-
 router.put('/:id/room-id', (req, res, next) => {
   let deviceId = req.params.id;
   let roomId = req.body.roomId;
@@ -32,7 +33,10 @@ router.put('/:id/room-id', (req, res, next) => {
   if(roomId){
     Devices.updateRoomId(deviceId, roomId, (result)=>{
       res.json(result);
-    })
+    });
+    Floors.updateDeviceToRoom(deviceId, roomId, result=>{
+      console.log(result);
+    });
   }else {
     res.json({success: false, msg:"roomId is not defined"})
   }

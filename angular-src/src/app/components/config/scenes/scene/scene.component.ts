@@ -77,8 +77,12 @@ export class SceneComponent implements OnInit, OnChanges {
       this.editHidden = false;
     }
 
-    this.houseService.getListOfFloors().subscribe(floors=>{
-      this.listOfFloors = floors;
+    this.houseService.getListOfFloors().subscribe(res=>{
+      if(!res.success){
+        console.log(res.msg)
+      } else{
+        this.listOfFloors = res.floors;
+      }
     })
 
     this.selectedFloor = "select floor";

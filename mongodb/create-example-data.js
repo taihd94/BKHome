@@ -21,9 +21,7 @@ mongoose.connection.once('connected', function () {
 });
 
 var User = require('./user-model/user');
-var House = require('./home-model/house');
 var Floor = require('./home-model/floor');
-var Room = require('./home-model/room');
 var LightingControl = require('./home-model/lightingControl');
 var SensorModule = require('./home-model/sensorModule');
 var Scene = require('./home-model/scenes');

@@ -1,5 +1,4 @@
 const mongoose = require('mongoose');
-const Floor = require('./floor');
 const Schema = mongoose.Schema;
 
 const LightingControlSchema = new Schema({
@@ -22,6 +21,7 @@ const LightingControlSchema = new Schema({
 }, {collection: "devices", versionKey: false});
 
 const LightingControl = module.exports = mongoose.model('LightingControl', LightingControlSchema);
+const Floor = require('./floor');
 
 module.exports.findAndUpdateLight = function (lightId, value, callback) {
   LightingControl.findOne({'lights._id' : lightId}, (err, device)=>{
@@ -90,12 +90,10 @@ module.exports.getLightDetails = function(lightId, callback){
 }
 
 module.exports.getLightsDetails = function(listOfLights, callback){
-  console.log(listOfLights);
   let rooms = [];
   let roomIndexArr = [];
   let index = 0;
   let forLoopFinshCheck = 0;
-  let breakCheck = false;
   for(let lightOfScene of listOfLights){
     let lightId = lightOfScene._id;
     LightingControl.findOne({"lights._id": lightId}, (err, device)=>{
@@ -128,29 +126,9 @@ module.exports.getLightsDetails = function(listOfLights, callback){
               callback(rooms);
             }
           })
-        } 
+        }
       }
     })
 
   }
 }
-
-// module.exports.getLightsDetail = function(lightId, callback){
-//   LightingControl.findOne({"lights._id": lightId}, (err, device)=>{
-//     if(err) throw err;
-//     if(device){
-//       Floor.getFloorAndRoomByRoomId(device.roomId, result=>{
-//         let light = device.lights.id(lightId);
-//         callback({success: true,
-//                   roomId: device.roomId,
-//                   floorName: result.floorName,
-//                   roomName: result.roomName,
-//                   name: light.name,
-//                   dimmable: light.dimmable,
-//                   typeOfLight: light.typeOfLight
-//         });
-//       })
-//       // callback({success: true, roomId: device.roomId})
-//     }
-//   })
-// }

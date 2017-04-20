@@ -48,7 +48,11 @@ export class ConfigNavbarComponent implements OnInit {
 
   getListOfFloors(){
     this.houseService.getListOfFloors().subscribe(res => {
-      this.floors = res;
+      if(!res.success){
+        console.log(res.msg)
+      } else{
+        this.floors = res.floors;
+      }
     },
     err => {
         console.log(err);

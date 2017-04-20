@@ -20,7 +20,6 @@ export class LogicalOperation2ndLayerComponent implements OnInit {
   operator: String;
 
   ngOnInit() {
-    console.log(this.operationId);
     this.ruleService.getLogicalOperation(this.operationId).subscribe(res=>{
       if(!res.success){
         console.log(res.msg)

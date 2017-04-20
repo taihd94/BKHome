@@ -3,7 +3,6 @@ const ExtractJwt = require('passport-jwt').ExtractJwt;
 const User = require('../mongodb/user-model/user');
 const config = require('../config/database');
 
-const House = require('../mongodb/home-model/house');
 const Floor = require('../mongodb/home-model/floor');
 
 module.exports = function(passport){

@@ -9,7 +9,7 @@ const DevicesSchema = new Schema({
 }, {versionKey: false});
 
 const Devices = module.exports = mongoose.model('devices', DevicesSchema);
-
+const Floors = require('./floor');
 
 module.exports.getDevice = function(deviceId, callback){
   Devices.findById(deviceId, (err, device)=>{
@@ -69,6 +69,7 @@ module.exports.updateRoomId = function(deviceId, roomId, callback){
           callback({success: true, msg: "roomId has been updated to device"});
         }
       });
+
     } else {
       callback({success: false, msg: "device not found"});
     }
@@ -104,6 +105,29 @@ module.exports.getListOfDevicesInRoom = function(roomId, callback){
       callback({success: true, msg: "devices found", devices: devices});
     } else {
       callback({success: false, msg: "No device found"});
+    }
+  })
+}
+
+module.exports.getListOfDevicesInHouse = function(callback){
+  Floors.getListOfFloors(result=>{
+    if(result.success){
+      let listOfFloors = result.floors;
+      for(let i=0; i<listOfFloors.length; i++){
+        let rooms = listOfFloors[i].rooms;
+        for(let j=0; j<rooms.length; j++){
+          let roomId = rooms[j]._id;
+          Devices.getListOfDevicesInRoom(roomId, result=>{
+            if(result.success){
+              let devices = result.devices;
+              listOfFloors[i].rooms[j].devices = devices;
+              if(((i+1)*(j+1))==((listOfFloors.length)*(rooms.length))){
+                callback({success: true, listOfDevices: listOfFloors});
+              }
+            }
+          })
+        }
+      }
     }
   })
 }

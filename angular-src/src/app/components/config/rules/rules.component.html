@@ -1,7 +1,8 @@
 <div class="col-md-8">
     <!-- rule -->
     <div class="rule" *ngFor="let rule of rules">
-      <app-rule [rule]="rule" (removerule)="getListOfRules()"></app-rule>
+      <app-rule [rule]="rule"
+                (removerule)="getListOfRules()"></app-rule>
     </div>
     <!-- rule -->
 

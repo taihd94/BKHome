@@ -36,8 +36,12 @@ export class SensorModuleComponent implements OnInit {
     permission: Boolean;
 
     ngOnInit() {
-      this.houseService.getListOfFloors().subscribe(floors=>{
-        this.listOfFloors = floors;
+      this.houseService.getListOfFloors().subscribe(res=>{
+        if(!res.success){
+          console.log(res.msg)
+        } else{
+          this.listOfFloors = res.floors;
+        }
         if(this.sensorModule.roomId){
           for(let i = 0; i < this.listOfFloors.length; i++){
             for(let j = 0; j < this.listOfFloors[i].rooms.length; j++){

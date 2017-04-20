@@ -63,12 +63,13 @@ module.exports.getListOfRules = function(callback) {
     .find()
     // .populate({
     //   path: 'ifConditions.operation',
-    //   populate : {
-    //     path: '_1stOperand.operation _2ndOperand.operation'}
+    //   populate: {
+    //     path: '_1stOperand.operation'
+    //   }
     // })
     .exec((err, rules)=>{
       if(err) throw err;
-      if(rules.length){
+      if(!!rules.length){
         callback({success: true, rules: rules});
       } else {
         callback({sucess: false, msg: 'No rule found!'});
