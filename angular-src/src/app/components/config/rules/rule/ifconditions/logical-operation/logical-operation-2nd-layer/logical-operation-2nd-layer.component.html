@@ -1,8 +1,12 @@
 <div class="checkIfDataAvailabel" *ngIf="isDataAvailable">
   <div class="_1st-operand">
     <app-relational-operation
-            [operationId]='_1stOperand_id'
-            [editHidden]="editHidden">
+            [operation]='_1stOperand'
+            [listOfDevicesInHouse]="listOfDevicesInHouse"
+            [editHidden]="editHidden"
+            [addOperationHidden]="true"
+            (deleteOperationEvent)="_1stOperand_deleteOperation($event)"
+            (addOperationEvent)="_1stOperand_addOperation()">
     </app-relational-operation>
   </div>
   <div class="operator">
@@ -21,8 +25,12 @@
   <hr/>
   <div class="_2nd-operand">
     <app-relational-operation
-            [operationId]='_2ndOperand_id'
-            [editHidden]="editHidden">
+            [operation]='_2ndOperand'
+            [listOfDevicesInHouse]="listOfDevicesInHouse"
+            [editHidden]="editHidden"
+            [addOperationHidden]="true"
+            (deleteOperationEvent)="_2ndOperand_deleteOperation($event)"
+            (addOperationEvent)="_2ndOperand_addOperation()">
     </app-relational-operation>
   </div>
 </div>

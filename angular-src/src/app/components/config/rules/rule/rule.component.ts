@@ -13,6 +13,7 @@ import * as moment from 'moment';
 })
 export class RuleComponent implements OnInit, OnChanges {
   @Input() rule;
+  @Input() listOfDevicesInHouse;
   @Output() removerule = new EventEmitter();
 
   constructor(
@@ -52,7 +53,7 @@ export class RuleComponent implements OnInit, OnChanges {
   //--add Room--//
 
   btnSaveHidden = true;
-  editHidden = true;
+  editHidden = false;
 
   ruleDeletedName: String;
 

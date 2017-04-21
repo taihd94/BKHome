@@ -2,6 +2,7 @@
     <!-- rule -->
     <div class="rule" *ngFor="let rule of rules">
       <app-rule [rule]="rule"
+                [listOfDevicesInHouse]="listOfDevicesInHouse"
                 (removerule)="getListOfRules()"></app-rule>
     </div>
     <!-- rule -->

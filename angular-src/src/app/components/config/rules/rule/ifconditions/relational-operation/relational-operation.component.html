@@ -1,43 +1,49 @@
+<div bsModal #smModal="bs-modal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-sm">
+    <div class="modal-content">
+      <div class="modal-header" style="padding: 40px 0px">
+        <div class="list-of-room" *ngFor="let room of listOfDevicesInHouse">
+          <a class="room-floor">
+            <span><i aria-hidden="true" class="fa fa-home"></i> {{room.floorName}} </span>
+            <span><i aria-hidden="true" class="fa fa-caret-right"></i> {{room.roomName}} </span>
+          </a>
+          <div class="list-of-sensors" *ngFor="let sensor of room.sensors">
+            <a class="device">{{sensor.name}} sensor</a>
+            <!-- <a class="device-type">sensor</a> -->
+          </div>
+          <div class="list-of-lights" *ngFor="let light of room.lights">
+            <a class="device">{{light.name}}</a>
+            <!-- <a class="device-type">light</a> -->
+          </div>
+        </div>
+      </div>
+      <div class="modal-body">
+        <button type="button" class="btn btn-success btn-modal" (click)="smModal.hide()">OK</button>
+        <button type="button" class="btn btn-danger btn-modal" (click)="smModal.hide()">CANCEL</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
 <div class="row">
   <div class="col-md-3 device-name">
     <p [hidden]="!editHidden">{{deviceName}}</p>
     <div class="dropdown" [hidden]="editHidden">
-      <button class="btn dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+      <button class="btn" type="button"  (click)="smModal.show()" aria-haspopup="true" aria-expanded="true">
         {{deviceName}}
-        <span class="caret" ></span>
+        <!-- <span class="caret" ></span> -->
       </button>
-      <ul class="dropdown-menu scrollable-menu" role="menu" aria-labelledby="dropdownMenu1" [hidden]="editHidden">
-        <li><a class="room-floor">
-          <span><i aria-hidden="true" class="fa fa-home"></i> Ground </span>
-          <span><i aria-hidden="true" class="fa fa-caret-right"></i> Living room </span></a>
-        </li>
-        <li><a class="device">Light 1</a></li>
-        <li><a class="device">Light 2</a></li>
-        <li><a class="device">Light 3</a></li>
-        <li><a class="device">Light 4</a></li>
-        <li><a class="device">Sensor 1</a></li>
-        <li><a class="device">Sensor 2</a></li>
-        <li><a class="room-floor">
-          <span><i aria-hidden="true" class="fa fa-home"></i> 1st Floor </span>
-          <span><i aria-hidden="true" class="fa fa-caret-right"></i> Bedroom </span></a>
-        </li>
-        <li><a class="device">Light 1</a></li>
-        <li><a class="device">Light 2</a></li>
-        <li><a class="device">Light 3</a></li>
-        <li><a class="device">Light 4</a></li>
-        <li><a class="device">Sensor 1</a></li>
-        <li><a class="device">Sensor 2</a></li>
-      </ul>
     </div>
   </div>
-  <div class="col-md-6 operator">
+  <div class="col-md-5 operator">
     <p [hidden]="!editHidden">{{operator}}</p>
     <div class="dropdown" [hidden]="editHidden">
       <button class="btn dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
         {{operator}}
         <span class="caret" ></span>
       </button>
-      <ul class="dropdown-menu scrollable-menu" role="menu" aria-labelledby="dropdownMenu1" [hidden]="editHidden">
+      <ul class="dropdown-menu scrollable-menu-1" role="menu" aria-labelledby="dropdownMenu1" [hidden]="editHidden">
         <li><a><span class="operator-symbol">==</span> <span class="operator-string">Equal to</span></a></li>
         <li><a><span class="operator-symbol">!=</span> <span class="operator-string">Not Equal to</span></a></li>
         <li><a><span class="operator-symbol"><</span> <span class="operator-string">Less than</span></a></li>
@@ -52,5 +58,18 @@
     <div class="input-value" [hidden]="editHidden">
       <input class="form-control" type="text" name="status" value="{{value}}" >
     </div>
+  </div>
+  <div class="col-md-2" style="padding-left: 5px;" [hidden]="editHidden">
+    <div class="dropdown">
+      <button class="btn dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+        <i class="fa fa-bars menu" aria-hidden="true"></i>
+      </button>
+      <ul class="dropdown-menu scrollable-menu-2" role="menu" aria-labelledby="dropdownMenu1" [hidden]="editHidden">
+        <li (click)="deleteOperation()"><a> Delete operation</a></li>
+        <li (click)="addOperation()" [hidden]="addOperationHidden"><a>Add operation</a></li>
+      </ul>
+    </div>
+    <!-- <i class="fa fa-minus-square remove-device" aria-hidden="true" [hidden]="editHidden"></i>
+    <i class="fa fa-plus-square add-device" aria-hidden="true"  [hidden]="editHidden||addOperationHidden" ></i> -->
   </div>
 </div>

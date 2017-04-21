@@ -305,6 +305,7 @@ for(var i = 0; i< scene.length; i++) {
 
 var RelationalOperations = [
   new RelationalOperation({
+    _type: 'RelationalOperation',
     _id: condition_id_1,
     deviceId: sensor_id_3,
     operator: '>=',
@@ -312,12 +313,14 @@ var RelationalOperations = [
     result: true
   }),
   new RelationalOperation({
+    _type: 'RelationalOperation',
     _id: condition_id_2,
     deviceId: sensor_id_2,
     operator: '!=',
     value: 1,
     result: true
   }),new RelationalOperation({
+    _type: 'RelationalOperation',
     _id: condition_id_3,
     deviceId: sensor_id_1,
     operator: '<',
@@ -328,41 +331,26 @@ var RelationalOperations = [
 
 var logicalOperations = [
   new LogicalOperation({
+    _type: 'LogicalOperation',
     _id: logicalOperation_id_1,
-    _1stOperand: {
-      _type: 'RelationalOperation',
-      operation: condition_id_2
-    },
-    _2ndOperand: {
-      _type: 'RelationalOperation',
-      operation: condition_id_3
-    },
+    _1stOperand: condition_id_2,
+    _2ndOperand: condition_id_3,
     operator: 'AND',
     result: false
   }),
   new LogicalOperation({
+    _type: 'LogicalOperation',
     _id: logicalOperation_id_2,
-    _1stOperand: {
-      _type: 'RelationalOperation',
-      operation: condition_id_1
-    },
-    _2ndOperand: {
-      _type: 'LogicalOperation',
-      operation: logicalOperation_id_1
-    },
+    _1stOperand: condition_id_1,
+    _2ndOperand: condition_id_1,
     operator: 'OR',
     result: false
   }),
   new LogicalOperation({
+    _type: 'LogicalOperation',
     _id: logicalOperation_id_3,
-    _1stOperand: {
-      _type: 'LogicalOperation',
-      operation: logicalOperation_id_1
-    },
-    _2ndOperand: {
-      _type: 'LogicalOperation',
-      operation: logicalOperation_id_1
-    },
+    _1stOperand: logicalOperation_id_1,
+    _2ndOperand: logicalOperation_id_1,
     operator: 'OR',
     result: false
   })
@@ -376,10 +364,7 @@ var rules = [
       to: '5:00 AM'
     },
     repeat: [true, true, true, true, true, true, true],
-    ifConditions: {
-      _type: 'RelationalOperation',
-      operation: condition_id_1
-    },
+    ifConditions: condition_id_1,
     thenActions: [{
       deviceId: light_id_5,
       value: 1
@@ -392,10 +377,7 @@ var rules = [
       to: '5:00 AM'
     },
     repeat: [true, true, true, true, true, true, true],
-    ifConditions: {
-      _type: 'LogicalOperation',
-      operation: logicalOperation_id_2
-    },
+    ifConditions: logicalOperation_id_2,
     thenActions: [{
       deviceId: light_id_5,
       value: 1
@@ -408,10 +390,7 @@ var rules = [
       to: '5:00 AM'
     },
     repeat: [true, true, true, true, true, true, true],
-    ifConditions: {
-      _type: 'LogicalOperation',
-      operation: logicalOperation_id_3
-    },
+    ifConditions: logicalOperation_id_3,
     thenActions: [{
       deviceId: light_id_5,
       value: 1

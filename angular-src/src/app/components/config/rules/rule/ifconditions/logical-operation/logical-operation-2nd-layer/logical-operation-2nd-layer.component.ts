@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 import { RuleService } from '../../../../../../../services/rest-api/rule.service';
 
 @Component({
@@ -7,31 +7,57 @@ import { RuleService } from '../../../../../../../services/rest-api/rule.service
   styleUrls: ['./logical-operation-2nd-layer.component.css']
 })
 export class LogicalOperation2ndLayerComponent implements OnInit {
-  @Input() operationId;
+  @Input() operation;
+  @Input() listOfDevicesInHouse;
   @Input() editHidden;
+  @Output() deleteOperation = new EventEmitter<Object>();
+  @Output() addOperation = new EventEmitter<Object>();
+
   constructor(
     private ruleService: RuleService
   ) { }
 
   isDataAvailable = false;
-  operation: any;
-  _1stOperand_id: String;
-  _2ndOperand_id: String;
+  _1stOperand: String;
+  _2ndOperand: String;
   operator: String;
 
   ngOnInit() {
-    this.ruleService.getLogicalOperation(this.operationId).subscribe(res=>{
-      if(!res.success){
-        console.log(res.msg)
-      } else {
-        this.operation = res.operation;
-        this._1stOperand_id = this.operation._1stOperand.operation;
-        this._2ndOperand_id = this.operation._2ndOperand.operation;
-        this.operator = this.operation.operator;
-        this.isDataAvailable = true;
-      }
-    })
+    this._1stOperand = this.operation._1stOperand;
+    this._2ndOperand = this.operation._2ndOperand;
+    this.operator = this.operation.operator;
+    this.isDataAvailable = true;
 
+  }
+
+  _1stOperand_deleteOperation(operation){
+    let msg = {
+      operand: '_1stOperand',
+      operation: operation
+    }
+    this.deleteOperation.emit(msg);
+  }
+
+  _2ndOperand_deleteOperation(operation){
+    let msg = {
+      operand: '_2ndOperand',
+      operation: operation
+    }
+    this.deleteOperation.emit(msg);
+  }
+
+  _1stOperand_addOperation(){
+    let msg = {
+      operand: '_1stOperand'
+    }
+    this.addOperation.emit(msg);
+  }
+
+  _2ndOperand_addOperation(operation){
+    let msg = {
+      operand: '_2ndOperand'
+    }
+    this.addOperation.emit(msg);
   }
 
 }

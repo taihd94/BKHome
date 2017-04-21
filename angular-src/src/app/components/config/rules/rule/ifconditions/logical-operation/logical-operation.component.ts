@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, OnChanges, Input, Output, EventEmitter } from '@angular/core';
 import { RuleService } from '../../../../../../services/rest-api/rule.service';
 
 @Component({
@@ -6,9 +6,12 @@ import { RuleService } from '../../../../../../services/rest-api/rule.service';
   templateUrl: './logical-operation.component.html',
   styleUrls: ['./logical-operation.component.css']
 })
-export class LogicalOperationComponent implements OnInit {
-  @Input() operationId;
+export class LogicalOperationComponent implements OnInit, OnChanges {
+  @Input() operation;
+  @Input() listOfDevicesInHouse;
   @Input() editHidden;
+  @Output() deleteOperationEvent = new EventEmitter<Object>();
+  @Output() addOperationEvent = new EventEmitter<Object>();
   constructor(
     private ruleService: RuleService
   ) { }
@@ -19,31 +22,57 @@ export class LogicalOperationComponent implements OnInit {
   //   operator: String
   // };
   isDataAvailable = false;
-  operation: any;
   _1stOperandType = '';
   _2ndOperandType = '';
-  _1stOperand_id: String;
-  _2ndOperand_id: String;
+  _1stOperand: String;
+  _2ndOperand: String;
   operator = '';
 
   ngOnInit() {
-    this.ruleService.getLogicalOperation(this.operationId).subscribe(res=>{
-      if(!res.success){
-        console.log(res.msg);
-      } else {
-        this.operation = res.operation;
-        this._1stOperandType = this.operation._1stOperand._type;
-        this._2ndOperandType = this.operation._2ndOperand._type;
-        this._1stOperand_id = this.operation._1stOperand.operation;
-        this._2ndOperand_id = this.operation._2ndOperand.operation;
-        this.operator = this.operation.operator;
-        this.isDataAvailable = true;
+    this._1stOperandType = this.operation._1stOperand._type;
+    this._2ndOperandType = this.operation._2ndOperand._type;
+    this._1stOperand = this.operation._1stOperand;
+    this._2ndOperand = this.operation._2ndOperand;
+    this.operator = this.operation.operator;
+    this.isDataAvailable = true;
+  }
 
-      }
-    })
+  ngOnChanges(){
+    this._1stOperandType = this.operation._1stOperand._type;
+    this._2ndOperandType = this.operation._2ndOperand._type;
+    this._1stOperand = this.operation._1stOperand;
+    this._2ndOperand = this.operation._2ndOperand;
+    this.operator = this.operation.operator;
+  }
 
+  _1stOperand_deleteOperation(operation){
+    let msg = {
+      operand: '_1stOperand',
+      operation: operation
+    }
+    this.deleteOperationEvent.emit(msg);
+  }
 
+  _2ndOperand_deleteOperation(operation){
+    let msg = {
+      operand: '_2ndOperand',
+      operation: operation
+    }
+    this.deleteOperationEvent.emit(msg);
+  }
 
+  _1stOperand_addOperation(operation){
+    let msg = {
+      operand: '_1stOperand'
+    }
+    this.addOperationEvent.emit(msg);
+  }
+
+  _2ndOperand_addOperation(operation){
+    let msg = {
+      operand: '_2ndOperand'
+    }
+    this.addOperationEvent.emit(msg);
   }
 
 }

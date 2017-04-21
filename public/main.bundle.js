@@ -206,7 +206,7 @@ exports = module.exports = __webpack_require__(8)();
 
 
 // module
-exports.push([module.i, "._1st-operand{\n  margin-top: 12px;\n}\n\nhr {\n  height: 1px;\n  background: #dfd7ca;\n  margin: 6px 0px 16px 0px;\n}\n\n.operator{\n  margin: -5px 17px 0px 29px;\n  font-size: 17px;\n  font-weight: 800;\n  color: #626262;\n  float: left;\n}\n\n.operator>p{\n  margin: 0px;\n}\n\n.dropdown-toggle{\n  background-color: inherit;\n  color: #626262;\n  font-size: 17px;\n  font-weight: 800;\n  padding: 0px;\n}\n", ""]);
+exports.push([module.i, "._1st-operand, ._2nd-operand{\n  margin: 6px 0px;\n}\n\nhr {\n  height: 1px;\n  background: #dfd7ca;\n  margin: 16px 0px;\n}\n\n.operator{\n  margin: 0px 17px 0px 29px;\n  font-size: 17px;\n  font-weight: bold;\n  color: #626262;\n  float: left;\n}\n\n.operator>p{\n  margin: 0px;\n}\n\n.dropdown-toggle{\n  background-color: inherit;\n  color: #626262;\n  font-size: 17px;\n  font-weight: 800;\n  padding: 0px;\n}\n", ""]);
 
 // exports
 
@@ -224,7 +224,7 @@ exports = module.exports = __webpack_require__(8)();
 
 
 // module
-exports.push([module.i, "hr {\n  height: 1px;\n  background: #dfd7ca;\n  margin: 2px 0px;\n  margin-left: 14px;\n}\n\n.operator{\n  margin: 15px 29px;\n  font-size: 17px;\n  font-weight: 800;\n  color: #626262;\n}\n\n.dropdown-toggle{\n  background-color: inherit;\n  color: #626262;\n  font-size: 17px;\n  font-weight: 800;\n  padding: 0px;\n}\n", ""]);
+exports.push([module.i, "hr {\n  height: 1px;\n  background: #dfd7ca;\n  margin: 14px 0px;\n  margin-left: 14px;\n}\n\n.operator{\n  margin: 15px 29px;\n  font-size: 17px;\n  font-weight: 800;\n  color: #626262;\n}\n\n.dropdown-toggle{\n  background-color: inherit;\n  color: #626262;\n  font-size: 17px;\n  font-weight: 800;\n  padding: 0px;\n}\n", ""]);
 
 // exports
 
@@ -242,7 +242,7 @@ exports = module.exports = __webpack_require__(8)();
 
 
 // module
-exports.push([module.i, ".row{\n  margin: 0px;\n  margin-left: 44px;\n  color: #5f5f5f;\n  font-size: 17px;\n}\n\n.col-md-4{\n  padding: 0px;\n}\n\n.device-name, .operator, .value{\n  text-align: center;\n}\n\n.scrollable-menu {\n    height: auto;\n    max-height: 200px;\n    min-width: 242px;\n    overflow-x: hidden;\n    cursor: pointer;\n}\n\n.operator-string{\n  position: absolute;\n  left: 25%;\n}\n\n.room-floor{\n    font-size: 15px;\n    font-weight: 700;\n}\n\n.device{\n  margin-left: 20px;\n  text-transform: none;\n  font-size: 12px;\n  cursor: pointer;\n}\n\n.input-value>input{\n  width: 100%;\n  background-color: #dddddd;\n  text-align: center;\n}\n", ""]);
+exports.push([module.i, ".row{\n  margin: 0px;\n  margin-left: 54px;\n  color: #5f5f5f;\n  font-size: 17px;\n}\n\n.col-md-4{\n  padding: 0px;\n}\n\n .operator, .value{\n  text-align: center;\n  font-size: 16px;\n}\n\n.remove-device{\n  margin-right: 5px;\n}\n\n/*.add-device, .remove-device, .menu{\n  font-size: 20px;\n  padding: 13px 0px;\n}*/\n\n.operator>p, .value>p{\n  margin: 0px;\n}\n\n.device-name>p{\n  margin: 0px 0px 0px 15px;\n}\n\n.operator>p{\n  min-width: 172px;\n}\n\n.scrollable-menu-1 {\n    height: auto;\n    max-height: 400px;\n    min-width: 300px;\n    overflow-x: hidden;\n    cursor: pointer;\n}\n\n.operator-string{\n  position: absolute;\n  left: 25%;\n}\n\n.room-floor{\n    font-size: 19px;\n    font-weight: 700;\n    color: #6d6d6d;\n    text-decoration: none;\n    padding-left: 40px;\n}\n\n\n.device{\n  padding-left: 62px;\n  text-transform: none;\n  cursor: pointer;\n  color: #868686;\n  text-decoration: none;\n  width: auto;\n  display: block;\n  font-size: 16px;\n}\n\n\n.device:hover{\n  color: #404040;\n  font-weight: bold;\n}\n\n.list-of-sensors, .list-of-lights{\n  padding: 4px 0px;\n  margin: 4px 0px;\n}\n\n.list-of-sensors:hover, .list-of-lights:hover{\n  background-color: whitesmoke;\n}\n\n.device-type{\n\n}\n\n.input-value>input{\n  width: 100%;\n  background-color: #dddddd;\n  text-align: center;\n}\n\n.form-control{\n  padding: 12px 0px;\n}\n\n/*modal*/\n.modal-title {\n  text-align: center;\n}\n\n.modal-body{\n  margin: 0 auto;\n  text-align: center;\n}\n\n.btn-modal {\n  min-width: 80px;\n  margin-left: 8px;\n  margin-right: 8px;\n}\n\n.form-group {\n    float: left;\n    margin-right: 20px;\n}\n/*modal*/\n\n.scrollable-menu-2{\n  cursor: pointer;\n}\n", ""]);
 
 // exports
 
@@ -350,7 +350,7 @@ exports = module.exports = __webpack_require__(8)();
 
 
 // module
-exports.push([module.i, ".fa {\n  cursor: pointer;\n  color: auto;\n  background-color: inherit;\n  border: 0px;\n}\n\n\n.fa-plus-circle {\n  color: #93c54b;\n}\n\ninput {\n  height: 30px;\n  margin-right: 10px;\n}\n/*add scene*/\n\n/*scene*/\n\n.scene{\n  margin-top: 50px;\n}\n\n.sceneName{\n  margin-top: 10px;\n  margin-left: 15px;\n  cursor: pointer;\n}\n\n.row, .scene-body{\n  background-color: #f8f5f0;\n  margin: 0;\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n}\n\n.scirpt-body>.col-md-4{\n  padding: 40px 35px 0px 35px;\n  background-color: #272c2f;\n}\n\n\n.time-date-picker{\n  color: white;\n}\n\n.date-picker>p{\n  margin-bottom: 0;\n}\n\n.time-date-picker>*>p{\n  font-size: 20px;\n}\n\n.time-date-picker>*>input{\n  background-color: inherit;\n  border: 0px;\n  border-radius: 0px;\n  border-bottom: 1px solid rgba(158, 158, 158, 0.55);\n  font-size: 15px;\n  margin: 11px 0px;\n  padding-bottom: 9px;\n  width: 91%;\n  cursor: pointer;\n}\n\n\ntimepicker{\n  float: left;\n}\n\n.btn-timepicker{\n  float: left;\n  padding: 12px 6px;\n  margin: 24% 0px;\n  background-color: #4CAF51;\n}\n\n.btn-timepicker:active{\n  background-color: #4CAF51;\n}\n\n\n.time-picker, .repeat{\n  margin: 20px 0;\n}\n\n.time-picker>p, .repeat>p{\n  margin-bottom: -5px;\n}\n\n.btn-time{\n  background-color: inherit;\n  border-bottom: 1px solid rgba(158, 158, 158, 0.55);\n  border-radius: 0;\n  width: 91%;\n  min-height: 43px;\n  font-size: 20px;\n  text-align: left;\n  padding: 11px 0px 6px 0px;\n  font-weight: 100;\n}\n\n.btn-time:focus{\n  outline: none;\n}\n\ninput:focus{\n  outline: none;\n}\n\n.day-picker{\n  margin-top: 16px;\n}\n\n.checkbox>label>input{\n  top: -8px;\n}\n\n.deivce-picker{\n margin: 0;\n padding: 0;\n}\n\n.panel {\n  margin-bottom: 40px;\n  min-width: 600px;\n  border: 0px;\n  border-radius: 0;\n}\n\n.panel-pricing {\n  -moz-transition: all .3s ease;\n  -o-transition: all .3s ease;\n  -webkit-transition: all .3s ease;\n}\n.panel-pricing:hover {\n  box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.2);\n}\n.panel-pricing .panel-heading {\n  height: 60px;\n  border: 0;\n  border-radius: 0;\n}\n.panel-pricing .panel-heading .fa {\n  margin-top: 10px;\n  font-size: 28px;\n  float:left;\n}\n\nh3 {\n  float:left;\n}\n\n.panel-pricing .list-group-item {\n  color: #777777;\n  border-bottom: 1px solid rgba(250, 250, 250, 0.5);\n  background-color: inherit;\n}\n.panel-pricing .list-group-item:last-child {\n  border-bottom-right-radius: 0px;\n  border-bottom-left-radius: 0px;\n}\n.panel-pricing .list-group-item:first-child {\n  border-top-right-radius: 0px;\n  border-top-left-radius: 0px;\n}\n.panel-pricing .panel-body {\n  background-color: inherit;\n  font-size: 20px;\n  color: #777777;\n  padding: 2px;\n  margin: 0px;\n  text-align: left;\n}\n\n.x-icon{\n  float: right;\n}\n\n.panel-body-content {\n  margin-left: 15px;\n}\n\n.panel-body-btn{\n  float: left;\n}\n\n.panel-body-icon{\n  float: left;\n  margin-top: 7px;\n}\n\n\n.dropdown-toggle{\n  background-color: inherit;\n  color: black;\n  font-size: 18px;\n  font-style: normal;\n  font-weight: lighter;\n  text-transform: none;\n  padding: 10px;\n  float: left;\n  color: #616161;\n}\n\na {\n  cursor: pointer;\n  color: #383838;\n}\n\n\n.form-group{\n  margin: 0;\n}\n\n.panel-footer{\n  font-size: 13px;\n  font-weight: 100;\n  text-transform: none;\n}\n\n\n.time-btn-ok, .time-btn-clear, .repeat-btn-ok{\n  height: 38px;\n  width: 65px;\n  line-height: 10px;\n  margin: 3px 5px 12px 0px;\n  margin-bottom: 12px;\n}\n\n.time-btn-ok{\n  background-color: #4caf50;\n}\n\n.time-btn-clear{\n  background-color: #f44336;\n}\n\n\n.scene{\n  margin: 25px 15px 0px 25px;\n}\n\n\n/*scene*/\n\n\n.modal-title {\n  text-align: center;\n}\n\n.modal-body{\n  margin: 0 auto;\n  text-align: center;\n}\n\n.btn-modal {\n  min-width: 80px;\n  margin-left: 10px;\n  margin-right: 10px;\n}\n\n.form-group {\n    float: left;\n    margin-right: 20px;\n}\n\n\n.btn-add-scene {\n    line-height: 0;\n}\n\n.edit-save{\n  padding: 16px 11px 5px 0px;\n  height: 65px;\n  position: absolute;\n  right: 5px;\n  bottom: 5px;\n}\n\n\n.btn-edit{\n  float: right;\n  margin-right: 5px;\n}\n\n.btn-edit>button{\n  padding: 7px 15px;\n  background-color: inherit;\n}\n\n.btn-edit>button:hover{\n  padding: 7px 15px;\n  background-color: #325d88;\n}\n\n .btn-edit>button:focus{\n   background-color: #325d88;\n   border: 0px;\n   border-radius: 0;\n }\n\n .btn-edit-save{\n   float: right;\n }\n\n .btn-edit-save>button{\n   padding: 7px 15px;\n   background-color:  #4CAF50;\n   color: white;\n }\n\n\n.add-room{\n  height: 52px;\n}\n\n.footer{\n  width: 100%;\n  height: 70px;\n}\n", ""]);
+exports.push([module.i, ".fa {\n  cursor: pointer;\n  color: auto;\n  background-color: inherit;\n  border: 0px;\n}\n\n\n.fa-plus-circle {\n  color: #93c54b;\n}\n\ninput {\n  height: 30px;\n  margin-right: 10px;\n}\n/*add scene*/\n\n/*scene*/\n\n.scene{\n  margin-top: 50px;\n}\n\n.sceneName{\n  margin-top: 10px;\n  margin-left: 15px;\n  cursor: pointer;\n}\n\n.row, .scene-body{\n  background-color: #f8f5f0;\n  margin: 0;\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n}\n\n.scirpt-body>.col-md-4{\n  padding: 40px 35px 0px 35px;\n  background-color: #272c2f;\n}\n\n\n.time-date-picker{\n  color: white;\n}\n\n.date-picker>p{\n  margin-bottom: 0;\n}\n\n.time-date-picker>*>p{\n  font-size: 20px;\n}\n\n.time-date-picker>*>input{\n  background-color: inherit;\n  border: 0px;\n  border-radius: 0px;\n  border-bottom: 1px solid rgba(158, 158, 158, 0.55);\n  font-size: 15px;\n  margin: 11px 0px;\n  padding-bottom: 9px;\n  width: 91%;\n  cursor: pointer;\n}\n\n\ntimepicker{\n  float: left;\n}\n\n.btn-timepicker{\n  float: left;\n  padding: 12px 6px;\n  margin: 24% 0px;\n  background-color: #4CAF51;\n}\n\n.btn-timepicker:active{\n  background-color: #4CAF51;\n}\n\n\n.time-picker, .repeat{\n  margin: 20px 0;\n}\n\n.time-picker>p, .repeat>p{\n  margin-bottom: -5px;\n}\n\n.btn-time{\n  background-color: inherit;\n  border-bottom: 1px solid rgba(158, 158, 158, 0.55);\n  border-radius: 0;\n  width: 91%;\n  min-height: 43px;\n  font-size: 20px;\n  text-align: left;\n  padding: 11px 0px 6px 0px;\n  font-weight: 100;\n}\n\n.btn-time:focus{\n  outline: none;\n}\n\ninput:focus{\n  outline: none;\n}\n\n.day-picker{\n  margin-top: 16px;\n}\n\n.checkbox>label>input{\n  top: -8px;\n}\n\n.deivce-picker{\n margin: 0;\n padding: 0;\n}\n\n.panel {\n  margin-bottom: 40px;\n  min-width: 600px;\n  border: 0px;\n  border-radius: 0;\n}\n\n.panel-pricing {\n  -moz-transition: all .3s ease;\n  -o-transition: all .3s ease;\n  -webkit-transition: all .3s ease;\n}\n.panel-pricing:hover {\n  box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.2);\n}\n.panel-pricing .panel-heading {\n  height: 60px;\n  border: 0;\n  border-radius: 0;\n}\n.panel-pricing .panel-heading .fa {\n  margin-top: 10px;\n  font-size: 28px;\n  float:left;\n}\n\nh3 {\n  float:left;\n}\n\n.panel-pricing .list-group-item {\n  color: #777777;\n  border-bottom: 1px solid rgba(250, 250, 250, 0.5);\n  background-color: inherit;\n}\n.panel-pricing .list-group-item:last-child {\n  border-bottom-right-radius: 0px;\n  border-bottom-left-radius: 0px;\n}\n.panel-pricing .list-group-item:first-child {\n  border-top-right-radius: 0px;\n  border-top-left-radius: 0px;\n}\n.panel-pricing .panel-body {\n  background-color: inherit;\n  font-size: 20px;\n  color: #777777;\n  padding: 2px;\n  margin: 0px;\n  text-align: left;\n}\n\n.x-icon{\n  float: right;\n}\n\n.panel-body-content {\n  margin-left: 15px;\n}\n\n.panel-body-btn{\n  float: left;\n}\n\n.panel-body-icon{\n  float: left;\n  margin-top: 7px;\n}\n\n\n.dropdown-toggle{\n  background-color: inherit;\n  color: black;\n  font-size: 18px;\n  font-style: normal;\n  font-weight: lighter;\n  text-transform: none;\n  padding: 10px;\n  float: left;\n  color: #616161;\n}\n\na {\n  cursor: pointer;\n  color: #383838;\n}\n\n\n.form-group{\n  margin: 0;\n}\n\n.panel-footer{\n  font-size: 13px;\n  font-weight: 100;\n  text-transform: none;\n}\n\n\n.time-btn-ok, .time-btn-clear, .repeat-btn-ok{\n  height: 38px;\n  width: 65px;\n  line-height: 10px;\n  margin: 3px 5px 12px 0px;\n  margin-bottom: 12px;\n}\n\n.time-btn-ok{\n  background-color: #4caf50;\n}\n\n.time-btn-clear{\n  background-color: #f44336;\n}\n\n\n.scene{\n  margin: 25px 15px 0px 25px;\n}\n\n\n/*scene*/\n\n\n.modal-title {\n  text-align: center;\n}\n\n\n.modal-body{\n  margin: 0 auto;\n  text-align: center;\n}\n\n.btn-modal {\n  min-width: 80px;\n  margin-left: 10px;\n  margin-right: 10px;\n}\n\n.form-group {\n    float: left;\n    margin-right: 20px;\n}\n\n\n.btn-add-scene {\n    line-height: 0;\n}\n\n.edit-save{\n  padding: 16px 11px 5px 0px;\n  height: 65px;\n  position: absolute;\n  right: 5px;\n  bottom: 5px;\n}\n\n\n.btn-edit{\n  float: right;\n  margin-right: 5px;\n}\n\n.btn-edit>button{\n  padding: 7px 15px;\n  background-color: inherit;\n}\n\n.btn-edit>button:hover{\n  padding: 7px 15px;\n  background-color: #325d88;\n}\n\n .btn-edit>button:focus{\n   background-color: #325d88;\n   border: 0px;\n   border-radius: 0;\n }\n\n .btn-edit-save{\n   float: right;\n }\n\n .btn-edit-save>button{\n   padding: 7px 15px;\n   background-color:  #4CAF50;\n   color: white;\n }\n\n\n.add-room{\n  height: 52px;\n}\n\n.footer{\n  width: 100%;\n  height: 70px;\n}\n", ""]);
 
 // exports
 
@@ -813,35 +813,35 @@ module.exports = "<!-- item -->\n    <div class=\"panel panel-primary panel-pric
 /***/ 1119:
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"if-condition\">\n  <h3>IF CONDITIONS</h3>\n</div>\n<div  class=\"operation\" [ngSwitch]=\"_type\">\n  <app-logical-operation *ngSwitchCase=\"'LogicalOperation'\" [operationId]=\"operationId\" [editHidden]=\"editHidden\"></app-logical-operation>\n  <app-relational-operation *ngSwitchCase=\"'RelationalOperation'\"\n                            [operationId]=\"operationId\"\n                            [editHidden]=\"editHidden\">\n  </app-relational-operation>\n</div>\n"
+module.exports = "<div class=\"if-condition\">\n  <h3>IF CONDITIONS</h3>\n</div>\n<div  class=\"operation\" [ngSwitch]=\"_type\">\n  <app-logical-operation *ngSwitchCase=\"'LogicalOperation'\"\n                          [operation]=\"operation\"\n                          [editHidden]=\"editHidden\"\n                          [listOfDevicesInHouse]=\"listOfDevicesInHouse\"\n                          (deleteOperationEvent)=\"ifCond_delLogiOperation($event)\"\n                          (addOperationEvent)=\"ifCond_addLogiOperation($event)\">\n</app-logical-operation>\n<app-relational-operation *ngSwitchCase=\"'RelationalOperation'\"\n                            [operation]=\"operation\"\n                            [listOfDevicesInHouse]=\"listOfDevicesInHouse\"\n                            [editHidden]=\"editHidden\"\n                            (deleteOperationEvent)=\"ifCond_delRelaOperation($event)\"\n                            (addOperationEvent)=\"ifCond_addRelaOperation($event)\">\n  </app-relational-operation>\n</div>\n"
 
 /***/ }),
 
 /***/ 1120:
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"checkIfDataAvailabel\" *ngIf=\"isDataAvailable\">\n  <div class=\"_1st-operand\">\n    <app-relational-operation\n            [operationId]='_1stOperand_id'\n            [editHidden]=\"editHidden\">\n    </app-relational-operation>\n  </div>\n  <div class=\"operator\">\n    <p [hidden]=\"!editHidden\">{{operator}}</p>\n    <div class=\"dropdown\" [hidden]=\"editHidden\">\n      <button class=\"btn dropdown-toggle\" type=\"button\" id=\"dropdownMenu1\" data-toggle=\"dropdown\" aria-haspopup=\"true\" aria-expanded=\"true\">\n        {{operator}}\n        <span class=\"caret\" ></span>\n      </button>\n      <ul class=\"dropdown-menu\" aria-labelledby=\"dropdownMenu1\" [hidden]=\"editHidden\">\n        <li><a>OR</a></li>\n        <li><a>AND</a></li>\n      </ul>\n    </div>\n  </div>\n  <hr/>\n  <div class=\"_2nd-operand\">\n    <app-relational-operation\n            [operationId]='_2ndOperand_id'\n            [editHidden]=\"editHidden\">\n    </app-relational-operation>\n  </div>\n</div>\n"
+module.exports = "<div class=\"checkIfDataAvailabel\" *ngIf=\"isDataAvailable\">\n  <div class=\"_1st-operand\">\n    <app-relational-operation\n            [operation]='_1stOperand'\n            [listOfDevicesInHouse]=\"listOfDevicesInHouse\"\n            [editHidden]=\"editHidden\"\n            [addOperationHidden]=\"true\"\n            (deleteOperationEvent)=\"_1stOperand_deleteOperation($event)\"\n            (addOperationEvent)=\"_1stOperand_addOperation()\">\n    </app-relational-operation>\n  </div>\n  <div class=\"operator\">\n    <p [hidden]=\"!editHidden\">{{operator}}</p>\n    <div class=\"dropdown\" [hidden]=\"editHidden\">\n      <button class=\"btn dropdown-toggle\" type=\"button\" id=\"dropdownMenu1\" data-toggle=\"dropdown\" aria-haspopup=\"true\" aria-expanded=\"true\">\n        {{operator}}\n        <span class=\"caret\" ></span>\n      </button>\n      <ul class=\"dropdown-menu\" aria-labelledby=\"dropdownMenu1\" [hidden]=\"editHidden\">\n        <li><a>OR</a></li>\n        <li><a>AND</a></li>\n      </ul>\n    </div>\n  </div>\n  <hr/>\n  <div class=\"_2nd-operand\">\n    <app-relational-operation\n            [operation]='_2ndOperand'\n            [listOfDevicesInHouse]=\"listOfDevicesInHouse\"\n            [editHidden]=\"editHidden\"\n            [addOperationHidden]=\"true\"\n            (deleteOperationEvent)=\"_2ndOperand_deleteOperation($event)\"\n            (addOperationEvent)=\"_2ndOperand_addOperation()\">\n    </app-relational-operation>\n  </div>\n</div>\n"
 
 /***/ }),
 
 /***/ 1121:
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"test\" *ngIf=\"isDataAvailable\">\n  <div class=\"_1st-operand\">\n    <app-relational-operation\n            *ngIf=\"_1stOperandType=='RelationalOperation'\"\n            [operationId]=\"_1stOperand_id\"\n            [editHidden]=\"editHidden\">\n    </app-relational-operation>\n    <app-logical-operation-2nd-layer\n            *ngIf=\"_1stOperandType=='LogicalOperation'\"\n            [operationId]=\"_1stOperand_id\"\n            [editHidden]=\"editHidden\">\n    </app-logical-operation-2nd-layer>\n  </div>\n  <hr/>\n  <div class=\"operator\">\n    <p [hidden]=\"!editHidden\">{{operator}}</p>\n    <div class=\"dropdown\" [hidden]=\"editHidden\">\n      <button class=\"btn dropdown-toggle\" type=\"button\" id=\"dropdownMenu1\" data-toggle=\"dropdown\" aria-haspopup=\"true\" aria-expanded=\"true\">\n        {{operator}}\n        <span class=\"caret\" ></span>\n      </button>\n      <ul class=\"dropdown-menu\" aria-labelledby=\"dropdownMenu1\" [hidden]=\"editHidden\">\n        <li><a>OR</a></li>\n        <li><a>AND</a></li>\n      </ul>\n    </div>\n  </div>\n  <hr/>\n  <div class=\"_2nd-operand\">\n    <app-relational-operation\n            *ngIf=\"_2ndOperandType=='RelationalOperation'\"\n            [operationId]=\"_2ndOperand_id\"\n            [editHidden]=\"editHidden\">\n    </app-relational-operation>\n    <app-logical-operation-2nd-layer\n            *ngIf=\"_2ndOperandType=='LogicalOperation'\"\n            [operationId]=\"_2ndOperand_id\"\n            [editHidden]=\"editHidden\">\n    </app-logical-operation-2nd-layer>\n  </div>\n</div>\n"
+module.exports = "<div class=\"test\" *ngIf=\"isDataAvailable\">\n  <div class=\"_1st-operand\">\n    <app-relational-operation\n            *ngIf=\"_1stOperandType=='RelationalOperation'\"\n            [operation]=\"_1stOperand\"\n            [listOfDevicesInHouse]=\"listOfDevicesInHouse\"\n            [editHidden]=\"editHidden\"\n            (deleteOperationEvent)=\"_1stOperand_deleteOperation($event)\"\n            (addOperationEvent)=\"_1stOperand_addOperation($event)\">\n    </app-relational-operation>\n    <app-logical-operation-2nd-layer\n            *ngIf=\"_1stOperandType=='LogicalOperation'\"\n            [operation]=\"_1stOperand\"\n            [listOfDevicesInHouse]=\"listOfDevicesInHouse\"\n            [editHidden]=\"editHidden\"\n            (deleteOperation) = \"_1stOperand_deleteOperation($event)\"\n            (addOperation) = \"_1stOperand_addOperation($event)\">\n    </app-logical-operation-2nd-layer>\n  </div>\n  <hr/>\n  <div class=\"operator\">\n    <p [hidden]=\"!editHidden\">{{operator}}</p>\n    <div class=\"dropdown\" [hidden]=\"editHidden\">\n      <button class=\"btn dropdown-toggle\" type=\"button\" id=\"dropdownMenu1\" data-toggle=\"dropdown\" aria-haspopup=\"true\" aria-expanded=\"true\">\n        {{operator}}\n        <span class=\"caret\" ></span>\n      </button>\n      <ul class=\"dropdown-menu\" aria-labelledby=\"dropdownMenu1\" [hidden]=\"editHidden\">\n        <li><a>OR</a></li>\n        <li><a>AND</a></li>\n      </ul>\n    </div>\n  </div>\n  <hr/>\n  <div class=\"_2nd-operand\">\n    <app-relational-operation\n            *ngIf=\"_2ndOperandType=='RelationalOperation'\"\n            [operation]=\"_2ndOperand\"\n            [listOfDevicesInHouse]=\"listOfDevicesInHouse\"\n            [editHidden]=\"editHidden\"\n            (deleteOperationEvent)=\"_2ndOperand_deleteOperation($event)\"\n            (addOperationEvent)=\"_2ndOperand_addOperation($event)\">\n    </app-relational-operation>\n    <app-logical-operation-2nd-layer\n            *ngIf=\"_2ndOperandType=='LogicalOperation'\"\n            [operation]=\"_2ndOperand\"\n            [listOfDevicesInHouse]=\"listOfDevicesInHouse\"\n            [editHidden]=\"editHidden\"\n            (deleteOperation) = \"_2ndOperand_deleteOperation($event)\"\n            (addOperation) = \"_2ndOperand_addOperation($event)\">\n    </app-logical-operation-2nd-layer>\n  </div>\n</div>\n"
 
 /***/ }),
 
 /***/ 1122:
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"row\">\n  <div class=\"col-md-3 device-name\">\n    <p [hidden]=\"!editHidden\">{{deviceName}}</p>\n    <div class=\"dropdown\" [hidden]=\"editHidden\">\n      <button class=\"btn dropdown-toggle\" type=\"button\" id=\"dropdownMenu1\" data-toggle=\"dropdown\" aria-haspopup=\"true\" aria-expanded=\"true\">\n        {{deviceName}}\n        <span class=\"caret\" ></span>\n      </button>\n      <ul class=\"dropdown-menu scrollable-menu\" role=\"menu\" aria-labelledby=\"dropdownMenu1\" [hidden]=\"editHidden\">\n        <li><a class=\"room-floor\">\n          <span><i aria-hidden=\"true\" class=\"fa fa-home\"></i> Ground </span>\n          <span><i aria-hidden=\"true\" class=\"fa fa-caret-right\"></i> Living room </span></a>\n        </li>\n        <li><a class=\"device\">Light 1</a></li>\n        <li><a class=\"device\">Light 2</a></li>\n        <li><a class=\"device\">Light 3</a></li>\n        <li><a class=\"device\">Light 4</a></li>\n        <li><a class=\"device\">Sensor 1</a></li>\n        <li><a class=\"device\">Sensor 2</a></li>\n        <li><a class=\"room-floor\">\n          <span><i aria-hidden=\"true\" class=\"fa fa-home\"></i> 1st Floor </span>\n          <span><i aria-hidden=\"true\" class=\"fa fa-caret-right\"></i> Bedroom </span></a>\n        </li>\n        <li><a class=\"device\">Light 1</a></li>\n        <li><a class=\"device\">Light 2</a></li>\n        <li><a class=\"device\">Light 3</a></li>\n        <li><a class=\"device\">Light 4</a></li>\n        <li><a class=\"device\">Sensor 1</a></li>\n        <li><a class=\"device\">Sensor 2</a></li>\n      </ul>\n    </div>\n  </div>\n  <div class=\"col-md-6 operator\">\n    <p [hidden]=\"!editHidden\">{{operator}}</p>\n    <div class=\"dropdown\" [hidden]=\"editHidden\">\n      <button class=\"btn dropdown-toggle\" type=\"button\" id=\"dropdownMenu1\" data-toggle=\"dropdown\" aria-haspopup=\"true\" aria-expanded=\"true\">\n        {{operator}}\n        <span class=\"caret\" ></span>\n      </button>\n      <ul class=\"dropdown-menu scrollable-menu\" role=\"menu\" aria-labelledby=\"dropdownMenu1\" [hidden]=\"editHidden\">\n        <li><a><span class=\"operator-symbol\">==</span> <span class=\"operator-string\">Equal to</span></a></li>\n        <li><a><span class=\"operator-symbol\">!=</span> <span class=\"operator-string\">Not Equal to</span></a></li>\n        <li><a><span class=\"operator-symbol\"><</span> <span class=\"operator-string\">Less than</span></a></li>\n        <li><a><span class=\"operator-symbol\">></span> <span class=\"operator-string\">Greater than</span></a></li>\n        <li><a><span class=\"operator-symbol\"><=</span> <span class=\"operator-string\">Less than or Equal to</span></a></li>\n        <li><a><span class=\"operator-symbol\">>=</span> <span class=\"operator-string\">Greater than or Equal to</span></a></li>\n      </ul>\n    </div>\n  </div>\n  <div class=\"col-md-2 value\">\n    <p [hidden]=\"!editHidden\">{{value}}</p>\n    <div class=\"input-value\" [hidden]=\"editHidden\">\n      <input class=\"form-control\" type=\"text\" name=\"status\" value=\"{{value}}\" >\n    </div>\n  </div>\n</div>\n"
+module.exports = "<div bsModal #smModal=\"bs-modal\" class=\"modal fade\" tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"mySmallModalLabel\" aria-hidden=\"true\">\n  <div class=\"modal-dialog modal-sm\">\n    <div class=\"modal-content\">\n      <div class=\"modal-header\" style=\"padding: 40px 0px\">\n        <div class=\"list-of-room\" *ngFor=\"let room of listOfDevicesInHouse\">\n          <a class=\"room-floor\">\n            <span><i aria-hidden=\"true\" class=\"fa fa-home\"></i> {{room.floorName}} </span>\n            <span><i aria-hidden=\"true\" class=\"fa fa-caret-right\"></i> {{room.roomName}} </span>\n          </a>\n          <div class=\"list-of-sensors\" *ngFor=\"let sensor of room.sensors\">\n            <a class=\"device\">{{sensor.name}} sensor</a>\n            <!-- <a class=\"device-type\">sensor</a> -->\n          </div>\n          <div class=\"list-of-lights\" *ngFor=\"let light of room.lights\">\n            <a class=\"device\">{{light.name}}</a>\n            <!-- <a class=\"device-type\">light</a> -->\n          </div>\n        </div>\n      </div>\n      <div class=\"modal-body\">\n        <button type=\"button\" class=\"btn btn-success btn-modal\" (click)=\"smModal.hide()\">OK</button>\n        <button type=\"button\" class=\"btn btn-danger btn-modal\" (click)=\"smModal.hide()\">CANCEL</button>\n      </div>\n    </div>\n  </div>\n</div>\n\n\n<div class=\"row\">\n  <div class=\"col-md-3 device-name\">\n    <p [hidden]=\"!editHidden\">{{deviceName}}</p>\n    <div class=\"dropdown\" [hidden]=\"editHidden\">\n      <button class=\"btn\" type=\"button\"  (click)=\"smModal.show()\" aria-haspopup=\"true\" aria-expanded=\"true\">\n        {{deviceName}}\n        <!-- <span class=\"caret\" ></span> -->\n      </button>\n    </div>\n  </div>\n  <div class=\"col-md-5 operator\">\n    <p [hidden]=\"!editHidden\">{{operator}}</p>\n    <div class=\"dropdown\" [hidden]=\"editHidden\">\n      <button class=\"btn dropdown-toggle\" type=\"button\" id=\"dropdownMenu1\" data-toggle=\"dropdown\" aria-haspopup=\"true\" aria-expanded=\"true\">\n        {{operator}}\n        <span class=\"caret\" ></span>\n      </button>\n      <ul class=\"dropdown-menu scrollable-menu-1\" role=\"menu\" aria-labelledby=\"dropdownMenu1\" [hidden]=\"editHidden\">\n        <li><a><span class=\"operator-symbol\">==</span> <span class=\"operator-string\">Equal to</span></a></li>\n        <li><a><span class=\"operator-symbol\">!=</span> <span class=\"operator-string\">Not Equal to</span></a></li>\n        <li><a><span class=\"operator-symbol\"><</span> <span class=\"operator-string\">Less than</span></a></li>\n        <li><a><span class=\"operator-symbol\">></span> <span class=\"operator-string\">Greater than</span></a></li>\n        <li><a><span class=\"operator-symbol\"><=</span> <span class=\"operator-string\">Less than or Equal to</span></a></li>\n        <li><a><span class=\"operator-symbol\">>=</span> <span class=\"operator-string\">Greater than or Equal to</span></a></li>\n      </ul>\n    </div>\n  </div>\n  <div class=\"col-md-2 value\">\n    <p [hidden]=\"!editHidden\">{{value}}</p>\n    <div class=\"input-value\" [hidden]=\"editHidden\">\n      <input class=\"form-control\" type=\"text\" name=\"status\" value=\"{{value}}\" >\n    </div>\n  </div>\n  <div class=\"col-md-2\" style=\"padding-left: 5px;\" [hidden]=\"editHidden\">\n    <div class=\"dropdown\">\n      <button class=\"btn dropdown-toggle\" type=\"button\" data-toggle=\"dropdown\" aria-haspopup=\"true\" aria-expanded=\"true\">\n        <i class=\"fa fa-bars menu\" aria-hidden=\"true\"></i>\n      </button>\n      <ul class=\"dropdown-menu scrollable-menu-2\" role=\"menu\" aria-labelledby=\"dropdownMenu1\" [hidden]=\"editHidden\">\n        <li (click)=\"deleteOperation()\"><a> Delete operation</a></li>\n        <li (click)=\"addOperation()\" [hidden]=\"addOperationHidden\"><a>Add operation</a></li>\n      </ul>\n    </div>\n    <!-- <i class=\"fa fa-minus-square remove-device\" aria-hidden=\"true\" [hidden]=\"editHidden\"></i>\n    <i class=\"fa fa-plus-square add-device\" aria-hidden=\"true\"  [hidden]=\"editHidden||addOperationHidden\" ></i> -->\n  </div>\n</div>\n"
 
 /***/ }),
 
 /***/ 1123:
 /***/ (function(module, exports) {
 
-module.exports = "<div bsModal #smModal=\"bs-modal\" class=\"modal fade\" tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"mySmallModalLabel\" aria-hidden=\"true\">\n  <div class=\"modal-dialog modal-sm\">\n    <div class=\"modal-content\">\n      <div class=\"modal-header\">\n        <h4 class=\"modal-title\">Are you sure you want to delete <b>{{rule.name}}</b> ?</h4>\n      </div>\n      <div class=\"modal-body\">\n        <button type=\"button\" class=\"btn btn-success btn-modal\" (click)=\"smModal.hide()\" (click)=\"deleterule()\">Yes</button>\n        <button type=\"button\" class=\"btn btn-danger btn-modal\" (click)=\"smModal.hide()\">No</button>\n      </div>\n    </div>\n  </div>\n</div>\n\n<!-- rule -->\n<div class=\"rule\">\n  <div class=\"panel panel-primary panel-pricing\">\n    <div class=\"panel-heading\">\n      <i class=\"fa fa-lightbulb-o\" aria-hidden=\"true\"></i>\n      <h3 class=\"ruleName\" (click)=\"runrule()\">{{rule.name}}</h3>\n      <div class=\"x-icon\" >\n        <i class=\"fa fa-times\" aria-hidden=\"true\" (click)=\"smModal.show()\"></i>\n      </div>\n    </div>\n    <div class=\"row scirpt-body\">\n      <div class=\"col-md-4\">\n        <div class=\"time-date-picker\">\n          <!-- <div class=\"date-picker\">\n            <p>Date</p>\n            <ng2-datepicker [options]=\"options\" [(ngModel)]=\"date\" (click)=\"btnSaveHidden=false\" (outputEvents)=\"datePickerEvent($event)\" ></ng2-datepicker>\n          </div> -->\n          <div class=\"time-picker\">\n            <p>Time</p>\n            <div class=\"from-time\">\n              <h4>From</h4>\n              <div class=\"time\" [hidden]=\"!fromTimePickerHidden\">\n                <button class=\"btn btn-time\"\n                        type=\"button\"\n                        name=\"button\"\n                        (click)=\"fromTimePickerHidden=false;fromTimeButtonsHidden=false;\">\n                        {{fromTimePicker}}</button>\n              </div>\n              <div class=\"timepicker\" [hidden]=\"fromTimePickerHidden\">\n                <timepicker [(ngModel)]=\"time\"></timepicker>\n              </div>\n              <div class=\"picker-save\" [hidden]=\"fromTimeButtonsHidden\">\n                <button class=\"btn btn-primary time-btn-ok\"\n                        (click)=\"clickFromTimeOkBtn()\">OK</button>\n                <button class=\"btn btn-primary time-btn-clear\"\n                        (click)=\"clickFromTimeClearOkBtn()\">Clear</button>\n              </div>\n            </div>\n            <div class=\"to-time\">\n              <h4>To </h4>\n              <div class=\"time\" [hidden]=\"!toTimePickerHidden\">\n                <button class=\"btn btn-time btn-to-time\" type=\"button\" name=\"button\" (click)=\"toTimePickerHidden=false;toTimeButtonsHidden=false;\">{{toTimePicker}}</button>\n              </div>\n              <div class=\"timepicker\" [hidden]=\"toTimePickerHidden\">\n                <timepicker [(ngModel)]=\"time\"></timepicker>\n              </div>\n              <div class=\"picker-save\" [hidden]=\"toTimeButtonsHidden\">\n                <button class=\"btn btn-primary time-btn-ok\"\n                        (click)=\"clickToTimeOkBtn()\">OK</button>\n                <button class=\"btn btn-primary time-btn-clear\"\n                        (click)=\"clickClearOkBtn()\">Clear</button>\n              </div>\n            </div>\n          </div>\n\n          <div class=\"repeat\">\n            <p>Repeat</p>\n            <input type=\"text\" name=\"\" value=\"\" (click)=\"repeatDayHidden=false\" [hidden]=\"!repeatDayHidden\" [(ngModel)]=\"repeatDaysStr\">\n            <div class=\"day-picker\" [hidden]=\"repeatDayHidden\">\n              <div class=\"checkbox\" *ngFor=\"let day of daysOfWeekFull;let i = index\">\n                <label>\n                  <input type=\"checkbox\" [(ngModel)]=\"repeatDays[i]\">\n                  {{day}}\n                </label>\n              </div>\n              <div class=\"picker-save\">\n                <button class=\"btn btn-primary repeat-btn-ok\"\n                        (click)=\"clickRepeatOkBtn()\">OK</button>\n              </div>\n            </div>\n          </div>\n        </div>\n        <!-- <div class=\"picker-save\" [hidden]=\"TimeButtonsHidden\">\n          <button class=\"btn btn-primary btn-ok\"\n                  (click)=\"clickOkBtn()\">OK</button>\n        </div> -->\n      </div>\n      <div class=\"col-md-8 deivce-picker\">\n\n        <app-ifconditions [ifCondtions]=\"ifCondtions\"\n                          [editHidden]=\"editHidden\">\n        </app-ifconditions>\n        <app-thenactions [thenActions]=\"thenActions\" [editHidden]=\"editHidden\"></app-thenactions>\n\n        <div class=\"footer\">\n          <div class=\"edit-save\">\n            <div class=\"btn-edit-save\"  [hidden]=\"btnSaveHidden\" (click)=\"clickSaveBtn()\">\n              <button class=\"btn\" type=\"button\" name=\"button\">Save</button>\n            </div>\n            <div class=\"btn-edit\">\n              <button class=\"btn\" type=\"button\" name=\"button\" (click)=\"editHidden=false;btnSaveHidden=false\">Edit <i class=\"fa fa-pencil-square\" aria-hidden=\"true\"></i></button>\n            </div>\n          </div>\n        </div>\n\n\n      </div>\n    </div>\n  </div>\n</div>\n<!-- rule -->\n"
+module.exports = "<div bsModal #smModal=\"bs-modal\" class=\"modal fade\" tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"mySmallModalLabel\" aria-hidden=\"true\">\n  <div class=\"modal-dialog modal-sm\">\n    <div class=\"modal-content\">\n      <div class=\"modal-header\">\n        <h4 class=\"modal-title\">Are you sure you want to delete <b>{{rule.name}}</b> ?</h4>\n      </div>\n      <div class=\"modal-body\">\n        <button type=\"button\" class=\"btn btn-success btn-modal\" (click)=\"smModal.hide()\" (click)=\"deleterule()\">Yes</button>\n        <button type=\"button\" class=\"btn btn-danger btn-modal\" (click)=\"smModal.hide()\">No</button>\n      </div>\n    </div>\n  </div>\n</div>\n\n<!-- rule -->\n<div class=\"rule\">\n  <div class=\"panel panel-primary panel-pricing\">\n    <div class=\"panel-heading\">\n      <i class=\"fa fa-lightbulb-o\" aria-hidden=\"true\"></i>\n      <h3 class=\"ruleName\" (click)=\"runrule()\">{{rule.name}}</h3>\n      <div class=\"x-icon\" >\n        <i class=\"fa fa-times\" aria-hidden=\"true\" (click)=\"smModal.show()\"></i>\n      </div>\n    </div>\n    <div class=\"row scirpt-body\">\n      <div class=\"col-md-4\">\n        <div class=\"time-date-picker\">\n          <!-- <div class=\"date-picker\">\n            <p>Date</p>\n            <ng2-datepicker [options]=\"options\" [(ngModel)]=\"date\" (click)=\"btnSaveHidden=false\" (outputEvents)=\"datePickerEvent($event)\" ></ng2-datepicker>\n          </div> -->\n          <div class=\"time-picker\">\n            <p>Time</p>\n            <div class=\"from-time\">\n              <h4>From</h4>\n              <div class=\"time\" [hidden]=\"!fromTimePickerHidden\">\n                <button class=\"btn btn-time\"\n                        type=\"button\"\n                        name=\"button\"\n                        (click)=\"fromTimePickerHidden=false;fromTimeButtonsHidden=false;\">\n                        {{fromTimePicker}}</button>\n              </div>\n              <div class=\"timepicker\" [hidden]=\"fromTimePickerHidden\">\n                <timepicker [(ngModel)]=\"time\"></timepicker>\n              </div>\n              <div class=\"picker-save\" [hidden]=\"fromTimeButtonsHidden\">\n                <button class=\"btn btn-primary time-btn-ok\"\n                        (click)=\"clickFromTimeOkBtn()\">OK</button>\n                <button class=\"btn btn-primary time-btn-clear\"\n                        (click)=\"clickFromTimeClearOkBtn()\">Clear</button>\n              </div>\n            </div>\n            <div class=\"to-time\">\n              <h4>To </h4>\n              <div class=\"time\" [hidden]=\"!toTimePickerHidden\">\n                <button class=\"btn btn-time btn-to-time\" type=\"button\" name=\"button\" (click)=\"toTimePickerHidden=false;toTimeButtonsHidden=false;\">{{toTimePicker}}</button>\n              </div>\n              <div class=\"timepicker\" [hidden]=\"toTimePickerHidden\">\n                <timepicker [(ngModel)]=\"time\"></timepicker>\n              </div>\n              <div class=\"picker-save\" [hidden]=\"toTimeButtonsHidden\">\n                <button class=\"btn btn-primary time-btn-ok\"\n                        (click)=\"clickToTimeOkBtn()\">OK</button>\n                <button class=\"btn btn-primary time-btn-clear\"\n                        (click)=\"clickClearOkBtn()\">Clear</button>\n              </div>\n            </div>\n          </div>\n\n          <div class=\"repeat\">\n            <p>Repeat</p>\n            <input type=\"text\" name=\"\" value=\"\" (click)=\"repeatDayHidden=false\" [hidden]=\"!repeatDayHidden\" [(ngModel)]=\"repeatDaysStr\">\n            <div class=\"day-picker\" [hidden]=\"repeatDayHidden\">\n              <div class=\"checkbox\" *ngFor=\"let day of daysOfWeekFull;let i = index\">\n                <label>\n                  <input type=\"checkbox\" [(ngModel)]=\"repeatDays[i]\">\n                  {{day}}\n                </label>\n              </div>\n              <div class=\"picker-save\">\n                <button class=\"btn btn-primary repeat-btn-ok\"\n                        (click)=\"clickRepeatOkBtn()\">OK</button>\n              </div>\n            </div>\n          </div>\n        </div>\n        <!-- <div class=\"picker-save\" [hidden]=\"TimeButtonsHidden\">\n          <button class=\"btn btn-primary btn-ok\"\n                  (click)=\"clickOkBtn()\">OK</button>\n        </div> -->\n      </div>\n      <div class=\"col-md-8 deivce-picker\">\n\n        <app-ifconditions [ifCondtions]=\"ifCondtions\"\n                          [listOfDevicesInHouse]=\"listOfDevicesInHouse\"\n                          [editHidden]=\"editHidden\">\n        </app-ifconditions>\n        <app-thenactions [thenActions]=\"thenActions\" [editHidden]=\"editHidden\"></app-thenactions>\n\n        <div class=\"footer\">\n          <div class=\"edit-save\">\n            <div class=\"btn-edit-save\"  [hidden]=\"btnSaveHidden\" (click)=\"clickSaveBtn()\">\n              <button class=\"btn\" type=\"button\" name=\"button\">Save</button>\n            </div>\n            <div class=\"btn-edit\">\n              <button class=\"btn\" type=\"button\" name=\"button\" (click)=\"editHidden=false;btnSaveHidden=false\">Edit <i class=\"fa fa-pencil-square\" aria-hidden=\"true\"></i></button>\n            </div>\n          </div>\n        </div>\n\n\n      </div>\n    </div>\n  </div>\n</div>\n<!-- rule -->\n"
 
 /***/ }),
 
@@ -855,7 +855,7 @@ module.exports = "<div class=\"then-actions\">\n  <h3>THEN ACTIONS</h3>\n</div>\
 /***/ 1125:
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"col-md-8\">\n    <!-- rule -->\n    <div class=\"rule\" *ngFor=\"let rule of rules\">\n      <app-rule [rule]=\"rule\"\n                (removerule)=\"getListOfRules()\"></app-rule>\n    </div>\n    <!-- rule -->\n\n    <!-- addrule -->\n    <div class=\"addRule\">\n      <button type=\"button\" class=\"fa fa-plus-circle fa-2x addRuleIcon\" (click)=\"checkClick=!checkClick\"></button>\n      <div class=\"input\" [hidden]=\"checkClick\" >\n        <form (submit)=\"addruleSubmit()\">\n          <div class=\"form-group\">\n            <input type=\"text\"\n            class=\"form-control\"\n            [(ngModel)]=\"newruleName\" name=\"newruleName\"\n            placeholder=\"rule name\"\n            required>\n          </div>\n          <input type=\"submit\" class=\"btn btn-success btn-add-rule\" value=\"Add\">\n        </form>\n      </div>\n    </div>\n    <!-- addrule -->\n\n</div>\n"
+module.exports = "<div class=\"col-md-8\">\n    <!-- rule -->\n    <div class=\"rule\" *ngFor=\"let rule of rules\">\n      <app-rule [rule]=\"rule\"\n                [listOfDevicesInHouse]=\"listOfDevicesInHouse\"\n                (removerule)=\"getListOfRules()\"></app-rule>\n    </div>\n    <!-- rule -->\n\n    <!-- addrule -->\n    <div class=\"addRule\">\n      <button type=\"button\" class=\"fa fa-plus-circle fa-2x addRuleIcon\" (click)=\"checkClick=!checkClick\"></button>\n      <div class=\"input\" [hidden]=\"checkClick\" >\n        <form (submit)=\"addruleSubmit()\">\n          <div class=\"form-group\">\n            <input type=\"text\"\n            class=\"form-control\"\n            [(ngModel)]=\"newruleName\" name=\"newruleName\"\n            placeholder=\"rule name\"\n            required>\n          </div>\n          <input type=\"submit\" class=\"btn btn-success btn-add-rule\" value=\"Add\">\n        </form>\n      </div>\n    </div>\n    <!-- addrule -->\n\n</div>\n"
 
 /***/ }),
 
@@ -1046,6 +1046,14 @@ var HouseService = (function () {
         headers.append('Authorization', this.authToken);
         headers.append('Content-Type', 'application/json');
         return this.http.get(this.baseURL + '/house/floors/rooms/' + roomId, { headers: headers })
+            .map(function (res) { return res.json(); });
+    };
+    HouseService.prototype.getListOfDevicesInHouse = function () {
+        var headers = new __WEBPACK_IMPORTED_MODULE_1__angular_http__["Headers"]();
+        this.loadToken();
+        headers.append('Authorization', this.authToken);
+        headers.append('Content-Type', 'application/json');
+        return this.http.get(this.baseURL + '/house/devices', { headers: headers })
             .map(function (res) { return res.json(); });
     };
     HouseService = __decorate([
@@ -2776,12 +2784,137 @@ var IfconditionsComponent = (function () {
     }
     IfconditionsComponent.prototype.ngOnInit = function () {
         this._type = this.ifCondtions._type;
-        this.operationId = this.ifCondtions.operation;
+        this.operation = this.ifCondtions;
+    };
+    IfconditionsComponent.prototype.ifCond_delRelaOperation = function (operation) {
+        var newOperation = {
+            deviceId: null,
+            operator: null,
+            value: null
+        };
+        this.operation = newOperation;
+    };
+    IfconditionsComponent.prototype.ifCond_delLogiOperation = function (operation) {
+        var newOperation = {
+            _id: this.operation._id,
+            _type: this.operation._type,
+            _1stOperand: this.operation._1stOperand,
+            _2ndOperand: this.operation._2ndOperand,
+            operator: this.operation.operator
+        };
+        switch (operation.operand) {
+            case '_1stOperand':
+                switch (this.operation._1stOperand._type) {
+                    case 'RelationalOperation':
+                        switch (this.operation._2ndOperand._type) {
+                            case 'RelationalOperation':
+                                newOperation = this.operation._2ndOperand;
+                                break;
+                            case 'LogicalOperation':
+                                newOperation._1stOperand = this.operation._2ndOperand._1stOperand;
+                                newOperation._2ndOperand = this.operation._2ndOperand._2ndOperand;
+                                break;
+                        }
+                        break;
+                    case 'LogicalOperation':
+                        switch (operation.operation.operand) {
+                            case '_1stOperand':
+                                newOperation._1stOperand = this.operation._1stOperand._2ndOperand;
+                                break;
+                            case '_2ndOperand':
+                                newOperation._1stOperand = this.operation._1stOperand._1stOperand;
+                                break;
+                        }
+                        break;
+                }
+                break;
+            case '_2ndOperand':
+                switch (this.operation._2ndOperand._type) {
+                    case 'RelationalOperation':
+                        switch (this.operation._1stOperand._type) {
+                            case 'RelationalOperation':
+                                newOperation = this.operation._1stOperand;
+                                break;
+                            case 'LogicalOperation':
+                                newOperation._2ndOperand = this.operation._1stOperand._2ndOperand;
+                                newOperation._1stOperand = this.operation._1stOperand._1stOperand;
+                                break;
+                        }
+                        break;
+                    case 'LogicalOperation':
+                        switch (operation.operation.operand) {
+                            case '_1stOperand':
+                                newOperation._2ndOperand = this.operation._2ndOperand._2ndOperand;
+                                break;
+                            case '_2ndOperand':
+                                newOperation._2ndOperand = this.operation._2ndOperand._1stOperand;
+                                break;
+                        }
+                        break;
+                }
+                break;
+        }
+        this._type = newOperation._type;
+        this.operation = newOperation;
+    };
+    IfconditionsComponent.prototype.ifCond_addLogiOperation = function (msg) {
+        var newOperation = {
+            _id: this.operation._id,
+            _type: this.operation._type,
+            _1stOperand: this.operation._1stOperand,
+            _2ndOperand: this.operation._2ndOperand,
+            operator: this.operation.operator
+        };
+        var newRelationalOperation = {
+            _type: 'RelationalOperation',
+            deviceId: null,
+            operator: 'operator',
+            value: 'value'
+        };
+        switch (msg.operand) {
+            case '_1stOperand':
+                newOperation._1stOperand = {
+                    _type: 'LogicalOperation',
+                    _1stOperand: this.operation._1stOperand,
+                    _2ndOperand: newRelationalOperation,
+                    operator: 'operator'
+                };
+                break;
+            case '_2ndOperand':
+                newOperation._2ndOperand = {
+                    _type: 'LogicalOperation',
+                    _1stOperand: this.operation._2ndOperand,
+                    _2ndOperand: newRelationalOperation,
+                    operator: 'operator'
+                };
+                break;
+        }
+        this.operation = newOperation;
+    };
+    IfconditionsComponent.prototype.ifCond_addRelaOperation = function (msg) {
+        var newRelationalOperation = {
+            _type: 'RelationalOperation',
+            deviceId: null,
+            operator: 'operator',
+            value: 'value'
+        };
+        var newOperation = {
+            _type: 'LogicalOperation',
+            _1stOperand: this.operation,
+            _2ndOperand: newRelationalOperation,
+            operator: 'operator'
+        };
+        this._type = 'LogicalOperation';
+        this.operation = newOperation;
     };
     __decorate([
         __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Input"])(), 
         __metadata('design:type', Object)
     ], IfconditionsComponent.prototype, "ifCondtions", void 0);
+    __decorate([
+        __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Input"])(), 
+        __metadata('design:type', Object)
+    ], IfconditionsComponent.prototype, "listOfDevicesInHouse", void 0);
     __decorate([
         __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Input"])(), 
         __metadata('design:type', Object)
@@ -2822,31 +2955,62 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 var LogicalOperation2ndLayerComponent = (function () {
     function LogicalOperation2ndLayerComponent(ruleService) {
         this.ruleService = ruleService;
+        this.deleteOperation = new __WEBPACK_IMPORTED_MODULE_0__angular_core__["EventEmitter"]();
+        this.addOperation = new __WEBPACK_IMPORTED_MODULE_0__angular_core__["EventEmitter"]();
         this.isDataAvailable = false;
     }
     LogicalOperation2ndLayerComponent.prototype.ngOnInit = function () {
-        var _this = this;
-        this.ruleService.getLogicalOperation(this.operationId).subscribe(function (res) {
-            if (!res.success) {
-                console.log(res.msg);
-            }
-            else {
-                _this.operation = res.operation;
-                _this._1stOperand_id = _this.operation._1stOperand.operation;
-                _this._2ndOperand_id = _this.operation._2ndOperand.operation;
-                _this.operator = _this.operation.operator;
-                _this.isDataAvailable = true;
-            }
-        });
+        this._1stOperand = this.operation._1stOperand;
+        this._2ndOperand = this.operation._2ndOperand;
+        this.operator = this.operation.operator;
+        this.isDataAvailable = true;
+    };
+    LogicalOperation2ndLayerComponent.prototype._1stOperand_deleteOperation = function (operation) {
+        var msg = {
+            operand: '_1stOperand',
+            operation: operation
+        };
+        this.deleteOperation.emit(msg);
+    };
+    LogicalOperation2ndLayerComponent.prototype._2ndOperand_deleteOperation = function (operation) {
+        var msg = {
+            operand: '_2ndOperand',
+            operation: operation
+        };
+        this.deleteOperation.emit(msg);
+    };
+    LogicalOperation2ndLayerComponent.prototype._1stOperand_addOperation = function () {
+        var msg = {
+            operand: '_1stOperand'
+        };
+        this.addOperation.emit(msg);
+    };
+    LogicalOperation2ndLayerComponent.prototype._2ndOperand_addOperation = function (operation) {
+        var msg = {
+            operand: '_2ndOperand'
+        };
+        this.addOperation.emit(msg);
     };
     __decorate([
         __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Input"])(), 
         __metadata('design:type', Object)
-    ], LogicalOperation2ndLayerComponent.prototype, "operationId", void 0);
+    ], LogicalOperation2ndLayerComponent.prototype, "operation", void 0);
+    __decorate([
+        __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Input"])(), 
+        __metadata('design:type', Object)
+    ], LogicalOperation2ndLayerComponent.prototype, "listOfDevicesInHouse", void 0);
     __decorate([
         __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Input"])(), 
         __metadata('design:type', Object)
     ], LogicalOperation2ndLayerComponent.prototype, "editHidden", void 0);
+    __decorate([
+        __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Output"])(), 
+        __metadata('design:type', Object)
+    ], LogicalOperation2ndLayerComponent.prototype, "deleteOperation", void 0);
+    __decorate([
+        __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Output"])(), 
+        __metadata('design:type', Object)
+    ], LogicalOperation2ndLayerComponent.prototype, "addOperation", void 0);
     LogicalOperation2ndLayerComponent = __decorate([
         __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
             selector: 'app-logical-operation-2nd-layer',
@@ -2883,6 +3047,8 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 var LogicalOperationComponent = (function () {
     function LogicalOperationComponent(ruleService) {
         this.ruleService = ruleService;
+        this.deleteOperationEvent = new __WEBPACK_IMPORTED_MODULE_0__angular_core__["EventEmitter"]();
+        this.addOperationEvent = new __WEBPACK_IMPORTED_MODULE_0__angular_core__["EventEmitter"]();
         //
         // operation: {
         //   _1stOperand: Object,
@@ -2895,30 +3061,66 @@ var LogicalOperationComponent = (function () {
         this.operator = '';
     }
     LogicalOperationComponent.prototype.ngOnInit = function () {
-        var _this = this;
-        this.ruleService.getLogicalOperation(this.operationId).subscribe(function (res) {
-            if (!res.success) {
-                console.log(res.msg);
-            }
-            else {
-                _this.operation = res.operation;
-                _this._1stOperandType = _this.operation._1stOperand._type;
-                _this._2ndOperandType = _this.operation._2ndOperand._type;
-                _this._1stOperand_id = _this.operation._1stOperand.operation;
-                _this._2ndOperand_id = _this.operation._2ndOperand.operation;
-                _this.operator = _this.operation.operator;
-                _this.isDataAvailable = true;
-            }
-        });
+        this._1stOperandType = this.operation._1stOperand._type;
+        this._2ndOperandType = this.operation._2ndOperand._type;
+        this._1stOperand = this.operation._1stOperand;
+        this._2ndOperand = this.operation._2ndOperand;
+        this.operator = this.operation.operator;
+        this.isDataAvailable = true;
+    };
+    LogicalOperationComponent.prototype.ngOnChanges = function () {
+        this._1stOperandType = this.operation._1stOperand._type;
+        this._2ndOperandType = this.operation._2ndOperand._type;
+        this._1stOperand = this.operation._1stOperand;
+        this._2ndOperand = this.operation._2ndOperand;
+        this.operator = this.operation.operator;
+    };
+    LogicalOperationComponent.prototype._1stOperand_deleteOperation = function (operation) {
+        var msg = {
+            operand: '_1stOperand',
+            operation: operation
+        };
+        this.deleteOperationEvent.emit(msg);
+    };
+    LogicalOperationComponent.prototype._2ndOperand_deleteOperation = function (operation) {
+        var msg = {
+            operand: '_2ndOperand',
+            operation: operation
+        };
+        this.deleteOperationEvent.emit(msg);
+    };
+    LogicalOperationComponent.prototype._1stOperand_addOperation = function (operation) {
+        var msg = {
+            operand: '_1stOperand'
+        };
+        this.addOperationEvent.emit(msg);
+    };
+    LogicalOperationComponent.prototype._2ndOperand_addOperation = function (operation) {
+        var msg = {
+            operand: '_2ndOperand'
+        };
+        this.addOperationEvent.emit(msg);
     };
     __decorate([
         __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Input"])(), 
         __metadata('design:type', Object)
-    ], LogicalOperationComponent.prototype, "operationId", void 0);
+    ], LogicalOperationComponent.prototype, "operation", void 0);
+    __decorate([
+        __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Input"])(), 
+        __metadata('design:type', Object)
+    ], LogicalOperationComponent.prototype, "listOfDevicesInHouse", void 0);
     __decorate([
         __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Input"])(), 
         __metadata('design:type', Object)
     ], LogicalOperationComponent.prototype, "editHidden", void 0);
+    __decorate([
+        __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Output"])(), 
+        __metadata('design:type', Object)
+    ], LogicalOperationComponent.prototype, "deleteOperationEvent", void 0);
+    __decorate([
+        __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Output"])(), 
+        __metadata('design:type', Object)
+    ], LogicalOperationComponent.prototype, "addOperationEvent", void 0);
     LogicalOperationComponent = __decorate([
         __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
             selector: 'app-logical-operation',
@@ -2964,35 +3166,44 @@ var RelationalOperationComponent = (function () {
         this.houseService = houseService;
         this.ruleService = ruleService;
         this.messageEventService = messageEventService;
+        this.deleteOperationEvent = new __WEBPACK_IMPORTED_MODULE_0__angular_core__["EventEmitter"]();
+        this.addOperationEvent = new __WEBPACK_IMPORTED_MODULE_0__angular_core__["EventEmitter"]();
     }
     RelationalOperationComponent.prototype.ngOnInit = function () {
         var _this = this;
-        this.ruleService.getRelationalOperation(this.operationId).subscribe(function (res) {
-            if (!res.success) {
-                console.log(res.msg);
-            }
-            else {
-                _this.operation = res.operation;
-                _this.mapOperator(_this.operation.operator);
-                _this.value = _this.operation.value;
-                _this.deviceId = _this.operation.deviceId;
-                _this.deviceService.getItemDetails(_this.deviceId).subscribe(function (res) {
-                    if (!res.success) {
-                        console.log(res.msg);
+        this.addOperationHidden = this.addOperationHidden && true;
+        this.mapOperator(this.operation.operator);
+        this.value = this.operation.value;
+        this.deviceId = this.operation.deviceId;
+        if (!!this.deviceId) {
+            this.deviceService.getItemDetails(this.deviceId).subscribe(function (res) {
+                if (!res.success) {
+                    console.log(res.msg);
+                }
+                else {
+                    switch (res._type) {
+                        case 'light':
+                            _this.deviceName = res.light.name;
+                            break;
+                        case 'sensor':
+                            _this.deviceName = res.sensor.name;
+                            break;
                     }
-                    else {
-                        switch (res._type) {
-                            case 'light':
-                                _this.deviceName = res.light.name;
-                                break;
-                            case 'sensor':
-                                _this.deviceName = res.sensor.name;
-                                break;
-                        }
-                    }
-                });
-            }
-        });
+                }
+            });
+        }
+        else {
+            this.deviceName = 'device';
+        }
+    };
+    RelationalOperationComponent.prototype.ngOnChanges = function () {
+        if (!this.operation.deviceId) {
+            this.operation._type = 'RelationalOperation';
+            this.operation.value = 'value';
+            this.deviceName = 'device';
+            this.operator = 'operator';
+            this.value = 'value';
+        }
     };
     RelationalOperationComponent.prototype.mapOperator = function (operator) {
         switch (operator) {
@@ -3016,14 +3227,40 @@ var RelationalOperationComponent = (function () {
                 break;
         }
     };
+    RelationalOperationComponent.prototype.deleteOperation = function () {
+        // console.log(this.operation);
+        var msg = {
+            operationId: this.operation._id
+        };
+        this.deleteOperationEvent.emit(msg);
+    };
+    RelationalOperationComponent.prototype.addOperation = function () {
+        this.addOperationEvent.emit('add RelationalOperation');
+    };
     __decorate([
         __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Input"])(), 
         __metadata('design:type', Object)
-    ], RelationalOperationComponent.prototype, "operationId", void 0);
+    ], RelationalOperationComponent.prototype, "operation", void 0);
+    __decorate([
+        __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Input"])(), 
+        __metadata('design:type', Object)
+    ], RelationalOperationComponent.prototype, "addOperationHidden", void 0);
+    __decorate([
+        __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Input"])(), 
+        __metadata('design:type', Object)
+    ], RelationalOperationComponent.prototype, "listOfDevicesInHouse", void 0);
     __decorate([
         __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Input"])(), 
         __metadata('design:type', Object)
     ], RelationalOperationComponent.prototype, "editHidden", void 0);
+    __decorate([
+        __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Output"])(), 
+        __metadata('design:type', Object)
+    ], RelationalOperationComponent.prototype, "deleteOperationEvent", void 0);
+    __decorate([
+        __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Output"])(), 
+        __metadata('design:type', Object)
+    ], RelationalOperationComponent.prototype, "addOperationEvent", void 0);
     RelationalOperationComponent = __decorate([
         __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
             selector: 'app-relational-operation',
@@ -3090,7 +3327,7 @@ var RuleComponent = (function () {
         this.listOfRooms = [];
         //--add Room--//
         this.btnSaveHidden = true;
-        this.editHidden = true;
+        this.editHidden = false;
         this.options = new __WEBPACK_IMPORTED_MODULE_1_ng2_datepicker__["b" /* DatePickerOptions */]();
     }
     RuleComponent.prototype.ngOnInit = function () {
@@ -3273,6 +3510,10 @@ var RuleComponent = (function () {
         __metadata('design:type', Object)
     ], RuleComponent.prototype, "rule", void 0);
     __decorate([
+        __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Input"])(), 
+        __metadata('design:type', Object)
+    ], RuleComponent.prototype, "listOfDevicesInHouse", void 0);
+    __decorate([
         __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Output"])(), 
         __metadata('design:type', Object)
     ], RuleComponent.prototype, "removerule", void 0);
@@ -3372,28 +3613,37 @@ var RulesComponent = (function () {
     };
     RulesComponent.prototype.getListOfDevices = function () {
         var _this = this;
-        this.houseService.getListOfFloors().subscribe(function (res) {
-            _this.listOfDevicesInHouse = res;
-            var floors = _this.listOfDevicesInHouse;
-            var _loop_1 = function(i) {
-                var rooms = floors[i].rooms;
-                var _loop_2 = function(j) {
-                    var roomId = rooms[j]._id;
-                    _this.houseService.getListOfDevicesInRoom(roomId).subscribe(function (res) {
-                        if (!res.success) {
-                            console.log(res.msg);
+        this.houseService.getListOfDevicesInHouse().subscribe(function (res) {
+            if (!res.success) {
+                console.log(res.msg);
+            }
+            else {
+                _this.listOfDevicesInHouse = [];
+                var house = res.house;
+                var i = -1;
+                for (var _i = 0, house_1 = house; _i < house_1.length; _i++) {
+                    var floor = house_1[_i];
+                    var rooms = floor.rooms;
+                    for (var _a = 0, rooms_1 = rooms; _a < rooms_1.length; _a++) {
+                        var room = rooms_1[_a];
+                        i++;
+                        _this.listOfDevicesInHouse.push({ floorName: floor.name, roomName: room.name, lights: [], sensors: [] });
+                        var devices = room.devices;
+                        for (var _b = 0, devices_1 = devices; _b < devices_1.length; _b++) {
+                            var device = devices_1[_b];
+                            switch (device.deviceType) {
+                                case 'LightingControl':
+                                    var lightArr = _this.listOfDevicesInHouse[i].lights.concat(device.lights);
+                                    _this.listOfDevicesInHouse[i].lights = lightArr;
+                                    break;
+                                case 'SensorModule':
+                                    var sensorArr = _this.listOfDevicesInHouse[i].sensors.concat(device.sensors);
+                                    _this.listOfDevicesInHouse[i].sensors = sensorArr;
+                                    break;
+                            }
                         }
-                        else {
-                            _this.listOfDevicesInHouse[i].rooms[j].devices = res.devices;
-                        }
-                    });
-                };
-                for (var j = 0; j < rooms.length; j++) {
-                    _loop_2(j);
+                    }
                 }
-            };
-            for (var i = 0; i < floors.length; i++) {
-                _loop_1(i);
             }
         });
     };

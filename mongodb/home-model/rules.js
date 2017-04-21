@@ -4,25 +4,25 @@ const Schema = mongoose.Schema;
 const LightingControl = require('./lightingControl');
 const Floor = require('./floor');
 
+const OperationSchema = new Schema({
+  _type: String
+}, {collection: 'operations',versionKey: false});
+
+const LogicalOperationSchema = new Schema({
+  _type: String,
+  _1stOperand: {type: Schema.Types.ObjectId, ref: 'operations'},
+  _2ndOperand: {type: Schema.Types.ObjectId, ref: 'operations'},
+  operator: String,
+  result: Boolean
+}, {collection: 'operations',versionKey: false});
+
 const RelationalOperationSchema = new Schema({
+  _type: String,
   deviceId: Schema.Types.ObjectId,
   operator: String,
   value: Number,
   result: Boolean
-}, {versionKey: false});
-
-const LogicalOperationSchema = new Schema({
-  _1stOperand: {
-    _type: String,
-    operation: {type: Schema.Types.ObjectId, refPath: '_1stOperand._type'}
-  },
-  _2ndOperand: {
-    _type: String,
-    operation: {type: Schema.Types.ObjectId, refPath: '_2ndOperand._type'}
-  },
-  operator: String,
-  result: Boolean
-}, {versionKey: false});
+}, {collection: 'operations',versionKey: false});
 
 const RuleSchema = new Schema({
     name: String,
@@ -32,10 +32,7 @@ const RuleSchema = new Schema({
     },
     date: String,
     repeat: [Boolean],
-    ifConditions: {
-      _type: String,
-      operation: {type: Schema.Types.ObjectId, refPath: 'ifConditions._type'}
-    },
+    ifConditions: {type: Schema.Types.ObjectId, ref: 'operations'},
     thenActions: [{
       deviceId: Schema.Types.ObjectId,
       value: Number
@@ -43,6 +40,7 @@ const RuleSchema = new Schema({
 }, {versionKey: false});
 
 const Rules = module.exports = mongoose.model('Rules', RuleSchema);
+const Operations = module.exports.Operations = mongoose.model('operations', OperationSchema);
 const RelationalOperations = module.exports.RelationalOperations = mongoose.model('RelationalOperation', RelationalOperationSchema);
 const LogicalOperations = module.exports.LogicalOperations = mongoose.model('LogicalOperation', LogicalOperationSchema);
 
@@ -61,12 +59,15 @@ const LogicalOperations = module.exports.LogicalOperations = mongoose.model('Log
 module.exports.getListOfRules = function(callback) {
   Rules
     .find()
-    // .populate({
-    //   path: 'ifConditions.operation',
-    //   populate: {
-    //     path: '_1stOperand.operation'
-    //   }
-    // })
+    .populate({
+      path: 'ifConditions',
+      populate: {
+        path: '_1stOperand _2ndOperand',
+        populate: {
+          path: '_1stOperand _2ndOperand'
+        }
+      }
+    })
     .exec((err, rules)=>{
       if(err) throw err;
       if(!!rules.length){

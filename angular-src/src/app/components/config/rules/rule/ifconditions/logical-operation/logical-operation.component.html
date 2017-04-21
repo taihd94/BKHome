@@ -2,13 +2,19 @@
   <div class="_1st-operand">
     <app-relational-operation
             *ngIf="_1stOperandType=='RelationalOperation'"
-            [operationId]="_1stOperand_id"
-            [editHidden]="editHidden">
+            [operation]="_1stOperand"
+            [listOfDevicesInHouse]="listOfDevicesInHouse"
+            [editHidden]="editHidden"
+            (deleteOperationEvent)="_1stOperand_deleteOperation($event)"
+            (addOperationEvent)="_1stOperand_addOperation($event)">
     </app-relational-operation>
     <app-logical-operation-2nd-layer
             *ngIf="_1stOperandType=='LogicalOperation'"
-            [operationId]="_1stOperand_id"
-            [editHidden]="editHidden">
+            [operation]="_1stOperand"
+            [listOfDevicesInHouse]="listOfDevicesInHouse"
+            [editHidden]="editHidden"
+            (deleteOperation) = "_1stOperand_deleteOperation($event)"
+            (addOperation) = "_1stOperand_addOperation($event)">
     </app-logical-operation-2nd-layer>
   </div>
   <hr/>
@@ -29,13 +35,19 @@
   <div class="_2nd-operand">
     <app-relational-operation
             *ngIf="_2ndOperandType=='RelationalOperation'"
-            [operationId]="_2ndOperand_id"
-            [editHidden]="editHidden">
+            [operation]="_2ndOperand"
+            [listOfDevicesInHouse]="listOfDevicesInHouse"
+            [editHidden]="editHidden"
+            (deleteOperationEvent)="_2ndOperand_deleteOperation($event)"
+            (addOperationEvent)="_2ndOperand_addOperation($event)">
     </app-relational-operation>
     <app-logical-operation-2nd-layer
             *ngIf="_2ndOperandType=='LogicalOperation'"
-            [operationId]="_2ndOperand_id"
-            [editHidden]="editHidden">
+            [operation]="_2ndOperand"
+            [listOfDevicesInHouse]="listOfDevicesInHouse"
+            [editHidden]="editHidden"
+            (deleteOperation) = "_2ndOperand_deleteOperation($event)"
+            (addOperation) = "_2ndOperand_addOperation($event)">
     </app-logical-operation-2nd-layer>
   </div>
 </div>

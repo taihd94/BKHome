@@ -1,17 +1,17 @@
-._1st-operand{
-  margin-top: 12px;
+._1st-operand, ._2nd-operand{
+  margin: 6px 0px;
 }
 
 hr {
   height: 1px;
   background: #dfd7ca;
-  margin: 6px 0px 16px 0px;
+  margin: 16px 0px;
 }
 
 .operator{
-  margin: -5px 17px 0px 29px;
+  margin: 0px 17px 0px 29px;
   font-size: 17px;
-  font-weight: 800;
+  font-weight: bold;
   color: #626262;
   float: left;
 }

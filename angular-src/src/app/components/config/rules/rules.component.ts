@@ -25,25 +25,36 @@ export class RulesComponent implements OnInit {
   }
 
   getListOfDevices(){
-    this.houseService.getListOfFloors().subscribe(res=>{
-      this.listOfDevicesInHouse = res;
-      let floors = this.listOfDevicesInHouse;
-      for(let i=0; i<floors.length; i++){
-        let rooms = floors[i].rooms;
-        for(let j=0; j<rooms.length; j++){
-          let roomId = rooms[j]._id;
-          this.houseService.getListOfDevicesInRoom(roomId).subscribe(res=>{
-            if(!res.success){
-              console.log(res.msg)
-            } else {
-              this.listOfDevicesInHouse[i].rooms[j].devices = res.devices;
+    this.houseService.getListOfDevicesInHouse().subscribe(res=>{
+      if(!res.success){
+        console.log(res.msg)
+      }else{
+        this.listOfDevicesInHouse = [];
+        let house = res.house;
+        let i = -1;
+        for(let floor of house){
+          let rooms = floor.rooms;
+          for(let room of rooms){
+            i++;
+            this.listOfDevicesInHouse.push({floorName: floor.name, roomName: room.name, lights: [], sensors: []});
+            let devices = room.devices;
+            for(let device of devices){
+              switch(device.deviceType){
+                case 'LightingControl':
+                  let lightArr = this.listOfDevicesInHouse[i].lights.concat(device.lights);
+                  this.listOfDevicesInHouse[i].lights = lightArr;
+                  break;
+                case 'SensorModule':
+                  let sensorArr = this.listOfDevicesInHouse[i].sensors.concat(device.sensors);
+                  this.listOfDevicesInHouse[i].sensors = sensorArr;
+                  break;
+              }
             }
-          })
+          }
         }
       }
     })
   }
-
 
   getListOfRules(){
     this.ruleService.getListOfRules().subscribe(res=>{

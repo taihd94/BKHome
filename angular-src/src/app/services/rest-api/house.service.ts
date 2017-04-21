@@ -97,4 +97,13 @@ export class HouseService {
       .map(res => res.json());
   }
 
+  getListOfDevicesInHouse(){
+    let headers = new Headers();
+    this.loadToken();
+    headers.append('Authorization', this.authToken);
+    headers.append('Content-Type', 'application/json');
+    return this.http.get(this.baseURL + '/house/devices', {headers: headers})
+      .map(res => res.json());
+  }
+
 }

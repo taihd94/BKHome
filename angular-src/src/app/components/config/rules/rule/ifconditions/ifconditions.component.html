@@ -2,9 +2,18 @@
   <h3>IF CONDITIONS</h3>
 </div>
 <div  class="operation" [ngSwitch]="_type">
-  <app-logical-operation *ngSwitchCase="'LogicalOperation'" [operationId]="operationId" [editHidden]="editHidden"></app-logical-operation>
-  <app-relational-operation *ngSwitchCase="'RelationalOperation'"
-                            [operationId]="operationId"
-                            [editHidden]="editHidden">
+  <app-logical-operation *ngSwitchCase="'LogicalOperation'"
+                          [operation]="operation"
+                          [editHidden]="editHidden"
+                          [listOfDevicesInHouse]="listOfDevicesInHouse"
+                          (deleteOperationEvent)="ifCond_delLogiOperation($event)"
+                          (addOperationEvent)="ifCond_addLogiOperation($event)">
+</app-logical-operation>
+<app-relational-operation *ngSwitchCase="'RelationalOperation'"
+                            [operation]="operation"
+                            [listOfDevicesInHouse]="listOfDevicesInHouse"
+                            [editHidden]="editHidden"
+                            (deleteOperationEvent)="ifCond_delRelaOperation($event)"
+                            (addOperationEvent)="ifCond_addRelaOperation($event)">
   </app-relational-operation>
 </div>
