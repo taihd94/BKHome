@@ -14,6 +14,7 @@ export class RelationalOperationComponent implements OnInit, OnChanges {
   @Input() addOperationHidden;
   @Input() listOfDevicesInHouse;
   @Input() editHidden;
+  @Output() updateOperationEvent = new EventEmitter<Object>();
   @Output() deleteOperationEvent = new EventEmitter<Object>();
   @Output() addOperationEvent = new EventEmitter();
 
@@ -28,13 +29,20 @@ export class RelationalOperationComponent implements OnInit, OnChanges {
   deviceName: String;
   operator: String;
   value: any;
-
+  sliderHidden = true;
+  dimmable = true;
+  operatorArrFull = ['Equal to', 'Not Equal to', 'Less than', 'Greater than', 'Less than and Equal to', 'Greater than and Equal to'];
+  operatorSymbolArrFull = ['==', '!=', '<', '>', '<=', '>='];
+  operatorArr = this.operatorArrFull;
+  operatorSymbolArr = this.operatorSymbolArrFull;
+  sliderMinValue = 0;
+  sliderMaxValue = 100;
 
   ngOnInit() {
     this.addOperationHidden = this.addOperationHidden&&true;
-    this.mapOperator(this.operation.operator);
-    this.value = this.operation.value;
     this.deviceId = this.operation.deviceId;
+    this.operator = this.mapOperator(this.operation.operator);
+    this.value = this.operation.value;
     if(!!this.deviceId){
       this.deviceService.getItemDetails(this.deviceId).subscribe(res=>{
         if(!res.success){
@@ -43,9 +51,19 @@ export class RelationalOperationComponent implements OnInit, OnChanges {
           switch(res._type){
             case 'light':
               this.deviceName = res.light.name;
+              this.dimmable = res.light.dimmable;
+              if(!this.dimmable){
+                this.operatorArr = ['Equal to'];
+                this.operatorSymbolArr = ['=='];
+                this.value = this.value ? 'ON' : 'OFF';
+              }
               break;
             case 'sensor':
               this.deviceName = res.sensor.name;
+              this.dimmable = true;
+              if(res.sensor._type.toString()==='Light'){
+                this.sliderMaxValue = 1000;
+              }
               break;
           }
         }
@@ -57,40 +75,32 @@ export class RelationalOperationComponent implements OnInit, OnChanges {
   }
 
   ngOnChanges(){
-    if(!this.operation.deviceId){
-      this.operation._type = 'RelationalOperation';
-      this.operation.value = 'value';
-      this.deviceName = 'device';
-      this.operator = 'operator';
-      this.value = 'value';
-    }
+    this.deviceId = this.operation.deviceId;
+    this.operator = this.mapOperator(this.operation.operator);
+    this.value = this.operation.value;
   }
 
   mapOperator(operator){
     switch(operator){
       case '==':
-        this.operator = 'Equal to';
-        break;
+        return 'Equal to';
       case '!=':
-        this.operator = 'Not equal to';
-        break;
+        return 'Not equal to';
       case '<':
-        this.operator = 'Less than';
-        break;
+        return 'Less than';
       case '>':
-        this.operator = 'Greater than';
-        break;
+        return 'Greater than';
       case '<=':
-        this.operator = 'Less than or Equal to';
-        break;
+        return 'Less than or Equal to';
       case '>=':
-        this.operator = 'Greater than or Equal to';
-        break;
+        return 'Greater than or Equal to';
+      case 'operator':
+        return 'operator';
     }
   }
 
   deleteOperation(){
-    // console.log(this.operation);
+    this.deviceName = 'device';
     let msg={
       operationId: this.operation._id
     }
@@ -99,5 +109,64 @@ export class RelationalOperationComponent implements OnInit, OnChanges {
 
   addOperation(){
     this.addOperationEvent.emit('add RelationalOperation');
+  }
+
+  selectLight(light){
+    this.deviceName = light.name;
+    this.deviceId = light._id;
+    this.dimmable = light.dimmable;
+    if(!this.dimmable){
+      this.operation.operator = '==';
+      this.operator = 'Equal to';
+      this.operatorArr = ['Equal to'];
+      this.operatorSymbolArr = ['=='];
+      this.value = this.value ? 'ON' : 'OFF';
+    } else {
+      this.sliderHidden = false;
+      this.value = 0;
+      this.operatorArr = this.operatorArrFull;
+      this.operatorSymbolArr = this.operatorSymbolArrFull;
+    }
+    this.sliderMaxValue = 100;
+    //update operation
+    this.operation.deviceId = light._id;
+    this.updateOperationEvent.emit(this.operation);
+  }
+
+  selectSensor(sensor){
+    this.deviceName = sensor.name;
+    this.deviceId = sensor._id;
+    this.dimmable = true;
+    this.sliderHidden = false;
+    this.value = 0;
+    this.operatorArr = this.operatorArrFull;
+    this.operatorSymbolArr = this.operatorSymbolArrFull;
+    this.sliderMaxValue = (sensor._type==='Light') ? 1000 : 100;
+    //update operation
+    this.operation.deviceId = sensor._id;
+    this.updateOperationEvent.emit(this.operation);
+  }
+
+  selectOperator(operator){
+    this.operator = this.mapOperator(operator);
+    //update operation
+    this.operation.operator = operator;
+    this.updateOperationEvent.emit(this.operation);
+  }
+
+  getValue(value){
+    this.value = value;
+    //update operation
+    this.operation.value = value;
+    this.updateOperationEvent.emit(this.operation);
+  }
+
+  clickValueBtn(){
+    if(!this.dimmable){
+      let check = this.value=='ON';
+      this.value = check ? 'OFF' : 'ON';
+      this.operation.value = check ? 0 : 1;
+      this.updateOperationEvent.emit(this.operation);
+    }
   }
 }

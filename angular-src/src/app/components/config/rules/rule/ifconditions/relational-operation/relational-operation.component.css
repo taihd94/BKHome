@@ -9,6 +9,10 @@
   padding: 0px;
 }
 
+/*.device-name{
+  width: auto;
+}*/
+
  .operator, .value{
   text-align: center;
   font-size: 16px;
@@ -16,6 +20,38 @@
 
 .remove-device{
   margin-right: 5px;
+}
+
+.operator{
+  width: auto;
+  min-width: 47%;
+}
+.value{
+  padding: 0px;
+  width: auto;
+}
+
+.menu{
+
+  padding: 0px;
+  width: 10.666667%;
+}
+
+.btn:focus, .btn:hover{
+  color: black;
+  border: 0px;
+  outline: inherit;
+}
+
+.btn-deviceName, .btn-operator, .btn-value{
+  font-size: 16px;
+  text-transform: none;
+  font-weight: 400;
+}
+
+.btn-menu{
+  padding-left: 12px;
+  padding-right: 21px;
 }
 
 /*.add-device, .remove-device, .menu{
@@ -32,7 +68,7 @@
 }
 
 .operator>p{
-  min-width: 172px;
+  min-width: 240px;
 }
 
 .scrollable-menu-1 {
@@ -46,6 +82,10 @@
 .operator-string{
   position: absolute;
   left: 25%;
+}
+
+.caret-icon{
+  float: right;
 }
 
 .room-floor{
@@ -121,4 +161,11 @@
 
 .scrollable-menu-2{
   cursor: pointer;
+}
+
+md-slider{
+  /*margin-left: -133%;*/
+  min-width: 175px;
+  float: right;
+  margin-right: 23px;
 }

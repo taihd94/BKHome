@@ -100,3 +100,127 @@ module.exports.getLogicalOperation = function (id, callback) {
     }
   })
 }
+
+//----------remove operation functions-----------//
+
+function removeRelationalOperation(id, callback) {
+  RelationalOperations.findByIdAndRemove(id, err=>{
+    if(err) throw err;
+    callback({success: true, msg:'relational operation has been removed'})
+  })
+}
+
+function removeLogicalOperation(id, callback) {
+  LogicalOperations.findById(id, (err, operation)=>{
+    if(err) throw err;
+    if(!!operation){
+      let _1stOperand = operation._1stOperand;
+      let _2ndOperand = operation._2ndOperand;
+      removeOperation(_1stOperand, result=>{
+        removeOperation(_2ndOperand, result=>{
+          operation.remove(err=>{
+            if(err) throw err;
+            callback({success: true, msg: 'logical operation has been removed'});
+          })
+        });
+      });
+    } else {
+      callback({success: false, msg: 'Logical operation not found'})
+    }
+  })
+}
+
+function removeOperation(operationId, callback) {
+  Operations.findById(operationId, (err, operation)=>{
+    if(err) throw err;
+    if(!!operation){
+      switch(operation._type){
+        case 'RelationalOperation':
+          removeRelationalOperation(operation._id, result=>{
+            callback(result);
+          });
+          break;
+        case 'LogicalOperation':
+          removeLogicalOperation(operation._id, result=>{
+            callback(result);
+          });
+      };
+    } else {
+      callback({success: false, msg: 'Operation not found: ' + operationId})
+    }
+  })
+}
+
+//----------remove operation functions-----------//
+
+//----------create operation functions-----------//
+function createRelationalOperation(operation, callback) {
+  let newOperation = new RelationalOperations(operation);
+  newOperation.save((err, doc)=>{
+    if(err) throw err;
+    callback({success: true, operationId: doc._id, msg:'new relational operation has been saved'});
+  })
+}
+
+function createLogicalOperation(operation, callback){
+  let newOperation = new LogicalOperations(operation);
+  createOperation(operation._1stOperand, result=>{
+    newOperation._1stOperand = result.operationId;
+    createOperation(operation._2ndOperand, result=>{
+      newOperation._2ndOperand = result.operationId;
+      newOperation.save((err, doc)=>{
+        if(err) throw err;
+        callback({success:true, operationId: doc._id, msg: 'logicalOperations has been saved'});
+      });
+    })
+  });
+}
+
+function createOperation(operation, callback) {
+  switch (operation._type) {
+    case 'RelationalOperation':
+      createRelationalOperation(operation, result=>{
+        callback(result);
+      });
+      break;
+    case 'LogicalOperation':
+      createLogicalOperation(operation, result=>{
+        callback(result);
+      })
+    default:
+
+  }
+}
+//----------create operation functions-----------//
+
+
+module.exports.updateIfCondition = function (ruleId, newIfCond, callback) {
+  Rules.findById(ruleId, (err, rule)=>{
+    if(err) throw err;
+    if(!!rule){
+      let operationId = rule.ifConditions;
+      Operations.findById(operationId, (err, operation)=>{
+        if(err) throw err;
+        if(!!operation){
+          removeOperation(operation, result=>{
+            if(result.success){
+              createOperation(newIfCond, result=>{
+                if(result.success){
+                  rule.ifConditions = result.operationId;
+                  rule.save(err=>{
+                    if(err) throw err;
+                  })
+                };
+              })
+            }
+            callback(result);
+          });
+        } else {
+          callback({success: false, msg: 'ifCondition operation not found'});
+        }
+      })
+    }else {
+      callback({success: false, msg: 'rule not found'});
+    }
+  })
+}

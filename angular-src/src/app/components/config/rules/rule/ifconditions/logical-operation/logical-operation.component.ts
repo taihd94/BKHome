@@ -12,6 +12,8 @@ export class LogicalOperationComponent implements OnInit, OnChanges {
   @Input() editHidden;
   @Output() deleteOperationEvent = new EventEmitter<Object>();
   @Output() addOperationEvent = new EventEmitter<Object>();
+  @Output() updateOperationEvent = new EventEmitter<Object>();
+
   constructor(
     private ruleService: RuleService
   ) { }
@@ -45,34 +47,29 @@ export class LogicalOperationComponent implements OnInit, OnChanges {
     this.operator = this.operation.operator;
   }
 
-  _1stOperand_deleteOperation(operation){
+  deleteOperation(operand, operation){
     let msg = {
-      operand: '_1stOperand',
+      operand: operand,
       operation: operation
     }
     this.deleteOperationEvent.emit(msg);
   }
 
-  _2ndOperand_deleteOperation(operation){
+  addOperation(operand){
     let msg = {
-      operand: '_2ndOperand',
-      operation: operation
-    }
-    this.deleteOperationEvent.emit(msg);
-  }
-
-  _1stOperand_addOperation(operation){
-    let msg = {
-      operand: '_1stOperand'
+      operand: operand
     }
     this.addOperationEvent.emit(msg);
   }
 
-  _2ndOperand_addOperation(operation){
-    let msg = {
-      operand: '_2ndOperand'
-    }
-    this.addOperationEvent.emit(msg);
+  updateOperation(operand, operation){
+    this.operation[operand] = operation;
+    this.updateOperationEvent.emit(this.operation);
+  }
+
+  selectOperator(operator){
+    this.operation.operator = this.operator = operator;
+    this.updateOperationEvent.emit(this.operation);
   }
 
 }

@@ -5,8 +5,9 @@
             [listOfDevicesInHouse]="listOfDevicesInHouse"
             [editHidden]="editHidden"
             [addOperationHidden]="true"
-            (deleteOperationEvent)="_1stOperand_deleteOperation($event)"
-            (addOperationEvent)="_1stOperand_addOperation()">
+            (deleteOperationEvent)="deleteOperation('_1stOperand', $event)"
+            (addOperationEvent)="addOperation('_1stOperand')"
+            (updateOperationEvent)="updateOperation('_1stOperand', $event)">
     </app-relational-operation>
   </div>
   <div class="operator">
@@ -17,8 +18,8 @@
         <span class="caret" ></span>
       </button>
       <ul class="dropdown-menu" aria-labelledby="dropdownMenu1" [hidden]="editHidden">
-        <li><a>OR</a></li>
-        <li><a>AND</a></li>
+        <li (click)="selectOperator('OR')"><a>OR</a></li>
+        <li (click)="selectOperator('AND')"><a>AND</a></li>
       </ul>
     </div>
   </div>
@@ -29,8 +30,9 @@
             [listOfDevicesInHouse]="listOfDevicesInHouse"
             [editHidden]="editHidden"
             [addOperationHidden]="true"
-            (deleteOperationEvent)="_2ndOperand_deleteOperation($event)"
-            (addOperationEvent)="_2ndOperand_addOperation()">
+            (deleteOperationEvent)="deleteOperation('_2ndOperand', $event)"
+            (addOperationEvent)="addOperation('_2ndOperand')"
+            (updateOperationEvent)="updateOperation('_2ndOperand', $event)">
     </app-relational-operation>
   </div>
 </div>

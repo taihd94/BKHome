@@ -231,6 +231,10 @@ export class RuleComponent implements OnInit, OnChanges {
 
     this.editHidden = true;
     this.btnSaveHidden = true;
+
+    this.ruleService.updateRule(this.rule).subscribe(res=>{
+      console.log(res);
+    })
   }
 
   deleterule(){
@@ -254,5 +258,9 @@ export class RuleComponent implements OnInit, OnChanges {
     for(let device of this.rule.devices){
       this.messageEvent.emit("device-event", device);
     }
+  }
+
+  updateIfCond(operation){
+    console.log(operation);
   }
 }

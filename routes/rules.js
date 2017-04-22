@@ -55,4 +55,12 @@ router.get('/operation/:id', (req, res, next)=>{
   }
 })
 
+router.put('/:id/if-condition/', (req, res, next)=>{
+  let ruleId = req.params.id;
+  let newIfCond = req.body;
+  Rules.updateIfCondition(ruleId, newIfCond, result=>{
+    res.json(result);
+  })
+})
+
 module.exports = router;

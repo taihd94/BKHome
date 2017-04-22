@@ -24,30 +24,12 @@ export class RuleService {
       .map(res => res.json());
   }
 
-  getRelationalOperation(id){
+  updateRule(rule){
     let headers = new Headers();
     this.loadToken();
     headers.append('Authorization', this.authToken);
     headers.append('Content-Type', 'application/json');
-    return this.http.get(this.baseURL + '/rules/relational-operation/' + id, {headers: headers})
-      .map(res => res.json());
-  }
-
-  getLogicalOperation(id){
-    let headers = new Headers();
-    this.loadToken();
-    headers.append('Authorization', this.authToken);
-    headers.append('Content-Type', 'application/json');
-    return this.http.get(this.baseURL + '/rules/logical-operation/' + id, {headers: headers})
-      .map(res => res.json());
-  }
-
-  getOperation(id){
-    let headers = new Headers();
-    this.loadToken();
-    headers.append('Authorization', this.authToken);
-    headers.append('Content-Type', 'application/json');
-    return this.http.get(this.baseURL + '/rules/operation/' + id, {headers: headers})
+    return this.http.put(this.baseURL + '/rules/'+ rule._id, rule, {headers: headers})
       .map(res => res.json());
   }
 }

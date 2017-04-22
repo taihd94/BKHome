@@ -6,14 +6,16 @@
                           [operation]="operation"
                           [editHidden]="editHidden"
                           [listOfDevicesInHouse]="listOfDevicesInHouse"
-                          (deleteOperationEvent)="ifCond_delLogiOperation($event)"
-                          (addOperationEvent)="ifCond_addLogiOperation($event)">
+                          (deleteOperationEvent)="delLogiOperation($event)"
+                          (addOperationEvent)="addLogiOperation($event)"
+                          (updateOperationEvent)="updateOperation($event)">
 </app-logical-operation>
 <app-relational-operation *ngSwitchCase="'RelationalOperation'"
                             [operation]="operation"
                             [listOfDevicesInHouse]="listOfDevicesInHouse"
                             [editHidden]="editHidden"
-                            (deleteOperationEvent)="ifCond_delRelaOperation($event)"
-                            (addOperationEvent)="ifCond_addRelaOperation($event)">
+                            (deleteOperationEvent)="delRelaOperation($event)"
+                            (addOperationEvent)="addRelaOperation($event)"
+                            (updateOperationEvent)="updateOperation($event)">
   </app-relational-operation>
 </div>

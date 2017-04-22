@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 import { RuleService } from '../../../../../services/rest-api/rule.service';
 
 @Component({
@@ -10,6 +10,8 @@ export class IfconditionsComponent implements OnInit {
   @Input() ifCondtions;
   @Input() listOfDevicesInHouse;
   @Input() editHidden;
+  @Output() updateIfCond = new EventEmitter<Object>();
+
   constructor(
     private ruleService: RuleService
   ) { }
@@ -22,16 +24,17 @@ export class IfconditionsComponent implements OnInit {
     this.operation = this.ifCondtions;
   }
 
-  ifCond_delRelaOperation(operation){
+  delRelaOperation(operation){
     let newOperation = {
+      _type: 'RelationalOperation',
       deviceId: null,
-      operator: null,
-      value: null
+      operator: 'operator',
+      value: 'value'
     };
     this.operation = newOperation;
   }
 
-  ifCond_delLogiOperation(operation){
+  delLogiOperation(operation){
     let newOperation = {
                           _id: this.operation._id,
                           _type: this.operation._type,
@@ -95,7 +98,7 @@ export class IfconditionsComponent implements OnInit {
     this.operation = newOperation;
   }
 
-  ifCond_addLogiOperation(msg){
+  addLogiOperation(msg){
     let newOperation = {
                           _id: this.operation._id,
                           _type: this.operation._type,
@@ -130,14 +133,13 @@ export class IfconditionsComponent implements OnInit {
     this.operation = newOperation;
   }
 
-  ifCond_addRelaOperation(msg){
+  addRelaOperation(msg){
     let newRelationalOperation = {
       _type: 'RelationalOperation',
       deviceId: null,
       operator: 'operator',
       value: 'value'
     }
-
     let newOperation = {
                           _type: 'LogicalOperation',
                           _1stOperand: this.operation,
@@ -146,6 +148,11 @@ export class IfconditionsComponent implements OnInit {
                         };
     this._type = 'LogicalOperation';
     this.operation = newOperation;
+    console.log(this.operation);
   }
 
+  updateOperation(operation){
+    this.operation = operation;
+    this.updateIfCond.emit(operation);
+  }
 }

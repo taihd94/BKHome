@@ -168,7 +168,7 @@ module.exports.getListOfItemsInHouse = function (callback) {
     .find()
     .populate({
       path: 'rooms.devices',
-      select: 'deviceType sensors.name sensors._id lights.name lights._id'
+      select: 'deviceType sensors.name sensors._id sensors._type lights.name lights._id lights.dimmable'
     })
     .exec((err, floors)=>{
       if(err) callback(err);

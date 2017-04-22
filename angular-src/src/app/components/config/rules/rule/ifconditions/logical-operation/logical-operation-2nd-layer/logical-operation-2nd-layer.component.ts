@@ -10,8 +10,9 @@ export class LogicalOperation2ndLayerComponent implements OnInit {
   @Input() operation;
   @Input() listOfDevicesInHouse;
   @Input() editHidden;
-  @Output() deleteOperation = new EventEmitter<Object>();
-  @Output() addOperation = new EventEmitter<Object>();
+  @Output() deleteOperationEvent = new EventEmitter<Object>();
+  @Output() addOperationEvent = new EventEmitter<Object>();
+  @Output() updateOperationEvent = new EventEmitter<Object>();
 
   constructor(
     private ruleService: RuleService
@@ -30,34 +31,29 @@ export class LogicalOperation2ndLayerComponent implements OnInit {
 
   }
 
-  _1stOperand_deleteOperation(operation){
+  deleteOperation(operand, operation){
     let msg = {
-      operand: '_1stOperand',
+      operand: operand,
       operation: operation
     }
-    this.deleteOperation.emit(msg);
+    this.deleteOperationEvent.emit(msg);
   }
 
-  _2ndOperand_deleteOperation(operation){
+  addOperation(operand){
     let msg = {
-      operand: '_2ndOperand',
-      operation: operation
+      operand: operand
     }
-    this.deleteOperation.emit(msg);
+    this.addOperationEvent.emit(msg);
   }
 
-  _1stOperand_addOperation(){
-    let msg = {
-      operand: '_1stOperand'
-    }
-    this.addOperation.emit(msg);
+  updateOperation(operand, operation){
+    this.operation[operand] = operation;
+    this.updateOperationEvent.emit(this.operation);
   }
 
-  _2ndOperand_addOperation(operation){
-    let msg = {
-      operand: '_2ndOperand'
-    }
-    this.addOperation.emit(msg);
+  selectOperator(operator){
+    this.operation.operator = this.operator = operator;
+    this.updateOperationEvent.emit(this.operation);
   }
 
 }

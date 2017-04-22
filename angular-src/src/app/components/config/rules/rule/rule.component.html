@@ -93,7 +93,8 @@
 
         <app-ifconditions [ifCondtions]="ifCondtions"
                           [listOfDevicesInHouse]="listOfDevicesInHouse"
-                          [editHidden]="editHidden">
+                          [editHidden]="editHidden"
+                          (updateIfCond)="updateIfCond($event)">
         </app-ifconditions>
         <app-thenactions [thenActions]="thenActions" [editHidden]="editHidden"></app-thenactions>
 

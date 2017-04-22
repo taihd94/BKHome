@@ -8,11 +8,11 @@
             <span><i aria-hidden="true" class="fa fa-caret-right"></i> {{room.roomName}} </span>
           </a>
           <div class="list-of-sensors" *ngFor="let sensor of room.sensors">
-            <a class="device">{{sensor.name}} sensor</a>
+            <a class="device" (click)="selectSensor(sensor);smModal.hide()">{{sensor.name}} sensor</a>
             <!-- <a class="device-type">sensor</a> -->
           </div>
           <div class="list-of-lights" *ngFor="let light of room.lights">
-            <a class="device">{{light.name}}</a>
+            <a class="device" (click)="selectLight(light);smModal.hide()">{{light.name}}</a>
             <!-- <a class="device-type">light</a> -->
           </div>
         </div>
@@ -29,8 +29,8 @@
 <div class="row">
   <div class="col-md-3 device-name">
     <p [hidden]="!editHidden">{{deviceName}}</p>
-    <div class="dropdown" [hidden]="editHidden">
-      <button class="btn" type="button"  (click)="smModal.show()" aria-haspopup="true" aria-expanded="true">
+    <div class="device-name" [hidden]="editHidden">
+      <button class="btn btn-deviceName" type="button"  (click)="smModal.show()" aria-haspopup="true" aria-expanded="true">
         {{deviceName}}
         <!-- <span class="caret" ></span> -->
       </button>
@@ -39,29 +39,31 @@
   <div class="col-md-5 operator">
     <p [hidden]="!editHidden">{{operator}}</p>
     <div class="dropdown" [hidden]="editHidden">
-      <button class="btn dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-        {{operator}}
-        <span class="caret" ></span>
+      <button class="btn btn-operator dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+        {{operator }}
+        <!-- <div class="caret-icon"  [hidden]="!dimmable">
+          <span class="caret"></span>
+        </div> -->
       </button>
       <ul class="dropdown-menu scrollable-menu-1" role="menu" aria-labelledby="dropdownMenu1" [hidden]="editHidden">
-        <li><a><span class="operator-symbol">==</span> <span class="operator-string">Equal to</span></a></li>
-        <li><a><span class="operator-symbol">!=</span> <span class="operator-string">Not Equal to</span></a></li>
-        <li><a><span class="operator-symbol"><</span> <span class="operator-string">Less than</span></a></li>
-        <li><a><span class="operator-symbol">></span> <span class="operator-string">Greater than</span></a></li>
-        <li><a><span class="operator-symbol"><=</span> <span class="operator-string">Less than or Equal to</span></a></li>
-        <li><a><span class="operator-symbol">>=</span> <span class="operator-string">Greater than or Equal to</span></a></li>
+        <li *ngFor="let operator of operatorArr; let i=index">
+          <a (click)="selectOperator(operatorSymbolArr[i])"><span class="operator-symbol">{{operatorSymbolArr[i]}}</span><span class="operator-string">{{operator}}</span></a>
+        </li>
       </ul>
     </div>
   </div>
-  <div class="col-md-2 value">
+  <div class="col-md-2 value" (click)="sliderHidden=!sliderHidden" >
     <p [hidden]="!editHidden">{{value}}</p>
-    <div class="input-value" [hidden]="editHidden">
+    <!-- <div class="input-value" [hidden]="editHidden">
       <input class="form-control" type="text" name="status" value="{{value}}" >
+    </div> -->
+    <div class="value" [hidden]="editHidden" (click)="clickValueBtn()">
+      <button class="btn btn-value" type="button">{{value}}</button>
     </div>
   </div>
-  <div class="col-md-2" style="padding-left: 5px;" [hidden]="editHidden">
+  <div class="col-md-2 menu" style="padding-left: 5px;position: absolute;right: 0px;" [hidden]="editHidden">
     <div class="dropdown">
-      <button class="btn dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+      <button class="btn btn-menu dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
         <i class="fa fa-bars menu" aria-hidden="true"></i>
       </button>
       <ul class="dropdown-menu scrollable-menu-2" role="menu" aria-labelledby="dropdownMenu1" [hidden]="editHidden">
@@ -72,4 +74,11 @@
     <!-- <i class="fa fa-minus-square remove-device" aria-hidden="true" [hidden]="editHidden"></i>
     <i class="fa fa-plus-square add-device" aria-hidden="true"  [hidden]="editHidden||addOperationHidden" ></i> -->
   </div>
+</div>
+<div class="row" [hidden]="editHidden||sliderHidden||!dimmable">
+  <md-slider min="{{sliderMinValue}}"
+            max="{{sliderMaxValue}}"
+            [(ngModel)]="value"
+            (input)="getValue($event.value)">
+  </md-slider>
 </div>
