@@ -18,6 +18,7 @@ export class RulesComponent implements OnInit {
 
   rules: Object;
   listOfDevicesInHouse: any;
+  newRuleName: String;
 
   ngOnInit() {
     this.getListOfRules();
@@ -60,8 +61,23 @@ export class RulesComponent implements OnInit {
     this.ruleService.getListOfRules().subscribe(res=>{
       if(!res.success){
         console.log(res.msg)
+        this.rules = [];
       } else {
         this.rules = res.rules;
+      }
+    })
+  }
+
+  addruleSubmit(){
+    let newRule = {
+      name: this.newRuleName
+    }
+    console.log(newRule);
+    this.ruleService.addNewRule(newRule).subscribe(res=>{
+      if(!res.success){
+        console.log(res.msg)
+      } else {
+        this.getListOfRules();
       }
     })
   }

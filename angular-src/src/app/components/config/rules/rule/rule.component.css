@@ -10,7 +10,7 @@
   color: #93c54b;
 }
 
-input {
+.checkbox-input {
   height: 30px;
   margin-right: 10px;
 }
@@ -69,6 +69,15 @@ timepicker{
   float: left;
 }
 
+.radio>label{
+  margin: 5px 11px 5px 0px;
+  font-size: 17px;
+}
+
+.radio>label>input{
+  top: 7px;
+}
+
 .btn-timepicker{
   float: left;
   padding: 12px 6px;
@@ -99,19 +108,32 @@ timepicker{
   margin: 10px 0px 1px 0px;
 }
 
+
 .to-time{
   margin-top: 5px;
 }
 
-.from-time>h4, .to-time>h4{
+.from-time>h4{
   font-size: 16px;
   float: left;
   margin: 2px 6px 5px 0px;
   padding: 0px;
+  cursor: pointer;
 }
 
-.to-time>h4{
-  margin-right: 30px;
+
+.next-day{
+  margin: 2px 0px 0px 10px;
+  font-size: 16px;
+  font-style: italic;
+}
+
+.to{
+  font-size: 16px;
+  float: left;
+  padding: 0px;
+  margin: 2px 30px 5px 0px;
+  cursor: pointer;
 }
 
 .time{
@@ -129,11 +151,26 @@ timepicker{
 
 .btn-to-time{
   margin-left: -22px;
+  margin-right: 7px;
 }
+
+
 
 .btn-time:focus{
   outline: none;
 }
+
+
+.from-to-time-allDayUnChecked>.from-time>h4, .from-to-time-allDayUnChecked>.to-time>h4{
+  cursor: pointer;
+}
+
+
+
+/*.from-to-time-allDayChecked{
+  color: gray;
+  cursor: not-allowed;
+}*/
 
 input:focus{
   outline: none;
@@ -145,6 +182,18 @@ input:focus{
 
 .checkbox>label>input{
   top: -8px;
+}
+
+.all-day{
+  background-color: inherit;
+  text-transform: none;
+  font-size: 17px;
+  font-weight: 400;
+  padding: 8px 5px;
+}
+
+.all-day-checkbox>label>input{
+  top: 1px;
 }
 
 .deivce-picker{

@@ -20,6 +20,7 @@ const LightingControlSchema = new Schema({
     ]
 }, {collection: "devices", versionKey: false});
 
+
 const LightingControl = module.exports = mongoose.model('LightingControl', LightingControlSchema);
 const Floor = require('./floor');
 

@@ -55,10 +55,32 @@ router.get('/operation/:id', (req, res, next)=>{
   }
 })
 
+router.put('/:id/', (req, res, next)=>{
+  let ruleId = req.params.id;
+  let newRule = req.body;
+  Rules.updateRule(ruleId, newRule, result=>{
+    res.json(result);
+  })
+})
+
 router.put('/:id/if-condition/', (req, res, next)=>{
   let ruleId = req.params.id;
-  let newIfCond = req.body;
-  Rules.updateIfCondition(ruleId, newIfCond, result=>{
+  let newRule = req.body;
+  Rules.updateRule(ruleId, newRule, result=>{
+    res.json(result);
+  })
+})
+
+router.delete('/:id', (req, res, next)=>{
+  let ruleId = req.params.id;
+  Rules.deleteRule(ruleId, result=>{
+    res.json(result);
+  })
+})
+
+router.post('/', (req, res, next)=>{
+  let newRule = req.body;
+  Rules.addNewRule(newRule, result=>{
     res.json(result);
   })
 })

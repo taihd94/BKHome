@@ -67,9 +67,9 @@
   margin: 0px 0px 0px 15px;
 }
 
-.operator>p{
+/*.operator>p{
   min-width: 240px;
-}
+}*/
 
 .scrollable-menu-1 {
     height: auto;
@@ -88,15 +88,6 @@
   float: right;
 }
 
-.room-floor{
-    font-size: 19px;
-    font-weight: 700;
-    color: #6d6d6d;
-    text-decoration: none;
-    padding-left: 40px;
-}
-
-
 .device{
   padding-left: 62px;
   text-transform: none;
@@ -114,18 +105,7 @@
   font-weight: bold;
 }
 
-.list-of-sensors, .list-of-lights{
-  padding: 4px 0px;
-  margin: 4px 0px;
-}
 
-.list-of-sensors:hover, .list-of-lights:hover{
-  background-color: whitesmoke;
-}
-
-.device-type{
-
-}
 
 .input-value>input{
   width: 100%;
@@ -156,6 +136,23 @@
 .form-group {
     float: left;
     margin-right: 20px;
+}
+
+.room-floor{
+    font-size: 19px;
+    font-weight: 700;
+    color: #6d6d6d;
+    text-decoration: none;
+    padding-left: 40px;
+}
+
+.list-of-sensors, .list-of-lights{
+  padding: 4px 0px;
+  margin: 4px 0px;
+}
+
+.list-of-sensors:hover, .list-of-lights:hover{
+  background-color: whitesmoke;
 }
 /*modal*/
 

@@ -59,6 +59,7 @@ import { RelationalOperationComponent } from './components/config/rules/rule/ifc
 import { LogicalOperationComponent } from './components/config/rules/rule/ifconditions/logical-operation/logical-operation.component';
 import { LogicalOperation2ndLayerComponent } from './components/config/rules/rule/ifconditions/logical-operation/logical-operation-2nd-layer/logical-operation-2nd-layer.component';
 import { ThenactionsComponent } from './components/config/rules/rule/thenactions/thenactions.component';
+import { ActionComponent } from './components/config/rules/rule/thenactions/action/action.component';
 
 
 const appRoutes: Routes = [
@@ -107,7 +108,8 @@ const appRoutes: Routes = [
     RelationalOperationComponent,
     LogicalOperationComponent,
     LogicalOperation2ndLayerComponent,
-    ThenactionsComponent
+    ThenactionsComponent,
+    ActionComponent
   ],
   imports: [
     UiSwitchModule,

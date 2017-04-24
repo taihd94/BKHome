@@ -311,50 +311,50 @@ var RelationalOperations = [
     operator: '>=',
     value: 50,
     result: true
-  }),
-  new RelationalOperation({
-    _type: 'RelationalOperation',
-    _id: condition_id_2,
-    deviceId: sensor_id_2,
-    operator: '!=',
-    value: 1,
-    result: true
-  }),new RelationalOperation({
-    _type: 'RelationalOperation',
-    _id: condition_id_3,
-    deviceId: sensor_id_1,
-    operator: '<',
-    value: 1,
-    result: true
   })
+  // new RelationalOperation({
+  //   _type: 'RelationalOperation',
+  //   _id: condition_id_2,
+  //   deviceId: sensor_id_2,
+  //   operator: '!=',
+  //   value: 1,
+  //   result: true
+  // }),new RelationalOperation({
+  //   _type: 'RelationalOperation',
+  //   _id: condition_id_3,
+  //   deviceId: sensor_id_1,
+  //   operator: '<',
+  //   value: 1,
+  //   result: true
+  // })
 ]
-
-var logicalOperations = [
-  new LogicalOperation({
-    _type: 'LogicalOperation',
-    _id: logicalOperation_id_1,
-    _1stOperand: condition_id_2,
-    _2ndOperand: condition_id_3,
-    operator: 'AND',
-    result: false
-  }),
-  new LogicalOperation({
-    _type: 'LogicalOperation',
-    _id: logicalOperation_id_2,
-    _1stOperand: condition_id_1,
-    _2ndOperand: condition_id_1,
-    operator: 'OR',
-    result: false
-  }),
-  new LogicalOperation({
-    _type: 'LogicalOperation',
-    _id: logicalOperation_id_3,
-    _1stOperand: logicalOperation_id_1,
-    _2ndOperand: logicalOperation_id_1,
-    operator: 'OR',
-    result: false
-  })
-]
+//
+// var logicalOperations = [
+//   new LogicalOperation({
+//     _type: 'LogicalOperation',
+//     _id: logicalOperation_id_1,
+//     _1stOperand: condition_id_2,
+//     _2ndOperand: condition_id_3,
+//     operator: 'AND',
+//     result: false
+//   }),
+//   new LogicalOperation({
+//     _type: 'LogicalOperation',
+//     _id: logicalOperation_id_2,
+//     _1stOperand: condition_id_1,
+//     _2ndOperand: condition_id_1,
+//     operator: 'OR',
+//     result: false
+//   }),
+//   new LogicalOperation({
+//     _type: 'LogicalOperation',
+//     _id: logicalOperation_id_3,
+//     _1stOperand: logicalOperation_id_1,
+//     _2ndOperand: logicalOperation_id_1,
+//     operator: 'OR',
+//     result: false
+//   })
+// ]
 
 var rules = [
   new Rule({
@@ -365,32 +365,6 @@ var rules = [
     },
     repeat: [true, true, true, true, true, true, true],
     ifConditions: condition_id_1,
-    thenActions: [{
-      deviceId: light_id_5,
-      value: 1
-    }]
-  }),
-  new Rule({
-    name: 'Security',
-    time: {
-      from: '11:00 PM',
-      to: '5:00 AM'
-    },
-    repeat: [true, true, true, true, true, true, true],
-    ifConditions: logicalOperation_id_2,
-    thenActions: [{
-      deviceId: light_id_5,
-      value: 1
-    }]
-  }),
-  new Rule({
-    name: 'Security2',
-    time: {
-      from: '11:00 PM',
-      to: '5:00 AM'
-    },
-    repeat: [true, true, true, true, true, true, true],
-    ifConditions: logicalOperation_id_3,
     thenActions: [{
       deviceId: light_id_5,
       value: 1
@@ -407,16 +381,16 @@ for(var i = 0; i< RelationalOperations.length; i++) {
         }
     });
 }
-
-done = 0;
-for(var i = 0; i< logicalOperations.length; i++) {
-    logicalOperations[i].save(function (err, result) {
-        done++;
-        if (done === logicalOperations.length) {
-            mongoose.disconnect();
-        }
-    });
-}
+//
+// done = 0;
+// for(var i = 0; i< logicalOperations.length; i++) {
+//     logicalOperations[i].save(function (err, result) {
+//         done++;
+//         if (done === logicalOperations.length) {
+//             mongoose.disconnect();
+//         }
+//     });
+// }
 
 done = 0;
 for(var i = 0; i< rules.length; i++) {

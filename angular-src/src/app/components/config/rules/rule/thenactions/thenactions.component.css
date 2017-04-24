@@ -9,18 +9,3 @@
 .then-actions>h3{
   font-size: 22px;
 }
-
-.actions{
-  border-bottom: 1px solid #dfd7ca;
-}
-
-.row{
-  text-align: center;
-  margin-left: 45px;
-  font-size: 17px;
-  color: #626262;
-}
-
-.action{
-  font-weight: 800;
-}

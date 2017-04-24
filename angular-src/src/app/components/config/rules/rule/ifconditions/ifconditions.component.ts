@@ -20,8 +20,28 @@ export class IfconditionsComponent implements OnInit {
   operationId: Object;
   operation: any;
   ngOnInit() {
-    this._type = this.ifCondtions._type;
-    this.operation = this.ifCondtions;
+    if(!!this.ifCondtions){
+      if(!!this.ifCondtions._type){
+        this._type = this.ifCondtions._type;
+        this.operation = this.ifCondtions;
+      } else {
+        this._type = 'RelationalOperation';
+        this.operation = {
+          _type: 'RelationalOperation',
+          deviceId: null,
+          operator: 'operator',
+          value: 'value'
+        }
+      }
+    } else {
+      this._type = 'RelationalOperation';
+      this.operation = {
+        _type: 'RelationalOperation',
+        deviceId: null,
+        operator: 'operator',
+        value: 'value'
+      }
+    }
   }
 
   delRelaOperation(operation){
@@ -32,6 +52,7 @@ export class IfconditionsComponent implements OnInit {
       value: 'value'
     };
     this.operation = newOperation;
+    this.updateIfCond.emit(this.operation);
   }
 
   delLogiOperation(operation){
@@ -96,6 +117,7 @@ export class IfconditionsComponent implements OnInit {
     }
     this._type = newOperation._type;
     this.operation = newOperation;
+    this.updateIfCond.emit(this.operation);
   }
 
   addLogiOperation(msg){
@@ -131,6 +153,7 @@ export class IfconditionsComponent implements OnInit {
         break;
     }
     this.operation = newOperation;
+    this.updateIfCond.emit(this.operation);
   }
 
   addRelaOperation(msg){
@@ -148,11 +171,11 @@ export class IfconditionsComponent implements OnInit {
                         };
     this._type = 'LogicalOperation';
     this.operation = newOperation;
-    console.log(this.operation);
+    this.updateIfCond.emit(this.operation);
   }
 
   updateOperation(operation){
     this.operation = operation;
-    this.updateIfCond.emit(operation);
+    this.updateIfCond.emit(this.operation);
   }
 }

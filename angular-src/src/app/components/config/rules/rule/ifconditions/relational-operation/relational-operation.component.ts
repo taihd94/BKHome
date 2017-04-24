@@ -43,6 +43,7 @@ export class RelationalOperationComponent implements OnInit, OnChanges {
     this.deviceId = this.operation.deviceId;
     this.operator = this.mapOperator(this.operation.operator);
     this.value = this.operation.value;
+    console.log(this.deviceId);
     if(!!this.deviceId){
       this.deviceService.getItemDetails(this.deviceId).subscribe(res=>{
         if(!res.success){
@@ -78,6 +79,9 @@ export class RelationalOperationComponent implements OnInit, OnChanges {
     this.deviceId = this.operation.deviceId;
     this.operator = this.mapOperator(this.operation.operator);
     this.value = this.operation.value;
+    if(!this.dimmable){
+      this.value = this.value ? 'ON' : 'OFF';
+    }
   }
 
   mapOperator(operator){
@@ -101,7 +105,7 @@ export class RelationalOperationComponent implements OnInit, OnChanges {
 
   deleteOperation(){
     this.deviceName = 'device';
-    let msg={
+    let msg = {
       operationId: this.operation._id
     }
     this.deleteOperationEvent.emit(msg);
@@ -116,11 +120,12 @@ export class RelationalOperationComponent implements OnInit, OnChanges {
     this.deviceId = light._id;
     this.dimmable = light.dimmable;
     if(!this.dimmable){
-      this.operation.operator = '==';
       this.operator = 'Equal to';
       this.operatorArr = ['Equal to'];
       this.operatorSymbolArr = ['=='];
       this.value = this.value ? 'ON' : 'OFF';
+      this.operation.operator = '==';
+      this.operation.value = this.value ? 1 : 0;
     } else {
       this.sliderHidden = false;
       this.value = 0;

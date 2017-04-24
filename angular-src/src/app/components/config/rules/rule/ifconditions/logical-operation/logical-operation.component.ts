@@ -31,20 +31,24 @@ export class LogicalOperationComponent implements OnInit, OnChanges {
   operator = '';
 
   ngOnInit() {
-    this._1stOperandType = this.operation._1stOperand._type;
-    this._2ndOperandType = this.operation._2ndOperand._type;
-    this._1stOperand = this.operation._1stOperand;
-    this._2ndOperand = this.operation._2ndOperand;
-    this.operator = this.operation.operator;
-    this.isDataAvailable = true;
+    if((!!this.operation._1stOperand)&&(!!this.operation._2ndOperand)){
+      this._1stOperandType = this.operation._1stOperand._type;
+      this._2ndOperandType = this.operation._2ndOperand._type;
+      this._1stOperand = this.operation._1stOperand;
+      this._2ndOperand = this.operation._2ndOperand;
+      this.operator = this.operation.operator;
+      this.isDataAvailable = true;
+    }
   }
 
   ngOnChanges(){
-    this._1stOperandType = this.operation._1stOperand._type;
-    this._2ndOperandType = this.operation._2ndOperand._type;
-    this._1stOperand = this.operation._1stOperand;
-    this._2ndOperand = this.operation._2ndOperand;
-    this.operator = this.operation.operator;
+    if((!!this.operation._1stOperand)&&(!!this.operation._2ndOperand)){
+      this._1stOperandType = this.operation._1stOperand._type;
+      this._2ndOperandType = this.operation._2ndOperand._type;
+      this._1stOperand = this.operation._1stOperand;
+      this._2ndOperand = this.operation._2ndOperand;
+      this.operator = this.operation.operator;
+    }
   }
 
   deleteOperation(operand, operation){

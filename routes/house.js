@@ -79,7 +79,6 @@ router.put('/floors/:floorid/rooms/:id/imgPath', (req, res, next) => {
 
 // get list of devices in the house
 router.get('/devices', (req, res, next) => {
-  console.log('asdf');
   Floor.getListOfItemsInHouse(result => {
     res.json(result);
   })
