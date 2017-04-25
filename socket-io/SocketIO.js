@@ -6,6 +6,7 @@ const http = require('http').Server(app);
 const io = require('socket.io')(http);
 
 const LightingControl = require('../mongodb/home-model/lightingControl');
+const Rules = require('../mongodb/home-model/rules');
 
 
 io.on('connection', (socket) => {
@@ -31,6 +32,12 @@ io.on('connection', (socket) => {
     LightingControl.findAndUpdateLight(light._id, light.value, result => {
       ltctrMqttClient.send(result, light.value);
     });
+    Rules.checkOperations(light).then(result=>{
+      // console.log(result)
+    })
+    .catch(err=>{
+      console.log(err);
+    })
   });
 });
 

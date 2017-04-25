@@ -1,7 +1,6 @@
 const mqtt = require('mqtt');
 sensorClient = mqtt.connect('mqtt://localhost:1883');
-const io = require('socket.io-client');
-var socket = io('http://localhost:4000');
+const socket = require('../socket-io/socketio-client');
 
 const SensorModule = require('../mongodb/home-model/sensorModule');
 
