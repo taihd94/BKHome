@@ -22,14 +22,14 @@ export class SocketioService {
     this.socket.emit(event, message);
   }
 
-  getMessages(roomId) {
+  getMessages(event) {
     let observable = new Observable(observer => {
       //this.socket = io(this.url);
-      this.socket.on(roomId, (data) => {
+      this.socket.on(event, (data) => {
         observer.next(data);
       });
       return () => {
-        this.socket.disconnect();
+        this.socket.disconnect(event);
       };
     })
     return observable;

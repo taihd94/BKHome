@@ -13,7 +13,6 @@ export class ThenactionsComponent implements OnInit, OnChanges {
   constructor() { }
 
   ngOnInit() {
-    console.log(this.thenActions);
     if(!this.thenActions.length){
       this.thenActions.push({})
     }

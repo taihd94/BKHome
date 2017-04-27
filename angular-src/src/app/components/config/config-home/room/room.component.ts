@@ -32,7 +32,6 @@ export class RoomComponent implements OnInit, OnDestroy {
 
 
   ngOnInit() {
-    console.log(this.room);
     this.houseService.getListOfDevicesInRoom(this.room._id).subscribe(res=>{
         this.devices = res.devices;
         if(this.devices){

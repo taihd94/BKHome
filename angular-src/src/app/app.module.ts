@@ -38,6 +38,7 @@ import {FlashMessagesModule} from 'angular2-flash-messages';
 import {AuthGuard} from './guards/auth.guard';
 import {BroadcasterService} from './services/broadcast/broadcaster.service';
 import {MessageEventService} from './services/broadcast/message-event.service';
+import {TestService} from './services/broadcast/test.service';
 
 
 
@@ -139,7 +140,8 @@ const appRoutes: Routes = [
     SocketioService,
     BroadcasterService,
     MessageEventService,
-    RuleService
+    RuleService,
+    TestService
   ],
   bootstrap: [AppComponent]
 })

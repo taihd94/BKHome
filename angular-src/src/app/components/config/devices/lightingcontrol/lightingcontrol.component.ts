@@ -45,12 +45,20 @@ export class LightingcontrolComponent implements OnInit {
       }
       if(!!roomId){
         this.houseService.getFloorAndRoomByRoomId(roomId).subscribe(res=>{
-          this.selectedFloor = res.floorName;
-          this.selectedRoom = res.roomName;
-          let floor = this.listOfFloors.filter(floor=>{
-            return floor.name == this.selectedFloor;
-          }).pop()
-          this.listOfRooms = floor.rooms;
+          if(!res.success) {
+            console.log(res.msg)
+            this.selectedFloor = "Select floor";
+            this.selectedRoom = "Select room";
+          }
+          else {
+            let result = res.result;
+            this.selectedFloor = result.floorName;
+            this.selectedRoom = result.roomName;
+            let floor = this.listOfFloors.filter(floor=>{
+              return floor.name == this.selectedFloor;
+            }).pop()
+            this.listOfRooms = floor.rooms;
+          }
         })
       } else {
         this.selectedFloor = "Select floor";

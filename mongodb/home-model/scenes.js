@@ -8,7 +8,7 @@ const SceneSchema = new Schema({
     name: String,
     date: String,
     time: String,
-    repeat: [Boolean],
+    repeat: String,
     devices: [{
       _id: Schema.Types.ObjectId,
       value: Number
@@ -18,65 +18,49 @@ const SceneSchema = new Schema({
 const Scenes = module.exports = mongoose.model('scenes', SceneSchema);
 
 
-module.exports.getListOfScenes = function(callback){
-  Scenes.find((err, scenes)=>{
-    if(err) {
-      throw err;
-      callback({success: false, msg: "something went wrong"});
-    }
-    if(!!scenes){
-      callback(scenes);
-    }
-  });
-}
-
-module.exports.findSceneById = function(id, callback){
-  Scenes.findById(id, (err, scene)=>{
-    if(err) throw err;
-    if(scene){
-      callback({success: true, scene: scene});
-    } else {
-      callback({success: false, msg:"scene not found"});
-    }
+module.exports.getListOfScenes = function(){
+  return Scenes.find()
+  .then(scenes=>{
+    if(!scenes.length) throw new Error('No scene found')
+    return Promise.resolve(scenes)
   })
 }
 
-module.exports.addNewScene = function(newScene, callback){
+module.exports.findSceneById = function(id){
+  return Scenes.findById(id)
+  .then(scene=>{
+    if(!scene) throw new Error('scene not found: ' + id)
+    return Promise.resolve(scene)
+  })
+}
+
+module.exports.addNewScene = function(newScene){
   let scene = new Scenes(newScene);
-  scene.save((err)=>{
-    if(err) {
-      throw err;
-      return callback({success: false, msg:"something went wrong"});
-    } else {
-      return callback({success: true, msg:'Successfully added new scene'});
-    }
-  });
+  scene.save()
+  return Promise.resolve('Successfully added new scene')
 }
 
-module.exports.updateScene = function(id, newScene, callback){
-  Scenes.findById(id, (err, scene)=>{
-    if(err) throw err;
-    if(!!scene){
-      scene.time = newScene.time;
-      scene.date = newScene.date;
-      scene.devices = newScene.devices;
-      scene.repeat = newScene.repeat;
-      scene.save((err)=>{
-        if(err) throw err;
-        cronJob.create(scene);
-        callback({success: true, msg: "scene has been updated"});
-      })
-    } else {
-      callback({success: false, msg: "scene not found"});
-    }
+module.exports.updateScene = function(id, newScene){
+  return Scenes.findById(id)
+  .then(scene=>{
+    if(!scene) throw new Error('scene not found: ' + id)
+    scene.time = newScene.time;
+    scene.date = newScene.date;
+    scene.devices = newScene.devices;
+    scene.repeat = newScene.repeat;
+    return scene.save();
+  })
+  .then(scene=>{
+    cronJob.create(scene);
+    Promise.resolve('scene has been updated')
   })
 }
 
-module.exports.deleteScene = function(id, callback){
-  Scenes.findByIdAndRemove(id, (err)=>{
-    if(err) throw err;
+module.exports.deleteScene = function(id){
+  return Scenes.findByIdAndRemove(id)
+  .then(()=>{
     cronJob.stop(id);
-    callback({success: true, msg: "scene has been delete"});
+    Promise.resolve('scene has been delete')
   })
 }
 

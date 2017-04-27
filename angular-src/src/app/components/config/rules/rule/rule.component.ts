@@ -32,6 +32,7 @@ export class RuleComponent implements OnInit {
   toTimePickerHidden = true;
   TimePickerHidden = true;
 
+  time: any;
   fromTimeButtonsHidden = true;
   toTimeButtonsHidden = true;
   TimeButtonsHidden = true;
@@ -64,48 +65,42 @@ export class RuleComponent implements OnInit {
 
     this.ifCondtions = this.rule.ifConditions;
     this.thenActions = this.rule.thenActions;
+    this.time = this.rule.time;
 
-    if(!!this.rule.time){
-      this.isAllDayChecked = false;
-      this.fromTimePicker = this.rule.time.from;
-      this.toTimePicker = this.rule.time.to;
-      this.fromTime = moment(this.fromTimePicker, "HH:mm A").toDate();
-      this.toTime = moment(this.toTimePicker, "HH:mm A").toDate();
-      this.isNextDay = this.toTime.getTime() < this.fromTime.getTime();
-    } else {
-      this.fromTimePicker = 'null';
-      this.toTimePicker = 'null';
-      this.isAllDayChecked = true;
+    this.fromTimePicker = 'null';
+    this.toTimePicker = 'null';
+    this.isAllDayChecked = true;
+    
+    if((!!this.time)){
+      if(!this.time.isAllDay){
+        this.isAllDayChecked = false;
+        this.fromTimePicker = this.rule.time.from;
+        this.toTimePicker = this.rule.time.to;
+        this.fromTime = moment(this.fromTimePicker, "HH:mm A").toDate();
+        this.toTime = moment(this.toTimePicker, "HH:mm A").toDate();
+        this.isNextDay = this.toTime.getTime() < this.fromTime.getTime();
+      }
     }
-
-    // this.date = new DateModel();
-    // if(!!this.rule.date){
-    //   this.mapDate(this.rule.date);
-    // }
 
     if(!!this.rule.repeat){
-      this.repeatDays = this.rule.repeat;
-      this.repeatDaysStr = this.convertRepeatToString(this.repeatDays);
+      this.repeatDaysStr = this.rule.repeat;
+    } else {
+      this.repeatDaysStr = 'Daily';
     }
-
-
+    this.repeatDays = this.mapRepeatDays(this.repeatDaysStr);
   }
 
-  // mapDate(date){
-  //   let now = new Date();
-  //   let tomorrow = new Date();
-  //   tomorrow.setDate(now.getDate()+1);
-  //   let nowMoment = moment(now).format('DD/MM/YYYY');
-  //   let tomorrowMoment = moment(tomorrow).format('DD/MM/YYYY');
-  //   if(date===nowMoment){
-  //     this.date.formatted = 'Today';
-  //   } else if(date===tomorrowMoment){
-  //     this.date.formatted = 'Tomorrow';
-  //   } else {
-  //     this.date.formatted = date;
-  //   }
-  //   this.date.momentObj = moment(date, "DD MM YYYY");
-  // }
+
+  mapRepeatDays(repeatDaysStr){
+    var array = repeatDaysStr.split(", ");
+    let repeatDays = [false, false, false, false, false, false, false];
+    if(repeatDaysStr==='Daily') return [true, true, true, true, true, true, true];
+    for(let date of array){
+      let index = this.daysOfWeek.indexOf(date);
+      repeatDays[index] = true;
+    }
+    return repeatDays;
+  }
 
   convertRepeatToString(repeatDays){
     let string;
@@ -133,26 +128,6 @@ export class RuleComponent implements OnInit {
     this.fromTimePickerHidden = true;
     this.isAllDayChecked = isChecked;
   }
-
-  // clickFromTimeOkBtn(){
-  //   this.fromTimePickerHidden=true;
-  //   this.fromTimeButtonsHidden=true;
-  //   this.btnSaveHidden=false;
-  //   if(!this.fromTime){
-  //     this.fromTime = new Date();
-  //   }
-  //   this.fromTimePicker = moment(this.fromTime).format('LT');
-  // }
-  //
-  // clickToTimeOkBtn(){
-  //   this.toTimePickerHidden=true;
-  //   this.toTimeButtonsHidden=true;
-  //   this.btnSaveHidden=false;
-  //   if(!this.toTime){
-  //     this.toTime = new Date();
-  //   }
-  //   this.toTimePicker = moment(this.toTime).format('LT');
-  // }
 
   clickTimeOkBtn(){
     this.toTimePickerHidden=true;
@@ -202,10 +177,12 @@ export class RuleComponent implements OnInit {
     this.editHidden = true;
     this.btnSaveHidden = true;
 
-    this.rule.repeat = this.repeatDays;
+    this.rule.repeat = this.repeatDaysStr;
 
     if(this.isAllDayChecked){
-      this.rule.time = null;
+      this.rule.time = {
+        isAllDay: true
+      }
     } else {
       this.rule.time = {};
       this.rule.time.from = this.fromTimePicker;

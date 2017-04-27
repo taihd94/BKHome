@@ -16,16 +16,18 @@ authClient.on('message', (topic, message) => {
       switch(json.deviceType){
         case 'LightingControl':
             let device = new LightingControl(json);
-            LightingControl.authenticateDevices(device, result => {
+            return LightingControl.authenticateDevices(device)
+            .then(result=>{
               authClient.publish('authenticate/' + device.deviceCode, result.toString());
-            });
+            })
             break;
         case 'SensorModule':
             let ssModule = new SensorModule(json);
-            SensorModule.authenticateDevices(ssModule, result => {
+            return SensorModule.authenticateDevices(ssModule)
+            .then(result=>{
               authClient.publish('authenticate/' + ssModule.deviceCode, result.toString());
               console.log("publish:" + 'authenticate/' + ssModule.deviceCode)
-            });
+            })
             break;
       }
     }

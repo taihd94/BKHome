@@ -4,7 +4,6 @@ const moment = require('moment');
 const Scenes = require('../mongodb/home-model/scenes');
 
 function createCronString(scene) {
-  let dateOfWeekArr = ['MON', 'TUE', 'WED', 'THU', 'FRI', 'SAT', 'SUN']
   let cronStr = "";
   let time = moment(scene.time, "HH:mm A");
   let minutes = time.minutes();
@@ -13,25 +12,15 @@ function createCronString(scene) {
   let month = '*';
   let year = '*';
   let dateOfWeek = "";
-  let repeat = scene.repeat;
-  if(checkRepeatNone(repeat)){
-    cronStr +=  minutes + ' ' + hours + ' * * *';
-  } else {
-    for(let i=0; i<repeat.length; i++){
-      if(repeat[i]){
-        dateOfWeek += dateOfWeekArr[i] + ',';
-      }
-      if(i==repeat.length-1){
-        dateOfWeek = dateOfWeek.slice(0, -1);
-        cronStr +=  minutes + ' ' + hours + ' ' + date + ' ' + month + ' ' + dateOfWeek;
-      }
-    }
-  }
+  let repeat = scene.repeat.replace(/\s/g, '');
+  if(repeat==='Daily') repeat = '*'
+  else if(repeat==='None') repeat = ''
+  cronStr +=  minutes + ' ' + hours + ' ' + date + ' ' + month + ' ' + repeat;
   return cronStr;
 }
 
-function checkRepeatNone(repeat) {
-  return (!repeat[0])&&(!repeat[1])&&(!repeat[2])&&(!repeat[3])&&(!repeat[4])&&(!repeat[5])&&(!repeat[6]);
+function isNoneRepeat(repeat) {
+  return repeat==='None';
 }
 
 function repeatJob(cronStr, id, devices) {
@@ -118,7 +107,7 @@ module.exports.create = function(scene){
         let now = new Date();
         if(scheduleTime.getTime() > now.getTime()){
           // scheduleTime is greater then now
-          if(checkRepeatNone(sceneRepeat)){
+          if(isNoneRepeat(sceneRepeat)){
             // job not repeat
             scheduleJob(scheduleTime, id, devices);
           } else {
@@ -127,7 +116,7 @@ module.exports.create = function(scene){
           }
         } else
         // scheduleTime is less then now
-        if (!checkRepeatNone(sceneRepeat)){
+        if (!isNoneRepeat(sceneRepeat)){
           // job repeat
           repeatJob(cronStr, id, devices);
         } else {
@@ -141,7 +130,7 @@ module.exports.create = function(scene){
       }
       else
       // date of Scene is not define
-      if(!checkRepeatNone(sceneRepeat)){
+      if(!isNoneRepeat(sceneRepeat)){
         // job repeat
         repeatJob(cronStr, id, devices);
       } else {
@@ -166,9 +155,13 @@ module.exports.stop = function(id){
 }
 
 module.exports.restartCronJobs = function(){
-  Scenes.getListOfScenes(scenes=>{
+  Scenes.getListOfScenes()
+  .then(scenes=>{
     for(let scene of scenes){
       this.create(scene);
     }
-  });
+  })
+  .catch(err=>{
+    console.log(err)
+  })
 };

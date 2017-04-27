@@ -1,32 +1,37 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, OnDestroy, Input } from '@angular/core';
 import {MessageEventService} from '../../../../../services/broadcast/message-event.service';
+import {BroadcasterService} from '../../../../../services/broadcast/broadcaster.service';
 
 @Component({
   selector: 'app-light',
   templateUrl: './light.component.html',
   styleUrls: ['./light.component.css']
 })
-export class LightComponent implements OnInit {
+export class LightComponent implements OnInit, OnDestroy {
   @Input() light;
-  message;
+
+  messageEvent: any;
   lightValue: Number;
   preLightValue: Number;
   switchValue: Number;
 
   constructor(
-    private messageEvent: MessageEventService,
-  ) { }
+    private messageSerivce: MessageEventService,
+    private broadcaster: BroadcasterService
+  ) {}
 
   ngOnInit() {
     this.lightValue = this.switchValue = this.light.value;
-    this.messageEvent.emit("socketOn", this.light._id);
-    this.messageEvent.on(this.light._id)
-     .subscribe(message => {
-       this.message = message;
-       this.lightValue = this.message.value;
+    this.messageEvent = this.messageSerivce.on(this.light._id)
+     .subscribe((message:any) => {
+       this.lightValue = message.value;
        this.preLightValue = this.switchValue = this.lightValue;
        console.log(message);
     });
+  }
+
+  ngOnDestroy(){
+    this.messageEvent.unsubscribe();
   }
 
 
@@ -35,7 +40,7 @@ export class LightComponent implements OnInit {
         _id: this.light._id,
         value: value
     }
-    this.messageEvent.emit("device-event", message);
+    this.messageSerivce.emit("device-event", message);
   }
 
   getValue(value){

@@ -43,7 +43,6 @@ export class RelationalOperationComponent implements OnInit, OnChanges {
     this.deviceId = this.operation.deviceId;
     this.operator = this.mapOperator(this.operation.operator);
     this.value = this.operation.value;
-    console.log(this.deviceId);
     if(!!this.deviceId){
       this.deviceService.getItemDetails(this.deviceId).subscribe(res=>{
         if(!res.success){

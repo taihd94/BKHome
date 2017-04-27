@@ -11,42 +11,66 @@ const Scenes = require('../mongodb/home-model/scenes');
 
 
 router.get('/', (req, res, next)=>{
-  Scenes.getListOfScenes((result)=>{
-    res.json(result);
+  Scenes.getListOfScenes()
+  .then(result=>{
+    res.json({success: true, scenes: result})
+  })
+  .catch(err=>{
+    console.log(err);
+    res.json({success: false, msg: err.message})
   })
 })
 
 router.get('/:id/devices', (req, res, next)=>{
   let sceneId = req.params.id;
-  Scenes.findSceneById(sceneId, result=>{
-    if(result.success){
-      LightingControl.getLightsDetails(result.scene.devices, result=>{
-        res.json({success: true, rooms: result});
-      });
-    }
+  Scenes.findSceneById(sceneId)
+  .then(scene=>{
+    if(!scene.devices.length) return Promise.resolve([])
+    return LightingControl.getLightsDetails(scene.devices)
   })
-
+  .then(result=>{
+    res.json({success: true, rooms: result});
+  })
+  .catch(err=>{
+    console.log(err);
+    res.json({success: false, msg: err.message})
+  })
 })
 
 router.post('/', (req, res, next)=>{
   let newScene = req.body;
-  Scenes.addNewScene(newScene, result=>{
-    res.json(result);
+  Scenes.addNewScene(newScene)
+  .then(result=>{
+    res.json({success: true, msg: result})
+  })
+  .catch(err=>{
+    console.log(err);
+    res.json({success: false, msg: err.message})
   })
 })
 
 router.put('/:id', (req, res, next)=>{
   let sceneId = req.params.id;
   let newScene = req.body;
-  Scenes.updateScene(sceneId, newScene, result=>{
-    res.json(result);
+  Scenes.updateScene(sceneId, newScene)
+  .then(result=>{
+    res.json({success: true, msg: result})
+  })
+  .catch(err=>{
+    console.log(err);
+    res.json({success: false, msg: err.message})
   })
 })
 
 router.delete('/:id', (req, res, next)=>{
   let sceneId = req.params.id;
-  Scenes.deleteScene(sceneId, result=>{
-    res.json(result);
+  Scenes.deleteScene(sceneId)
+  .then(result=>{
+    res.json({success: true, msg: result})
+  })
+  .catch(err=>{
+    console.log(err);
+    res.json({success: false, msg: err.message})
   })
 })
 

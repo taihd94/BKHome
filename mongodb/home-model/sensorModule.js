@@ -19,86 +19,59 @@ var SensorModuleSchema = new Schema({
 
 const SensorModule = module.exports = mongoose.model('SensorModule', SensorModuleSchema);
 
-module.exports.updateSensorName = function(deviceId, sensors, callback){
-  SensorModule.findById(deviceId, (err, device)=>{
-    if(err){
-      throw err;
-      callback({success: false, msg: "something went wrong"});
-    }
-    if(device){
-      for(i=0; i< device.sensors.length; i++){
-        device.sensors[i].name = sensors[i].name;
+module.exports.updateSensorName = function(deviceId, sensors){
+  return SensorModule.findById(deviceId)
+  .then(device=>{
+    if(!device) throw new Error('SensorModule not found: ' + deviceId)
+    for(i=0; i< device.sensors.length; i++){
+      device.sensors[i].name = sensors[i].name;
+      if((i+1)===device.sensors.length){
+        return device.save()
       }
-      device.save(err=>{
-        if(err)
-          throw err;
-        else {
-          callback({success: true, msg: "sensors have been updated"});
-        }
-      })
     }
+  })
+  .then(device=>{
+    return Promise.resolve('sensors have been updated')
   })
 }
 
-module.exports.updateSensorValue = function(deviceId, sensorModule, callback){
-  SensorModule.findById(deviceId, (err, device)=>{
-    if(err){
-      throw err;
-      callback({success: false, msg: "something went wrong"});
-    }
-    if(device){
-      device.battery = sensorModule.battery;
-      for(i=0; i< device.sensors.length; i++){
-        device.sensors[i].value = sensorModule.sensors[i].value;
+module.exports.updateSensorValue = function(deviceId, sensorModule){
+  return SensorModule.findById(deviceId)
+  .then(device=>{
+    if(!device) throw new Error('SensorModule not found: ' + deviceId)
+    device.battery = sensorModule.battery;
+    for(i=0; i< device.sensors.length; i++){
+      device.sensors[i].value = sensorModule.sensors[i].value;
+      if((i+1)===device.sensors.length){
+        return device.save()
       }
-      device.save(err=>{
-        if(err)
-          throw err;
-        else {
-          callback(device);
-        }
-      })
     }
   })
 }
 
-module.exports.updateSensors = function(deviceId, sensorModule, callback){
-  SensorModule.findByIdAndUpdate(deviceId, sensorModule, (err, device)=>{
-    if(err){
-      throw err;
-      callback({success: false, msg: "something went wrong"});
-    }
-    else {
-      callback({success: true, msg: "device has been updated"});
-    }
+module.exports.updateSensors = function(deviceId, sensorModule){
+  return SensorModule.findByIdAndUpdate(deviceId, sensorModule)
+  .then(device=>{
+    return Promise.resolve('SensorModule has been updated')
   })
 }
 
 
-module.exports.authenticateDevices = function(newDevice, callback) {
-  SensorModule.findOne({deviceCode: newDevice.deviceCode},(err, device)=>{
-    if(err) throw err;
-    if(!device){
-      newDevice.save((err, doc) => {
-        if(err) throw err;
-        else {
-          callback(doc._id);
-        }
-      });
-    } else {
-      callback(device._id);
-    }
+module.exports.authenticateDevices = function(newDevice) {
+  return SensorModule.findOne({deviceCode: newDevice.deviceCode})
+  .then(device=>{
+    if(!device) return Promise.resolve(device._id)
+    return newDevice.save().then(device=>{
+      return Promise.resolve(device._id)
+    })
   })
 };
 
-module.exports.getSensorDetails = function(sensorId, callback){
-  SensorModule.findOne({"sensors._id": sensorId}, (err,device)=>{
-    if(err) throw err;
-    if(!!device){
-      let sensor = device.sensors.id(sensorId);
-      callback({success: true, sensor: sensor});
-    } else {
-      callback({success: false, msg: 'Sensor not found'});
-    }
+module.exports.getSensorDetails = function(sensorId){
+  return SensorModule.findOne({"sensors._id": sensorId})
+  .then(device=>{
+    if(!device) throw new Error('No SensorModule has sensor: ' + sensorId)
+    let sensor = device.sensors.id(sensorId);
+    return Promise.resolve(sensor)
   })
 }

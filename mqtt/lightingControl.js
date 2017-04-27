@@ -1,6 +1,6 @@
 const mqtt = require('mqtt');
 ltcClient = mqtt.connect('mqtt://localhost:1883');
-const LightingControl = require('../mongodb/home-model/lightingControl');
+// const LightingControl = require('../mongodb/home-model/lightingControl');
 
 
 ltcClient.on('connect',  () => {

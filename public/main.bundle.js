@@ -1,6 +1,6 @@
 webpackJsonp([1,5],{
 
-/***/ 1041:
+/***/ 1043:
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(6)();
@@ -18,7 +18,7 @@ module.exports = module.exports.toString();
 
 /***/ }),
 
-/***/ 1042:
+/***/ 1044:
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(6)();
@@ -36,7 +36,7 @@ module.exports = module.exports.toString();
 
 /***/ }),
 
-/***/ 1043:
+/***/ 1045:
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(6)();
@@ -54,7 +54,7 @@ module.exports = module.exports.toString();
 
 /***/ }),
 
-/***/ 1044:
+/***/ 1046:
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(6)();
@@ -72,7 +72,7 @@ module.exports = module.exports.toString();
 
 /***/ }),
 
-/***/ 1045:
+/***/ 1047:
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(6)();
@@ -90,7 +90,7 @@ module.exports = module.exports.toString();
 
 /***/ }),
 
-/***/ 1046:
+/***/ 1048:
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(6)();
@@ -108,7 +108,7 @@ module.exports = module.exports.toString();
 
 /***/ }),
 
-/***/ 1047:
+/***/ 1049:
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(6)();
@@ -126,7 +126,7 @@ module.exports = module.exports.toString();
 
 /***/ }),
 
-/***/ 1048:
+/***/ 1050:
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(6)();
@@ -144,7 +144,7 @@ module.exports = module.exports.toString();
 
 /***/ }),
 
-/***/ 1049:
+/***/ 1051:
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(6)();
@@ -162,7 +162,7 @@ module.exports = module.exports.toString();
 
 /***/ }),
 
-/***/ 1050:
+/***/ 1052:
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(6)();
@@ -180,7 +180,7 @@ module.exports = module.exports.toString();
 
 /***/ }),
 
-/***/ 1051:
+/***/ 1053:
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(6)();
@@ -198,7 +198,7 @@ module.exports = module.exports.toString();
 
 /***/ }),
 
-/***/ 1052:
+/***/ 1054:
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(6)();
@@ -216,7 +216,7 @@ module.exports = module.exports.toString();
 
 /***/ }),
 
-/***/ 1053:
+/***/ 1055:
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(6)();
@@ -234,7 +234,7 @@ module.exports = module.exports.toString();
 
 /***/ }),
 
-/***/ 1054:
+/***/ 1056:
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(6)();
@@ -252,7 +252,7 @@ module.exports = module.exports.toString();
 
 /***/ }),
 
-/***/ 1055:
+/***/ 1057:
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(6)();
@@ -270,7 +270,7 @@ module.exports = module.exports.toString();
 
 /***/ }),
 
-/***/ 1056:
+/***/ 1058:
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(6)();
@@ -288,7 +288,7 @@ module.exports = module.exports.toString();
 
 /***/ }),
 
-/***/ 1057:
+/***/ 1059:
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(6)();
@@ -306,7 +306,7 @@ module.exports = module.exports.toString();
 
 /***/ }),
 
-/***/ 1058:
+/***/ 1060:
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(6)();
@@ -324,7 +324,7 @@ module.exports = module.exports.toString();
 
 /***/ }),
 
-/***/ 1059:
+/***/ 1061:
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(6)();
@@ -342,7 +342,7 @@ module.exports = module.exports.toString();
 
 /***/ }),
 
-/***/ 1060:
+/***/ 1062:
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(6)();
@@ -360,7 +360,7 @@ module.exports = module.exports.toString();
 
 /***/ }),
 
-/***/ 1061:
+/***/ 1063:
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(6)();
@@ -378,7 +378,7 @@ module.exports = module.exports.toString();
 
 /***/ }),
 
-/***/ 1062:
+/***/ 1064:
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(6)();
@@ -396,7 +396,7 @@ module.exports = module.exports.toString();
 
 /***/ }),
 
-/***/ 1063:
+/***/ 1065:
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(6)();
@@ -414,42 +414,6 @@ module.exports = module.exports.toString();
 
 /***/ }),
 
-/***/ 1064:
-/***/ (function(module, exports, __webpack_require__) {
-
-exports = module.exports = __webpack_require__(6)();
-// imports
-
-
-// module
-exports.push([module.i, "", ""]);
-
-// exports
-
-
-/*** EXPORTS FROM exports-loader ***/
-module.exports = module.exports.toString();
-
-/***/ }),
-
-/***/ 1065:
-/***/ (function(module, exports, __webpack_require__) {
-
-exports = module.exports = __webpack_require__(6)();
-// imports
-
-
-// module
-exports.push([module.i, "", ""]);
-
-// exports
-
-
-/*** EXPORTS FROM exports-loader ***/
-module.exports = module.exports.toString();
-
-/***/ }),
-
 /***/ 1066:
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -458,7 +422,7 @@ exports = module.exports = __webpack_require__(6)();
 
 
 // module
-exports.push([module.i, ".navbar-default {\n  margin: 0px 0px 0px 0px;\n  background-color: #393c3e;\n  border-color: #393c3e;\n}\n\n.navbar {\n    border-radius: 0px;\n    box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);\n}\n", ""]);
+exports.push([module.i, "", ""]);
 
 // exports
 
@@ -494,6 +458,24 @@ exports = module.exports = __webpack_require__(6)();
 
 
 // module
+exports.push([module.i, ".navbar-default {\n  margin: 0px 0px 0px 0px;\n  background-color: #393c3e;\n  border-color: #393c3e;\n}\n\n.navbar {\n    border-radius: 0px;\n    box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);\n}\n", ""]);
+
+// exports
+
+
+/*** EXPORTS FROM exports-loader ***/
+module.exports = module.exports.toString();
+
+/***/ }),
+
+/***/ 1069:
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(6)();
+// imports
+
+
+// module
 exports.push([module.i, "", ""]);
 
 // exports
@@ -504,7 +486,25 @@ module.exports = module.exports.toString();
 
 /***/ }),
 
-/***/ 1080:
+/***/ 1070:
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(6)();
+// imports
+
+
+// module
+exports.push([module.i, "", ""]);
+
+// exports
+
+
+/*** EXPORTS FROM exports-loader ***/
+module.exports = module.exports.toString();
+
+/***/ }),
+
+/***/ 1082:
 /***/ (function(module, exports, __webpack_require__) {
 
 var map = {
@@ -753,219 +753,267 @@ webpackContext.keys = function webpackContextKeys() {
 };
 webpackContext.resolve = webpackContextResolve;
 module.exports = webpackContext;
-webpackContext.id = 1080;
+webpackContext.id = 1082;
 
-
-/***/ }),
-
-/***/ 1111:
-/***/ (function(module, exports) {
-
-module.exports = "<app-navbar></app-navbar>\n<router-outlet></router-outlet>\n"
-
-/***/ }),
-
-/***/ 1112:
-/***/ (function(module, exports) {
-
-module.exports = "<div class=\"col-sm-8 rooms-config\">\n  <flash-messages></flash-messages>\n  <div class=\"listOfRooms\" *ngFor = \"let room of rooms\">\n    <app-room [room]=\"room\" [floorId]=\"floorId\" (roomChange)=\"getRooms(floorId)\"></app-room>\n  </div>\n  <div class=\"addRoom\" [hidden]=\"!floorId\">\n    <button type=\"button\" class=\"fa fa-plus-circle fa-2x\" (click)=\"checkClick=!checkClick\"></button>\n    <div class=\"input\" [hidden]=\"checkClick\" >\n      <form (submit)=\"addRoomSubmit()\">\n      <div class=\"form-group\">\n            <input type=\"text\"\n                    class=\"form-control\"\n                    [(ngModel)]=\"roomAddedName\" name=\"roomAddedName\"\n                    placeholder=\"Room name\"\n                    required>\n        </div>\n        <input type=\"submit\" class=\"btn btn-success btn-add-room\" value=\"Add\">\n      </form>\n    </div>\n  </div>\n</div>\n"
 
 /***/ }),
 
 /***/ 1113:
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"dimmable\"  *ngIf=\"light.dimmable==true\" >\n  <a class=\"list-group-item\">{{light.name}}</a>\n  <md-slider [thumb-label]=\"true\" [(ngModel)]=\"lightValue\" (input)=\"getValue($event.value)\"></md-slider>\n  <div [ngClass]=\"light.dimmable==true?'hidden-xs':''\" >\n    <ui-switch [(ngModel)]=\"switchValue\" size=\"medium-v2\" (click)=\"getSwitchValue(switchValue)\"></ui-switch>\n  </div>\n</div>\n<div class=\"not-dimmable\" *ngIf=\"light.dimmable==false\" >\n  <a class=\"list-group-item\">{{light.name}}</a>\n  <ui-switch [(ngModel)]=\"lightValue\" size=\"medium-v2\" (click)=\"getValue(lightValue)\"></ui-switch>\n</div>\n"
+module.exports = "<app-navbar></app-navbar>\n<router-outlet></router-outlet>\n"
 
 /***/ }),
 
 /***/ 1114:
 /***/ (function(module, exports) {
 
-module.exports = "<div bsModal #smModal=\"bs-modal\" class=\"modal fade\" tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"mySmallModalLabel\" aria-hidden=\"true\">\n  <div class=\"modal-dialog modal-sm\">\n    <div class=\"modal-content\">\n      <div class=\"modal-header\">\n        <h4 class=\"modal-title\">Are you sure you want to delete <b>{{roomDeletedName}}</b> ?</h4>\n      </div>\n      <div class=\"modal-body\">\n        <button type=\"button\" class=\"btn btn-success btn-modal\" (click)=\"smModal.hide()\" (click)=\"deleteRoom()\">Yes</button>\n        <button type=\"button\" class=\"btn btn-danger btn-modal\" (click)=\"smModal.hide()\">No</button>\n      </div>\n    </div>\n  </div>\n</div>\n\n<div class=\"panel panel-success\">\n  <div class=\"panel-heading\">\n    <div class=\"title\" (click)=\"height = height ? 0 : el.scrollHeight\">\n      <a href=\"/config#{{room._id}}\" class=\"panel-title\">{{room.name}}</a>\n      <button type=\"button\" class=\"fa fa-times fa-2x\" (click)=\"getDeletedRoom(room._id, room.name)\" (click)=\"smModal.show()\"></button>\n    </div>\n  </div>\n  <div class=\"card card-block card-header block\" [style.height]=\"height + 'px'\" #el>\n    <div class=\"panel-body\">\n      <div class=\"row\">\n        <div class=\"col-sm-4 panel-left\">\n          <div class=\"roomImage\">\n\n            <div class=\"imgAvailable\" *ngIf = \"room.imgPath\">\n              <img src=\"{{room.imgPath}}\"\n                   class=\"img-responsive roomImg\"\n                   alt=\"Responsive image\">\n            </div>\n            <div class=\"imgNotAvailable\" *ngIf = \"!room.imgPath\" [hidden] = \"checkImgClick\">\n              <img src=\"http://i.imgur.com/FQk1REK.jpg\"\n                   class=\"img-responsive roomImg\"\n                   alt=\"Responsive image\">\n               <form (submit)=\"addImgSubmit(room._id)\">\n               <div class=\"form-group form-addImageUrl\">\n                     <input type=\"text\"\n                             class=\"form-control\"\n                             [(ngModel)]=\"imgUrl\" name=\"imgUrl\"\n                             placeholder=\"Add image url\"\n                             required>\n                 </div>\n               </form>\n            </div>\n          </div>\n          <div class=\"sensors\">\n            <div class=\"device\" *ngFor=\"let ssmodule of sensorModules\">\n              <div class=\"sensor\" *ngFor=\"let sensor of ssmodule.sensors\">\n                <app-sensor [sensor] = \"sensor\"></app-sensor>\n              </div>\n            </div>\n          </div>\n        </div>\n        <div class=\"col-sm-8 devices\">\n          <h2 class=\"collapse in\">Devices</h2>\n          <div class=\"list-group\">\n            <div class=\"device\" *ngFor=\"let ltctr of lightingControls\">\n              <div class=\"light\" *ngFor=\"let light of ltctr.lights\">\n                <app-light [light] = \"light\"></app-light>\n              </div>\n            </div>\n          </div>\n        </div>\n      </div>\n    </div>\n  </div>\n</div>\n"
+module.exports = "<div class=\"col-sm-8 rooms-config\">\n  <flash-messages></flash-messages>\n  <div class=\"listOfRooms\" *ngFor = \"let room of rooms\">\n    <app-room [room]=\"room\" [floorId]=\"floorId\" (roomChange)=\"getRooms(floorId)\"></app-room>\n  </div>\n  <div class=\"addRoom\" [hidden]=\"!floorId\">\n    <button type=\"button\" class=\"fa fa-plus-circle fa-2x\" (click)=\"checkClick=!checkClick\"></button>\n    <div class=\"input\" [hidden]=\"checkClick\" >\n      <form (submit)=\"addRoomSubmit()\">\n      <div class=\"form-group\">\n            <input type=\"text\"\n                    class=\"form-control\"\n                    [(ngModel)]=\"roomAddedName\" name=\"roomAddedName\"\n                    placeholder=\"Room name\"\n                    required>\n        </div>\n        <input type=\"submit\" class=\"btn btn-success btn-add-room\" value=\"Add\">\n      </form>\n    </div>\n  </div>\n</div>\n"
 
 /***/ }),
 
 /***/ 1115:
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"sensor\" [ngSwitch]=\"sensor._type\">\n  <div class=\"ss\" *ngSwitchCase=\"'Temperature'\">\n    <i class=\"fa fa-thermometer-three-quarters\" aria-hidden=\"true\"></i>\n    <span> {{sensor._type}}: </span>\n    <input type=\"text\" [(ngModel)]=\"value\" disabled>\n    <span>oC</span>\n  </div>\n  <div class=\"ss\" *ngSwitchCase=\"'Humidity'\">\n    <i class=\"fa fa-tint\" aria-hidden=\"true\"></i>\n    <span> {{sensor._type}}: </span>\n    <input type=\"text\" [(ngModel)]=\"value\" disabled>\n    <span>%</span>\n  </div>\n  <div class=\"ss\" *ngSwitchCase=\"'Light'\">\n    <i class=\"fa fa-sun-o\" aria-hidden=\"true\"></i>\n    <span> {{sensor._type}}: </span>\n    <input type=\"text\" [(ngModel)]=\"value \" disabled>\n    <span> Lux</span>\n  </div>\n  <!-- <div class=\"ss\" *ngSwitchCase=\"'Gate'\">\n    <i class=\"fa fa-building\" aria-hidden=\"true\"></i>\n    <span> {{sensor.name}}: </span>\n    <input type=\"text\" [(ngModel)]=\"value\" disabled>\n  </div> -->\n</div>\n"
+module.exports = "<div class=\"dimmable\"  *ngIf=\"light.dimmable==true\" >\n  <a class=\"list-group-item\">{{light.name}}</a>\n  <md-slider [thumb-label]=\"true\" [(ngModel)]=\"lightValue\" (input)=\"getValue($event.value)\"></md-slider>\n  <div [ngClass]=\"light.dimmable==true?'hidden-xs':''\" >\n    <ui-switch [(ngModel)]=\"switchValue\" size=\"medium-v2\" (click)=\"getSwitchValue(switchValue)\"></ui-switch>\n  </div>\n</div>\n<div class=\"not-dimmable\" *ngIf=\"light.dimmable==false\" >\n  <a class=\"list-group-item\">{{light.name}}</a>\n  <ui-switch [(ngModel)]=\"lightValue\" size=\"medium-v2\" (click)=\"getValue(lightValue)\"></ui-switch>\n</div>\n"
 
 /***/ }),
 
 /***/ 1116:
 /***/ (function(module, exports) {
 
-module.exports = "<div bsModal #smModal=\"bs-modal\" class=\"modal fade\" tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"mySmallModalLabel\" aria-hidden=\"true\">\n  <div class=\"modal-dialog modal-sm\">\n    <div class=\"modal-content\">\n      <div class=\"modal-header\">\n        <h4 class=\"modal-title\">Are you sure you want to delete <b>{{floorDeletedName}}</b> ?</h4>\n      </div>\n      <div class=\"modal-body\">\n        <button type=\"button\" class=\"btn btn-success btn-modal\" (click)=\"smModal.hide()\" (click)=\"deleteFloor()\">Yes</button>\n        <button type=\"button\" class=\"btn btn-danger btn-modal\" (click)=\"smModal.hide()\">No</button>\n      </div>\n    </div>\n  </div>\n</div>\n\n\n<div class=\"hidden-xs col-sm-2\">\n  <div class=\"sidebar\">\n    <div class=\"panel panel-success home\">\n      <!-- <div class=\"panel-heading\" (click)=\"height = height ? 0 : el.scrollHeight\"> -->\n      <div class=\"panel-heading\" (click)=\"selectConfig('home')\" [routerLinkActive]=\"['active']\" [routerLink] = \"['home/' + floorSelectedId]\">\n        <h3 class=\"panel-title\" >Home</h3>\n      </div>\n      <div\n        class=\"card card-block card-header block\" [style.height]=\"height + 'px'\" #el [hidden]=\"listOfFloorHidden\">\n        <div class=\"panel-body\">\n          <div class=\"row floor\">\n              <div class=\"list-group\">\n                <div class=\"list-floor\" *ngFor=\"let floor of floors | reverse\">\n                <a class=\"list-group-item\"\n                    (click)=\"getFloor(floor.name, floor._id)\"\n                    [routerLink] = \"['home/' + floor._id]\"\n                    [routerLinkActive]=\"['floor-active']\">\n                  <button type=\"button\" class=\"fa fa-minus-circle\" (click)=\"smModal.show()\"></button> {{floor.name}}</a>\n                </div>\n                <div class=\"list-floor addFloor\">\n                  <button type=\"button\" class=\"fa fa-plus-circle fa-1x\" (click)=\"addFloorFlag=!addFloorFlag\"></button>\n                  <div class=\"form-group\" [hidden]=\"addFloorFlag\">\n                    <input  type=\"text\"\n                            placeholder=\"Floor Name\"\n                            [(ngModel)]=\"floorname\" name=\"floorname\"\n                            class=\"form-control\"\n                            (keyup.enter)=\"addFloor(floorname)\">\n                  </div>\n                </div>\n              </div>\n          </div>\n        </div>\n      </div>\n\n      <div class=\"panel-heading\" (click)=\"selectConfig('devices')\" [routerLinkActive]=\"['active']\" [routerLink] = \"['/config/devices']\">\n        <h3 class=\"panel-title\">Device</h3>\n      </div>\n      <div class=\"panel-heading\" (click)=\"selectConfig('scenes')\" [routerLinkActive]=\"['active']\" [routerLink] = \"['/config/scenes']\">\n        <h3 class=\"panel-title\">Scene</h3>\n      </div>\n      <div class=\"panel-heading\" (click)=\"selectConfig('rules')\" [routerLinkActive]=\"['active']\" [routerLink] = \"['/config/rules']\">\n        <h3 class=\"panel-title\">Rule</h3>\n      </div>\n    </div>\n\n\n  </div>\n</div>\n"
+module.exports = "<div bsModal #smModal=\"bs-modal\" class=\"modal fade\" tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"mySmallModalLabel\" aria-hidden=\"true\">\n  <div class=\"modal-dialog modal-sm\">\n    <div class=\"modal-content\">\n      <div class=\"modal-header\">\n        <h4 class=\"modal-title\">Are you sure you want to delete <b>{{roomDeletedName}}</b> ?</h4>\n      </div>\n      <div class=\"modal-body\">\n        <button type=\"button\" class=\"btn btn-success btn-modal\" (click)=\"smModal.hide()\" (click)=\"deleteRoom()\">Yes</button>\n        <button type=\"button\" class=\"btn btn-danger btn-modal\" (click)=\"smModal.hide()\">No</button>\n      </div>\n    </div>\n  </div>\n</div>\n\n<div class=\"panel panel-success\">\n  <div class=\"panel-heading\">\n    <div class=\"title\" (click)=\"height = height ? 0 : el.scrollHeight\">\n      <a href=\"/config#{{room._id}}\" class=\"panel-title\">{{room.name}}</a>\n      <button type=\"button\" class=\"fa fa-times fa-2x\" (click)=\"getDeletedRoom(room._id, room.name)\" (click)=\"smModal.show()\"></button>\n    </div>\n  </div>\n  <div class=\"card card-block card-header block\" [style.height]=\"height + 'px'\" #el>\n    <div class=\"panel-body\">\n      <div class=\"row\">\n        <div class=\"col-sm-4 panel-left\">\n          <div class=\"roomImage\">\n\n            <div class=\"imgAvailable\" *ngIf = \"room.imgPath\">\n              <img src=\"{{room.imgPath}}\"\n                   class=\"img-responsive roomImg\"\n                   alt=\"Responsive image\">\n            </div>\n            <div class=\"imgNotAvailable\" *ngIf = \"!room.imgPath\" [hidden] = \"checkImgClick\">\n              <img src=\"http://i.imgur.com/FQk1REK.jpg\"\n                   class=\"img-responsive roomImg\"\n                   alt=\"Responsive image\">\n               <form (submit)=\"addImgSubmit(room._id)\">\n               <div class=\"form-group form-addImageUrl\">\n                     <input type=\"text\"\n                             class=\"form-control\"\n                             [(ngModel)]=\"imgUrl\" name=\"imgUrl\"\n                             placeholder=\"Add image url\"\n                             required>\n                 </div>\n               </form>\n            </div>\n          </div>\n          <div class=\"sensors\">\n            <div class=\"device\" *ngFor=\"let ssmodule of sensorModules\">\n              <div class=\"sensor\" *ngFor=\"let sensor of ssmodule.sensors\">\n                <app-sensor [sensor] = \"sensor\"></app-sensor>\n              </div>\n            </div>\n          </div>\n        </div>\n        <div class=\"col-sm-8 devices\">\n          <h2 class=\"collapse in\">Devices</h2>\n          <div class=\"list-group\">\n            <div class=\"device\" *ngFor=\"let ltctr of lightingControls\">\n              <div class=\"light\" *ngFor=\"let light of ltctr.lights\">\n                <app-light [light] = \"light\"></app-light>\n              </div>\n            </div>\n          </div>\n        </div>\n      </div>\n    </div>\n  </div>\n</div>\n"
 
 /***/ }),
 
 /***/ 1117:
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"row\">\n  <app-config-navbar></app-config-navbar>\n  <router-outlet></router-outlet>\n</div>\n"
+module.exports = "<div class=\"sensor\" [ngSwitch]=\"sensor._type\">\n  <div class=\"ss\" *ngSwitchCase=\"'Temperature'\">\n    <i class=\"fa fa-thermometer-three-quarters\" aria-hidden=\"true\"></i>\n    <span> {{sensor._type}}: </span>\n    <input type=\"text\" [(ngModel)]=\"value\" disabled>\n    <span>oC</span>\n  </div>\n  <div class=\"ss\" *ngSwitchCase=\"'Humidity'\">\n    <i class=\"fa fa-tint\" aria-hidden=\"true\"></i>\n    <span> {{sensor._type}}: </span>\n    <input type=\"text\" [(ngModel)]=\"value\" disabled>\n    <span>%</span>\n  </div>\n  <div class=\"ss\" *ngSwitchCase=\"'Light'\">\n    <i class=\"fa fa-sun-o\" aria-hidden=\"true\"></i>\n    <span> {{sensor._type}}: </span>\n    <input type=\"text\" [(ngModel)]=\"value \" disabled>\n    <span> Lux</span>\n  </div>\n  <!-- <div class=\"ss\" *ngSwitchCase=\"'Gate'\">\n    <i class=\"fa fa-building\" aria-hidden=\"true\"></i>\n    <span> {{sensor.name}}: </span>\n    <input type=\"text\" [(ngModel)]=\"value\" disabled>\n  </div> -->\n</div>\n"
 
 /***/ }),
 
 /***/ 1118:
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"col-sm-9\">\n  <flash-messages></flash-messages>\n  <section>\n          <div class=\"listOfDevices\" *ngFor=\"let device of listOfDevices\">\n            <div class=\"device\" *ngIf=\"device.deviceType=='LightingControl'\">\n              <app-lightingcontrol [lightingControl]=\"device\"></app-lightingcontrol>\n            </div>\n            <div class=\"device\" *ngIf=\"device.deviceType=='SensorModule'\">\n              <app-sensor-module [sensorModule]=\"device\"></app-sensor-module>\n            </div>\n          </div>\n  </section>\n</div>\n"
+module.exports = "<div bsModal #smModal=\"bs-modal\" class=\"modal fade\" tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"mySmallModalLabel\" aria-hidden=\"true\">\n  <div class=\"modal-dialog modal-sm\">\n    <div class=\"modal-content\">\n      <div class=\"modal-header\">\n        <h4 class=\"modal-title\">Are you sure you want to delete <b>{{floorDeletedName}}</b> ?</h4>\n      </div>\n      <div class=\"modal-body\">\n        <button type=\"button\" class=\"btn btn-success btn-modal\" (click)=\"smModal.hide()\" (click)=\"deleteFloor()\">Yes</button>\n        <button type=\"button\" class=\"btn btn-danger btn-modal\" (click)=\"smModal.hide()\">No</button>\n      </div>\n    </div>\n  </div>\n</div>\n\n\n<div class=\"hidden-xs col-sm-2\">\n  <div class=\"sidebar\">\n    <div class=\"panel panel-success home\">\n      <!-- <div class=\"panel-heading\" (click)=\"height = height ? 0 : el.scrollHeight\"> -->\n      <div class=\"panel-heading\" (click)=\"selectConfig('home')\" [routerLinkActive]=\"['active']\" [routerLink] = \"['home/' + floorSelectedId]\">\n        <h3 class=\"panel-title\" >Home</h3>\n      </div>\n      <div\n        class=\"card card-block card-header block\" [style.height]=\"height + 'px'\" #el [hidden]=\"listOfFloorHidden\">\n        <div class=\"panel-body\">\n          <div class=\"row floor\">\n              <div class=\"list-group\">\n                <div class=\"list-floor\" *ngFor=\"let floor of floors | reverse\">\n                <a class=\"list-group-item\"\n                    (click)=\"getFloor(floor.name, floor._id)\"\n                    [routerLink] = \"['home/' + floor._id]\"\n                    [routerLinkActive]=\"['floor-active']\">\n                  <button type=\"button\" class=\"fa fa-minus-circle\" (click)=\"smModal.show()\"></button> {{floor.name}}</a>\n                </div>\n                <div class=\"list-floor addFloor\">\n                  <button type=\"button\" class=\"fa fa-plus-circle fa-1x\" (click)=\"addFloorFlag=!addFloorFlag\"></button>\n                  <div class=\"form-group\" [hidden]=\"addFloorFlag\">\n                    <input  type=\"text\"\n                            placeholder=\"Floor Name\"\n                            [(ngModel)]=\"floorname\" name=\"floorname\"\n                            class=\"form-control\"\n                            (keyup.enter)=\"addFloor(floorname)\">\n                  </div>\n                </div>\n              </div>\n          </div>\n        </div>\n      </div>\n\n      <div class=\"panel-heading\" (click)=\"selectConfig('devices')\" [routerLinkActive]=\"['active']\" [routerLink] = \"['/config/devices']\">\n        <h3 class=\"panel-title\">Device</h3>\n      </div>\n      <div class=\"panel-heading\" (click)=\"selectConfig('scenes')\" [routerLinkActive]=\"['active']\" [routerLink] = \"['/config/scenes']\">\n        <h3 class=\"panel-title\">Scene</h3>\n      </div>\n      <div class=\"panel-heading\" (click)=\"selectConfig('rules')\" [routerLinkActive]=\"['active']\" [routerLink] = \"['/config/rules']\">\n        <h3 class=\"panel-title\">Rule</h3>\n      </div>\n    </div>\n\n\n  </div>\n</div>\n"
 
 /***/ }),
 
 /***/ 1119:
 /***/ (function(module, exports) {
 
-module.exports = "<!-- item -->\n    <div class=\"panel panel-primary panel-pricing\">\n        <div class=\"panel-heading\">\n            <i class=\"fa fa-lightbulb-o\" aria-hidden=\"true\"></i>\n            <h3 class=\"deviceName\">Lighting Control #{{lightingControl.deviceCode}}</h3>\n            <div class=\"switch\">\n              <ui-switch [(ngModel)]=\"permission\" (click)=\"changePermission()\" color=\"inherit\" size=\"medium-v2\"></ui-switch>\n            </div>\n        </div>\n        <div class=\"panel-body\">\n          <div class=\"panel-body-content\">\n            <div class=\"panel-body-icon\">\n              <i class=\"fa fa-home\" aria-hidden=\"true\"></i>\n            </div>\n            <div class=\"btn-group panel-body-btn\">\n              <a class=\"btn btn-primary dropdown-toggle\" data-toggle=\"dropdown\" href=\"#\"> {{selectedFloor}}</a>\n              <ul class=\"dropdown-menu\">\n                <li *ngFor=\"let floor of listOfFloors\" (click)=\"selectFloor(floor);saveBtnHidden=false\"><a> {{floor.name}}</a></li>\n              </ul>\n            </div>\n            <div class=\"panel-body-icon\">\n              <i class=\"fa fa-caret-right\" aria-hidden=\"true\"></i>\n            </div>\n            <div class=\"btn-group panel-body-btn\">\n              <a class=\"btn btn-primary dropdown-toggle\" data-toggle=\"dropdown\" href=\"#\"> {{selectedRoom}}</a>\n              <ul class=\"dropdown-menu\">\n                  <li *ngFor=\"let room of listOfRooms\" (click)=\"selectRoom(room);saveBtnHidden=false\"><a> {{room.name}}</a></li>\n              </ul>\n            </div>\n            <span class=\"connect\">{{permission?'Connected':'Disconnected'}}</span>\n            <!-- <p class=\"floor-room\"> 1st Floor / Bedroom</p> -->\n          </div>\n          </div>\n\n        <div class=\"panel-footer\">\n          <table class=\"table\">\n            <thead class=\"thead-default\">\n              <tr>\n                <th>ID</th>\n                <th>Device Name</th>\n                <th>Type</th>\n                <th >Dimmable</th>\n                <th>Power(W)</th>\n                <th>Life time(H)</th>\n                <th>Status</th>\n              </tr>\n            </thead>\n            <tbody (keyup)=\"showSaveBtn()\">\n              <tr *ngFor=\"let light of lightingControl.lights; let i = index\">\n                <th scope=\"row\">{{i+1}}</th>\n                <td><input type=\"text\" (blur)=\"edit(light._id, $event)\" name=\"name\" value=\"{{light.name}}\"></td>\n                <td>\n                   <div class=\"btn-group\">\n                     <input type=\"text\" (blur)=\"edit(light._id, $event)\" name=\"type\" value=\"{{light.typeOfLight}}\"\n                              data-toggle=\"dropdown\">\n                     <ul class=\"dropdown-menu kindOfLight\">\n                        <li (click)=\"selectKindOfLight(light._id, 'Bulb')\"><a>Bulb</a></li>\n                        <li (click)=\"selectKindOfLight(light._id, 'Compact')\"><a>Compact</a></li>\n                        <li (click)=\"selectKindOfLight(light._id, 'Fluorescent')\"><a>Fluorescent lamp</a></li>\n                        <li (click)=\"selectKindOfLight(light._id, 'Neon')\"><a>Neon</a></li>\n                     </ul>\n                   </div>\n                </td>\n                <td><span class=\"dimmable\">{{light.dimmable}}</span></td>\n                <!-- <td>  <input type=\"text\" (blur)=\"edit(light._id, $event)\" name=\"type\" value=\"{{light.dimmable}}\"></td> -->\n                <td><input type=\"text\" (blur)=\"edit(light._id, $event)\" name=\"power\" value=\"{{light.power}}\"></td>\n                <td><input type=\"text\" (blur)=\"edit(light._id, $event)\" name=\"life_time\" value=\"{{light.life_time}}\"></td>\n                <td ><input type=\"text\" (blur)=\"edit(light._id, $event)\" name=\"status\" value=\"null\"  style=\"width: 50px\"></td>\n              </tr>\n            </tbody>\n          </table>\n          <div  [hidden]=\"saveBtnHidden\" class=\"save\">\n            <button class=\"btn btn-primary btn-save\" type=\"button\" name=\"button\" (click)=\"save()\" >Save</button>\n          </div>\n          <div class=\"test\">\n          </div>\n        </div>\n    </div>\n<!-- /item -->\n"
+module.exports = "<div class=\"row\">\n  <app-config-navbar></app-config-navbar>\n  <router-outlet></router-outlet>\n</div>\n"
 
 /***/ }),
 
 /***/ 1120:
 /***/ (function(module, exports) {
 
-module.exports = "<!-- item -->\n    <div class=\"panel panel-primary panel-pricing\">\n        <div class=\"panel-heading\">\n            <i class=\"fa fa-thermometer-empty\" aria-hidden=\"true\"></i>\n            <h3 class=\"deviceName\">Sensor Module #{{sensorModule.deviceCode}}</h3>\n            <div class=\"switch\">\n              <ui-switch [(ngModel)]=\"permission\" (click)=\"changePermission()\" color=\"inherit\" size=\"medium-v2\"></ui-switch>\n            </div>\n        </div>\n        <div class=\"panel-body\">\n          <div class=\"panel-body-content\">\n            <div class=\"panel-body-icon\">\n              <i class=\"fa fa-home\" aria-hidden=\"true\"></i>\n            </div>\n            <div class=\"btn-group panel-body-btn\">\n              <a class=\"btn btn-primary dropdown-toggle\" data-toggle=\"dropdown\" href=\"#\"> {{selectedFloor}}</a>\n              <ul class=\"dropdown-menu\">\n                <li *ngFor=\"let floor of listOfFloors\" (click)=\"selectFloor(floor)\"><a> {{floor.name}}</a></li>\n              </ul>\n            </div>\n            <div class=\"panel-body-icon\">\n              <i class=\"fa fa-caret-right\" aria-hidden=\"true\"></i>\n            </div>\n            <div class=\"btn-group panel-body-btn\">\n              <a class=\"btn btn-primary dropdown-toggle\" data-toggle=\"dropdown\" href=\"#\"> {{selectedRoom}}</a>\n              <ul class=\"dropdown-menu\">\n                  <li *ngFor=\"let room of listOfRooms\" (click)=\"selectRoom(room)\"><a> {{room.name}}</a></li>\n              </ul>\n            </div>\n            <div class=\"battery\">\n              <i class=\"fa fa-battery-half\" aria-hidden=\"true\"></i>\n              <span> {{sensorModule.battery}}%</span>\n            </div>\n            <p class=\"connect\">{{permission?'Connected':'Disconnected'}}</p>\n          </div>\n        </div>\n\n        <div class=\"panel-footer\">\n          <table class=\"table\">\n            <thead class=\"thead-default\">\n              <tr>\n                <th>ID</th>\n                <th>Device Name</th>\n                <th>Type</th>\n                <th>Value</th>\n              </tr>\n            </thead>\n            <tbody (keyup)=\"showSaveBtn()\">\n              <tr *ngFor=\"let sensor of sensorModule.sensors; let i = index\">\n                <th scope=\"row\">{{i+1}}</th>\n                <td><input type=\"text\" (blur)=\"editName(sensor._id, $event)\" name=\"name\" value=\"{{sensor.name}}\"></td>\n                <td>\n                   <div class=\"btn-group\">\n                     <input type=\"text\" name=\"kind\" value=\"{{sensor._type}}\" disabled>\n                   </div>\n                </td>\n                <td ><input type=\"text\" name=\"value\" value=\"{{sensor.value}}\"  style=\"width: 50px\"></td>\n              </tr>\n            </tbody>\n          </table>\n          <div  [hidden]=\"saveBtnHidden\" class=\"save\">\n            <button class=\"btn btn-primary btn-save\" type=\"button\" name=\"button\" (click)=\"save()\" >Save</button>\n          </div>\n          <div class=\"test\">\n          </div>\n        </div>\n    </div>\n<!-- /item -->\n"
+module.exports = "<div class=\"col-sm-9\">\n  <flash-messages></flash-messages>\n  <section>\n          <div class=\"listOfDevices\" *ngFor=\"let device of listOfDevices\">\n            <div class=\"device\" *ngIf=\"device.deviceType=='LightingControl'\">\n              <app-lightingcontrol [lightingControl]=\"device\"></app-lightingcontrol>\n            </div>\n            <div class=\"device\" *ngIf=\"device.deviceType=='SensorModule'\">\n              <app-sensor-module [sensorModule]=\"device\"></app-sensor-module>\n            </div>\n          </div>\n  </section>\n</div>\n"
 
 /***/ }),
 
 /***/ 1121:
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"if-condition\">\n  <h3>IF CONDITIONS</h3>\n</div>\n<div  class=\"operation\" [ngSwitch]=\"_type\">\n  <app-logical-operation *ngSwitchCase=\"'LogicalOperation'\"\n                          [operation]=\"operation\"\n                          [editHidden]=\"editHidden\"\n                          [listOfDevicesInHouse]=\"listOfDevicesInHouse\"\n                          (deleteOperationEvent)=\"delLogiOperation($event)\"\n                          (addOperationEvent)=\"addLogiOperation($event)\"\n                          (updateOperationEvent)=\"updateOperation($event)\">\n</app-logical-operation>\n<app-relational-operation *ngSwitchCase=\"'RelationalOperation'\"\n                            [operation]=\"operation\"\n                            [listOfDevicesInHouse]=\"listOfDevicesInHouse\"\n                            [editHidden]=\"editHidden\"\n                            (deleteOperationEvent)=\"delRelaOperation($event)\"\n                            (addOperationEvent)=\"addRelaOperation($event)\"\n                            (updateOperationEvent)=\"updateOperation($event)\">\n  </app-relational-operation>\n</div>\n"
+module.exports = "<!-- item -->\n    <div class=\"panel panel-primary panel-pricing\">\n        <div class=\"panel-heading\">\n            <i class=\"fa fa-lightbulb-o\" aria-hidden=\"true\"></i>\n            <h3 class=\"deviceName\">Lighting Control #{{lightingControl.deviceCode}}</h3>\n            <div class=\"switch\">\n              <ui-switch [(ngModel)]=\"permission\" (click)=\"changePermission()\" color=\"inherit\" size=\"medium-v2\"></ui-switch>\n            </div>\n        </div>\n        <div class=\"panel-body\">\n          <div class=\"panel-body-content\">\n            <div class=\"panel-body-icon\">\n              <i class=\"fa fa-home\" aria-hidden=\"true\"></i>\n            </div>\n            <div class=\"btn-group panel-body-btn\">\n              <a class=\"btn btn-primary dropdown-toggle\" data-toggle=\"dropdown\" href=\"#\"> {{selectedFloor}}</a>\n              <ul class=\"dropdown-menu\">\n                <li *ngFor=\"let floor of listOfFloors\" (click)=\"selectFloor(floor);saveBtnHidden=false\"><a> {{floor.name}}</a></li>\n              </ul>\n            </div>\n            <div class=\"panel-body-icon\">\n              <i class=\"fa fa-caret-right\" aria-hidden=\"true\"></i>\n            </div>\n            <div class=\"btn-group panel-body-btn\">\n              <a class=\"btn btn-primary dropdown-toggle\" data-toggle=\"dropdown\" href=\"#\"> {{selectedRoom}}</a>\n              <ul class=\"dropdown-menu\">\n                  <li *ngFor=\"let room of listOfRooms\" (click)=\"selectRoom(room);saveBtnHidden=false\"><a> {{room.name}}</a></li>\n              </ul>\n            </div>\n            <span class=\"connect\">{{permission?'Connected':'Disconnected'}}</span>\n            <!-- <p class=\"floor-room\"> 1st Floor / Bedroom</p> -->\n          </div>\n          </div>\n\n        <div class=\"panel-footer\">\n          <table class=\"table\">\n            <thead class=\"thead-default\">\n              <tr>\n                <th>ID</th>\n                <th>Device Name</th>\n                <th>Type</th>\n                <th >Dimmable</th>\n                <th>Power(W)</th>\n                <th>Life time(H)</th>\n                <th>Status</th>\n              </tr>\n            </thead>\n            <tbody (keyup)=\"showSaveBtn()\">\n              <tr *ngFor=\"let light of lightingControl.lights; let i = index\">\n                <th scope=\"row\">{{i+1}}</th>\n                <td><input type=\"text\" (blur)=\"edit(light._id, $event)\" name=\"name\" value=\"{{light.name}}\"></td>\n                <td>\n                   <div class=\"btn-group\">\n                     <input type=\"text\" (blur)=\"edit(light._id, $event)\" name=\"type\" value=\"{{light.typeOfLight}}\"\n                              data-toggle=\"dropdown\">\n                     <ul class=\"dropdown-menu kindOfLight\">\n                        <li (click)=\"selectKindOfLight(light._id, 'Bulb')\"><a>Bulb</a></li>\n                        <li (click)=\"selectKindOfLight(light._id, 'Compact')\"><a>Compact</a></li>\n                        <li (click)=\"selectKindOfLight(light._id, 'Fluorescent')\"><a>Fluorescent lamp</a></li>\n                        <li (click)=\"selectKindOfLight(light._id, 'Neon')\"><a>Neon</a></li>\n                     </ul>\n                   </div>\n                </td>\n                <td><span class=\"dimmable\">{{light.dimmable}}</span></td>\n                <!-- <td>  <input type=\"text\" (blur)=\"edit(light._id, $event)\" name=\"type\" value=\"{{light.dimmable}}\"></td> -->\n                <td><input type=\"text\" (blur)=\"edit(light._id, $event)\" name=\"power\" value=\"{{light.power}}\"></td>\n                <td><input type=\"text\" (blur)=\"edit(light._id, $event)\" name=\"life_time\" value=\"{{light.life_time}}\"></td>\n                <td ><input type=\"text\" (blur)=\"edit(light._id, $event)\" name=\"status\" value=\"null\"  style=\"width: 50px\"></td>\n              </tr>\n            </tbody>\n          </table>\n          <div  [hidden]=\"saveBtnHidden\" class=\"save\">\n            <button class=\"btn btn-primary btn-save\" type=\"button\" name=\"button\" (click)=\"save()\" >Save</button>\n          </div>\n          <div class=\"test\">\n          </div>\n        </div>\n    </div>\n<!-- /item -->\n"
 
 /***/ }),
 
 /***/ 1122:
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"checkIfDataAvailabel\" *ngIf=\"isDataAvailable\">\n  <div class=\"_1st-operand\">\n    <app-relational-operation\n            [operation]='_1stOperand'\n            [listOfDevicesInHouse]=\"listOfDevicesInHouse\"\n            [editHidden]=\"editHidden\"\n            [addOperationHidden]=\"true\"\n            (deleteOperationEvent)=\"deleteOperation('_1stOperand', $event)\"\n            (addOperationEvent)=\"addOperation('_1stOperand')\"\n            (updateOperationEvent)=\"updateOperation('_1stOperand', $event)\">\n    </app-relational-operation>\n  </div>\n  <div class=\"operator\">\n    <p [hidden]=\"!editHidden\">{{operator}}</p>\n    <div class=\"dropdown\" [hidden]=\"editHidden\">\n      <button class=\"btn dropdown-toggle\" type=\"button\" id=\"dropdownMenu1\" data-toggle=\"dropdown\" aria-haspopup=\"true\" aria-expanded=\"true\">\n        {{operator}}\n        <span class=\"caret\" ></span>\n      </button>\n      <ul class=\"dropdown-menu\" aria-labelledby=\"dropdownMenu1\" [hidden]=\"editHidden\">\n        <li (click)=\"selectOperator('OR')\"><a>OR</a></li>\n        <li (click)=\"selectOperator('AND')\"><a>AND</a></li>\n      </ul>\n    </div>\n  </div>\n  <hr/>\n  <div class=\"_2nd-operand\">\n    <app-relational-operation\n            [operation]='_2ndOperand'\n            [listOfDevicesInHouse]=\"listOfDevicesInHouse\"\n            [editHidden]=\"editHidden\"\n            [addOperationHidden]=\"true\"\n            (deleteOperationEvent)=\"deleteOperation('_2ndOperand', $event)\"\n            (addOperationEvent)=\"addOperation('_2ndOperand')\"\n            (updateOperationEvent)=\"updateOperation('_2ndOperand', $event)\">\n    </app-relational-operation>\n  </div>\n</div>\n"
+module.exports = "<!-- item -->\n    <div class=\"panel panel-primary panel-pricing\">\n        <div class=\"panel-heading\">\n            <i class=\"fa fa-thermometer-empty\" aria-hidden=\"true\"></i>\n            <h3 class=\"deviceName\">Sensor Module #{{sensorModule.deviceCode}}</h3>\n            <div class=\"switch\">\n              <ui-switch [(ngModel)]=\"permission\" (click)=\"changePermission()\" color=\"inherit\" size=\"medium-v2\"></ui-switch>\n            </div>\n        </div>\n        <div class=\"panel-body\">\n          <div class=\"panel-body-content\">\n            <div class=\"panel-body-icon\">\n              <i class=\"fa fa-home\" aria-hidden=\"true\"></i>\n            </div>\n            <div class=\"btn-group panel-body-btn\">\n              <a class=\"btn btn-primary dropdown-toggle\" data-toggle=\"dropdown\" href=\"#\"> {{selectedFloor}}</a>\n              <ul class=\"dropdown-menu\">\n                <li *ngFor=\"let floor of listOfFloors\" (click)=\"selectFloor(floor)\"><a> {{floor.name}}</a></li>\n              </ul>\n            </div>\n            <div class=\"panel-body-icon\">\n              <i class=\"fa fa-caret-right\" aria-hidden=\"true\"></i>\n            </div>\n            <div class=\"btn-group panel-body-btn\">\n              <a class=\"btn btn-primary dropdown-toggle\" data-toggle=\"dropdown\" href=\"#\"> {{selectedRoom}}</a>\n              <ul class=\"dropdown-menu\">\n                  <li *ngFor=\"let room of listOfRooms\" (click)=\"selectRoom(room)\"><a> {{room.name}}</a></li>\n              </ul>\n            </div>\n            <div class=\"battery\">\n              <i class=\"fa fa-battery-half\" aria-hidden=\"true\"></i>\n              <span> {{sensorModule.battery}}%</span>\n            </div>\n            <p class=\"connect\">{{permission?'Connected':'Disconnected'}}</p>\n          </div>\n        </div>\n\n        <div class=\"panel-footer\">\n          <table class=\"table\">\n            <thead class=\"thead-default\">\n              <tr>\n                <th>ID</th>\n                <th>Device Name</th>\n                <th>Type</th>\n                <th>Value</th>\n              </tr>\n            </thead>\n            <tbody (keyup)=\"showSaveBtn()\">\n              <tr *ngFor=\"let sensor of sensorModule.sensors; let i = index\">\n                <th scope=\"row\">{{i+1}}</th>\n                <td><input type=\"text\" (blur)=\"editName(sensor._id, $event)\" name=\"name\" value=\"{{sensor.name}}\"></td>\n                <td>\n                   <div class=\"btn-group\">\n                     <input type=\"text\" name=\"kind\" value=\"{{sensor._type}}\" disabled>\n                   </div>\n                </td>\n                <td ><input type=\"text\" name=\"value\" value=\"{{sensor.value}}\"  style=\"width: 50px\"></td>\n              </tr>\n            </tbody>\n          </table>\n          <div  [hidden]=\"saveBtnHidden\" class=\"save\">\n            <button class=\"btn btn-primary btn-save\" type=\"button\" name=\"button\" (click)=\"save()\" >Save</button>\n          </div>\n          <div class=\"test\">\n          </div>\n        </div>\n    </div>\n<!-- /item -->\n"
 
 /***/ }),
 
 /***/ 1123:
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"test\" *ngIf=\"isDataAvailable\">\n  <div class=\"_1st-operand\">\n    <app-relational-operation\n            *ngIf=\"_1stOperandType=='RelationalOperation'\"\n            [operation]=\"_1stOperand\"\n            [listOfDevicesInHouse]=\"listOfDevicesInHouse\"\n            [editHidden]=\"editHidden\"\n            (deleteOperationEvent)=\"deleteOperation('_1stOperand', $event)\"\n            (addOperationEvent)=\"addOperation('_1stOperand')\"\n            (updateOperationEvent) = \"updateOperation('_1stOperand', $event)\">\n    </app-relational-operation>\n    <app-logical-operation-2nd-layer\n            *ngIf=\"_1stOperandType=='LogicalOperation'\"\n            [operation]=\"_1stOperand\"\n            [listOfDevicesInHouse]=\"listOfDevicesInHouse\"\n            [editHidden]=\"editHidden\"\n            (deleteOperationEvent) = \"deleteOperation('_1stOperand', $event)\"\n            (addOperationEvent) = \"addOperation('_1stOperand')\"\n            (updateOperationEvent) = \"updateOperation('_1stOperand', $event)\">\n    </app-logical-operation-2nd-layer>\n  </div>\n  <hr/>\n  <div class=\"operator\">\n    <p [hidden]=\"!editHidden\">{{operator}}</p>\n    <div class=\"dropdown\" [hidden]=\"editHidden\">\n      <button class=\"btn dropdown-toggle\" type=\"button\" id=\"dropdownMenu1\" data-toggle=\"dropdown\" aria-haspopup=\"true\" aria-expanded=\"true\">\n        {{operator}}\n        <span class=\"caret\" ></span>\n      </button>\n      <ul class=\"dropdown-menu\" aria-labelledby=\"dropdownMenu1\" [hidden]=\"editHidden\">\n        <li (click)=\"selectOperator('OR')\"><a>OR</a></li>\n        <li (click)=\"selectOperator('AND')\"><a>AND</a></li>\n      </ul>\n    </div>\n  </div>\n  <hr/>\n  <div class=\"_2nd-operand\">\n    <app-relational-operation\n            *ngIf=\"_2ndOperandType=='RelationalOperation'\"\n            [operation]=\"_2ndOperand\"\n            [listOfDevicesInHouse]=\"listOfDevicesInHouse\"\n            [editHidden]=\"editHidden\"\n            (deleteOperationEvent)=\"deleteOperation('_2ndOperand', $event)\"\n            (addOperationEvent)=\"addOperation('_2ndOperand')\"\n            (updateOperationEvent) = \"updateOperation('_2ndOperand', $event)\">\n    </app-relational-operation>\n    <app-logical-operation-2nd-layer\n            *ngIf=\"_2ndOperandType=='LogicalOperation'\"\n            [operation]=\"_2ndOperand\"\n            [listOfDevicesInHouse]=\"listOfDevicesInHouse\"\n            [editHidden]=\"editHidden\"\n            (deleteOperationEvent) = \"deleteOperation('_2ndOperand', $event)\"\n            (addOperationEvent) = \"addOperation('_2ndOperand')\"\n            (updateOperationEvent) = \"updateOperation('_2ndOperand', $event)\">\n    </app-logical-operation-2nd-layer>\n  </div>\n</div>\n"
+module.exports = "<div class=\"if-condition\">\n  <h3>IF CONDITIONS</h3>\n</div>\n<div  class=\"operation\" [ngSwitch]=\"_type\">\n  <app-logical-operation *ngSwitchCase=\"'LogicalOperation'\"\n                          [operation]=\"operation\"\n                          [editHidden]=\"editHidden\"\n                          [listOfDevicesInHouse]=\"listOfDevicesInHouse\"\n                          (deleteOperationEvent)=\"delLogiOperation($event)\"\n                          (addOperationEvent)=\"addLogiOperation($event)\"\n                          (updateOperationEvent)=\"updateOperation($event)\">\n</app-logical-operation>\n<app-relational-operation *ngSwitchCase=\"'RelationalOperation'\"\n                            [operation]=\"operation\"\n                            [listOfDevicesInHouse]=\"listOfDevicesInHouse\"\n                            [editHidden]=\"editHidden\"\n                            (deleteOperationEvent)=\"delRelaOperation($event)\"\n                            (addOperationEvent)=\"addRelaOperation($event)\"\n                            (updateOperationEvent)=\"updateOperation($event)\">\n  </app-relational-operation>\n</div>\n"
 
 /***/ }),
 
 /***/ 1124:
 /***/ (function(module, exports) {
 
-module.exports = "<div bsModal #smModal=\"bs-modal\" class=\"modal fade\" tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"mySmallModalLabel\" aria-hidden=\"true\">\n  <div class=\"modal-dialog modal-sm\">\n    <div class=\"modal-content\">\n      <div class=\"modal-header\" style=\"padding: 40px 0px\">\n        <div class=\"list-of-room\" *ngFor=\"let room of listOfDevicesInHouse\">\n          <a class=\"room-floor\">\n            <span><i aria-hidden=\"true\" class=\"fa fa-home\"></i> {{room.floorName}} </span>\n            <span><i aria-hidden=\"true\" class=\"fa fa-caret-right\"></i> {{room.roomName}} </span>\n          </a>\n          <div class=\"list-of-sensors\" *ngFor=\"let sensor of room.sensors\">\n            <a class=\"device\" (click)=\"selectSensor(sensor);smModal.hide()\">{{sensor.name}} sensor</a>\n            <!-- <a class=\"device-type\">sensor</a> -->\n          </div>\n          <div class=\"list-of-lights\" *ngFor=\"let light of room.lights\">\n            <a class=\"device\" (click)=\"selectLight(light);smModal.hide()\">{{light.name}}</a>\n            <!-- <a class=\"device-type\">light</a> -->\n          </div>\n        </div>\n      </div>\n      <div class=\"modal-body\">\n        <button type=\"button\" class=\"btn btn-success btn-modal\" (click)=\"smModal.hide()\">OK</button>\n        <button type=\"button\" class=\"btn btn-danger btn-modal\" (click)=\"smModal.hide()\">CANCEL</button>\n      </div>\n    </div>\n  </div>\n</div>\n\n\n<div class=\"row\">\n  <div class=\"col-md-3 device-name\">\n    <p [hidden]=\"!editHidden\">{{deviceName}}</p>\n    <div class=\"device-name\" [hidden]=\"editHidden\">\n      <button class=\"btn btn-deviceName\" type=\"button\"  (click)=\"smModal.show()\" aria-haspopup=\"true\" aria-expanded=\"true\">\n        {{deviceName}}\n        <!-- <span class=\"caret\" ></span> -->\n      </button>\n    </div>\n  </div>\n  <div class=\"col-md-5 operator\">\n    <p [hidden]=\"!editHidden\">{{operator}}</p>\n    <div class=\"dropdown\" [hidden]=\"editHidden\">\n      <button class=\"btn btn-operator dropdown-toggle\" type=\"button\" id=\"dropdownMenu1\" data-toggle=\"dropdown\" aria-haspopup=\"true\" aria-expanded=\"true\">\n        {{operator }}\n        <!-- <div class=\"caret-icon\"  [hidden]=\"!dimmable\">\n          <span class=\"caret\"></span>\n        </div> -->\n      </button>\n      <ul class=\"dropdown-menu scrollable-menu-1\" role=\"menu\" aria-labelledby=\"dropdownMenu1\" [hidden]=\"editHidden\">\n        <li *ngFor=\"let operator of operatorArr; let i=index\">\n          <a (click)=\"selectOperator(operatorSymbolArr[i])\"><span class=\"operator-symbol\">{{operatorSymbolArr[i]}}</span><span class=\"operator-string\">{{operator}}</span></a>\n        </li>\n      </ul>\n    </div>\n  </div>\n  <div class=\"col-md-2 value\" (click)=\"sliderHidden=!sliderHidden\" >\n    <p [hidden]=\"!editHidden\">{{value}}</p>\n    <!-- <div class=\"input-value\" [hidden]=\"editHidden\">\n      <input class=\"form-control\" type=\"text\" name=\"status\" value=\"{{value}}\" >\n    </div> -->\n    <div class=\"value\" [hidden]=\"editHidden\" (click)=\"clickValueBtn()\">\n      <button class=\"btn btn-value\" type=\"button\">{{value}}</button>\n    </div>\n  </div>\n  <div class=\"col-md-2 menu\" style=\"padding-left: 5px;position: absolute;right: 0px;\" [hidden]=\"editHidden\">\n    <div class=\"dropdown\">\n      <button class=\"btn btn-menu dropdown-toggle\" type=\"button\" data-toggle=\"dropdown\" aria-haspopup=\"true\" aria-expanded=\"true\">\n        <i class=\"fa fa-bars menu\" aria-hidden=\"true\"></i>\n      </button>\n      <ul class=\"dropdown-menu scrollable-menu-2\" role=\"menu\" aria-labelledby=\"dropdownMenu1\" [hidden]=\"editHidden\">\n        <li (click)=\"deleteOperation()\"><a> Delete operation</a></li>\n        <li (click)=\"addOperation()\" [hidden]=\"addOperationHidden\"><a>Add operation</a></li>\n      </ul>\n    </div>\n  </div>\n</div>\n<div class=\"row\" [hidden]=\"editHidden||sliderHidden||!dimmable\">\n  <md-slider min=\"{{sliderMinValue}}\"\n            max=\"{{sliderMaxValue}}\"\n            [(ngModel)]=\"value\"\n            (input)=\"getValue($event.value)\">\n  </md-slider>\n</div>\n"
+module.exports = "<div class=\"checkIfDataAvailabel\" *ngIf=\"isDataAvailable\">\n  <div class=\"_1st-operand\">\n    <app-relational-operation\n            [operation]='_1stOperand'\n            [listOfDevicesInHouse]=\"listOfDevicesInHouse\"\n            [editHidden]=\"editHidden\"\n            [addOperationHidden]=\"true\"\n            (deleteOperationEvent)=\"deleteOperation('_1stOperand', $event)\"\n            (addOperationEvent)=\"addOperation('_1stOperand')\"\n            (updateOperationEvent)=\"updateOperation('_1stOperand', $event)\">\n    </app-relational-operation>\n  </div>\n  <div class=\"operator\">\n    <p [hidden]=\"!editHidden\">{{operator}}</p>\n    <div class=\"dropdown\" [hidden]=\"editHidden\">\n      <button class=\"btn dropdown-toggle\" type=\"button\" id=\"dropdownMenu1\" data-toggle=\"dropdown\" aria-haspopup=\"true\" aria-expanded=\"true\">\n        {{operator}}\n        <span class=\"caret\" ></span>\n      </button>\n      <ul class=\"dropdown-menu\" aria-labelledby=\"dropdownMenu1\" [hidden]=\"editHidden\">\n        <li (click)=\"selectOperator('OR')\"><a>OR</a></li>\n        <li (click)=\"selectOperator('AND')\"><a>AND</a></li>\n      </ul>\n    </div>\n  </div>\n  <hr/>\n  <div class=\"_2nd-operand\">\n    <app-relational-operation\n            [operation]='_2ndOperand'\n            [listOfDevicesInHouse]=\"listOfDevicesInHouse\"\n            [editHidden]=\"editHidden\"\n            [addOperationHidden]=\"true\"\n            (deleteOperationEvent)=\"deleteOperation('_2ndOperand', $event)\"\n            (addOperationEvent)=\"addOperation('_2ndOperand')\"\n            (updateOperationEvent)=\"updateOperation('_2ndOperand', $event)\">\n    </app-relational-operation>\n  </div>\n</div>\n"
 
 /***/ }),
 
 /***/ 1125:
 /***/ (function(module, exports) {
 
-module.exports = "<div bsModal #smModal=\"bs-modal\" class=\"modal fade\" tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"mySmallModalLabel\" aria-hidden=\"true\">\n  <div class=\"modal-dialog modal-sm\">\n    <div class=\"modal-content\">\n      <div class=\"modal-header\">\n        <h4 class=\"modal-title\">Are you sure you want to delete <b>{{rule.name}}</b> ?</h4>\n      </div>\n      <div class=\"modal-body\">\n        <button type=\"button\" class=\"btn btn-success btn-modal\" (click)=\"smModal.hide()\" (click)=\"deleteRule()\">Yes</button>\n        <button type=\"button\" class=\"btn btn-danger btn-modal\" (click)=\"smModal.hide()\">No</button>\n      </div>\n    </div>\n  </div>\n</div>\n\n<!-- rule -->\n<div class=\"rule\">\n  <div class=\"panel panel-primary panel-pricing\">\n    <div class=\"panel-heading\">\n      <i class=\"fa fa-lightbulb-o\" aria-hidden=\"true\"></i>\n      <h3 class=\"ruleName\" (click)=\"runrule()\">{{rule.name}}</h3>\n      <div class=\"x-icon\" >\n        <i class=\"fa fa-times\" aria-hidden=\"true\" (click)=\"smModal.show()\"></i>\n      </div>\n    </div>\n    <div class=\"row scirpt-body\">\n      <div class=\"col-md-4\">\n        <div class=\"time-date-picker\">\n          <!-- <div class=\"date-picker\">\n            <p>Date</p>\n            <ng2-datepicker [options]=\"options\" [(ngModel)]=\"date\" (click)=\"btnSaveHidden=false\" (outputEvents)=\"datePickerEvent($event)\" ></ng2-datepicker>\n          </div> -->\n          <div class=\"time-picker\">\n            <p>Time</p>\n            <div class=\"all-day-checkbox\">\n              <div class=\"radio\">\n                <label>\n                  <input type=\"radio\" [(checked)]=\"isAllDayChecked\" (click)=\"clickAllDayCheckbox(true)\">\n                  All day\n                </label>\n                <label>\n                  <input type=\"radio\" [(checked)]=\"!isAllDayChecked\" (click)=\"clickAllDayCheckbox(false)\">\n                  Period\n                </label>\n              </div>\n            </div>\n            <div class=\"from-to-time\" [hidden]=\"isAllDayChecked\">\n              <div class=\"from-time\">\n                <h4 class=\"from\" (click)=\"fromTimePickerHidden=false;TimeButtonsHidden=false;\">From</h4>\n                <div class=\"time\" [hidden]=\"!fromTimePickerHidden\">\n                  <button class=\"btn btn-time btn-from-time\"\n                          type=\"button\"\n                          name=\"button\"\n                          (click)=\"fromTimePickerHidden=false;TimeButtonsHidden=false;\">\n                          {{fromTimePicker}}\n                  </button>\n                </div>\n                <div class=\"timepicker\" [hidden]=\"fromTimePickerHidden\">\n                  <timepicker [(ngModel)]=\"fromTime\"></timepicker>\n                </div>\n                <!-- <div class=\"picker-save\" [hidden]=\"fromTimeButtonsHidden\">\n                  <button class=\"btn btn-primary time-btn-ok\"\n                          (click)=\"clickFromTimeOkBtn()\">OK</button>\n                  <button class=\"btn btn-primary time-btn-clear\"\n                          (click)=\"clickFromTimeClearOkBtn()\">Clear</button>\n                </div> -->\n              </div>\n              <div class=\"to-time\">\n                <h4 class=\"to\" (click)=\"toTimePickerHidden=false;TimeButtonsHidden=false;\">To </h4>\n                <div class=\"time\" [hidden]=\"!toTimePickerHidden\">\n                  <button class=\"btn btn-time btn-to-time\"\n                          type=\"button\"\n                          name=\"button\"\n                          (click)=\"toTimePickerHidden=false;TimeButtonsHidden=false;isNextDay=false\">\n                          {{toTimePicker}}\n                  </button>\n                </div>\n                <h4 class=\"next-day\" [hidden]=\"!isNextDay\">next day</h4>\n                <div class=\"timepicker\" [hidden]=\"toTimePickerHidden\">\n                  <timepicker [(ngModel)]=\"toTime\"></timepicker>\n                </div>\n                <!-- <div class=\"picker-save\" [hidden]=\"toTimeButtonsHidden\">\n                  <button class=\"btn btn-primary time-btn-ok\"\n                          (click)=\"clickToTimeOkBtn()\">OK</button>\n                  <button class=\"btn btn-primary time-btn-clear\"\n                          (click)=\"clickToTimeClearOkBtn()\">Clear</button>\n                </div> -->\n              </div>\n            </div>\n            <!-- <div class=\"from-to-time-allDayChecked\" [hidden]=\"!isAllDayChecked\">\n              <div class=\"from-time\">\n                <h4>From &nbsp;{{fromTimePicker}}</h4>\n              </div>\n              <div class=\"to-time\">\n                <h4>To &nbsp;{{toTimePicker}}</h4>\n              </div>\n            </div> -->\n            <div class=\"picker-save\" [hidden]=\"TimeButtonsHidden\">\n              <button class=\"btn btn-primary time-btn-ok\"\n                      (click)=\"clickTimeOkBtn()\">OK</button>\n            </div>\n          </div>\n\n          <div class=\"repeat\">\n            <p>Repeat</p>\n            <input type=\"text\" name=\"\" value=\"\" (click)=\"repeatDayHidden=false\" [hidden]=\"!repeatDayHidden\" [(ngModel)]=\"repeatDaysStr\">\n            <div class=\"day-picker\" [hidden]=\"repeatDayHidden\">\n              <div class=\"checkbox\" *ngFor=\"let day of daysOfWeekFull;let i = index\">\n                <label>\n                  <input class=\"checkbox-input\" type=\"checkbox\" [(ngModel)]=\"repeatDays[i]\">\n                  {{day}}\n                </label>\n              </div>\n              <div class=\"picker-save\">\n                <button class=\"btn btn-primary repeat-btn-ok\"\n                        (click)=\"clickRepeatOkBtn()\">OK</button>\n              </div>\n            </div>\n          </div>\n        </div>\n        <!-- <div class=\"picker-save\" [hidden]=\"TimeButtonsHidden\">\n          <button class=\"btn btn-primary btn-ok\"\n                  (click)=\"clickOkBtn()\">OK</button>\n        </div> -->\n      </div>\n      <div class=\"col-md-8 deivce-picker\">\n\n        <app-ifconditions [ifCondtions]=\"ifCondtions\"\n                          [listOfDevicesInHouse]=\"listOfDevicesInHouse\"\n                          [editHidden]=\"editHidden\"\n                          (updateIfCond)=\"updateIfCond($event)\">\n        </app-ifconditions>\n        <app-thenactions [thenActions]=\"thenActions\"\n                         [editHidden]=\"editHidden\"\n                         [listOfDevicesInHouse]=\"listOfDevicesInHouse\"\n                         (updateActions)=\"updateActions()\">\n        </app-thenactions>\n\n        <div class=\"footer\">\n          <div class=\"edit-save\">\n            <div class=\"btn-edit-save\"  [hidden]=\"btnSaveHidden\" (click)=\"clickSaveBtn()\">\n              <button class=\"btn\" type=\"button\" name=\"button\">Save</button>\n            </div>\n            <div class=\"btn-edit\">\n              <button class=\"btn\" type=\"button\" name=\"button\" (click)=\"editHidden=false;btnSaveHidden=false\">Edit <i class=\"fa fa-pencil-square\" aria-hidden=\"true\"></i></button>\n            </div>\n          </div>\n        </div>\n\n\n      </div>\n    </div>\n  </div>\n</div>\n<!-- rule -->\n"
+module.exports = "<div class=\"test\" *ngIf=\"isDataAvailable\">\n  <div class=\"_1st-operand\">\n    <app-relational-operation\n            *ngIf=\"_1stOperandType=='RelationalOperation'\"\n            [operation]=\"_1stOperand\"\n            [listOfDevicesInHouse]=\"listOfDevicesInHouse\"\n            [editHidden]=\"editHidden\"\n            (deleteOperationEvent)=\"deleteOperation('_1stOperand', $event)\"\n            (addOperationEvent)=\"addOperation('_1stOperand')\"\n            (updateOperationEvent) = \"updateOperation('_1stOperand', $event)\">\n    </app-relational-operation>\n    <app-logical-operation-2nd-layer\n            *ngIf=\"_1stOperandType=='LogicalOperation'\"\n            [operation]=\"_1stOperand\"\n            [listOfDevicesInHouse]=\"listOfDevicesInHouse\"\n            [editHidden]=\"editHidden\"\n            (deleteOperationEvent) = \"deleteOperation('_1stOperand', $event)\"\n            (addOperationEvent) = \"addOperation('_1stOperand')\"\n            (updateOperationEvent) = \"updateOperation('_1stOperand', $event)\">\n    </app-logical-operation-2nd-layer>\n  </div>\n  <hr/>\n  <div class=\"operator\">\n    <p [hidden]=\"!editHidden\">{{operator}}</p>\n    <div class=\"dropdown\" [hidden]=\"editHidden\">\n      <button class=\"btn dropdown-toggle\" type=\"button\" id=\"dropdownMenu1\" data-toggle=\"dropdown\" aria-haspopup=\"true\" aria-expanded=\"true\">\n        {{operator}}\n        <span class=\"caret\" ></span>\n      </button>\n      <ul class=\"dropdown-menu\" aria-labelledby=\"dropdownMenu1\" [hidden]=\"editHidden\">\n        <li (click)=\"selectOperator('OR')\"><a>OR</a></li>\n        <li (click)=\"selectOperator('AND')\"><a>AND</a></li>\n      </ul>\n    </div>\n  </div>\n  <hr/>\n  <div class=\"_2nd-operand\">\n    <app-relational-operation\n            *ngIf=\"_2ndOperandType=='RelationalOperation'\"\n            [operation]=\"_2ndOperand\"\n            [listOfDevicesInHouse]=\"listOfDevicesInHouse\"\n            [editHidden]=\"editHidden\"\n            (deleteOperationEvent)=\"deleteOperation('_2ndOperand', $event)\"\n            (addOperationEvent)=\"addOperation('_2ndOperand')\"\n            (updateOperationEvent) = \"updateOperation('_2ndOperand', $event)\">\n    </app-relational-operation>\n    <app-logical-operation-2nd-layer\n            *ngIf=\"_2ndOperandType=='LogicalOperation'\"\n            [operation]=\"_2ndOperand\"\n            [listOfDevicesInHouse]=\"listOfDevicesInHouse\"\n            [editHidden]=\"editHidden\"\n            (deleteOperationEvent) = \"deleteOperation('_2ndOperand', $event)\"\n            (addOperationEvent) = \"addOperation('_2ndOperand')\"\n            (updateOperationEvent) = \"updateOperation('_2ndOperand', $event)\">\n    </app-logical-operation-2nd-layer>\n  </div>\n</div>\n"
 
 /***/ }),
 
 /***/ 1126:
 /***/ (function(module, exports) {
 
-module.exports = "<div bsModal #smModal=\"bs-modal\" class=\"modal fade\" tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"mySmallModalLabel\" aria-hidden=\"true\">\n  <div class=\"modal-dialog modal-sm\">\n    <div class=\"modal-content\">\n      <div class=\"modal-header\" style=\"padding: 40px 0px\">\n        <div class=\"list-of-room\" *ngFor=\"let room of listOfDevicesInHouse\">\n          <a class=\"room-floor\">\n            <span><i aria-hidden=\"true\" class=\"fa fa-home\"></i> {{room.floorName}} </span>\n            <span><i aria-hidden=\"true\" class=\"fa fa-caret-right\"></i> {{room.roomName}} </span>\n          </a>\n          <div class=\"list-of-lights\" *ngFor=\"let device of room.lights\">\n            <a class=\"device\" (click)=\"selectDevice(device);smModal.hide()\">{{device.name}}</a>\n            <!-- <a class=\"device-type\">light</a> -->\n          </div>\n        </div>\n      </div>\n      <div class=\"modal-body\">\n        <button type=\"button\" class=\"btn btn-success btn-modal\" (click)=\"smModal.hide()\">OK</button>\n        <button type=\"button\" class=\"btn btn-danger btn-modal\" (click)=\"smModal.hide()\">CANCEL</button>\n      </div>\n    </div>\n  </div>\n</div>\n\n<div class=\"row\">\n  <div class=\"col-md-3 command\">\n    <p [hidden]=\"!editHidden\">{{command}}</p>\n    <div class=\"command\" [hidden]=\"editHidden\">\n      <button class=\"btn btn-command\" type=\"button\" aria-haspopup=\"true\" aria-expanded=\"true\" (click)=\"clickCommand(!value)\">\n        {{command}}\n        <!-- <span class=\"caret\" ></span> -->\n      </button>\n    </div>\n  </div>\n  <div class=\"col-md-3 device-name\">\n    <p [hidden]=\"!editHidden\">{{deviceName}}</p>\n    <div class=\"device-name\" [hidden]=\"editHidden\">\n      <button class=\"btn btn-deviceName\" type=\"button\"  (click)=\"smModal.show()\" aria-haspopup=\"true\" aria-expanded=\"true\">\n        {{deviceName}}\n      </button>\n    </div>\n  </div>\n  <div class=\"col-md-2 switch\" [hidden]=\"dimmable\" [ngStyle]=\"editHidden ? {'margin': '0px 7%'} : {'margin': '0 6%', 'padding': '12px 4px 5px 4px', 'background-color': 'rgb(221, 221, 221)',  'border-radius': '4px'}\">\n    <ui-switch [(ngModel)]=\"value\" size=\"medium-v2\" (click)=\"clickCommand(value)\"></ui-switch>\n  </div>\n  <div class=\"col-md-6 slider\" [hidden]=\"!dimmable\" [ngStyle]=\"editHidden ? {'margin-top':'-11px','width': '30%'} : {'background-color': '#dddddd', 'width': '30%', 'border-radius': '4px'}\">\n    <md-slider [(ngModel)]=\"value\"\n              (input)=\"getValue($event.value)\">\n    </md-slider>\n  </div>\n  <div class=\"col-md-2 menu\" style=\"padding-left: 5px;position: absolute;right: -20px; cursor: pointer\" [hidden]=\"editHidden\">\n    <div class=\"dropdown\">\n      <button class=\"btn btn-menu dropdown-toggle\" type=\"button\" data-toggle=\"dropdown\" aria-haspopup=\"true\" aria-expanded=\"true\">\n        <i class=\"fa fa-bars menu\" aria-hidden=\"true\"></i>\n      </button>\n      <ul class=\"dropdown-menu scrollable-menu-2\" role=\"menu\" aria-labelledby=\"dropdownMenu1\" [hidden]=\"editHidden\">\n        <li (click)=\"deleteAction()\"><a> Delete action</a></li>\n        <li (click)=\"addAction()\"><a>Add action</a></li>\n      </ul>\n    </div>\n  </div>\n</div>\n<hr/>\n"
+module.exports = "<div bsModal #smModal=\"bs-modal\" class=\"modal fade\" tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"mySmallModalLabel\" aria-hidden=\"true\">\n  <div class=\"modal-dialog modal-sm\">\n    <div class=\"modal-content\">\n      <div class=\"modal-header\" style=\"padding: 40px 0px\">\n        <div class=\"list-of-room\" *ngFor=\"let room of listOfDevicesInHouse\">\n          <a class=\"room-floor\">\n            <span><i aria-hidden=\"true\" class=\"fa fa-home\"></i> {{room.floorName}} </span>\n            <span><i aria-hidden=\"true\" class=\"fa fa-caret-right\"></i> {{room.roomName}} </span>\n          </a>\n          <div class=\"list-of-sensors\" *ngFor=\"let sensor of room.sensors\">\n            <a class=\"device\" (click)=\"selectSensor(sensor);smModal.hide()\">{{sensor.name}} sensor</a>\n            <!-- <a class=\"device-type\">sensor</a> -->\n          </div>\n          <div class=\"list-of-lights\" *ngFor=\"let light of room.lights\">\n            <a class=\"device\" (click)=\"selectLight(light);smModal.hide()\">{{light.name}}</a>\n            <!-- <a class=\"device-type\">light</a> -->\n          </div>\n        </div>\n      </div>\n      <div class=\"modal-body\">\n        <button type=\"button\" class=\"btn btn-success btn-modal\" (click)=\"smModal.hide()\">OK</button>\n        <button type=\"button\" class=\"btn btn-danger btn-modal\" (click)=\"smModal.hide()\">CANCEL</button>\n      </div>\n    </div>\n  </div>\n</div>\n\n\n<div class=\"row\">\n  <div class=\"col-md-3 device-name\">\n    <p [hidden]=\"!editHidden\">{{deviceName}}</p>\n    <div class=\"device-name\" [hidden]=\"editHidden\">\n      <button class=\"btn btn-deviceName\" type=\"button\"  (click)=\"smModal.show()\" aria-haspopup=\"true\" aria-expanded=\"true\">\n        {{deviceName}}\n        <!-- <span class=\"caret\" ></span> -->\n      </button>\n    </div>\n  </div>\n  <div class=\"col-md-5 operator\">\n    <p [hidden]=\"!editHidden\">{{operator}}</p>\n    <div class=\"dropdown\" [hidden]=\"editHidden\">\n      <button class=\"btn btn-operator dropdown-toggle\" type=\"button\" id=\"dropdownMenu1\" data-toggle=\"dropdown\" aria-haspopup=\"true\" aria-expanded=\"true\">\n        {{operator }}\n        <!-- <div class=\"caret-icon\"  [hidden]=\"!dimmable\">\n          <span class=\"caret\"></span>\n        </div> -->\n      </button>\n      <ul class=\"dropdown-menu scrollable-menu-1\" role=\"menu\" aria-labelledby=\"dropdownMenu1\" [hidden]=\"editHidden\">\n        <li *ngFor=\"let operator of operatorArr; let i=index\">\n          <a (click)=\"selectOperator(operatorSymbolArr[i])\"><span class=\"operator-symbol\">{{operatorSymbolArr[i]}}</span><span class=\"operator-string\">{{operator}}</span></a>\n        </li>\n      </ul>\n    </div>\n  </div>\n  <div class=\"col-md-2 value\" (click)=\"sliderHidden=!sliderHidden\" >\n    <p [hidden]=\"!editHidden\">{{value}}</p>\n    <!-- <div class=\"input-value\" [hidden]=\"editHidden\">\n      <input class=\"form-control\" type=\"text\" name=\"status\" value=\"{{value}}\" >\n    </div> -->\n    <div class=\"value\" [hidden]=\"editHidden\" (click)=\"clickValueBtn()\">\n      <button class=\"btn btn-value\" type=\"button\">{{value}}</button>\n    </div>\n  </div>\n  <div class=\"col-md-2 menu\" style=\"padding-left: 5px;position: absolute;right: 0px;\" [hidden]=\"editHidden\">\n    <div class=\"dropdown\">\n      <button class=\"btn btn-menu dropdown-toggle\" type=\"button\" data-toggle=\"dropdown\" aria-haspopup=\"true\" aria-expanded=\"true\">\n        <i class=\"fa fa-bars menu\" aria-hidden=\"true\"></i>\n      </button>\n      <ul class=\"dropdown-menu scrollable-menu-2\" role=\"menu\" aria-labelledby=\"dropdownMenu1\" [hidden]=\"editHidden\">\n        <li (click)=\"deleteOperation()\"><a> Delete operation</a></li>\n        <li (click)=\"addOperation()\" [hidden]=\"addOperationHidden\"><a>Add operation</a></li>\n      </ul>\n    </div>\n  </div>\n</div>\n<div class=\"row\" [hidden]=\"editHidden||sliderHidden||!dimmable\">\n  <md-slider min=\"{{sliderMinValue}}\"\n            max=\"{{sliderMaxValue}}\"\n            [(ngModel)]=\"value\"\n            (input)=\"getValue($event.value)\">\n  </md-slider>\n</div>\n"
 
 /***/ }),
 
 /***/ 1127:
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"then-actions\">\n  <h3>THEN ACTIONS</h3>\n</div>\n<div class=\"actions\" *ngFor=\"let action of thenActions; let i=index\">\n  <app-action [action]=\"action\"\n              [order]=\"i\"\n              [editHidden]=\"editHidden\"\n              [listOfDevicesInHouse]=\"listOfDevicesInHouse\"\n              (deleteActionEvent)=\"deleteAction($event)\"\n              (addActionEvent)=\"addAction()\"\n              (updateActionEvent)=\"updateAction()\">\n  </app-action>\n</div>\n"
+module.exports = "<div bsModal #smModal=\"bs-modal\" class=\"modal fade\" tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"mySmallModalLabel\" aria-hidden=\"true\">\n  <div class=\"modal-dialog modal-sm\">\n    <div class=\"modal-content\">\n      <div class=\"modal-header\">\n        <h4 class=\"modal-title\">Are you sure you want to delete <b>{{rule.name}}</b> ?</h4>\n      </div>\n      <div class=\"modal-body\">\n        <button type=\"button\" class=\"btn btn-success btn-modal\" (click)=\"smModal.hide()\" (click)=\"deleteRule()\">Yes</button>\n        <button type=\"button\" class=\"btn btn-danger btn-modal\" (click)=\"smModal.hide()\">No</button>\n      </div>\n    </div>\n  </div>\n</div>\n\n<!-- rule -->\n<div class=\"rule\">\n  <div class=\"panel panel-primary panel-pricing\">\n    <div class=\"panel-heading\">\n      <i class=\"fa fa-lightbulb-o\" aria-hidden=\"true\"></i>\n      <h3 class=\"ruleName\" (click)=\"runrule()\">{{rule.name}}</h3>\n      <div class=\"x-icon\" >\n        <i class=\"fa fa-times\" aria-hidden=\"true\" (click)=\"smModal.show()\"></i>\n      </div>\n    </div>\n    <div class=\"row scirpt-body\">\n      <div class=\"col-md-4\">\n        <div class=\"time-date-picker\">\n          <!-- <div class=\"date-picker\">\n            <p>Date</p>\n            <ng2-datepicker [options]=\"options\" [(ngModel)]=\"date\" (click)=\"btnSaveHidden=false\" (outputEvents)=\"datePickerEvent($event)\" ></ng2-datepicker>\n          </div> -->\n          <div class=\"time-picker\">\n            <p>Time</p>\n            <div class=\"all-day-checkbox\">\n              <div class=\"radio\">\n                <label>\n                  <input type=\"radio\" [(checked)]=\"isAllDayChecked\" (click)=\"clickAllDayCheckbox(true)\">\n                  All day\n                </label>\n                <label>\n                  <input type=\"radio\" [(checked)]=\"!isAllDayChecked\" (click)=\"clickAllDayCheckbox(false)\">\n                  Period\n                </label>\n              </div>\n            </div>\n            <div class=\"from-to-time\" [hidden]=\"isAllDayChecked\">\n              <div class=\"from-time\">\n                <h4 class=\"from\" (click)=\"fromTimePickerHidden=false;TimeButtonsHidden=false;\">From</h4>\n                <div class=\"time\" [hidden]=\"!fromTimePickerHidden\">\n                  <button class=\"btn btn-time btn-from-time\"\n                          type=\"button\"\n                          name=\"button\"\n                          (click)=\"fromTimePickerHidden=false;TimeButtonsHidden=false;\">\n                          {{fromTimePicker}}\n                  </button>\n                </div>\n                <div class=\"timepicker\" [hidden]=\"fromTimePickerHidden\">\n                  <timepicker [(ngModel)]=\"fromTime\"></timepicker>\n                </div>\n                <!-- <div class=\"picker-save\" [hidden]=\"fromTimeButtonsHidden\">\n                  <button class=\"btn btn-primary time-btn-ok\"\n                          (click)=\"clickFromTimeOkBtn()\">OK</button>\n                  <button class=\"btn btn-primary time-btn-clear\"\n                          (click)=\"clickFromTimeClearOkBtn()\">Clear</button>\n                </div> -->\n              </div>\n              <div class=\"to-time\">\n                <h4 class=\"to\" (click)=\"toTimePickerHidden=false;TimeButtonsHidden=false;\">To </h4>\n                <div class=\"time\" [hidden]=\"!toTimePickerHidden\">\n                  <button class=\"btn btn-time btn-to-time\"\n                          type=\"button\"\n                          name=\"button\"\n                          (click)=\"toTimePickerHidden=false;TimeButtonsHidden=false;isNextDay=false\">\n                          {{toTimePicker}}\n                  </button>\n                </div>\n                <h4 class=\"next-day\" [hidden]=\"!isNextDay\">next day</h4>\n                <div class=\"timepicker\" [hidden]=\"toTimePickerHidden\">\n                  <timepicker [(ngModel)]=\"toTime\"></timepicker>\n                </div>\n                <!-- <div class=\"picker-save\" [hidden]=\"toTimeButtonsHidden\">\n                  <button class=\"btn btn-primary time-btn-ok\"\n                          (click)=\"clickToTimeOkBtn()\">OK</button>\n                  <button class=\"btn btn-primary time-btn-clear\"\n                          (click)=\"clickToTimeClearOkBtn()\">Clear</button>\n                </div> -->\n              </div>\n            </div>\n            <!-- <div class=\"from-to-time-allDayChecked\" [hidden]=\"!isAllDayChecked\">\n              <div class=\"from-time\">\n                <h4>From &nbsp;{{fromTimePicker}}</h4>\n              </div>\n              <div class=\"to-time\">\n                <h4>To &nbsp;{{toTimePicker}}</h4>\n              </div>\n            </div> -->\n            <div class=\"picker-save\" [hidden]=\"TimeButtonsHidden\">\n              <button class=\"btn btn-primary time-btn-ok\"\n                      (click)=\"clickTimeOkBtn()\">OK</button>\n            </div>\n          </div>\n\n          <div class=\"repeat\">\n            <p>Repeat</p>\n            <input type=\"text\" name=\"\" value=\"\" (click)=\"repeatDayHidden=false\" [hidden]=\"!repeatDayHidden\" [(ngModel)]=\"repeatDaysStr\">\n            <div class=\"day-picker\" [hidden]=\"repeatDayHidden\">\n              <div class=\"checkbox\" *ngFor=\"let day of daysOfWeekFull;let i = index\">\n                <label>\n                  <input class=\"checkbox-input\" type=\"checkbox\" [(ngModel)]=\"repeatDays[i]\">\n                  {{day}}\n                </label>\n              </div>\n              <div class=\"picker-save\">\n                <button class=\"btn btn-primary repeat-btn-ok\"\n                        (click)=\"clickRepeatOkBtn()\">OK</button>\n              </div>\n            </div>\n          </div>\n        </div>\n        <!-- <div class=\"picker-save\" [hidden]=\"TimeButtonsHidden\">\n          <button class=\"btn btn-primary btn-ok\"\n                  (click)=\"clickOkBtn()\">OK</button>\n        </div> -->\n      </div>\n      <div class=\"col-md-8 deivce-picker\">\n\n        <app-ifconditions [ifCondtions]=\"ifCondtions\"\n                          [listOfDevicesInHouse]=\"listOfDevicesInHouse\"\n                          [editHidden]=\"editHidden\"\n                          (updateIfCond)=\"updateIfCond($event)\">\n        </app-ifconditions>\n        <app-thenactions [thenActions]=\"thenActions\"\n                         [editHidden]=\"editHidden\"\n                         [listOfDevicesInHouse]=\"listOfDevicesInHouse\"\n                         (updateActions)=\"updateActions()\">\n        </app-thenactions>\n\n        <div class=\"footer\">\n          <div class=\"edit-save\">\n            <div class=\"btn-edit-save\"  [hidden]=\"btnSaveHidden\" (click)=\"clickSaveBtn()\">\n              <button class=\"btn\" type=\"button\" name=\"button\">Save</button>\n            </div>\n            <div class=\"btn-edit\">\n              <button class=\"btn\" type=\"button\" name=\"button\" (click)=\"editHidden=false;btnSaveHidden=false\">Edit <i class=\"fa fa-pencil-square\" aria-hidden=\"true\"></i></button>\n            </div>\n          </div>\n        </div>\n\n\n      </div>\n    </div>\n  </div>\n</div>\n<!-- rule -->\n"
 
 /***/ }),
 
 /***/ 1128:
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"col-md-8\">\n    <!-- rule -->\n    <div class=\"rule\" *ngFor=\"let rule of rules\">\n      <app-rule [rule]=\"rule\"\n                [listOfDevicesInHouse]=\"listOfDevicesInHouse\"\n                (removeRule)=\"getListOfRules()\"></app-rule>\n    </div>\n    <!-- rule -->\n\n    <!-- addrule -->\n    <div class=\"addRule\">\n      <button type=\"button\" class=\"fa fa-plus-circle fa-2x addRuleIcon\" (click)=\"checkClick=!checkClick\"></button>\n      <div class=\"input\" [hidden]=\"checkClick\" >\n        <form (submit)=\"addruleSubmit()\">\n          <div class=\"form-group\">\n            <input type=\"text\"\n            class=\"form-control\"\n            [(ngModel)]=\"newRuleName\" name=\"newRuleName\"\n            placeholder=\"rule name\"\n            required>\n          </div>\n          <input type=\"submit\" class=\"btn btn-success btn-add-rule\" value=\"Add\">\n        </form>\n      </div>\n    </div>\n    <!-- addrule -->\n\n</div>\n"
+module.exports = "<div bsModal #smModal=\"bs-modal\" class=\"modal fade\" tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"mySmallModalLabel\" aria-hidden=\"true\">\n  <div class=\"modal-dialog modal-sm\">\n    <div class=\"modal-content\">\n      <div class=\"modal-header\" style=\"padding: 40px 0px\">\n        <div class=\"list-of-room\" *ngFor=\"let room of listOfDevicesInHouse\">\n          <a class=\"room-floor\">\n            <span><i aria-hidden=\"true\" class=\"fa fa-home\"></i> {{room.floorName}} </span>\n            <span><i aria-hidden=\"true\" class=\"fa fa-caret-right\"></i> {{room.roomName}} </span>\n          </a>\n          <div class=\"list-of-lights\" *ngFor=\"let device of room.lights\">\n            <a class=\"device\" (click)=\"selectDevice(device);smModal.hide()\">{{device.name}}</a>\n            <!-- <a class=\"device-type\">light</a> -->\n          </div>\n        </div>\n      </div>\n      <div class=\"modal-body\">\n        <button type=\"button\" class=\"btn btn-success btn-modal\" (click)=\"smModal.hide()\">OK</button>\n        <button type=\"button\" class=\"btn btn-danger btn-modal\" (click)=\"smModal.hide()\">CANCEL</button>\n      </div>\n    </div>\n  </div>\n</div>\n\n<div class=\"row\">\n  <div class=\"col-md-3 command\">\n    <p [hidden]=\"!editHidden\">{{command}}</p>\n    <div class=\"command\" [hidden]=\"editHidden\">\n      <button class=\"btn btn-command\" type=\"button\" aria-haspopup=\"true\" aria-expanded=\"true\" (click)=\"clickCommand(!value)\">\n        {{command}}\n        <!-- <span class=\"caret\" ></span> -->\n      </button>\n    </div>\n  </div>\n  <div class=\"col-md-3 device-name\">\n    <p [hidden]=\"!editHidden\">{{deviceName}}</p>\n    <div class=\"device-name\" [hidden]=\"editHidden\">\n      <button class=\"btn btn-deviceName\" type=\"button\"  (click)=\"smModal.show()\" aria-haspopup=\"true\" aria-expanded=\"true\">\n        {{deviceName}}\n      </button>\n    </div>\n  </div>\n  <div class=\"col-md-2 switch\" [hidden]=\"dimmable\" [ngStyle]=\"editHidden ? {'margin': '0px 7%'} : {'margin': '0 6%', 'padding': '12px 4px 5px 4px', 'background-color': 'rgb(221, 221, 221)',  'border-radius': '4px'}\">\n    <ui-switch [(ngModel)]=\"value\" size=\"medium-v2\" (click)=\"clickCommand(value)\"></ui-switch>\n  </div>\n  <div class=\"col-md-6 slider\" [hidden]=\"!dimmable\" [ngStyle]=\"editHidden ? {'margin-top':'-11px','width': '30%'} : {'background-color': '#dddddd', 'width': '30%', 'border-radius': '4px'}\">\n    <md-slider [(ngModel)]=\"value\"\n              (input)=\"getValue($event.value)\">\n    </md-slider>\n  </div>\n  <div class=\"col-md-2 menu\" style=\"padding-left: 5px;position: absolute;right: -20px; cursor: pointer\" [hidden]=\"editHidden\">\n    <div class=\"dropdown\">\n      <button class=\"btn btn-menu dropdown-toggle\" type=\"button\" data-toggle=\"dropdown\" aria-haspopup=\"true\" aria-expanded=\"true\">\n        <i class=\"fa fa-bars menu\" aria-hidden=\"true\"></i>\n      </button>\n      <ul class=\"dropdown-menu scrollable-menu-2\" role=\"menu\" aria-labelledby=\"dropdownMenu1\" [hidden]=\"editHidden\">\n        <li (click)=\"deleteAction()\"><a> Delete action</a></li>\n        <li (click)=\"addAction()\"><a>Add action</a></li>\n      </ul>\n    </div>\n  </div>\n</div>\n<hr/>\n"
 
 /***/ }),
 
 /***/ 1129:
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"dimmable\"  *ngIf=\"light.dimmable==true\">\n  <div class=\"light-name\">\n    <i class=\"fa fa-minus-square\"\n    aria-hidden=\"true\"\n    (click)=\"removeLight()\"\n    [hidden]=\"editHidden\"></i>\n  <a class=\"list-group-item\"> {{light.name}}</a>\n  </div>\n  <md-slider [thumb-label]=\"true\" [(ngModel)]=\"lightValue\" (input)=\"getValue($event.value)\"></md-slider>\n  <div [ngClass]=\"light.dimmable==true?'hidden-xs':''\" >\n    <ui-switch [(ngModel)]=\"switchValue\" size=\"medium-v2\" (click)=\"getSwitchValue(switchValue)\"></ui-switch>\n  </div>\n</div>\n<div class=\"not-dimmable\" *ngIf=\"light.dimmable==false\" >\n  <div class=\"light-name\">\n    <i class=\"fa fa-minus-square\"\n    aria-hidden=\"true\"\n    (click)=\"removeLight()\"\n    [hidden]=\"editHidden\"></i>\n  <a class=\"list-group-item\"> {{light.name}}</a>\n  </div>\n  <ui-switch [(ngModel)]=\"lightValue\" size=\"medium-v2\" (click)=\"getValue(lightValue)\"></ui-switch>\n</div>\n"
+module.exports = "<div class=\"then-actions\">\n  <h3>THEN ACTIONS</h3>\n</div>\n<div class=\"actions\" *ngFor=\"let action of thenActions; let i=index\">\n  <app-action [action]=\"action\"\n              [order]=\"i\"\n              [editHidden]=\"editHidden\"\n              [listOfDevicesInHouse]=\"listOfDevicesInHouse\"\n              (deleteActionEvent)=\"deleteAction($event)\"\n              (addActionEvent)=\"addAction()\"\n              (updateActionEvent)=\"updateAction()\">\n  </app-action>\n</div>\n"
 
 /***/ }),
 
 /***/ 1130:
 /***/ (function(module, exports) {
 
-module.exports = "<!-- room -->\n<div class=\"panel-body\">\n  <div class=\"panel-body-content\">\n    <div class=\"panel-body-icon\">\n      <i class=\"fa fa-minus-circle\" aria-hidden=\"true\"\n      (click)=\"removeRoom()\"\n      [hidden]=\"editHidden\"></i>\n      <i class=\"fa fa-home\" aria-hidden=\"true\" [hidden]=\"!editHidden\"></i>\n    </div>\n    <div class=\"btn-group panel-body-btn\">\n      <a class=\"btn dropdown-toggle\"> {{room.floorName}}</a>\n    </div>\n    <div class=\"panel-body-icon\">\n      <i class=\"fa fa-caret-right\" aria-hidden=\"true\"></i>\n    </div>\n    <div class=\"btn-group panel-body-btn\">\n      <a class=\"btn dropdown-toggle\"> {{room.roomName}}</a>\n    </div>\n  </div>\n</div>\n\n<div class=\"panel-footer\">\n  <div class=\"list-group\">\n    <div class=\"device\">\n      <div class=\"lights\" >\n        <div class=\"light\" *ngFor=\"let light of lightsOfScene\">\n          <app-light-scene [sceneId]=\"sceneId\" [light]=\"light\" [editHidden]=\"editHidden\" (remove)=\"removeLight($event)\"></app-light-scene>\n        </div>\n        <div class=\"add-device\" [hidden]=\"editHidden\">\n          <div class=\"add-device-btn\"\n                *ngIf=\"!!this.listOfLightsLeft.length\"\n                (click)=\"listOfAddLightsHidden=!listOfAddLightsHidden\">\n            <a class=\"list-group-item\"><i class=\"fa fa-plus-square\" aria-hidden=\"true\"></i> Add device</a>\n          </div>\n          <div class=\"add-light\"\n                *ngFor=\"let light of listOfLightsLeft\"\n                [hidden]=\"listOfAddLightsHidden\"\n                (click)=\"addLight(light)\">\n              <a class=\"list-group-item\"><i class=\"fa fa-plus-square\" aria-hidden=\"true\"></i> {{light.name}}</a>\n          </div>\n        </div>\n      </div>\n    </div>\n  </div>\n</div>\n<!-- room -->\n"
+module.exports = "<div class=\"col-md-8\">\n    <!-- rule -->\n    <div class=\"rule\" *ngFor=\"let rule of rules\">\n      <app-rule [rule]=\"rule\"\n                [listOfDevicesInHouse]=\"listOfDevicesInHouse\"\n                (removeRule)=\"getListOfRules()\"></app-rule>\n    </div>\n    <!-- rule -->\n\n    <!-- addrule -->\n    <div class=\"addRule\">\n      <button type=\"button\" class=\"fa fa-plus-circle fa-2x addRuleIcon\" (click)=\"checkClick=!checkClick\"></button>\n      <div class=\"input\" [hidden]=\"checkClick\" >\n        <form (submit)=\"addruleSubmit()\">\n          <div class=\"form-group\">\n            <input type=\"text\"\n            class=\"form-control\"\n            [(ngModel)]=\"newRuleName\" name=\"newRuleName\"\n            placeholder=\"rule name\"\n            required>\n          </div>\n          <input type=\"submit\" class=\"btn btn-success btn-add-rule\" value=\"Add\">\n        </form>\n      </div>\n    </div>\n    <!-- addrule -->\n\n</div>\n"
 
 /***/ }),
 
 /***/ 1131:
 /***/ (function(module, exports) {
 
-module.exports = "<div bsModal #smModal=\"bs-modal\" class=\"modal fade\" tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"mySmallModalLabel\" aria-hidden=\"true\">\n  <div class=\"modal-dialog modal-sm\">\n    <div class=\"modal-content\">\n      <div class=\"modal-header\">\n        <h4 class=\"modal-title\">Are you sure you want to delete <b>{{scene.name}}</b> ?</h4>\n      </div>\n      <div class=\"modal-body\">\n        <button type=\"button\" class=\"btn btn-success btn-modal\" (click)=\"smModal.hide()\" (click)=\"deleteScene()\">Yes</button>\n        <button type=\"button\" class=\"btn btn-danger btn-modal\" (click)=\"smModal.hide()\">No</button>\n      </div>\n    </div>\n  </div>\n</div>\n\n<!-- scene -->\n<div class=\"scene\">\n  <div class=\"panel panel-primary panel-pricing\">\n    <div class=\"panel-heading\">\n      <i class=\"fa fa-lightbulb-o\" aria-hidden=\"true\"></i>\n      <h3 class=\"sceneName\" (click)=\"runScene()\">{{scene.name}}</h3>\n      <div class=\"x-icon\" >\n        <i class=\"fa fa-times\" aria-hidden=\"true\" (click)=\"smModal.show()\"></i>\n      </div>\n    </div>\n    <div class=\"row scirpt-body\">\n      <div class=\"col-md-4\">\n        <div class=\"time-date-picker\">\n          <div class=\"date-picker\">\n            <p>Date</p>\n            <ng2-datepicker [options]=\"options\" [(ngModel)]=\"date\" (click)=\"btnSaveHidden=false\" (outputEvents)=\"datePickerEvent($event)\" ></ng2-datepicker>\n          </div>\n          <div class=\"time-picker\">\n            <p>Time</p>\n            <div class=\"time\" [hidden]=\"!timePickerHidden\">\n              <button class=\"btn btn-time\" type=\"button\" name=\"button\" (click)=\"timePickerHidden=false;TimeButtonsHidden=false;\">{{timePicker}}</button>\n            </div>\n            <div class=\"timepicker\" [hidden]=\"timePickerHidden\">\n              <timepicker [(ngModel)]=\"time\"></timepicker>\n            </div>\n            <div class=\"picker-save\" [hidden]=\"TimeButtonsHidden\">\n              <button class=\"btn btn-primary time-btn-ok\"\n                      (click)=\"clickTimeOkBtn()\">OK</button>\n              <button class=\"btn btn-primary time-btn-clear\"\n                      (click)=\"clickClearOkBtn()\">Clear</button>\n            </div>\n          </div>\n          <div class=\"repeat\">\n            <p>Repeat</p>\n            <input type=\"text\" name=\"\" value=\"\" (click)=\"repeatDayHidden=false\" [hidden]=\"!repeatDayHidden\" [(ngModel)]=\"repeatDaysStr\">\n            <div class=\"day-picker\" [hidden]=\"repeatDayHidden\">\n              <div class=\"checkbox\" *ngFor=\"let day of daysOfWeekFull;let i = index\">\n                <label>\n                  <input type=\"checkbox\" [(ngModel)]=\"repeatDays[i]\">\n                  {{day}}\n                </label>\n              </div>\n              <div class=\"picker-save\">\n                <button class=\"btn btn-primary repeat-btn-ok\"\n                        (click)=\"clickRepeatOkBtn()\">OK</button>\n              </div>\n            </div>\n          </div>\n        </div>\n        <!-- <div class=\"picker-save\" [hidden]=\"TimeButtonsHidden\">\n          <button class=\"btn btn-primary btn-ok\"\n                  (click)=\"clickOkBtn()\">OK</button>\n        </div> -->\n      </div>\n      <div class=\"col-md-8 deivce-picker\">\n\n        <!-- Devices -->\n        <div class=\"listOfDevices\" *ngFor=\"let room of rooms\">\n          <app-room-scene  [sceneId] = \"scene._id\"\n                          [room]=\"room\"\n                          [editHidden]=\"editHidden\"\n                          (remove)=\"removeRoom($event)\"></app-room-scene>\n        </div>\n\n\n        <!-- room -->\n        <div class=\"panel-body add-room\" [hidden]=\"editHidden\" (click)=\"this.btnSaveHidden = false\">\n          <div class=\"panel-body-content\">\n            <div class=\"add-room-btn\" (click)=\"selectRoomHidden=!selectRoomHidden\">\n              <div class=\"panel-body-icon\">\n                <i class=\"fa fa-plus-circle\" aria-hidden=\"true\"></i>\n              </div>\n              <div class=\"btn-group panel-body-btn\">\n                <a class=\"btn dropdown-toggle\"> Add room</a>\n              </div>\n            </div>\n            <div class=\"select-room\" [hidden]=\"selectRoomHidden\">\n              <div class=\"panel-body-icon\">\n                <i class=\"fa fa-home\" aria-hidden=\"true\"></i>\n              </div>\n              <div class=\"btn-group panel-body-btn\">\n                <a class=\"btn dropdown-toggle\" data-toggle=\"dropdown\" href=\"#\">{{selectedFloor}}</a>\n                <ul class=\"dropdown-menu\">\n                  <li *ngFor=\"let floor of listOfFloors\" (click)=\"selectFloor(floor)\"><a> {{floor.name}}</a></li>\n                </ul>\n              </div>\n              <div class=\"panel-body-icon\">\n                <i class=\"fa fa-caret-right\" aria-hidden=\"true\"></i>\n              </div>\n              <div class=\"btn-group panel-body-btn\">\n                <a class=\"btn dropdown-toggle\" data-toggle=\"dropdown\" href=\"#\">{{selectedRoom}}</a>\n                <ul class=\"dropdown-menu\">\n                  <li *ngFor=\"let room of listOfRooms\" (click)=\"selectRoom(room);selectRoomHidden=true\"><a> {{room.name}}</a></li>\n                </ul>\n              </div>\n            </div>\n          </div>\n        </div>\n\n        <div class=\"footer\">\n          <div class=\"edit-save\">\n            <div class=\"btn-edit-save\"  [hidden]=\"btnSaveHidden\" (click)=\"clickSaveBtn()\">\n              <button class=\"btn\" type=\"button\" name=\"button\">Save</button>\n            </div>\n            <div class=\"btn-edit\">\n              <button class=\"btn\" type=\"button\" name=\"button\" (click)=\"editHidden=false;btnSaveHidden=false\">Edit <i class=\"fa fa-pencil-square\" aria-hidden=\"true\"></i></button>\n            </div>\n          </div>\n        </div>\n\n\n      </div>\n    </div>\n  </div>\n</div>\n<!-- scene -->\n"
+module.exports = "<div class=\"dimmable\"  *ngIf=\"light.dimmable==true\">\n  <div class=\"light-name\">\n    <i class=\"fa fa-minus-square\"\n    aria-hidden=\"true\"\n    (click)=\"removeLight()\"\n    [hidden]=\"editHidden\"></i>\n  <a class=\"list-group-item\"> {{light.name}}</a>\n  </div>\n  <md-slider [thumb-label]=\"true\" [(ngModel)]=\"lightValue\" (input)=\"getValue($event.value)\"></md-slider>\n  <div [ngClass]=\"light.dimmable==true?'hidden-xs':''\" >\n    <ui-switch [(ngModel)]=\"switchValue\" size=\"medium-v2\" (click)=\"getSwitchValue(switchValue)\"></ui-switch>\n  </div>\n</div>\n<div class=\"not-dimmable\" *ngIf=\"light.dimmable==false\" >\n  <div class=\"light-name\">\n    <i class=\"fa fa-minus-square\"\n    aria-hidden=\"true\"\n    (click)=\"removeLight()\"\n    [hidden]=\"editHidden\"></i>\n  <a class=\"list-group-item\"> {{light.name}}</a>\n  </div>\n  <ui-switch [(ngModel)]=\"lightValue\" size=\"medium-v2\" (click)=\"getValue(lightValue)\"></ui-switch>\n</div>\n"
 
 /***/ }),
 
 /***/ 1132:
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"col-md-8\">\n    <!-- scene -->\n    <div class=\"scene\" *ngFor=\"let scene of scenes\">\n      <app-scene [scene]=\"scene\" (removeScene)=\"getListOfScenes()\"></app-scene>\n    </div>\n    <!-- scene -->\n\n    <!-- addscene -->\n    <div class=\"addscene\">\n      <button type=\"button\" class=\"fa fa-plus-circle fa-2x addSceneIcon\" (click)=\"checkClick=!checkClick\"></button>\n      <div class=\"input\" [hidden]=\"checkClick\" >\n        <form (submit)=\"addsceneSubmit()\">\n          <div class=\"form-group\">\n            <input type=\"text\"\n            class=\"form-control\"\n            [(ngModel)]=\"newSceneName\" name=\"newSceneName\"\n            placeholder=\"scene name\"\n            required>\n          </div>\n          <input type=\"submit\" class=\"btn btn-success btn-add-scene\" value=\"Add\">\n        </form>\n      </div>\n    </div>\n    <!-- addscene -->\n\n</div>\n"
+module.exports = "<!-- room -->\n<div class=\"panel-body\">\n  <div class=\"panel-body-content\">\n    <div class=\"panel-body-icon\">\n      <i class=\"fa fa-minus-circle\" aria-hidden=\"true\"\n      (click)=\"removeRoom()\"\n      [hidden]=\"editHidden\"></i>\n      <i class=\"fa fa-home\" aria-hidden=\"true\" [hidden]=\"!editHidden\"></i>\n    </div>\n    <div class=\"btn-group panel-body-btn\">\n      <a class=\"btn dropdown-toggle\"> {{room.floorName}}</a>\n    </div>\n    <div class=\"panel-body-icon\">\n      <i class=\"fa fa-caret-right\" aria-hidden=\"true\"></i>\n    </div>\n    <div class=\"btn-group panel-body-btn\">\n      <a class=\"btn dropdown-toggle\"> {{room.roomName}}</a>\n    </div>\n  </div>\n</div>\n\n<div class=\"panel-footer\">\n  <div class=\"list-group\">\n    <div class=\"device\">\n      <div class=\"lights\" >\n        <div class=\"light\" *ngFor=\"let light of lightsOfScene\">\n          <app-light-scene [sceneId]=\"sceneId\" [light]=\"light\" [editHidden]=\"editHidden\" (remove)=\"removeLight($event)\"></app-light-scene>\n        </div>\n        <div class=\"add-device\" [hidden]=\"editHidden\">\n          <div class=\"add-device-btn\"\n                *ngIf=\"!!this.listOfLightsLeft.length\"\n                (click)=\"listOfAddLightsHidden=!listOfAddLightsHidden\">\n            <a class=\"list-group-item\"><i class=\"fa fa-plus-square\" aria-hidden=\"true\"></i> Add device</a>\n          </div>\n          <div class=\"add-light\"\n                *ngFor=\"let light of listOfLightsLeft\"\n                [hidden]=\"listOfAddLightsHidden\"\n                (click)=\"addLight(light)\">\n              <a class=\"list-group-item\"><i class=\"fa fa-plus-square\" aria-hidden=\"true\"></i> {{light.name}}</a>\n          </div>\n        </div>\n      </div>\n    </div>\n  </div>\n</div>\n<!-- room -->\n"
 
 /***/ }),
 
 /***/ 1133:
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"background-image\"></div>\n<div class=\"container\">\n  <br><br><br>\n  <div class=\"row\">\n      <div class=\"col-sm-4 col-md-4\">\n        <div class=\"panel panel-default\">\n          <!-- Default panel contents -->\n          <div class=\"panel-heading\">Panel heading</div>\n          <div class=\"panel-body\">\n            <div class=\"row\">\n              <div class=\"col-md-3\">\n                <ul class=\"list-group\">\n                  <li class=\"list-group-item\">Cras justo odio</li>\n                  <li class=\"list-group-item\">Dapibus ac facilisis in</li>\n                  <li class=\"list-group-item\">Morbi leo risus</li>\n                  <li class=\"list-group-item\">Porta ac consectetur ac</li>\n                  <li class=\"list-group-item\">Vestibulum at eros</li>\n                </ul>\n              </div>\n              <div class=\"col-md-3\">\n                <ul class=\"list-group\">\n                  <li class=\"list-group-item\">Cras justo odio</li>\n                  <li class=\"list-group-item\">Dapibus ac facilisis in</li>\n                  <li class=\"list-group-item\">Morbi leo risus</li>\n                  <li class=\"list-group-item\">Porta ac consectetur ac</li>\n                  <li class=\"list-group-item\">Vestibulum at eros</li>\n                </ul>\n              </div>\n            </div>\n            <!-- List group -->          </div>\n        </div>\n      </div>\n  </div>\n</div>\n"
+module.exports = "<div bsModal #smModal=\"bs-modal\" class=\"modal fade\" tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"mySmallModalLabel\" aria-hidden=\"true\">\n  <div class=\"modal-dialog modal-sm\">\n    <div class=\"modal-content\">\n      <div class=\"modal-header\">\n        <h4 class=\"modal-title\">Are you sure you want to delete <b>{{scene.name}}</b> ?</h4>\n      </div>\n      <div class=\"modal-body\">\n        <button type=\"button\" class=\"btn btn-success btn-modal\" (click)=\"smModal.hide()\" (click)=\"deleteScene()\">Yes</button>\n        <button type=\"button\" class=\"btn btn-danger btn-modal\" (click)=\"smModal.hide()\">No</button>\n      </div>\n    </div>\n  </div>\n</div>\n\n<!-- scene -->\n<div class=\"scene\">\n  <div class=\"panel panel-primary panel-pricing\">\n    <div class=\"panel-heading\">\n      <i class=\"fa fa-lightbulb-o\" aria-hidden=\"true\"></i>\n      <h3 class=\"sceneName\" (click)=\"runScene()\">{{scene.name}}</h3>\n      <div class=\"x-icon\" >\n        <i class=\"fa fa-times\" aria-hidden=\"true\" (click)=\"smModal.show()\"></i>\n      </div>\n    </div>\n    <div class=\"row scirpt-body\">\n      <div class=\"col-md-4\">\n        <div class=\"time-date-picker\">\n          <div class=\"date-picker\">\n            <p>Date</p>\n            <ng2-datepicker [options]=\"options\" [(ngModel)]=\"date\" (click)=\"btnSaveHidden=false\" (outputEvents)=\"datePickerEvent($event)\" ></ng2-datepicker>\n          </div>\n          <div class=\"time-picker\">\n            <p>Time</p>\n            <div class=\"time\" [hidden]=\"!timePickerHidden\">\n              <button class=\"btn btn-time\" type=\"button\" name=\"button\" (click)=\"timePickerHidden=false;TimeButtonsHidden=false;\">{{timePicker}}</button>\n            </div>\n            <div class=\"timepicker\" [hidden]=\"timePickerHidden\">\n              <timepicker [(ngModel)]=\"time\"></timepicker>\n            </div>\n            <div class=\"picker-save\" [hidden]=\"TimeButtonsHidden\">\n              <button class=\"btn btn-primary time-btn-ok\"\n                      (click)=\"clickTimeOkBtn()\">OK</button>\n              <button class=\"btn btn-primary time-btn-clear\"\n                      (click)=\"clickClearOkBtn()\">Clear</button>\n            </div>\n          </div>\n          <div class=\"repeat\">\n            <p>Repeat</p>\n            <input type=\"text\" name=\"\" value=\"\" (click)=\"repeatDayHidden=false\" [hidden]=\"!repeatDayHidden\" [(ngModel)]=\"repeatDaysStr\">\n            <div class=\"day-picker\" [hidden]=\"repeatDayHidden\">\n              <div class=\"checkbox\" *ngFor=\"let day of daysOfWeekFull;let i = index\">\n                <label>\n                  <input type=\"checkbox\" [(ngModel)]=\"repeatDays[i]\">\n                  {{day}}\n                </label>\n              </div>\n              <div class=\"picker-save\">\n                <button class=\"btn btn-primary repeat-btn-ok\"\n                        (click)=\"clickRepeatOkBtn()\">OK</button>\n              </div>\n            </div>\n          </div>\n        </div>\n        <!-- <div class=\"picker-save\" [hidden]=\"TimeButtonsHidden\">\n          <button class=\"btn btn-primary btn-ok\"\n                  (click)=\"clickOkBtn()\">OK</button>\n        </div> -->\n      </div>\n      <div class=\"col-md-8 deivce-picker\">\n\n        <!-- Devices -->\n        <div class=\"listOfDevices\" *ngFor=\"let room of rooms\">\n          <app-room-scene  [sceneId] = \"scene._id\"\n                          [room]=\"room\"\n                          [editHidden]=\"editHidden\"\n                          (remove)=\"removeRoom($event)\"></app-room-scene>\n        </div>\n\n\n        <!-- room -->\n        <div class=\"panel-body add-room\" [hidden]=\"editHidden\" (click)=\"this.btnSaveHidden = false\">\n          <div class=\"panel-body-content\">\n            <div class=\"add-room-btn\" (click)=\"selectRoomHidden=!selectRoomHidden\">\n              <div class=\"panel-body-icon\">\n                <i class=\"fa fa-plus-circle\" aria-hidden=\"true\"></i>\n              </div>\n              <div class=\"btn-group panel-body-btn\">\n                <a class=\"btn dropdown-toggle\"> Add room</a>\n              </div>\n            </div>\n            <div class=\"select-room\" [hidden]=\"selectRoomHidden\">\n              <div class=\"panel-body-icon\">\n                <i class=\"fa fa-home\" aria-hidden=\"true\"></i>\n              </div>\n              <div class=\"btn-group panel-body-btn\">\n                <a class=\"btn dropdown-toggle\" data-toggle=\"dropdown\" href=\"#\">{{selectedFloor}}</a>\n                <ul class=\"dropdown-menu\">\n                  <li *ngFor=\"let floor of listOfFloors\" (click)=\"selectFloor(floor)\"><a> {{floor.name}}</a></li>\n                </ul>\n              </div>\n              <div class=\"panel-body-icon\">\n                <i class=\"fa fa-caret-right\" aria-hidden=\"true\"></i>\n              </div>\n              <div class=\"btn-group panel-body-btn\">\n                <a class=\"btn dropdown-toggle\" data-toggle=\"dropdown\" href=\"#\">{{selectedRoom}}</a>\n                <ul class=\"dropdown-menu\">\n                  <li *ngFor=\"let room of listOfRooms\" (click)=\"selectRoom(room);selectRoomHidden=true\"><a> {{room.name}}</a></li>\n                </ul>\n              </div>\n            </div>\n          </div>\n        </div>\n\n        <div class=\"footer\">\n          <div class=\"edit-save\">\n            <div class=\"btn-edit-save\"  [hidden]=\"btnSaveHidden\" (click)=\"clickSaveBtn()\">\n              <button class=\"btn\" type=\"button\" name=\"button\">Save</button>\n            </div>\n            <div class=\"btn-edit\">\n              <button class=\"btn\" type=\"button\" name=\"button\" (click)=\"editHidden=false;btnSaveHidden=false\">Edit <i class=\"fa fa-pencil-square\" aria-hidden=\"true\"></i></button>\n            </div>\n          </div>\n        </div>\n\n\n      </div>\n    </div>\n  </div>\n</div>\n<!-- scene -->\n"
 
 /***/ }),
 
 /***/ 1134:
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"container\">\n  <div class=\"jumbotron text-center\">\n    <h1>BKHome Project</h1>\n    <p class=\"lead\">Welcome blahblah blahbla</p>\n    <div>\n      <a class=\"btn btn-primary\" [routerLink]=\"['/register']\">Register</a>\n      <a class=\"btn btn-default\" [routerLink]=\"['/login']\">Login</a>\n    </div>\n  </div>\n\n  <div class=\"row\">\n    <div class=\"col-md-4\">\n      <h3>Express backend</h3>\n      <p>A rock solid Nodejs/Express server using Mongoose</p>\n    </div>\n    <div class=\"col-md-4\">\n      <h3>Angular-CLI</h3>\n      <p>Angular-CLI blah blah blah balh</p>\n    </div>\n    <div class=\"col-md-4\">\n      <h3>JWT Token</h3>\n      <p>JSON Web Token blah blah blah balh</p>\n    </div>\n  </div>\n</div>\n"
+module.exports = "<div class=\"col-md-8\">\n    <!-- scene -->\n    <div class=\"scene\" *ngFor=\"let scene of scenes\">\n      <app-scene [scene]=\"scene\" (removeScene)=\"getListOfScenes()\"></app-scene>\n    </div>\n    <!-- scene -->\n\n    <!-- addscene -->\n    <div class=\"addscene\">\n      <button type=\"button\" class=\"fa fa-plus-circle fa-2x addSceneIcon\" (click)=\"checkClick=!checkClick\"></button>\n      <div class=\"input\" [hidden]=\"checkClick\" >\n        <form (submit)=\"addsceneSubmit()\">\n          <div class=\"form-group\">\n            <input type=\"text\"\n            class=\"form-control\"\n            [(ngModel)]=\"newSceneName\" name=\"newSceneName\"\n            placeholder=\"scene name\"\n            required>\n          </div>\n          <input type=\"submit\" class=\"btn btn-success btn-add-scene\" value=\"Add\">\n        </form>\n      </div>\n    </div>\n    <!-- addscene -->\n\n</div>\n"
 
 /***/ }),
 
 /***/ 1135:
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"container\">\n  <h2 class=\"page-header\">Login</h2>\n  <form (submit)=\"onLoginSubmit()\">\n    <div class=\"flashMessage\">\n      <flash-messages></flash-messages>\n    </div>\n    <div class=\"form-group\">\n        <label>Username</label>\n        <input type=\"text\" class=\"form-control\" [(ngModel)]=\"username\" name=\"username\">\n    </div>\n    <div class=\"form-group\">\n        <label>Password</label>\n        <input type=\"password\" class=\"form-control\" [(ngModel)]=\"password\" name=\"password\">\n    </div>\n    <input type=\"submit\" class=\"btn btn-primary\" value=\"login\">\n  </form>\n</div>\n"
+module.exports = "<div class=\"background-image\"></div>\n<div class=\"container\">\n  <br><br><br>\n  <div class=\"row\">\n      <div class=\"col-sm-4 col-md-4\">\n        <div class=\"panel panel-default\">\n          <!-- Default panel contents -->\n          <div class=\"panel-heading\">Panel heading</div>\n          <div class=\"panel-body\">\n            <div class=\"row\">\n              <div class=\"col-md-3\">\n                <ul class=\"list-group\">\n                  <li class=\"list-group-item\">Cras justo odio</li>\n                  <li class=\"list-group-item\">Dapibus ac facilisis in</li>\n                  <li class=\"list-group-item\">Morbi leo risus</li>\n                  <li class=\"list-group-item\">Porta ac consectetur ac</li>\n                  <li class=\"list-group-item\">Vestibulum at eros</li>\n                </ul>\n              </div>\n              <div class=\"col-md-3\">\n                <ul class=\"list-group\">\n                  <li class=\"list-group-item\">Cras justo odio</li>\n                  <li class=\"list-group-item\">Dapibus ac facilisis in</li>\n                  <li class=\"list-group-item\">Morbi leo risus</li>\n                  <li class=\"list-group-item\">Porta ac consectetur ac</li>\n                  <li class=\"list-group-item\">Vestibulum at eros</li>\n                </ul>\n              </div>\n            </div>\n            <!-- List group -->          </div>\n        </div>\n      </div>\n  </div>\n</div>\n"
 
 /***/ }),
 
 /***/ 1136:
 /***/ (function(module, exports) {
 
-module.exports = "<nav class=\"navbar navbar-default navbar-fixed-top\">\n  <div class=\"container\">\n    <div class=\"navbar-header\">\n      <button type=\"button\" class=\"navbar-toggle collapsed\" data-toggle=\"collapse\" data-target=\"#navbar\" aria-expanded=\"false\" aria-controls=\"navbar\">\n        <span class=\"sr-only\">Toggle navigation</span>\n        <span class=\"icon-bar\"></span>\n        <span class=\"icon-bar\"></span>\n        <span class=\"icon-bar\"></span>\n      </button>\n      <a class=\"navbar-brand\" href=\"#\">BKHome</a>\n    </div>\n    <div id=\"navbar\" class=\"collapse navbar-collapse\">\n      <ul class=\"nav navbar-nav navbar-left\">\n        <li [routerLinkActive]=\"['active']\" [routerLinkActiveOptions]={exact:true}><a [routerLink] = \"['/']\">Home</a></li>\n      </ul>\n      <ul class=\"nav navbar-nav navbar-right\">\n        <li *ngIf=\"authService.loggedIn()\" [routerLinkActive]=\"['active']\" [routerLinkActiveOptions]={exact:true}><a [routerLink] = \"['/dashboard']\">Dashboard</a></li>\n        <li *ngIf=\"authService.loggedIn()\" [routerLinkActive]=\"['active']\" [routerLinkActiveOptions]={exact:true}><a [routerLink] = \"['/config']\">Config</a></li>\n        <!-- <li *ngIf=\"authService.loggedIn()\" [routerLinkActive]=\"['active']\" [routerLinkActiveOptions]={exact:true}><a [routerLink] = \"['/devices']\">Devices</a></li> -->\n        <li *ngIf=\"authService.loggedIn()\" [routerLinkActive]=\"['active']\" [routerLinkActiveOptions]={exact:true}><a [routerLink] = \"['/profile']\">Profile</a></li>\n        <li *ngIf=\"!authService.loggedIn()\" [routerLinkActive]=\"['active']\" [routerLinkActiveOptions]={exact:true}><a [routerLink] = \"['/login']\">Login</a></li>\n        <li *ngIf=\"!authService.loggedIn()\" [routerLinkActive]=\"['active']\" [routerLinkActiveOptions]={exact:true}><a [routerLink] = \"['/register']\">Register</a></li>\n        <li  *ngIf=\"authService.loggedIn()\"><a (click)=\"onLogoutClick()\" href=\"#\">Logout</a></li>\n      </ul>\n    </div><!--/.nav-collapse -->\n  </div>\n</nav>\n\n<nav class=\"navbar navbar-default\">\n</nav>\n"
+module.exports = "<div class=\"container\">\n  <div class=\"jumbotron text-center\">\n    <h1>BKHome Project</h1>\n    <p class=\"lead\">Welcome blahblah blahbla</p>\n    <div>\n      <a class=\"btn btn-primary\" [routerLink]=\"['/register']\">Register</a>\n      <a class=\"btn btn-default\" [routerLink]=\"['/login']\">Login</a>\n    </div>\n  </div>\n\n  <div class=\"row\">\n    <div class=\"col-md-4\">\n      <h3>Express backend</h3>\n      <p>A rock solid Nodejs/Express server using Mongoose</p>\n    </div>\n    <div class=\"col-md-4\">\n      <h3>Angular-CLI</h3>\n      <p>Angular-CLI blah blah blah balh</p>\n    </div>\n    <div class=\"col-md-4\">\n      <h3>JWT Token</h3>\n      <p>JSON Web Token blah blah blah balh</p>\n    </div>\n  </div>\n</div>\n"
 
 /***/ }),
 
 /***/ 1137:
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"container\">\n  <div *ngIf=\"user\">\n    <h2 class=\"page-header\">{{user.name}}</h2>\n    <ul class=\"list-group\">\n      <li class=\"list-group-item\">Username: {{user.username}}</li>\n      <li class=\"list-group-item\">Email: {{user.email}}</li>\n    </ul>\n  </div>\n</div>\n"
+module.exports = "<div class=\"container\">\n  <h2 class=\"page-header\">Login</h2>\n  <form (submit)=\"onLoginSubmit()\">\n    <div class=\"flashMessage\">\n      <flash-messages></flash-messages>\n    </div>\n    <div class=\"form-group\">\n        <label>Username</label>\n        <input type=\"text\" class=\"form-control\" [(ngModel)]=\"username\" name=\"username\">\n    </div>\n    <div class=\"form-group\">\n        <label>Password</label>\n        <input type=\"password\" class=\"form-control\" [(ngModel)]=\"password\" name=\"password\">\n    </div>\n    <input type=\"submit\" class=\"btn btn-primary\" value=\"login\">\n  </form>\n</div>\n"
 
 /***/ }),
 
 /***/ 1138:
 /***/ (function(module, exports) {
 
+module.exports = "<nav class=\"navbar navbar-default navbar-fixed-top\">\n  <div class=\"container\">\n    <div class=\"navbar-header\">\n      <button type=\"button\" class=\"navbar-toggle collapsed\" data-toggle=\"collapse\" data-target=\"#navbar\" aria-expanded=\"false\" aria-controls=\"navbar\">\n        <span class=\"sr-only\">Toggle navigation</span>\n        <span class=\"icon-bar\"></span>\n        <span class=\"icon-bar\"></span>\n        <span class=\"icon-bar\"></span>\n      </button>\n      <a class=\"navbar-brand\" href=\"#\">BKHome</a>\n    </div>\n    <div id=\"navbar\" class=\"collapse navbar-collapse\">\n      <ul class=\"nav navbar-nav navbar-left\">\n        <li [routerLinkActive]=\"['active']\" [routerLinkActiveOptions]={exact:true}><a [routerLink] = \"['/']\">Home</a></li>\n      </ul>\n      <ul class=\"nav navbar-nav navbar-right\">\n        <li *ngIf=\"authService.loggedIn()\" [routerLinkActive]=\"['active']\" [routerLinkActiveOptions]={exact:true}><a [routerLink] = \"['/dashboard']\">Dashboard</a></li>\n        <li *ngIf=\"authService.loggedIn()\" [routerLinkActive]=\"['active']\" [routerLinkActiveOptions]={exact:true}><a [routerLink] = \"['/config']\">Config</a></li>\n        <!-- <li *ngIf=\"authService.loggedIn()\" [routerLinkActive]=\"['active']\" [routerLinkActiveOptions]={exact:true}><a [routerLink] = \"['/devices']\">Devices</a></li> -->\n        <li *ngIf=\"authService.loggedIn()\" [routerLinkActive]=\"['active']\" [routerLinkActiveOptions]={exact:true}><a [routerLink] = \"['/profile']\">Profile</a></li>\n        <li *ngIf=\"!authService.loggedIn()\" [routerLinkActive]=\"['active']\" [routerLinkActiveOptions]={exact:true}><a [routerLink] = \"['/login']\">Login</a></li>\n        <li *ngIf=\"!authService.loggedIn()\" [routerLinkActive]=\"['active']\" [routerLinkActiveOptions]={exact:true}><a [routerLink] = \"['/register']\">Register</a></li>\n        <li  *ngIf=\"authService.loggedIn()\"><a (click)=\"onLogoutClick()\" href=\"#\">Logout</a></li>\n      </ul>\n    </div><!--/.nav-collapse -->\n  </div>\n</nav>\n\n<nav class=\"navbar navbar-default\">\n</nav>\n"
+
+/***/ }),
+
+/***/ 1139:
+/***/ (function(module, exports) {
+
+module.exports = "<div class=\"container\">\n  <div *ngIf=\"user\">\n    <h2 class=\"page-header\">{{user.name}}</h2>\n    <ul class=\"list-group\">\n      <li class=\"list-group-item\">Username: {{user.username}}</li>\n      <li class=\"list-group-item\">Email: {{user.email}}</li>\n    </ul>\n  </div>\n</div>\n"
+
+/***/ }),
+
+/***/ 1140:
+/***/ (function(module, exports) {
+
 module.exports = "<div class=\"container\">\n  <h2 class=\"page-header\">Register</h2>\n  <form (submit)=\"onRegisterSubmit()\">\n    <div class=\"form-group\">\n      <label>Name</label>\n      <input type=\"text\" [(ngModel)]=\"name\" name=\"name\" class=\"form-control\">\n    </div>\n    <div class=\"form-group\">\n      <label>Username</label>\n      <input type=\"text\" [(ngModel)]=\"username\" name=\"username\" class=\"form-control\">\n    </div>\n    <div class=\"form-group\">\n      <label>Email</label>\n      <input type=\"text\" [(ngModel)]=\"email\" name=\"email\" class=\"form-control\">\n    </div>\n    <div class=\"form-group\">\n      <label>Password</label>\n      <input type=\"password\" [(ngModel)]=\"password\" name=\"password\" class=\"form-control\">\n    </div>\n    <input type=\"submit\" class=\"btn btn-primary\" value=\"Submit\">\n  </form>\n\n</div>\n"
 
 /***/ }),
 
-/***/ 1198:
+/***/ 1199:
 /***/ (function(module, exports) {
 
 /* (ignored) */
 
 /***/ }),
 
-/***/ 1199:
+/***/ 1200:
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(763);
+module.exports = __webpack_require__(764);
 
+
+/***/ }),
+
+/***/ 176:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_rxjs_Subject__ = __webpack_require__(13);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_rxjs_Subject___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_rxjs_Subject__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_filter__ = __webpack_require__(320);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_filter___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_filter__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_add_operator_map__ = __webpack_require__(31);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_add_operator_map___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_rxjs_add_operator_map__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return BroadcasterService; });
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+
+var BroadcasterService = (function () {
+    function BroadcasterService() {
+        this._eventBusSource = new __WEBPACK_IMPORTED_MODULE_1_rxjs_Subject__["Subject"]();
+        this._eventBus = this._eventBusSource.asObservable();
+    }
+    BroadcasterService.prototype.broadcast = function (key, data) {
+        this._eventBusSource.next({ key: key, data: data });
+    };
+    BroadcasterService.prototype.on = function (key) {
+        return this._eventBus
+            .filter(function (event) { return event.key === key; })
+            .map(function (event) { return event.data; });
+    };
+    BroadcasterService = __decorate([
+        __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Injectable"])(), 
+        __metadata('design:paramtypes', [])
+    ], BroadcasterService);
+    return BroadcasterService;
+}());
+//# sourceMappingURL=/home/taihd94/Projects/BKHome/angular-src/src/broadcaster.service.js.map
 
 /***/ }),
 
@@ -1092,53 +1140,6 @@ var HouseService = (function () {
 
 /***/ }),
 
-/***/ 268:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_rxjs_Subject__ = __webpack_require__(13);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_rxjs_Subject___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_rxjs_Subject__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_filter__ = __webpack_require__(320);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_filter___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_filter__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_add_operator_map__ = __webpack_require__(31);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_add_operator_map___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_rxjs_add_operator_map__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return BroadcasterService; });
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-
-
-
-
-var BroadcasterService = (function () {
-    function BroadcasterService() {
-        this._eventBus = new __WEBPACK_IMPORTED_MODULE_1_rxjs_Subject__["Subject"]();
-    }
-    BroadcasterService.prototype.broadcast = function (key, data) {
-        this._eventBus.next({ key: key, data: data });
-    };
-    BroadcasterService.prototype.on = function (key) {
-        return this._eventBus.asObservable()
-            .filter(function (event) { return event.key === key; })
-            .map(function (event) { return event.data; });
-    };
-    BroadcasterService = __decorate([
-        __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Injectable"])(), 
-        __metadata('design:paramtypes', [])
-    ], BroadcasterService);
-    return BroadcasterService;
-}());
-//# sourceMappingURL=/home/taihd94/Projects/BKHome/angular-src/src/broadcaster.service.js.map
-
-/***/ }),
-
 /***/ 269:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -1227,7 +1228,7 @@ var SceneService = (function () {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__broadcaster_service__ = __webpack_require__(268);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__broadcaster_service__ = __webpack_require__(176);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return MessageEventService; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -1268,7 +1269,7 @@ var MessageEventService = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_rxjs_Observable__ = __webpack_require__(2);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_rxjs_Observable___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_rxjs_Observable__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_socket_io_client__ = __webpack_require__(1185);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_socket_io_client__ = __webpack_require__(757);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_socket_io_client___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_socket_io_client__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return SocketioService; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -1294,15 +1295,15 @@ var SocketioService = (function () {
     SocketioService.prototype.sendMessage = function (event, message) {
         this.socket.emit(event, message);
     };
-    SocketioService.prototype.getMessages = function (roomId) {
+    SocketioService.prototype.getMessages = function (event) {
         var _this = this;
         var observable = new __WEBPACK_IMPORTED_MODULE_1_rxjs_Observable__["Observable"](function (observer) {
             //this.socket = io(this.url);
-            _this.socket.on(roomId, function (data) {
+            _this.socket.on(event, function (data) {
                 observer.next(data);
             });
             return function () {
-                _this.socket.disconnect();
+                _this.socket.disconnect(event);
             };
         });
         return observable;
@@ -1540,7 +1541,7 @@ var RuleService = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_http__ = __webpack_require__(43);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_map__ = __webpack_require__(31);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_map___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_map__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_angular2_jwt__ = __webpack_require__(971);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_angular2_jwt__ = __webpack_require__(973);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_angular2_jwt___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_angular2_jwt__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__environments_environment__ = __webpack_require__(90);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return UserService; });
@@ -1613,7 +1614,7 @@ var UserService = (function () {
 
 /***/ }),
 
-/***/ 762:
+/***/ 763:
 /***/ (function(module, exports) {
 
 function webpackEmptyContext(req) {
@@ -1622,19 +1623,19 @@ function webpackEmptyContext(req) {
 webpackEmptyContext.keys = function() { return []; };
 webpackEmptyContext.resolve = webpackEmptyContext;
 module.exports = webpackEmptyContext;
-webpackEmptyContext.id = 762;
+webpackEmptyContext.id = 763;
 
 
 /***/ }),
 
-/***/ 763:
+/***/ 764:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_platform_browser_dynamic__ = __webpack_require__(895);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__app_app_module__ = __webpack_require__(937);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_platform_browser_dynamic__ = __webpack_require__(896);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__app_app_module__ = __webpack_require__(938);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__environments_environment__ = __webpack_require__(90);
 
 
@@ -1662,14 +1663,16 @@ var environment = {
 
 /***/ }),
 
-/***/ 936:
+/***/ 937:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__services_socketio_service__ = __webpack_require__(549);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__services_broadcast_message_event_service__ = __webpack_require__(40);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__services_broadcast_broadcaster_service__ = __webpack_require__(268);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__services_broadcast_broadcaster_service__ = __webpack_require__(176);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_socket_io_client__ = __webpack_require__(757);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_socket_io_client___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_socket_io_client__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AppComponent; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -1684,32 +1687,31 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 
 
+
 var AppComponent = (function () {
     function AppComponent(socketioService, broadcaster, messageEvent) {
         this.socketioService = socketioService;
         this.broadcaster = broadcaster;
         this.messageEvent = messageEvent;
+        this.url = window.location.hostname + ':4000';
         this.title = 'app works!';
     }
     AppComponent.prototype.ngOnInit = function () {
         var _this = this;
-        this.socketioService.connect();
-        this.messageEvent.on('socketOn')
-            .subscribe(function (event) {
-            _this.socketioService.getMessages(event).subscribe(function (message) {
-                _this.messageEvent.emit(event, message);
-            });
+        this.socket = __WEBPACK_IMPORTED_MODULE_4_socket_io_client__(this.url);
+        this.socket.on('device-event', function (data) {
+            _this.messageEvent.emit(data._id, data);
         });
         this.messageEvent.on('device-event')
             .subscribe(function (message) {
-            _this.socketioService.sendMessage("device-event", message);
+            _this.socket.emit("device-event", message);
         });
     };
     AppComponent = __decorate([
         __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
             selector: 'app-root',
-            template: __webpack_require__(1111),
-            styles: [__webpack_require__(1041)]
+            template: __webpack_require__(1113),
+            styles: [__webpack_require__(1043)]
         }), 
         __metadata('design:paramtypes', [(typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__services_socketio_service__["a" /* SocketioService */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_1__services_socketio_service__["a" /* SocketioService */]) === 'function' && _a) || Object, (typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_3__services_broadcast_broadcaster_service__["a" /* BroadcasterService */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_3__services_broadcast_broadcaster_service__["a" /* BroadcasterService */]) === 'function' && _b) || Object, (typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_2__services_broadcast_message_event_service__["a" /* MessageEventService */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_2__services_broadcast_message_event_service__["a" /* MessageEventService */]) === 'function' && _c) || Object])
     ], AppComponent);
@@ -1720,7 +1722,7 @@ var AppComponent = (function () {
 
 /***/ }),
 
-/***/ 937:
+/***/ 938:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1730,24 +1732,24 @@ var AppComponent = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_http__ = __webpack_require__(43);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__angular_router__ = __webpack_require__(23);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_ng2_bootstrap__ = __webpack_require__(123);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_ngx_pipes__ = __webpack_require__(1103);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_ngx_pipes__ = __webpack_require__(1105);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_ngx_pipes___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_6_ngx_pipes__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7_angular2_ui_switch_src_index__ = __webpack_require__(925);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7_angular2_ui_switch_src_index__ = __webpack_require__(926);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8_ngx_toastr__ = __webpack_require__(78);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9_ic_datepicker__ = __webpack_require__(1075);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__angular_material__ = __webpack_require__(879);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11_hammerjs__ = __webpack_require__(1073);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9_ic_datepicker__ = __webpack_require__(1077);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__angular_material__ = __webpack_require__(880);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11_hammerjs__ = __webpack_require__(1075);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_11_hammerjs___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_11_hammerjs__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_12_ng2_datepicker__ = __webpack_require__(311);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__app_component__ = __webpack_require__(936);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__components_navbar_navbar_component__ = __webpack_require__(962);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__components_login_login_component__ = __webpack_require__(961);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__components_register_register_component__ = __webpack_require__(964);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__components_home_home_component__ = __webpack_require__(960);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__components_dashboard_dashboard_component__ = __webpack_require__(959);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_19__components_profile_profile_component__ = __webpack_require__(963);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_20__components_config_config_component__ = __webpack_require__(943);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_21__components_config_config_navbar_config_navbar_component__ = __webpack_require__(942);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__app_component__ = __webpack_require__(937);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__components_navbar_navbar_component__ = __webpack_require__(963);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__components_login_login_component__ = __webpack_require__(962);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__components_register_register_component__ = __webpack_require__(965);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__components_home_home_component__ = __webpack_require__(961);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__components_dashboard_dashboard_component__ = __webpack_require__(960);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_19__components_profile_profile_component__ = __webpack_require__(964);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_20__components_config_config_component__ = __webpack_require__(944);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_21__components_config_config_navbar_config_navbar_component__ = __webpack_require__(943);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_22__services_validate_service__ = __webpack_require__(550);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_23__services_rest_api_user_service__ = __webpack_require__(75);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_24__services_rest_api_house_service__ = __webpack_require__(24);
@@ -1757,28 +1759,29 @@ var AppComponent = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_28__services_socketio_service__ = __webpack_require__(549);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_29_angular2_flash_messages__ = __webpack_require__(45);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_29_angular2_flash_messages___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_29_angular2_flash_messages__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_30__guards_auth_guard__ = __webpack_require__(965);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_31__services_broadcast_broadcaster_service__ = __webpack_require__(268);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_30__guards_auth_guard__ = __webpack_require__(966);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_31__services_broadcast_broadcaster_service__ = __webpack_require__(176);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_32__services_broadcast_message_event_service__ = __webpack_require__(40);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_33__components_config_devices_devices_component__ = __webpack_require__(944);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_34__components_config_devices_lightingcontrol_lightingcontrol_component__ = __webpack_require__(945);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_35__components_config_devices_sensor_module_sensor_module_component__ = __webpack_require__(946);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_36__components_config_config_home_room_room_component__ = __webpack_require__(940);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_37__components_config_config_home_config_home_component__ = __webpack_require__(938);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_38__components_config_rules_rules_component__ = __webpack_require__(954);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_39__components_config_config_home_room_light_light_component__ = __webpack_require__(939);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_40__components_config_config_home_room_sensor_sensor_component__ = __webpack_require__(941);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_41__components_config_rules_rule_rule_component__ = __webpack_require__(951);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_42__components_config_scenes_scenes_component__ = __webpack_require__(958);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_43__components_config_scenes_scene_scene_component__ = __webpack_require__(957);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_44__components_config_scenes_scene_room_scene_room_scene_component__ = __webpack_require__(956);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_45__components_config_scenes_scene_room_scene_light_scene_light_scene_component__ = __webpack_require__(955);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_46__components_config_rules_rule_ifconditions_ifconditions_component__ = __webpack_require__(947);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_47__components_config_rules_rule_ifconditions_relational_operation_relational_operation_component__ = __webpack_require__(950);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_48__components_config_rules_rule_ifconditions_logical_operation_logical_operation_component__ = __webpack_require__(949);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_49__components_config_rules_rule_ifconditions_logical_operation_logical_operation_2nd_layer_logical_operation_2nd_layer_component__ = __webpack_require__(948);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_50__components_config_rules_rule_thenactions_thenactions_component__ = __webpack_require__(953);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_51__components_config_rules_rule_thenactions_action_action_component__ = __webpack_require__(952);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_33__services_broadcast_test_service__ = __webpack_require__(967);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_34__components_config_devices_devices_component__ = __webpack_require__(945);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_35__components_config_devices_lightingcontrol_lightingcontrol_component__ = __webpack_require__(946);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_36__components_config_devices_sensor_module_sensor_module_component__ = __webpack_require__(947);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_37__components_config_config_home_room_room_component__ = __webpack_require__(941);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_38__components_config_config_home_config_home_component__ = __webpack_require__(939);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_39__components_config_rules_rules_component__ = __webpack_require__(955);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_40__components_config_config_home_room_light_light_component__ = __webpack_require__(940);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_41__components_config_config_home_room_sensor_sensor_component__ = __webpack_require__(942);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_42__components_config_rules_rule_rule_component__ = __webpack_require__(952);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_43__components_config_scenes_scenes_component__ = __webpack_require__(959);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_44__components_config_scenes_scene_scene_component__ = __webpack_require__(958);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_45__components_config_scenes_scene_room_scene_room_scene_component__ = __webpack_require__(957);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_46__components_config_scenes_scene_room_scene_light_scene_light_scene_component__ = __webpack_require__(956);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_47__components_config_rules_rule_ifconditions_ifconditions_component__ = __webpack_require__(948);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_48__components_config_rules_rule_ifconditions_relational_operation_relational_operation_component__ = __webpack_require__(951);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_49__components_config_rules_rule_ifconditions_logical_operation_logical_operation_component__ = __webpack_require__(950);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_50__components_config_rules_rule_ifconditions_logical_operation_logical_operation_2nd_layer_logical_operation_2nd_layer_component__ = __webpack_require__(949);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_51__components_config_rules_rule_thenactions_thenactions_component__ = __webpack_require__(954);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_52__components_config_rules_rule_thenactions_action_action_component__ = __webpack_require__(953);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AppModule; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -1845,6 +1848,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 
 
+
 var appRoutes = [
     { path: '', component: __WEBPACK_IMPORTED_MODULE_17__components_home_home_component__["a" /* HomeComponent */] },
     { path: 'register', component: __WEBPACK_IMPORTED_MODULE_16__components_register_register_component__["a" /* RegisterComponent */] },
@@ -1853,14 +1857,14 @@ var appRoutes = [
     { path: 'profile', component: __WEBPACK_IMPORTED_MODULE_19__components_profile_profile_component__["a" /* ProfileComponent */], canActivate: [__WEBPACK_IMPORTED_MODULE_30__guards_auth_guard__["a" /* AuthGuard */]] },
     { path: 'config', component: __WEBPACK_IMPORTED_MODULE_20__components_config_config_component__["a" /* ConfigComponent */], canActivate: [__WEBPACK_IMPORTED_MODULE_30__guards_auth_guard__["a" /* AuthGuard */]],
         children: [
-            { path: 'home', component: __WEBPACK_IMPORTED_MODULE_37__components_config_config_home_config_home_component__["a" /* ConfigHomeComponent */], canActivate: [__WEBPACK_IMPORTED_MODULE_30__guards_auth_guard__["a" /* AuthGuard */]] },
-            { path: 'home/:id', component: __WEBPACK_IMPORTED_MODULE_37__components_config_config_home_config_home_component__["a" /* ConfigHomeComponent */], canActivate: [__WEBPACK_IMPORTED_MODULE_30__guards_auth_guard__["a" /* AuthGuard */]] },
-            { path: 'devices', component: __WEBPACK_IMPORTED_MODULE_33__components_config_devices_devices_component__["a" /* DevicesComponent */], canActivate: [__WEBPACK_IMPORTED_MODULE_30__guards_auth_guard__["a" /* AuthGuard */]] },
-            { path: 'scenes', component: __WEBPACK_IMPORTED_MODULE_42__components_config_scenes_scenes_component__["a" /* ScenesComponent */], canActivate: [__WEBPACK_IMPORTED_MODULE_30__guards_auth_guard__["a" /* AuthGuard */]] },
-            { path: 'rules', component: __WEBPACK_IMPORTED_MODULE_38__components_config_rules_rules_component__["a" /* RulesComponent */], canActivate: [__WEBPACK_IMPORTED_MODULE_30__guards_auth_guard__["a" /* AuthGuard */]] }
+            { path: 'home', component: __WEBPACK_IMPORTED_MODULE_38__components_config_config_home_config_home_component__["a" /* ConfigHomeComponent */], canActivate: [__WEBPACK_IMPORTED_MODULE_30__guards_auth_guard__["a" /* AuthGuard */]] },
+            { path: 'home/:id', component: __WEBPACK_IMPORTED_MODULE_38__components_config_config_home_config_home_component__["a" /* ConfigHomeComponent */], canActivate: [__WEBPACK_IMPORTED_MODULE_30__guards_auth_guard__["a" /* AuthGuard */]] },
+            { path: 'devices', component: __WEBPACK_IMPORTED_MODULE_34__components_config_devices_devices_component__["a" /* DevicesComponent */], canActivate: [__WEBPACK_IMPORTED_MODULE_30__guards_auth_guard__["a" /* AuthGuard */]] },
+            { path: 'scenes', component: __WEBPACK_IMPORTED_MODULE_43__components_config_scenes_scenes_component__["a" /* ScenesComponent */], canActivate: [__WEBPACK_IMPORTED_MODULE_30__guards_auth_guard__["a" /* AuthGuard */]] },
+            { path: 'rules', component: __WEBPACK_IMPORTED_MODULE_39__components_config_rules_rules_component__["a" /* RulesComponent */], canActivate: [__WEBPACK_IMPORTED_MODULE_30__guards_auth_guard__["a" /* AuthGuard */]] }
         ]
     },
-    { path: 'devices', component: __WEBPACK_IMPORTED_MODULE_33__components_config_devices_devices_component__["a" /* DevicesComponent */], canActivate: [__WEBPACK_IMPORTED_MODULE_30__guards_auth_guard__["a" /* AuthGuard */]] }
+    { path: 'devices', component: __WEBPACK_IMPORTED_MODULE_34__components_config_devices_devices_component__["a" /* DevicesComponent */], canActivate: [__WEBPACK_IMPORTED_MODULE_30__guards_auth_guard__["a" /* AuthGuard */]] }
 ];
 var AppModule = (function () {
     function AppModule() {
@@ -1877,25 +1881,25 @@ var AppModule = (function () {
                 __WEBPACK_IMPORTED_MODULE_19__components_profile_profile_component__["a" /* ProfileComponent */],
                 __WEBPACK_IMPORTED_MODULE_20__components_config_config_component__["a" /* ConfigComponent */],
                 __WEBPACK_IMPORTED_MODULE_21__components_config_config_navbar_config_navbar_component__["a" /* ConfigNavbarComponent */],
-                __WEBPACK_IMPORTED_MODULE_33__components_config_devices_devices_component__["a" /* DevicesComponent */],
-                __WEBPACK_IMPORTED_MODULE_34__components_config_devices_lightingcontrol_lightingcontrol_component__["a" /* LightingcontrolComponent */],
-                __WEBPACK_IMPORTED_MODULE_35__components_config_devices_sensor_module_sensor_module_component__["a" /* SensorModuleComponent */],
-                __WEBPACK_IMPORTED_MODULE_36__components_config_config_home_room_room_component__["a" /* RoomComponent */],
-                __WEBPACK_IMPORTED_MODULE_37__components_config_config_home_config_home_component__["a" /* ConfigHomeComponent */],
-                __WEBPACK_IMPORTED_MODULE_38__components_config_rules_rules_component__["a" /* RulesComponent */],
-                __WEBPACK_IMPORTED_MODULE_39__components_config_config_home_room_light_light_component__["a" /* LightComponent */],
-                __WEBPACK_IMPORTED_MODULE_40__components_config_config_home_room_sensor_sensor_component__["a" /* SensorComponent */],
-                __WEBPACK_IMPORTED_MODULE_41__components_config_rules_rule_rule_component__["a" /* RuleComponent */],
-                __WEBPACK_IMPORTED_MODULE_42__components_config_scenes_scenes_component__["a" /* ScenesComponent */],
-                __WEBPACK_IMPORTED_MODULE_43__components_config_scenes_scene_scene_component__["a" /* SceneComponent */],
-                __WEBPACK_IMPORTED_MODULE_44__components_config_scenes_scene_room_scene_room_scene_component__["a" /* RoomSceneComponent */],
-                __WEBPACK_IMPORTED_MODULE_45__components_config_scenes_scene_room_scene_light_scene_light_scene_component__["a" /* LightSceneComponent */],
-                __WEBPACK_IMPORTED_MODULE_46__components_config_rules_rule_ifconditions_ifconditions_component__["a" /* IfconditionsComponent */],
-                __WEBPACK_IMPORTED_MODULE_47__components_config_rules_rule_ifconditions_relational_operation_relational_operation_component__["a" /* RelationalOperationComponent */],
-                __WEBPACK_IMPORTED_MODULE_48__components_config_rules_rule_ifconditions_logical_operation_logical_operation_component__["a" /* LogicalOperationComponent */],
-                __WEBPACK_IMPORTED_MODULE_49__components_config_rules_rule_ifconditions_logical_operation_logical_operation_2nd_layer_logical_operation_2nd_layer_component__["a" /* LogicalOperation2ndLayerComponent */],
-                __WEBPACK_IMPORTED_MODULE_50__components_config_rules_rule_thenactions_thenactions_component__["a" /* ThenactionsComponent */],
-                __WEBPACK_IMPORTED_MODULE_51__components_config_rules_rule_thenactions_action_action_component__["a" /* ActionComponent */]
+                __WEBPACK_IMPORTED_MODULE_34__components_config_devices_devices_component__["a" /* DevicesComponent */],
+                __WEBPACK_IMPORTED_MODULE_35__components_config_devices_lightingcontrol_lightingcontrol_component__["a" /* LightingcontrolComponent */],
+                __WEBPACK_IMPORTED_MODULE_36__components_config_devices_sensor_module_sensor_module_component__["a" /* SensorModuleComponent */],
+                __WEBPACK_IMPORTED_MODULE_37__components_config_config_home_room_room_component__["a" /* RoomComponent */],
+                __WEBPACK_IMPORTED_MODULE_38__components_config_config_home_config_home_component__["a" /* ConfigHomeComponent */],
+                __WEBPACK_IMPORTED_MODULE_39__components_config_rules_rules_component__["a" /* RulesComponent */],
+                __WEBPACK_IMPORTED_MODULE_40__components_config_config_home_room_light_light_component__["a" /* LightComponent */],
+                __WEBPACK_IMPORTED_MODULE_41__components_config_config_home_room_sensor_sensor_component__["a" /* SensorComponent */],
+                __WEBPACK_IMPORTED_MODULE_42__components_config_rules_rule_rule_component__["a" /* RuleComponent */],
+                __WEBPACK_IMPORTED_MODULE_43__components_config_scenes_scenes_component__["a" /* ScenesComponent */],
+                __WEBPACK_IMPORTED_MODULE_44__components_config_scenes_scene_scene_component__["a" /* SceneComponent */],
+                __WEBPACK_IMPORTED_MODULE_45__components_config_scenes_scene_room_scene_room_scene_component__["a" /* RoomSceneComponent */],
+                __WEBPACK_IMPORTED_MODULE_46__components_config_scenes_scene_room_scene_light_scene_light_scene_component__["a" /* LightSceneComponent */],
+                __WEBPACK_IMPORTED_MODULE_47__components_config_rules_rule_ifconditions_ifconditions_component__["a" /* IfconditionsComponent */],
+                __WEBPACK_IMPORTED_MODULE_48__components_config_rules_rule_ifconditions_relational_operation_relational_operation_component__["a" /* RelationalOperationComponent */],
+                __WEBPACK_IMPORTED_MODULE_49__components_config_rules_rule_ifconditions_logical_operation_logical_operation_component__["a" /* LogicalOperationComponent */],
+                __WEBPACK_IMPORTED_MODULE_50__components_config_rules_rule_ifconditions_logical_operation_logical_operation_2nd_layer_logical_operation_2nd_layer_component__["a" /* LogicalOperation2ndLayerComponent */],
+                __WEBPACK_IMPORTED_MODULE_51__components_config_rules_rule_thenactions_thenactions_component__["a" /* ThenactionsComponent */],
+                __WEBPACK_IMPORTED_MODULE_52__components_config_rules_rule_thenactions_action_action_component__["a" /* ActionComponent */]
             ],
             imports: [
                 __WEBPACK_IMPORTED_MODULE_7_angular2_ui_switch_src_index__["a" /* UiSwitchModule */],
@@ -1925,7 +1929,8 @@ var AppModule = (function () {
                 __WEBPACK_IMPORTED_MODULE_28__services_socketio_service__["a" /* SocketioService */],
                 __WEBPACK_IMPORTED_MODULE_31__services_broadcast_broadcaster_service__["a" /* BroadcasterService */],
                 __WEBPACK_IMPORTED_MODULE_32__services_broadcast_message_event_service__["a" /* MessageEventService */],
-                __WEBPACK_IMPORTED_MODULE_27__services_rest_api_rule_service__["a" /* RuleService */]
+                __WEBPACK_IMPORTED_MODULE_27__services_rest_api_rule_service__["a" /* RuleService */],
+                __WEBPACK_IMPORTED_MODULE_33__services_broadcast_test_service__["a" /* TestService */]
             ],
             bootstrap: [__WEBPACK_IMPORTED_MODULE_13__app_component__["a" /* AppComponent */]]
         }), 
@@ -1937,7 +1942,7 @@ var AppModule = (function () {
 
 /***/ }),
 
-/***/ 938:
+/***/ 939:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -2019,8 +2024,8 @@ var ConfigHomeComponent = (function () {
     ConfigHomeComponent = __decorate([
         __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
             selector: 'app-config-home',
-            template: __webpack_require__(1112),
-            styles: [__webpack_require__(1042)]
+            template: __webpack_require__(1114),
+            styles: [__webpack_require__(1044)]
         }), 
         __metadata('design:paramtypes', [(typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_2_angular2_flash_messages__["FlashMessagesService"] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_2_angular2_flash_messages__["FlashMessagesService"]) === 'function' && _a) || Object, (typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_1__services_rest_api_house_service__["a" /* HouseService */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_1__services_rest_api_house_service__["a" /* HouseService */]) === 'function' && _b) || Object, (typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_3__angular_router__["b" /* Router */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_3__angular_router__["b" /* Router */]) === 'function' && _c) || Object, (typeof (_d = typeof __WEBPACK_IMPORTED_MODULE_3__angular_router__["c" /* ActivatedRoute */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_3__angular_router__["c" /* ActivatedRoute */]) === 'function' && _d) || Object, (typeof (_e = typeof __WEBPACK_IMPORTED_MODULE_4_ngx_toastr__["b" /* ToastrService */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_4_ngx_toastr__["b" /* ToastrService */]) === 'function' && _e) || Object])
     ], ConfigHomeComponent);
@@ -2031,12 +2036,13 @@ var ConfigHomeComponent = (function () {
 
 /***/ }),
 
-/***/ 939:
+/***/ 940:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__services_broadcast_message_event_service__ = __webpack_require__(40);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__services_broadcast_broadcaster_service__ = __webpack_require__(176);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return LightComponent; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -2049,28 +2055,31 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 
 
+
 var LightComponent = (function () {
-    function LightComponent(messageEvent) {
-        this.messageEvent = messageEvent;
+    function LightComponent(messageSerivce, broadcaster) {
+        this.messageSerivce = messageSerivce;
+        this.broadcaster = broadcaster;
     }
     LightComponent.prototype.ngOnInit = function () {
         var _this = this;
         this.lightValue = this.switchValue = this.light.value;
-        this.messageEvent.emit("socketOn", this.light._id);
-        this.messageEvent.on(this.light._id)
+        this.messageEvent = this.messageSerivce.on(this.light._id)
             .subscribe(function (message) {
-            _this.message = message;
-            _this.lightValue = _this.message.value;
+            _this.lightValue = message.value;
             _this.preLightValue = _this.switchValue = _this.lightValue;
             console.log(message);
         });
+    };
+    LightComponent.prototype.ngOnDestroy = function () {
+        this.messageEvent.unsubscribe();
     };
     LightComponent.prototype.sendMessage = function (value) {
         var message = {
             _id: this.light._id,
             value: value
         };
-        this.messageEvent.emit("device-event", message);
+        this.messageSerivce.emit("device-event", message);
     };
     LightComponent.prototype.getValue = function (value) {
         this.preLightValue = this.switchValue = value;
@@ -2100,19 +2109,19 @@ var LightComponent = (function () {
     LightComponent = __decorate([
         __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
             selector: 'app-light',
-            template: __webpack_require__(1113),
-            styles: [__webpack_require__(1043)]
+            template: __webpack_require__(1115),
+            styles: [__webpack_require__(1045)]
         }), 
-        __metadata('design:paramtypes', [(typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__services_broadcast_message_event_service__["a" /* MessageEventService */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_1__services_broadcast_message_event_service__["a" /* MessageEventService */]) === 'function' && _a) || Object])
+        __metadata('design:paramtypes', [(typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__services_broadcast_message_event_service__["a" /* MessageEventService */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_1__services_broadcast_message_event_service__["a" /* MessageEventService */]) === 'function' && _a) || Object, (typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_2__services_broadcast_broadcaster_service__["a" /* BroadcasterService */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_2__services_broadcast_broadcaster_service__["a" /* BroadcasterService */]) === 'function' && _b) || Object])
     ], LightComponent);
     return LightComponent;
-    var _a;
+    var _a, _b;
 }());
 //# sourceMappingURL=/home/taihd94/Projects/BKHome/angular-src/src/light.component.js.map
 
 /***/ }),
 
-/***/ 940:
+/***/ 941:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -2147,7 +2156,6 @@ var RoomComponent = (function () {
     }
     RoomComponent.prototype.ngOnInit = function () {
         var _this = this;
-        console.log(this.room);
         this.houseService.getListOfDevicesInRoom(this.room._id).subscribe(function (res) {
             _this.devices = res.devices;
             if (_this.devices) {
@@ -2217,8 +2225,8 @@ var RoomComponent = (function () {
     RoomComponent = __decorate([
         __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
             selector: 'app-room',
-            template: __webpack_require__(1114),
-            styles: [__webpack_require__(1044)],
+            template: __webpack_require__(1116),
+            styles: [__webpack_require__(1046)],
         }), 
         __metadata('design:paramtypes', [(typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_2_angular2_flash_messages__["FlashMessagesService"] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_2_angular2_flash_messages__["FlashMessagesService"]) === 'function' && _a) || Object, (typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_1__services_rest_api_house_service__["a" /* HouseService */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_1__services_rest_api_house_service__["a" /* HouseService */]) === 'function' && _b) || Object, (typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_3__angular_router__["b" /* Router */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_3__angular_router__["b" /* Router */]) === 'function' && _c) || Object])
     ], RoomComponent);
@@ -2229,7 +2237,7 @@ var RoomComponent = (function () {
 
 /***/ }),
 
-/***/ 941:
+/***/ 942:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -2267,8 +2275,8 @@ var SensorComponent = (function () {
     SensorComponent = __decorate([
         __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
             selector: 'app-sensor',
-            template: __webpack_require__(1115),
-            styles: [__webpack_require__(1045)]
+            template: __webpack_require__(1117),
+            styles: [__webpack_require__(1047)]
         }), 
         __metadata('design:paramtypes', [(typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__services_broadcast_message_event_service__["a" /* MessageEventService */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_1__services_broadcast_message_event_service__["a" /* MessageEventService */]) === 'function' && _a) || Object])
     ], SensorComponent);
@@ -2279,7 +2287,7 @@ var SensorComponent = (function () {
 
 /***/ }),
 
-/***/ 942:
+/***/ 943:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -2391,8 +2399,8 @@ var ConfigNavbarComponent = (function () {
     ConfigNavbarComponent = __decorate([
         __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
             selector: 'app-config-navbar',
-            template: __webpack_require__(1116),
-            styles: [__webpack_require__(1046)]
+            template: __webpack_require__(1118),
+            styles: [__webpack_require__(1048)]
         }), 
         __metadata('design:paramtypes', [(typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__services_rest_api_house_service__["a" /* HouseService */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_1__services_rest_api_house_service__["a" /* HouseService */]) === 'function' && _a) || Object, (typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_2__services_rest_api_user_service__["a" /* UserService */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_2__services_rest_api_user_service__["a" /* UserService */]) === 'function' && _b) || Object, (typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_3__angular_router__["b" /* Router */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_3__angular_router__["b" /* Router */]) === 'function' && _c) || Object, (typeof (_d = typeof __WEBPACK_IMPORTED_MODULE_4_angular2_flash_messages__["FlashMessagesService"] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_4_angular2_flash_messages__["FlashMessagesService"]) === 'function' && _d) || Object])
     ], ConfigNavbarComponent);
@@ -2403,7 +2411,7 @@ var ConfigNavbarComponent = (function () {
 
 /***/ }),
 
-/***/ 943:
+/***/ 944:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -2437,8 +2445,8 @@ var ConfigComponent = (function () {
     ConfigComponent = __decorate([
         __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
             selector: 'app-register',
-            template: __webpack_require__(1117),
-            styles: [__webpack_require__(1047)]
+            template: __webpack_require__(1119),
+            styles: [__webpack_require__(1049)]
         }), 
         __metadata('design:paramtypes', [(typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_2_angular2_flash_messages__["FlashMessagesService"] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_2_angular2_flash_messages__["FlashMessagesService"]) === 'function' && _a) || Object, (typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_1__services_rest_api_house_service__["a" /* HouseService */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_1__services_rest_api_house_service__["a" /* HouseService */]) === 'function' && _b) || Object, (typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_3__angular_router__["b" /* Router */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_3__angular_router__["b" /* Router */]) === 'function' && _c) || Object])
     ], ConfigComponent);
@@ -2449,7 +2457,7 @@ var ConfigComponent = (function () {
 
 /***/ }),
 
-/***/ 944:
+/***/ 945:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -2482,8 +2490,8 @@ var DevicesComponent = (function () {
     DevicesComponent = __decorate([
         __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
             selector: 'app-devices',
-            template: __webpack_require__(1118),
-            styles: [__webpack_require__(1048)]
+            template: __webpack_require__(1120),
+            styles: [__webpack_require__(1050)]
         }), 
         __metadata('design:paramtypes', [(typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__services_rest_api_device_service__["a" /* DeviceService */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_1__services_rest_api_device_service__["a" /* DeviceService */]) === 'function' && _a) || Object])
     ], DevicesComponent);
@@ -2494,7 +2502,7 @@ var DevicesComponent = (function () {
 
 /***/ }),
 
-/***/ 945:
+/***/ 946:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -2541,12 +2549,20 @@ var LightingcontrolComponent = (function () {
             }
             if (!!roomId) {
                 _this.houseService.getFloorAndRoomByRoomId(roomId).subscribe(function (res) {
-                    _this.selectedFloor = res.floorName;
-                    _this.selectedRoom = res.roomName;
-                    var floor = _this.listOfFloors.filter(function (floor) {
-                        return floor.name == _this.selectedFloor;
-                    }).pop();
-                    _this.listOfRooms = floor.rooms;
+                    if (!res.success) {
+                        console.log(res.msg);
+                        _this.selectedFloor = "Select floor";
+                        _this.selectedRoom = "Select room";
+                    }
+                    else {
+                        var result = res.result;
+                        _this.selectedFloor = result.floorName;
+                        _this.selectedRoom = result.roomName;
+                        var floor = _this.listOfFloors.filter(function (floor) {
+                            return floor.name == _this.selectedFloor;
+                        }).pop();
+                        _this.listOfRooms = floor.rooms;
+                    }
                 });
             }
             else {
@@ -2634,8 +2650,8 @@ var LightingcontrolComponent = (function () {
     LightingcontrolComponent = __decorate([
         __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
             selector: 'app-lightingcontrol',
-            template: __webpack_require__(1119),
-            styles: [__webpack_require__(1049)]
+            template: __webpack_require__(1121),
+            styles: [__webpack_require__(1051)]
         }), 
         __metadata('design:paramtypes', [(typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_3_angular2_flash_messages__["FlashMessagesService"] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_3_angular2_flash_messages__["FlashMessagesService"]) === 'function' && _a) || Object, (typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_1__services_rest_api_house_service__["a" /* HouseService */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_1__services_rest_api_house_service__["a" /* HouseService */]) === 'function' && _b) || Object, (typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_2__services_rest_api_device_service__["a" /* DeviceService */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_2__services_rest_api_device_service__["a" /* DeviceService */]) === 'function' && _c) || Object, (typeof (_d = typeof __WEBPACK_IMPORTED_MODULE_4__angular_router__["b" /* Router */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_4__angular_router__["b" /* Router */]) === 'function' && _d) || Object])
     ], LightingcontrolComponent);
@@ -2646,7 +2662,7 @@ var LightingcontrolComponent = (function () {
 
 /***/ }),
 
-/***/ 946:
+/***/ 947:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -2776,8 +2792,8 @@ var SensorModuleComponent = (function () {
     SensorModuleComponent = __decorate([
         __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
             selector: 'app-sensor-module',
-            template: __webpack_require__(1120),
-            styles: [__webpack_require__(1050)]
+            template: __webpack_require__(1122),
+            styles: [__webpack_require__(1052)]
         }), 
         __metadata('design:paramtypes', [(typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_3_angular2_flash_messages__["FlashMessagesService"] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_3_angular2_flash_messages__["FlashMessagesService"]) === 'function' && _a) || Object, (typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_1__services_rest_api_house_service__["a" /* HouseService */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_1__services_rest_api_house_service__["a" /* HouseService */]) === 'function' && _b) || Object, (typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_2__services_rest_api_device_service__["a" /* DeviceService */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_2__services_rest_api_device_service__["a" /* DeviceService */]) === 'function' && _c) || Object, (typeof (_d = typeof __WEBPACK_IMPORTED_MODULE_4__angular_router__["b" /* Router */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_4__angular_router__["b" /* Router */]) === 'function' && _d) || Object])
     ], SensorModuleComponent);
@@ -2788,7 +2804,7 @@ var SensorModuleComponent = (function () {
 
 /***/ }),
 
-/***/ 947:
+/***/ 948:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -2986,8 +3002,8 @@ var IfconditionsComponent = (function () {
     IfconditionsComponent = __decorate([
         __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
             selector: 'app-ifconditions',
-            template: __webpack_require__(1121),
-            styles: [__webpack_require__(1051)]
+            template: __webpack_require__(1123),
+            styles: [__webpack_require__(1053)]
         }), 
         __metadata('design:paramtypes', [(typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__services_rest_api_rule_service__["a" /* RuleService */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_1__services_rest_api_rule_service__["a" /* RuleService */]) === 'function' && _a) || Object])
     ], IfconditionsComponent);
@@ -2998,7 +3014,7 @@ var IfconditionsComponent = (function () {
 
 /***/ }),
 
-/***/ 948:
+/***/ 949:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -3078,8 +3094,8 @@ var LogicalOperation2ndLayerComponent = (function () {
     LogicalOperation2ndLayerComponent = __decorate([
         __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
             selector: 'app-logical-operation-2nd-layer',
-            template: __webpack_require__(1122),
-            styles: [__webpack_require__(1052)]
+            template: __webpack_require__(1124),
+            styles: [__webpack_require__(1054)]
         }), 
         __metadata('design:paramtypes', [(typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__services_rest_api_rule_service__["a" /* RuleService */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_1__services_rest_api_rule_service__["a" /* RuleService */]) === 'function' && _a) || Object])
     ], LogicalOperation2ndLayerComponent);
@@ -3090,7 +3106,7 @@ var LogicalOperation2ndLayerComponent = (function () {
 
 /***/ }),
 
-/***/ 949:
+/***/ 950:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -3192,8 +3208,8 @@ var LogicalOperationComponent = (function () {
     LogicalOperationComponent = __decorate([
         __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
             selector: 'app-logical-operation',
-            template: __webpack_require__(1123),
-            styles: [__webpack_require__(1053)]
+            template: __webpack_require__(1125),
+            styles: [__webpack_require__(1055)]
         }), 
         __metadata('design:paramtypes', [(typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__services_rest_api_rule_service__["a" /* RuleService */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_1__services_rest_api_rule_service__["a" /* RuleService */]) === 'function' && _a) || Object])
     ], LogicalOperationComponent);
@@ -3204,7 +3220,7 @@ var LogicalOperationComponent = (function () {
 
 /***/ }),
 
-/***/ 950:
+/***/ 951:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -3252,7 +3268,6 @@ var RelationalOperationComponent = (function () {
         this.deviceId = this.operation.deviceId;
         this.operator = this.mapOperator(this.operation.operator);
         this.value = this.operation.value;
-        console.log(this.deviceId);
         if (!!this.deviceId) {
             this.deviceService.getItemDetails(this.deviceId).subscribe(function (res) {
                 if (!res.success) {
@@ -3407,8 +3422,8 @@ var RelationalOperationComponent = (function () {
     RelationalOperationComponent = __decorate([
         __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
             selector: 'app-relational-operation',
-            template: __webpack_require__(1124),
-            styles: [__webpack_require__(1054)]
+            template: __webpack_require__(1126),
+            styles: [__webpack_require__(1056)]
         }), 
         __metadata('design:paramtypes', [(typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__services_rest_api_device_service__["a" /* DeviceService */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_1__services_rest_api_device_service__["a" /* DeviceService */]) === 'function' && _a) || Object, (typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_2__services_rest_api_house_service__["a" /* HouseService */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_2__services_rest_api_house_service__["a" /* HouseService */]) === 'function' && _b) || Object, (typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_3__services_rest_api_rule_service__["a" /* RuleService */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_3__services_rest_api_rule_service__["a" /* RuleService */]) === 'function' && _c) || Object, (typeof (_d = typeof __WEBPACK_IMPORTED_MODULE_4__services_broadcast_message_event_service__["a" /* MessageEventService */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_4__services_broadcast_message_event_service__["a" /* MessageEventService */]) === 'function' && _d) || Object])
     ], RelationalOperationComponent);
@@ -3419,7 +3434,7 @@ var RelationalOperationComponent = (function () {
 
 /***/ }),
 
-/***/ 951:
+/***/ 952:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -3476,43 +3491,40 @@ var RuleComponent = (function () {
         this.ruleId = this.rule._id;
         this.ifCondtions = this.rule.ifConditions;
         this.thenActions = this.rule.thenActions;
-        if (!!this.rule.time) {
-            this.isAllDayChecked = false;
-            this.fromTimePicker = this.rule.time.from;
-            this.toTimePicker = this.rule.time.to;
-            this.fromTime = __WEBPACK_IMPORTED_MODULE_6_moment__(this.fromTimePicker, "HH:mm A").toDate();
-            this.toTime = __WEBPACK_IMPORTED_MODULE_6_moment__(this.toTimePicker, "HH:mm A").toDate();
-            this.isNextDay = this.toTime.getTime() < this.fromTime.getTime();
+        this.time = this.rule.time;
+        this.fromTimePicker = 'null';
+        this.toTimePicker = 'null';
+        this.isAllDayChecked = true;
+        if ((!!this.time)) {
+            if (!this.time.isAllDay) {
+                this.isAllDayChecked = false;
+                this.fromTimePicker = this.rule.time.from;
+                this.toTimePicker = this.rule.time.to;
+                this.fromTime = __WEBPACK_IMPORTED_MODULE_6_moment__(this.fromTimePicker, "HH:mm A").toDate();
+                this.toTime = __WEBPACK_IMPORTED_MODULE_6_moment__(this.toTimePicker, "HH:mm A").toDate();
+                this.isNextDay = this.toTime.getTime() < this.fromTime.getTime();
+            }
+        }
+        if (!!this.rule.repeat) {
+            this.repeatDaysStr = this.rule.repeat;
         }
         else {
-            this.fromTimePicker = 'null';
-            this.toTimePicker = 'null';
-            this.isAllDayChecked = true;
+            this.repeatDaysStr = 'Daily';
         }
-        // this.date = new DateModel();
-        // if(!!this.rule.date){
-        //   this.mapDate(this.rule.date);
-        // }
-        if (!!this.rule.repeat) {
-            this.repeatDays = this.rule.repeat;
-            this.repeatDaysStr = this.convertRepeatToString(this.repeatDays);
-        }
+        this.repeatDays = this.mapRepeatDays(this.repeatDaysStr);
     };
-    // mapDate(date){
-    //   let now = new Date();
-    //   let tomorrow = new Date();
-    //   tomorrow.setDate(now.getDate()+1);
-    //   let nowMoment = moment(now).format('DD/MM/YYYY');
-    //   let tomorrowMoment = moment(tomorrow).format('DD/MM/YYYY');
-    //   if(date===nowMoment){
-    //     this.date.formatted = 'Today';
-    //   } else if(date===tomorrowMoment){
-    //     this.date.formatted = 'Tomorrow';
-    //   } else {
-    //     this.date.formatted = date;
-    //   }
-    //   this.date.momentObj = moment(date, "DD MM YYYY");
-    // }
+    RuleComponent.prototype.mapRepeatDays = function (repeatDaysStr) {
+        var array = repeatDaysStr.split(", ");
+        var repeatDays = [false, false, false, false, false, false, false];
+        if (repeatDaysStr === 'Daily')
+            return [true, true, true, true, true, true, true];
+        for (var _i = 0, array_1 = array; _i < array_1.length; _i++) {
+            var date = array_1[_i];
+            var index = this.daysOfWeek.indexOf(date);
+            repeatDays[index] = true;
+        }
+        return repeatDays;
+    };
     RuleComponent.prototype.convertRepeatToString = function (repeatDays) {
         var string;
         if (repeatDays[0] && repeatDays[1] && repeatDays[2] && repeatDays[3] && repeatDays[4] && repeatDays[5] && repeatDays[6]) {
@@ -3539,25 +3551,6 @@ var RuleComponent = (function () {
         this.fromTimePickerHidden = true;
         this.isAllDayChecked = isChecked;
     };
-    // clickFromTimeOkBtn(){
-    //   this.fromTimePickerHidden=true;
-    //   this.fromTimeButtonsHidden=true;
-    //   this.btnSaveHidden=false;
-    //   if(!this.fromTime){
-    //     this.fromTime = new Date();
-    //   }
-    //   this.fromTimePicker = moment(this.fromTime).format('LT');
-    // }
-    //
-    // clickToTimeOkBtn(){
-    //   this.toTimePickerHidden=true;
-    //   this.toTimeButtonsHidden=true;
-    //   this.btnSaveHidden=false;
-    //   if(!this.toTime){
-    //     this.toTime = new Date();
-    //   }
-    //   this.toTimePicker = moment(this.toTime).format('LT');
-    // }
     RuleComponent.prototype.clickTimeOkBtn = function () {
         this.toTimePickerHidden = true;
         this.fromTimePickerHidden = true;
@@ -3595,9 +3588,11 @@ var RuleComponent = (function () {
     RuleComponent.prototype.clickSaveBtn = function () {
         this.editHidden = true;
         this.btnSaveHidden = true;
-        this.rule.repeat = this.repeatDays;
+        this.rule.repeat = this.repeatDaysStr;
         if (this.isAllDayChecked) {
-            this.rule.time = null;
+            this.rule.time = {
+                isAllDay: true
+            };
         }
         else {
             this.rule.time = {};
@@ -3656,8 +3651,8 @@ var RuleComponent = (function () {
     RuleComponent = __decorate([
         __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
             selector: 'app-rule',
-            template: __webpack_require__(1125),
-            styles: [__webpack_require__(1055)]
+            template: __webpack_require__(1127),
+            styles: [__webpack_require__(1057)]
         }), 
         __metadata('design:paramtypes', [(typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_2__services_rest_api_rule_service__["a" /* RuleService */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_2__services_rest_api_rule_service__["a" /* RuleService */]) === 'function' && _a) || Object, (typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_3__services_rest_api_house_service__["a" /* HouseService */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_3__services_rest_api_house_service__["a" /* HouseService */]) === 'function' && _b) || Object, (typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_4__services_broadcast_message_event_service__["a" /* MessageEventService */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_4__services_broadcast_message_event_service__["a" /* MessageEventService */]) === 'function' && _c) || Object, (typeof (_d = typeof __WEBPACK_IMPORTED_MODULE_5_ngx_toastr__["b" /* ToastrService */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_5_ngx_toastr__["b" /* ToastrService */]) === 'function' && _d) || Object])
     ], RuleComponent);
@@ -3668,7 +3663,7 @@ var RuleComponent = (function () {
 
 /***/ }),
 
-/***/ 952:
+/***/ 953:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -3793,8 +3788,8 @@ var ActionComponent = (function () {
     ActionComponent = __decorate([
         __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
             selector: 'app-action',
-            template: __webpack_require__(1126),
-            styles: [__webpack_require__(1056)]
+            template: __webpack_require__(1128),
+            styles: [__webpack_require__(1058)]
         }), 
         __metadata('design:paramtypes', [(typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__services_rest_api_device_service__["a" /* DeviceService */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_1__services_rest_api_device_service__["a" /* DeviceService */]) === 'function' && _a) || Object])
     ], ActionComponent);
@@ -3805,7 +3800,7 @@ var ActionComponent = (function () {
 
 /***/ }),
 
-/***/ 953:
+/***/ 954:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -3826,7 +3821,6 @@ var ThenactionsComponent = (function () {
         this.updateActions = new __WEBPACK_IMPORTED_MODULE_0__angular_core__["EventEmitter"]();
     }
     ThenactionsComponent.prototype.ngOnInit = function () {
-        console.log(this.thenActions);
         if (!this.thenActions.length) {
             this.thenActions.push({});
         }
@@ -3866,8 +3860,8 @@ var ThenactionsComponent = (function () {
     ThenactionsComponent = __decorate([
         __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
             selector: 'app-thenactions',
-            template: __webpack_require__(1127),
-            styles: [__webpack_require__(1057)]
+            template: __webpack_require__(1129),
+            styles: [__webpack_require__(1059)]
         }), 
         __metadata('design:paramtypes', [])
     ], ThenactionsComponent);
@@ -3877,7 +3871,7 @@ var ThenactionsComponent = (function () {
 
 /***/ }),
 
-/***/ 954:
+/***/ 955:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -3975,8 +3969,8 @@ var RulesComponent = (function () {
     RulesComponent = __decorate([
         __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
             selector: 'app-rules',
-            template: __webpack_require__(1128),
-            styles: [__webpack_require__(1058)]
+            template: __webpack_require__(1130),
+            styles: [__webpack_require__(1060)]
         }), 
         __metadata('design:paramtypes', [(typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__services_rest_api_rule_service__["a" /* RuleService */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_1__services_rest_api_rule_service__["a" /* RuleService */]) === 'function' && _a) || Object, (typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_2__services_rest_api_house_service__["a" /* HouseService */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_2__services_rest_api_house_service__["a" /* HouseService */]) === 'function' && _b) || Object, (typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_3__services_broadcast_message_event_service__["a" /* MessageEventService */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_3__services_broadcast_message_event_service__["a" /* MessageEventService */]) === 'function' && _c) || Object])
     ], RulesComponent);
@@ -3987,7 +3981,7 @@ var RulesComponent = (function () {
 
 /***/ }),
 
-/***/ 955:
+/***/ 956:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -4068,8 +4062,8 @@ var LightSceneComponent = (function () {
     LightSceneComponent = __decorate([
         __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
             selector: 'app-light-scene',
-            template: __webpack_require__(1129),
-            styles: [__webpack_require__(1059)]
+            template: __webpack_require__(1131),
+            styles: [__webpack_require__(1061)]
         }), 
         __metadata('design:paramtypes', [(typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__services_broadcast_message_event_service__["a" /* MessageEventService */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_1__services_broadcast_message_event_service__["a" /* MessageEventService */]) === 'function' && _a) || Object])
     ], LightSceneComponent);
@@ -4080,7 +4074,7 @@ var LightSceneComponent = (function () {
 
 /***/ }),
 
-/***/ 956:
+/***/ 957:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -4187,8 +4181,8 @@ var RoomSceneComponent = (function () {
     RoomSceneComponent = __decorate([
         __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
             selector: 'app-room-scene',
-            template: __webpack_require__(1130),
-            styles: [__webpack_require__(1060)]
+            template: __webpack_require__(1132),
+            styles: [__webpack_require__(1062)]
         }), 
         __metadata('design:paramtypes', [(typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__services_rest_api_device_service__["a" /* DeviceService */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_1__services_rest_api_device_service__["a" /* DeviceService */]) === 'function' && _a) || Object, (typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_2__services_rest_api_house_service__["a" /* HouseService */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_2__services_rest_api_house_service__["a" /* HouseService */]) === 'function' && _b) || Object, (typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_3__services_broadcast_message_event_service__["a" /* MessageEventService */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_3__services_broadcast_message_event_service__["a" /* MessageEventService */]) === 'function' && _c) || Object, (typeof (_d = typeof __WEBPACK_IMPORTED_MODULE_4_ngx_toastr__["b" /* ToastrService */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_4_ngx_toastr__["b" /* ToastrService */]) === 'function' && _d) || Object])
     ], RoomSceneComponent);
@@ -4199,7 +4193,7 @@ var RoomSceneComponent = (function () {
 
 /***/ }),
 
-/***/ 957:
+/***/ 958:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -4253,9 +4247,15 @@ var SceneComponent = (function () {
     }
     SceneComponent.prototype.ngOnInit = function () {
         var _this = this;
+        this.rooms = [];
         this.sceneId = this.scene._id;
         this.sceneService.getDevicesDetail(this.sceneId).subscribe(function (res) {
-            _this.rooms = res.rooms;
+            if (!res.success) {
+                console.log(res.msg);
+            }
+            else {
+                _this.rooms = res.rooms;
+            }
         });
         if (!!this.scene.time) {
             this.timePicker = this.scene.time;
@@ -4266,8 +4266,8 @@ var SceneComponent = (function () {
             this.mapDate(this.scene.date);
         }
         if (!!this.scene.repeat) {
-            this.repeatDays = this.scene.repeat;
-            this.repeatDaysStr = this.convertRepeatToString(this.repeatDays);
+            this.repeatDaysStr = this.scene.repeat;
+            this.repeatDays = this.mapRepeatDays(this.repeatDaysStr);
         }
         if (!this.scene.devices.length) {
             this.editHidden = false;
@@ -4325,6 +4325,16 @@ var SceneComponent = (function () {
         }
         this.date.momentObj = __WEBPACK_IMPORTED_MODULE_1_moment__(date, "DD MM YYYY");
     };
+    SceneComponent.prototype.mapRepeatDays = function (repeatDaysStr) {
+        var array = repeatDaysStr.split(", ");
+        var repeatDays = [false, false, false, false, false, false, false];
+        for (var _i = 0, array_1 = array; _i < array_1.length; _i++) {
+            var date = array_1[_i];
+            var index = this.daysOfWeek.indexOf(date);
+            repeatDays[index] = true;
+        }
+        return repeatDays;
+    };
     SceneComponent.prototype.convertRepeatToString = function (repeatDays) {
         var string;
         if (repeatDays[0] && repeatDays[1] && repeatDays[2] && repeatDays[3] && repeatDays[4] && repeatDays[5] && repeatDays[6]) {
@@ -4370,6 +4380,7 @@ var SceneComponent = (function () {
         this.selectedFloor = floor.name;
     };
     SceneComponent.prototype.selectRoom = function (selectedRoom) {
+        console.log(this.rooms);
         var check = this.rooms.filter(function (room) {
             return room.roomId == selectedRoom._id;
         }).pop();
@@ -4411,7 +4422,7 @@ var SceneComponent = (function () {
         }
         this.scene.time = (this.time) ? __WEBPACK_IMPORTED_MODULE_1_moment__(this.time).format('LT') : null;
         this.scene.date = (this.date.momentObj) ? this.date.momentObj.format('DD/MM/YYYY') : null;
-        this.scene.repeat = this.repeatDays;
+        this.scene.repeat = this.repeatDaysStr;
         this.sceneService.updateScene(this.scene).subscribe(function (res) {
             if (!res.success) {
                 console.log(res.msg);
@@ -4454,8 +4465,8 @@ var SceneComponent = (function () {
     SceneComponent = __decorate([
         __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
             selector: 'app-scene',
-            template: __webpack_require__(1131),
-            styles: [__webpack_require__(1061)]
+            template: __webpack_require__(1133),
+            styles: [__webpack_require__(1063)]
         }), 
         __metadata('design:paramtypes', [(typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_3__services_rest_api_scene_service__["a" /* SceneService */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_3__services_rest_api_scene_service__["a" /* SceneService */]) === 'function' && _a) || Object, (typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_4__services_rest_api_house_service__["a" /* HouseService */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_4__services_rest_api_house_service__["a" /* HouseService */]) === 'function' && _b) || Object, (typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_5__services_broadcast_message_event_service__["a" /* MessageEventService */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_5__services_broadcast_message_event_service__["a" /* MessageEventService */]) === 'function' && _c) || Object, (typeof (_d = typeof __WEBPACK_IMPORTED_MODULE_6_ngx_toastr__["b" /* ToastrService */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_6_ngx_toastr__["b" /* ToastrService */]) === 'function' && _d) || Object])
     ], SceneComponent);
@@ -4466,7 +4477,7 @@ var SceneComponent = (function () {
 
 /***/ }),
 
-/***/ 958:
+/***/ 959:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -4493,9 +4504,13 @@ var ScenesComponent = (function () {
     };
     ScenesComponent.prototype.getListOfScenes = function () {
         var _this = this;
-        this.sceneService.getListOfScenes().subscribe(function (scenes) {
-            _this.scenes = scenes;
-            console.log(_this.scenes);
+        this.sceneService.getListOfScenes().subscribe(function (res) {
+            if (!res.success) {
+                console.log(res.msg);
+            }
+            else {
+                _this.scenes = res.scenes;
+            }
         });
     };
     ScenesComponent.prototype.addsceneSubmit = function () {
@@ -4512,8 +4527,8 @@ var ScenesComponent = (function () {
     ScenesComponent = __decorate([
         __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
             selector: 'app-scenes',
-            template: __webpack_require__(1132),
-            styles: [__webpack_require__(1062)]
+            template: __webpack_require__(1134),
+            styles: [__webpack_require__(1064)]
         }), 
         __metadata('design:paramtypes', [(typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__services_rest_api_scene_service__["a" /* SceneService */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_1__services_rest_api_scene_service__["a" /* SceneService */]) === 'function' && _a) || Object])
     ], ScenesComponent);
@@ -4524,7 +4539,7 @@ var ScenesComponent = (function () {
 
 /***/ }),
 
-/***/ 959:
+/***/ 960:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -4562,8 +4577,8 @@ var DashboardComponent = (function () {
     DashboardComponent = __decorate([
         __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
             selector: 'app-dashboard',
-            template: __webpack_require__(1133),
-            styles: [__webpack_require__(1063)]
+            template: __webpack_require__(1135),
+            styles: [__webpack_require__(1065)]
         }), 
         __metadata('design:paramtypes', [(typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__services_rest_api_house_service__["a" /* HouseService */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_1__services_rest_api_house_service__["a" /* HouseService */]) === 'function' && _a) || Object, (typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_2__angular_router__["b" /* Router */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_2__angular_router__["b" /* Router */]) === 'function' && _b) || Object])
     ], DashboardComponent);
@@ -4574,7 +4589,7 @@ var DashboardComponent = (function () {
 
 /***/ }),
 
-/***/ 960:
+/***/ 961:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -4605,8 +4620,8 @@ var HomeComponent = (function () {
     HomeComponent = __decorate([
         __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
             selector: 'app-home',
-            template: __webpack_require__(1134),
-            styles: [__webpack_require__(1064)]
+            template: __webpack_require__(1136),
+            styles: [__webpack_require__(1066)]
         }), 
         __metadata('design:paramtypes', [])
     ], HomeComponent);
@@ -4616,7 +4631,7 @@ var HomeComponent = (function () {
 
 /***/ }),
 
-/***/ 961:
+/***/ 962:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -4674,8 +4689,8 @@ var LoginComponent = (function () {
     LoginComponent = __decorate([
         __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
             selector: 'app-login',
-            template: __webpack_require__(1135),
-            styles: [__webpack_require__(1065)]
+            template: __webpack_require__(1137),
+            styles: [__webpack_require__(1067)]
         }), 
         __metadata('design:paramtypes', [(typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__services_rest_api_user_service__["a" /* UserService */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_1__services_rest_api_user_service__["a" /* UserService */]) === 'function' && _a) || Object, (typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_2__angular_router__["b" /* Router */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_2__angular_router__["b" /* Router */]) === 'function' && _b) || Object, (typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_3_angular2_flash_messages__["FlashMessagesService"] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_3_angular2_flash_messages__["FlashMessagesService"]) === 'function' && _c) || Object, (typeof (_d = typeof __WEBPACK_IMPORTED_MODULE_4_ngx_toastr__["b" /* ToastrService */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_4_ngx_toastr__["b" /* ToastrService */]) === 'function' && _d) || Object])
     ], LoginComponent);
@@ -4686,7 +4701,7 @@ var LoginComponent = (function () {
 
 /***/ }),
 
-/***/ 962:
+/***/ 963:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -4725,8 +4740,8 @@ var NavbarComponent = (function () {
     NavbarComponent = __decorate([
         __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
             selector: 'app-navbar',
-            template: __webpack_require__(1136),
-            styles: [__webpack_require__(1066)]
+            template: __webpack_require__(1138),
+            styles: [__webpack_require__(1068)]
         }), 
         __metadata('design:paramtypes', [(typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__services_rest_api_user_service__["a" /* UserService */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_1__services_rest_api_user_service__["a" /* UserService */]) === 'function' && _a) || Object, (typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_2__angular_router__["b" /* Router */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_2__angular_router__["b" /* Router */]) === 'function' && _b) || Object, (typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_3_ngx_toastr__["b" /* ToastrService */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_3_ngx_toastr__["b" /* ToastrService */]) === 'function' && _c) || Object])
     ], NavbarComponent);
@@ -4737,7 +4752,7 @@ var NavbarComponent = (function () {
 
 /***/ }),
 
-/***/ 963:
+/***/ 964:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -4775,8 +4790,8 @@ var ProfileComponent = (function () {
     ProfileComponent = __decorate([
         __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
             selector: 'app-profile',
-            template: __webpack_require__(1137),
-            styles: [__webpack_require__(1067)]
+            template: __webpack_require__(1139),
+            styles: [__webpack_require__(1069)]
         }), 
         __metadata('design:paramtypes', [(typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__services_rest_api_user_service__["a" /* UserService */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_1__services_rest_api_user_service__["a" /* UserService */]) === 'function' && _a) || Object, (typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_2__angular_router__["b" /* Router */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_2__angular_router__["b" /* Router */]) === 'function' && _b) || Object])
     ], ProfileComponent);
@@ -4787,7 +4802,7 @@ var ProfileComponent = (function () {
 
 /***/ }),
 
-/***/ 964:
+/***/ 965:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -4854,8 +4869,8 @@ var RegisterComponent = (function () {
     RegisterComponent = __decorate([
         __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
             selector: 'app-register',
-            template: __webpack_require__(1138),
-            styles: [__webpack_require__(1068)]
+            template: __webpack_require__(1140),
+            styles: [__webpack_require__(1070)]
         }), 
         __metadata('design:paramtypes', [(typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__services_validate_service__["a" /* ValidateService */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_1__services_validate_service__["a" /* ValidateService */]) === 'function' && _a) || Object, (typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_3_angular2_flash_messages__["FlashMessagesService"] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_3_angular2_flash_messages__["FlashMessagesService"]) === 'function' && _b) || Object, (typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_2__services_rest_api_user_service__["a" /* UserService */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_2__services_rest_api_user_service__["a" /* UserService */]) === 'function' && _c) || Object, (typeof (_d = typeof __WEBPACK_IMPORTED_MODULE_4__angular_router__["b" /* Router */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_4__angular_router__["b" /* Router */]) === 'function' && _d) || Object])
     ], RegisterComponent);
@@ -4866,7 +4881,7 @@ var RegisterComponent = (function () {
 
 /***/ }),
 
-/***/ 965:
+/***/ 966:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -4909,7 +4924,47 @@ var AuthGuard = (function () {
 }());
 //# sourceMappingURL=/home/taihd94/Projects/BKHome/angular-src/src/auth.guard.js.map
 
+/***/ }),
+
+/***/ 967:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_rxjs_Subject__ = __webpack_require__(13);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_rxjs_Subject___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_rxjs_Subject__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return TestService; });
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+var TestService = (function () {
+    function TestService() {
+        // Observable string sources
+        this.messageSource = new __WEBPACK_IMPORTED_MODULE_1_rxjs_Subject__["Subject"]();
+        // Observable string streams
+        this.message$ = this.messageSource.asObservable();
+    }
+    // Service message commands
+    TestService.prototype.emit = function (message) {
+        this.messageSource.next(message);
+    };
+    TestService = __decorate([
+        __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Injectable"])(), 
+        __metadata('design:paramtypes', [])
+    ], TestService);
+    return TestService;
+}());
+//# sourceMappingURL=/home/taihd94/Projects/BKHome/angular-src/src/test.service.js.map
+
 /***/ })
 
-},[1199]);
+},[1200]);
 //# sourceMappingURL=main.bundle.js.map

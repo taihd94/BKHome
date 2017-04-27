@@ -4,6 +4,7 @@ import { Subject } from 'rxjs/Subject';
 import { Observable } from 'rxjs/Observable';
 import {MessageEventService} from './services/broadcast/message-event.service';
 import {BroadcasterService} from './services/broadcast/broadcaster.service';
+import * as io from 'socket.io-client';
 
 @Component({
   selector: 'app-root',
@@ -18,21 +19,20 @@ export class AppComponent {
              ) {
              }
 
+   private url = window.location.hostname + ':4000';
+   private socket
+
    ngOnInit() {
-     this.socketioService.connect();
+      this.socket = io(this.url);
 
-     this.messageEvent.on('socketOn')
-      .subscribe(event => {
-        this.socketioService.getMessages(event).subscribe((message)=>{
-          this.messageEvent.emit(event, message);
-        });
+      this.socket.on('device-event', (data) => {
+        this.messageEvent.emit(data._id, data);
       });
-
-     this.messageEvent.on('device-event')
+      
+      this.messageEvent.on('device-event')
       .subscribe(message=>{
-        this.socketioService.sendMessage("device-event", message);
+        this.socket.emit("device-event", message);
       })
-
    }
   title = 'app works!';
 }

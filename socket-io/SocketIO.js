@@ -29,11 +29,17 @@ io.on('connection', (socket) => {
   socket.on('device-event', (light) => {
     console.log(light);
     socket.broadcast.emit(light._id, light);
-    LightingControl.findAndUpdateLight(light._id, light.value, result => {
-      ltctrMqttClient.send(result, light.value);
-    });
-    Rules.checkOperations(light).then(result=>{
-      // console.log(result)
+    socket.broadcast.emit('device-event', light);
+    LightingControl.findAndUpdateLight(light._id, light.value)
+    .then(result=>{
+      ltctrMqttClient.send(result, light.value)
+      return Promise.resolve(true)
+    })
+    .then(()=>{
+      return Rules.checkOperations(light)
+    })
+    .then(result=>{
+      console.log(result)
     })
     .catch(err=>{
       console.log(err);

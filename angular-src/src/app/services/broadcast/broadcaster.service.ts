@@ -11,19 +11,21 @@ interface BroadcastEvent {
 
 @Injectable()
 export class BroadcasterService {
-  private _eventBus: Subject<BroadcastEvent>;
+  private _eventBusSource = new Subject<BroadcastEvent>()
+  _eventBus = this._eventBusSource.asObservable();
 
   constructor() {
-    this._eventBus = new Subject<BroadcastEvent>();
+
   }
 
   broadcast(key: any, data?: any) {
-    this._eventBus.next({key, data});
+    this._eventBusSource.next({key, data});
   }
 
-  on<T>(key: any): Observable<T> {
-    return this._eventBus.asObservable()
+  on<T>(key: any) {
+    return this._eventBus
       .filter(event => event.key === key)
-      .map(event => <T>event.data);
+      .map(event => <T>event.data)
   }
+
 }

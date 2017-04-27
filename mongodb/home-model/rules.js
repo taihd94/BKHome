@@ -4,6 +4,7 @@ const Schema = mongoose.Schema;
 const LightingControl = require('./lightingControl');
 const Floor = require('./floor');
 const socket = require('../../socket-io/socketio-client');
+const moment = require('moment');
 
 const OperationSchema = new Schema({
   _type: String,
@@ -33,10 +34,11 @@ const RuleSchema = new Schema({
     name: String,
     time: {
       from: String,
-      to: String
+      to: String,
+      isAllDay: Boolean
     },
     date: String,
-    repeat: [Boolean],
+    repeat: String,
     ifConditions: {type: Schema.Types.ObjectId, ref: 'operations'},
     thenActions: [{
       deviceId: Schema.Types.ObjectId,
@@ -69,8 +71,6 @@ module.exports.getListOfRules = () => {
 
 
 //----------remove operation functions-----------//
-
-
 function removeRelationalOperation(id) {
   return RelationalOperations.findByIdAndRemove(id)
 }
@@ -110,7 +110,7 @@ function removeLogicalOperation(id) {
    })
  }
 
-//----------remove operation functions-----------//
+////////////remove operation functions/////////////
 
 // ----------create operation functions-----------//
 function createRelationalOperation(operation) {
@@ -155,9 +155,9 @@ function createOperation(operation) {
       throw new Error('Operation type invalid: ' + operation._type);
   }
 }
-//----------create operation functions-----------//
+//////////////////////////////////////////////////////////////
 
-
+//-----------------------Update Rule-----------------------//
 module.exports.updateRule = function (ruleId, newRule) {
   console.log();
   console.log('---------------UPDATE RULE-----------------')
@@ -212,7 +212,9 @@ module.exports.addNewRule = function (newRule, callback) {
   .then((doc)=>{
     let rule = new Rules({
       name: newRule.name,
-      ifConditions: doc._id
+      ifConditions: doc._id,
+      time: {isAllDay: true},
+      repeat: 'Daily'
     });
     rule.save();
     return Promise.resolve({success: true, msg:'new rule has been created'})
@@ -230,12 +232,42 @@ const operators = {
   'AND':(a, b) => {return a && b}
 }
 
+function isDateSatisfied(rule) {
+  if(rule.repeat==='Daily') return Promise.resolve(rule)
+  else if(rule.repeat==='None') return Promise.reject('Date not satisfied')
+  let repeatDates = rule.repeat.split(', ');
+  let now = moment();
+  let cnt = 0;
+  for(let date of repeatDates){
+    _date = moment(date, "ddd");
+    if(_date.day()===now.day()) return Promise.resolve(rule)
+    if(++cnt===repeatDates.length) return Promise.reject('Date not satisfied')
+  }
+}
+
+function isTimeSatisfied(rule) {
+  if(rule.time.isAllDay) return Promise.resolve(rule.thenActions);
+  let fromTime = moment(rule.time.from, "HH:mm A");
+  let toTime = moment(rule.time.to, "HH:mm A");
+  if(toTime<fromTime){
+    toTime = toTime.add(1, 'days');
+  }
+  let now = moment();
+  if((fromTime < now)&&(now < toTime)) return Promise.resolve(rule.thenActions)
+  return Promise.reject('Time not satisfied')
+}
+
 function operationSatisfied(operation) {
   let operationId = operation._id;
   if(operation.isRoot){
     return Rules.findOne({'ifConditions': operationId})
     .then(rule=>{
-      let actions = rule.thenActions;
+      return isDateSatisfied(rule)
+    })
+    .then(rule=>{
+      return isTimeSatisfied(rule)
+    })
+    .then(actions=>{
       for(let action of actions){
         let msg = {_id: action.deviceId, value: action.value}
         socket.emit('device-event', msg)

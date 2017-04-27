@@ -14,13 +14,13 @@ sensorClient.on('message', (topic, message) => {
     deviceId = topic.split("/")[2];
     try{
       let sensorModule = JSON.parse(message);
-      SensorModule.updateSensorValue(deviceId, sensorModule, result=>{
-        for(let sensor of result.sensors){
+      return SensorModule.updateSensorValue(deviceId, sensorModule)
+      .then(sensors=>{
+        for(let sensor of sensors){
           socket.emit('sensor-event', sensor);
         }
       })
     }catch(err) {
       console.log(err);
     }
-
 });

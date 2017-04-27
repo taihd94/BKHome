@@ -17,120 +17,82 @@ const Devices = require('./devices');
 const LightingControl = require('./lightingControl');
 const SensorModule = require('./sensorModule');
 
-module.exports.getListOfFloors = function(callback){
-  Floor.find((err, floors)=>{
-    if(err) {
-      throw err;
-      return callback({success: false, msg:"something went wrong"});
-    } else {
-      return callback({success:true, floors: floors});
-    }
-  });
+module.exports.getListOfFloors = function(){
+  return Floor.find()
 }
 
-module.exports.addfloor = function(newFloor, callback){
-  newFloor.save((err)=>{
-    if(err) {
-      throw err;
-      return callback({success: false, msg:"something went wrong"});
-    } else {
-      return callback({success: true, msg:'Successfully added new floor'})
-    }
-  });
-}
-
-module.exports.deletefloor = function(id, callback){
-  Floor.findByIdAndRemove(id, (err, floor)=>{
-    if(err){
-      throw err;
-      return callback({success: false, msg:"something went wrong"});
-    }
-    if(floor) {
-      return callback({success: true, msg:'Floor has been deleted'})
-    } else {
-      return callback({success: false, msg:'Floor not found'})
-    }
-  });
-}
-
-module.exports.getListOfRooms = function(floorId, callback){
-  if (floorId.match(/^[0-9a-fA-F]{24}$/)) {
-    Floor.findById(floorId, (err, floor)=>{
-      if(err) throw err;
-      if(floor){
-        return callback(floor.rooms);
-      } else{
-        return callback({success: false, msg:"Floor not found"});
-      }
-    })
-  }else {
-    return callback({success: false, msg:"FloorId is invalid"});
-  }
-}
-
-module.exports.deleteRoom = function(roomId, callback){
-  Floor.findOne({"rooms._id": roomId}, (err, floor)=>{
-    if(err) throw err;
-    if(floor){
-      floor.rooms.id(roomId).remove();
-      floor.save((err)=>{
-        if(err) throw err;
-        return callback({success: "true", msg:"room has been deleted"})
-      });
-    } else {
-      return callback({success: false, msg:"room not found"})
-    }
+module.exports.addfloor = function(newFloor){
+  return newFloor.save()
+  .then(floor=>{
+    return Promise.resolve('Successfully added new floor')
   })
 }
 
-module.exports.addNewRoom = function(floorId, newRoom, callback){
-  Floor.findById(floorId, (err, floor)=>{
-    if(err) throw err;
-    if(floor){
-      floor.rooms.push(newRoom);
-      floor.save((err)=>{
-        if(err) throw err;
-        return callback({success: "true", msg:"room has been added"})
-      });
-    } else{
-      return callback({success: false, msg:"floor not found"})
-    }
+module.exports.deletefloor = function(id){
+  return Floor.findByIdAndRemove(id)
+  .then(()=>{
+    return Promise.resolve('Floor has been deleted')
   })
 }
 
-module.exports.updateImgPath = function(floorId, roomId, imgPath, callback) {
-  Floor.findOne({"_id": floorId, "rooms._id": roomId}, (err, floor)=>{
-    if(err) throw err;
-    if(floor){
-      floor.rooms.id(roomId).imgPath = imgPath;
-      floor.save((err)=>{
-        if(err) throw err;
-        return callback({success: "true", msg:"imgPath has been updated"});
-      });
-    } else {
-      return callback({success: false, msg:"floor or room not found"});
-    }
+module.exports.getListOfRooms = function(floorId){
+  return Floor.findById(floorId)
+  .then(floor=>{
+    if(!floor) throw new Error('Floot not found: ' + floorId)
+    return Promise.resolve(floor.rooms)
   })
 }
 
-module.exports.getFloorAndRoomByRoomId = function(roomId, callback){
-  Floor.findOne({'rooms._id': roomId}, (err,floor)=>{
-    if(err) throw err;
-    if(floor){
-      let room = floor.rooms.id(roomId);
-      callback({floorName: floor.name, roomName: room.name});
-    } else {
-      callback({success: false, msg: 'room not found'});
-    }
+module.exports.deleteRoom = function(roomId){
+  return Floor.findOne({"rooms._id": roomId})
+  .then(floor=>{
+    if(!floor) throw new Error('No floor has room: ' + roomId)
+    floor.rooms.id(roomId).remove()
+    return floor.save()
+  })
+  .then(floor=>{
+    return Promise.resolve('room has been deleted')
   })
 }
 
-module.exports.updateDeviceToRoom = function (deviceId, roomId, callback) {
-  Floor.findOne({'rooms.devices': deviceId}, (err, floor)=>{
-    if(err) throw err;
+module.exports.addNewRoom = function(floorId, newRoom){
+  return Floor.findById(floorId)
+  .then(floor=>{
+    if(!floor) throw new Error('Floor not found: ' + floorId)
+    floor.rooms.push(newRoom);
+    return floor.save()
+  })
+  .then(floor=>{
+      return Promise.resolve('room has been added')
+  })
+}
+
+module.exports.updateImgPath = function(floorId, roomId, imgPath) {
+  return Floor.findOne({"_id": floorId, "rooms._id": roomId})
+  .then(floor=>{
+    if(!floor) throw new Error('Floor not found: ' + floorId)
+    floor.rooms.id(roomId).imgPath = imgPath;
+    return floor.save()
+  })
+  .then(floor=>{
+    return Promise.resolve('imgPath has been updated')
+  })
+}
+
+module.exports.getFloorAndRoomByRoomId = function(roomId){
+  return Floor.findOne({'rooms._id': roomId})
+  .then(floor=>{
+    if(!floor) return Promise.reject('No floor has room: ' + roomId)
+    let room = floor.rooms.id(roomId);
+    return Promise.resolve({floorName: floor.name, roomName: room.name})
+  })
+}
+
+module.exports.updateDeviceToRoom = function (deviceId, roomId) {
+  return Floor.findOne({'rooms.devices': deviceId})
+  .then(floor=>{
     if(!!floor){
       let rooms = floor.rooms;
-      let forLoopFinshCheck = 0;
       for(let room of rooms){
         let devices = room.devices
         let deviceFilter = devices.filter(device=>{
@@ -141,37 +103,28 @@ module.exports.updateDeviceToRoom = function (deviceId, roomId, callback) {
             let index = devices.indexOf(deviceId);
             floor.rooms.id(room._id).devices.splice(index, 1);
             floor.rooms.id(roomId).devices.push(deviceId);
-            floor.save(err=>{
-              if(err) throw err;
-              callback('Successfully saved deviceId to new room');
-            })
+            return floor.save()
           }
         }
       }
     } else {
-      Floor.findOne({'rooms._id': roomId}, (err,floor)=>{
-        if(err) throw err;
-        if(!!floor){
-          floor.rooms.id(roomId).devices.push(deviceId);
-          floor.save(err=>{
-            if(err) throw err;
-            callback('Successfully saved deviceId to room');
-          })
-        }
+      return Floor.findOne({'rooms._id': roomId})
+      .then(floor=>{
+        if(!floor) throw new Error('No floor has room: ' + roomId)
+        floor.rooms.id(roomId).devices.push(deviceId);
+        return floor.save()
       })
     }
+  })
+  .then(()=>{
+    return Promise.resolve('Successfully saved deviceId to room');
   })
 }
 
 module.exports.getListOfItemsInHouse = function (callback) {
-  Floor
-    .find()
-    .populate({
-      path: 'rooms.devices',
-      select: 'deviceType sensors.name sensors._id sensors._type lights.name lights._id lights.dimmable'
-    })
-    .exec((err, floors)=>{
-      if(err) callback(err);
-      else callback({success: true, house: floors});
-    })
+  return Floor.find()
+  .populate({
+    path: 'rooms.devices',
+    select: 'deviceType sensors.name sensors._id sensors._type lights.name lights._id lights.dimmable'
+  })
 }

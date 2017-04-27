@@ -54,9 +54,14 @@ export class SceneComponent implements OnInit, OnChanges {
 
 
   ngOnInit() {
+    this.rooms = [];
     this.sceneId = this.scene._id;
     this.sceneService.getDevicesDetail(this.sceneId).subscribe(res=>{
-      this.rooms = res.rooms;
+      if(!res.success){
+        console.log(res.msg)
+      } else {
+        this.rooms = res.rooms;
+      }
     })
     if(!!this.scene.time){
       this.timePicker = this.scene.time;
@@ -69,8 +74,8 @@ export class SceneComponent implements OnInit, OnChanges {
     }
 
     if(!!this.scene.repeat){
-      this.repeatDays = this.scene.repeat;
-      this.repeatDaysStr = this.convertRepeatToString(this.repeatDays);
+      this.repeatDaysStr = this.scene.repeat;
+      this.repeatDays = this.mapRepeatDays(this.repeatDaysStr);
     }
 
     if(!this.scene.devices.length){
@@ -133,6 +138,16 @@ export class SceneComponent implements OnInit, OnChanges {
     this.date.momentObj = moment(date, "DD MM YYYY");
   }
 
+  mapRepeatDays(repeatDaysStr){
+    var array = repeatDaysStr.split(", ");
+    let repeatDays = [false, false, false, false, false, false, false];
+    for(let date of array){
+      let index = this.daysOfWeek.indexOf(date);
+      repeatDays[index] = true;
+    }
+    return repeatDays;
+  }
+
   convertRepeatToString(repeatDays){
     let string;
     if(repeatDays[0]&&repeatDays[1]&&repeatDays[2]&&repeatDays[3]&&repeatDays[4]&&repeatDays[5]&&repeatDays[6]){
@@ -183,6 +198,7 @@ export class SceneComponent implements OnInit, OnChanges {
   }
 
   selectRoom(selectedRoom){
+    console.log(this.rooms);
     let check = this.rooms.filter(room=>{
       return room.roomId == selectedRoom._id;
     }).pop();
@@ -231,7 +247,7 @@ export class SceneComponent implements OnInit, OnChanges {
 
     this.scene.time = (this.time)? moment(this.time).format('LT'): null;
     this.scene.date = (this.date.momentObj)? this.date.momentObj.format('DD/MM/YYYY'): null;
-    this.scene.repeat = this.repeatDays;
+    this.scene.repeat = this.repeatDaysStr;
 
     this.sceneService.updateScene(this.scene).subscribe(res=>{
       if(!res.success){
