@@ -1,0 +1,223 @@
+<div bsModal #smModal="bs-modal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-sm">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title">Are you sure you want to delete user <b>{{user.name}}</b> ?</h4>
+      </div>
+      <div class="modal-body">
+        <button type="button" class="btn btn-modal" (click)="smModal.hide()">No</button>
+        <button type="button" class="btn btn-modal" (click)="smModal.hide();deleteUser()">Yes</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div bsModal #smModal1="bs-modal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-sm img-picker-dialog">
+    <div class="modal-content img-picker-content">
+      <div class="modal-header img-picker-header">
+        <h3>Please pick a picture</h3>
+      </div>
+      <div class="modal-body img-picker-body">
+        <div class="row">
+          <div class="col-md-4">
+            <img src="./assets/images/avatars/avatar10.png"
+                 class="img-circle roomImg"
+                 alt="Responsive image"
+                  (click)="smModal1.hide();addImgSubmit('./assets/images/avatars/avatar10.png')">
+          </div>
+          <div class="col-md-4">
+            <img src="./assets/images/avatars/avatar1.png"
+                 class="img-circle roomImg"
+                 alt="Responsive image"
+                  (click)="smModal1.hide();addImgSubmit('./assets/images/avatars/avatar1.png')">
+          </div>
+          <div class="col-md-4">
+            <img src="./assets/images/avatars/avatar2.png"
+                 class="img-circle roomImg"
+                 alt="Responsive image"
+                  (click)="smModal1.hide();addImgSubmit('./assets/images/avatars/avatar2.png')">
+          </div>
+          <div class="col-md-4">
+            <img src="./assets/images/avatars/avatar3.png"
+                 class="img-circle roomImg"
+                 alt="Responsive image"
+                  (click)="smModal1.hide();addImgSubmit('./assets/images/avatars/avatar3.png')">
+          </div>
+          <div class="col-md-4">
+            <img src="./assets/images/avatars/avatar4.png"
+                 class="img-circle roomImg"
+                 alt="Responsive image"
+                  (click)="smModal1.hide();addImgSubmit('./assets/images/avatars/avatar4.png')">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-4">
+            <img src="./assets/images/avatars/avatar5.png"
+                 class="img-circle roomImg"
+                 alt="Responsive image"
+                  (click)="smModal1.hide();addImgSubmit('./assets/images/avatars/avatar5.png')">
+          </div>
+          <div class="col-md-4">
+            <img src="./assets/images/avatars/avatar6.png"
+                 class="img-circle roomImg"
+                 alt="Responsive image"
+                  (click)="smModal1.hide();addImgSubmit('./assets/images/avatars/avatar6.png')">
+          </div>
+          <div class="col-md-4">
+            <img src="./assets/images/avatars/avatar7.png"
+                 class="img-circle roomImg"
+                 alt="Responsive image"
+                  (click)="smModal1.hide();addImgSubmit('./assets/images/avatars/avatar7.png')">
+          </div>
+          <div class="col-md-4">
+            <img src="./assets/images/avatars/avatar8.png"
+                 class="img-circle roomImg"
+                 alt="Responsive image"
+                  (click)="smModal1.hide();addImgSubmit('./assets/images/avatars/avatar8.png')">
+          </div>
+          <div class="col-md-4">
+            <img src="./assets/images/avatars/avatar9.png"
+                 class="img-circle roomImg"
+                 alt="Responsive image"
+                  (click)="smModal1.hide();addImgSubmit('./assets/images/avatars/avatar9.png')">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div bsModal #smModal2="bs-modal" class="modal fade modal2" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true" (focusout)="unSubscribe()">
+  <div class="modal-dialog modal-sm modal-add-fingerprint" >
+    <div class="modal-content enrol-fingerprint">
+      <div class="modal-header">
+        <!-- <h4 class="modal-title">Add fingerprint</h4> -->
+        <div class="picture add-fingerprint">
+          <!-- <img src="https://media.giphy.com/media/xUPGcKemPMzGvOzqec/giphy.gif"
+               class="img-circle fingerprint-picture"
+               alt="Responsive image"> -->
+           <img src="./assets/images/access-control/fingerprint4.png"
+                class="img-circle fingerprint-picture"
+                alt="Responsive image">
+          <h4>{{sensorMessage}} <br> {{sensorMessage2}}</h4>
+        </div>
+      </div>
+      <div class="modal-body">
+        <!-- <button type="button" class="btn btn-success btn-modal" (click)="smModal2.hide()">Yes</button>
+        <button type="button" class="btn btn-danger btn-modal" (click)="smModal2.hide()">No</button> -->
+      </div>
+    </div>
+  </div>
+</div>
+
+<div bsModal #smModal3="bs-modal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-sm">
+    <div class="modal-content">
+      <div class="modal-header">
+        <!-- <h4 class="modal-title">Delete all data</h4> -->
+        <div class="picture fingerprint delete-fingerprint">
+          <img src="./assets/images/access-control/fingerprint3.png"
+               class="img-circle fingerprint-picture fingerprint-picture-gray"
+               alt="Responsive image">
+          <h4  style="color:#737373; line-height: 26px;">Are you sure you want to delete all fingerprint information of the current user?</h4>
+        </div>
+      </div>
+      <div class="modal-body">
+        <button type="button" class="btn btn-modal" (click)="smModal3.hide()">No</button>
+        <button type="button" class="btn btn-modal" (click)="smModal3.hide()">Yes</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- user -->
+<div class="user">
+  <div class="panel panel-primary panel-pricing">
+    <div class="panel-heading">
+      <i class="fa fa-user-circle" aria-hidden="true"></i>
+      <!-- <h3 class="userName">#1</h3> -->
+      <div class="x-icon" >
+        <i class="fa fa-times" aria-hidden="true" (click)="smModal.show()"></i>
+      </div>
+    </div>
+    <div class="row scirpt-body">
+      <div class="col-md-4">
+        <div class="picture">
+          <div class="imgNotAvailable" [hidden] = "checkImgClick">
+            <img src="{{user.imgPath}}"
+                 class="img-circle user-picture"
+                 alt="Responsive image"
+                  (click)="smModal1.show()">
+          </div>
+        </div>
+        <div class="user-name">
+          <h3><b>{{user.name}}</b></h3>
+        </div>
+      </div>
+      <div class="col-md-8 deivce-picker"  [hidden]="row_1_hidden">
+        <div class="row rfid-fingerprint">
+          <div class="col-md-7">
+            <div class="picture rfid">
+              <img src="./assets/images/access-control/rfid.svg"
+                   class="img rfid-picture"
+                   alt="Responsive image"
+                  [ngStyle]="isRFIDAvailable ? '' : grayFilter">
+                  <h4 [ngStyle]="isRFIDAvailable ? '' : grayFilter">
+                    RFID <i class="fa fa-check" aria-hidden="true" [hidden]="!isRFIDAvailable"></i>
+                  </h4>
+            </div>
+          </div>
+          <div class="col-md-5">
+            <div class="picture fingerprint">
+              <img src="./assets/images/access-control/fingerprint3.png"
+                   class="img-circle fingerprint-picture"
+                   alt="Responsive image"
+                    (click)="row_1_hidden=true;row_2_hidden=false"
+                    [ngStyle]="isFingerprintAvailable ? '' : grayFilter">
+              <h4 [ngStyle]="isFingerprintAvailable ? '' : grayFilter">
+                Fingerprint <i class="fa fa-check" aria-hidden="true" [hidden]="!isFingerprintAvailable"></i>
+              </h4>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-8 deivce-picker"  [hidden]="row_2_hidden">
+        <div class="row">
+          <div class="col-md-5">
+            <div class="picture fingerprint">
+              <img src="./assets/images/access-control/fingerprint3.png"
+                   class="img-circle fingerprint-picture fingerprint-picture-gray"
+                   alt="Responsive image"
+                    (click)="smModal3.show()">
+              <h4  style="color:#9a8484">Delete all data</h4>
+            </div>
+          </div>
+          <hr class="vertical">
+          <div class="col-md-5">
+            <div class="picture fingerprint">
+              <img src="./assets/images/access-control/fingerprint3.png"
+                   class="img-circle fingerprint-picture"
+                   alt="Responsive image"
+                    (click)="smModal2.show();connectSensor()">
+              <h4>Add a fingerprint</h4>
+            </div>
+          </div>
+        </div>
+        <div class="footer">
+          <div class="edit-save">
+            <div class="btn-edit">
+              <button class="btn"
+                  type="button"
+                  name="button"
+                  (click)="row_1_hidden=false; row_2_hidden=true">
+                    <i class="fa fa-arrow-left" aria-hidden="true"></i> Back
+             </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- user -->

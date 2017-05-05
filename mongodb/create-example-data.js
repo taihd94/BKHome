@@ -28,6 +28,7 @@ var Scene = require('./home-model/scenes');
 var Rule = require('./home-model/rules');
 var RelationalOperation = require('./home-model/rules').RelationalOperations;
 var LogicalOperation = require('./home-model/rules').LogicalOperations;
+var AccessControl = require('./home-model/accessControl');
 
 var house_id = new mongoose.Types.ObjectId();
 var floor_id_1 = new mongoose.Types.ObjectId();
@@ -275,7 +276,7 @@ var scene = [
       name: "Sleep",
       date: '11/07/2017',
       time: '06:00 AM',
-      repeat: [true, true, false, true, false, true, true],
+      repeat: 'Sat, Sun',
       devices: [
         {
           _id: light_id_1,
@@ -363,7 +364,7 @@ var rules = [
       from: '11:00 PM',
       to: '5:00 AM'
     },
-    repeat: [true, true, true, true, true, true, true],
+    repeat: 'Mon, Tue, Wed',
     ifConditions: condition_id_1,
     thenActions: [{
       deviceId: light_id_5,
@@ -397,6 +398,25 @@ for(var i = 0; i< rules.length; i++) {
     rules[i].save(function (err, result) {
         done++;
         if (done === rules.length) {
+            mongoose.disconnect();
+        }
+    });
+}
+
+var accessControls = [
+  new AccessControl({
+      name: 'Duc Tai',
+      imgPath: 'https://freeiconshop.com/wp-content/uploads/edd/person-flat.png',
+      fingerprintId: [],
+      rfid: []
+  })
+]
+
+done = 0;
+for(var i = 0; i< accessControls.length; i++) {
+    accessControls[i].save(function (err, result) {
+        done++;
+        if (done === accessControls.length) {
             mongoose.disconnect();
         }
     });

@@ -72,7 +72,6 @@ export class RulesComponent implements OnInit {
     let newRule = {
       name: this.newRuleName
     }
-    console.log(newRule);
     this.ruleService.addNewRule(newRule).subscribe(res=>{
       if(!res.success){
         console.log(res.msg)

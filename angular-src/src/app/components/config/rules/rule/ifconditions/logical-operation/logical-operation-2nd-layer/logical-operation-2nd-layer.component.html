@@ -1,6 +1,7 @@
 <div class="checkIfDataAvailabel" *ngIf="isDataAvailable">
   <div class="_1st-operand">
     <app-relational-operation
+            [ruleId]="ruleId"
             [operation]='_1stOperand'
             [listOfDevicesInHouse]="listOfDevicesInHouse"
             [editHidden]="editHidden"
@@ -26,6 +27,7 @@
   <hr/>
   <div class="_2nd-operand">
     <app-relational-operation
+            [ruleId]="ruleId"
             [operation]='_2ndOperand'
             [listOfDevicesInHouse]="listOfDevicesInHouse"
             [editHidden]="editHidden"

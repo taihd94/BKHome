@@ -1,4 +1,5 @@
 import { Component, OnInit, OnChanges, Input, Output, EventEmitter } from '@angular/core';
+import { MessageEventService } from '../../../../../services/broadcast/message-event.service';
 
 @Component({
   selector: 'app-thenactions',
@@ -6,11 +7,14 @@ import { Component, OnInit, OnChanges, Input, Output, EventEmitter } from '@angu
   styleUrls: ['./thenactions.component.css']
 })
 export class ThenactionsComponent implements OnInit, OnChanges {
+  @Input() ruleId;
   @Input() thenActions;
   @Input() editHidden;
   @Input() listOfDevicesInHouse;
   @Output() updateActions = new EventEmitter();
-  constructor() { }
+  constructor(
+    private messageEvent: MessageEventService
+  ) { }
 
   ngOnInit() {
     if(!this.thenActions.length){

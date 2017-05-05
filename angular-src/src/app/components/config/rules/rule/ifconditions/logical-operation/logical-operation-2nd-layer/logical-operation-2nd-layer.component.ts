@@ -7,6 +7,7 @@ import { RuleService } from '../../../../../../../services/rest-api/rule.service
   styleUrls: ['./logical-operation-2nd-layer.component.css']
 })
 export class LogicalOperation2ndLayerComponent implements OnInit {
+  @Input() ruleId;
   @Input() operation;
   @Input() listOfDevicesInHouse;
   @Input() editHidden;

@@ -124,12 +124,14 @@
       </div>
       <div class="col-md-8 deivce-picker">
 
-        <app-ifconditions [ifCondtions]="ifCondtions"
+        <app-ifconditions [ruleId]="ruleId"
+                          [ifCondtions]="ifCondtions"
                           [listOfDevicesInHouse]="listOfDevicesInHouse"
                           [editHidden]="editHidden"
                           (updateIfCond)="updateIfCond($event)">
         </app-ifconditions>
-        <app-thenactions [thenActions]="thenActions"
+        <app-thenactions [ruleId]="ruleId"
+                        [thenActions]="thenActions"
                          [editHidden]="editHidden"
                          [listOfDevicesInHouse]="listOfDevicesInHouse"
                          (updateActions)="updateActions()">

@@ -12,10 +12,74 @@
   </div>
 </div>
 
+<div bsModal #smModal2="bs-modal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-sm img-picker-dialog">
+    <div class="modal-content img-picker-content">
+      <div class="modal-header img-picker-header">
+        <h3>Please pick a picture</h3>
+      </div>
+      <div class="modal-body img-picker-body">
+        <div class="row">
+          <div class="col-md-4">
+            <img src="./assets/images/rooms/livingroom1.jpg"
+                 class="img-responsive roomImg"
+                 alt="Responsive image"
+                  (click)="smModal2.hide();addImgSubmit('./assets/images/rooms/livingroom1.jpg')">
+          </div>
+          <div class="col-md-4">
+            <img src="./assets/images/rooms/livingroom2.jpg"
+                 class="img-responsive roomImg"
+                 alt="Responsive image"
+                  (click)="smModal2.hide();addImgSubmit('./assets/images/rooms/livingroom2.jpg')">
+          </div>
+          <div class="col-md-4">
+            <img src="./assets/images/rooms/kitchen-1.jpg"
+                 class="img-responsive roomImg"
+                 alt="Responsive image"
+                  (click)="smModal2.hide();addImgSubmit('./assets/images/rooms/kitchen-1.jpg')">
+          </div>
+          <div class="col-md-4">
+            <img src="./assets/images/rooms/bedroom-2.jpeg"
+                 class="img-responsive roomImg"
+                 alt="Responsive image"
+                  (click)="smModal2.hide();addImgSubmit('./assets/images/rooms/bedroom-2.jpeg')">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-4">
+            <img src="./assets/images/rooms/office1.jpg"
+                 class="img-responsive roomImg"
+                 alt="Responsive image"
+                  (click)="smModal2.hide();addImgSubmit('./assets/images/rooms/office1.jpg')">
+          </div>
+          <div class="col-md-4">
+            <img src="./assets/images/rooms/bathroom-1.jpg"
+                 class="img-responsive roomImg"
+                 alt="Responsive image"
+                  (click)="smModal2.hide();addImgSubmit('./assets/images/rooms/bathroom-1.jpg')">
+          </div>
+          <div class="col-md-4">
+            <img src="./assets/images/rooms/front-yard-1.jpg"
+                 class="img-responsive roomImg"
+                 alt="Responsive image"
+                  (click)="smModal2.hide();addImgSubmit('./assets/images/rooms/front-yard-1.jpg')">
+          </div>
+          <div class="col-md-4">
+            <img src="./assets/images/rooms/front-yard-2.jpg"
+                 class="img-responsive roomImg"
+                 alt="Responsive image"
+                  (click)="smModal2.hide();addImgSubmit('./assets/images/rooms/front-yard-2.jpg')">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
 <div class="panel panel-success">
   <div class="panel-heading">
     <div class="title" (click)="height = height ? 0 : el.scrollHeight">
-      <a href="/config#{{room._id}}" class="panel-title">{{room.name}}</a>
+      <a class="panel-title">{{room.name}}</a>
       <button type="button" class="fa fa-times fa-2x" (click)="getDeletedRoom(room._id, room.name)" (click)="smModal.show()"></button>
     </div>
   </div>
@@ -28,13 +92,15 @@
             <div class="imgAvailable" *ngIf = "room.imgPath">
               <img src="{{room.imgPath}}"
                    class="img-responsive roomImg"
-                   alt="Responsive image">
+                   alt="Responsive image"
+                   (click)="smModal2.show()">
             </div>
             <div class="imgNotAvailable" *ngIf = "!room.imgPath" [hidden] = "checkImgClick">
-              <img src="http://i.imgur.com/FQk1REK.jpg"
+              <img src="./assets/images/img_not_available.jpg"
                    class="img-responsive roomImg"
-                   alt="Responsive image">
-               <form (submit)="addImgSubmit(room._id)">
+                   alt="Responsive image"
+                    (click)="smModal2.show()">
+               <form (submit)="addImgSubmit(imgUrl)">
                <div class="form-group form-addImageUrl">
                      <input type="text"
                              class="form-control"

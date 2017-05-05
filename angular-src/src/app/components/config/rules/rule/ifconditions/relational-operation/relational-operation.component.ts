@@ -10,6 +10,7 @@ import { MessageEventService } from '../../../../../../services/broadcast/messag
   styleUrls: ['./relational-operation.component.css']
 })
 export class RelationalOperationComponent implements OnInit, OnChanges {
+  @Input() ruleId
   @Input() operation;
   @Input() addOperationHidden;
   @Input() listOfDevicesInHouse;
@@ -22,8 +23,10 @@ export class RelationalOperationComponent implements OnInit, OnChanges {
     private deviceService: DeviceService,
     private houseService: HouseService,
     private ruleService: RuleService,
-    private messageEventService: MessageEventService
+    private messageEvent: MessageEventService
   ) { }
+
+
   deviceId: String;
   device: any;
   deviceName: String;
@@ -45,27 +48,24 @@ export class RelationalOperationComponent implements OnInit, OnChanges {
     this.value = this.operation.value;
     if(!!this.deviceId){
       this.deviceService.getItemDetails(this.deviceId).subscribe(res=>{
-        if(!res.success){
-          console.log(res.msg);
-        } else{
-          switch(res._type){
-            case 'light':
-              this.deviceName = res.light.name;
-              this.dimmable = res.light.dimmable;
-              if(!this.dimmable){
-                this.operatorArr = ['Equal to'];
-                this.operatorSymbolArr = ['=='];
-                this.value = this.value ? 'ON' : 'OFF';
-              }
-              break;
-            case 'sensor':
-              this.deviceName = res.sensor.name;
-              this.dimmable = true;
-              if(res.sensor._type.toString()==='Light'){
-                this.sliderMaxValue = 1000;
-              }
-              break;
-          }
+        if(!res.success) return console.log(res.msg);
+        switch(res._type){
+          case 'light':
+            this.deviceName = res.light.name;
+            this.dimmable = res.light.dimmable;
+            if(!this.dimmable){
+              this.operatorArr = ['Equal to'];
+              this.operatorSymbolArr = ['=='];
+              this.value = this.value ? 'ON' : 'OFF';
+            }
+            break;
+          case 'sensor':
+            this.deviceName = res.sensor.name;
+            this.dimmable = true;
+            if(res.sensor._type.toString()==='Light'){
+              this.sliderMaxValue = 1000;
+            }
+            break;
         }
       })
     } else {
@@ -135,6 +135,7 @@ export class RelationalOperationComponent implements OnInit, OnChanges {
     //update operation
     this.operation.deviceId = light._id;
     this.updateOperationEvent.emit(this.operation);
+    this.messageEvent.emit('rule/' + this.ruleId + '/select-device',light);
   }
 
   selectSensor(sensor){

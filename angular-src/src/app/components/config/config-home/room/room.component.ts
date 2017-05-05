@@ -15,6 +15,7 @@ export class RoomComponent implements OnInit, OnDestroy {
   @Input() room;
   @Output() roomChange = new EventEmitter();
 
+  roomId: String;
   checkClick = true;
   roomDeletedName: String;
   roomDeletedId: String;
@@ -32,6 +33,7 @@ export class RoomComponent implements OnInit, OnDestroy {
 
 
   ngOnInit() {
+    this.roomId = this.room._id;
     this.houseService.getListOfDevicesInRoom(this.room._id).subscribe(res=>{
         this.devices = res.devices;
         if(this.devices){
@@ -71,20 +73,16 @@ export class RoomComponent implements OnInit, OnDestroy {
   }
 
 
-  addImgSubmit(roomId) {
-    console.log(roomId);
-    console.log(this.imgUrl);
+  addImgSubmit(imgUrl) {
     let query = {
-      "roomId": roomId,
-      "imgPath": this.imgUrl
+      "roomId": this.roomId,
+      "imgPath": imgUrl
     }
-    this.houseService.updateImgPath(this.floorId, roomId, query).subscribe(res=>{
-      console.log(res);
-      if(res.success){
-        this.flashMessage.show('Success!!!', {cssClass: 'alert-success', timeout: 3000});
-        //this.getRooms(this.floorId);
-      }else {
-        this.flashMessage.show('Something went wrong', {cssClass: 'alert-success', timeout: 3000});
+    this.houseService.updateImgPath(this.floorId, this.roomId, query).subscribe(res=>{
+      if(!res.success){
+        console.log(res.msg);
+      } else {
+        this.room.imgPath = imgUrl;
       }
     })
   }

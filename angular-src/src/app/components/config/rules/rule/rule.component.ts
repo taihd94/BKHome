@@ -25,6 +25,7 @@ export class RuleComponent implements OnInit {
     this.options = new DatePickerOptions();
   }
 
+  listOfDevicesInHouseFull: any;
   ruleId:String;
   date: DateModel;
   options: DatePickerOptions;
@@ -70,7 +71,7 @@ export class RuleComponent implements OnInit {
     this.fromTimePicker = 'null';
     this.toTimePicker = 'null';
     this.isAllDayChecked = true;
-    
+
     if((!!this.time)){
       if(!this.time.isAllDay){
         this.isAllDayChecked = false;
@@ -88,6 +89,7 @@ export class RuleComponent implements OnInit {
       this.repeatDaysStr = 'Daily';
     }
     this.repeatDays = this.mapRepeatDays(this.repeatDaysStr);
+
   }
 
 

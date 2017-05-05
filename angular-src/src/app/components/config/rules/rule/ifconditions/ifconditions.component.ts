@@ -7,6 +7,7 @@ import { RuleService } from '../../../../../services/rest-api/rule.service';
   styleUrls: ['./ifconditions.component.css']
 })
 export class IfconditionsComponent implements OnInit {
+  @Input() ruleId;
   @Input() ifCondtions;
   @Input() listOfDevicesInHouse;
   @Input() editHidden;

@@ -21,7 +21,8 @@ export class ScenesComponent implements OnInit {
   getListOfScenes(){
     this.sceneService.getListOfScenes().subscribe(res=>{
       if(!res.success){
-        console.log(res.msg)
+        console.log(res.msg);
+        this.scenes = [];
       } else {
         this.scenes = res.scenes;
       }

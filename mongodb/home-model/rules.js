@@ -234,7 +234,7 @@ const operators = {
 
 function isDateSatisfied(rule) {
   if(rule.repeat==='Daily') return Promise.resolve(rule)
-  else if(rule.repeat==='None') return Promise.reject('Date not satisfied')
+  if(rule.repeat==='None') return Promise.reject('Date not satisfied')
   let repeatDates = rule.repeat.split(', ');
   let now = moment();
   let cnt = 0;

@@ -12,7 +12,9 @@ function createCronString(scene) {
   let month = '*';
   let year = '*';
   let dateOfWeek = "";
-  let repeat = scene.repeat.replace(/\s/g, '');
+  let repeat = scene.repeat;
+  if(!!repeat) repeat = repeat.replace(/\s/g, '');
+  else repeat = '*'
   if(repeat==='Daily') repeat = '*'
   else if(repeat==='None') repeat = ''
   cronStr +=  minutes + ' ' + hours + ' ' + date + ' ' + month + ' ' + repeat;

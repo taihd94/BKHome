@@ -28,11 +28,19 @@ export class AppComponent {
       this.socket.on('device-event', (data) => {
         this.messageEvent.emit(data._id, data);
       });
-      
+
       this.messageEvent.on('device-event')
       .subscribe(message=>{
         this.socket.emit("device-event", message);
       })
+
+      this.socket.on('access-control', data=>{
+        this.messageEvent.emit('access-control/receive', data);
+      })
+
+      this.messageEvent.on('access-control')
+      .subscribe(message=>{
+        this.socket.emit("access-control", message);
+      })
    }
-  title = 'app works!';
 }

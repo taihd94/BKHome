@@ -2,6 +2,7 @@
   <div class="_1st-operand">
     <app-relational-operation
             *ngIf="_1stOperandType=='RelationalOperation'"
+            [ruleId]="ruleId"
             [operation]="_1stOperand"
             [listOfDevicesInHouse]="listOfDevicesInHouse"
             [editHidden]="editHidden"
@@ -11,6 +12,7 @@
     </app-relational-operation>
     <app-logical-operation-2nd-layer
             *ngIf="_1stOperandType=='LogicalOperation'"
+            [ruleId]="ruleId"
             [operation]="_1stOperand"
             [listOfDevicesInHouse]="listOfDevicesInHouse"
             [editHidden]="editHidden"
@@ -37,6 +39,7 @@
   <div class="_2nd-operand">
     <app-relational-operation
             *ngIf="_2ndOperandType=='RelationalOperation'"
+            [ruleId]="ruleId"
             [operation]="_2ndOperand"
             [listOfDevicesInHouse]="listOfDevicesInHouse"
             [editHidden]="editHidden"
@@ -46,6 +49,7 @@
     </app-relational-operation>
     <app-logical-operation-2nd-layer
             *ngIf="_2ndOperandType=='LogicalOperation'"
+            [ruleId]="ruleId"
             [operation]="_2ndOperand"
             [listOfDevicesInHouse]="listOfDevicesInHouse"
             [editHidden]="editHidden"

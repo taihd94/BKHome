@@ -1,15 +1,15 @@
 const mqtt = require('mqtt');
-sensorClient = mqtt.connect('mqtt://localhost:1883');
+client = mqtt.connect('mqtt://localhost:1883');
 const socket = require('../socket-io/socketio-client');
 
 const SensorModule = require('../mongodb/home-model/sensorModule');
 
-sensorClient.on('connect',  () => {
-  sensorClient.subscribe('devices/sensorModule/+');
-  sensorClient.subscribe('lwt/sensorModule');
+client.on('connect',  () => {
+  client.subscribe('devices/sensorModule/+');
+  client.subscribe('lwt/sensorModule');
 })
 
-sensorClient.on('message', (topic, message) => {
+client.on('message', (topic, message) => {
     console.log("[" + topic + "]\n\r");
     deviceId = topic.split("/")[2];
     try{

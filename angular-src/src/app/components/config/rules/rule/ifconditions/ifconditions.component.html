@@ -3,6 +3,7 @@
 </div>
 <div  class="operation" [ngSwitch]="_type">
   <app-logical-operation *ngSwitchCase="'LogicalOperation'"
+                          [ruleId]="ruleId"
                           [operation]="operation"
                           [editHidden]="editHidden"
                           [listOfDevicesInHouse]="listOfDevicesInHouse"
@@ -11,6 +12,7 @@
                           (updateOperationEvent)="updateOperation($event)">
 </app-logical-operation>
 <app-relational-operation *ngSwitchCase="'RelationalOperation'"
+                            [ruleId]="ruleId"
                             [operation]="operation"
                             [listOfDevicesInHouse]="listOfDevicesInHouse"
                             [editHidden]="editHidden"

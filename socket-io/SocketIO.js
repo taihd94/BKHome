@@ -1,5 +1,4 @@
 const express = require('express');
-const ltctrMqttClient = require('../mqtt/lightingControl');
 
 const app = express();
 const http = require('http').Server(app);
@@ -7,6 +6,9 @@ const io = require('socket.io')(http);
 
 const LightingControl = require('../mongodb/home-model/lightingControl');
 const Rules = require('../mongodb/home-model/rules');
+
+const ltctrlMQTT = require('../mqtt/lightingControl');
+const accctrlMQTT = require('../mqtt/accessControl');
 
 
 io.on('connection', (socket) => {
@@ -32,7 +34,7 @@ io.on('connection', (socket) => {
     socket.broadcast.emit('device-event', light);
     LightingControl.findAndUpdateLight(light._id, light.value)
     .then(result=>{
-      ltctrMqttClient.send(result, light.value)
+      ltctrlClient.send(result, light.value)
       return Promise.resolve(true)
     })
     .then(()=>{
@@ -45,6 +47,17 @@ io.on('connection', (socket) => {
       console.log(err);
     })
   });
+
+  socket.on('access-control', message=>{
+    let sensor = message.sensor;
+    let command = message.command;
+    switch (sensor) {
+      case 'fingerprint':
+        accctrlMQTT.publish('fgss1/' + command, '')
+        break;
+      default:
+    }
+  })
 });
 
 

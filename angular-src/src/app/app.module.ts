@@ -33,6 +33,7 @@ import {HouseService} from './services/rest-api/house.service';
 import {DeviceService} from './services/rest-api/device.service';
 import {SceneService} from './services/rest-api/scene.service';
 import {RuleService} from './services/rest-api/rule.service';
+import {AccessControlService} from './services/rest-api/access-control.service';
 import {SocketioService} from './services/socketio.service';
 import {FlashMessagesModule} from 'angular2-flash-messages';
 import {AuthGuard} from './guards/auth.guard';
@@ -61,6 +62,8 @@ import { LogicalOperationComponent } from './components/config/rules/rule/ifcond
 import { LogicalOperation2ndLayerComponent } from './components/config/rules/rule/ifconditions/logical-operation/logical-operation-2nd-layer/logical-operation-2nd-layer.component';
 import { ThenactionsComponent } from './components/config/rules/rule/thenactions/thenactions.component';
 import { ActionComponent } from './components/config/rules/rule/thenactions/action/action.component';
+import { AccessControlComponent } from './components/config/access-control/access-control.component';
+import { UserAccctrlComponent } from './components/config/access-control/user-accctrl/user-accctrl.component';
 
 
 const appRoutes: Routes = [
@@ -75,7 +78,8 @@ const appRoutes: Routes = [
       {path: 'home/:id', component: ConfigHomeComponent, canActivate:[AuthGuard]},
       {path: 'devices', component: DevicesComponent, canActivate:[AuthGuard]},
       {path: 'scenes', component: ScenesComponent, canActivate:[AuthGuard]},
-      {path: 'rules', component: RulesComponent, canActivate:[AuthGuard]}
+      {path: 'rules', component: RulesComponent, canActivate:[AuthGuard]},
+      {path: 'access-control', component: AccessControlComponent, canActivate:[AuthGuard]}
     ]
   },
   {path:'devices', component: DevicesComponent, canActivate:[AuthGuard]}
@@ -110,7 +114,9 @@ const appRoutes: Routes = [
     LogicalOperationComponent,
     LogicalOperation2ndLayerComponent,
     ThenactionsComponent,
-    ActionComponent
+    ActionComponent,
+    AccessControlComponent,
+    UserAccctrlComponent
   ],
   imports: [
     UiSwitchModule,
@@ -141,7 +147,8 @@ const appRoutes: Routes = [
     BroadcasterService,
     MessageEventService,
     RuleService,
-    TestService
+    TestService,
+    AccessControlService
   ],
   bootstrap: [AppComponent]
 })

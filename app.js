@@ -32,6 +32,7 @@ const house = require('./routes/house');
 const devices = require('./routes/devices');
 const scenes = require('./routes/scenes');
 const rules = require('./routes/rules');
+const accessControl = require('./routes/access-control');
 
 // Port Number
 const port = 3000;
@@ -56,7 +57,7 @@ app.use('/house', house);
 app.use('/devices', devices);
 app.use('/scenes', scenes)
 app.use('/rules', rules);
-
+app.use('/access-control', accessControl);
 // Index Route
 app.get('/', (req, res) => {
   res.send('Invalid Endpoint');

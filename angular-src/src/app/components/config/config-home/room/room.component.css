@@ -112,7 +112,7 @@ input {
   padding: 0;
 }
 
-
+/*modal*/
 .modal-title {
   text-align: center;
 }
@@ -126,6 +126,34 @@ input {
   min-width: 80px;
   margin-left: 10px;
   margin-right: 10px;
+}
+/*modal*/
+
+/*model2*/
+
+.img-picker-dialog{
+  width: 80%;
+  margin-top: 6%;
+}
+
+.modal-header{
+  text-align: center;
+}
+
+.img-picker-body{
+  display: inline-block;
+}
+
+.img-picker-body>.row>.col-md-4>img{
+  margin: 10px 5px;
+  height: 87%;
+  width: 100%;
+  cursor: pointer;
+}
+/*modal2*/
+
+.imgNotAvailable>img{
+  cursor: pointer;
 }
 
 .form-group {
