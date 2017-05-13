@@ -10,7 +10,7 @@ client = mqtt.createClient(1883, 'localhost');
 client.subscribe('presence');
 
 rl.on('line', (line) => {
-  client.publish('connected', '1' + line);
+  client.publish('hello',line);
 });
 
 //client.end();

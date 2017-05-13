@@ -183,3 +183,38 @@ table {
   font-size: 15px;
   margin-left: 10px;
 }
+
+/*modal*/
+.modal-sm{
+  margin-top: 105px;
+}
+
+.modal-content{
+  background-color: #f8f5f0;
+}
+
+.modal-header{
+  padding: 29px 15px 0px 15px;
+}
+.modal-title {
+  text-align: center;
+  font-size: 20px;
+  line-height: 32px;
+}
+
+.modal-body{
+  margin: 0 auto;
+  text-align: right;
+  padding: 0px 15px 5px 15px;
+}
+
+.btn-modal {
+  width: 69px;
+  /* margin-left: 10px; */
+  /* margin-right: 10px; */
+  background-color: inherit;
+  color: #00BCD4;
+  font-size: 17px;
+}
+
+/*modal*/

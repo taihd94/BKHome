@@ -13,16 +13,19 @@ export class DevicesComponent implements OnInit, OnChanges {
              ) { }
 
 
-  listOfDevices: [Object];
+  listOfDevices: any;
 
 
   ngOnInit() {
-    this.deviceService.getListOfDevices().subscribe(devices=>{
-      this.listOfDevices = devices;
-    })
+    this.getListOfDevices();
   }
 
   ngOnChanges(){
+  }
 
+  getListOfDevices(){
+    this.deviceService.getListOfDevices().subscribe(devices=>{
+      this.listOfDevices = devices;
+    })
   }
 }

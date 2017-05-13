@@ -11,6 +11,7 @@ import { Router } from '@angular/router';
 })
 export class LightingcontrolComponent implements OnInit {
   @Input() lightingControl;
+  @Output() deleteDeviceEvent = new EventEmitter();
   constructor(
               private flashMessage: FlashMessagesService,
               private houseService: HouseService,
@@ -145,6 +146,15 @@ export class LightingcontrolComponent implements OnInit {
     }
     this.deviceService.updatePermission(this.lightingControl._id, json).subscribe(res=>{
       console.log(res);
+    })
+  }
+
+  deleteDevice(){
+    this.deviceService.deleteDevice(this.lightingControl._id).subscribe(res=>{
+      console.log(res);
+      if(res.success){
+        this.deleteDeviceEvent.emit();
+      }
     })
   }
 

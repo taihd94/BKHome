@@ -34,7 +34,7 @@ io.on('connection', (socket) => {
     socket.broadcast.emit('device-event', light);
     LightingControl.findAndUpdateLight(light._id, light.value)
     .then(result=>{
-      ltctrlClient.send(result, light.value)
+      ltctrlMQTT.send(result, light.value)
       return Promise.resolve(true)
     })
     .then(()=>{

@@ -11,6 +11,8 @@ import { Router } from '@angular/router';
 })
 export class SensorModuleComponent implements OnInit {
   @Input() sensorModule;
+  @Output() deleteDeviceEvent = new EventEmitter();
+
   constructor(
               private flashMessage: FlashMessagesService,
               private houseService: HouseService,
@@ -125,6 +127,15 @@ export class SensorModuleComponent implements OnInit {
       this.deviceService.updatePermission(this.sensorModule._id, json).subscribe(res=>{
         if(!res.success){
           console.log("something went wrong")
+        }
+      })
+    }
+
+    deleteDevice(){
+      this.deviceService.deleteDevice(this.sensorModule._id).subscribe(res=>{
+        console.log(res);
+        if(res.success){
+          this.deleteDeviceEvent.emit();
         }
       })
     }

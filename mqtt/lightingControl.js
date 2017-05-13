@@ -1,16 +1,15 @@
 const mqtt = require('mqtt');
-client = mqtt.connect('mqtt://localhost:1883');
+ltctrClient = mqtt.connect('mqtt://localhost:1883');
 // const LightingControl = require('../mongodb/home-model/lightingControl');
 
 
-client.on('connect',  () => {
-  client.subscribe('devices/lightingControl/+');
-  client.subscribe('lwt/lightingControl');
+ltctrClient.on('connect',  () => {
+  ltctrClient.subscribe('devices/lightingControl/+');
+  ltctrClient.subscribe('lwt/lightingControl');
 })
 
-client.on('message', (topic, message) => {
+ltctrClient.on('message', (topic, message) => {
     console.log("[" + topic + "]" + message);
-
 });
 
 let values = [];
@@ -22,6 +21,6 @@ module.exports.send = function(device, value){
       value = 1000;
     }
   }
-  client.publish('devices/' + device.deviceId, device.portId.toString() + value);
+  ltctrClient.publish('devices/' + device.deviceId, device.portId.toString() + value);
   //console.log('devices/' + device.deviceId, device.portId.toString() + value);
 }

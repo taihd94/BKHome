@@ -36,10 +36,11 @@ module.exports.findAndUpdateLight = function (lightId, value) {
   })
 }
 
-module.exports.authenticateDevices = function(newDevice) {
-  return LightingControl.findOne({deviceCode: newDevice.deviceCode})
+module.exports.authenticateDevices = function(data) {
+  return LightingControl.findOne({deviceCode: data.deviceCode})
   .then(device=>{
-    if(!device) return Promise.resolve(device._id)
+    if(!!device) return Promise.resolve(device._id)
+    let newDevice = new LightingControl(data);
     return newDevice.save().then(device=>{
       return Promise.resolve(device._id)
     })

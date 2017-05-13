@@ -124,4 +124,16 @@ router.get('/items/:id', (req, res, next)=>{
   })
 })
 
+router.delete('/:id', (req, res, next)=>{
+  let deviceId = req.params.id;
+  Devices.deleteDevice(deviceId)
+  .then(result=>{
+    res.json({success: true, msg: 'device has been deleted'})
+  })
+  .catch(err=>{
+    console.log(err)
+    res.json({success: false, msg: err.message})
+  })
+})
+
 module.exports = router;

@@ -59,12 +59,16 @@ module.exports.updatePermission = function(deviceId, permission){
   })
 }
 
-module.exports.getListOfDevicesInRoom = function(roomId, callback){
+module.exports.getListOfDevicesInRoom = function(roomId){
   return Devices.find({'roomId': roomId})
   .then(devices=>{
     if(!devices.length) return Promise.resolve('No device has roomId: ' + roomId)
     return Promise.resolve(devices)
   })
+}
+
+module.exports.deleteDevice = function (id) {
+  return Devices.findByIdAndRemove(id);
 }
 
 // module.exports.getListOfDevicesInHouse = function(callback){
