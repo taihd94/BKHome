@@ -24,8 +24,9 @@ io.on('connection', (socket) => {
   })
 
   socket.on('sensor-event', message=>{
+    console.log('---socket------sensor-event-------')
     console.log(message);
-    socket.broadcast.emit(message._id, message.value);
+    socket.broadcast.emit('device-event', message);
   })
 
   socket.on('device-event', (light) => {

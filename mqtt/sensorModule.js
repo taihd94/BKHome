@@ -12,15 +12,21 @@ ssmdClient.on('connect',  () => {
 ssmdClient.on('message', (topic, message) => {
     console.log("[" + topic + "]\n\r");
     deviceId = topic.split("/")[2];
-    try{
-      let sensorModule = JSON.parse(message);
-      return SensorModule.updateSensorValue(deviceId, sensorModule)
-      .then(sensors=>{
-        for(let sensor of sensors){
-          socket.emit('sensor-event', sensor);
-        }
-      })
-    }catch(err) {
+    let promise = new Promise((resolve, reject)=>{
+      resolve(JSON.parse(message))
+    })
+    promise.then(module=>{
+      console.log('//////////////')
+      console.log(module)
+      return SensorModule.updateSensorValue(deviceId, module)
+    })
+    .then(module=>{
+      // console.log(module.sensors)
+      for(let sensor of module.sensors){
+        socket.emit('sensor-event', sensor);
+      }
+    })
+    .catch(err=> {
       console.log(err);
-    }
+    })
 });

@@ -57,12 +57,13 @@ module.exports.updateSensors = function(deviceId, sensorModule){
 }
 
 
-module.exports.authenticateDevices = function(newDevice) {
-  return SensorModule.findOne({deviceCode: newDevice.deviceCode})
+module.exports.authenticateDevices = function(data) {
+  return SensorModule.findOne({deviceCode: data.deviceCode})
   .then(device=>{
-    if(!device) return Promise.resolve(device._id)
+    if(!!device) return Promise.resolve(device)
+    let newDevice = new SensorModule(data);
     return newDevice.save().then(device=>{
-      return Promise.resolve(device._id)
+      return Promise.resolve(device)
     })
   })
 };
