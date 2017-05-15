@@ -24,7 +24,7 @@ export class LightComponent implements OnInit, OnDestroy {
     this.lightValue = this.switchValue = this.light.value;
     this.messageEvent = this.messageSerivce.on(this.light._id)
      .subscribe((message:any) => {
-       this.lightValue = message.value;
+       this.lightValue = message;
        this.preLightValue = this.switchValue = this.lightValue;
        console.log(message);
     });

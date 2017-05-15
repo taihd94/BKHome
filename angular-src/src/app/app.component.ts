@@ -26,7 +26,7 @@ export class AppComponent {
       this.socket = io(this.url);
 
       this.socket.on('device-event', (data) => {
-        this.messageEvent.emit(data._id, data);
+        this.messageEvent.emit(data._id, data.value);
       });
 
       this.messageEvent.on('device-event')

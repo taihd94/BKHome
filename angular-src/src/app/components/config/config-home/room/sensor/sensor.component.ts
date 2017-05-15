@@ -18,8 +18,8 @@ export class SensorComponent implements OnInit {
     this.value = this.sensor.value;
     this.messageEvent.emit("socketOn", this.sensor._id);
     this.messageEvent.on(this.sensor._id)
-     .subscribe(value => {
-       this.value = value;
+     .subscribe(message => {
+       this.value = message;
     });
   }
 

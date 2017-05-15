@@ -1832,7 +1832,7 @@ var AppComponent = (function () {
         var _this = this;
         this.socket = __WEBPACK_IMPORTED_MODULE_4_socket_io_client__(this.url);
         this.socket.on('device-event', function (data) {
-            _this.messageEvent.emit(data._id, data);
+            _this.messageEvent.emit(data._id, data.value);
         });
         this.messageEvent.on('device-event')
             .subscribe(function (message) {
@@ -2385,7 +2385,7 @@ var LightComponent = (function () {
         this.lightValue = this.switchValue = this.light.value;
         this.messageEvent = this.messageSerivce.on(this.light._id)
             .subscribe(function (message) {
-            _this.lightValue = message.value;
+            _this.lightValue = message;
             _this.preLightValue = _this.switchValue = _this.lightValue;
             console.log(message);
         });
@@ -2581,8 +2581,8 @@ var SensorComponent = (function () {
         this.value = this.sensor.value;
         this.messageEvent.emit("socketOn", this.sensor._id);
         this.messageEvent.on(this.sensor._id)
-            .subscribe(function (value) {
-            _this.value = value;
+            .subscribe(function (message) {
+            _this.value = message;
         });
     };
     __decorate([
