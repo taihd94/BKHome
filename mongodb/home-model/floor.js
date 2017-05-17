@@ -7,7 +7,7 @@ var FloorSchema = new Schema({
       {
           name: String,
           imgPath: String,
-          devices: [{type: Schema.Types.ObjectId, ref: 'devices'}]
+          devices: [{type: Schema.Types.ObjectId, unique: true, ref: 'devices'}]
       }
     ]
 }, {versionKey: false});
@@ -46,7 +46,7 @@ module.exports.getListOfRooms = function(floorId){
 module.exports.deleteRoom = function(roomId){
   return Floor.findOne({"rooms._id": roomId})
   .then(floor=>{
-    if(!floor) throw new Error('No floor has room: ' + roomId)
+    if(!floor) throw new Error('No floor contains room: ' + roomId)
     floor.rooms.id(roomId).remove()
     return floor.save()
   })
@@ -82,7 +82,7 @@ module.exports.updateImgPath = function(floorId, roomId, imgPath) {
 module.exports.getFloorAndRoomByRoomId = function(roomId){
   return Floor.findOne({'rooms._id': roomId})
   .then(floor=>{
-    if(!floor) return Promise.reject('No floor has room: ' + roomId)
+    if(!floor) return Promise.reject('No floor contains room: ' + roomId)
     let room = floor.rooms.id(roomId);
     return Promise.resolve({floorName: floor.name, roomName: room.name})
   })
@@ -92,29 +92,18 @@ module.exports.updateDeviceToRoom = function (deviceId, roomId) {
   return Floor.findOne({'rooms.devices': deviceId})
   .then(floor=>{
     if(!!floor){
-      let rooms = floor.rooms;
-      for(let room of rooms){
-        let devices = room.devices
-        let deviceFilter = devices.filter(device=>{
-          return device.toString() === deviceId.toString();
-        }).pop();
-        if(!!deviceFilter){
-          if(room._id != roomId){
-            let index = devices.indexOf(deviceId);
-            floor.rooms.id(room._id).devices.splice(index, 1);
-            floor.rooms.id(roomId).devices.push(deviceId);
-            return floor.save()
-          }
-        }
-      }
-    } else {
-      return Floor.findOne({'rooms._id': roomId})
-      .then(floor=>{
-        if(!floor) throw new Error('No floor has room: ' + roomId)
-        floor.rooms.id(roomId).devices.push(deviceId);
-        return floor.save()
+      floor.rooms.forEach(room=>{
+        let index = room.devices.indexOf(deviceId);
+        if(index!=-1) floor.rooms.id(room._id).devices.splice(index,1)
       })
+      floor.save()
     }
+    return Floor.findOne({'rooms._id': roomId})
+  })
+  .then(floor=>{
+    if(!floor) throw new Error('No floor contains room: ' + roomId)
+    floor.rooms.id(roomId).devices.push(deviceId);
+    floor.save()
   })
   .then(()=>{
     return Promise.resolve('Successfully saved deviceId to room');
