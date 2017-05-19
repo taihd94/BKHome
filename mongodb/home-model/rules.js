@@ -269,8 +269,13 @@ function operationSatisfied(operation) {
     })
     .then(actions=>{
       for(let action of actions){
-        let msg = {_id: action.deviceId, value: action.value}
-        socket.emit('device-event', msg)
+        LightingControl.getLightDetails(action.deviceId)
+        .then(light=>{
+          if(action.value!=light.value){
+            let msg = {_id: action.deviceId, value: action.value}
+            socket.emit('device-event', msg)
+          }
+        })
       }
     })
   }

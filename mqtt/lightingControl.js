@@ -3,7 +3,7 @@ const client = mqtt.connect('mqtt://localhost:1883');
 const LightingControl = require('../mongodb/home-model/lightingControl');
 
 client.on('connect',  () => {
-  client.subscribe('devices/+/+');
+  client.subscribe('devices/lighting-control/+/+');
   client.subscribe('lwt/lightingControl');
 })
 
@@ -11,8 +11,8 @@ client.on('message', (topic, message) => {
     // console.log("log from lightingcontrol")
     console.log(topic + ": " + message);
     let arr = topic.split('/')
-    let deviceId = arr[1]
-    let portId = arr[2]
+    let deviceId = arr[2]
+    let portId = arr[3]
     let value = parseInt(message.toString())
     LightingControl.getLightIdByDeviceId(deviceId, portId)
     .then(lightId=>{
