@@ -1,15 +1,16 @@
 const mqtt = require('mqtt');
-ssmdClient = mqtt.connect('mqtt://localhost:1883');
-const socket = require('../socket-io/socketio-client');
+const client = mqtt.connect('mqtt://localhost:1883');
+const io = require('../socket-io/SocketIO');
 
 const SensorModule = require('../mongodb/home-model/sensorModule');
 
-ssmdClient.on('connect',  () => {
-  ssmdClient.subscribe('devices/sensorModule/+');
-  ssmdClient.subscribe('lwt/sensorModule');
+client.on('connect',  () => {
+  client.subscribe('devices/sensorModule/+');
+  client.subscribe('lwt/sensorModule');
 })
 
-ssmdClient.on('message', (topic, message) => {
+client.on('message', (topic, message) => {
+    // console.log("log from sensor module")
     console.log("[" + topic + "]\n\r");
     deviceId = topic.split("/")[2];
     let promise = new Promise((resolve, reject)=>{
@@ -21,12 +22,14 @@ ssmdClient.on('message', (topic, message) => {
       return SensorModule.updateSensorValue(deviceId, module)
     })
     .then(module=>{
-      // console.log(module.sensors)
+      console.log(module.sensors)
       for(let sensor of module.sensors){
-        socket.emit('sensor-event', sensor);
+        io.sockets.emit('device-event', sensor);
       }
     })
     .catch(err=> {
       console.log(err);
     })
 });
+
+module.exports = client;

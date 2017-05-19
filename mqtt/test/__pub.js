@@ -10,7 +10,7 @@ client = mqtt.createClient(1883, 'localhost');
 client.subscribe('presence');
 
 rl.on('line', (line) => {
-  client.publish('hello',line);
+  client.publish('access-control/fingerprint/authenticate/found-id',line);
 });
 
 //client.end();

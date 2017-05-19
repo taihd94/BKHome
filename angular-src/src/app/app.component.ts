@@ -34,7 +34,7 @@ export class AppComponent {
         this.socket.emit("device-event", message);
       })
 
-      this.socket.on('access-control', data=>{
+      this.socket.on('access-control/fingerprint/message', data=>{
         this.messageEvent.emit('access-control/receive', data);
       })
 

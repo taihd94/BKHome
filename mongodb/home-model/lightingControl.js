@@ -105,3 +105,15 @@ module.exports.getLightsDetails = function(listOfLights){
   }
   return forLoop(0);
 }
+
+module.exports.getLightIdByDeviceId = (deviceId, portId) =>{
+  return LightingControl.findById(deviceId)
+  .then(device=>{
+    if(!device) throw new Error('Device not found')
+    let lights = device.lights;
+    let light = lights.filter(light=>{
+      return light.portId == portId
+    }).pop()
+    return Promise.resolve(light._id)
+  })
+}

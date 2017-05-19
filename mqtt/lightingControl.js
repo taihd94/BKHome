@@ -1,26 +1,32 @@
 const mqtt = require('mqtt');
-ltctrClient = mqtt.connect('mqtt://localhost:1883');
-// const LightingControl = require('../mongodb/home-model/lightingControl');
+const client = mqtt.connect('mqtt://localhost:1883');
+const LightingControl = require('../mongodb/home-model/lightingControl');
 
-
-ltctrClient.on('connect',  () => {
-  ltctrClient.subscribe('devices/lightingControl/+');
-  ltctrClient.subscribe('lwt/lightingControl');
+client.on('connect',  () => {
+  client.subscribe('devices/+/+');
+  client.subscribe('lwt/lightingControl');
 })
 
-ltctrClient.on('message', (topic, message) => {
-    console.log("[" + topic + "]" + message);
+client.on('message', (topic, message) => {
+    // console.log("log from lightingcontrol")
+    console.log(topic + ": " + message);
+    let arr = topic.split('/')
+    let deviceId = arr[1]
+    let portId = arr[2]
+    let value = parseInt(message.toString())
+    LightingControl.getLightIdByDeviceId(deviceId, portId)
+    .then(lightId=>{
+      let message = {
+        _id: lightId,
+        value: value
+      }
+      console.log(message)
+      io.sockets.emit('device-event', message)
+    })
+    .catch(err=>{
+      console.log(err)
+    })
 });
 
-let values = [];
-module.exports.send = function(device, value){
-  //console.log(message);
-  if(device.dimmable){
-    value = Math.round(Math.acos(Math.sqrt(value/100))/(Math.PI*50)*1000000);
-    if(value<1000){
-      value = 1000;
-    }
-  }
-  ltctrClient.publish('devices/' + device.deviceId, device.portId.toString() + value);
-  //console.log('devices/' + device.deviceId, device.portId.toString() + value);
-}
+module.exports = client
+const io = require('../socket-io/SocketIO');

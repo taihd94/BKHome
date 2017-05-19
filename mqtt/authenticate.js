@@ -1,14 +1,15 @@
 const mqtt = require('mqtt');
-authClient = mqtt.connect('mqtt://localhost:1883');
+const client = mqtt.connect('mqtt://localhost:1883');
 const LightingControl = require('../mongodb/home-model/lightingControl');
 const SensorModule = require('../mongodb/home-model/sensorModule');
 
 
-authClient.on('connect',  () => {
-  authClient.subscribe('authenticate');
+client.on('connect',  () => {
+  client.subscribe('authenticate');
 })
 
-authClient.on('message', (topic, message) => {
+client.on('message', (topic, message) => {
+    // console.log("log from authenticate")
     console.log("[" + topic + "]" + message);
     let promise = new Promise((resolve, reject)=>{
       resolve(JSON.parse(message))
@@ -24,10 +25,11 @@ authClient.on('message', (topic, message) => {
     .then(device=>{
       console.log(device)
       console.log('authenticate/' + device.deviceCode, device._id.toString());
-      authClient.publish('authenticate/' + device.deviceCode, device._id.toString());
-      // authClient.publish('helloasdfasfefadf/lt04', '59117556dca0240a35657120');
+      client.publish('authenticate/' + device.deviceCode, device._id.toString());
     })
     .catch(err=>{
       console.log(err)
     })
 });
+
+module.exports = client;

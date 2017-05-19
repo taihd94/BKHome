@@ -1838,7 +1838,7 @@ var AppComponent = (function () {
             .subscribe(function (message) {
             _this.socket.emit("device-event", message);
         });
-        this.socket.on('access-control', function (data) {
+        this.socket.on('access-control/fingerprint/message', function (data) {
             _this.messageEvent.emit('access-control/receive', data);
         });
         this.messageEvent.on('access-control')
