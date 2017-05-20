@@ -55,7 +55,7 @@ export class UserService {
   }
 
   loggedIn(){
-    return tokenNotExpired();
+    return tokenNotExpired(AuthConfigConsts.DEFAULT_TOKEN_NAME);
   }
 
 }
