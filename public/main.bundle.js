@@ -5294,9 +5294,11 @@ var AuthGuard = (function () {
     ;
     AuthGuard.prototype.canActivate = function () {
         if (this.authService.loggedIn()) {
+            console.log("true-blahbalhbal");
             return true;
         }
         else {
+            console.log("false-blahbalhbal");
             this.router.navigate(['/login']);
         }
     };
