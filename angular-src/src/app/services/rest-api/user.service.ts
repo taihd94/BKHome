@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import {Http, Headers} from '@angular/http';
 import 'rxjs/add/operator/map';
-import {tokenNotExpired} from 'angular2-jwt';
+import {tokenNotExpired, AuthConfigConsts} from 'angular2-jwt';
 import {environment} from '../../../environments/environment';
 
 @Injectable()
@@ -37,14 +37,14 @@ export class UserService {
   }
 
   storeUserData(token, user){
-    localStorage.setItem('id_token', token);
+    localStorage.setItem( AuthConfigConsts.DEFAULT_TOKEN_NAME, token);
     localStorage.setItem('user', JSON.stringify(user));
     this.authToken = token;
     this.user = user;
   }
 
   loadToken(){
-    const token = localStorage.getItem('id_token');
+    const token = localStorage.getItem(AuthConfigConsts.DEFAULT_TOKEN_NAME);
     this.authToken = token;
   }
 

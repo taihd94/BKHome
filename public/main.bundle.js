@@ -1719,13 +1719,13 @@ var UserService = (function () {
             .map(function (res) { return res.json(); });
     };
     UserService.prototype.storeUserData = function (token, user) {
-        localStorage.setItem('id_token', token);
+        localStorage.setItem(__WEBPACK_IMPORTED_MODULE_3_angular2_jwt__["AuthConfigConsts"].DEFAULT_TOKEN_NAME, token);
         localStorage.setItem('user', JSON.stringify(user));
         this.authToken = token;
         this.user = user;
     };
     UserService.prototype.loadToken = function () {
-        var token = localStorage.getItem('id_token');
+        var token = localStorage.getItem(__WEBPACK_IMPORTED_MODULE_3_angular2_jwt__["AuthConfigConsts"].DEFAULT_TOKEN_NAME);
         this.authToken = token;
     };
     UserService.prototype.logout = function () {
