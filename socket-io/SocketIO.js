@@ -6,6 +6,7 @@ const io = require('socket.io')(http);
 
 const LightingControl = require('../mongodb/home-model/lightingControl');
 const Rules = require('../mongodb/home-model/rules');
+const AccessControl = require('../mongodb/home-model/accessControl');
 
 // const ltctrlMQTT = require('../mqtt/lightingControl');
 // const fingerPrintClient = require('../mqtt/access-control/fingerprint');
@@ -59,13 +60,26 @@ io.on('connection', (socket) => {
   });
 
   socket.on('access-control/fingerprint', message=>{
-    let sensor = message.sensor;
     let command = message.command;
-    switch (sensor) {
-      case 'fingerprint':
-        mqttClient.publish('fgss1/' + command, '')
+    let user = message.user
+    console.log(message)
+    switch(command){
+      case 'enrol':
+        mqttClient.publish('fgss1/' + command, user);
         break;
-      default:
+      case 'deleteFingerprints':
+        AccessControl.getListOfFingerprints(user)
+        .then(fingerprints=>{
+          mqttClient.publish('fgss1/deleteFingerprints', fingerprints.toString())
+          return Promise.resolve()
+        })
+        .then(()=>{
+          return AccessControl.deleteFingerprints(user)
+        })
+        .catch(err=>{
+          console.log(err)
+        })
+        break;
     }
   })
 });

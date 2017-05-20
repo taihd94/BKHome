@@ -31,6 +31,8 @@ export class UserAccctrlComponent implements OnInit, OnChanges {
       this.user.imgPath = "./assets/images/avatars/NoAvatar.jpg";
     }
 
+    this.isFingerprintAvailable = !!this.user.fingerprintId.length;
+
     this.avatar = this.user.imgPath;
     this.sensorMessage = "Place your finger";
     this.sensorMessage2 = "on the sensor";
@@ -56,23 +58,28 @@ export class UserAccctrlComponent implements OnInit, OnChanges {
     this.sensorMessage = "Place your finger";
     this.sensorMessage2 = "on the sensor";
 
-    this.messageHandle = this.messageEvent.on('access-control/receive').subscribe((message:String)=>{
+    this.messageHandle = this.messageEvent.on('access-control/fingerprint/enrol/message').subscribe((message:String)=>{
       console.log(message);
       this.sensorMessage2 = '';
       this.sensorMessage = message;
       if(message==="Complete!"){
+        this.isFingerprintAvailable = true;
         this.messageHandle.unsubscribe();
       }
     })
     let message = {
-      sensor: 'fingerprint',
-      command: 'enrol'
+      command: 'enrol',
+      user: this.user._id
     }
-    this.messageEvent.emit('access-control', message);
+    this.messageEvent.emit('access-control/fingerprint', message);
   }
 
   unSubscribe(){
     this.messageHandle.unsubscribe();
+    let message = {
+      command: 'authenticate'
+    }
+    this.messageEvent.emit('access-control/fingerprint', message);
   }
 
   deleteUser(){
@@ -80,6 +87,15 @@ export class UserAccctrlComponent implements OnInit, OnChanges {
       console.log(res);
       this.deleteUserEvent.emit();
     })
+  }
+
+  deleteAllFingerprint(){
+    let message = {
+      command: 'deleteFingerprints',
+      user: this.user._id
+    }
+    this.messageEvent.emit('access-control/fingerprint', message);
+    this.isFingerprintAvailable = false;
   }
 
 }

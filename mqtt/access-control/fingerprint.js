@@ -2,6 +2,8 @@ const mqtt = require('mqtt');
 const client = mqtt.connect('mqtt://localhost:1883');
 const io = require('../../socket-io/SocketIO');
 
+const AccessControl = require('../../mongodb/home-model/accessControl');
+
 client.on('connect',  () => {
   client.subscribe('access-control/fingerprint/#');
   client.subscribe('lwt/access-control/fingerprint');
@@ -10,9 +12,25 @@ client.on('connect',  () => {
 
 client.on('message', (topic, message) => {
   // console.log("log from fingerprint")
-  console.log('--MQTT-------------------------')
   console.log("[" + topic + "]\n\r" + message);
-  io.sockets.emit('access-control/fingerprint/message', message.toString());
+  let promise = new Promise((resolve,reject)=>{
+    switch(topic){
+      case 'access-control/fingerprint/enrol/message':
+        io.sockets.emit('access-control/fingerprint/enrol/message', message.toString());
+        return resolve(true);
+      case 'access-control/fingerprint/enrol/complete':
+        let json = JSON.parse(message);
+        let userId = json.userId;
+        let fingerprintId = json.fingerprintId;
+        console.log(userId);
+        console.log(fingerprintId);
+        return resolve(AccessControl.updateFingerprintId(userId, fingerprintId))
+    }
+  })
+  promise.catch(err=>{
+    console.log(err)
+  })
+
 });
 
 module.exports = client;

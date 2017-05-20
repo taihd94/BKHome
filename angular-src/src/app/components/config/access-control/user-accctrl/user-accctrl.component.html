@@ -88,7 +88,7 @@
   </div>
 </div>
 
-<div bsModal #smModal2="bs-modal" class="modal fade modal2" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true" (focusout)="unSubscribe()">
+<div bsModal #smModal2="bs-modal" class="modal fade modal2" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true" (focusout)="unSubscribe();smModal2.hide()">
   <div class="modal-dialog modal-sm modal-add-fingerprint" >
     <div class="modal-content enrol-fingerprint">
       <div class="modal-header">
@@ -125,7 +125,7 @@
       </div>
       <div class="modal-body">
         <button type="button" class="btn btn-modal" (click)="smModal3.hide()">No</button>
-        <button type="button" class="btn btn-modal" (click)="smModal3.hide()">Yes</button>
+        <button type="button" class="btn btn-modal" (click)="smModal3.hide();deleteAllFingerprint()">Yes</button>
       </div>
     </div>
   </div>

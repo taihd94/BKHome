@@ -34,13 +34,14 @@ export class AppComponent {
         this.socket.emit("device-event", message);
       })
 
-      this.socket.on('access-control/fingerprint/message', data=>{
-        this.messageEvent.emit('access-control/receive', data);
+      this.socket.on('access-control/fingerprint/enrol/message', data=>{
+        console.log(data)
+        this.messageEvent.emit('access-control/fingerprint/enrol/message', data);
       })
 
-      this.messageEvent.on('access-control')
+      this.messageEvent.on('access-control/fingerprint')
       .subscribe(message=>{
-        this.socket.emit("access-control", message);
+        this.socket.emit("access-control/fingerprint", message);
       })
    }
 }
