@@ -1,6 +1,7 @@
 const mqtt = require('mqtt');
 const client = mqtt.connect('mqtt://localhost:1883');
 const LightingControl = require('../mongodb/home-model/lightingControl');
+const Rules = require('../mongodb/home-model/rules');
 
 client.on('connect',  () => {
   client.subscribe('devices/lighting-control/+/+');
@@ -22,6 +23,13 @@ client.on('message', (topic, message) => {
       }
       console.log(message)
       io.sockets.emit('device-event', message)
+      return Promise.resolve(message);
+    })
+    .then(light=>{
+      return Rules.checkOperations(light);
+    })
+    .then(result=>{
+      // console.log(result)
     })
     .catch(err=>{
       console.log(err)

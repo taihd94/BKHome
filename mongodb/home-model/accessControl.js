@@ -5,7 +5,8 @@ const AccessControlSchema = new Schema({
     name: String,
     imgPath: String,
     fingerprintId: [Number],
-    rfid: [Number]
+    rfid: [Number],
+    face: [Number]
 }, {versionKey: false});
 
 const AccessControl = module.exports = mongoose.model('accessControl', AccessControlSchema);

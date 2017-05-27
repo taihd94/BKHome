@@ -1,10 +1,14 @@
+.ss{
+  font-size: 20px;
+  float: left;
+  margin: 9px 11%;
+}
 .fa{
-  margin: 0 10px 0 10px;
+   margin-right: 5px;
 }
 
 .fa-sun-o{
-  margin-left: 7px;
-  margin-right: 8px;
+  margin-left: -5px;
 }
 
 input{
@@ -12,4 +16,15 @@ input{
   border: 0px;
   width: 27px;
   direction: rtl;
+}
+
+.doors{
+  margin-top: 20px;
+}
+
+.door{
+  max-width: 40%;
+  height: auto;
+  margin: 20px 10px;
+  float: left;
 }

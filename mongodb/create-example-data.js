@@ -48,6 +48,10 @@ var sensor_id_3 = new mongoose.Types.ObjectId();
 var sensor_id_4 = new mongoose.Types.ObjectId();
 var sensor_id_5 = new mongoose.Types.ObjectId();
 var sensor_id_6 = new mongoose.Types.ObjectId();
+var sensor_id_7 = new mongoose.Types.ObjectId();
+var sensor_id_8 = new mongoose.Types.ObjectId();
+var sensor_id_9 = new mongoose.Types.ObjectId();
+var sensor_id_10 = new mongoose.Types.ObjectId();
 var condition_id_1 = new mongoose.Types.ObjectId();
 var condition_id_2 = new mongoose.Types.ObjectId();
 var condition_id_3 = new mongoose.Types.ObjectId();
@@ -133,11 +137,11 @@ var lightingControl = [
             _id: light_id_2,
             portId: 2,
             name: 'Light 2',                  // Ex: 'Light 1', 'Light 2',...
-            typeOfLight: 'null',                  // Ex: 'Neon', 'Compact',...
+            typeOfLight: 'RGB',                  // Ex: 'Neon', 'Compact',...
             dimmable: false,         // Ex: 'ON/OFF', 'DIM'
             life_time: 000,             // Ex: 6000 hours
             power: 000,                 // Ex: 60 watt
-            value: 0
+            value: 0xFFFFFF
         },
         {
             _id: light_id_3,
@@ -207,7 +211,7 @@ var sensorModule = [
   new SensorModule({
       deviceCode: 'ss01',                 // Ex: 'ss123'
       deviceType: 'SensorModule',         // 'SensorModule'
-      numberOfSensors: 3,                 // Ex: '1 ss', '4 ss',
+      numberOfSensors: 5,                 // Ex: '1 ss', '4 ss',
       allowedToAccess: false,
       battery: 60,      // Ex: '60%', '80%'
       sensors: [
@@ -228,6 +232,18 @@ var sensorModule = [
           name: 'Light',
           _type: 'Light',
           value: 255
+        },
+        {
+          _id: sensor_id_4,
+          name: 'Door',
+          _type: 'Door',
+          value: 1
+        },
+        {
+          _id: sensor_id_5,
+          name: 'Window',
+          _type: 'Window',
+          value: 1
         }
       ]
   }),
@@ -239,22 +255,34 @@ var sensorModule = [
       battery: 80,      // Ex: '60%', '80%'
       sensors: [
         {
-          _id: sensor_id_4,
+          _id: sensor_id_6,
           name: 'Temp',
           _type: 'Temperature',
           value: 21
         },
         {
-          _id: sensor_id_5,
+          _id: sensor_id_7,
           name: 'Humi',
           _type: 'Humidity',
           value: 70
         },
         {
-          _id: sensor_id_6,
+          _id: sensor_id_8,
           name: 'light',
           _type: 'Light',
           value: 332
+        },
+        {
+          _id: sensor_id_9,
+          name: 'Door',
+          _type: 'Door',
+          value: 0
+        },
+        {
+          _id: sensor_id_10,
+          name: 'Window',
+          _type: 'Window',
+          value: 0
         }
       ]
   })

@@ -14,6 +14,7 @@ export class LightComponent implements OnInit, OnDestroy {
   lightValue: Number;
   preLightValue: Number;
   switchValue: Number;
+  color: any;
 
   constructor(
     private messageSerivce: MessageEventService,
@@ -22,6 +23,8 @@ export class LightComponent implements OnInit, OnDestroy {
 
   ngOnInit() {
     this.lightValue = this.switchValue = this.light.value;
+    this.color = this.VBColorToHEX(this.lightValue);
+    console.log(this.color);
     this.messageEvent = this.messageSerivce.on(this.light._id)
      .subscribe((message:any) => {
        this.lightValue = message;
@@ -43,16 +46,31 @@ export class LightComponent implements OnInit, OnDestroy {
     this.messageSerivce.emit("device-event", message);
   }
 
-  getValue(value){
-    this.preLightValue = this.switchValue = value;
-
-    if(!this.light.dimmable){
-      value = value&1;
+  getSwitchValue(value){
+    if(this.light.typeOfLight=="RGB"){
+      if(value){
+        if(!this.preLightValue){
+          this.preLightValue = 16777215;
+        }
+        this.lightValue = this.preLightValue;
+        this.color = this.VBColorToHEX(this.lightValue);
+        this.sendMessage(this.lightValue);
+      } else {
+        this.lightValue = 0;
+        this.color = "#000";
+        this.sendMessage(this.lightValue);
+      }
+    } else {
+      this.sendMessage(value&1);
     }
+  }
+
+  getSliderValue(value){
+    this.preLightValue = this.switchValue = value;
     this.sendMessage(value);
   }
 
-  getSwitchValue(value){
+  getSwitchValue_Dimmer(value){
     if(!value){
       this.lightValue = 0;
     } else {
@@ -62,6 +80,21 @@ export class LightComponent implements OnInit, OnDestroy {
         this.lightValue = this.preLightValue;
       }
     }
+    this.sendMessage(this.lightValue);
+  }
+
+  HEXToVBColor(rrggbb) {
+    rrggbb = rrggbb=="#fff" ? "#ffffff" : rrggbb=="#f00" ? "#ff0000" : rrggbb=="#0f0" ? "#00ff00" : rrggbb=="#00f" ? "#0000ff" : rrggbb;
+    return parseInt(rrggbb.replace('#',''), 16);
+  }
+
+  VBColorToHEX(value){
+    if(!value) return "#000"
+    return '#' + value.toString(16)
+  }
+
+  getColor(value){
+    this.lightValue = this.preLightValue = this.HEXToVBColor(value);
     this.sendMessage(this.lightValue);
   }
 

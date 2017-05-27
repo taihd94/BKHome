@@ -31,7 +31,7 @@ module.exports.findAndUpdateLight = function (lightId, value) {
     let light = device.lights.id(lightId);
     light.value = value;
     return device.save().then(device=>{
-      return Promise.resolve({deviceId: device._id, portId: light.portId, dimmable: light.dimmable})
+      return Promise.resolve({deviceId: device._id, portId: light.portId, dimmable: light.dimmable, typeOfLight: light.typeOfLight})
     })
   })
 }
@@ -59,7 +59,7 @@ module.exports.updateLights = function(deviceId, lightingControl){
   })
 }
 
-module.exports.getLightDetails = function(lightId, callback){
+module.exports.getLightDetails = function(lightId){
   return LightingControl.findOne({"lights._id": lightId})
   .then(device=>{
     if(!device) throw new Error('No LightingControl has light: ' + lightId)

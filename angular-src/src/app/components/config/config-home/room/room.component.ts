@@ -24,7 +24,7 @@ export class RoomComponent implements OnInit, OnDestroy {
   devices: any;
   lightingControls = [];
   sensorModules = [];
-
+  smModal: any;
   constructor(
                 private flashMessage: FlashMessagesService,
                 private houseService: HouseService,
@@ -40,11 +40,22 @@ export class RoomComponent implements OnInit, OnDestroy {
           for(let device of this.devices){
             switch(device.deviceType){
               case "LightingControl":
-                this.lightingControls.push(device);
+                this.lightingControls.push(...device.lights);
                 break;
               case "SensorModule":
-                this.sensorModules.push(device);
+                this.sensorModules.push(...device.sensors);
                 break;
+            }
+          }
+          for(let i=0; i<this.sensorModules.length; i++){
+            if(this.sensorModules[i]._type=="Door"){
+              let tmp =  this.sensorModules[0];
+              this.sensorModules[0] = this.sensorModules[i];
+              this.sensorModules[i] = tmp;
+            } else if(this.sensorModules[i]._type=="Window"){
+              let tmp =  this.sensorModules[1];
+              this.sensorModules[1] = this.sensorModules[i];
+              this.sensorModules[i] = tmp;
             }
           }
         }

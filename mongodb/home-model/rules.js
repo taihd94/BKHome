@@ -271,10 +271,10 @@ function operationSatisfied(operation) {
       for(let action of actions){
         LightingControl.getLightDetails(action.deviceId)
         .then(light=>{
-          if(action.value!=light.value){
-            let msg = {_id: action.deviceId, value: action.value}
-            socket.emit('device-event', msg)
-          }
+          let msg = {_id: light._id, value: action.value}
+          socket.emit('device-event', msg)
+          if(light.typeOfLight==="Alarm")
+            socket.emit('security-event', light)
         })
       }
     })

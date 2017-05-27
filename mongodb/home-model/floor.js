@@ -17,25 +17,25 @@ const Devices = require('./devices');
 const LightingControl = require('./lightingControl');
 const SensorModule = require('./sensorModule');
 
-module.exports.getListOfFloors = function(){
+module.exports.getListOfFloors = () => {
   return Floor.find()
 }
 
-module.exports.addfloor = function(newFloor){
+module.exports.addfloor = (newFloor) => {
   return newFloor.save()
   .then(floor=>{
     return Promise.resolve('Successfully added new floor')
   })
 }
 
-module.exports.deletefloor = function(id){
+module.exports.deletefloor = (id) => {
   return Floor.findByIdAndRemove(id)
   .then(()=>{
     return Promise.resolve('Floor has been deleted')
   })
 }
 
-module.exports.getListOfRooms = function(floorId){
+module.exports.getListOfRooms = (floorId) => {
   return Floor.findById(floorId)
   .then(floor=>{
     if(!floor) throw new Error('Floot not found: ' + floorId)
@@ -43,7 +43,7 @@ module.exports.getListOfRooms = function(floorId){
   })
 }
 
-module.exports.deleteRoom = function(roomId){
+module.exports.deleteRoom = (roomId) => {
   return Floor.findOne({"rooms._id": roomId})
   .then(floor=>{
     if(!floor) throw new Error('No floor contains room: ' + roomId)
@@ -55,7 +55,7 @@ module.exports.deleteRoom = function(roomId){
   })
 }
 
-module.exports.addNewRoom = function(floorId, newRoom){
+module.exports.addNewRoom = (floorId, newRoom) => {
   return Floor.findById(floorId)
   .then(floor=>{
     if(!floor) throw new Error('Floor not found: ' + floorId)
@@ -67,7 +67,7 @@ module.exports.addNewRoom = function(floorId, newRoom){
   })
 }
 
-module.exports.updateImgPath = function(floorId, roomId, imgPath) {
+module.exports.updateImgPath = (floorId, roomId, imgPath) =>  {
   return Floor.findOne({"_id": floorId, "rooms._id": roomId})
   .then(floor=>{
     if(!floor) throw new Error('Floor not found: ' + floorId)
@@ -79,7 +79,7 @@ module.exports.updateImgPath = function(floorId, roomId, imgPath) {
   })
 }
 
-module.exports.getFloorAndRoomByRoomId = function(roomId){
+module.exports.getFloorAndRoomByRoomId = (roomId) => {
   return Floor.findOne({'rooms._id': roomId})
   .then(floor=>{
     if(!floor) return Promise.reject('No floor contains room: ' + roomId)
@@ -88,7 +88,7 @@ module.exports.getFloorAndRoomByRoomId = function(roomId){
   })
 }
 
-module.exports.updateDeviceToRoom = function (deviceId, roomId) {
+module.exports.updateDeviceToRoom =  (deviceId, roomId) =>  {
   return Floor.findOne({'rooms.devices': deviceId})
   .then(floor=>{
     if(!!floor){
@@ -110,7 +110,7 @@ module.exports.updateDeviceToRoom = function (deviceId, roomId) {
   })
 }
 
-module.exports.getListOfItemsInHouse = function (callback) {
+module.exports.getListOfItemsInHouse =  (callback)  => {
   return Floor.find()
   .populate({
     path: 'rooms.devices',

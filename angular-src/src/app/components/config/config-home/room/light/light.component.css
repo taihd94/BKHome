@@ -23,3 +23,12 @@ md-slider{
   width: 40%;
   float: left;
 }
+
+input{
+  position: relative;
+  left: 11%;
+  width: 39%;
+  height: 29px;
+  border-color: rgb(57, 58, 53);
+  border-radius: 17px;
+}

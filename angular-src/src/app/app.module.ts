@@ -64,7 +64,9 @@ import { ThenactionsComponent } from './components/config/rules/rule/thenactions
 import { ActionComponent } from './components/config/rules/rule/thenactions/action/action.component';
 import { AccessControlComponent } from './components/config/access-control/access-control.component';
 import { UserAccctrlComponent } from './components/config/access-control/user-accctrl/user-accctrl.component';
-
+import { SecurityComponent } from './components/security/security.component';
+import { SecurityEventComponent } from './components/security/security-event/security-event.component';
+import {ColorPickerModule} from 'angular2-color-picker';
 
 const appRoutes: Routes = [
   {path:'', component: HomeComponent},
@@ -116,7 +118,9 @@ const appRoutes: Routes = [
     ThenactionsComponent,
     ActionComponent,
     AccessControlComponent,
-    UserAccctrlComponent
+    UserAccctrlComponent,
+    SecurityComponent,
+    SecurityEventComponent
   ],
   imports: [
     UiSwitchModule,
@@ -134,7 +138,8 @@ const appRoutes: Routes = [
     IcDatepickerModule,
     TimepickerModule.forRoot(),
     MaterialModule,
-    DatePickerModule
+    DatePickerModule,
+    ColorPickerModule
   ],
   providers: [
     ValidateService,

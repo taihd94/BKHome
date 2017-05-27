@@ -14,6 +14,10 @@ const AccessControl = require('../mongodb/home-model/accessControl');
 const mqtt = require('mqtt');
 const mqttClient = mqtt.connect('mqtt://localhost:1883');
 
+function VBColorToHEX(value){
+  if(!value) return "#000000"
+  return '#' + value.toString(16)
+}
 
 io.on('connection', (socket) => {
   console.log('Socket.IO: user connected');
@@ -33,6 +37,10 @@ io.on('connection', (socket) => {
   //   socket.broadcast.emit('device-event', message);
   // })
 
+  socket.on('security-event', message=>{
+    socket.broadcast.emit('security-event', message)
+  })
+
   socket.on('device-event', (light) => {
     console.log(light);
     socket.broadcast.emit(light._id, light);
@@ -42,17 +50,20 @@ io.on('connection', (socket) => {
       let value = light.value
       if(device.dimmable){
         value = Math.round(Math.acos(Math.sqrt(value/100))/(Math.PI*50)*1000000);
-        value = value < 1000 ? 1000 : value
+        value = value < 1000 ? 1000 : value;
+      }
+      if(device.typeOfLight=='RGB'){
+        value = VBColorToHEX(value);
       }
       mqttClient.publish('devices/' + device.deviceId, device.portId.toString() + value);
       // ltctrlMQTT.send(result, light.value)
-      return Promise.resolve(true)
+      return Promise.resolve(true);
     })
     .then(()=>{
-      return Rules.checkOperations(light)
+      return Rules.checkOperations(light);
     })
     .then(result=>{
-      console.log(result)
+      // console.log(result);
     })
     .catch(err=>{
       console.log(err);

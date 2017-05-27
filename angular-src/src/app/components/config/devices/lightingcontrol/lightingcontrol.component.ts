@@ -101,6 +101,7 @@ export class LightingcontrolComponent implements OnInit {
   }
 
   edit(lightId, event: any) { // without type info
+    console.log(event);
     let field = event.target.name;
     let value = event.target.value;
     let index = this.lookup(lightId);
@@ -108,8 +109,8 @@ export class LightingcontrolComponent implements OnInit {
       case "name":
         this.lightingControl.lights[index].name = value;
         break;
-      case "kind":
-        this.lightingControl.lights[index].kind = value;
+      case "type":
+        this.lightingControl.lights[index].typeOfLight = value;
         break;
       case "power":
         this.lightingControl.lights[index].power = Number(value);

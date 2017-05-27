@@ -61,7 +61,7 @@ export class RelationalOperationComponent implements OnInit, OnChanges {
             break;
           case 'sensor':
             this.deviceName = res.sensor.name;
-            this.dimmable = true;
+            this.dimmable = (res.sensor._type!=="Door")&&(res.sensor._type!=="Window")&&(res.sensor._type!=="Emergency");
             if(res.sensor._type.toString()==='Light'){
               this.sliderMaxValue = 1000;
             }
@@ -141,7 +141,7 @@ export class RelationalOperationComponent implements OnInit, OnChanges {
   selectSensor(sensor){
     this.deviceName = sensor.name;
     this.deviceId = sensor._id;
-    this.dimmable = true;
+    this.dimmable = (sensor._type!=="Door")&&(sensor._type!=="Window")&&(sensor._type!=="Emergency");
     this.sliderHidden = false;
     this.value = 0;
     this.operatorArr = this.operatorArrFull;
