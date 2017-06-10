@@ -39,8 +39,11 @@
       </button>
     </div>
   </div>
-  <div class="col-md-2 switch" [hidden]="dimmable" [ngStyle]="editHidden ? {'margin': '0px 7%'} : {'margin': '0 6%', 'padding': '12px 4px 5px 4px', 'background-color': 'rgb(221, 221, 221)',  'border-radius': '4px'}">
+  <div class="col-md-2 switch"  *ngIf="typeOfLight!=='RGB'" [hidden]="dimmable" [ngStyle]="editHidden ? {'margin': '0px 7%'} : {'margin': '0 6%', 'padding': '12px 4px 5px 4px', 'background-color': 'rgb(221, 221, 221)',  'border-radius': '4px'}">
     <ui-switch [(ngModel)]="value" size="medium-v2" (click)="clickCommand(value)"></ui-switch>
+  </div>
+  <div class="col-md-4 rgb"   *ngIf="typeOfLight=='RGB'" [hidden]="dimmable" [ngStyle]="editHidden ? {'margin': '0px -1vw'} : {'padding': '12px 4px 5px 4px'}">
+    <input [(colorPicker)]="color" (colorPickerChange)="getColor($event)" [style.background]="color">
   </div>
   <div class="col-md-6 slider" [hidden]="!dimmable" [ngStyle]="editHidden ? {'margin-top':'-11px','width': '30%'} : {'background-color': '#dddddd', 'width': '30%', 'border-radius': '4px'}">
     <md-slider [(ngModel)]="value"

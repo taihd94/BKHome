@@ -86,3 +86,10 @@ hr {
   font-weight: bold;
 }
 /*modal*/
+
+.rgb>input{
+  width: 8vw;
+  border-color: rgb(57, 58, 53);
+  border-radius: 17px;
+  margin-top: -5px;
+}

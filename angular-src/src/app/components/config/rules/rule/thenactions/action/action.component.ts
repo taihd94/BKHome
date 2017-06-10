@@ -25,6 +25,9 @@ export class ActionComponent implements OnInit, OnChanges {
   deviceId: String;
   deviceName: String;
   dimmable: Boolean;
+  typeOfLight: String;
+  isRBG: Boolean;
+  color: String;
 
   ngOnInit() {
     this.value = this.action.value;
@@ -37,8 +40,13 @@ export class ActionComponent implements OnInit, OnChanges {
         } else {
           switch(res._type){
             case 'light':
+              // console.log(res.light);
               this.deviceName = res.light.name;
               this.dimmable = res.light.dimmable;
+              this.typeOfLight = res.light.typeOfLight;
+              if(this.typeOfLight=='RGB'){
+                this.color = this.VBColorToHEX(this.value);
+              }
               break;
             default:
               console.log(res);
@@ -71,6 +79,7 @@ export class ActionComponent implements OnInit, OnChanges {
     this.deviceName = device.name;
     this.deviceId = device._id;
     this.dimmable = device.dimmable;
+    this.typeOfLight = device.typeOfLight;
     this.action.deviceId = device._id;
     // this.updateActionEvent.emit(this.action);
   }
@@ -79,6 +88,28 @@ export class ActionComponent implements OnInit, OnChanges {
     this.value = value;
     this.command = this.value === 0 ? 'TURN OFF' : 'TURN ON';
     this.action.value = value;
+    this.updateActionEvent.emit();
+  }
+
+  HEXToVBColor(rrggbb) {
+    if(rrggbb.length==4){
+      let r = rrggbb[1];
+      let g = rrggbb[2];
+      let b = rrggbb[3];
+      rrggbb = '#' + r + r + g + g + b + b;
+    }
+    return parseInt(rrggbb.replace('#',''), 16);
+  }
+
+  VBColorToHEX(value){
+    if(!value) return "#000"
+    return '#' + value.toString(16)
+  }
+
+  getColor(value){
+    this.value = this.HEXToVBColor(value);
+    this.command = this.value === 0 ? 'TURN OFF' : 'TURN ON';
+    this.action.value = this.value;
     this.updateActionEvent.emit();
   }
 

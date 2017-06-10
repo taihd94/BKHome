@@ -16,26 +16,20 @@ export class UserAccctrlComponent implements OnInit, OnChanges {
     public messageEvent: MessageEventService
   ) { }
 
-  row_1_hidden = false;
-  row_2_hidden = true;
+  main_row_hidden = false;
+  fingerprint_hidden = true;
+  face_hidden = true;
   grayFilter = {filter: 'grayscale(100%)', color: 'gray'};
   isRFIDAvailable = false;
   isFingerprintAvailable = false;
   avatar: String;
-  sensorMessage: String;
-  sensorMessage2: String;
-  messageHandle: any;
 
   ngOnInit() {
     if(!this.user.imgPath){
       this.user.imgPath = "./assets/images/avatars/NoAvatar.jpg";
     }
-
     this.isFingerprintAvailable = !!this.user.fingerprintId.length;
-
     this.avatar = this.user.imgPath;
-    this.sensorMessage = "Place your finger";
-    this.sensorMessage2 = "on the sensor";
   }
 
   ngOnChanges(){
@@ -54,34 +48,6 @@ export class UserAccctrlComponent implements OnInit, OnChanges {
     })
   }
 
-  connectSensor(){
-    this.sensorMessage = "Place your finger";
-    this.sensorMessage2 = "on the sensor";
-
-    this.messageHandle = this.messageEvent.on('access-control/fingerprint/enrol/message').subscribe((message:String)=>{
-      console.log(message);
-      this.sensorMessage2 = '';
-      this.sensorMessage = message;
-      if(message==="Complete!"){
-        this.isFingerprintAvailable = true;
-        this.messageHandle.unsubscribe();
-      }
-    })
-    let message = {
-      command: 'enrol',
-      user: this.user._id
-    }
-    this.messageEvent.emit('access-control/fingerprint', message);
-  }
-
-  unSubscribe(){
-    this.messageHandle.unsubscribe();
-    let message = {
-      command: 'authenticate'
-    }
-    this.messageEvent.emit('access-control/fingerprint', message);
-  }
-
   deleteUser(){
     this.accessControlService.deleteUser(this.user._id).subscribe(res=>{
       console.log(res);
@@ -89,13 +55,22 @@ export class UserAccctrlComponent implements OnInit, OnChanges {
     })
   }
 
-  deleteAllFingerprint(){
-    let message = {
-      command: 'deleteFingerprints',
-      user: this.user._id
-    }
-    this.messageEvent.emit('access-control/fingerprint', message);
-    this.isFingerprintAvailable = false;
+  show_main_row(){
+    this.main_row_hidden = false;
+    this.fingerprint_hidden = true;
+    this.face_hidden = true;
+  }
+
+  show_fingerprint_row(){
+    this.main_row_hidden = true;
+    this.fingerprint_hidden = false;
+    this.face_hidden = true;
+  }
+
+  show_face_row(){
+    this.main_row_hidden = true;
+    this.fingerprint_hidden = true;
+    this.face_hidden = false;
   }
 
 }

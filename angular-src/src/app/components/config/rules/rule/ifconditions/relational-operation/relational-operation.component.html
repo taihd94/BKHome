@@ -2,6 +2,14 @@
   <div class="modal-dialog modal-sm">
     <div class="modal-content">
       <div class="modal-header" style="padding: 40px 0px">
+        <div class="users">
+          <a class="room-floor">
+            <span><i class="fa fa-user" aria-hidden="true"></i> Users</span>
+          </a>
+          <div class="list-of-users" *ngFor="let user of listOfUsers">
+            <a class="device" (click)="selectUser(user);smModal.hide()">{{user.name}}</a>
+          </div>
+        </div>
         <div class="list-of-room" *ngFor="let room of listOfDevicesInHouse">
           <a class="room-floor">
             <span><i aria-hidden="true" class="fa fa-home"></i> {{room.floorName}} </span>
@@ -28,22 +36,18 @@
 
 <div class="row">
   <div class="col-md-3 device-name">
-    <p [hidden]="!editHidden">{{deviceName}}</p>
+    <p [hidden]="!editHidden">{{_name}}</p>
     <div class="device-name" [hidden]="editHidden">
-      <button class="btn btn-deviceName" type="button"  (click)="smModal.show()" aria-haspopup="true" aria-expanded="true">
-        {{deviceName}}
-        <!-- <span class="caret" ></span> -->
+      <button class="btn btn-_name" type="button"  (click)="smModal.show()" aria-haspopup="true" aria-expanded="true">
+        {{_name}}
       </button>
     </div>
   </div>
-  <div class="col-md-5 operator">
+  <div class="col-md-5 operator" [hidden]="isUserPicked">
     <p [hidden]="!editHidden">{{operator}}</p>
     <div class="dropdown" [hidden]="editHidden">
       <button class="btn btn-operator dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
         {{operator }}
-        <!-- <div class="caret-icon"  [hidden]="!dimmable">
-          <span class="caret"></span>
-        </div> -->
       </button>
       <ul class="dropdown-menu scrollable-menu-1" role="menu" aria-labelledby="dropdownMenu1" [hidden]="editHidden">
         <li *ngFor="let operator of operatorArr; let i=index">
@@ -52,11 +56,16 @@
       </ul>
     </div>
   </div>
-  <div class="col-md-2 value" (click)="sliderHidden=!sliderHidden" >
+  <div class="col-md-5 operator" [hidden]="!isUserPicked">
+    <p [hidden]="!editHidden">come back home</p>
+    <div class="dropdown" [hidden]="editHidden">
+      <button class="btn btn-operator dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+        come back home
+      </button>
+    </div>
+  </div>
+  <div class="col-md-2 value" (click)="sliderHidden=!sliderHidden" [hidden]="isUserPicked">
     <p [hidden]="!editHidden">{{value}}</p>
-    <!-- <div class="input-value" [hidden]="editHidden">
-      <input class="form-control" type="text" name="status" value="{{value}}" >
-    </div> -->
     <div class="value" [hidden]="editHidden" (click)="clickValueBtn()">
       <button class="btn btn-value" type="button">{{value}}</button>
     </div>

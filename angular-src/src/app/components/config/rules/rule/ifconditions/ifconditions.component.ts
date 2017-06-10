@@ -10,6 +10,7 @@ export class IfconditionsComponent implements OnInit {
   @Input() ruleId;
   @Input() ifCondtions;
   @Input() listOfDevicesInHouse;
+  @Input() listOfUsers;
   @Input() editHidden;
   @Output() updateIfCond = new EventEmitter<Object>();
 

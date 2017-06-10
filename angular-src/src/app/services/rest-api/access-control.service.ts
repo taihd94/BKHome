@@ -44,6 +44,15 @@ export class AccessControlService {
       .map(res => res.json());
   }
 
+  getUserName(userId){
+    let headers = new Headers();
+    this.loadToken();
+    headers.append('Authorization', this.authToken);
+    headers.append('Content-Type', 'application/json');
+    return this.http.get(this.baseURL + '/access-control/users/' + userId + '/name', {headers: headers})
+      .map(res => res.json());
+  }
+
   updateImgPath(userId, imgPath){
     let headers = new Headers();
     this.loadToken();

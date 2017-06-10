@@ -26,6 +26,8 @@ const RelationalOperationSchema = new Schema({
   deviceId: Schema.Types.ObjectId,
   operator: String,
   value: Number,
+  isUser: Boolean,
+  userId: Schema.Types.ObjectId,
   result: Boolean,
   isRoot: Boolean
 }, {collection: 'operations',versionKey: false});
@@ -268,6 +270,8 @@ function operationSatisfied(operation) {
       return isTimeSatisfied(rule)
     })
     .then(actions=>{
+      console.log('actions')
+      console.log(actions);
       for(let action of actions){
         LightingControl.getLightDetails(action.deviceId)
         .then(light=>{
@@ -277,6 +281,9 @@ function operationSatisfied(operation) {
             socket.emit('security-event', light)
         })
       }
+    })
+    .catch(err=>{
+      console.log(err)
     })
   }
   return LogicalOperations
@@ -297,15 +304,20 @@ function operationSatisfied(operation) {
   })
 }
 
-module.exports.checkOperations = function (device) {
-  return RelationalOperations.find({'deviceId': device._id})
+module.exports.checkOperations =  (target) => {
+  return RelationalOperations.find({$or:[{deviceId: target._id},{userId: target._id}]})
   .then(operations=>{
     if(!operations.length) return Promise.resolve('Rules have been checked')
     let loop = (i) => {
       let operation = operations[i];
-      let operator = operation.operator;
-      let result = operators[operator](device.value, operation.value)
-      operation.result = result;
+      let isUser = operation.isUser;
+      if(!isUser){
+        let operator = operation.operator;
+        let result = operators[operator](target.value, operation.value)
+        operation.result = result;
+      } else {
+        operation.result = true;
+      }
       return operation.save()
       .then(operation=>{
         if(operation.result) return operationSatisfied(operation);

@@ -29,6 +29,7 @@ export class LightComponent implements OnInit, OnDestroy {
      .subscribe((message:any) => {
        this.lightValue = message;
        this.preLightValue = this.switchValue = this.lightValue;
+       this.color = this.VBColorToHEX(this.lightValue);
        console.log(message);
     });
   }
@@ -84,7 +85,12 @@ export class LightComponent implements OnInit, OnDestroy {
   }
 
   HEXToVBColor(rrggbb) {
-    rrggbb = rrggbb=="#fff" ? "#ffffff" : rrggbb=="#f00" ? "#ff0000" : rrggbb=="#0f0" ? "#00ff00" : rrggbb=="#00f" ? "#0000ff" : rrggbb;
+    if(rrggbb.length==4){
+      let r = rrggbb[1];
+      let g = rrggbb[2];
+      let b = rrggbb[3];
+      rrggbb = '#' + r + r + g + g + b + b;
+    }
     return parseInt(rrggbb.replace('#',''), 16);
   }
 

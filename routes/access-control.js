@@ -15,6 +15,17 @@ router.get('/users', (req, res, next)=>{
   })
 })
 
+router.get('/users/:id/name', (req, res, next)=>{
+  let userId = req.params.id;
+  Users.getUserName(userId)
+  .then(result=>{
+    res.json({success:true, userName: result});
+  })
+  .catch(err=>{
+    res.json({success:false, msg: err.message});
+  })
+})
+
 router.post('/users', (req, res, next)=>{
   let newUser = req.body;
   Users.addUser(newUser)

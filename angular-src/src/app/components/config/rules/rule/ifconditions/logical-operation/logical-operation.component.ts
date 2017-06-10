@@ -10,6 +10,7 @@ export class LogicalOperationComponent implements OnInit, OnChanges {
   @Input() ruleId;
   @Input() operation;
   @Input() listOfDevicesInHouse;
+  @Input() listOfUsers;
   @Input() editHidden;
   @Output() deleteOperationEvent = new EventEmitter<Object>();
   @Output() addOperationEvent = new EventEmitter<Object>();

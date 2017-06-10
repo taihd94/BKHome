@@ -1,13 +1,19 @@
 <div class="sensor" [ngSwitch]="sensor._type">
   <div class="doors" *ngSwitchCase="'Door'">
-    <img src="./assets/images/doors/open-door.png"
+    <img *ngIf="value==1" src="./assets/images/doors/open-door.png"
          class="img-responsive door"
          alt="Responsive image">
+    <img *ngIf="value==0" src="./assets/images/doors/closed-door.png"
+        class="img-responsive door"
+    alt="Responsive image">
   </div>
   <div class="doors" *ngSwitchCase="'Window'">
-     <img src="./assets/images/doors/open-window.png"
-          class="img-responsive door"
-          alt="Responsive image">
+    <img *ngIf="value==1" src="./assets/images/doors/open-window.png"
+        class="img-responsive door"
+        alt="Responsive image">
+    <img *ngIf="value==0" src="./assets/images/doors/closed-window.png"
+       class="img-responsive door"
+       alt="Responsive image">
   </div>
   <div class="ss" *ngSwitchCase="'Temperature'">
     <i class="fa fa-thermometer-three-quarters" aria-hidden="true"></i>

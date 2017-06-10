@@ -114,6 +114,6 @@ module.exports.getListOfItemsInHouse =  (callback)  => {
   return Floor.find()
   .populate({
     path: 'rooms.devices',
-    select: 'deviceType sensors.name sensors._id sensors._type lights.name lights._id lights.dimmable'
+    select: 'deviceType sensors.name sensors._id sensors._type lights.name lights._id lights.dimmable lights.typeOfLight'
   })
 }

@@ -19,7 +19,7 @@ client.on('message', (topic, message) => {
     })
     promise.then(module=>{
       // console.log('//////////////')
-      console.log(module.deviceCode)
+      // console.log(module.deviceCode)
       return SensorModule.updateSensorValue(deviceId, module)
     })
     .then(module=>{

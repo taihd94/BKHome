@@ -11,12 +11,16 @@ const AccessControlSchema = new Schema({
 
 const AccessControl = module.exports = mongoose.model('accessControl', AccessControlSchema);
 
-module.exports.getUsers = function () {
+module.exports.getUsers =  () => {
   return AccessControl.find()
   .then(users=>{
     if(!users.length) throw new Error('No user found');
     return Promise.resolve(users);
   })
+}
+
+module.exports.getUserFromFingerprint = (fingerprintId) => {
+  return AccessControl.findOne({fingerprintId: fingerprintId})
 }
 
 module.exports.addUser = (newUser) => {
@@ -26,6 +30,14 @@ module.exports.addUser = (newUser) => {
 
 module.exports.deleteUser =  (userId) => {
   return AccessControl.findByIdAndRemove(userId);
+}
+
+module.exports.getUserName = (userId) => {
+  return AccessControl.findById(userId)
+  .then(user=>{
+    if(!user) throw new Error('User not found: ' + userId);
+    return Promise.resolve(user.name)
+  })
 }
 
 module.exports.updateImgPath = (userId, imgPath) => {

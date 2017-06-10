@@ -14,6 +14,7 @@ import * as moment from 'moment';
 export class RuleComponent implements OnInit {
   @Input() rule;
   @Input() listOfDevicesInHouse;
+  @Input() listOfUsers;
   @Output() removeRule = new EventEmitter();
 
   constructor(
@@ -62,6 +63,7 @@ export class RuleComponent implements OnInit {
   isNextDay = false;
 
   ngOnInit() {
+    // console.log(this.listOfUsers);
     this.ruleId = this.rule._id;
 
     this.ifCondtions = this.rule.ifConditions;
@@ -224,7 +226,7 @@ export class RuleComponent implements OnInit {
 
   updateIfCond(operation){
     this.rule.ifConditions = operation;
-    console.log(operation);
+    // console.log(this.rule.ifConditions);
   }
 
   updateActions(){

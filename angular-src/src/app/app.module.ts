@@ -67,6 +67,8 @@ import { UserAccctrlComponent } from './components/config/access-control/user-ac
 import { SecurityComponent } from './components/security/security.component';
 import { SecurityEventComponent } from './components/security/security-event/security-event.component';
 import {ColorPickerModule} from 'angular2-color-picker';
+import { FingerprintComponent } from './components/config/access-control/user-accctrl/fingerprint/fingerprint.component';
+import { FaceRecognitionComponent } from './components/config/access-control/user-accctrl/face-recognition/face-recognition.component';
 
 const appRoutes: Routes = [
   {path:'', component: HomeComponent},
@@ -120,7 +122,9 @@ const appRoutes: Routes = [
     AccessControlComponent,
     UserAccctrlComponent,
     SecurityComponent,
-    SecurityEventComponent
+    SecurityEventComponent,
+    FingerprintComponent,
+    FaceRecognitionComponent
   ],
   imports: [
     UiSwitchModule,

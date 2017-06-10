@@ -75,6 +75,7 @@
     height: auto;
     max-height: 400px;
     min-width: 300px;
+    min-height: 38px;
     overflow-x: hidden;
     cursor: pointer;
 }
@@ -146,12 +147,12 @@
     padding-left: 40px;
 }
 
-.list-of-sensors, .list-of-lights{
+.list-of-sensors, .list-of-lights, .list-of-users{
   padding: 4px 0px;
   margin: 4px 0px;
 }
 
-.list-of-sensors:hover, .list-of-lights:hover{
+.list-of-sensors:hover, .list-of-lights:hover, .list-of-users:hover{
   background-color: whitesmoke;
 }
 /*modal*/

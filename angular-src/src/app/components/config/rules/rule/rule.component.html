@@ -25,10 +25,6 @@
     <div class="row scirpt-body">
       <div class="col-md-4">
         <div class="time-date-picker">
-          <!-- <div class="date-picker">
-            <p>Date</p>
-            <ng2-datepicker [options]="options" [(ngModel)]="date" (click)="btnSaveHidden=false" (outputEvents)="datePickerEvent($event)" ></ng2-datepicker>
-          </div> -->
           <div class="time-picker">
             <p>Time</p>
             <div class="all-day-checkbox">
@@ -57,12 +53,6 @@
                 <div class="timepicker" [hidden]="fromTimePickerHidden">
                   <timepicker [(ngModel)]="fromTime"></timepicker>
                 </div>
-                <!-- <div class="picker-save" [hidden]="fromTimeButtonsHidden">
-                  <button class="btn btn-primary time-btn-ok"
-                          (click)="clickFromTimeOkBtn()">OK</button>
-                  <button class="btn btn-primary time-btn-clear"
-                          (click)="clickFromTimeClearOkBtn()">Clear</button>
-                </div> -->
               </div>
               <div class="to-time">
                 <h4 class="to" (click)="toTimePickerHidden=false;TimeButtonsHidden=false;">To </h4>
@@ -78,22 +68,8 @@
                 <div class="timepicker" [hidden]="toTimePickerHidden">
                   <timepicker [(ngModel)]="toTime"></timepicker>
                 </div>
-                <!-- <div class="picker-save" [hidden]="toTimeButtonsHidden">
-                  <button class="btn btn-primary time-btn-ok"
-                          (click)="clickToTimeOkBtn()">OK</button>
-                  <button class="btn btn-primary time-btn-clear"
-                          (click)="clickToTimeClearOkBtn()">Clear</button>
-                </div> -->
               </div>
             </div>
-            <!-- <div class="from-to-time-allDayChecked" [hidden]="!isAllDayChecked">
-              <div class="from-time">
-                <h4>From &nbsp;{{fromTimePicker}}</h4>
-              </div>
-              <div class="to-time">
-                <h4>To &nbsp;{{toTimePicker}}</h4>
-              </div>
-            </div> -->
             <div class="picker-save" [hidden]="TimeButtonsHidden">
               <button class="btn btn-primary time-btn-ok"
                       (click)="clickTimeOkBtn()">OK</button>
@@ -117,16 +93,13 @@
             </div>
           </div>
         </div>
-        <!-- <div class="picker-save" [hidden]="TimeButtonsHidden">
-          <button class="btn btn-primary btn-ok"
-                  (click)="clickOkBtn()">OK</button>
-        </div> -->
       </div>
       <div class="col-md-8 deivce-picker">
 
         <app-ifconditions [ruleId]="ruleId"
                           [ifCondtions]="ifCondtions"
                           [listOfDevicesInHouse]="listOfDevicesInHouse"
+                          [listOfUsers] = "listOfUsers"
                           [editHidden]="editHidden"
                           (updateIfCond)="updateIfCond($event)">
         </app-ifconditions>
@@ -147,8 +120,6 @@
             </div>
           </div>
         </div>
-
-
       </div>
     </div>
   </div>

@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { RuleService } from '../../../services/rest-api/rule.service';
 import { HouseService } from '../../../services/rest-api/house.service';
+import { AccessControlService } from '../../../services/rest-api/access-control.service';
 import { MessageEventService } from '../../../services/broadcast/message-event.service';
 
 @Component({
@@ -13,16 +14,30 @@ export class RulesComponent implements OnInit {
   constructor(
     private ruleService: RuleService,
     private houseService: HouseService,
+    private accessControlService: AccessControlService,
     private messageEvent: MessageEventService
   ) { }
 
   rules: Object;
   listOfDevicesInHouse: any;
+  listOfUsers: any;
   newRuleName: String;
 
   ngOnInit() {
     this.getListOfRules();
+    this.getListOfUsers();
     this.getListOfDevices();
+  }
+
+  getListOfUsers(){
+    this.accessControlService.getListOfUsers().subscribe(res=>{
+      if(!res.success){
+        console.log(res.msg)
+      } else {
+        this.listOfUsers = res.users;
+        // console.log(this.listOfUsers);
+      }
+    })
   }
 
   getListOfDevices(){

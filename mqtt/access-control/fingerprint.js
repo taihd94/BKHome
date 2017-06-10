@@ -3,6 +3,7 @@ const client = mqtt.connect('mqtt://localhost:1883');
 const io = require('../../socket-io/SocketIO');
 
 const AccessControl = require('../../mongodb/home-model/accessControl');
+const Rules = require('../../mongodb/home-model/rules');
 
 client.on('connect',  () => {
   client.subscribe('access-control/fingerprint/#');
@@ -25,6 +26,12 @@ client.on('message', (topic, message) => {
         console.log(userId);
         console.log(fingerprintId);
         return resolve(AccessControl.updateFingerprintId(userId, fingerprintId))
+      case 'access-control/fingerprint/authenticate/found-id':
+        let id = message.toString();
+        return AccessControl.getUserFromFingerprint(id)
+        .then(user=>{
+          resolve(Rules.checkOperations(user));
+        })
     }
   })
   promise.catch(err=>{

@@ -75,6 +75,9 @@ io.on('connection', (socket) => {
     let user = message.user
     console.log(message)
     switch(command){
+      case 'authenticate':
+        mqttClient.publish('fgss1/' + command, 'authenticate');
+        break;
       case 'enrol':
         mqttClient.publish('fgss1/' + command, user);
         break;
