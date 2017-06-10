@@ -19,5 +19,6 @@
     [hidden]="editHidden"></i>
   <a class="list-group-item"> {{light.name}}</a>
   </div>
+  <input [(colorPicker)]="color" (colorPickerChange)="getColor($event)" [style.background]="color" *ngIf="light.typeOfLight=='RGB'">
   <ui-switch [(ngModel)]="lightValue" size="medium-v2" (click)="getValue(lightValue)"></ui-switch>
 </div>

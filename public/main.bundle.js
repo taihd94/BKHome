@@ -404,7 +404,7 @@ exports = module.exports = __webpack_require__(3)();
 
 
 // module
-exports.push([module.i, ".list-group-item{\n  background-color: rgba(0, 0, 0, 0);\n  color: #464646;\n  border: 0px;\n  float: left;\n  padding: 7px 0px 0px 0px;\n  font-size: 17px;\n}\n\n.list-group-item:hover{\n  background-color: rgba(0, 0, 0, 0);\n  border: 0px;\n}\n\nui-switch{\n  float: right;\n  margin-right: 50px;\n}\n\nmd-slider{\n  position: relative;\n  bottom: 8px;\n  left: 10%;\n  width: 40%;\n  float: left;\n}\n\n.list-group-item>i{\n  padding-right: 5px;\n}\n\n.light-name>i{\n  float: left;\n  margin-top: 9px;\n  margin-right: 12px;\n}\n", ""]);
+exports.push([module.i, ".list-group-item{\n  background-color: rgba(0, 0, 0, 0);\n  color: #464646;\n  border: 0px;\n  float: left;\n  padding: 7px 0px 0px 0px;\n  font-size: 17px;\n}\n\n.list-group-item:hover{\n  background-color: rgba(0, 0, 0, 0);\n  border: 0px;\n}\n\nui-switch{\n  float: right;\n  margin-right: 50px;\n}\n\nmd-slider{\n  position: relative;\n  bottom: 8px;\n  left: 10%;\n  width: 40%;\n  float: left;\n}\n\n.list-group-item>i{\n  padding-right: 5px;\n}\n\n.light-name>i{\n  float: left;\n  margin-top: 9px;\n  margin-right: 12px;\n}\n\ninput{\n  position: relative;\n  left: 11%;\n  width: 39%;\n  height: 29px;\n  border-color: rgb(57, 58, 53);\n  border-radius: 17px;\n}\n", ""]);
 
 // exports
 
@@ -1023,7 +1023,7 @@ module.exports = "<div class=\"col-md-8\">\n    <!-- rule -->\n    <div class=\"
 /***/ 1154:
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"dimmable\"  *ngIf=\"light.dimmable==true\">\n  <div class=\"light-name\">\n    <i class=\"fa fa-minus-square\"\n    aria-hidden=\"true\"\n    (click)=\"removeLight()\"\n    [hidden]=\"editHidden\"></i>\n  <a class=\"list-group-item\"> {{light.name}}</a>\n  </div>\n  <md-slider [thumb-label]=\"true\" [(ngModel)]=\"lightValue\" (input)=\"getValue($event.value)\"></md-slider>\n  <div [ngClass]=\"light.dimmable==true?'hidden-xs':''\" >\n    <ui-switch [(ngModel)]=\"switchValue\" size=\"medium-v2\" (click)=\"getSwitchValue(switchValue)\"></ui-switch>\n  </div>\n</div>\n<div class=\"not-dimmable\" *ngIf=\"light.dimmable==false\" >\n  <div class=\"light-name\">\n    <i class=\"fa fa-minus-square\"\n    aria-hidden=\"true\"\n    (click)=\"removeLight()\"\n    [hidden]=\"editHidden\"></i>\n  <a class=\"list-group-item\"> {{light.name}}</a>\n  </div>\n  <ui-switch [(ngModel)]=\"lightValue\" size=\"medium-v2\" (click)=\"getValue(lightValue)\"></ui-switch>\n</div>\n"
+module.exports = "<div class=\"dimmable\"  *ngIf=\"light.dimmable==true\">\n  <div class=\"light-name\">\n    <i class=\"fa fa-minus-square\"\n    aria-hidden=\"true\"\n    (click)=\"removeLight()\"\n    [hidden]=\"editHidden\"></i>\n  <a class=\"list-group-item\"> {{light.name}}</a>\n  </div>\n  <md-slider [thumb-label]=\"true\" [(ngModel)]=\"lightValue\" (input)=\"getValue($event.value)\"></md-slider>\n  <div [ngClass]=\"light.dimmable==true?'hidden-xs':''\" >\n    <ui-switch [(ngModel)]=\"switchValue\" size=\"medium-v2\" (click)=\"getSwitchValue(switchValue)\"></ui-switch>\n  </div>\n</div>\n<div class=\"not-dimmable\" *ngIf=\"light.dimmable==false\" >\n  <div class=\"light-name\">\n    <i class=\"fa fa-minus-square\"\n    aria-hidden=\"true\"\n    (click)=\"removeLight()\"\n    [hidden]=\"editHidden\"></i>\n  <a class=\"list-group-item\"> {{light.name}}</a>\n  </div>\n  <input [(colorPicker)]=\"color\" (colorPickerChange)=\"getColor($event)\" [style.background]=\"color\" *ngIf=\"light.typeOfLight=='RGB'\">\n  <ui-switch [(ngModel)]=\"lightValue\" size=\"medium-v2\" (click)=\"getValue(lightValue)\"></ui-switch>\n</div>\n"
 
 /***/ }),
 
@@ -4872,6 +4872,7 @@ var LightSceneComponent = (function () {
     }
     LightSceneComponent.prototype.ngOnInit = function () {
         this.lightValue = this.switchValue = this.light.value;
+        this.color = this.VBColorToHEX(this.lightValue);
     };
     LightSceneComponent.prototype.emitLightValue = function (value) {
         var light = {
@@ -4900,6 +4901,24 @@ var LightSceneComponent = (function () {
             }
         }
         this.emitLightValue(value);
+    };
+    LightSceneComponent.prototype.HEXToVBColor = function (rrggbb) {
+        if (rrggbb.length == 4) {
+            var r = rrggbb[1];
+            var g = rrggbb[2];
+            var b = rrggbb[3];
+            rrggbb = '#' + r + r + g + g + b + b;
+        }
+        return parseInt(rrggbb.replace('#', ''), 16);
+    };
+    LightSceneComponent.prototype.VBColorToHEX = function (value) {
+        if (!value)
+            return "#000";
+        return '#' + value.toString(16);
+    };
+    LightSceneComponent.prototype.getColor = function (value) {
+        this.lightValue = this.preLightValue = this.HEXToVBColor(value);
+        this.emitLightValue(this.lightValue);
     };
     LightSceneComponent.prototype.removeLight = function () {
         this.remove.emit(this.light);

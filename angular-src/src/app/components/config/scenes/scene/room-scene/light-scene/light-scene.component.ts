@@ -16,6 +16,7 @@ export class LightSceneComponent implements OnInit {
     lightValue: Number;
     preLightValue: Number;
     switchValue: Number;
+    color: String;
 
     constructor(
       private messageEvent: MessageEventService
@@ -23,6 +24,7 @@ export class LightSceneComponent implements OnInit {
 
     ngOnInit() {
       this.lightValue = this.switchValue = this.light.value;
+      this.color = this.VBColorToHEX(this.lightValue);
     }
 
     emitLightValue(value){
@@ -56,6 +58,26 @@ export class LightSceneComponent implements OnInit {
       }
 
       this.emitLightValue(value);
+    }
+
+    HEXToVBColor(rrggbb) {
+      if(rrggbb.length==4){
+        let r = rrggbb[1];
+        let g = rrggbb[2];
+        let b = rrggbb[3];
+        rrggbb = '#' + r + r + g + g + b + b;
+      }
+      return parseInt(rrggbb.replace('#',''), 16);
+    }
+
+    VBColorToHEX(value){
+      if(!value) return "#000"
+      return '#' + value.toString(16)
+    }
+
+    getColor(value){
+      this.lightValue = this.preLightValue = this.HEXToVBColor(value);
+      this.emitLightValue(this.lightValue);
     }
 
     removeLight(){

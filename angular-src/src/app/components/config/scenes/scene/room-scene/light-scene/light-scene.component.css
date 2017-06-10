@@ -34,3 +34,12 @@ md-slider{
   margin-top: 9px;
   margin-right: 12px;
 }
+
+input{
+  position: relative;
+  left: 11%;
+  width: 39%;
+  height: 29px;
+  border-color: rgb(57, 58, 53);
+  border-radius: 17px;
+}
