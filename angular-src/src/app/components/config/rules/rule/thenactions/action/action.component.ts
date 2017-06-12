@@ -13,6 +13,7 @@ export class ActionComponent implements OnInit, OnChanges {
   @Input() listOfDevicesInHouse;
   @Output() deleteActionEvent = new EventEmitter<Object>();
   @Output() addActionEvent = new EventEmitter();
+  @Output() addMobileActionEvent = new EventEmitter();
   @Output() updateActionEvent = new EventEmitter();
   @Output() allowToSave = new EventEmitter<Object>();
 
@@ -123,6 +124,10 @@ export class ActionComponent implements OnInit, OnChanges {
 
   addAction(){
     this.addActionEvent.emit();
+  }
+
+  addMobileAction(){
+    this.addMobileActionEvent.emit();
   }
 
 }

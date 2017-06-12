@@ -18,7 +18,9 @@ export class ThenactionsComponent implements OnInit, OnChanges {
 
   ngOnInit() {
     if(!this.thenActions.length){
-      this.thenActions.push({})
+      this.thenActions.push({
+        typeOfAction: "deviceAction"
+      })
     }
   }
 
@@ -31,16 +33,24 @@ export class ThenactionsComponent implements OnInit, OnChanges {
     this.thenActions.splice(index,1);
   }
 
-  addAction(){
+  addDeviceAction(){
     let newAction = {
+      typeOfAction: "deviceAction",
       value: 0
     }
     this.thenActions.push(newAction);
   }
 
-  updateAction(action){
-    this.updateActions.emit();
+  addMobileAction(){
+    let newAction = {
+      typeOfAction: "mobileAction",
+      typeOfMobileAction: "CALL"
+    }
+    this.thenActions.push(newAction);
   }
 
+  updateAction(){
+    this.updateActions.emit();
+  }
 
 }

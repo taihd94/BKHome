@@ -22,8 +22,8 @@ export class FaceRecognitionComponent implements OnInit {
   messageHandle: any;
 
   ngOnInit() {
-    this.sensorMessage = "Place your finger";
-    this.sensorMessage2 = "on the sensor";
+    this.sensorMessage = "Please stand";
+    this.sensorMessage2 = "in front of the camera";
   }
 
   unSubscribe(){
@@ -31,13 +31,13 @@ export class FaceRecognitionComponent implements OnInit {
     let message = {
       command: 'authenticate'
     }
-    this.messageEvent.emit('access-control/fingerprint', message);
+    this.messageEvent.emit('access-control/face-recognition', message);
   }
 
   connectSensor(){
-    this.sensorMessage = "Place your finger";
-    this.sensorMessage2 = "on the sensor";
-    this.messageHandle = this.messageEvent.on('access-control/fingerprint/enrol/message').subscribe((message:String)=>{
+    this.sensorMessage = "Please stand";
+    this.sensorMessage2 = "in front of the camera";
+    this.messageHandle = this.messageEvent.on('access-control/face-recognition/enrol/message').subscribe((message:String)=>{
       console.log(message);
       this.sensorMessage2 = '';
       this.sensorMessage = message;
@@ -50,7 +50,7 @@ export class FaceRecognitionComponent implements OnInit {
       command: 'enrol',
       user: this.user._id
     }
-    this.messageEvent.emit('access-control/fingerprint', message);
+    this.messageEvent.emit('access-control/face-recognition', message);
   }
 
   deleteAllFingerprint(){
@@ -58,7 +58,7 @@ export class FaceRecognitionComponent implements OnInit {
       command: 'deleteFingerprints',
       user: this.user._id
     }
-    this.messageEvent.emit('access-control/fingerprint', message);
+    this.messageEvent.emit('access-control/face-recognition', message);
     this.isFingerprintAvailable.emit(false);
   }
 

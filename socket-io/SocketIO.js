@@ -96,6 +96,31 @@ io.on('connection', (socket) => {
         break;
     }
   })
+
+  socket.on('access-control/face-recognition', message=>{
+    let command = message.command;
+    let user = message.user
+    console.log(message)
+    switch(command){
+      case 'authenticate':
+        mqttClient.publish('face-recognition-01/' + command, 'authenticate');
+        break;
+      case 'enrol':
+        mqttClient.publish('face-recognition-01/' + command, user);
+        break;
+    }
+  })
+
+  socket.on('mobile-action-event', message=>{
+    switch(message.typeOfMobileAction){
+      case 'CALL':
+        mqttClient.publish('sim900/call', message.phoneNumber)
+        break;
+      case 'SEND SMS':
+        mqttClient.publish('sim900/send-sms', message.phoneNumber)
+        break;
+    }
+  })
 });
 
 

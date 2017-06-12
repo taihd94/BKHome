@@ -1,5 +1,5 @@
 .row{
-  text-align: center;
+  text-align: left;
   margin-left: 45px;
   font-size: 17px;
   color: #626262;
@@ -7,6 +7,10 @@
 
 .command>p{
   text-align: left;
+}
+
+.device-name{
+  margin-left: 15px;
 }
 
 .btn:focus, .btn:hover{
@@ -20,6 +24,10 @@
   text-transform: none;
   font-weight: 400;
   margin-bottom: 11px;
+}
+
+.switch, .rgb, .slider, .menu {
+  text-align: center;
 }
 
 hr {

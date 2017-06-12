@@ -43,8 +43,12 @@ const RuleSchema = new Schema({
     repeat: String,
     ifConditions: {type: Schema.Types.ObjectId, ref: 'operations'},
     thenActions: [{
+      typeOfAction: String, //deviceAction, mobileAction
+      typeOfMobileAction: String,  //call, message
       deviceId: Schema.Types.ObjectId,
-      value: Number
+      value: Number,
+      phoneNumber: String,
+      message: String
     }]
 }, {versionKey: false});
 
@@ -234,6 +238,29 @@ const operators = {
   'AND':(a, b) => {return a && b}
 }
 
+function performActions(actions) {
+  console.log('actions')
+  console.log(actions);
+  for(let i=0; i<actions.length; i++){
+    let action = actions[i];
+    switch(action.typeOfAction){
+      case 'deviceAction':
+        LightingControl.getLightDetails(action.deviceId)
+        .then(light=>{
+          let msg = {_id: light._id, value: action.value}
+          socket.emit('device-event', msg)
+          if(light.typeOfLight==="Alarm")
+            socket.emit('security-event', light)
+          return Promise.resolve()
+        })
+        break;
+      case 'mobileAction':
+        socket.emit('mobile-action-event', action)
+        break;
+    }
+  }
+}
+
 function isDateSatisfied(rule) {
   if(rule.repeat==='Daily') return Promise.resolve(rule)
   if(rule.repeat==='None') return Promise.reject('Date not satisfied')
@@ -270,17 +297,7 @@ function operationSatisfied(operation) {
       return isTimeSatisfied(rule)
     })
     .then(actions=>{
-      console.log('actions')
-      console.log(actions);
-      for(let action of actions){
-        LightingControl.getLightDetails(action.deviceId)
-        .then(light=>{
-          let msg = {_id: light._id, value: action.value}
-          socket.emit('device-event', msg)
-          if(light.typeOfLight==="Alarm")
-            socket.emit('security-event', light)
-        })
-      }
+      return performActions(actions)
     })
     .catch(err=>{
       console.log(err)

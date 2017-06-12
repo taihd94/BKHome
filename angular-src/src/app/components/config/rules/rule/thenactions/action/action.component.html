@@ -50,14 +50,15 @@
               (input)="getValue($event.value)">
     </md-slider>
   </div>
-  <div class="col-md-2 menu" style="padding-left: 5px;position: absolute;right: -20px; cursor: pointer" [hidden]="editHidden">
+  <div class="col-md-2 menu" style="padding-left: 5px;position: absolute;right: 0px; cursor: pointer" [hidden]="editHidden">
     <div class="dropdown">
       <button class="btn btn-menu dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
         <i class="fa fa-bars menu" aria-hidden="true"></i>
       </button>
       <ul class="dropdown-menu scrollable-menu-2" role="menu" aria-labelledby="dropdownMenu1" [hidden]="editHidden">
         <li (click)="deleteAction()"><a> Delete action</a></li>
-        <li (click)="addAction()"><a>Add action</a></li>
+        <li (click)="addAction()"><a>Add device action</a></li>
+        <li (click)="addMobileAction()"><a>Add mobile action</a></li>
       </ul>
     </div>
   </div>
