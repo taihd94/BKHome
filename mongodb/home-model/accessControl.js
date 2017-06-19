@@ -6,7 +6,7 @@ const AccessControlSchema = new Schema({
     imgPath: String,
     fingerprintId: [Number],
     rfid: [Number],
-    face: [Number]
+    faceId: [Number]
 }, {versionKey: false});
 
 const AccessControl = module.exports = mongoose.model('accessControl', AccessControlSchema);
@@ -21,6 +21,10 @@ module.exports.getUsers =  () => {
 
 module.exports.getUserFromFingerprint = (fingerprintId) => {
   return AccessControl.findOne({fingerprintId: fingerprintId})
+}
+
+module.exports.getUserFromFaceId = (faceId) => {
+  return AccessControl.findOne({faceId: faceId})
 }
 
 module.exports.addUser = (newUser) => {
@@ -54,6 +58,15 @@ module.exports.updateFingerprintId = (userId, fingerprintId) => {
   .then(user=>{
     if(!user) throw new Error('User not found: ' + userId);
     user.fingerprintId.push(fingerprintId)
+    return user.save()
+  })
+}
+
+module.exports.updateFaceId = (userId, faceId) => {
+  return AccessControl.findById(userId)
+  .then(user=>{
+    if(!user) throw new Error('User not found: ' + userId);
+    user.faceId.push(faceId)
     return user.save()
   })
 }

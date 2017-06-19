@@ -1977,6 +1977,10 @@ var AppComponent = (function () {
             .subscribe(function (message) {
             _this.socket.emit("access-control/fingerprint", message);
         });
+        this.socket.on('access-control/face-recognition/enrol/message', function (data) {
+            console.log(data);
+            _this.messageEvent.emit('access-control/face-recognition/enrol/message', data);
+        });
         this.messageEvent.on('access-control/face-recognition')
             .subscribe(function (message) {
             _this.socket.emit("access-control/face-recognition", message);

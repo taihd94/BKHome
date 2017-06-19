@@ -40,6 +40,11 @@ export class AppComponent {
         this.socket.emit("access-control/fingerprint", message);
       })
 
+      this.socket.on('access-control/face-recognition/enrol/message', data=>{
+        console.log(data)
+        this.messageEvent.emit('access-control/face-recognition/enrol/message', data);
+      })
+
       this.messageEvent.on('access-control/face-recognition')
       .subscribe(message=>{
         this.socket.emit("access-control/face-recognition", message);

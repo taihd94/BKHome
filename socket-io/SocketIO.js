@@ -100,13 +100,14 @@ io.on('connection', (socket) => {
   socket.on('access-control/face-recognition', message=>{
     let command = message.command;
     let user = message.user
-    console.log(message)
+    // console.log(message)
+    // console.log(user)
     switch(command){
       case 'authenticate':
         mqttClient.publish('face-recognition-01/' + command, 'authenticate');
         break;
       case 'enrol':
-        mqttClient.publish('face-recognition-01/' + command, user);
+        mqttClient.publish('face-recognition-01/' + command, user.toString());
         break;
     }
   })
