@@ -1867,8 +1867,8 @@ var UserService = (function () {
         localStorage.clear();
     };
     UserService.prototype.loggedIn = function () {
-        // return tokenNotExpired(AuthConfigConsts.DEFAULT_TOKEN_NAME);
-        return true;
+        return __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_3_angular2_jwt__["tokenNotExpired"])(__WEBPACK_IMPORTED_MODULE_3_angular2_jwt__["AuthConfigConsts"].DEFAULT_TOKEN_NAME);
+        // return true;
     };
     UserService = __decorate([
         __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Injectable"])(), 
@@ -6063,11 +6063,9 @@ var AuthGuard = (function () {
     ;
     AuthGuard.prototype.canActivate = function () {
         if (this.authService.loggedIn()) {
-            console.log("true-blahbalhbal");
             return true;
         }
         else {
-            console.log("false-blahbalhbal");
             this.router.navigate(['/login']);
         }
     };

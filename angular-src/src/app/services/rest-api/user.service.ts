@@ -55,8 +55,8 @@ export class UserService {
   }
 
   loggedIn(){
-    // return tokenNotExpired(AuthConfigConsts.DEFAULT_TOKEN_NAME);
-    return true;
+    return tokenNotExpired(AuthConfigConsts.DEFAULT_TOKEN_NAME);
+    // return true;
   }
 
 }
