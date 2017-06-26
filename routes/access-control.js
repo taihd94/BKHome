@@ -26,6 +26,17 @@ router.get('/users/:id/name', (req, res, next)=>{
   })
 })
 
+router.get('/users/name', (req, res, next)=>{
+  let faceId = req.query.faceId;
+  Users.getUserFromFaceId(faceId)
+  .then(user=>{
+    res.json({success:true, userName: user.name});
+  })
+  .catch(err=>{
+    res.json({success:false, msg: err.message});
+  })
+})
+
 router.post('/users', (req, res, next)=>{
   let newUser = req.body;
   Users.addUser(newUser)

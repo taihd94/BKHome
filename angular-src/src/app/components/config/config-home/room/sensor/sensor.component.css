@@ -28,3 +28,10 @@ input{
   margin: 20px 10px;
   float: left;
 }
+
+.gas{
+  max-width: 14%;
+  height: auto;
+  margin: 0px 5px 0px -5px;
+  float: left;
+}

@@ -4,17 +4,17 @@ const Schema = mongoose.Schema;
 const LightingControlSchema = new Schema({
     deviceCode: String,         // Ex: 'ltctrl12c5'
     deviceType: String,         // 'LightingControl'
-    numberOfPorts: Number,     // Ex: '1 port', '4 port', '8 port', ...
+    numberOfPorts: Number,      // Ex: '1 port', '4 port', '8 port', ...
     allowToConnect: Boolean,
     roomId: Schema.Types.ObjectId,
     lights: [
       {
           portId: Number,
-          name: String,                  // Ex: 'Light 1', 'Light 2',...
-          typeOfLight: String,          // Ex: 'Neon', 'Compact',...
-          dimmable: Boolean,            // Ex: 'ON/OFF', 'DIM'
-          life_time: Number,             // Ex: 6000 hours
-          power: Number,                 // Ex: 60 watt
+          name: String,           // Ex: 'Light 1', 'Light 2',...
+          typeOfLight: String,    // Ex: 'Neon', 'Compact',...
+          dimmable: Boolean,      // Ex: 'ON/OFF', 'DIM'
+          life_time: Number,      // Ex: 6000 hours
+          power: Number,          // Ex: 60 watt
           value: Number
       }
     ]

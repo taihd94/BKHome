@@ -70,6 +70,7 @@ import {ColorPickerModule} from 'angular2-color-picker';
 import { FingerprintComponent } from './components/config/access-control/user-accctrl/fingerprint/fingerprint.component';
 import { FaceRecognitionComponent } from './components/config/access-control/user-accctrl/face-recognition/face-recognition.component';
 import { MobileActionComponent } from './components/config/rules/rule/thenactions/mobile-action/mobile-action.component';
+import { CameraComponent } from './components/config/camera/camera.component';
 
 const appRoutes: Routes = [
   {path:'', component: HomeComponent},
@@ -84,7 +85,8 @@ const appRoutes: Routes = [
       {path: 'devices', component: DevicesComponent, canActivate:[AuthGuard]},
       {path: 'scenes', component: ScenesComponent, canActivate:[AuthGuard]},
       {path: 'rules', component: RulesComponent, canActivate:[AuthGuard]},
-      {path: 'access-control', component: AccessControlComponent, canActivate:[AuthGuard]}
+      {path: 'access-control', component: AccessControlComponent, canActivate:[AuthGuard]},
+      {path: 'camera', component: CameraComponent, canActivate:[AuthGuard]}
     ]
   },
   {path:'devices', component: DevicesComponent, canActivate:[AuthGuard]}
@@ -126,7 +128,8 @@ const appRoutes: Routes = [
     SecurityEventComponent,
     FingerprintComponent,
     FaceRecognitionComponent,
-    MobileActionComponent
+    MobileActionComponent,
+    CameraComponent
   ],
   imports: [
     UiSwitchModule,
