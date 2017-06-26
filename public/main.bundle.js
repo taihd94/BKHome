@@ -4259,7 +4259,7 @@ var RelationalOperationComponent = (function () {
             this.dimmable = true;
             this.operatorArr = this.fullOperatorArr;
             this.operatorSymbolArr = this.fullOperatorSymbolArr;
-            this.sliderMaxValue = (sensor._type === 'Light') ? 1000 : 100;
+            this.sliderMaxValue = (sensor._type === 'Light') || (sensor._type === 'Gas') ? 1000 : 100;
             this.sliderHidden = false;
             this.value = 0;
             this.operation.value = 0;
