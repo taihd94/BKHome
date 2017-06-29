@@ -22,16 +22,18 @@ client.on('message', (topic, message) => {
       case 'access-control/face-recognition/enrol/complete':
         let json = JSON.parse(message);
         let userId = json.userId;
-        let faceId = json.userNum;
+        let faceId = json.userIdHashed;
         console.log(userId)
         console.log(faceId)
         return resolve(AccessControl.updateFaceId(userId, faceId))
       case 'access-control/face-recognition/authenticate/found-id':
         let id = message.toString();
-        return resolve(AccessControl.getUserFromFaceId(id)
-        .then(user=>{
-          return Rules.checkOperations(user)
-        }))
+        if(!!id){
+          return resolve(AccessControl.getUserFromFaceId(id)
+          .then(user=>{
+            return Rules.checkOperations(user)
+          }))
+        }
         break
     }
   })
