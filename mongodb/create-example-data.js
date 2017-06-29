@@ -244,6 +244,11 @@ var sensorModule = [
           name: 'Window',
           _type: 'Window',
           value: 1
+        },
+        {
+          name: 'Gas',
+          _type: 'Gas',
+          value: 1
         }
       ]
   }),

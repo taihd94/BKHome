@@ -940,7 +940,7 @@ module.exports = "<div bsModal #smModal=\"bs-modal\" class=\"modal fade\" tabind
 /***/ 1141:
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"col-md-8\">\n    <!-- user -->\n    <div class=\"user\">\n      <div class=\"panel panel-primary panel-pricing\">\n        <div class=\"panel-heading\">\n          <i class=\"fa fa-user-circle\" aria-hidden=\"true\"></i>\n          <h3 class=\"userName\">Camera</h3>\n          <div class=\"x-icon\" >\n            <i class=\"fa fa-times\" aria-hidden=\"true\"></i>\n          </div>\n        </div>\n        <div class=\"row body\">\n          <img class=\"camera-stream\" src=\"http://127.0.0.1:8080/cam.mjpg\"/>\n        </div>\n      </div>\n    </div>\n    <!-- user -->\n\n\n</div>\n"
+module.exports = "<div class=\"col-md-8\">\n    <!-- user -->\n    <div class=\"user\">\n      <div class=\"panel panel-primary panel-pricing\">\n        <div class=\"panel-heading\">\n          <i class=\"fa fa-user-circle\" aria-hidden=\"true\"></i>\n          <h3 class=\"userName\">Camera</h3>\n          <div class=\"x-icon\" >\n            <i class=\"fa fa-times\" aria-hidden=\"true\"></i>\n          </div>\n        </div>\n        <div class=\"row body\">\n          <img class=\"camera-stream\" src=\"http://192.168.10.108:8080/cam.mjpg\"/>\n        </div>\n      </div>\n    </div>\n    <!-- user -->\n\n\n</div>\n"
 
 /***/ }),
 
